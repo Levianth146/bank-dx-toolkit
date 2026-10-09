@@ -58,13 +58,6 @@ Tùy chọn (khuyến nghị):
 
 **Mức kiểm thử**: chỉ trên dữ liệu giả lập. Với 09, luồng code đã chạy hết (build-train, finetune có CV, predict, anchors) nhưng bằng model BERT nhỏ khởi tạo ngẫu nhiên, vì sandbox không tải được trọng số PhoBERT. Chất lượng phân loại thật của PhoBERT trên báo cáo ngân hàng chưa được đo.
 
-## 2d. Dùng trong Cursor / VS Code với Spec Kit
-- `AGENTS.md` và `.cursor/rules/*.mdc`: luật dự án để Cursor đọc (chỉ dữ liệu công khai, không điền 0, không sửa tùy tiện các hàm khớp từ khóa/nhãn BCTC, chạy smoke test sau khi sửa).
-- `.specify/memory/constitution.md` + `specs/001-bank-dx-assessment/` (spec, plan, research, data-model, contracts, quickstart, tasks, checklists) theo phương pháp Spec Kit (spec → plan → tasks → implement).
-- `.cursor/commands/speckit.*.md`: các lệnh `/speckit.constitution`, `specify`, `clarify`, `plan`, `tasks`, `analyze`, `implement`, `checklist` viết tay theo cùng quy trình. Bộ này **tương thích về cấu trúc** nhưng không phải bản sinh ra bởi CLI chính thức. Muốn dùng bản chính thức, chạy `specify init` của GitHub Spec Kit trong repo (kiểm tra tài liệu hiện hành để biết lệnh và cờ cho Cursor), rồi giữ lại `constitution.md` và thư mục `specs/` của dự án này.
-- Việc đầu tiên nên làm: `/speckit.clarify` để trả lời 3 điểm [CẦN LÀM RÕ] trong spec, rồi `/speckit.implement` cho giai đoạn 2 trong `tasks.md`.
-- Kiểm tra nhanh: `cd scripts && python ../tests/smoke_test.py`.
-
 ## 3. Từng tiêu chí / biến lấy bằng cách nào
 | Nhóm | Tiêu chí / biến | Cách lấy | Công cụ |
 |---|---|---|---|
