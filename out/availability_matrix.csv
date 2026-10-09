@@ -1,0 +1,31 @@
+﻿bank,year,bctn,bctc,bcptbv,dti_vars_total,dti_vars_filled,dti_vars_confirmed,dti_vars_pdf_read,dti_vars_not_collected,inputs_coverage,dti_ind_computable,dti_ind_list,data_conf,in_coding_years,app_rows
+agribank,2020,OK,CẦN KIỂM,chưa tìm thấy,16,12,12,12,1,0.75,1,T-Q1,0.091,True,2
+agribank,2021,OK,CẦN KIỂM,chưa tìm thấy,16,12,12,12,0,0.75,3,K-Q2;T-Q1;O-Q1,0.273,True,2
+agribank,2022,OK,CẦN KIỂM,tích hợp trong BCTN,16,14,14,13,0,0.875,4,K-Q1;K-Q2;T-Q1;O-Q1,0.364,True,2
+agribank,2023,OK,CẦN KIỂM,tích hợp trong BCTN,16,11,11,10,0,0.688,3,T-Q1;O-Q1;O-Q2,0.273,True,2
+agribank,2024,OK,CẦN KIỂM,tích hợp trong BCTN,16,13,13,13,0,0.812,4,K-Q1;T-Q1;O-Q1;O-Q2,0.364,True,2
+agribank,2025,OK,CẦN KIỂM,tích hợp trong BCTN,16,12,12,12,0,0.75,6,K-Q1;K-Q3;S-Q1;S-Q2;T-Q1;O-Q1,0.545,True,2
+mb,2020,OK,CẦN KIỂM,tích hợp trong BCTN,16,13,13,13,1,0.812,3,K-Q1;T-Q1;C-Q2,0.273,True,2
+mb,2021,OK,CẦN KIỂM,tích hợp trong BCTN,16,14,14,13,1,0.875,6,K-Q1;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+mb,2022,OK,CẦN KIỂM,tích hợp trong BCTN,16,14,14,14,1,0.875,6,K-Q1;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+mb,2023,OK,CẦN KIỂM,tích hợp trong BCTN,16,14,14,12,0,0.875,7,K-Q1;K-Q2;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.636,True,2
+mb,2024,OK,CẦN KIỂM,tích hợp trong BCTN,16,14,14,12,1,0.875,6,K-Q1;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+mb,2025,OK,CẦN KIỂM,tích hợp trong BCTN,16,14,14,12,0,0.875,8,K-Q1;K-Q3;S-Q1;T-Q1;O-Q1;O-Q2;C-Q1;C-Q2,0.727,True,2
+tcb,2020,OK,OK,tích hợp trong BCTN,16,14,14,11,0,0.875,3,K-Q2;T-Q1;C-Q2,0.273,True,2
+tcb,2021,OK,OK,tích hợp trong BCTN,16,13,13,5,0,0.812,4,K-Q1;T-Q1;O-Q1;O-Q2,0.364,True,2
+tcb,2022,OK,OK,tích hợp trong BCTN,16,15,15,9,0,0.938,8,K-Q1;K-Q2;S-Q1;S-Q2;T-Q1;O-Q1;O-Q2;C-Q2,0.727,True,2
+tcb,2023,OK,OK,tích hợp trong BCTN,16,14,14,7,0,0.875,5,K-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.455,True,2
+tcb,2024,OK,OK,CẦN KIỂM,16,14,14,14,0,0.875,6,K-Q1;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+tcb,2025,OK,OK,OK,16,14,14,7,0,0.875,7,K-Q1;K-Q3;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.636,True,2
+bidv,2020,OK,CẦN KIỂM,chưa tìm thấy,16,12,12,7,1,0.75,3,K-Q1;T-Q1;C-Q2,0.273,True,2
+bidv,2021,OK,CẦN KIỂM,chưa tìm thấy,16,13,13,7,1,0.812,6,K-Q1;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+bidv,2022,OK,CẦN KIỂM,chưa tìm thấy,16,14,14,12,1,0.875,6,K-Q1;S-Q1;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+bidv,2023,OK,CẦN KIỂM,OK,16,15,15,12,0,0.938,6,K-Q1;K-Q2;T-Q1;O-Q1;O-Q2;C-Q2,0.545,True,2
+bidv,2024,OK,CẦN KIỂM,OK,16,12,12,7,1,0.75,4,T-Q1;O-Q1;O-Q2;C-Q2,0.364,True,2
+bidv,2025,CẦN KIỂM,CẦN KIỂM,CẦN KIỂM,16,11,11,7,0,0.688,5,K-Q3;T-Q1;O-Q1;O-Q2;C-Q2,0.455,True,2
+vcb,2020,OK,CẦN KIỂM,tích hợp trong BCTN,16,10,10,8,1,0.625,0,,0.0,True,2
+vcb,2021,OK,CẦN KIỂM,tích hợp trong BCTN,16,10,10,10,1,0.625,2,O-Q1;O-Q2,0.182,True,2
+vcb,2022,OK,CẦN KIỂM,tích hợp trong BCTN,16,10,10,9,1,0.625,2,O-Q1;O-Q2,0.182,True,2
+vcb,2023,OK,CẦN KIỂM,tích hợp trong BCTN,16,11,11,11,0,0.688,3,O-Q1;O-Q2;C-Q2,0.273,True,2
+vcb,2024,OK,CẦN KIỂM,OK,16,11,11,10,1,0.688,3,O-Q1;O-Q2;C-Q2,0.273,True,2
+vcb,2025,OK,CẦN KIỂM,OK,16,13,13,12,0,0.812,5,K-Q1;K-Q3;O-Q1;O-Q2;C-Q2,0.455,True,2
