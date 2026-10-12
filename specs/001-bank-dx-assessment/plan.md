@@ -3,7 +3,7 @@
 **Nhánh**: 001-bank-dx-assessment · **Cập nhật sau** `/speckit.clarify` · **Không viết code trong bước này**
 
 ## Tóm tắt kỹ thuật
-Đánh giá chuyển đổi số 5 ngân hàng (agribank, mb, tcb, bidv, vcb) trên cửa sổ **2020–2025** bằng dữ liệu công khai: DBI thích ứng (24 tiêu chí rubric 0–4, người chấm) + DTI (11 chỉ số, chuẩn hóa L/U khóa trước theo chuẩn ngành). Script 00–09 đã có; còn lại xác thực trên PDF thật, chấm tay (2+1), rồi viết 10–12 (điểm, độ nhạy, phụ lục).
+Đánh giá chuyển đổi số 5 ngân hàng (agribank, mb, tcb, bidv, vcb) trên cửa sổ **2020–2025** bằng dữ liệu công khai: DBI thích ứng (24 tiêu chí 0–4 bằng thuật toán quy tắc) + DTI (11 chỉ số, chuẩn hóa L/U khóa trước theo chuẩn ngành). Script 00–09 đã có; còn lại xác thực trên PDF thật, chấm bằng 09c (quyết định 2026-10-12), rồi viết 10–12 (điểm, độ nhạy, phụ lục).
 
 ## Ngăn xếp
 | Lớp | Công nghệ |
@@ -21,7 +21,7 @@ Không thêm thư viện mới trừ khi plan/task ghi rõ và không vi phạm 
 ## Kiểm tra Hiến chương
 | Nguyên tắc | Đáp ứng bằng | Vi phạm? |
 |---|---|---|
-| I Người chấm quyết định | `coding_sheet.xlsx` cột `final` do người nhập; 03/07/08/09 chỉ ứng viên / chỉ số phụ | Không |
+| I Thuật toán quyết định | 09c ghi final trong coding_auto.xlsx, kèm quy tắc/hash/bằng chứng; không yêu cầu kappa | Theo quyết định nhóm 2026-10-12 |
 | II Công khai, đạo đức | `01_download.py` robots.txt, delay ≥ 3 s, User-Agent nghiên cứu; 05/06 API/trang công khai; không đăng nhập | Không |
 | III Truy vết | `manifest.csv` (sha256); mọi ứng viên/số có file/page/snippet hoặc `source_file`+`page` | Không |
 | IV Dữ liệu thiếu | Để trống, không điền 0; `data_confidence` = (số chỉ tiêu có dữ liệu)/11; thiếu DTI trụ → P_k = DBI_k; ma trận phân biệt `tích hợp trong BCTN` ≠ thiếu ESG | Không |
@@ -64,7 +64,7 @@ out/evidence_candidates   --bctc / --kpi         tm_*, lda_*, phobert_*
         │                      │
         ▼                      ▼
 [Người chấm ×2]          + 05_app_ratings
- coding_sheet.xlsx         → out/dti_inputs.csv (người xác nhận)
+ coding_auto.xlsx          → out/dti_inputs.csv (người xác nhận)
  (+ người 3 nếu bất đồng)
         │                      │
         └──────────┬───────────┘
@@ -85,7 +85,7 @@ out/evidence_candidates   --bctc / --kpi         tm_*, lda_*, phobert_*
 ## Giai đoạn
 1. **Nền tảng (đã có)**: scripts 00–09 + smoke test offline.
 2. **Xác thực dữ liệu thật**: 1 NH × 1 năm → chỉnh regex → mở rộng 5 × 2020–2025; điền sources (T021–T026).
-3. **Chấm và thống nhất (FR-13)**: 2 người độc lập ≥ 20%; κ ≥ 0,6; bất đồng → người thứ ba + biên bản; chấm đủ; đánh dấu `valid` (T030–T033).
+3. **Chấm thuật toán (FR-13)**: chạy 09c, lưu phiên bản/hash/bằng chứng; kiểm thử mức 0–4 và dữ liệu thiếu, kiểm tra độ phủ/độ nhạy. Không yêu cầu chấm kép/kappa; `valid` chỉ dùng cho PhoBERT phụ trợ.
 4. **Điểm và độ nhạy**: chốt L/U chuẩn ngành → `dti_bounds.yaml`; viết 10, 11 + unit test (T040–T043).
 5. **Đối chiếu và xuất**: 07 `--compare`, 08, 09; `12_appendix.py`; cập nhật báo cáo đề tài (T050–T052).
 

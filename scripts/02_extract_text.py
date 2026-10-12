@@ -27,17 +27,35 @@ OCR_PAGES = parse_pages(sys.argv[sys.argv.index("--ocr-pages") + 1] if "--ocr-pa
 ocr = None
 if use_ocr:
     import pytesseract
-    _win = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    if not shutil.which("tesseract") and os.path.exists(_win): pytesseract.pytesseract.tesseract_cmd = _win   # Windows: chưa thêm vào PATH
+    # Tìm cả bản cài riêng cho người dùng, kể cả terminal chưa cập nhật PATH.
+    _candidates = [os.environ.get("TESSERACT_CMD"), shutil.which("tesseract"),
+                   r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+                   r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe"]
+    if os.environ.get("LOCALAPPDATA"):
+        _candidates.append(os.path.join(os.environ["LOCALAPPDATA"], "Programs", "Tesseract-OCR", "tesseract.exe"))
+    _exe = next((p for p in _candidates if p and os.path.isfile(p)), None)
+    if _exe and os.name == "nt":
+        # Tesseract Windows cần đường dẫn 8.3 khi tên tài khoản chứa dấu tiếng Việt.
+        import ctypes
+        _short_path = ctypes.create_unicode_buffer(32768)
+        _length = ctypes.windll.kernel32.GetShortPathNameW(ctypes.c_wchar_p(_exe), _short_path, len(_short_path))
+        if 0 < _length < len(_short_path): _exe = _short_path.value
+    if _exe:
+        pytesseract.pytesseract.tesseract_cmd = _exe
+    _data_dir = os.path.join(os.path.dirname(_exe), "tessdata") if _exe else None
+    # Truyền thư mục qua môi trường của tiến trình để tránh lỗi dấu ngoặc kép trên Windows.
+    if _data_dir and os.path.isdir(_data_dir) and not os.environ.get("TESSDATA_PREFIX"):
+        os.environ["TESSDATA_PREFIX"] = _data_dir
+    _data_cfg = ""
     try:
-        _have = set(pytesseract.get_languages(config=""))
+        _have = set(pytesseract.get_languages(config=_data_cfg))
         _need = set(lang.split("+"))
         if not _need <= _have:
             sys.exit(f"Tesseract thiếu gói ngôn ngữ {sorted(_need - _have)} (đang có: {sorted(_have)}). Cài lại Tesseract và tick 'Vietnamese', hoặc chép vie.traineddata vào thư mục tessdata.")
     except pytesseract.TesseractNotFoundError:
         sys.exit("Không tìm thấy Tesseract. Cài bản Windows (UB Mannheim) rồi thêm thư mục cài (C:\\Program Files\\Tesseract-OCR) vào PATH, mở terminal MỚI; hoặc kiểm tra: tesseract --version")
     PSM = sys.argv[sys.argv.index("--psm") + 1] if "--psm" in sys.argv else ""
-    _cfg = f"--psm {PSM}" if PSM else ""        # --psm 6: coi trang là một khối, giữ nhãn và số trên cùng một dòng (tốt cho bảng BCTC bị tách cột)
+    _cfg = _data_cfg + (f" --psm {PSM}" if PSM else "")   # --psm 6 giữ nhãn và số trên cùng một dòng của bảng
     ocr = lambda img: pytesseract.image_to_string(img, lang=lang, config=_cfg)
 try:
     import pymupdf
@@ -124,7 +142,7 @@ if report:
     p = OUT / "extraction_report.csv"
     existing = []
     if p.exists():
-        with open(p, newline="", encoding="utf8") as f:
+        with open(p, newline="", encoding="utf-8-sig") as f:
             r = csv.reader(f)
             old_h = next(r, None) or []
             for row in r:
@@ -133,7 +151,7 @@ if report:
                     d["lang"] = row[10] if len(row) > 10 else d.get("lang", "")
                     d["bad_pages"] = row[11] if len(row) > 11 else ""
                 existing.append([d.get(c, "") for c in REPORT_COLS])
-    with open(p, "w", newline="", encoding="utf8") as f:
+    with open(p, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
         w.writerow(REPORT_COLS)
         w.writerows(existing)

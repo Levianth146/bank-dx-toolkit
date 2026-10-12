@@ -1,6 +1,6 @@
 # Đặc tả: Đánh giá và xếp hạng chuyển đổi số 5 ngân hàng (DBI thích ứng + DTI)
 
-**Nhánh**: 001-bank-dx-assessment · **Trạng thái**: Bản nháp 1 · **Ngôn ngữ**: Tiếng Việt
+**Nhánh**: 001-bank-dx-assessment · **Trạng thái**: Bản nháp 2 (2026-10-12: thuật toán thay chấm tay/kappa) · **Ngôn ngữ**: Tiếng Việt
 
 ## 1. Bối cảnh và mục tiêu
 Đề tài đánh giá, xếp hạng mức độ chuyển đổi số của Agribank, MB, Techcombank, BIDV, Vietcombank bằng dữ liệu công khai,
@@ -8,9 +8,9 @@ dựa trên khung DBI (QĐ 2158/QĐ-BTTTT, 07/11/2023) làm chính, DTI bổ tr�
 
 ## 2. Câu chuyện người dùng
 - **US1 (P1)** Là nhà nghiên cứu, tôi tải báo cáo công khai của 5 ngân hàng theo năm và trích text có chỉ báo chất lượng, để có kho văn bản đáng tin.
-- **US2 (P1)** Tôi nhận danh sách câu bằng chứng ứng viên cho 24 tiêu chí kèm trang và đoạn trích, để chấm rubric 0–4 nhanh và có dẫn chứng.
+- **US2 (P1)** Tôi chạy thuật toán quy tắc để chấm 24 tiêu chí DBI 0–4, nhận điểm kèm bằng chứng và phiên bản để tái lập.
 - **US3 (P1)** Tôi lấy được 11 chỉ số DTI (số liệu BCTC, KPI từ BCTN, rating app) kèm nguồn, để tính lớp B.
-- **US4 (P2)** Tôi chạy text mining (BM25, độ phủ, tỷ lệ câu định lượng) và đối chiếu với điểm chấm tay, để kiểm tra độ nhất quán.
+- **US4 (P2)** Tôi chạy text mining (BM25, độ phủ, tỷ lệ câu định lượng) và đối chiếu với điểm thuật toán, để kiểm tra độ nhất quán.
 - **US5 (P2)** Tôi dùng LDA xem mỗi ngân hàng viết về chủ đề nào, và PhoBERT để lọc câu bằng chứng sai.
 - **US6 (P1)** Tôi tính điểm trụ cột, điểm tổng, mức trưởng thành, và bảng độ nhạy, để xuất kết quả và thứ hạng.
 - **US7 (P3)** Tôi sinh phụ lục (bảng bằng chứng, ma trận sẵn có dữ liệu) cho báo cáo đề tài.
@@ -29,7 +29,7 @@ dựa trên khung DBI (QĐ 2158/QĐ-BTTTT, 07/11/2023) làm chính, DTI bổ tr�
 - **FR-11** Độ nhạy: 4 tổ hợp trọng số DBI/DTI, Dirichlet Monte Carlo trên trọng số trụ cột, Kendall τ, Spearman, tỷ lệ kịch bản giữ hạng.
 - **FR-14** Mọi script 01–04 và 07–09 hỗ trợ lọc `--bank`, `--year`, `--type`, `--only-lang` để chạy từng phần (kiểm thử 1 ngân hàng × 1 năm) mà không phải sửa `sources.csv`.
 - **FR-12** Báo cáo điểm tin cậy dữ liệu và ma trận sẵn có dữ liệu (ngân hàng × chỉ số × năm). Ma trận phân biệt `có dữ liệu` · `tích hợp trong BCTN` · `không công bố` · `chưa tìm thấy`; trạng thái `tích hợp trong BCTN` KHÔNG được tính là thiếu dữ liệu ESG.
-- **FR-13** Chấm rubric: **2 người chấm độc lập**; trên ≥ 20% mẫu tính Cohen's κ có trọng số trước khi chốt. Bất đồng (lệch ≥ 2 bậc trên thang 0–4, hoặc thảo luận không đồng thuận) → **người thứ ba** quyết điểm cuối; ghi biên bản (tiêu chí, ngân hàng-năm, điểm hai người / người thứ ba, lý do). κ tính trên cặp độc lập **trước** hòa giải.
+- **FR-13** Chấm DBI bằng thuật toán quy tắc 09c; xuất `auto_scores.csv`, `coding_auto.xlsx` và manifest gồm phiên bản/hash/quy tắc lọc. Không yêu cầu người chấm hoặc kappa. Thiếu văn bản để trống; no_mention=0 chỉ nghĩa không phát hiện đề cập trong tài liệu đã quét.
 
 ## 4. Yêu cầu phi chức năng
 - **NFR-01** Đạo đức thu thập: theo Hiến chương II.
@@ -40,7 +40,7 @@ dựa trên khung DBI (QĐ 2158/QĐ-BTTTT, 07/11/2023) làm chính, DTI bổ tr�
 ## 5. Tiêu chí chấp nhận
 - **SC-01** Smoke test `tests/smoke_test.py` chạy sạch trên PDF mẫu.
 - **SC-02** Với ≥ 1 ngân hàng thật × 1 năm: 02 trích text không bị gắn cờ, 03 cho ≥ 1 ứng viên cho đa số 24 tiêu chí, 04 khớp tay ± 0,1% với BCTC trên TOI, CIR, ROE.
-- **SC-03** Hai người chấm độc lập trên ≥ 20% mẫu (tiêu chí × ngân hàng × năm) đạt Cohen's κ có trọng số ≥ 0,6 trước khi chốt điểm; mọi bất đồng theo FR-13 đã có biên bản và điểm cuối do người thứ ba (khi cần).
+- **SC-03** Kiểm thử quy tắc mức 0–4, câu tương lai/phủ định, bộ lọc, dữ liệu thiếu và tái lập; truy vết đủ bằng chứng cho điều kiện mức 4. Đánh giá độ phủ tài liệu và độ nhạy; không dùng kappa làm tiêu chí chấp nhận.
 - **SC-04** Mọi điểm trong bảng kết quả lần ngược được tới tệp, trang, đoạn trích.
 - **SC-05** Bảng độ nhạy cho biết thứ hạng nào "vững" (≥ 80% kịch bản).
 
@@ -50,8 +50,8 @@ Dữ liệu nội bộ ngân hàng; đăng nhập app; scrape trong app; suy di�
 ## 7. Giả định và rủi ro
 - **Năm phân tích chính thức: 2020–2025** (6 năm; 2020 là năm cơ sở để tính biến động và bình quân đầu–cuối kỳ cho 2021). Thứ hạng và bảng kết quả báo theo từng năm; thiếu báo cáo năm nào thì để trống ô tương ứng và ghi vào ma trận sẵn có dữ liệu (không điền 0).
 - **L, U của 11 chỉ số DTI**: lấy từ chuẩn ngành / tài liệu công bố; mỗi chỉ số ghi nguồn trong `dti_bounds.yaml`. Chỉ số chưa có chuẩn ngành rõ phải ghi nguồn thay thế công bố và lý do trước khi chấm (không tự lấy MAX mẫu).
-- **Chấm điểm**: 2 người độc lập; bất đồng (lệch ≥ 2 bậc hoặc thảo luận không xong) → người thứ ba quyết định cuối; có biên bản.
-- **Ngôn ngữ báo cáo không đồng nhất** (đã chốt hướng song ngữ): nhiều BCTN/BCTC là bản tiếng Anh (MB, Techcombank, một số năm BIDV). Từ khóa, nhãn BCTC và mẫu KPI hỗ trợ cả tiếng Việt lẫn tiếng Anh. Mỗi văn bản được gắn `lang` (vi/en/unknown) lúc trích text. Chấm rubric 0–4 do người đọc nên không bị ảnh hưởng; **chỉ số text mining chỉ so sánh được trong cùng ngôn ngữ** (07 chuẩn hóa riêng từng ngôn ngữ; LDA và PhoBERT chỉ chạy trên tiếng Việt). Từ khóa/nhãn tiếng Anh chưa kiểm thử trên báo cáo thật.
+- **Chấm điểm**: quy tắc cố định, có phiên bản; xem `algorithm-scoring.md`. Thuật toán đo dấu hiệu trong báo cáo, cần ghi rõ giới hạn và kiểm chứng chất lượng.
+- **Ngôn ngữ báo cáo không đồng nhất** (đã chốt hướng song ngữ): nhiều BCTN/BCTC là bản tiếng Anh (MB, Techcombank, một số năm BIDV). Từ khóa, nhãn BCTC và mẫu KPI hỗ trợ cả tiếng Việt lẫn tiếng Anh. Mỗi văn bản được gắn `lang` (vi/en/unknown) lúc trích text. Chấm DBI bằng quy tắc hỗ trợ cả hai ngôn ngữ, cần đánh giá lỗi từ khóa/nhãn riêng từng ngôn ngữ; **chỉ số text mining chỉ so sánh được trong cùng ngôn ngữ** (07 chuẩn hóa riêng từng ngôn ngữ; LDA và PhoBERT chỉ chạy trên tiếng Việt). Từ khóa/nhãn tiếng Anh chưa kiểm thử trên báo cáo thật.
 - Link báo cáo do người dùng điền; script không tự dò link. BCPTBV có thể không tồn tại riêng (nằm trong BCTN): khi đó nội dung ESG được đọc từ BCTN và vẫn tính đủ cho các tiêu chí văn hóa, dữ liệu, bảo mật.
 - Chưa thử nghiệm trên báo cáo thật và web thật (sandbox phát triển không ra được Internet); regex nhãn BCTC có thể cần chỉnh theo từng ngân hàng.
 - PhoBERT cần ≥ ~30 câu đã gán nhãn mỗi tiêu chí; dưới đó chỉ tham khảo.
@@ -59,6 +59,6 @@ Dữ liệu nội bộ ngân hàng; đăng nhập app; scrape trong app; suy di�
 
 ## 8. Điểm cần làm rõ (xử lý bằng `/speckit.clarify`)
 - [x] Năm phân tích chính thức: **2020–2025** (đã chốt).
-- [x] **Chấm DBI đủ 6 năm 2020–2025** (`coding_years` = `years`; chốt 2026-10-08, thay cho phương án 3 năm 2020/2023/2025). Mỗi năm có DBI (rubric, 2 người chấm + người thứ ba hòa giải) và DTI; không nội suy DBI. `coding_sheet.xlsx` có 720 dòng (24 tiêu chí × 5 NH × 6 năm). Hệ quả: khối lượng chấm gấp đôi; mẫu chấm kép ≥ 20% và κ tính trên toàn bộ các năm.
+- [x] **Chấm DBI đủ 6 năm 2020–2025**: 24 × 5 × 6 = 720 ô trong `coding_auto.xlsx`, không nội suy. Quyết định ngày 2026-10-12 thay phương án 2+1 người chấm bằng thuật toán; giữ trống năm thiếu văn bản.
 - [x] Giới hạn L, U DTI: **chuẩn ngành / tham chiếu công bố** (đã chốt); ghi `config/dti_bounds.yaml` kèm nguồn.
-- [x] Chấm điểm: **2 người độc lập**; bất đồng → **người thứ ba** (đã chốt, FR-13).
+- [x] Chấm điểm: **thuật toán quy tắc**, thay người chấm và kappa theo FR-13 (2026-10-12).

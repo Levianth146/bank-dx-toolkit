@@ -95,7 +95,7 @@ def run_bctc():
     for jf in sorted((DATA / "text").glob("*_bctc.jsonl")):
         for line in open(jf, encoding="utf8"):
             d = json.loads(line)
-            if not keep(d["bank"], d["year"], "bctc"): continue
+            if not keep(d["bank"], d["year"], "bctc") or not keep_lang(d.get("lang")): continue
             lines = [nfc(x) for x in d["text"].splitlines() if x.strip()]
             um = UNIT.search(d["text"]); unit = um.group(1) if um else ""
             for idx, ln in enumerate(lines):
@@ -123,9 +123,10 @@ def run_bctc():
                             if any(abs(x) >= 1000 for x in v): v = [x for x in v if abs(x) >= 1000]
                         if v and any(abs(x) >= 1000 for x in v):     # mọi biến BCTC tính bằng triệu đồng: bỏ ứng viên chỉ toàn số nhỏ (số thuyết minh / số thứ tự)
                             nxt3 = " ⏎ ".join(x.strip() for x in lines[idx + 1: idx + 5])
-                            rows.append([d["bank"], d["year"], d["page"], var, (ln.strip() + " ⏎ " + nxt3)[:260], " | ".join(f"{x:,.2f}" for x in v[:4]), len(v), note, unit])
-    with open(OUT / "financial_candidates.csv", "w", newline="", encoding="utf8") as f:
-        w = csv.writer(f); w.writerow(["bank", "year", "page", "variable", "raw_line (+dòng kế)", "parsed_numbers(first4)", "n_numbers", "where_to_check", "unit_hint"]); w.writerows(rows)
+                            rows.append([d["bank"], d["year"], d["page"], var, (ln.strip() + " ⏎ " + nxt3)[:260], " | ".join(f"{x:,.2f}" for x in v[:4]), len(v), note, unit,
+                                         str((DATA / "raw" / d["bank"] / f"{d['year']}_bctc.pdf").relative_to(ROOT))])
+    with open(OUT / "financial_candidates.csv", "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f); w.writerow(["bank", "year", "page", "variable", "raw_line (+dòng kế)", "parsed_numbers(first4)", "n_numbers", "where_to_check", "unit_hint", "source_file"]); w.writerows(rows)
     print(len(rows), "dòng ứng viên ->", OUT / "financial_candidates.csv")
 
 SENT = re.compile(r"(?<=[.;!?])\s+|\n{2,}")
@@ -145,7 +146,7 @@ def run_kpi():
         for line in open(jf, encoding="utf8"):
             d = json.loads(line)
             if d["doc_type"] not in ("bctn", "bcptbv", "other"): continue
-            if not keep(d["bank"], d["year"], d["doc_type"]): continue
+            if not keep(d["bank"], d["year"], d["doc_type"]) or not keep_lang(d.get("lang")): continue
             flat = re.sub(r"[ \t]+", " ", d["text"])
             for s in SENT.split(flat):
                 s1 = re.sub(r"\s+", " ", s).strip()
@@ -154,9 +155,9 @@ def run_kpi():
                     if trig.search(s1):
                         found = [m.group(0) for m in numrx.finditer(s1)]
                         found = [x for x in found if not re.fullmatch(r"\s*(19|20)\d\d[.,]?\s*", x)]   # bỏ số năm
-                        if found: rows.append([d["bank"], d["year"], d["doc_type"], d["page"], var, "; ".join(x.strip() for x in found[:5]), s1[:300]])
-    with open(OUT / "kpi_candidates.csv", "w", newline="", encoding="utf8") as f:
-        w = csv.writer(f); w.writerow(["bank", "year", "doc_type", "page", "variable", "numbers_found", "sentence"]); w.writerows(rows)
+                        if found: rows.append([d["bank"], d["year"], d["doc_type"], d["page"], var, "; ".join(x.strip() for x in found[:5]), s1[:300], str((DATA / "raw" / d["bank"] / f"{d['year']}_{d['doc_type']}.pdf").relative_to(ROOT))])
+    with open(OUT / "kpi_candidates.csv", "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f); w.writerow(["bank", "year", "doc_type", "page", "variable", "numbers_found", "sentence", "source_file"]); w.writerows(rows)
     print(len(rows), "câu ứng viên ->", OUT / "kpi_candidates.csv")
 
 if __name__ == "__main__":

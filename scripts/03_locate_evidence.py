@@ -36,11 +36,12 @@ for jf in sorted((DATA / "text").glob("*.jsonl")):
                 last_end = e
                 snip = flat[max(0, s - ctx): e + ctx]
                 prio = 1 + bool(ACTION.search(snip)) + 2 * bool(NUM.search(snip)) + bool(MULTI.search(snip))
-                cand.append([c, d["bank"], d["year"], d["doc_type"], d["page"], k, snip, prio])
+                cand.append([c, d["bank"], d["year"], d["doc_type"], d["page"], k, snip, prio,
+                             str((DATA / "raw" / d["bank"] / f"{d['year']}_{d['doc_type']}.pdf").relative_to(ROOT)), d.get("lang") or "vi"])
 cand.sort(key=lambda r: (r[0], r[1], r[2], -r[7]))
-with open(OUT / "evidence_candidates.csv", "w", newline="", encoding="utf8") as f:
-    w = csv.writer(f); w.writerow(["criterion", "bank", "year", "doc_type", "page", "keyword", "snippet", "read_priority(1-5)"]); w.writerows(cand)
-with open(OUT / "keyword_density.csv", "w", newline="", encoding="utf8") as f:
+with open(OUT / "evidence_candidates.csv", "w", newline="", encoding="utf-8-sig") as f:
+    w = csv.writer(f); w.writerow(["criterion", "bank", "year", "doc_type", "page", "keyword", "snippet", "read_priority(1-5)", "source_file", "lang"]); w.writerows(cand)
+with open(OUT / "keyword_density.csv", "w", newline="", encoding="utf-8-sig") as f:
     w = csv.writer(f); w.writerow(["bank", "year", "criterion", "hits", "words", "hits_per_10k_words"])
     for (b, y, c), n in sorted(hits.items()):
         wd = words[(b, y)]; w.writerow([b, y, c, n, wd, round(n / wd * 1e4, 2) if wd else ""])

@@ -68,6 +68,7 @@ if not a.post_only:
 
 run("03 tìm bằng chứng", "03_locate_evidence.py", *filt())
 run("04 số BCTC + KPI", "04_extract_numbers.py", "--bctc", "--kpi", *filt())
+run("09c chấm DBI bằng quy tắc", "09c_auto_score.py", *filt())
 run("12 trang các báo cáo chính", "12_appendix.py", "--pages")
 run("12 gợi ý dti_inputs", "12_appendix.py", "--prefill")
 run("12 ma trận sẵn có dữ liệu", "12_appendix.py")

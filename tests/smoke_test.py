@@ -1,7 +1,8 @@
 """Smoke test: chạy pipeline offline trên PDF mẫu trong examples/ (không cần mạng, không cần torch).
 Chạy từ thư mục scripts/:  python ../tests/smoke_test.py
 Test chạy trên BẢN SAO tạm của repo nên không làm bẩn data/ và out/ thật."""
-import pathlib, shutil, subprocess, sys, tempfile, json
+import pathlib, shutil, subprocess, sys, tempfile, json, os
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 fails = []
@@ -21,7 +22,8 @@ shutil.copy(work / "examples" / "mau_bctc.pdf", work / "data" / "raw" / "demo" /
 
 def run(*args):
     # Đọc bytes rồi decode UTF-8: trên Windows text=True hay dùng cp1252 và vỡ khi script in tiếng Việt
-    r = subprocess.run([sys.executable, *args], cwd=sc, capture_output=True)
+    r = subprocess.run([sys.executable, *args], cwd=sc, capture_output=True,
+                       env=dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8"))
     out = (r.stdout or b"").decode("utf-8", "replace") + (r.stderr or b"").decode("utf-8", "replace")
     return r.returncode, out
 
@@ -68,19 +70,19 @@ for y in ("2023", "2024"):
 with open(tx / "enbank_2024_bctc.jsonl", "w", encoding="utf8") as f:
     f.write(json.dumps({"bank": "enbank", "year": "2024", "doc_type": "bctc", "page": 1, "engine": "x", "junk": 0, "lang": "en", "text": BCTC_EN}, ensure_ascii=False) + "\n")
 rc, out = run("04_extract_numbers.py", "--bctc", "--kpi", "--bank", "enbank")
-fin = list(_csv.DictReader(open(work / "out/financial_candidates.csv", encoding="utf8")))
+fin = list(_csv.DictReader(open(work / "out/financial_candidates.csv", encoding="utf-8-sig")))
 vars_found = {r["variable"] for r in fin if r["bank"] == "enbank"}
 need = {"total_assets", "equity", "net_profit", "opex", "net_interest_income", "customer_deposits"}
 check("04 --bctc nhãn tiếng Anh", rc == 0 and need <= vars_found, f"thiếu {need - vars_found}")
 check("04 --bank lọc đúng (chỉ enbank)", all(r["bank"] == "enbank" for r in fin))
-kp = list(_csv.DictReader(open(work / "out/kpi_candidates.csv", encoding="utf8")))
+kp = list(_csv.DictReader(open(work / "out/kpi_candidates.csv", encoding="utf-8-sig")))
 check("04 --kpi mẫu câu tiếng Anh", any(r["variable"] == "digital_txn_share" and "98.5" in r["numbers_found"] for r in kp), str([r["variable"] for r in kp]))
 rc, out = run("03_locate_evidence.py", "--bank", "enbank")
-ev = list(_csv.DictReader(open(work / "out/evidence_candidates.csv", encoding="utf8")))
+ev = list(_csv.DictReader(open(work / "out/evidence_candidates.csv", encoding="utf-8-sig")))
 crit_found = {r["criterion"] for r in ev}
 check("03 từ khóa tiếng Anh + lọc --bank", rc == 0 and ev and all(r["bank"] == "enbank" for r in ev) and {"K2", "O1", "D1", "D2"} <= crit_found, str(sorted(crit_found)))
 rc, out = run("03_locate_evidence.py", "--year", "1999")
-check("03 --year không khớp thì không lỗi, kết quả rỗng", rc == 0 and len(list(_csv.DictReader(open(work / "out/evidence_candidates.csv", encoding="utf8")))) == 0)
+check("03 --year không khớp thì không lỗi, kết quả rỗng", rc == 0 and len(list(_csv.DictReader(open(work / "out/evidence_candidates.csv", encoding="utf-8-sig")))) == 0)
 rc, out = run("07_text_mining.py", "--bank", "enbank", "--only-lang", "en")
 tm = list(_csv.DictReader(open(work / "out/tm_criterion.csv", encoding="utf-8-sig")))
 check("07 có cột lang và chạy trên văn bản tiếng Anh", rc == 0 and tm and tm[0]["lang"] == "en" and any(float(r["bm25"]) > 0 for r in tm), out[-300:])
@@ -92,7 +94,7 @@ cells = ["Deposits from customers","18","533,392,350","454,660,779","TOTAL SHARE
 (work / "data" / "text" / "zz_2024_bctc.jsonl").write_text(json.dumps({"bank": "zz", "year": 2024, "doc_type": "bctc", "page": 1, "text": "\n".join(cells)}, ensure_ascii=False) + "\n", encoding="utf8")
 rc, out = run("04_extract_numbers.py", "--bctc", "--bank", "zz", "--year", "2024")
 import csv
-fc = {r["variable"]: r["parsed_numbers(first4)"] for r in csv.DictReader(open(work / "out/financial_candidates.csv", encoding="utf8"))}
+fc = {r["variable"]: r["parsed_numbers(first4)"] for r in csv.DictReader(open(work / "out/financial_candidates.csv", encoding="utf-8-sig"))}
 check("04 ô-mỗi-dòng: tiền gửi KH bỏ qua số thuyết minh 18", fc.get("customer_deposits", "").startswith("533,392,350"), str(fc))
 check("04 ô-mỗi-dòng: vốn CSH (dấu ' cong)", fc.get("total_equity", "").startswith("147,939,621"), str(fc))
 check("04 ô-mỗi-dòng: TOI", fc.get("total_operating_income", "").startswith("46,990,397"), str(fc))

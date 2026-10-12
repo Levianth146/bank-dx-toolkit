@@ -81,9 +81,15 @@ if "--build-train" in sys.argv:
     if not p.exists(): sys.exit("Thiếu out/evidence_candidates.csv (chạy 03_locate_evidence.py rồi điền cột valid)")
     ev = pd.read_csv(p)
     if "valid" not in ev.columns: sys.exit("Thêm cột `valid` (1 = bằng chứng đúng của tiêu chí; 0 = sai) vào evidence_candidates.csv rồi chạy lại")
+    if "lang" not in ev:
+        sys.exit("Thiếu cột lang: chạy lại bước 03 và gắn nhãn valid để bảo đảm dữ liệu huấn luyện tiếng Việt.")
+    ev = ev[ev["lang"].map(lambda lang: keep_lang(lang, "vi")).astype(bool)].copy()
+    selected = pd.Series((keep(r.bank, r.year, getattr(r, "doc_type", None)) for r in ev.itertuples()),
+                         index=ev.index, dtype=bool)
+    ev = ev.loc[selected]
     ev = ev[ev["valid"].isin([0, 1])].copy()
     ev["label"] = np.where(ev["valid"] == 1, ev["criterion"], "none"); ev["text"] = ev["snippet"].astype(str)
-    ev[["text", "label", "criterion", "bank", "year"]].to_csv(OUT / "phobert_train.csv", index=False, encoding="utf-8-sig")
+    ev[["text", "label", "criterion", "bank", "year", "lang"]].to_csv(OUT / "phobert_train.csv", index=False, encoding="utf-8-sig")
     print(ev["label"].value_counts().to_string()); print("-> out/phobert_train.csv")
 
 # ---------------------------------------------------------------- finetune
@@ -112,8 +118,11 @@ def predict_proba(tok, model, texts, torch, dev):
     return np.vstack(P) if P else np.zeros((0, 1))
 
 if "--finetune" in sys.argv:
+    tr = pd.read_csv(OUT / "phobert_train.csv")
+    if "lang" not in tr or tr.empty or not tr["lang"].eq("vi").all():
+        sys.exit("Dữ liệu huấn luyện phải có lang=vi và có ít nhất một câu. Chạy lại --build-train.")
     torch, tf = libs(); dev = "cuda" if torch.cuda.is_available() else "cpu"; print("Thiết bị:", dev)
-    tr = pd.read_csv(OUT / "phobert_train.csv"); labels = sorted(tr["label"].unique()); l2i = {l: i for i, l in enumerate(labels)}
+    labels = sorted(tr["label"].unique()); l2i = {l: i for i, l in enumerate(labels)}
     X = tr["text"].astype(str).tolist(); y = np.array([l2i[l] for l in tr["label"]])
     print(f"{len(X)} câu, {len(labels)} nhãn; số câu/nhãn nhỏ nhất = {np.bincount(y).min()}")
     if CVK >= 2 and np.bincount(y).min() >= CVK:
@@ -137,6 +146,7 @@ if "--predict" in sys.argv:
     labels = json.load(open(MODEL_DIR / "labels.json", encoding="utf8")); l2i = {l: i for i, l in enumerate(labels)}
     tok = tf.AutoTokenizer.from_pretrained(MODEL_DIR); model = tf.AutoModelForSequenceClassification.from_pretrained(MODEL_DIR).to(dev)
     cand = keyword_sentences(); print(len(cand), "câu chứa từ khóa")
+    if not cand: sys.exit("Không có câu tiếng Việt chứa từ khóa với bộ lọc đã chọn.")
     P = predict_proba(tok, model, [c[6] for c in cand], torch, dev)
     rows = []
     for c, p in zip(cand, P):
@@ -155,6 +165,7 @@ if "--predict" in sys.argv:
 if "--anchors" in sys.argv:
     torch, tf = libs(); dev = "cuda" if torch.cuda.is_available() else "cpu"
     an = pd.read_csv(CONF / "rubric_anchors.csv"); cand = keyword_sentences(); print(len(cand), "câu chứa từ khóa;", len(an), "neo rubric")
+    if not cand: sys.exit("Không có câu tiếng Việt chứa từ khóa với bộ lọc đã chọn.")
     tok = tf.AutoTokenizer.from_pretrained(MODEL); enc_model = tf.AutoModel.from_pretrained(MODEL).to(dev).eval()
     def embed(texts):
         E = []

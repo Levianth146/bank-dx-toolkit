@@ -57,7 +57,7 @@ for jf in sorted((DATA / "text").glob("*.jsonl")):
                 chunks.append(" ".join(x for b in buf for x in b)); meta.append((d["bank"], d["year"])); buf, n = [], 0
         if n >= CHUNK // 3:
             chunks.append(" ".join(x for b in buf for x in b)); meta.append((d["bank"], d["year"]))
-if SKIPPED: print(f"Bỏ qua {len(SKIPPED)} văn bản không phải tiếng Việt (LDA này dùng stopword tiếng Việt): {sorted(SKIPPED)[:8]}... Dùng --only-lang en nếu muốn chạy riêng cho tiếng Anh (chưa có stopword tiếng Anh đầy đủ).")
+if SKIPPED: print(f"Bỏ qua {len(SKIPPED)} văn bản không phải tiếng Việt (LDA này dùng stopword tiếng Việt): {sorted(SKIPPED)[:8]}... LDA này chỉ hỗ trợ tiếng Việt; dùng bước 07 cho tiếng Anh.")
 if len(chunks) < 50: sys.exit(f"Chỉ có {len(chunks)} đoạn; cần ít nhất vài trăm đoạn (báo cáo thật ~ hàng nghìn). Chạy bước 1-2 trước.")
 meta = pd.DataFrame(meta, columns=["bank", "year"])
 print(f"{len(chunks)} đoạn từ {meta.drop_duplicates().shape[0]} văn bản (ngân hàng-năm)")

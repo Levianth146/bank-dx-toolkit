@@ -1,0 +1,331 @@
+﻿bank,year,indicator,x,L,U,direction,z,status,note
+agribank,2020,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+agribank,2020,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+agribank,2020,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+agribank,2020,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+agribank,2020,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+agribank,2020,T-Q1,0.08710092204125063,0.0,0.303798,higher_better,28.670669998239166,có dữ liệu,dùng số cuối kỳ (thiếu năm trước)
+agribank,2020,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+agribank,2020,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+agribank,2020,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+agribank,2020,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+agribank,2020,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+bidv,2020,K-Q1,53.0,0.0,90.0,higher_better,58.88888888888889,có dữ liệu,định nghĩa: all_txn
+bidv,2020,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+bidv,2020,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+bidv,2020,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+bidv,2020,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+bidv,2020,T-Q1,0.10910823428393976,0.0,0.303798,higher_better,35.914730934351034,có dữ liệu,dùng số cuối kỳ (thiếu năm trước)
+bidv,2020,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+bidv,2020,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+bidv,2020,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+bidv,2020,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+bidv,2020,C-Q2,59.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+mb,2020,K-Q1,85.0,0.0,90.0,higher_better,94.44444444444444,có dữ liệu,định nghĩa: all_txn
+mb,2020,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+mb,2020,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+mb,2020,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+mb,2020,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+mb,2020,T-Q1,0.23626851425809564,0.0,0.303798,higher_better,77.77158317635259,có dữ liệu,dùng số cuối kỳ (thiếu năm trước)
+mb,2020,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+mb,2020,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+mb,2020,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+mb,2020,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+mb,2020,C-Q2,30.0,0.0,38.7,higher_better,77.51937984496124,có dữ liệu,định nghĩa: avg_hours
+tcb,2020,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+tcb,2020,K-Q2,46.42857142857143,0.0,100.0,higher_better,46.42857142857143,có dữ liệu,digital_customers/total_customers (registered/total)
+tcb,2020,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+tcb,2020,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+tcb,2020,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+tcb,2020,T-Q1,0.29485654045897824,0.0,0.303798,higher_better,97.05677471839125,có dữ liệu,dùng số cuối kỳ (thiếu năm trước)
+tcb,2020,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+tcb,2020,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+tcb,2020,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+tcb,2020,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+tcb,2020,C-Q2,71.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+vcb,2020,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+vcb,2020,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+vcb,2020,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+vcb,2020,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+vcb,2020,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+vcb,2020,T-Q1,,0.0,0.303798,higher_better,,thiếu dữ liệu,thiếu nguyên giá phần mềm hoặc tổng tài sản
+vcb,2020,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+vcb,2020,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+vcb,2020,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+vcb,2020,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+vcb,2020,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+agribank,2021,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+agribank,2021,K-Q2,32.72186415468518,0.0,100.0,higher_better,32.72186415468518,có dữ liệu,digital_customers/total_customers (registered/depositors)
+agribank,2021,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+agribank,2021,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+agribank,2021,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+agribank,2021,T-Q1,0.08422831181646041,0.0,0.303798,higher_better,27.72510412065267,có dữ liệu,
+agribank,2021,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+agribank,2021,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+agribank,2021,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,thiếu TOI hoặc CBNV
+agribank,2021,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+agribank,2021,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+bidv,2021,K-Q1,66.9,0.0,90.0,higher_better,74.33333333333334,có dữ liệu,định nghĩa: all_txn
+bidv,2021,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+bidv,2021,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+bidv,2021,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+bidv,2021,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+bidv,2021,T-Q1,0.11845747650972595,0.0,0.303798,higher_better,38.99218444812867,có dữ liệu,
+bidv,2021,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+bidv,2021,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+bidv,2021,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+bidv,2021,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+bidv,2021,C-Q2,16.2,0.0,38.7,higher_better,41.860465116279066,có dữ liệu,định nghĩa: days_x6h
+mb,2021,K-Q1,92.3,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+mb,2021,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+mb,2021,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+mb,2021,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+mb,2021,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+mb,2021,T-Q1,0.32867922883071754,0.0,0.303798,higher_better,100.0,có dữ liệu,
+mb,2021,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+mb,2021,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+mb,2021,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+mb,2021,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+mb,2021,C-Q2,43.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+tcb,2021,K-Q1,81.0,0.0,90.0,higher_better,90.0,có dữ liệu,định nghĩa: remit_domestic
+tcb,2021,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+tcb,2021,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+tcb,2021,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+tcb,2021,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+tcb,2021,T-Q1,0.3781873869399407,0.0,0.303798,higher_better,100.0,có dữ liệu,
+tcb,2021,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+tcb,2021,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+tcb,2021,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+tcb,2021,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+tcb,2021,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+vcb,2021,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+vcb,2021,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+vcb,2021,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+vcb,2021,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+vcb,2021,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+vcb,2021,T-Q1,,0.0,0.303798,higher_better,,thiếu dữ liệu,thiếu nguyên giá phần mềm hoặc tổng tài sản
+vcb,2021,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+vcb,2021,O-Q1,,-0.584529,0.0,lower_better,,thiếu dữ liệu,không có năm đầu kỳ
+vcb,2021,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+vcb,2021,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+vcb,2021,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+agribank,2022,K-Q1,91.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+agribank,2022,K-Q2,72.5,0.0,100.0,higher_better,72.5,có dữ liệu,digital_customers/total_customers (registered/lower_bound_or_accounts)
+agribank,2022,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+agribank,2022,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+agribank,2022,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+agribank,2022,T-Q1,0.0774775903050695,0.0,0.303798,higher_better,25.50299551184323,có dữ liệu,
+agribank,2022,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+agribank,2022,O-Q1,-4.122457575800773,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)
+agribank,2022,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+agribank,2022,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+agribank,2022,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+bidv,2022,K-Q1,75.9,0.0,90.0,higher_better,84.33333333333334,có dữ liệu,định nghĩa: all_txn
+bidv,2022,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+bidv,2022,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+bidv,2022,S-Q1,9.0,0.0,18.0,higher_better,50.0,có dữ liệu,"2021->2022, quy về điểm %/năm"
+bidv,2022,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+bidv,2022,T-Q1,0.11260825210305414,0.0,0.303798,higher_better,37.06681811699028,có dữ liệu,
+bidv,2022,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+bidv,2022,O-Q1,1.270781956425406,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)
+bidv,2022,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+bidv,2022,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+bidv,2022,C-Q2,87.12,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: days_x6h
+mb,2022,K-Q1,95.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+mb,2022,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+mb,2022,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+mb,2022,S-Q1,2.700000000000003,0.0,18.0,higher_better,15.000000000000016,có dữ liệu,"2021->2022, quy về điểm %/năm"
+mb,2022,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+mb,2022,T-Q1,0.3652658068069713,0.0,0.303798,higher_better,100.0,có dữ liệu,
+mb,2022,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+mb,2022,O-Q1,-1.0155172407415947,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)
+mb,2022,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+mb,2022,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+mb,2022,C-Q2,35.0,0.0,38.7,higher_better,90.43927648578811,có dữ liệu,định nghĩa: avg_hours
+tcb,2022,K-Q1,86.0,0.0,90.0,higher_better,95.55555555555556,có dữ liệu,định nghĩa: remit_domestic
+tcb,2022,K-Q2,57.407407407407405,0.0,100.0,higher_better,57.407407407407405,có dữ liệu,digital_customers/total_customers (registered/total)
+tcb,2022,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+tcb,2022,S-Q1,5.0,0.0,18.0,higher_better,27.77777777777778,có dữ liệu,"2021->2022, quy về điểm %/năm"
+tcb,2022,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+tcb,2022,T-Q1,0.5152259341298467,0.0,0.303798,higher_better,100.0,có dữ liệu,
+tcb,2022,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+tcb,2022,O-Q1,2.6200979632595143,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)
+tcb,2022,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+tcb,2022,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+tcb,2022,C-Q2,70.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+vcb,2022,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+vcb,2022,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+vcb,2022,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+vcb,2022,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+vcb,2022,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+vcb,2022,T-Q1,,0.0,0.303798,higher_better,,thiếu dữ liệu,thiếu nguyên giá phần mềm hoặc tổng tài sản
+vcb,2022,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+vcb,2022,O-Q1,0.12901153612723348,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)
+vcb,2022,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+vcb,2022,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+vcb,2022,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+agribank,2023,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+agribank,2023,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+agribank,2023,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+agribank,2023,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+agribank,2023,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+agribank,2023,T-Q1,0.08401311604842085,0.0,0.303798,higher_better,27.654268970967827,có dữ liệu,
+agribank,2023,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+agribank,2023,O-Q1,0.31330772620641767,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)
+agribank,2023,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cách >= 2 năm
+agribank,2023,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+agribank,2023,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+bidv,2023,K-Q1,93.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: full_line
+bidv,2023,K-Q2,77.19941122582372,0.0,100.0,higher_better,77.19941122582372,có dữ liệu,digital_customers/total_customers (transacting/retail+corporate)
+bidv,2023,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+bidv,2023,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+bidv,2023,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+bidv,2023,T-Q1,0.10412210313798338,0.0,0.303798,higher_better,34.27346563768799,có dữ liệu,
+bidv,2023,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+bidv,2023,O-Q1,1.6016496011294006,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)
+bidv,2023,O-Q2,3.884874900185631,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2023
+bidv,2023,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+bidv,2023,C-Q2,98.7,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: days_x6h
+mb,2023,K-Q1,96.7,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+mb,2023,K-Q2,86.0,0.0,100.0,higher_better,86.0,có dữ liệu,KH số/tổng KH do NH công bố
+mb,2023,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+mb,2023,S-Q1,2.200000000000003,0.0,18.0,higher_better,12.22222222222224,có dữ liệu,"2021->2023, quy về điểm %/năm"
+mb,2023,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+mb,2023,T-Q1,0.36093184843368037,0.0,0.303798,higher_better,100.0,có dữ liệu,
+mb,2023,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+mb,2023,O-Q1,-0.9934044102662831,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)
+mb,2023,O-Q2,9.694865231163607,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2023
+mb,2023,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+mb,2023,C-Q2,51.22,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: incl_new_hire
+tcb,2023,K-Q1,94.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: retail
+tcb,2023,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+tcb,2023,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+tcb,2023,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+tcb,2023,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+tcb,2023,T-Q1,0.5873825315207434,0.0,0.303798,higher_better,100.0,có dữ liệu,
+tcb,2023,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+tcb,2023,O-Q1,1.4713710409683625,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)
+tcb,2023,O-Q2,4.800113248491944,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2023
+tcb,2023,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+tcb,2023,C-Q2,82.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+vcb,2023,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+vcb,2023,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+vcb,2023,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+vcb,2023,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+vcb,2023,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+vcb,2023,T-Q1,,0.0,0.303798,higher_better,,thiếu dữ liệu,thiếu nguyên giá phần mềm hoặc tổng tài sản
+vcb,2023,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+vcb,2023,O-Q1,0.6378320255797902,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)
+vcb,2023,O-Q2,4.13274631468783,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2023
+vcb,2023,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+vcb,2023,C-Q2,41.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+agribank,2024,K-Q1,96.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+agribank,2024,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+agribank,2024,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+agribank,2024,S-Q1,2.5,0.0,18.0,higher_better,13.88888888888889,có dữ liệu,"2022->2024, quy về điểm %/năm"
+agribank,2024,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+agribank,2024,T-Q1,0.07816625620370936,0.0,0.303798,higher_better,25.729680973445962,có dữ liệu,
+agribank,2024,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+agribank,2024,O-Q1,-1.0803169219194284,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2024 (điểm %/năm; âm = cải thiện)
+agribank,2024,O-Q2,3.8210853707213888,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2022->2024
+agribank,2024,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+agribank,2024,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+bidv,2024,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+bidv,2024,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+bidv,2024,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+bidv,2024,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+bidv,2024,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+bidv,2024,T-Q1,0.125185715188676,0.0,0.303798,higher_better,41.20689247087736,có dữ liệu,
+bidv,2024,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+bidv,2024,O-Q1,1.1178167727532664,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2024 (điểm %/năm; âm = cải thiện)
+bidv,2024,O-Q2,5.8726322916924145,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2024
+bidv,2024,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+bidv,2024,C-Q2,59.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+mb,2024,K-Q1,98.6,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+mb,2024,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+mb,2024,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+mb,2024,S-Q1,2.099999999999999,0.0,18.0,higher_better,11.666666666666663,có dữ liệu,"2021->2024, quy về điểm %/năm"
+mb,2024,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+mb,2024,T-Q1,0.3663544194823482,0.0,0.303798,higher_better,100.0,có dữ liệu,
+mb,2024,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+mb,2024,O-Q1,-0.9398343043429627,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2024 (điểm %/năm; âm = cải thiện)
+mb,2024,O-Q2,9.372346896041295,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2024
+mb,2024,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+mb,2024,C-Q2,70.73,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: incl_new_hire
+tcb,2024,K-Q1,91.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: retail
+tcb,2024,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+tcb,2024,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+tcb,2024,S-Q1,-3.0,0.0,18.0,higher_better,0.0,có dữ liệu,"2023->2024, quy về điểm %/năm"
+tcb,2024,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+tcb,2024,T-Q1,0.7126073687986885,0.0,0.303798,higher_better,100.0,có dữ liệu,
+tcb,2024,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+tcb,2024,O-Q1,0.857340113813418,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2024 (điểm %/năm; âm = cải thiện)
+tcb,2024,O-Q2,9.504594947940358,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2024
+tcb,2024,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+tcb,2024,C-Q2,54.7,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+vcb,2024,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+vcb,2024,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+vcb,2024,K-Q3,,1.0,5.0,higher_better,,thiếu dữ liệu,chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)
+vcb,2024,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+vcb,2024,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+vcb,2024,T-Q1,,0.0,0.303798,higher_better,,thiếu dữ liệu,thiếu nguyên giá phần mềm hoặc tổng tài sản
+vcb,2024,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+vcb,2024,O-Q1,0.8314615298674989,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2024 (điểm %/năm; âm = cải thiện)
+vcb,2024,O-Q2,1.9242479731499396,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2024
+vcb,2024,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+vcb,2024,C-Q2,36.1,0.0,38.7,higher_better,93.28165374677002,có dữ liệu,định nghĩa: avg_hours
+agribank,2025,K-Q1,97.0,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+agribank,2025,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+agribank,2025,K-Q3,3.799749065420561,1.0,5.0,higher_better,69.99372663551402,có dữ liệu,"điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+agribank,2025,S-Q1,2.0,0.0,18.0,higher_better,11.11111111111111,có dữ liệu,"2022->2025, quy về điểm %/năm"
+agribank,2025,S-Q2,30.428457427983236,0.0,24.455463,higher_better,100.0,có dữ liệu,CAGR 2021->2025
+agribank,2025,T-Q1,0.0662704617516018,0.0,0.303798,higher_better,21.81398881875516,có dữ liệu,
+agribank,2025,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+agribank,2025,O-Q1,-1.2427015184425674,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)
+agribank,2025,O-Q2,,0.0,1.18425,higher_better,,thiếu dữ liệu,thiếu TOI hoặc CBNV
+agribank,2025,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+agribank,2025,C-Q2,,0.0,38.7,higher_better,,thiếu dữ liệu,thiếu giờ đào tạo
+bidv,2025,K-Q1,,0.0,90.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share
+bidv,2025,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+bidv,2025,K-Q3,3.9684325539153655,1.0,5.0,higher_better,74.21081384788414,có dữ liệu,"điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+bidv,2025,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,thiếu digital_txn_share năm cuối
+bidv,2025,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+bidv,2025,T-Q1,0.11306415605268264,0.0,0.303798,higher_better,37.21688623779045,có dữ liệu,
+bidv,2025,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+bidv,2025,O-Q1,0.5527770247039507,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)
+bidv,2025,O-Q2,7.830334243570269,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2025
+bidv,2025,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+bidv,2025,C-Q2,60.0,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+mb,2025,K-Q1,98.8,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+mb,2025,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+mb,2025,K-Q3,4.7456748783439044,1.0,5.0,higher_better,93.6418719585976,có dữ liệu,"điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+mb,2025,S-Q1,1.625,0.0,18.0,higher_better,9.027777777777777,có dữ liệu,"2021->2025, quy về điểm %/năm"
+mb,2025,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+mb,2025,T-Q1,0.3260002235640265,0.0,0.303798,higher_better,100.0,có dữ liệu,
+mb,2025,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+mb,2025,O-Q1,-1.109264587257126,-0.584529,0.0,lower_better,100.0,có dữ liệu,ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)
+mb,2025,O-Q2,9.119292878372875,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2025
+mb,2025,C-Q1,12.092483312373028,0.0,100.0,higher_better,12.092483312373028,có dữ liệu,
+mb,2025,C-Q2,82.91,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+tcb,2025,K-Q1,86.0,0.0,90.0,higher_better,95.55555555555556,có dữ liệu,định nghĩa: retail
+tcb,2025,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+tcb,2025,K-Q3,4.757872872125536,1.0,5.0,higher_better,93.9468218031384,có dữ liệu,"điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+tcb,2025,S-Q1,-4.0,0.0,18.0,higher_better,0.0,có dữ liệu,"2023->2025, quy về điểm %/năm"
+tcb,2025,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,thiếu digital_customers năm cuối
+tcb,2025,T-Q1,0.6965156227415263,0.0,0.303798,higher_better,100.0,có dữ liệu,
+tcb,2025,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+tcb,2025,O-Q1,0.16030926836068105,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)
+tcb,2025,O-Q2,9.270860571656513,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2025
+tcb,2025,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+tcb,2025,C-Q2,53.6,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours
+vcb,2025,K-Q1,91.4,0.0,90.0,higher_better,100.0,có dữ liệu,định nghĩa: all_txn
+vcb,2025,K-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,thiếu số KH số hoặc tổng KH
+vcb,2025,K-Q3,3.8171989683409273,1.0,5.0,higher_better,70.42997420852318,có dữ liệu,"điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+vcb,2025,S-Q1,,0.0,18.0,higher_better,,thiếu dữ liệu,không có năm đầu kỳ cùng định nghĩa
+vcb,2025,S-Q2,,0.0,24.455463,higher_better,,thiếu dữ liệu,không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm
+vcb,2025,T-Q1,,0.0,0.303798,higher_better,,thiếu dữ liệu,thiếu nguyên giá phần mềm hoặc tổng tài sản
+vcb,2025,T-Q2,,0.0,100.0,higher_better,,thiếu dữ liệu,chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)
+vcb,2025,O-Q1,0.9389335657608804,-0.584529,0.0,lower_better,0.0,có dữ liệu,ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)
+vcb,2025,O-Q2,2.8668341329044944,0.0,1.18425,higher_better,100.0,có dữ liệu,CAGR TOI/CBNV bình quân 2021->2025
+vcb,2025,C-Q1,,0.0,100.0,higher_better,,thiếu dữ liệu,không công bố nhân sự công nghệ
+vcb,2025,C-Q2,48.96,0.0,38.7,higher_better,100.0,có dữ liệu,định nghĩa: avg_hours

@@ -12,7 +12,7 @@ B = list(banks["banks"].keys()); years = banks["years"]; cyears = banks["coding_
 # 1) sources.csv: danh sách tài liệu cần tải (điền URL thủ công)
 p = CONF / "sources.csv"
 if not p.exists():
-    with open(p, "w", newline="", encoding="utf8") as f:
+    with open(p, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f); w.writerow(["bank", "year", "doc_type", "url", "notes"])
         for b in B:
             for y in years:
@@ -45,16 +45,20 @@ ws.freeze_panes = "E2"
 wb.save(OUT / "coding_sheet.xlsx"); print("tạo", OUT / "coding_sheet.xlsx")
 
 # 3) manual_audit.xlsx: kiểm kê 8 nền tảng số
-PLAT = ["Mobile banking KHCN", "Ngân hàng số KHDN", "Mở TK/eKYC trực tuyến", "QR/ví/thanh toán nhanh",
-        "Vay số trực tuyến", "Open API/cổng developer", "Chatbot/trợ lý ảo", "Xác thực sinh trắc học/Smart OTP"]
-wb = Workbook(); ws = wb.active; ws.title = "audit"
-ws.append(["bank", "platform_no", "platform", "achieved(0/1)", "screenshot_or_url", "audit_date", "tester", "notes"])
-for b in B:
-    for i, pl in enumerate(PLAT, 1):
-        ws.append([b, i, pl, None, None, None, None, None])
-dv3 = DataValidation(type="list", formula1='"0,1"', allow_blank=True); ws.add_data_validation(dv3); dv3.add(f"D2:D{ws.max_row}")
-for col, wd in zip("ABCDEFGH", [10, 11, 32, 14, 40, 12, 12, 30]): ws.column_dimensions[col].width = wd
-wb.save(OUT / "manual_audit.xlsx"); print("tạo", OUT / "manual_audit.xlsx")
+if not (OUT / "manual_audit.xlsx").exists():
+    PLAT = ["Mobile banking KHCN", "Ngân hàng số KHDN", "Mở TK/eKYC trực tuyến", "QR/ví/thanh toán nhanh",
+            "Vay số trực tuyến", "Open API/cổng developer", "Chatbot/trợ lý ảo", "Xác thực sinh trắc học/Smart OTP"]
+    wb = Workbook(); ws = wb.active; ws.title = "audit"
+    ws.append(["bank", "platform_no", "platform", "achieved(0/1)", "screenshot_or_url", "audit_date", "tester", "notes"])
+    for b in B:
+        for i, pl in enumerate(PLAT, 1):
+            ws.append([b, i, pl, None, None, None, None, None])
+    dv3 = DataValidation(type="list", formula1='"0,1"', allow_blank=True); ws.add_data_validation(dv3); dv3.add(f"D2:D{ws.max_row}")
+    for col, wd in zip("ABCDEFGH", [10, 11, 32, 14, 40, 12, 12, 30]): ws.column_dimensions[col].width = wd
+    wb.save(OUT / "manual_audit.xlsx"); print("tạo", OUT / "manual_audit.xlsx")
+
+else:
+    print("giữ bảng kiểm kê đã có", OUT / "manual_audit.xlsx")
 
 # 4) dti_inputs.csv: nơi gom số liệu đã XÁC NHẬN cho 11 chỉ số DTI + biến Lớp C
 VARS = ["digital_txn_share", "digital_customers", "total_customers", "headcount", "tech_staff", "training_hours_per_head",
@@ -62,7 +66,7 @@ VARS = ["digital_txn_share", "digital_customers", "total_customers", "headcount"
         "casa_deposits", "customer_deposits", "net_interest_income", "net_fee_income"]
 p = OUT / "dti_inputs.csv"
 if not p.exists():
-    with open(p, "w", newline="", encoding="utf8") as f:
+    with open(p, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f); w.writerow(["bank", "year", "variable", "value", "unit", "source_file", "page", "confirmed_by", "note"])
         for b in B:
             for y in years:

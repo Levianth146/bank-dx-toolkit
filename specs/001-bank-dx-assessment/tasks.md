@@ -42,7 +42,9 @@ Làm **T021 → T023** trước khi mở rộng toàn bộ năm/ngân hàng.
 
 ---
 
-## Giai đoạn 3 — Chấm và thống nhất [US2, US5] (FR-13)
+## Giai đoạn 3 — Phương án cũ đã ngừng áp dụng (chấm tay/kappa)
+
+Các task T030/T031/T034/T032 dưới đây là lịch sử, không còn điều kiện bắt buộc kể từ quyết định nhóm ngày 2026-10-12. Thay bằng 09c, kiểm thử thuật toán và truy vết phiên bản theo `algorithm-scoring.md`.
 
 - ⬜ **T030** [US2] Hai người chấm độc lập ≥ 20% mẫu (tiêu chí × NH × năm) trên `out/coding_sheet.xlsx` (hoặc template từ 00); **không** để script ghi cột `final`
 - ⬜ **T031** [US2] Tính Cohen's κ có trọng số trên cặp `(coder1, coder2)` **trước** hòa giải; nếu κ < 0,6 → họp thống nhất rubric (`config/rubric_anchors.csv`) rồi chấm lại mẫu
@@ -77,7 +79,7 @@ Làm **T021 → T023** trước khi mở rộng toàn bộ năm/ngân hàng.
 ```
 T020 ✅ → T021 → T022(+smoke) → T023
                 ↘ T026 [P] → T024 → T025 [P]
-T027 [P] → T030 → T031 → T034 → T032 → T033 [P]
+09c thuật toán → kiểm thử/quét bằng chứng → coding_auto.xlsx; T033 chỉ khi dùng PhoBERT phụ trợ
 T040 → T041 → T042 → T043 → T051 → T052
 T050 [P] sau khi có final (hoặc chạy TM không --compare sớm hơn)
 ```
