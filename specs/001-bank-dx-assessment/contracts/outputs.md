@@ -25,11 +25,13 @@
 | `out/dti_inputs.csv` | bank, year, variable, value, unit, source_file, page, confirmed_by, note |
 | `out/app_ratings.csv` | date, bank, store, app_id, title, rating, rating_count, version, note |
 
-## Chấm tay và hòa giải (FR-13)
+## Chấm thuật toán (FR-13, quyết định 2026-10-12)
 | Tệp | Cột bắt buộc |
 |---|---|
-| `out/coding_sheet.xlsx` (hoặc đường dẫn template từ 00) | criterion, bank, year, coder1, coder2, final, evidence_ref, note — script **không** tự ghi `final` |
-| `out/adjudication_log.csv` (kế hoạch / thủ công) | criterion, bank, year, score_coder1, score_coder2, score_final, adjudicator, reason, resolved_at |
+| `out/auto_scores.csv` | criterion, bank, year, auto_score, status, evidence_file, evidence_page, evidence_quote, supporting_evidence, scoring_method, rules_version, rules_hash |
+| `out/coding_auto.xlsx` | các cột auto_scores + final (0–4 hoặc trống), criterion_name, notes; đầu vào mặc định bước 10 |
+| `out/auto_scoring_manifest.json` | scoring_method, rules_version, rules_hash, context, bộ lọc, input_hashes, missing_policy |
+| `out/coding_sheet.xlsx` | bảng chấm tay cũ, chỉ lưu trữ; không ghi đè hoặc lấy làm mặc định |
 
 ## Điểm, độ nhạy, phụ lục (kế hoạch — scripts 10–12)
 | Tệp | Cột bắt buộc |

@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 """Điền out/dti_inputs.csv từ financial/kpi candidates + đối chiếu statement_pages.
-Giữ dòng confirmed_by=manual-t023. Không ghi 0 cho thiếu số."""
+Giữ mọi dòng đã xác nhận thủ công hoặc kiểm khoảng hợp lý. Không ghi 0 cho thiếu số."""
 import csv
 import json
 import re
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
+from common import is_manual_confirmation
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT = ROOT / "data" / "text"
@@ -546,7 +547,7 @@ def main():
     out_rows = []
     for r in existing:
         bank, year, var = r["bank"], int(r["year"]), r["variable"]
-        if r.get("confirmed_by") == "manual-t023":
+        if is_manual_confirmation(r.get("confirmed_by")) or r.get("confirmed_by") == "range-checked":
             out_rows.append(r)
             kept += 1
             continue
@@ -566,7 +567,7 @@ def main():
 
         hit = results.get((bank, year, var))
         if hit:
-            out_rows.append(hit)
+            out_rows.append({**r, **hit})
             filled_new += 1
         else:
             nr = {
@@ -584,58 +585,7 @@ def main():
                     else "missing_candidate_needs_manual"
                 ),
             }
-            out_rows.append(nr)
-
-    # Khôi phục tcb 2024 manual từ bản đã biết nếu bị ghi đè: đọc lại từ backup không có —
-    # re-apply hard-coded T023 values for safety
-    T023 = {
-        "digital_txn_share": ("91", "%", "data/raw/tcb/2024_bctn.pdf", "7", "manual-t023",
-            "over 91% of retail transactions conducted online (không phải mọi kênh; 93% là usage rate app Business)"),
-        "digital_customers": ("", "", "data/raw/tcb/2024_bctn.pdf", "7", "",
-            "không công bố riêng số khách hàng số; chỉ có total customers 15.4M và engagement (91% GD online)"),
-        "total_customers": ("15400000", "customers", "data/raw/tcb/2024_bctn.pdf", "7", "manual-t023",
-            "over 15.4 million customers at year end (BCTN EN)"),
-        "headcount": ("11848", "employees", "data/raw/tcb/2024_bctn.pdf", "90", "manual-t023",
-            "Total employees In 2024 = 11,848 (2023: 11,614)"),
-        "tech_staff": ("", "", "", "", "",
-            "không công bố số nhân sự công nghệ/IT riêng trong BCTN/BCTC 2024 đã đối chiếu"),
-        "training_hours_per_head": ("54.7", "hours", "data/raw/tcb/2024_bctn.pdf", "91", "manual-t023",
-            "each employee averaged 54.7 hours in training; tổng 872,219 giờ"),
-        "software_gross_cost": ("6514231", "VND million", "data/raw/tcb/2024_bctc.pdf", "50", "manual-t023",
-            "Intangible FA note 14.2: Computer software — Cost As at 31 Dec 2024 = 6,514,231 (không lấy hao mòn/NBV)"),
-        "total_assets": ("978798549", "VND million", "data/raw/tcb/2024_bctc.pdf", "8", "manual-t023",
-            "TOTAL ASSETS 31/12/2024; cột so sánh 849,482,012 (2023)"),
-        "opex": ("15369735", "VND million", "data/raw/tcb/2024_bctc.pdf", "11", "manual-t023",
-            "Operating expenses (mục VIII) lấy trị tuyệt đối từ (15,369,735); dùng cho CIR=opex/TOI"),
-        "op_profit_before_provision": ("31620662", "VND million", "data/raw/tcb/2024_bctc.pdf", "11", "manual-t023",
-            "Profit before provision for credit losses (mục IX); TOI=IX+VIII=46,990,397 khớp dòng Total operating income"),
-        "net_profit": ("21522928", "VND million", "data/raw/tcb/2024_bctc.pdf", "11", "manual-t023",
-            "Net profit contributed to the Bank's shareholders (ưu tiên ROE); Profit after tax tổng = 21,760,104"),
-        "equity": ("145419155", "VND million", "data/raw/tcb/2024_bctc.pdf", "9", "manual-t023",
-            "Vốn CSH thuộc cổ đông NH = TOTAL SHAREHOLDERS' EQUITY 147,939,621 − NCI 2,520,466; đầu kỳ parent=130,299,232 → ROE=15.612% (SC-02)"),
-        "casa_deposits": ("191719796", "VND million", "data/raw/tcb/2024_bctc.pdf", "54", "manual-t023",
-            "Current accounts (thuyết minh tiền gửi KH); CASA=191,719,796/533,392,350=35.94%. BCTN nêu CASA ratio 40.9% (có thể bank-only/định nghĩa khác) — không ghi đè"),
-        "customer_deposits": ("533392350", "VND million", "data/raw/tcb/2024_bctc.pdf", "9", "manual-t023",
-            "Deposits from customers CĐKT hợp nhất; BCTN nêu 565.1 nghìn tỷ (khác phạm vi) — giữ số BCTC"),
-        "net_interest_income": ("35507963", "VND million", "data/raw/tcb/2024_bctc.pdf", "11", "manual-t023",
-            "Net interest and similar income"),
-        "net_fee_income": ("8042248", "VND million", "data/raw/tcb/2024_bctc.pdf", "11", "manual-t023",
-            "Net fees and commission income"),
-    }
-    for i, r in enumerate(out_rows):
-        if r["bank"] == "tcb" and r["year"] == "2024" and r["variable"] in T023:
-            v, u, sf, pg, cb, note = T023[r["variable"]]
-            out_rows[i] = {
-                "bank": "tcb",
-                "year": "2024",
-                "variable": r["variable"],
-                "value": v,
-                "unit": u,
-                "source_file": sf,
-                "page": pg,
-                "confirmed_by": cb,
-                "note": note,
-            }
+            out_rows.append({**r, **nr})
 
     with open(OUT / "dti_inputs.csv", "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
@@ -646,7 +596,7 @@ def main():
     for r in out_rows:
         if (r.get("value") or "").strip():
             filled_by[(r["bank"], r["year"])] += 1
-    print(f"filled_new={filled_new} (tcb2024 forced manual)")
+    print(f"filled_new={filled_new}; kept={kept}")
     print("Coverage filled/16:")
     for year in PRIORITY:
         for bank in BANKS:

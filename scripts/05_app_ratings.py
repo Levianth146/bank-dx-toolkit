@@ -40,7 +40,7 @@ if "--discover" in sys.argv:
 
 if "--collect" in sys.argv:
     p = OUT / "app_ratings.csv"; new = not p.exists()
-    with open(p, "a", newline="", encoding="utf8") as f:
+    with open(p, "a", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         if new: w.writerow(["date", "bank", "store", "app_id", "title", "rating", "rating_count", "version", "note"])
         for key, b in banks.items():

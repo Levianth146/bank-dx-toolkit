@@ -3,6 +3,7 @@
 Không ghi 0; KPI không chắc → để trống + not_disclosed."""
 import csv
 from pathlib import Path
+from common import is_manual_confirmation
 
 OUT = Path(__file__).resolve().parents[1] / "out" / "dti_inputs.csv"
 
@@ -151,7 +152,7 @@ def main():
     ]
     for bank, year, var, note in clears:
         i = idx.get((bank, year, var))
-        if i is not None:
+        if i is not None and not (is_manual_confirmation(rows[i].get("confirmed_by")) or rows[i].get("confirmed_by") == "range-checked"):
             rows[i].update({"value": "", "unit": "", "source_file": "", "page": "", "confirmed_by": "", "note": note})
 
     n = 0
@@ -159,7 +160,7 @@ def main():
         i = idx.get((bank, year, var))
         if i is None:
             continue
-        if rows[i].get("confirmed_by") == "manual-t023":
+        if is_manual_confirmation(rows[i].get("confirmed_by")) or rows[i].get("confirmed_by") == "range-checked":
             continue
         rows[i].update(
             {

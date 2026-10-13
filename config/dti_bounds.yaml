@@ -1,11 +1,13 @@
 # config/dti_bounds.yaml - Giới hạn L, U để chuẩn hóa 11 chỉ số DTI:  z = 100 * min{1; max[0; (x - L)/(U - L)]}
-# BẢN NHÁP (T040) soạn 2026-10-08. CHƯA KHÓA: locked=false. Script 10_score.py phải DỪNG nếu locked != true
-# hoặc còn biến có L/U = null. Quy tắc (spec FR-10): L, U lấy từ chuẩn ngành / tài liệu công bố, KHÔNG lấy MAX/MIN của mẫu 5 NH.
-# direction=lower_better: dùng z = 100 - z (hoặc đặt L > U); script 10 xử lý theo cột direction.
-# status: sourced = đã có nguồn công bố kiểm chứng | natural = giới hạn tự nhiên của thang đo (cần nhóm xác nhận)
-#         derived = suy ra có công thức từ chỉ số có nguồn (cần nhóm xác nhận) | needs_source = CHƯA có nguồn, L/U để null
-locked: false
-version: draft-2026-10-08
+# Bộ cận cố định cho lần tính chính thức; không hiệu chỉnh theo mẫu 5 ngân hàng.
+# Các cận external_reference là lựa chọn tham chiếu của nghiên cứu, KHÔNG phải chuẩn ngành bắt buộc.
+# direction=lower_better: z = 100 * clip((U-x)/(U-L), 0, 1), vẫn yêu cầu L < U.
+# Nguồn, phép tính và hạn chế: specs/001-bank-dx-assessment/dti-bounds-method.md.
+locked: true
+version: fixed-reference-v1-2026-10-12
+locked_on: '2026-10-12'
+calibration_method: natural_scales_and_external_bank_references
+method_document: specs/001-bank-dx-assessment/dti-bounds-method.md
 
 bounds:
   K-Q1:
@@ -32,7 +34,7 @@ bounds:
     status: natural
     source_citation: []
     rationale: "Thang tỷ lệ tự nhiên 0-100%. Chưa tìm được chuẩn ngành công bố cho 'khách hàng số / tổng khách hàng' (định nghĩa 'khách hàng số' khác nhau giữa các NH; tcb 2024 không công bố riêng)."
-    caveat: "U = 100 làm z thấp cho mọi NH; nhóm cần xác nhận hoặc thay bằng nguồn công bố. Nếu NH không công bố -> để trống (không điền 0)."
+    caveat: "U = 100 là biên tự nhiên; z bằng tỷ lệ phần trăm. Nếu NH không công bố -> để trống (không điền 0)."
 
   K-Q3:
     variable: app_rating
@@ -49,40 +51,43 @@ bounds:
 
   S-Q1:
     variable: delta_digital_txn_share
-    name: Thay đổi tỷ lệ giao dịch số so với năm trước
+    name: Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu
     unit: điểm %/năm
     direction: higher_better
     L: 0
     U: 18
     status: derived
     source_citation:
-      - "Suy ra từ K-Q1: (U_K-Q1 - L_K-Q1) / 5 năm = 90/5 = 18 điểm %/năm, 5 = độ dài kế hoạch QĐ 810 (2021-2025)."
+      - "Suy ra từ K-Q1: (U_K-Q1 - L_K-Q1) / 5 năm = 90/5 = 18 điểm %/năm, 5 là số năm lịch thuộc kế hoạch 2021-2025, được nghiên cứu chọn làm thời hạn mục tiêu; không phải khoảng cách giữa hai mốc dữ liệu."
     rationale: "Tốc độ cần có để đi từ 0 lên mức dẫn đầu 90% trong khung 5 năm của kế hoạch NHNN; L = 0 (không cải thiện). Giảm so với năm trước cho z = 0."
-    caveat: "Công thức tự suy ra, không phải chuẩn ngành công bố -> nhóm cần đồng ý. NH đã gần trần (>85%) khó có Δ lớn: cân nhắc ghi nhận hạn chế này."
+    caveat: "Cận do nghiên cứu suy ra, không phải chuẩn ngành công bố. Code đo tốc độ bình quân từ mốc đầu có dữ liệu, không nhất thiết chỉ so với năm trước. NH đã gần trần (>85%) khó có Δ lớn: cân nhắc ghi nhận hạn chế này."
 
   S-Q2:
     variable: digital_customers_cagr
     name: Tăng trưởng kép số khách hàng số (CAGR)
     unit: "%/năm"
     direction: higher_better
-    L: null
-    U: null
-    status: needs_source
-    source_citation: []
-    rationale: "CHƯA có nguồn. Gợi ý tìm: thống kê NHNN về tăng trưởng số tài khoản thanh toán / người dùng mobile-internet banking theo năm (bài NHNN 04/2025 chỉ nêu tăng trưởng GIAO DỊCH: Internet +35%, mobile +33%, QR +66% so cùng kỳ 2024 - không phải số khách hàng nên chưa dùng được)."
-    caveat: "Cần 2 mốc số khách hàng số cùng định nghĩa; nhiều NH không công bố."
+    L: 0
+    U: 24.455463
+    status: external_reference
+    source_citation:
+      - "Santander Annual Report 2018, trang in 6, bảng kế hoạch 2015-2018: https://www.santander.de/content/pdf/investor-relations/geschaeftsberichte/geschaeftsbericht-santander-2018-englisch.pdf"
+      - "Bản nộp SEC cùng báo cáo: https://www.sec.gov/Archives/edgar/data/891478/000155837019002417/san-20181231x20f.htm"
+    rationale: "U = 100*((32.0/16.6)^(1/3)-1), CAGR khách hàng số của ngân hàng ngoài mẫu; L = 0, không tăng trưởng. Cận tham chiếu, không phải mức tối ưu ngành."
+    caveat: "Hai mốc phải cùng định nghĩa khách hàng số; không thay bằng số giao dịch. Cần ít nhất 2 năm theo code. Vượt U được kẹp 100."
 
   T-Q1:
     variable: software_cost_to_assets
     name: Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân
     unit: "%"
     direction: higher_better
-    L: null
-    U: null
-    status: needs_source
-    source_citation: []
-    rationale: "CHƯA có chuẩn ngành công bố cho tỷ lệ này (khác với chi tiêu CNTT/doanh thu). Cần nguồn: báo cáo benchmark chi đầu tư phần mềm của ngân hàng (Gartner/IDC/Celent...) hoặc nghiên cứu học thuật; hoặc đổi định nghĩa chỉ số."
-    caveat: "Giá trị thực tế rất nhỏ (ví dụ tcb 2024: 6,514,231 / 978,798,549 = 0.67%); U cần cùng bậc độ lớn."
+    L: 0
+    U: 0.303798
+    status: external_reference
+    source_citation:
+      - "DBS Annual Report 2019, trang in 148-149 (PDF trang 77), note 26.1; trang in 189 (PDF trang 97): https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
+    rationale: "U = 100*1716/((550751+578946)/2), cùng đơn vị triệu SGD. Dùng nguyên giá, không dùng giá trị còn lại hoặc chi phí CNTT. L = 0."
+    caveat: "Khác biệt vốn hóa phần mềm và thuê dịch vụ có thể làm lệch so sánh. Chi nhiều chưa chứng minh hiệu quả; higher_better là giả định của mô hình. Vượt U được kẹp 100."
 
   T-Q2:
     variable: platform_coverage
@@ -99,39 +104,43 @@ bounds:
 
   O-Q1:
     variable: delta_cir
-    name: Thay đổi tỷ lệ chi phí / thu nhập (CIR) so với năm trước
+    name: Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu
     unit: điểm %/năm
     direction: lower_better
-    L: null
-    U: null
-    status: needs_source
-    source_citation: []
-    rationale: "CHƯA chốt. Tham chiếu mức CIR (không phải Δ): BCG (2016), 'Retail Bank Operational and Digital Leaders Reap the Rewards': CIR nhóm tứ phân vị đầu 47%, trung vị 54% (chênh 7 điểm %) - https://www.bcg.com/en-cl/publications/2016/financial-institutions-retail-banks-operational-and-digital-leaders-reap-the-rewards-part-of-banking-on-digital-simplicity . Có thể dùng chênh 7 điểm % làm biên Δ nhưng cần nhóm đồng ý."
-    caveat: "Δ CIR bị ảnh hưởng chu kỳ lãi suất/dự phòng, không chỉ chuyển đổi số."
+    L: -0.584529
+    U: 0
+    status: external_reference
+    source_citation:
+      - "DBS Annual Report 2019, trang in 189 (PDF trang 97), bảng 5 năm: https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
+    rationale: "L = 100*(((14544-8286)/14544)-((10801-5901)/10801))/4, thay đổi CIR toàn tập đoàn 2015-2019. U = 0, không cải thiện; giảm ít nhất bằng mốc L đạt 100. Không lấy chênh CIR giữa các nhóm ngân hàng làm tốc độ năm."
+    caveat: "CIR chịu ảnh hưởng thu nhập, lãi suất, cơ cấu kinh doanh và hạch toán. Mốc giảm khá nhỏ, dễ đạt trần; không chứng minh tác động nhân quả của chuyển đổi số."
 
   O-Q2:
     variable: income_per_employee_cagr
-    name: Tăng trưởng kép thu nhập hoạt động trên mỗi CBNV (CAGR)
+    name: Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)
     unit: "%/năm"
     direction: higher_better
-    L: null
-    U: null
-    status: needs_source
-    source_citation: []
-    rationale: "CHƯA có nguồn. Gợi ý: tốc độ tăng năng suất lao động / thu nhập hoạt động ngành ngân hàng từ thống kê NHNN hoặc Tổng cục Thống kê."
-    caveat: "CBNV phải cùng định nghĩa (bình quân hay cuối kỳ)."
+    L: 0
+    U: 1.18425
+    status: external_reference
+    source_citation:
+      - "DBS Annual Report 2019, trang in 68-69 (PDF trang 37) và 189 (PDF trang 97): https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
+      - "DBS Annual Report 2015, trang in 200 (PDF trang 196), bảng nhân sự: https://www.dbs.com/annualreports/2015/pdfs/downloads/full-annual-report-2015.pdf"
+    rationale: "U = 100*(((14544/((26857+28526)/2))/(10801/((21096+22017)/2)))^(1/4)-1). Thu nhập hoạt động / nhân sự bình quân đầu-cuối năm, cùng công thức code; L = 0."
+    caveat: "Tăng nhân sự, mua bán/sáp nhập, thuê ngoài, lạm phát và tỷ giá ảnh hưởng kết quả. Cận tham chiếu khá thấp, có thể kẹp nhiều quan sát ở 100; không dùng tăng năng suất theo giờ thay cho chỉ số này."
 
   C-Q1:
     variable: tech_staff_share
     name: Tỷ lệ nhân sự công nghệ / tổng CBNV
     unit: "%"
     direction: higher_better
-    L: null
-    U: null
-    status: needs_source
-    source_citation: []
-    rationale: "CHƯA có nguồn công khai kiểm chứng. Tìm: báo cáo IT staffing của Gartner/KPMG Banking Systems Survey hoặc báo cáo bền vững các ngân hàng/fintech tham chiếu. tcb 2024 không công bố số nhân sự công nghệ riêng -> nhiều NH sẽ để trống."
-    caveat: "Rủi ro dữ liệu thiếu cao nhất trong 11 chỉ số."
+    L: 0
+    U: 100
+    status: natural
+    source_citation:
+      - "Biên toán học của tỷ lệ tập con: 0 <= nhân sự công nghệ <= tổng nhân sự, cùng phạm vi và thời điểm."
+    rationale: "Chưa có nguồn đủ chắc để xác lập tỷ lệ nhân sự công nghệ tối ưu. Dùng biên tự nhiên: z bằng tỷ lệ phần trăm, không gán 20% hay 30% thành chuẩn ngành."
+    caveat: "U = 100 là biên toán học, không phải mục tiêu tổ chức ngân hàng. Chỉ số có điểm thấp và đóng góp thực tế nhỏ; phải công bố hạn chế này. Loại nhà thầu khỏi tử số nếu mẫu số không gồm nhà thầu; thiếu dữ liệu để trống."
 
   C-Q2:
     variable: training_hours_per_head
@@ -139,14 +148,13 @@ bounds:
     unit: giờ/người/năm
     direction: higher_better
     L: 0
-    U: null
-    status: needs_source
+    U: 38.7
+    status: external_reference
     source_citation:
-      - "Tham chiếu chung (không riêng ngân hàng, chủ yếu doanh nghiệp Mỹ): ATD State of the Industry 2025 - trung bình 13.7 giờ học chính thức/nhân viên năm 2024; 17.4 giờ năm 2023 (https://www.td.org/content/atd-blog/benchmarks-and-trends-from-the-2025-state-of-the-industry-report)."
-    rationale: "Nếu lấy U = 13.7 thì các NH Việt Nam (tcb 2024: 54.7 giờ) đều đạt 100 và chỉ số mất khả năng phân biệt; ATD đo 'giờ học chính thức' khác cách các NH Việt Nam tính (gồm cả e-learning/nội bộ). Cần chốt U từ nguồn riêng ngành tài chính-ngân hàng hoặc ghi rõ đây là hạn chế."
-    caveat: "Định nghĩa giờ đào tạo khác nhau giữa NH; ghi chú trong dti_inputs."
+      - "DBS Annual Report 2019, trang in 68-69 (PDF trang 37), chỉ tiêu đào tạo: https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
+    rationale: "U lấy giờ đào tạo bình quân công bố của DBS năm 2019; L = 0. Tham chiếu ngân hàng ngoài mẫu trước giai đoạn nghiên cứu, không phải quy định đào tạo tối thiểu."
+    caveat: "Phải ghi phạm vi nhân sự và hình thức đào tạo; DBS dùng nhân viên chính thức trong thống kê đào tạo. Nhiều giờ chưa chứng minh chất lượng; vượt U kẹp 100."
 
-# Ghi chú cho người chấm/nhóm:
-#  - 2/11 sourced (K-Q1, K-Q3); 3/11 natural/derived cần nhóm xác nhận (K-Q2, T-Q2, S-Q1); 6/11 needs_source (S-Q2, T-Q1, O-Q1, O-Q2, C-Q1, C-Q2).
-#  - Theo spec: chưa có nguồn thì KHÔNG tự lấy MAX mẫu; phương án thay thế phải ghi nguồn và lý do trước khi chấm.
-#  - Nếu không tìm được nguồn: (a) ghi 'không chuẩn hóa được' và để trống chỉ số đó (data_confidence giảm), hoặc (b) đổi định nghĩa chỉ số.
+# Khóa cận không có nghĩa đã đủ dữ liệu hoặc mô hình đã được kiểm chứng.
+# Giữ thiếu dữ liệu là trống; không hiệu chỉnh cận theo thứ hạng/kết quả của 5 ngân hàng.
+# Bản nháp trước khóa: out/dti_bounds_review_2026-10-12/dti_bounds.before.yaml.

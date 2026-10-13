@@ -1,65 +1,118 @@
-"""Tải tài liệu theo config/sources.csv (điền URL thủ công). Chỉ tải dòng có URL.
-Cách dùng: python 01_download.py [--force] [--no-robots] [--bank tcb,mb] [--year 2024] [--type bctn,bctc]
-Biến môi trường CONTACT: email liên hệ ghi trong User-Agent (nên đặt)."""
-import csv, hashlib, os, sys, time, urllib.robotparser, urllib.parse, requests
-from common import *
+"""Tải PDF công khai trong config/sources.csv, kiểm tra robots.txt và nghỉ >= 3 giây.
+Cách dùng: python 01_download.py [--force] [--bank tcb,mb] [--year 2024] [--type bctn,bctc]
+Biến môi trường CONTACT: email liên hệ ghi trong User-Agent."""
+import csv
+import hashlib
+import os
+import re
+import sys
+from urllib.parse import urlsplit
+
+import requests
+from common import CONF, DATA, ROOT, keep, today
+from public_web import PublicFetcher
 
 DELAY = 3.0
 UA = f"Mozilla/5.0 (academic research; contact: {os.environ.get('CONTACT', 'n/a')})"
-force = "--force" in sys.argv
-robots_on = "--no-robots" not in sys.argv
-_rp = {}
+required_cols = ["bank", "year", "doc_type", "url"]
 
-def allowed(url):
-    if not robots_on: return True
-    host = "{0.scheme}://{0.netloc}".format(urllib.parse.urlparse(url))
-    if host not in _rp:
-        rp = urllib.robotparser.RobotFileParser(host + "/robots.txt")
-        try: rp.read()
-        except Exception: rp = None
-        _rp[host] = rp
-    rp = _rp[host]
-    return True if rp is None else rp.can_fetch(UA, url)
 
-man_path = DATA / "raw" / "manifest.csv"
-rows = list(csv.DictReader(open(CONF / "sources.csv", encoding="utf8")))
-new = not man_path.exists()
-mf = open(man_path, "a", newline="", encoding="utf8"); mw = csv.writer(mf)
-if new: mw.writerow(["bank", "year", "doc_type", "url", "file", "sha256", "bytes", "accessed_at", "status"])
-pending, pending_opt = [], []
-s = requests.Session(); s.headers["User-Agent"] = UA
-for r in rows:
-    if not keep(r["bank"], r["year"], r["doc_type"]): continue
-    url = (r["url"] or "").strip()
-    if not url:
-        if not (r.get("notes") or "").strip() and r["doc_type"] != "bcptbv": pending.append((r["bank"], r["year"], r["doc_type"]))
-        elif not (r.get("notes") or "").strip(): pending_opt.append((r["bank"], r["year"]))
-        continue
-    dest = DATA / "raw" / r["bank"] / f"{r['year']}_{r['doc_type']}.pdf"
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    if dest.exists() and not force:
-        print("đã có", dest.name); continue
-    if not allowed(url):
-        print("robots.txt không cho phép:", url); mw.writerow([*[r[k] for k in ("bank","year","doc_type","url")], "", "", "", today(), "robots_blocked"]); continue
-    status = "ok"
+def iter_source_rows(path):
+    """Bỏ dòng sai cấu trúc hoặc định danh; chuẩn hóa BOM và khoảng trắng ở header."""
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            raise ValueError(f"{path} trống hoặc thiếu header CSV")
+        reader.fieldnames = [name.lstrip("\ufeff").strip() for name in reader.fieldnames]
+        missing = set(required_cols) - set(reader.fieldnames)
+        if missing or len(reader.fieldnames) != len(set(reader.fieldnames)):
+            raise ValueError(f"{path}: header thiếu cột hoặc trùng cột: {sorted(missing)}")
+        for line_no, row in enumerate(reader, start=2):
+            if None in row or any(row.get(k) is None for k in required_cols):
+                print(f"bỏ dòng {line_no}: số cột không khớp header")
+                continue
+            clean = {key: (value or "").strip() for key, value in row.items()}
+            if not any(clean.values()):
+                continue
+            if (not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", clean["bank"])
+                    or not re.fullmatch(r"(?:19|20)\d{2}", clean["year"])
+                    or clean["doc_type"] not in {"bctn", "bctc", "bcptbv", "other"}):
+                print(f"bỏ dòng {line_no}: bank/year/doc_type không hợp lệ")
+                continue
+            try:
+                parsed = urlsplit(clean["url"])
+                valid_url = parsed.scheme in ("http", "https") and parsed.netloc and not parsed.username and not parsed.password
+            except ValueError:
+                valid_url = False
+            if clean["url"] and not valid_url:
+                print(f"bỏ dòng {line_no}: URL công khai không hợp lệ")
+                continue
+            yield clean
+
+
+def download_pdf(fetcher, url, dest):
+    """Retry độc lập; chỉ ghi đè PDF cũ khi đã nhận PDF mới hợp lệ."""
     for attempt in range(3):
         try:
-            resp = s.get(url, timeout=60)
-            resp.raise_for_status()
-            if not resp.content.startswith(b"%PDF"):
-                status = "not_pdf (kiểm tra link: có thể là trang HTML, hãy mở thủ công lấy link trực tiếp)"
-            else:
-                dest.write_bytes(resp.content)
-            break
-        except Exception as e:
-            status = f"error: {e}"; time.sleep(2 * (attempt + 1))
-    sha = hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else ""
-    mw.writerow([r["bank"], r["year"], r["doc_type"], url, str(dest.relative_to(ROOT)), sha, dest.stat().st_size if dest.exists() else 0, today(), status])
-    print(r["bank"], r["year"], r["doc_type"], "->", status); time.sleep(DELAY)
-mf.close()
-if pending:
-    print(f"\nCHƯA ĐIỀN: {len(pending)} dòng BCTN/BCTC thiếu cả url lẫn notes (bắt buộc phải có link, hoặc ghi 'không công bố'/'chưa tìm thấy'):")
-    for b, y, t in pending[:20]: print("  ", b, y, t)
-    if len(pending) > 20: print("   ...")
-if pending_opt:
-    print(f"\nGợi ý: {len(pending_opt)} dòng BCPTBV chưa có link và chưa có ghi chú. Nếu ESG nằm trong BCTN thì ghi 'tích hợp trong BCTN' vào notes.")
+            response = fetcher.get(url, timeout=60)
+            response.raise_for_status()
+            content = response.content
+            if not content.startswith(b"%PDF"):
+                return "not_pdf (kiểm tra link PDF trực tiếp)"
+            temp = dest.with_suffix(".pdf.tmp")
+            temp.write_bytes(content)
+            temp.replace(dest)
+            return "ok"
+        except PermissionError as exc:
+            return f"robots_blocked: {exc}"
+        except (requests.RequestException, OSError) as exc:
+            status = f"error: {exc}"
+    return status
+
+
+def main():
+    if "--no-robots" in sys.argv:
+        sys.exit("Không hỗ trợ --no-robots: dự án yêu cầu tôn trọng robots.txt.")
+    force = "--force" in sys.argv
+    rows = list(iter_source_rows(CONF / "sources.csv"))
+    fetcher = PublicFetcher(UA, DELAY)
+    man_path = DATA / "raw" / "manifest.csv"
+    new = not man_path.exists() or man_path.stat().st_size == 0
+    pending, pending_opt = [], []
+    seen = {}
+    with open(man_path, "a", newline="", encoding="utf-8-sig") as mf:
+        writer = csv.writer(mf)
+        if new:
+            writer.writerow(["bank", "year", "doc_type", "url", "file", "sha256", "bytes", "accessed_at", "status"])
+        for row in rows:
+            bank, year, typ, url = (row[k] for k in required_cols)
+            if not keep(bank, year, typ):
+                continue
+            if not url:
+                if not row.get("notes"):
+                    (pending_opt if typ == "bcptbv" else pending).append((bank, year, typ))
+                continue
+            key = (bank, year, url)
+            if key in seen and seen[key] != typ:
+                print("bỏ URL trùng giữa hai loại báo cáo:", bank, year, typ)
+                continue
+            seen[key] = typ
+            dest = DATA / "raw" / bank / f"{year}_{typ}.pdf"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if dest.exists() and not force:
+                print("đã có", dest.name)
+                continue
+            status = download_pdf(fetcher, url, dest)
+            success = status == "ok"
+            sha = hashlib.sha256(dest.read_bytes()).hexdigest() if success else ""
+            writer.writerow([bank, year, typ, url, str(dest.relative_to(ROOT)) if success else "",
+                             sha, dest.stat().st_size if success else "", today(), status])
+            print(bank, year, typ, "->", status)
+    if pending:
+        print(f"CHƯA ĐIỀN: {len(pending)} dòng bắt buộc thiếu cả URL lẫn ghi chú:", pending[:20])
+    if pending_opt:
+        print(f"Gợi ý: {len(pending_opt)} dòng BCPTBV chưa có URL/ghi chú; nếu tích hợp thì ghi 'tích hợp trong BCTN'.")
+
+
+if __name__ == "__main__":
+    main()

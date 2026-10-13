@@ -3,7 +3,9 @@
 ## Dự án là gì
 Bộ công cụ thu thập và text mining dữ liệu công khai để chấm điểm, xếp hạng chuyển đổi số của 5 ngân hàng
 (Agribank, MB, Techcombank, BIDV, Vietcombank) theo mô hình **DBI thích ứng (80%) + DTI (20%)**: 6 trụ cột, 24 tiêu chí
-rubric 0–4, 11 chỉ số DTI. Script chỉ **đề xuất bằng chứng**; **người chấm quyết định điểm** theo rubric (`config/rubric_anchors.csv`).
+rubric 0–4, 11 chỉ số DTI. Theo quyết định của nhóm ngày 2026-10-12, **09c chấm DBI bằng thuật toán quy tắc**, thay quy trình chấm tay và kappa.
+Điểm thuật toán cùng bằng chứng/phiên bản nằm trong `out/coding_auto.xlsx`; bước 10 đọc file này mặc định.
+Rubric (`config/rubric_anchors.csv`) là khung tham chiếu; quy tắc vận hành hóa phải được mô tả và kiểm chứng riêng.
 Text mining (07 BM25, 08 LDA, 09 PhoBERT) là chỉ số phụ để đối chiếu, không phải điểm chính.
 
 ## Cấu trúc
@@ -17,7 +19,8 @@ Text mining (07 BM25, 08 LDA, 09 PhoBERT) là chỉ số phụ để đối chi�
 2. Không bao giờ điền 0 cho chỉ tiêu ngân hàng không công bố; để trống và tính độ tin cậy dữ liệu (số chỉ tiêu có dữ liệu / 11). Thiếu DTI của trụ cột → P_k = DBI_k.
 2b. BCPTBV (báo cáo phát triển bền vững) là tùy chọn, nhiều ngân hàng tích hợp trong BCTN: không coi là thiếu dữ liệu, không dán trùng một PDF vào hai loại báo cáo.
 2c. Báo cáo có cả tiếng Việt lẫn tiếng Anh. Từ khóa (`keywords.yaml`), nhãn BCTC và mẫu KPI phải giữ cả hai thứ tiếng. Chỉ số text mining so sánh trong cùng ngôn ngữ; LDA/PhoBERT chỉ cho tiếng Việt. Không xóa từ khóa tiếng Anh khi dọn từ điển.
-3. Không để script tự ghi điểm rubric vào `coding_sheet.xlsx` cột `final`.
+3. Script được ghi điểm thuật toán vào `coding_auto.xlsx` cột `final`, kèm phương pháp/phiên bản/bằng chứng. Giữ `coding_sheet.xlsx` cũ làm dữ liệu lưu trữ, không ghi đè. Không yêu cầu coder1/coder2 hoặc kappa trong pipeline mới.
+3b. Thiếu văn bản đọc được → DBI để trống. Điểm 0 `no_mention` chỉ nghĩa là thuật toán không tìm thấy đề cập trong tài liệu đã quét; không được gọi là ngân hàng không công bố.
 4. Mọi con số trích ra phải kèm tệp nguồn, số trang, và (nếu có) đoạn trích gốc.
 5. Không đổi thang chuẩn hóa: z = 100·min{1; max[0; (x−L)/(U−L)]}, L và U cố định TRƯỚC khi chấm, không dùng MAX của 5 ngân hàng.
 

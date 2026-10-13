@@ -1,9 +1,9 @@
 # Hiến chương dự án (Constitution) — Đánh giá chuyển đổi số ngân hàng
 
-Phiên bản 1.0 · Mọi spec, plan, task và đoạn code phải tuân thủ các nguyên tắc dưới đây. Sửa hiến chương cần ghi lý do và tăng phiên bản.
+Phiên bản 2.0 (2026-10-12: nhóm quyết định thay chấm tay/kappa bằng thuật toán quy tắc) · Mọi spec, plan, task và đoạn code phải tuân thủ các nguyên tắc dưới đây. Sửa hiến chương cần ghi lý do và tăng phiên bản.
 
-## I. Người chấm quyết định điểm
-Điểm tiêu chí DBI do người chấm cho theo rubric 0–4 (0/25/50/75/100%). Script chỉ tìm và trình bằng chứng. Text mining (BM25, LDA, PhoBERT) là chỉ số phụ để đối chiếu và kiểm tra độ nhạy, không đi vào công thức điểm.
+## I. Thuật toán quyết định điểm DBI
+Điểm DBI 0–4 được tạo bằng quy tắc xác định trong `09c_auto_score.py`, lưu vào `coding_auto.xlsx`; bước 10 dùng làm đầu vào chính. Không yêu cầu chấm kép hoặc kappa. Mỗi kết quả phải kèm phiên bản quy tắc, hash đầu vào và bằng chứng. Quy tắc là phép vận hành hóa rubric cần đánh giá chất lượng, không tuyên bố mặc nhiên tương đương đánh giá chuyên gia. Text mining (BM25, LDA, PhoBERT) là chỉ số phụ để đối chiếu và kiểm tra độ nhạy, không đi vào công thức điểm.
 
 ## II. Dữ liệu công khai, có đạo đức
 Chỉ thu thập dữ liệu công khai. Tôn trọng robots.txt, delay ≥ 3 giây, không đăng nhập, không vượt paywall/captcha, không scrape bên trong ứng dụng. Ghi User-Agent nêu mục đích nghiên cứu.
@@ -12,7 +12,7 @@ Chỉ thu thập dữ liệu công khai. Tôn trọng robots.txt, delay ≥ 3 gi
 Mọi con số và mọi điểm phải lần ngược được tới: tệp nguồn, số trang, đoạn trích gốc, ngày thu thập (hash sha256 của PDF trong `manifest.csv`). Không có nguồn thì không có số.
 
 ## IV. Trung thực với dữ liệu thiếu
-Không điền 0 cho chỉ tiêu không công bố. Thiếu DTI của một trụ cột thì P_k = DBI_k. Báo cáo điểm tin cậy dữ liệu (số chỉ tiêu có dữ liệu / 11) cạnh mọi điểm DTI.
+Không điền 0 cho chỉ tiêu DTI không công bố hoặc DBI thiếu văn bản đọc được. DBI=0/no_mention là không phát hiện đề cập bằng thuật toán trong văn bản đã quét, không chứng minh ngân hàng không công bố. Thiếu DTI của một trụ cột thì P_k = DBI_k. Báo cáo điểm tin cậy dữ liệu (số chỉ tiêu có dữ liệu / 11) cạnh mọi điểm DTI.
 
 ## V. Công thức khóa trước khi chấm
 Thang chuẩn hóa z = 100·min{1; max[0; (x−L)/(U−L)]} với L và U cố định trước khi chấm, không lấy MAX của 5 ngân hàng. Trọng số 80/20 và 1/6 mỗi trụ cột là mặc định; mọi thay đổi phải đi qua kịch bản độ nhạy, không sửa lặng lẽ.

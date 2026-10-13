@@ -45,6 +45,9 @@ def detect_lang(text: str) -> str:
 
 # ---- Bộ lọc dòng lệnh dùng chung cho 01-04, 07-09:  --bank tcb,mb  --year 2024,2025  --type bctn,bctc  --only-lang vi|en
 import sys as _sys
+for _stream in (_sys.stdout, _sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        _stream.reconfigure(encoding="utf-8", errors="replace")
 def _argv_set(name):
     if name in _sys.argv:
         i = _sys.argv.index(name)
@@ -58,10 +61,30 @@ def keep(bank, year, doc_type=None) -> bool:
     if _FT is not None and doc_type is not None and str(doc_type).lower() not in _FT: return False
     return True
 def keep_lang(lang, default=None) -> bool:
-    """Lọc ngôn ngữ văn bản. --only-lang vi,en chọn rõ; nếu không có cờ và default='vi' thì chỉ giữ tiếng Việt (cho LDA/PhoBERT)."""
+    """Lọc ngôn ngữ; default='vi' giới hạn LDA/PhoBERT dù có --only-lang."""
     lang = lang or "vi"
+    if default is not None and lang != default: return False
     if ONLY_LANG is not None: return lang in ONLY_LANG
     return default is None or lang == default
+
+AUTO_LABELS = {"auto-unverified", "range-checked", "fin-cand", "page-patch", "page-confirm", "kpi-heuristic"}
+
+def is_manual_confirmation(label):
+    """Nhãn người xác nhận; loại mọi nhãn kiểm tra hoặc điền tự động đã biết."""
+    return isinstance(label, str) and bool(label.strip()) and label.strip() not in AUTO_LABELS
+
+def confirmed_mask(df):
+    """Chỉ nhận số hữu hạn đã đối chiếu, có tệp nguồn và trang PDF hợp lệ."""
+    import pandas as pd
+    import numpy as np
+    required = {"value", "confirmed_by", "source_file", "page"}
+    if not required <= set(df.columns):
+        return pd.Series(False, index=df.index)
+    value = pd.to_numeric(df["value"], errors="coerce")
+    page = pd.to_numeric(df["page"], errors="coerce")
+    return (np.isfinite(value) & df["confirmed_by"].map(is_manual_confirmation)
+            & df["source_file"].fillna("").astype(str).str.strip().ne("")
+            & page.ge(1) & page.mod(1).eq(0))
 
 def parse_num(tok: str):
     """Đọc số kiểu Việt/Anh: '1.234.567', '1,234,567.89', '(12.345)', '12,5'. Trả float hoặc None."""
