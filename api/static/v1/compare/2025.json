@@ -1,0 +1,567 @@
+{
+ "year": 2025,
+ "banks": [
+  {
+   "bank": "agribank",
+   "bank_name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "year": 2025,
+   "score": 53.9539,
+   "rank": 5,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.5455,
+   "dti_indicators_available": 6,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 62.5,
+     "dti": 84.9969,
+     "p": 66.9994,
+     "n_dti": 2,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 56.25,
+     "dti": 55.5556,
+     "p": 56.1111,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 75.0,
+     "dti": 21.814,
+     "p": 64.3628,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 43.75,
+     "dti": 100.0,
+     "p": 55.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 56.25,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 25.0,
+     "dti": null,
+     "p": 25.0,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "bidv",
+   "bank_name": "BIDV",
+   "group": "NHTM Nhà nước",
+   "year": 2025,
+   "score": 64.9643,
+   "rank": 4,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.4545,
+   "dti_indicators_available": 5,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 81.25,
+     "dti": 74.2108,
+     "p": 79.8422,
+     "n_dti": 1,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 68.75,
+     "dti": null,
+     "p": 68.75,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 81.25,
+     "dti": 37.2169,
+     "p": 72.4434,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 56.25,
+     "dti": 50.0,
+     "p": 55.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 31.25,
+     "dti": 100.0,
+     "p": 45.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 68.75,
+     "dti": null,
+     "p": 68.75,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2025,
+   "score": 72.2715,
+   "rank": 3,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.7273,
+   "dti_indicators_available": 8,
+   "dti_indicators_total": 11,
+   "reliability": "high",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 81.25,
+     "dti": 96.8209,
+     "p": 84.3642,
+     "n_dti": 2,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 68.75,
+     "dti": 9.0278,
+     "p": 56.8056,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 93.75,
+     "dti": 100.0,
+     "p": 95.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 81.25,
+     "dti": 100.0,
+     "p": 85.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 56.25,
+     "dti": 56.0462,
+     "p": 56.2092,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 56.25,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "tcb",
+   "bank_name": "Techcombank",
+   "group": "NHTM Cổ phần",
+   "year": 2025,
+   "score": 76.075,
+   "rank": 1,
+   "maturity_level": "Mức 4 - Nâng cao",
+   "maturity_level_number": 4,
+   "maturity_level_name": "Nâng cao",
+   "data_confidence": 0.6364,
+   "dti_indicators_available": 7,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 87.5,
+     "dti": 94.7512,
+     "p": 88.9502,
+     "n_dti": 2,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 62.5,
+     "dti": 0.0,
+     "p": 50.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 68.75,
+     "dti": 100.0,
+     "p": 75.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 100.0,
+     "dti": 50.0,
+     "p": 90.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 56.25,
+     "dti": 100.0,
+     "p": 65.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 87.5,
+     "dti": null,
+     "p": 87.5,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "vcb",
+   "bank_name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "year": 2025,
+   "score": 75.7572,
+   "rank": 2,
+   "maturity_level": "Mức 4 - Nâng cao",
+   "maturity_level_number": 4,
+   "maturity_level_name": "Nâng cao",
+   "data_confidence": 0.4545,
+   "dti_indicators_available": 5,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 93.75,
+     "dti": 85.215,
+     "p": 92.043,
+     "n_dti": 2,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 62.5,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 75.0,
+     "dti": null,
+     "p": 75.0,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 62.5,
+     "dti": 50.0,
+     "p": 60.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 87.5,
+     "dti": 100.0,
+     "p": 90.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 75.0,
+     "dti": null,
+     "p": 75.0,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  }
+ ],
+ "radar": [
+  {
+   "code": "K",
+   "name": "Khách hàng",
+   "values": {
+    "agribank": 66.9994,
+    "bidv": 79.8422,
+    "mb": 84.3642,
+    "tcb": 88.9502,
+    "vcb": 92.043
+   },
+   "dbi": {
+    "agribank": 62.5,
+    "bidv": 81.25,
+    "mb": 81.25,
+    "tcb": 87.5,
+    "vcb": 93.75
+   },
+   "dti": {
+    "agribank": 84.9969,
+    "bidv": 74.2108,
+    "mb": 96.8209,
+    "tcb": 94.7512,
+    "vcb": 85.215
+   }
+  },
+  {
+   "code": "S",
+   "name": "Chiến lược",
+   "values": {
+    "agribank": 56.1111,
+    "bidv": 68.75,
+    "mb": 56.8056,
+    "tcb": 50.0,
+    "vcb": 62.5
+   },
+   "dbi": {
+    "agribank": 56.25,
+    "bidv": 68.75,
+    "mb": 68.75,
+    "tcb": 62.5,
+    "vcb": 62.5
+   },
+   "dti": {
+    "agribank": 55.5556,
+    "bidv": null,
+    "mb": 9.0278,
+    "tcb": 0.0,
+    "vcb": null
+   }
+  },
+  {
+   "code": "T",
+   "name": "Công nghệ",
+   "values": {
+    "agribank": 64.3628,
+    "bidv": 72.4434,
+    "mb": 95.0,
+    "tcb": 75.0,
+    "vcb": 75.0
+   },
+   "dbi": {
+    "agribank": 75.0,
+    "bidv": 81.25,
+    "mb": 93.75,
+    "tcb": 68.75,
+    "vcb": 75.0
+   },
+   "dti": {
+    "agribank": 21.814,
+    "bidv": 37.2169,
+    "mb": 100.0,
+    "tcb": 100.0,
+    "vcb": null
+   }
+  },
+  {
+   "code": "O",
+   "name": "Vận hành",
+   "values": {
+    "agribank": 55.0,
+    "bidv": 55.0,
+    "mb": 85.0,
+    "tcb": 90.0,
+    "vcb": 60.0
+   },
+   "dbi": {
+    "agribank": 43.75,
+    "bidv": 56.25,
+    "mb": 81.25,
+    "tcb": 100.0,
+    "vcb": 62.5
+   },
+   "dti": {
+    "agribank": 100.0,
+    "bidv": 50.0,
+    "mb": 100.0,
+    "tcb": 50.0,
+    "vcb": 50.0
+   }
+  },
+  {
+   "code": "C",
+   "name": "Văn hóa",
+   "values": {
+    "agribank": 56.25,
+    "bidv": 45.0,
+    "mb": 56.2092,
+    "tcb": 65.0,
+    "vcb": 90.0
+   },
+   "dbi": {
+    "agribank": 56.25,
+    "bidv": 31.25,
+    "mb": 56.25,
+    "tcb": 56.25,
+    "vcb": 87.5
+   },
+   "dti": {
+    "agribank": null,
+    "bidv": 100.0,
+    "mb": 56.0462,
+    "tcb": 100.0,
+    "vcb": 100.0
+   }
+  },
+  {
+   "code": "D",
+   "name": "Dữ liệu",
+   "values": {
+    "agribank": 25.0,
+    "bidv": 68.75,
+    "mb": 56.25,
+    "tcb": 87.5,
+    "vcb": 75.0
+   },
+   "dbi": {
+    "agribank": 25.0,
+    "bidv": 68.75,
+    "mb": 56.25,
+    "tcb": 87.5,
+    "vcb": 75.0
+   },
+   "dti": {
+    "agribank": null,
+    "bidv": null,
+    "mb": null,
+    "tcb": null,
+    "vcb": null
+   }
+  }
+ ],
+ "leaders": {
+  "K": [
+   "vcb"
+  ],
+  "S": [
+   "bidv"
+  ],
+  "T": [
+   "mb"
+  ],
+  "O": [
+   "tcb"
+  ],
+  "C": [
+   "vcb"
+  ],
+  "D": [
+   "tcb"
+  ]
+ }
+}

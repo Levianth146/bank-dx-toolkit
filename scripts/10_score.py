@@ -11,7 +11,7 @@ Chỉ dùng công thức/chỉ tiêu trong file "Mô hình DBI-DTI điều chỉ
   Tin cậy dữ liệu = số chỉ số DTI có dữ liệu thực / 11                                         [mục II]
 
 Chạy (trong thư mục scripts/):
-  python 10_score.py                      # chạy chính thức: năm 2025, yêu cầu locked=true
+  python 10_score.py                      # chạy chính thức: toàn bộ năm cấu hình, yêu cầu locked=true
   python 10_score.py --years 2021,2023,2025
   python 10_score.py --draft              # chạy thử: bounds chưa khóa / DBI chưa đủ; file ra có hậu tố _draft
   python 10_score.py --w-dbi 0.7          # đổi tỷ lệ DBI/DTI (kịch bản độ nhạy)
@@ -33,6 +33,7 @@ PILLARS = {"K": "Khách hàng", "S": "Chiến lược", "T": "Công nghệ",
 DTI_BY_PILLAR = {"K": ["K-Q1", "K-Q2", "K-Q3"], "S": ["S-Q1", "S-Q2"], "T": ["T-Q1", "T-Q2"],
                  "O": ["O-Q1", "O-Q2"], "C": ["C-Q1", "C-Q2"], "D": []}
 ALL_DTI = [i for p in PILLARS for i in DTI_BY_PILLAR[p]]            # 11 chỉ số
+STEP0_MISSING_THRESHOLD = 2
 CRITERIA = [f"{p}{n}" for p in PILLARS for n in range(1, 5)]        # 24 tiêu chí
 RUBRIC_PCT = {0: 0.0, 1: 25.0, 2: 50.0, 3: 75.0, 4: 100.0}
 LEVELS = [(25, "Mức 1 - Khởi động"), (50, "Mức 2 - Bắt đầu"),
@@ -328,9 +329,57 @@ def rank_desc(series):
     return series.rank(ascending=False, method="min").astype("Int64")
 
 
+def build_indicators(calc, banks, years, bounds):
+    """Bước 0: loại chỉ số thiếu ở >=2 ngân hàng, riêng từng năm; giữ số gốc để truy vết."""
+    rows = []
+    for year in years:
+        for bank in banks:
+            for indicator, (x, note) in calc.all(bank, year).items():
+                L, U, direction = bounds.get(indicator, (None, None, "higher_better"))
+                raw_z = normalize(x, L, U, direction)
+                rows.append(dict(bank=bank, year=year, indicator=indicator, x=x, L=L, U=U,
+                                 direction=direction, z_before_step0=raw_z, note=note))
+    frame = pd.DataFrame(rows)
+    gates = []
+    for (year, indicator), group in frame.groupby(["year", "indicator"], sort=False):
+        # Cổng kiểm tra khả năng tính x; thiếu cận không phải thiếu dữ liệu ngân hàng.
+        missing = group.loc[group.x.isna(), "bank"].tolist()
+        excluded = len(missing) >= STEP0_MISSING_THRESHOLD
+        reason = f"thiếu ở {len(missing)}/{len(banks)} ngân hàng; ngưỡng loại >={STEP0_MISSING_THRESHOLD}"
+        gates.append(dict(year=year, indicator=indicator, n_banks=len(banks), n_missing=len(missing),
+                          missing_banks=";".join(missing), retained=not excluded,
+                          step0_reason=reason, step0_method="indicator_per_year_v1"))
+    gate = pd.DataFrame(gates)
+    frame = frame.merge(gate, on=["year", "indicator"], validate="many_to_one")
+    frame["z"] = frame.z_before_step0.where(frame.retained)
+    frame["included_in_score"] = frame.z.notna()
+    frame["status"] = ["loại bởi bước 0" if not r.retained else
+                       ("có dữ liệu" if pd.notna(r.z) else
+                        ("thiếu dữ liệu" if pd.isna(r.x) else "chưa có L/U"))
+                       for r in frame.itertuples()]
+    return frame, gate
+
+
+def write_results_excel(tables, path):
+    """Giữ kiểu số thật để Excel không diễn giải dấu thập phân theo vùng của CSV."""
+    with pd.ExcelWriter(path, engine="openpyxl") as writer:
+        for sheet, table in tables.items():
+            table.to_excel(writer, sheet_name=sheet, index=False)
+            ws = writer.sheets[sheet]
+            ws.freeze_panes = "C2"
+            ws.auto_filter.ref = ws.dimensions
+            for column in ws.columns:
+                name = str(column[0].value)
+                ws.column_dimensions[column[0].column_letter].width = min(35, max(15, len(name) + 2))
+                for cell in column[1:]:
+                    if isinstance(cell.value, float):
+                        cell.number_format = "0.00"
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--years", default="2025", help="năm chấm, ví dụ 2021,2023,2025")
+    project = load_yaml("banks.yaml")
+    ap.add_argument("--years", default=",".join(map(str, project["coding_years"])), help="mặc định toàn bộ năm chấm trong banks.yaml")
     ap.add_argument("--start-year", type=int, default=2021, help="đầu kỳ cho Δ/CAGR (docx: 2021-2025)")
     ap.add_argument("--w-dbi", type=float, default=0.8, help="trọng số DBI trong P_k (cơ sở 0,8)")
     ap.add_argument("--coding", default=str(OUT / "coding_auto.xlsx"))
@@ -352,22 +401,19 @@ def main():
             if len(values) != 1: sys.exit(f"DỪNG: lưới điểm có nhiều hoặc thiếu phiên bản {name}.")
             metadata[name] = values[0]
     V, D = load_inputs(a.inputs, a.draft)
-    calc = Calc(V, D, load_app_rating(a.app), load_platform(a.audit), a.start_year, max(years))
+    calc = Calc(V, D, load_app_rating(a.app), load_platform(a.audit), a.start_year, max(project["coding_years"]))
     banks = sorted(coding["bank"].unique())
+    if set(banks) != set(project["banks"]):
+        sys.exit("DỪNG: Bước 0 phải kiểm tra đủ tập ngân hàng trong config/banks.yaml.")
 
     # ---- 1) 11 chỉ số DTI ----
-    ind_rows, z_map = [], {}
-    for y in years:
-        for b in banks:
-            for ind, (x, note) in calc.all(b, y).items():
-                L, U, direction = bounds.get(ind, (None, None, "higher_better"))
-                z = normalize(x, L, U, direction)
-                status = "có dữ liệu" if z is not None else ("thiếu dữ liệu" if x is None else "chưa có L/U")
-                z_map[(b, y, ind)] = z
-                ind_rows.append(dict(bank=b, year=y, indicator=ind, x=x, L=L, U=U, direction=direction,
-                                     z=z, status=status, note=note))
-    ind = pd.DataFrame(ind_rows)
+    ind, gate = build_indicators(calc, banks, years, bounds)
+    z_map = {(r.bank, r.year, r.indicator): (float(r.z) if pd.notna(r.z) else None)
+             for r in ind.itertuples()}
+    raw_counts = ind.groupby(["bank", "year"]).z_before_step0.count().to_dict()
+    retained_counts = gate.groupby("year").retained.sum().to_dict()
     ind.to_csv(OUT / f"dti_indicators{suffix}.csv", index=False, encoding="utf-8-sig")
+    gate.to_csv(OUT / f"step0_gate{suffix}.csv", index=False, encoding="utf-8-sig")
 
     # ---- 2) DBI (24 tiêu chí) ----
     c = coding[coding["year"].isin(years)].copy()
@@ -390,7 +436,9 @@ def main():
                 ps = pillar_scores(dbi_c, z_i, w_dbi, missing)
                 n_have = sum(z is not None for z in z_i.values())
                 rows.append(dict(bank=b, year=y, ps=ps, score=score_total(ps, weights),
-                                 conf=n_have / 11, **metadata))
+                                 conf=raw_counts[(b, y)] / 11, scoring_coverage=n_have / 11,
+                                 n_dti_available=raw_counts[(b, y)], n_dti_used=n_have,
+                                 n_dti_retained=int(retained_counts[y]), step0_method="indicator_per_year_v1", **metadata))
         df = pd.DataFrame(rows)
         df["rank"] = df.groupby("year")["score"].transform(rank_desc)
         df["level"] = df["score"].map(maturity)
@@ -402,11 +450,31 @@ def main():
         for p, (dbi, dti, pk, n) in r.ps.items():
             long_rows.append(dict(bank=r.bank, year=r.year, pillar=p, pillar_name=PILLARS[p], dbi=dbi, dti=dti,
                                   n_dti=n, p=pk, data_confidence=round(r.conf, 3), score_total=r.score,
-                                  maturity_level=r.level, rank=r.rank, **metadata))
-    pd.DataFrame(long_rows).to_csv(OUT / f"scores{suffix}.csv", index=False, encoding="utf-8-sig")
+                                  scoring_coverage=r.scoring_coverage, n_dti_retained=r.n_dti_retained,
+                                  step0_method=r.step0_method, maturity_level=r.level, rank=r.rank, **metadata))
+    pillar_table = pd.DataFrame(long_rows)
+    pillar_table.to_csv(OUT / f"scores{suffix}.csv", index=False, encoding="utf-8-sig")
     summ = base.drop(columns="ps").rename(columns={"conf": "data_confidence", "level": "maturity_level"})
     summ["note"] = "DRAFT - không dùng làm kết quả chính thức" if a.draft else ""
     summ.sort_values(["year", "rank"]).to_csv(OUT / f"score_summary{suffix}.csv", index=False, encoding="utf-8-sig")
+    report = ["# Bước 0 — cổng sẵn có dữ liệu", "",
+              "Quy tắc indicator_per_year_v1: chỉ số DTI thiếu giá trị tính được ở từ 2 ngân hàng trở lên bị loại khỏi điểm của cả tập ngân hàng, riêng từng năm. Không tự thay proxy.", "",
+              "Dữ liệu nguồn và x/z_before_step0 được giữ nguyên; z là điểm thực sự dùng sau cổng. Thiếu dữ liệu không điền 0. Trụ cột không còn DTI dùng DBI thuần.", "",
+              "data_confidence = số chỉ số có dữ liệu chuẩn hóa được trước cổng / 11; scoring_coverage = số dùng sau cổng / 11. Hai tỷ lệ đo hai việc khác nhau.", "",
+              "24 tiêu chí DBI và công thức 80/20, trung bình 6 trụ cột, cận L/U cố định không đổi. Rating/checklist chỉ áp cho năm cuối dự án. Bộ chỉ số giữ lại khác nhau giữa các năm; điểm xuyên năm không dựa trên một bộ DTI cố định.", "",
+              "Ma trận ngân hàng × biến × năm: variable_availability_matrix.csv (bước 12). Quyết định loại áp ở cấp chỉ số sau khi kiểm tra đủ đầu vào/định nghĩa, không xóa biến thô khỏi dataset.", "",
+              "Agribank không niêm yết: đọc riêng nguồn và note trong ma trận; không miễn cổng hoặc coi thiếu dữ liệu là 0.", "",
+              "| Năm | Chỉ số DTI giữ lại | Số giữ |", "|---|---|---:|"]
+    for year, group in gate.groupby("year"):
+        kept = group.loc[group.retained, "indicator"].tolist()
+        report.append(f"| {year} | {', '.join(kept) or 'Không có'} | {len(kept)} |")
+    report.extend(["", "| Năm | Ngân hàng | Điểm | Hạng | Có dữ liệu / 11 | Dùng chấm / 11 |",
+                   "|---|---|---:|---:|---:|---:|"])
+    for r in summ.sort_values(["year", "rank"]).itertuples():
+        report.append(f"| {r.year} | {r.bank} | {r.score:.2f} | {r.rank} | {r.n_dti_available}/11 | {r.n_dti_used}/11 |")
+    if a.draft:
+        report.insert(2, "DRAFT — không dùng làm kết quả chính thức.")
+    (OUT / f"step0_report{suffix}.md").write_text("\n".join(report) + "\n", encoding="utf-8-sig")
 
     print(f"\n=== KẾT QUẢ (w_DBI={a.w_dbi}, {'DRAFT' if a.draft else 'CHÍNH THỨC'}) ===")
     for y in years:
@@ -417,6 +485,10 @@ def main():
         print(f"\n[!] Chỉ số chưa có L/U (bị loại khỏi DTI, làm giảm data_confidence): {missing_bounds}")
 
     # ---- 4) kịch bản trọng số DBI/DTI (mục V.2) ----
+    excel_tables = {"Tổng điểm": summ.sort_values(["year", "rank"]),
+                    "Sáu trụ cột": pillar_table, "Chỉ số DTI": ind, "Cổng bước 0": gate}
+    wide = pillar_table.pivot(index=["bank", "year"], columns="pillar_name", values="p").reset_index()
+    excel_tables["Trụ cột bảng ngang"] = wide
     if a.weight_scenarios:
         parts = []
         for w in (1.0, 0.8, 0.7, 0.6):
@@ -425,8 +497,13 @@ def main():
             parts.append(s)
         sens = pd.concat(parts)
         sens.to_csv(OUT / f"sensitivity_weights{suffix}.csv", index=False, encoding="utf-8-sig")
+        excel_tables["Độ nhạy trọng số"] = sens
         pv = sens[sens.year == max(years)].pivot(index="bank", columns="scenario", values="rank")
         print("\nThứ hạng theo kịch bản (năm cuối):\n", pv.to_string())
+
+    # XLSX giữ kiểu số thật, tránh Excel theo vùng Việt Nam hiểu dấu chấm CSV là hàng nghìn.
+    write_results_excel(excel_tables, OUT / f"score_results{suffix}.xlsx")
+    print(f"\nBảng Excel giữ đúng kiểu số: {OUT / f'score_results{suffix}.xlsx'}")
 
 
 if __name__ == "__main__":

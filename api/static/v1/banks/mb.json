@@ -1,0 +1,557 @@
+{
+ "bank": "mb",
+ "bank_name": "MB",
+ "group": "NHTM Cổ phần",
+ "latest": {
+  "bank": "mb",
+  "bank_name": "MB",
+  "group": "NHTM Cổ phần",
+  "year": 2025,
+  "score": 72.2715,
+  "rank": 3,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.7273,
+  "dti_indicators_available": 8,
+  "dti_indicators_total": 11,
+  "reliability": "high",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 81.25,
+    "dti": 96.8209,
+    "p": 84.3642,
+    "n_dti": 2,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 68.75,
+    "dti": 9.0278,
+    "p": 56.8056,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 93.75,
+    "dti": 100.0,
+    "p": 95.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 81.25,
+    "dti": 100.0,
+    "p": 85.0,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 56.25,
+    "dti": 56.0462,
+    "p": 56.2092,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 56.25,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "history": [
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2020,
+   "score": 47.6995,
+   "rank": 2,
+   "maturity_level": "Mức 2 - Bắt đầu",
+   "maturity_level_number": 2,
+   "maturity_level_name": "Bắt đầu",
+   "data_confidence": 0.2727,
+   "dti_indicators_available": 3,
+   "dti_indicators_total": 11,
+   "reliability": "low",
+   "warnings": [
+    "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+   ],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 62.5,
+     "dti": 94.4444,
+     "p": 68.8889,
+     "n_dti": 1,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 43.75,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 37.5,
+     "dti": 77.7716,
+     "p": 45.5543,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 62.5,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 31.25,
+     "dti": 77.5194,
+     "p": 40.5039,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 25.0,
+     "dti": null,
+     "p": 25.0,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2021,
+   "score": 51.875,
+   "rank": 2,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.2727,
+   "dti_indicators_available": 3,
+   "dti_indicators_total": 11,
+   "reliability": "low",
+   "warnings": [
+    "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+   ],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 37.5,
+     "dti": 100.0,
+     "p": 50.0,
+     "n_dti": 1,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 43.75,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 43.75,
+     "dti": 100.0,
+     "p": 55.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 68.75,
+     "dti": null,
+     "p": 68.75,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 37.5,
+     "dti": 100.0,
+     "p": 50.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 43.75,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2022,
+   "score": 56.6396,
+   "rank": 2,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.4545,
+   "dti_indicators_available": 5,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 87.5,
+     "dti": 100.0,
+     "p": 90.0,
+     "n_dti": 1,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 62.5,
+     "dti": 15.0,
+     "p": 53.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 37.5,
+     "dti": 100.0,
+     "p": 50.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 56.25,
+     "dti": 100.0,
+     "p": 65.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 25.0,
+     "dti": 90.4393,
+     "p": 38.0879,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 43.75,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2023,
+   "score": 52.4657,
+   "rank": 2,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.6364,
+   "dti_indicators_available": 7,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 56.25,
+     "dti": 93.0,
+     "p": 63.6,
+     "n_dti": 2,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 62.5,
+     "dti": 12.2222,
+     "p": 52.4444,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 31.25,
+     "dti": 100.0,
+     "p": 45.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 62.5,
+     "dti": 100.0,
+     "p": 70.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 25.0,
+     "dti": 100.0,
+     "p": 40.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 43.75,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2024,
+   "score": 63.9306,
+   "rank": 3,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.5455,
+   "dti_indicators_available": 6,
+   "dti_indicators_total": 11,
+   "reliability": "medium",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 81.25,
+     "dti": 100.0,
+     "p": 85.0,
+     "n_dti": 1,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 62.5,
+     "dti": 11.6667,
+     "p": 52.3333,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 75.0,
+     "dti": 100.0,
+     "p": 80.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 81.25,
+     "dti": 100.0,
+     "p": 85.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 37.5,
+     "dti": 100.0,
+     "p": 50.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 31.25,
+     "dti": null,
+     "p": 31.25,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "year": 2025,
+   "score": 72.2715,
+   "rank": 3,
+   "maturity_level": "Mức 3 - Hình thành",
+   "maturity_level_number": 3,
+   "maturity_level_name": "Hình thành",
+   "data_confidence": 0.7273,
+   "dti_indicators_available": 8,
+   "dti_indicators_total": 11,
+   "reliability": "high",
+   "warnings": [],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 81.25,
+     "dti": 96.8209,
+     "p": 84.3642,
+     "n_dti": 2,
+     "n_dti_total": 3,
+     "dti_applied": true
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 68.75,
+     "dti": 9.0278,
+     "p": 56.8056,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 93.75,
+     "dti": 100.0,
+     "p": 95.0,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 81.25,
+     "dti": 100.0,
+     "p": 85.0,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 56.25,
+     "dti": 56.0462,
+     "p": 56.2092,
+     "n_dti": 2,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 56.25,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   }
+  }
+ ]
+}

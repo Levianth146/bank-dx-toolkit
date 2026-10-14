@@ -1,5 +1,11 @@
 # Bộ công cụ thu thập dữ liệu cho mô hình DBI–DTI (5 ngân hàng)
 
+Repository gồm pipeline thu thập/chấm điểm, API cho dashboard và phân tích độ nhạy. Các thành phần dùng chung `config/`, `scripts/` và `out/`.
+
+- API và dữ liệu JSON tĩnh: xem [hướng dẫn API](api/README.md). Cài `pip install -r requirements-api.txt`, rồi chạy `uvicorn api.main:app --reload --port 8000` từ thư mục gốc.
+- Phân tích độ nhạy: xem [hướng dẫn sensitivity](docs/sensitivity.md). Mã nằm trong `scripts/11_sensitivity.py`, `scripts/sens_plots.py`; kết quả nằm trong `out/sensitivity/`.
+- Kiểm thử từ thư mục gốc: chạy `python -m pytest tests/test_api.py -q` cho API và `python tests/test_sensitivity.py` cho sensitivity.
+
 Đi kèm file `Mo_hinh_DBI_DTI_dieu_chinh_va_codebook.docx`. Bộ script tải tài liệu, đọc PDF, tìm bằng chứng và lấy chỉ số định lượng. Theo quyết định của nhóm ngày **2026-10-12**, điểm DBI được chấm bằng thuật toán quy tắc `09c_auto_score.py`, thay quy trình người chấm + kappa. Số liệu DTI vẫn cần xác nhận nguồn.
 
 Quy trình chính: **01–04 → 09c → 12 --bundle → 10**. Điểm, bằng chứng và phiên bản nằm trong `out/coding_auto.xlsx`; xem [phương pháp thuật toán](specs/001-bank-dx-assessment/algorithm-scoring.md).
@@ -8,6 +14,11 @@ Bộ cận DTI đã khóa ở phiên bản `fixed-reference-v1-2026-10-12`; ngu�
 
 Sau khi đối chiếu và cập nhật dữ liệu DTI, chạy từ thư mục `scripts/`:
 
+Để xem bằng Excel, mở `out/score_results.xlsx`: sheet **Sáu trụ cột** có DBI/DTI/điểm `p`,
+sheet **Trụ cột bảng ngang** có sáu điểm trên một dòng ngân hàng/năm. Số được lưu đúng kiểu số,
+hiển thị hai chữ số thập phân; tránh lỗi Excel đọc dấu chấm thập phân của CSV thành dấu hàng nghìn.
+CSV vẫn giữ độ chính xác đầy đủ cho pipeline; khi nhập CSV vào Excel cần chọn đúng dấu thập phân.
+
 ```bash
 python 12_appendix.py --bundle
 python 10_score.py --years 2020,2021,2022,2023,2024,2025
@@ -15,7 +26,64 @@ python 10_score.py --years 2020,2021,2022,2023,2024,2025
 
 Kiểm tra trước khi bàn giao: `python ../tests/smoke_test.py`, `python ../tests/test_auto_score.py`, `python ../tests/test_regressions.py`, `python ../tests/test_download_sources.py`, `python ../tests/test_score.py`. Kiểm thử xác nhận hành vi code; việc chạy đạt không thay thế đối chiếu dữ liệu hoặc kiểm chứng chất lượng chấm điểm trên báo cáo thật.
 
+## Bước 0 — kiểm tra sẵn có dữ liệu
+
+Radar 6 trụ cột: chạy `python 11_radar.py` trong `scripts/` sau bước 10.
+Biểu đồ dùng cột `p` của `out/scores.csv`, cùng thang 0–100. Thư mục `out/radar/` có
+PNG/SVG riêng mỗi ngân hàng cho năm cuối và chuỗi năm, bảng ghép 5 ngân hàng năm cuối,
+PDF nhiều trang `radar_banks.pdf`, số liệu vẽ và hash nguồn trong `manifest.json`.
+Chạy `python 11_radar.py --years 2025` nếu chỉ muốn xem năm 2025.
+
+Bước 0 hiện là cổng bắt buộc trong bước 10 và ma trận bước 12, phiên bản `indicator_per_year_v1`:
+kiểm tra đủ đầu vào để tính mỗi chỉ số DTI cho cả 5 ngân hàng, riêng từng năm. Thiếu ở **từ 2 ngân hàng trở lên**
+thì loại chỉ số khỏi điểm của cả 5 ngân hàng trong năm đó. Quy tắc được áp ở **cấp chỉ số DTI**,
+không xóa biến thô và chưa tự thay proxy. Agribank dùng cùng cổng; nguồn/ghi chú công bố được rà riêng trong ma trận.
+
+`out/variable_availability_matrix.csv` là lưới ngân hàng × biến × năm (Phụ lục B.3),
+`out/indicator_availability_matrix.csv` là lưới ngân hàng × chỉ số × năm,
+`out/step0_gate.csv` ghi số/ngân hàng thiếu và quyết định giữ/loại; `out/step0_report.md` tổng hợp kết quả.
+Trong `dti_indicators.csv`, `x` và `z_before_step0` giữ kết quả trước cổng, `z` và `included_in_score` phản ánh sau cổng.
+`data_confidence` vẫn là số chỉ số có dữ liệu trước cổng / 11; `scoring_coverage` là số dùng sau cổng / 11.
+Không điền 0 cho ô thiếu; trụ cột không còn DTI dùng DBI thuần. Cận L/U, 24 tiêu chí DBI và công thức 80/20 không đổi.
+
+Bước 10 mặc định tính toàn bộ năm cấu hình 2020–2025. Chạy riêng năm lịch sử không áp lùi rating/checklist hiện tại.
+Bộ DTI giữ lại thay đổi giữa các năm; đọc hạn chế này khi so sánh xu hướng điểm.
+
+## Đối chiếu lớp C
+
+Chạy từ thư mục `scripts/` sau khi đã có gói dữ liệu xác nhận và điểm chính thức:
+
+```bash
+python 19_validate_layer_c.py --prepare-inputs
+python 12_appendix.py --bundle
+python 19_validate_layer_c.py --years 2020,2021,2022,2023,2024,2025
+```
+
+Bước này xuất `out/layer_c_indicators.csv` (ROE, ROA, CASA, tỷ trọng thu nhập ngoài lãi, nguồn/trang và ghi chú),
+`out/layer_c_pairs.csv` (ghép điểm tổng và DBI thuần), `out/layer_c_correlations.csv` (Spearman riêng từng năm),
+`out/layer_c_report.md`, `out/layer_c_review_queue.csv` và `out/layer_c_manifest.json` (hash đầu vào).
+Lệnh `--prepare-inputs` tạo bản lưu rồi thêm cột rà soát và các dòng LNST trống vào `out/dti_inputs.csv`;
+chạy lại không thêm trùng. Không sao chép số hoặc xác nhận từ ghi chú cũ. Lệnh tính toán không sửa điểm/dữ liệu gốc.
+ROE/ROA cần đủ số đầu–cuối kỳ; năm 2020 thiếu số cuối 2019 thì để trống.
+ROE dùng `net_profit_parent` và `equity`, cả hai có `definition=parent`.
+ROA dùng `net_profit_consolidated` và `total_assets`, cả hai có `definition=consolidated`.
+Không dùng `net_profit` cũ thay thế; thiếu hoặc sai phạm vi thì để trống tỷ số.
+
+Điền kết quả đối chiếu vào **`out/dti_inputs.csv`**, không sửa trực tiếp các file xuất.
+Các cột mới: `review_status` (`pending`/`resolved`), `reviewed_by`, `review_date` (`YYYY-MM-DD`), `review_evidence`.
+`resolved` chỉ đóng cờ ghi chú khi đủ người/ngày/bằng chứng, còn nguồn/trang, xác nhận PDF, phạm vi và đơn vị vẫn được kiểm tra.
+Giữ nguyên lịch sử `note`; không chỉ thêm câu “đã đối chiếu” để bỏ cờ. Sau khi cập nhật dữ liệu, chạy lại bước 12 và 19.
+Lọc `priority=1` trong `layer_c_review_queue.csv` để rà soát đầu vào cho năm cuối, gồm số đầu kỳ năm trước.
+`legacy_source_file`, `legacy_page`, `legacy_note` chỉ dẫn đến dữ liệu LNST cũ để mở PDF; không thay thế số mới.
+Mẫu `out/layer_c_awards.csv` lưu giải thưởng riêng (ngân hàng, năm, tên giải, tổ chức, tiêu chí, URL, ngày truy cập,
+`used_in_dbi` 0/1 và tiêu chí DBI nếu đã dùng). Bước 19 chưa tự tra hoặc đưa giải thưởng vào tính điểm.
+
+Tương quan có hai tập: đủ cặp số đã xác nhận và tập loại các cờ cần rà soát; tối thiểu 3 cặp, tối đa 5 ngân hàng/năm.
+Đây là đối chiếu tài chính mô tả sơ bộ, không suy diễn nhân quả; đối chiếu giải thưởng/xếp hạng bên thứ ba vẫn cần thực hiện riêng.
+Kiểm thử công thức và dữ liệu thiếu: `python ../tests/test_layer_c.py`.
+
 ## 1. Cài đặt
+
 ```
 pip install -r requirements.txt
 ```

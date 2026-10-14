@@ -1,0 +1,852 @@
+{
+ "summary": {
+  "bank": "bidv",
+  "bank_name": "BIDV",
+  "group": "NHTM Nhà nước",
+  "year": 2022,
+  "score": 43.2133,
+  "rank": 4,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.4545,
+  "dti_indicators_available": 5,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 50.0,
+    "dti": 84.3333,
+    "p": 56.8667,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 62.5,
+    "dti": 50.0,
+    "p": 60.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 25.0,
+    "dti": 37.0668,
+    "p": 27.4134,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 62.5,
+    "dti": 0.0,
+    "p": 50.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 25.0,
+    "dti": 100.0,
+    "p": 40.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 38,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "; credit quality was well controlled in accordance with the assigned plan. Financial performance was among the top banks; revenues, net income, and ROAA continued to grow strongly and CIR improved. Although revenues in 2022 were affected due to the fee-waiver policy for all transfer transactions on digital channels, BIDV made efforts to improve other revenue sources; the growth rate of retail reve"
+   },
+   "note": "34 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 57,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "o 2021. BIDV actively digitized internal management activities to improve labor productivity and reduce implementation time. In 2022, BIDV successfully deployed 21 robotic process automation (RPA) to automate the implementation processes, internal governance such as tracing processing, card claims, EKYC post-check processing, large-scale deployment of RLOS on the basis of BPM Business process mana"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 96,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "e customer request resolution rate in the first call reached more than 98.5%. This is a proof for BIDV’s unremitting efforts to meet the increasing demands of customers. In particular, on the basis of listening, combined with analyzing customer data on each touch-point to detect break points in the customer journey, proactive customer care call-out campaigns were implemented drastically, contribut"
+   },
+   "note": "12 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 67,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "iculties, support customers to recover business activities after the Covid-19 pandemic; Credit growth ensured compliance with the limits set by the SBV; Capital balance was managed proactively and flexibly; Effectively implementing the Overall business strategy and component strategies; Focusing on digital transformation and implementation of key IT projects;… The Supervisory Board oriented and di"
+   },
+   "note": "32 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'GOV'] (all)"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 65,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "128 129 ANNUAL REPORT 2022 CORPORATE GOVERNANCE COMMITTEES BIDV now has 05 Committees under BOD which are Risk management Committee, Human resources Committee, Strategy and Organization Committee, Information Technology Committee and BIDV-KEB Hana Bank Strategic cooperation Committee (Strategic cooperation Committee). BOD published specific regulations on organization and operation for each Commit"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 13,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "r 1990 24 January 2014 01 January 1995 01 May 2012 23 March 1996 28 December 2011 27 December 2000 25 April 2007 Established under the name of Bank for Construction of Vietnam BIDV introduced a new brand identity Issuing “BIDV business development strategy until 2025, with vision to 2030” Strategic alliance with Hana Bank. Hana Bank has become a foreign strategic shareholder, owning 15% of BIDV’s"
+   },
+   "note": "20 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 38,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "of products on both over-the-counter and online channels. The bank aimed to migrate all retail credit products to the RLOS in 2023. The core card and the new Contact Center System procurement projects, which had been researched for deployment under a new and modern technology, towards deployment on Cloud,... will be launched from 2023. 69,582 22,557 24,015 23,009 VND billion BUSINESS PERFORMANCE ("
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 66,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "n BIDV and strategic investor KEB Hana Bank. Corporate governance training courses participated by members of BOD, Supervisory Board, Chief Executive Officer, Board of Management and Secretary during 2022 as follow: No. Attended Courses Date Participants 1 Workshop \"Potential for the development of Open Banking in Vietnam - Recommendations on policy and legal framework\" 16 March 2022 02 members of"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 57,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "successfully deployed 21 robotic process automation (RPA) to automate the implementation processes, internal governance such as tracing processing, card claims, EKYC post-check processing, large-scale deployment of RLOS on the basis of BPM Business process management solution, pilot application of Blockchain technology in processing Trade finance transaction, etc.; Optimized the Examination, recr"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 57,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "s via digital channels over the total number of transactions in the whole system in 2022 reached 75.9%, an increase of 66.9 % compared to 2021. BIDV actively digitized internal management activities to improve labor productivity and reduce implementation time. In 2022, BIDV successfully deployed 21 robotic process automation (RPA) to automate the implementation processes, internal governance such"
+   },
+   "note": "2 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 57,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "ts/procurement plans (159 projects/ procurement plans/maintenance with a total investment of VND3,661 billion) and promptly handled difficulties and obstacles so that the projects could be implemented on schedule; at the same time, actively promoted the development of digital distribution channels, digitized traditional products and developed new products on digital channels such as the launch of"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 32,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "the risk caused by inadequate or erroneous internal procedures, human factors, system failures or external factors. Operating risk can occur in all banking activities and is unpredictable. To implement the operational risk management policies and regulations in 2022, BIDV synchronously implemented operational risk management tasks to ensure compliance with the regulations of competent authorities"
+   },
+   "note": "14 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 6,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "ietnam” (ABF Wholesale Banking Awards), “Most Innovative Risk Management Bank in 2022” (International Business Magazine); Top 10 prestigious Vietnamese commercial banks 2022 (Vietnam Report)… Pioneering, developing together Entering 2023, BIDV carries a proactive attitude and great determination to sprint to the finish line, effectively achieving the objective of the entire 2021–2025 period. “Disc"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 102,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "ng continues to be maintained at a high level. On average, the rate of Very Good and Good evaluations on quality indicators reached 94%. 2022 was the first year that BIDV officially implemented the training program framework following the system- wide planning. These programs are implemented on the E-learning system levels 2 and 3, which applied new technologies (simulation, gamification) using so"
+   },
+   "note": "2 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 66,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "the development of Open Banking in Vietnam - Recommendations on policy and legal framework\" 16 March 2022 02 members of BOD and 01 member of BOM 2 Transformation Conference for BIDV Senior Leaders - BIDV Leadership Retreat 07-08 October 2022 10 members of BOD and 11 members of BOM 3 Certificate of Chief Data Officer (CDO) May 2022 – October 2022 03 members of BOD’s Secretariat & IR 4 Bidding and"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 18,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "ation of their parents. BIDV was the pioneer in Vietnam to launch BIDV Home – an application for applying for home loans on a mobile platform. The completely new features bring a rich experience for customers in personalizing their needs, searching information and images which are always updated in real-time of more than 110 real estate projects across the country. Customers can also easily apply"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 66,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "rs - BIDV Leadership Retreat 07-08 October 2022 10 members of BOD and 11 members of BOM 3 Certificate of Chief Data Officer (CDO) May 2022 – October 2022 03 members of BOD’s Secretariat & IR 4 Bidding and Advanced bidding operations January 2022 and March 2022 10 members of BOD’s Secretariat & IR 5 Advanced analytics training 04 May – 10 May 2022 01 member of BOD’s secretariat & IR 6 Future bank l"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "bidv",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2022_bctn.pdf",
+    "page": 107,
+    "url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+    "quote": "and evaluated the current state of BIDV’s corporate culture and pointed out that, BIDV’s culture has many characteristics of “family culture”, “collaborative culture” and “a cultured large family”, with the following expressions: • A tradition of union, warmth, and mutual affection; • Peaceful and consent atmosphere, based on mutual support and an appropriate level of hierarchy; • Superiors set e"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 75.9,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 84.3333,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": 9.0,
+   "L": 0.0,
+   "U": 18.0,
+   "z": 50.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "2021->2022, quy về điểm %/năm"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.1126,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 37.0668,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 1.2708,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 87.12,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: days_x6h"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "S",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 6,
+   "1": 7,
+   "2": 4,
+   "3": 3,
+   "4": 4
+  }
+ }
+}

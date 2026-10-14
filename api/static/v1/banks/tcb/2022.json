@@ -1,0 +1,901 @@
+{
+ "summary": {
+  "bank": "tcb",
+  "bank_name": "Techcombank",
+  "group": "NHTM Cổ phần",
+  "year": 2022,
+  "score": 68.892,
+  "rank": 1,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.5455,
+  "dti_indicators_available": 6,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 81.25,
+    "dti": 76.4815,
+    "p": 80.2963,
+    "n_dti": 2,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 68.75,
+    "dti": 27.7778,
+    "p": 60.5556,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 62.5,
+    "dti": 100.0,
+    "p": 70.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 81.25,
+    "dti": 0.0,
+    "p": 65.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 37.5,
+    "dti": 100.0,
+    "p": 50.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 87.5,
+    "dti": null,
+    "p": 87.5,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 3,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "VND 25,568 billion VND 699,033 billion USD 1.0 billion 90% #1 at 31 December 2022 at 31 December 2022 ROA 2022 TOI 2016-22 TOI CAGR: 23.5% transactions conducted digitally 2022 PBT 2016-22 PBT CAGR: 43.6% Card payment volume in the country Total Assets syndicated loans from 26 international lenders Digital Banking EuroMoney GOOD DESIGN® award - The Chicago Athenaeum AsiaMoney Global Finance Global"
+   },
+   "note": "35 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 32,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "ith us online – with all products and services easily available. ♦ We added 200+ new features to our retail app in 2022, which means nearly 90% of retail transactions can be done digitally. ♦ We also simplified and digitalised the core process of account opening for businesses – creating paperless, digital onboarding for eligible customers. Together with the new Techcombank Business app, most serv"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 7,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "orm. Once launched, our fully digital credit card journeys, Talent Digital we will deliver timely hyper- growing c.28% and average term with simple application processes Our talented team are the Bank’s the Bank, employees received The shift to digital banking deepened deposit balances rising ~33%. personalised banking experiences and the possibility of instant approval. biggest asset and the foun"
+   },
+   "note": "22 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 40,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "ng process for the BCDE system. In major business locations where these changes were implemented, the precision and compliance of business lending decisions improved dramatically. There was a significant 50% reduction in turnaround times on 75% of credit underwriting volumes across categories. With customer experience now two to three times better than it was under the old operating model, we are"
+   },
+   "note": "21 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 10,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "18 19 Chap 02 | The story of TECH STRONGER, FURTHER, TOGETHER 2022 ANNUAL REPORT ABOUT US Techcombank’s mission is to lead the digital transformation of the financial industry, enabling individuals, businesses and corporates to progress and thrive sustainably. Techcombank was established in 1993, as Vietnam began its transition from a centrally-planned to more market-oriented economy. Techcombank"
+   },
+   "note": "18 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 62,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "puter Applications and Software Engineering – from Madurai Kamaraj University, India and the National University of Singapore. He has completed the leadership program at the European Institute of Business Administration (INSEAD) in 2015. He has worked across Asia, Europe and America. Mr PRANAV SETH Chief Digital Officer Mr Seth was appointed Chief Digital Officer on 13 January 2021. He has over 20"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "b Services (AWS), Moodys’ Certificate in Commercial Credit (CICC) and other world-class qualifications, were awarded IT certificates, completed many levels on e-learning platforms, and more. Amazon Web Services (AWS) and international certification sponsorship program As part of our five-year cloud technology investment under the Skills Guild framework, over 630 Techcomers have been AWS certified."
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 12,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "ellent HR connect with, and contribute to, Market leader for bancassurance, Policies at the Vietnam HR our community. through strategic cooperation with Awards. top insurance firm, Manulife 2019 2020 2021 2022 Opened second Northern Became Vietnam’s leading bank for Prioritised resources to protect Partnership with One Mount Group to First privately owned bank in Vietnam to join Successfully compl"
+   },
+   "note": "30 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 12,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "g our transformation to become the best bank in Vietnam. 1993 2001 2003 2006 2008 2009 2010 2011 2012 Established with Launched Globus, Participated in global Reached over Founded Smartlink, Became a leading joint stock Winner of many global Vietnam’s second Vietnam’s leading charter capital of our core banking card payment system USD 1 billion in Vietnam’s largest card commercial bank – VND 5,400"
+   },
+   "note": "25 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 26,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "secure when investing and trading in corporate bonds. TCBS also became the first financial institution to join the Vietnam Blockchain Association. ♦ We launched new financial investment products and tech systems, embracing cutting edge trends to flexibly meet our customers’ investment needs. ♦ Our information security systems ranked Grade A – the highest ranking in a rigorous assessment by UpGuar"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 34,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "thdrawal services. Business Process Management was upgraded by implementing the Camunda platform. Software-defined networking Software-defined networking (SDN) automates our IT infrastructure and allows us to respond more efficiently to changing business requirements. Software-based controllers, or APIs, now direct our network traffic – making it faster, more flexible and secure; while reducing co"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 27,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "e Global Fintech Innovation Awards 2022 Asian Technology Excellence Awards 2022 FinanceAsia Country Awards 2022 Forbes The Asset Triple A Country Awards Best Wealth Management and Private Banking Implementation: ♦ Best Program Governance ♦ Best Adoption of Tools and Practices Most Innovative use of Blockchain in Banking: ♦ Most Agile Deployment ♦ Most Impactful Project ♦ Big Data – Banking ♦ Most"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 34,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "d spikes in online transactions during holiday seasons ♦ Serve growing demand for Techcombank’s ecosystem and host-to-host payments. The upgrade of our Card Management Systems have started, in partnership with a leading consulting company. In the first phase, tactical improvements will increase the automation of card deployment and enhance customers’ experiences of deposit and withdrawal services."
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 32,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "can now be conducted digitally. In the past, Micro Small to Medium enterprises (MSME) and SME segments were under-served, with limited access to capital. Techcombank has helped to change this by putting the power of big data and analytics into practice to achieve a zero minute, pre-approved, fully end-to-end digital overdraft process for these customers. 1.5 million+ new website monthly visitors"
+   },
+   "note": "14 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 40,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "The initiative involved: ♦ Revised credit models ♦ New automation features, including streamlining documentation ♦ Risk based profiling for checklist completion ♦ Underwriting resource selection ♦ Instant decision support for everyone in the business credit value chain ♦ Full digitalisation of our early warning and underwriting scores ♦ A new post-monitoring process for the BCDE system. In major"
+   },
+   "note": "31 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 27,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "ards 2022 Asian Technology Excellence Awards 2022 FinanceAsia Country Awards 2022 Forbes The Asset Triple A Country Awards Best Wealth Management and Private Banking Implementation: ♦ Best Program Governance ♦ Best Adoption of Tools and Practices Most Innovative use of Blockchain in Banking: ♦ Most Agile Deployment ♦ Most Impactful Project ♦ Big Data – Banking ♦ Most Innovative Technology ♦ #1 Bra"
+   },
+   "note": "13 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 33,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "Bank with Innovative Products award – Vietnam Retail Banking Forum, co-organised by Vietnam Banking Association (VNBA) and IDG Corp. (3) Agile and digital corporate culture Building a solid foundation for future growth with agility, experimentation and modern ways of working We continued building a digital culture, enabled by our agile operating model and strong engineering practices. With 600 tea"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "work, over 630 Techcomers have been AWS certified. Additionally, to build a world -class IT workforce, an international certification sponsorship has been launched and by end of 2022, 62% of IT employees held at least one international certificate. For more information please refer to page 70 in IT talent development. Moody’s CICC Moody’s trained many of our employees toward its CICC, upskilling r"
+   },
+   "note": "14 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 43,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "nk. Average learning hours per employee was over 70 hours for the year. Work efficiency and Collaboration for common objectives ‘Be Greater Techcomers’ encourages appreciation of fellow colleagues who contribute to our greater success. In addition to traditional email, the Yammer Praise function on Microsoft 365 is an interactive way to say thank you to a co-worker for doing something great. By al"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 31,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "ank’s data culture does centre enabled by Collibra – the knowledge acquisition and not end with our dedicated DnA first such centre in Vietnam experience. staff. We also offer custom-designed courses on data literacy, data ♦ Data access management and ♦ We collaborated with Amazon visualisation and data governance data protection via a masking tool Web Services (AWS) on training for other employee"
+   },
+   "note": "10 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP'] (any)"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 27,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "2022 FinanceAsia Country Awards 2022 Forbes The Asset Triple A Country Awards Best Wealth Management and Private Banking Implementation: ♦ Best Program Governance ♦ Best Adoption of Tools and Practices Most Innovative use of Blockchain in Banking: ♦ Most Agile Deployment ♦ Most Impactful Project ♦ Big Data – Banking ♦ Most Innovative Technology ♦ #1 Brand Value Among Securities Companies in Vietn"
+   },
+   "note": "19 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 31,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "uch centre in Vietnam experience. staff. We also offer custom-designed courses on data literacy, data ♦ Data access management and ♦ We collaborated with Amazon visualisation and data governance data protection via a masking tool Web Services (AWS) on training for other employees. Programs like ♦ A machine learning platform with programs to enable our DnA these, in combination with targeted SageMa"
+   },
+   "note": "11 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "tcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2022_bctn.pdf",
+    "page": 30,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+    "quote": "r of our ‘data brain’ to improve the way our customers manage their day to day finances, grow their businesses, plan their financial futures, and more. 2022 TOI impact from new DnA models VND 500+ BILLION (DnA) Overview Data and Analytics (DnA) ♦ Implementing PII technology that protects customers’ privacy but still allows staff just enough access to work effectively with their information. Safegu"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 86.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 95.5556,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: remit_domestic"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 57.4074,
+   "L": 0.0,
+   "U": 100.0,
+   "z": 57.4074,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "digital_customers/total_customers (registered/total)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": 5.0,
+   "L": 0.0,
+   "U": 18.0,
+   "z": 27.7778,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "2021->2022, quy về điểm %/năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.5152,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 2.6201,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 70.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "D",
+  "weakest_pillar": "C",
+  "criteria_score_distribution": {
+   "0": 1,
+   "1": 3,
+   "2": 7,
+   "3": 2,
+   "4": 11
+  }
+ }
+}

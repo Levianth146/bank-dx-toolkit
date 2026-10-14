@@ -1,0 +1,920 @@
+{
+ "summary": {
+  "bank": "vcb",
+  "bank_name": "Vietcombank",
+  "group": "NHTM Nhà nước",
+  "year": 2025,
+  "score": 75.7572,
+  "rank": 2,
+  "maturity_level": "Mức 4 - Nâng cao",
+  "maturity_level_number": 4,
+  "maturity_level_name": "Nâng cao",
+  "data_confidence": 0.4545,
+  "dti_indicators_available": 5,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 93.75,
+    "dti": 85.215,
+    "p": 92.043,
+    "n_dti": 2,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 75.0,
+    "dti": null,
+    "p": 75.0,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 62.5,
+    "dti": 50.0,
+    "p": 60.0,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 87.5,
+    "dti": 100.0,
+    "p": 90.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 75.0,
+    "dti": null,
+    "p": 75.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 20,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "n 2021 - 2025… trong đó hoàn thành ở tất cả các chỉ tiêu quan trọng về an toàn, xếp hạng tín nhiệm, môi trường làm việc, chuyển đổi số và ESG; đặc biệt một số chỉ tiêu đo lường mục tiêu “Dẫn đầu về chuyển đổi số” đã vượt xa kế hoạch năm 2025 và vượt kế hoạch năm 2030 (tỷ lệ giao dịch khách hàng qua kênh số, tỷ lệ giao dịch STP). 2,44 Tổng tài sản của Vietcombank đạt hơn tăng 17% so với cuối năm 20"
+   },
+   "note": "66 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 37,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "ch trên kênh số. Hiện thực hóa chiến lược chuyển đổi số, ngân hàng tích cực tham gia triển khai Đề án 06, chính sách xác thực điện tử của Bộ Công An. Trong năm 2025, Vietcombank tiếp tục phối hợp chặt chẽ với C06 - Bộ Công an để tiên phong trong việc ứng dụng tài khoản định danh và xác thực điện tử VNeID vào các dịch vụ tài chính, cụ thể: - Tích hợp Cổng ký số từ xa (RS Hub VNeID): tiên phong cho"
+   },
+   "note": "20 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 35,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "5, Vietcombank tiếp tục đẩy mạnh phát triển các nền tảng ngân hàng số dành cho khách hàng cá nhân và doanh nghiệp nhỏ và vừa, đóng vai trò trung tâm trong chiến lược chuyển đổi số và phổ cập tài chính toàn diện. Cùng với việc ra mắt phiên bản New Digibank có giao diện và trải nghiệm người dùng được cá nhân hóa theo từng phân khúc khách hàng từ giữa năm 2024, nền tảng số VCB Digibank dành cho khách"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "KPI",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 6,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "ĐỐC Trong lĩnh vực chuyển đổi số, Vietcombank tiếp tục giữ vai trò tiên phong với việc ra mắt hàng loạt giải pháp số hóa toàn trình, với tỷ trọng giao dịch trên kênh số đạt 91,4%, riêng đối với khách hàng bán lẻ tỷ lệ đạt trên 99%, góp phần tối ưu hóa vận hành, giảm tiêu thụ tài nguyên và nâng cao trải nghiệm khách hàng. Bước sang giai đoạn chiến lược mới, trong bối cảnh môi trường kinh doanh tiế"
+   },
+   "note": "47 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 21,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "ding với hơn 6.000 khách hàng đã giải ngân online và tổng số món vay được thực hiện giải ngân online đạt ~ 36.500 món trong năm 2025; triển khai giải pháp số hóa tại gần 600 bệnh viện và là một trong những ngân hàng đầu tiên triển khai VietQRGlobal thanh toán song phương Việt – Trung; hoàn thành 05 mục tiêu chuyển đổi số ngành ngân hàng theo Quyết định 810/ QĐ-NHNN; khẳng định vị thế tiên phong tr"
+   },
+   "note": "67 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'GOV'] (all)"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf; data/raw/vcb/2025_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 52,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "enchmark và các tiêu chuẩn an toàn cho môi trường điện toán đám mây. Các sản phẩm, dịch vụ ngân hàng số trước khi đưa vào cung cấp cho khách hàng đều được áp dụng đầy đủ các biện pháp kiểm soát an toàn, bảo mật theo quy định của Vietcombank và thông lệ quốc tế trong suốt vòng đời sản phẩm. Cùng với đầu tư công nghệ, Vietcombank chú trọng phát triển nguồn nhân lực và xây dựng văn hóa số gắn với Pho"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 52,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "số. Năm 2025 ghi nhận bước tiến mạnh mẽ của Vietcombank trong triển khai chuyển đổi số hoạt động ngân hàng. Tỷ lệ giao dịch của khách hàng thực hiện qua các kênh số đạt 91,4%, riêng đối với khách hàng bán lẻ tỷ lệ đạt trên 99%. Các nền tảng ngân hàng số tiếp tục được phát triển và mở rộng, bao gồm hệ sinh thái ngân hàng số dành cho khách hàng cá nhân, khách hàng doanh nghiệp và cung ứng sản phẩm,"
+   },
+   "note": "29 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 30,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "Đ (−16,39%) so với năm 2024. Kết quả này phản ánh những nỗ lực đồng bộ của Ngân hàng trong việc tối ưu hóa hiệu quả sử dụng năng lượng trên toàn hệ thống, bao gồm cải tiến vận hành hệ thống điều hòa và chiếu sáng tại trụ sở và các chi nhánh, tăng cường ứng dụng công nghệ quản lý tòa nhà, tối ưu hóa trung tâm dữ liệu, đồng thời thúc đẩy chuyển đổi số nhằm giảm phụ thuộc vào hạ tầng vật lý truyền th"
+   },
+   "note": "6 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI",
+    "CERT2"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 37,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "àng đầu. Trong năm 2025, Vietcombank đã triển khai đồng bộ nhiều giải pháp nhằm tuân thủ các quy định mới của Ngân hàng Nhà nước liên quan đến an toàn giao dịch trực tuyến, bảo vệ dữ liệu cá nhân và xác thực giao dịch nâng cao. Vietcombank là một trong những ngân hàng tiên phong triển khai xác thực sinh trắc học thông qua tích hợp với ứng dụng VNeID, ứng dụng công nghệ NFC để đọc dữ liệu căn cước"
+   },
+   "note": "21 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['CERT2', 'MULTI'] (all)"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf; data/raw/vcb/2025_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 57,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "ện giao dịch tài chính linh hoạt, hiệu quả. Năm 2025, quy mô giao dịch trên VCB DigiBiz đạt hơn 18 triệu giao dịch, với tổng giá trị giao dịch khoảng 1,37 triệu tỷ đồng (tăng 8% về số lượng giao dịch và 18% về giá trị giao dịch so 2024). Bên cạnh đó, Vietcombank tiếp tục đẩy mạnh ứng dụng công nghệ trí tuệ nhân tạo trong công tác chăm sóc khách hàng thông qua triển khai và mở rộng trợ lý ảo VCB Di"
+   },
+   "note": "19 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 14,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "vòng đời khách hàng. Thứ năm phát triển các gói sản phẩm tích hợp, thúc đẩy bán chéo, mở rộng thu dịch vụ và các giải pháp tài chính bền vững. Thứ sáu hoàn thiện cơ chế, chính sách và chuẩn hóa quản trị theo các chuẩn mực như Basel III và thông lệ quốc tế, tăng cường ứng dụng công nghệ, dữ liệu và tự động hóa trong vận hành. Thứ nhất nâng cao năng lực thực thi chiến lược thông qua cụ thể hóa mục"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 58,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "lý thuế và hóa đơn theo Nghị định 70/2025/NĐ-CP, đồng thời cung cấp công cụ hỗ trợ bán hàng hiệu quả cho Chi nhánh và mang lại trải nghiệm giao dịch hiện đại cho Doanh nghiệp. Tiếp tục triển khai tích hợp VNeID vào hành trình phục vụ khách hàng ttại quầy thông qua VCB Tablet, tiến tới văn phòng số không giấy tờ. • Hỗ trợ C06 – Bộ Công An thực hiện báo cáo tổng kết giai đoạn 1 Đề án 06 năm 2022-20"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "GOV",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 49,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "khí nhà kính, đồng thời tăng đáng kể các khoản viện trợ không hoàn lại và các khoản vay ưu đãi. TỔNG QUAN Theo đó, tài chính cho thích ứng phải đạt ít nhất 50% tổng tài chính khí hậu được cung cấp cho các nước đang phát triển. Thứ ba, cần khẩn trương mở rộng và hoàn thiện việc triển khai sáng kiến “Cảnh báo sớm cho tất cả” để bảo vệ tính mạng và tài sản của người dân khỏi các thảm họa khí hậu ngày"
+   },
+   "note": "11 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 43,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "ội ngũ nòng cốt về Công nghệ thông tin và chuyển đổi số, dữ liệu: Thiết kế trải nghiệm người dùng (UX & Interaction Design), Xử lý ngôn ngữ tự nhiên với Deep Learning, Vận hành mô hình ngôn ngữ lớn (Large Language Models), Vận hành hệ thống dữ liệu (Data Operation), Phát triển và vận hành phần mềm (DevOps)...; Đồng thời, chú trọng phát triển tư duy và kỹ năng số cho cán bộ, đặc biệt thông qua các"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 52,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "hẩm, dịch vụ ngân hàng số trước khi đưa vào cung cấp cho khách hàng đều được áp dụng đầy đủ các biện pháp kiểm soát an toàn, bảo mật theo quy định của Vietcombank và thông lệ quốc tế trong suốt vòng đời sản phẩm. Cùng với đầu tư công nghệ, Vietcombank chú trọng phát triển nguồn nhân lực và xây dựng văn hóa số gắn với Phong trào “Bình dân học vụ số”. Ngân hàng đã hoàn thiện Bộ Khung năng lực, trong"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 42,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "ên và công ty liên kết. (14) Số liệu theo Báo cáo tài chính hợp nhất của Ngân hàng năm 2025. Kết quả triển khai đào tạo Trong năm 2025, Vietcombank đã tổ chức 439 khóa đào tạo trực tiếp, đạt 112,6% kế hoạch. Tổng số lượt đào tạo trong năm 2025 đạt hơn 230 nghìn lượt (tăng 38,3% so với năm 2024). Số giờ đào tạo trung bình trên một cán bộ năm 2025 là 48,96 giờ/năm, đạt 139,9% so với kế hoạch năm 202"
+   },
+   "note": "22 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 26,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "ải pháp thanh toán số như thanh toán QR, chuyển tiền nhanh, nâng cấp các tiêu chuẩn kỹ thuật thanh toán và mở rộng kết nối với các đối tác trung gian thanh toán, nền tảng thương mại điện tử… • Đổi mới sáng tạo được xác định là động lực tăng trưởng mới, mang tính chiến lược và dài hạn. Tháng 3/2025, Trung tâm Đổi mới sáng tạo chính thức được thành lập với nhiều hoạt động thúc đẩy đổi mới sáng tạo n"
+   },
+   "note": "38 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 58,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "óa trong quản lý thuế và hóa đơn theo Nghị định 70/2025/NĐ-CP, đồng thời cung cấp công cụ hỗ trợ bán hàng hiệu quả cho Chi nhánh và mang lại trải nghiệm giao dịch hiện đại cho Doanh nghiệp. Tiếp tục triển khai tích hợp VNeID vào hành trình phục vụ khách hàng ttại quầy thông qua VCB Tablet, tiến tới văn phòng số không giấy tờ. • Hỗ trợ C06 – Bộ Công An thực hiện báo cáo tổng kết giai đoạn 1 Đề án 0"
+   },
+   "note": "2 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 44,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "eo các phương pháp tiên tiến. Các mô hình lượng hóa rủi ro đã được xây dựng với tỷ lệ bao phủ gần như toàn bộ danh mục của Ngân hàng. Bên cạnh đó, các hệ thống công nghệ thông tin hỗ trợ cũng thường xuyên được Vietcombank nâng cấp nhằm đáp ứng tốt nhất yêu cầu quản trị. Công tác rà soát và nâng cao chất lượng dữ liệu tại Vietcombank được chú trọng và duy trì thường xuyên, liên tục nhằm đáp ứng yêu"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 24,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "suất cho vay khách hàng đang áp dụng. • Kiểm soát chặt chẽ chất lượng dư nợ tín dụng, dư nợ cơ cấu, đảm bảo kiểm soát tỷ lệ nợ xấu dưới 1,5%. • Về hoạt động công nghệ thông tin (CNTT), VCB tiếp tục thực hiện các giải pháp nâng cấp kiến trúc và hạ tầng CNTT, đầu tư mở rộng khả năng lưu trữ và xử lý dữ liệu lớn, đảm bảo an toàn hệ thống CNTT; đồng thời, hiện đại hóa hệ thống thanh toán, nâng cao ch"
+   },
+   "note": "10 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bctn.pdf",
+    "page": 14,
+    "url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+    "quote": "kinh doanh và các ưu tiên của Chính phủ; (iii) củng cố quản trị rủi ro tổng thể, đặc biệt là rủi ro công nghệ, an ninh mạng và rủi ro mới nổi trong bối cảnh số hóa; (iv) Xây dựng dữ liệu nền tảng và thúc đẩy chuyển đổi số thực chất, ưu tiên hiện đại hoá các hệ thống công nghệ lõi, tích cực ứng dụng phân tích dữ liệu, mô hình dự báo và trí tuệ nhân tạo theo hướng hiệu quả, có trọng tâm, nhằm hỗ trợ"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "vcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI",
+    "CERT2"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2025_bcptbv.pdf",
+    "page": 25,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
+    "quote": "ếu tố then chốt trong hoạt động của Vietcombank. Vietcombank tuân thủ tiêu chuẩn ISO 27001:2022 duy trì liên tục từ 2014 đến nay và PCI DSS 4.0.1. • Tăng cường bảo vệ dữ liệu cá nhân tuân thủ quy định pháp luật và quyền lợi hợp pháp của khách hàng trong kỷ nguyên số. Triển khai Dự án xây dựng Khung Bảo vệ Dữ liệu cá nhân. • Năm 2025, Vietcombank đã thực hiện 34 chương trình khảo sát định kỳ, 12 ch"
+   },
+   "note": "14 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP'] (any)"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 91.4,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": 3.8172,
+   "L": 1.0,
+   "U": 5.0,
+   "z": 70.43,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ cùng định nghĩa"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu nguyên giá phần mềm hoặc tổng tài sản"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 0.9389,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": 2.8668,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "CAGR TOI/CBNV bình quân 2021->2025"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 48.96,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "O",
+  "criteria_score_distribution": {
+   "0": 2,
+   "1": 0,
+   "2": 6,
+   "3": 3,
+   "4": 13
+  }
+ }
+}

@@ -1,0 +1,928 @@
+{
+ "summary": {
+  "bank": "tcb",
+  "bank_name": "Techcombank",
+  "group": "NHTM Cổ phần",
+  "year": 2025,
+  "score": 76.075,
+  "rank": 1,
+  "maturity_level": "Mức 4 - Nâng cao",
+  "maturity_level_number": 4,
+  "maturity_level_name": "Nâng cao",
+  "data_confidence": 0.6364,
+  "dti_indicators_available": 7,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 87.5,
+    "dti": 94.7512,
+    "p": 88.9502,
+    "n_dti": 2,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 62.5,
+    "dti": 0.0,
+    "p": 50.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 68.75,
+    "dti": 100.0,
+    "p": 75.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 100.0,
+    "dti": 50.0,
+    "p": 90.0,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 56.25,
+    "dti": 100.0,
+    "p": 65.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 87.5,
+    "dti": null,
+    "p": 87.5,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 54,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "t valuable asset is its people CUSTOMER EXPERIENCE TRANSFORMATION AT SCALE: PERSONALIZATION AT EVERY TOUCHPOINT In 2025, Techcombank proudly served over 18 million customers with a truly hyper-personalized experience Driven by a “Digital-first” strategy, nearly 90% of transactions are conducted via digital channels, and 100% of branches have implemented e-ticket solutions, and we are the first ban"
+   },
+   "note": "41 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 62,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": ", as well as termination and cancellation processes, ensuring compliance and operational resilience. SUPPORTING THE NATIONAL AGENDA Techcombank demonstrated exceptional agility in responding to Vietnam's evolving regulatory landscape. Following the State Bank of Vietnam's Circular 17/2024 mandating biometric authentication for corporate banking customers by July 1st, 2025, we rapidly developed and"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 54,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "e years, Techcombank has successfully transformed its talent pool from traditional banking professionals into a team of \"digital warriors\" who are highly skilled and possess a comprehensive digital mindset: Techcombank's most valuable asset is its people CUSTOMER EXPERIENCE TRANSFORMATION AT SCALE: PERSONALIZATION AT EVERY TOUCHPOINT In 2025, Techcombank proudly served over 18 million customers wi"
+   },
+   "note": "58 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 18,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "channel digital experiences— introduced for the first time in Vietnam Recognized for the “Most Successful Syndicated Loan Transaction in Vietnam” in 2020 with a USD 500 million syndicated facility Partnered with One Mount Group to deliver a fully integrated, end‑to‑end digital experience across the customer journey Ranked at the top in credit quality with ratings equivalent to Vietnam’s sovereign"
+   },
+   "note": "63 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 14,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "ugust 1993. TECHCOMBANK GROUP STRUCTURE AND OWNERSHIP OF SUBSIDIARIES (31/12/2025) TECHCOMBANK Techcombank AMC (100%) Techcom Securities (79.8%) Techcom Capital (88.99%) Techcom General Insurance (68%) Techcom Life Insurance (80%) BANKING SERVICES BRANCH NETWORK Techcombank's mission is to lead the digital transformation of Vietnam’s financial industry, enabling individuals, businesses and corpora"
+   },
+   "note": "42 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bcptbv.pdf",
+    "page": 72,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-phat-trien-ben-vung-2026-eng-15052026.pdf",
+    "quote": "We continuously strive to strengthen our internal governance framework to maintain and promote anti-corruption and anti-bribery efforts at Techcombank in an effective, consistent, and legally compliant manner: • Strengthening the governance structure: Techcombank has established and maintained the Steering Committee on Anti- Corruption, chaired directly by the Chair man of the Board of Directors."
+   },
+   "note": "15 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 42,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "nectivity, dark pool solutions for confidential trades, and One Click Research for advanced analytics, enhancing the Company’s capability to serve large domestic and international capital flows and proactively capture institutional inflows following market reclassification. • Continue to prioritize investment in technology, automation, and AI across trading, wealth management, and internal operati"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 49,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "es. In 2025, TCGI achieved revenue of over VND 500 billion and served more than 650,000 customers. This represents a remarkable milestone for a newly established company, affirming TCGI’s strong governance capability, differentiated business strategy, and the synergistic strength of the Techcombank ecosystem. By maintaining a strong focus on building a solid operational foundation, developing an i"
+   },
+   "note": "171 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 18,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "various stages of development in our 32-year journey; going from strength to strength. As Vietnam's economy continues to rise and its financial system matures, the future holds even greater opportunity and promise. Established in 1993 with a charter capital of VND 20 billion Implemented the Globus core banking system in line with international standards Joined the global card payment network In t"
+   },
+   "note": "32 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 66,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "implemented the AE+ chatbot with 200+ curated Q&A items drawn from AE+ product knowledge. This capability helps reduce response time by approximately 94% when frontline teams need quick, consistent answers while consulting customers, improving both service speed and customer experience at branches. CYBERSECURITY Cybersecurity is essential for Techcombank. As one of the largest banks in Vietnam, Te"
+   },
+   "note": "20 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bcptbv.pdf; data/raw/tcb/2025_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 66,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "y ~70% in key business analysis tasks. Building on this, 2026 roadmap expands to additional agents across the delivery lifecycle (e.g., architecture and solution design assistance, tester support, and software development). The long- term vision is a “virtual development team”, a set of specialized AI agents that amplify engineering throughput by multiple times while improving accuracy through con"
+   },
+   "note": "150 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 61,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "l assets under management increased by 20% compared with 2024. The rewards platform processed 9 Million transactions 530% YoY CASA balance including Auto-earning Total assets under management 16.6% YoY 20% YoY LEADING RETAIL DIGITAL BANKING Commercialize capabilities in the digital economy (further automation & scaling) Family & Friend Banking Hyper-personalization with data & AI In 2025, Techcomb"
+   },
+   "note": "23 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 54,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "n 2025, Techcombank proudly served over 18 million customers with a truly hyper-personalized experience Driven by a “Digital-first” strategy, nearly 90% of transactions are conducted via digital channels, and 100% of branches have implemented e-ticket solutions, and we are the first bank to adopt a paperless model, reducing average counter wait times by 60%. Through the Virtual Advisory Center (VA"
+   },
+   "note": "17 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 67,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "planning, and storage lifecycle optimization, these efforts produced annual cloud cost savings of USD 3.2 million and achieved a Cloud Optimization score of 70.64%. This score surpasses that of regional high-performing banks, which average around 50%. The centralized Notification Hub delivered near real-time transaction alerts (~1 second), integrated 39 services, and generated cumulative savings o"
+   },
+   "note": "100 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 18,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "e Globus core banking system in line with international standards Joined the global card payment network In the context of the COVID‑19 pandemic, prioritized resources to safeguard employees and customers through enhanced protection measures Strengthened digital and data capabilities by rolling out Agile ways of working and establishing the Data & Analytics Division Developed a comprehensive ecosy"
+   },
+   "note": "8 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 54,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "g-term value for partners and shareholders. Techcombank’s most valuable asset is its people. Over the past five years, Techcombank has successfully transformed its talent pool from traditional banking professionals into a team of \"digital warriors\" who are highly skilled and possess a comprehensive digital mindset: Techcombank's most valuable asset is its people CUSTOMER EXPERIENCE TRANSFORMATION"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 65,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "ensitive accounts, including security risks related to TCBS sensitive business and IPO information. People Excellence People are Techcombank’s most valuable asset. In 2025, the Bank continued to strengthen its internal capabilities through structured development programs, including the Architecture Academy, Green Belt certification, and standardized technical assessments. All IT employees complete"
+   },
+   "note": "25 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 104,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "ns about Data Product, DBx, Data Governance… reaching 6000++ users across organization Training/Sharing (An AI competition broadcast on VTV, Techcombank as the exclusive sponsor and co‑organizer) Hanoi University of Science and Technology as the organizer, Techcombank as the strategic partner) HUST Hackathon VTV AI Challenge 100 teams, from 14 countries 452 participants, 106 teams, 170 ideas AI Ch"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bcptbv.pdf",
+    "page": 33,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-phat-trien-ben-vung-2026-eng-15052026.pdf",
+    "quote": "sions and establish targets as the domestic sustainable finance ecosystem further matures. In 2025, Techcombank continued to track emissions from business travel and implement measures to optimize the carbon intensity of flights. In parallel, Techcombank has prioritised virtual meetings and digital collaboration tools for employee discussion to limit air travel where feasible, supporting emissions"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 57,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "DEVELOPMENT AND ADOPTION OF AI PRODUCTS • We ran 80+ training and sharing sessions on Data Products, DBx, and Data Governance, reaching 6,000+ colleagues across the organization. Through DataCamp learning campaigns, 2,544 users completed 159,000 course units, building proficiency from SQL and Python to Machine learning Operations (MLOps) best practices. • Our AI Champion program (776 participants"
+   },
+   "note": "12 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP'] (any)"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 67,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "planning, and storage lifecycle optimization, these efforts produced annual cloud cost savings of USD 3.2 million and achieved a Cloud Optimization score of 70.64%. This score surpasses that of regional high-performing banks, which average around 50%. The centralized Notification Hub delivered near real-time transaction alerts (~1 second), integrated 39 services, and generated cumulative savings o"
+   },
+   "note": "28 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 104,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "ge 100 teams, from 14 countries 452 participants, 106 teams, 170 ideas AI Champion program Learning campaigns on DataCamp 2,544 users, 159k course units completed 776 participants in Round 2 727 posts about AI on FB Supporting the formation of internal core teams that promote the adoption of AI and data analytics within business lines Development and Adoption of AI Products Sustained monetization"
+   },
+   "note": "47 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "tcb",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2025_bctn.pdf",
+    "page": 136,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+    "quote": "ombank has established the specialised Data Privacy and Security Department under the Data Governance, Data & Analytics Division. This unit works closely with the Information Security and Technology Infrastructure Services Department to design, implement and operate technical safeguards. Meanwhile, Data Protection Officer (DPO) and Data Privacy Champions are appointed with clearly defined roles, e"
+   },
+   "note": "32 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 86.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 95.5556,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: retail"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": 4.7579,
+   "L": 1.0,
+   "U": 5.0,
+   "z": 93.9468,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": -4.0,
+   "L": 0.0,
+   "U": 18.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "2023->2025, quy về điểm %/năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.6965,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 0.1603,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": 9.2709,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "CAGR TOI/CBNV bình quân 2021->2025"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 53.6,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "O",
+  "weakest_pillar": "S",
+  "criteria_score_distribution": {
+   "0": 1,
+   "1": 3,
+   "2": 3,
+   "3": 3,
+   "4": 14
+  }
+ }
+}

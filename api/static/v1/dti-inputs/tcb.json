@@ -1,0 +1,1998 @@
+{
+ "bank": "tcb",
+ "year": null,
+ "indicator": null,
+ "variable": null,
+ "scope": "all",
+ "formula": null,
+ "count": 108,
+ "items": [
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "casa_deposits",
+   "value": 116113684.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 53,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "casa_deposits",
+   "value": 147861145.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 54,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=17; Current accounts ⏎ 147,861,145 ⏎ 122,972,489 ⏎ Current accounts in VND ⏎ 140,018,181 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "casa_deposits",
+   "value": 123079324.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 57,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=17; Current accounts ⏎ 123,079,324 ⏎ 147,861,145 ⏎ Current accounts in VND ⏎ 113,445,822 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "casa_deposits",
+   "value": 172755713.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 57,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=17; Current accounts ⏎ 172,755,713 ⏎ 123,079,324 ⏎ In VND ⏎ 162,749,028 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "casa_deposits",
+   "value": 191719796.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 54,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Current accounts (thuyết minh tiền gửi KH); CASA=191,719,796/533,392,350=35.94%. BCTN nêu CASA ratio 40.9% (có thể bank-only/định nghĩa khác) — không ghi đè",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "casa_deposits",
+   "value": 213415080.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 61,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=17; Current accounts ⏎ 213,415,080 ⏎ 191,719,796 ⏎ Current accounts in VND ⏎ 195,888,920 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "customer_deposits",
+   "value": 277458651.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Deposits from customers ⏎ 18 ⏎ 277,458,651 ⏎ 231,296,761 ⏎ IV | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "customer_deposits",
+   "value": 314752525.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Deposits from customers ⏎ 18 ⏎ 314,752,525 ⏎ 277,458,651 ⏎ Derivatives and other financial liabilities | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "customer_deposits",
+   "value": 358403785.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Deposits from customers ⏎ 19 ⏎ 358,403,785 ⏎ 314,752,525 ⏎ Derivatives and other financial liabilities | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "customer_deposits",
+   "value": 454660779.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Deposits from customers ⏎ 19 ⏎ 454,660,779 ⏎ 358,403,785 ⏎ Derivatives and other financial liabilities | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "customer_deposits",
+   "value": 533392350.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Deposits from customers CĐKT hợp nhất; BCTN nêu 565.1 nghìn tỷ (khác phạm vi) — giữ số BCTC",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "customer_deposits",
+   "value": 618911535.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Deposits from customers ⏎ 18 ⏎ 618,911,535 ⏎ 533,392,350 ⏎ Derivatives and other financial liabilities | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: BCTN 2024 không công bố tỷ lệ KH số riêng (chỉ % GD online).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "digital_customers",
+   "value": 3900000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2020_bctn.pdf",
+   "page": 43,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p43: 3.9 million customers held individual e-banking accounts (46.9% of customers); active 71.7%. Phạm vi: e-banking users — khớp ~46.9% của total ~8.4M.",
+   "definition": "registered",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTN 2021 nêu digital acquisition/engagement nhưng không công bố stock digital customers / active mobile users dạng triệu riêng.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "digital_customers",
+   "value": 6200000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2022_bctn.pdf",
+   "page": 35,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p35: Techcombank e-banking customers ~ 6.2 million (+21.2% YoY); p8: around six million retail customers registered on Techcombank Mobile. Phạm vi: registered e-banking/Mobile (đổi def active→registered cho khớp note + TCB2020).",
+   "definition": "registered",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; có % GD online/engagement, không công bố số KH số",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": "data/raw/tcb/2024_bctn.pdf",
+   "page": null,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: không công bố riêng số khách hàng số; chỉ có total customers 15.4M và engagement (91% GD online).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; có 2.7M new customers / Auto-earning users — không công bố stock KH số riêng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã đọc BCTN 2020 trang 33–43,67; có 81% BB customers active online (p36) và 383M e-txn — không có % GD số / tổng GD toàn hàng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "digital_txn_share",
+   "value": 81.0,
+   "unit": "%",
+   "source_file": "data/raw/tcb/2022_bctn.pdf",
+   "page": 24,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2022 p24 cột so sánh: Digital transactions accounted for c.86% of total (domestic remittance) transactions, up from 81% in 2021 — phạm vi: GD chuyển tiền trong nước (không phải mọi kênh)",
+   "definition": "remit_domestic",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "digital_txn_share",
+   "value": 86.0,
+   "unit": "%",
+   "source_file": "data/raw/tcb/2022_bctn.pdf",
+   "page": 24,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p24: Digital transactions accounted for c.86% of total (domestic remittance) transactions — phạm vi: GD chuyển tiền trong nước (không phải mọi kênh)",
+   "definition": "remit_domestic",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "digital_txn_share",
+   "value": 94.0,
+   "unit": "%",
+   "source_file": "data/raw/tcb/2023_bctn.pdf",
+   "page": 35,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p35: 94% of retail transactions online (không phải toàn bộ GD; corporate digital active ~88%)",
+   "definition": "retail",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "digital_txn_share",
+   "value": 91.0,
+   "unit": "%",
+   "source_file": "data/raw/tcb/2024_bctn.pdf",
+   "page": 7,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "over 91% of retail transactions conducted online (không phải mọi kênh; 93% là usage rate app Business)",
+   "definition": "retail",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "digital_txn_share",
+   "value": 86.0,
+   "unit": "%",
+   "source_file": "data/raw/tcb/2025_bctn.pdf",
+   "page": 3,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN highlights p3: Retail transactions conducted digitally 86%",
+   "definition": "retail",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "equity",
+   "value": 74131020.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand equity 74,614,786−NCI 483,766=74,131,020; TOTAL OWNERS’ EQUITY ⏎ 74,614,786 ⏎ 62,072,767 ⏎ TOTAL LIABILITIES AND OWNERS’ EQUITY ⏎ 439,602,933 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "equity",
+   "value": 92194574.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 93,041,472−NCI 846,898=92,194,574; TOTAL SHAREHOLDERS’ EQUITY ⏎ 23 ⏎ 93,041,472 ⏎ 74,614,786 ⏎ TOTAL LIABILITIES AND SHAREHOLDERS’ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "equity",
+   "value": 112296051.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 113,424,966−NCI 1,128,915=112,296,051; TOTAL SHAREHOLDERS’ EQUITY ⏎ 24 ⏎ 113,424,966 ⏎ 93,041,472 ⏎ TOTAL LIABILITIES AND SHAREHOLDERS’ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "equity",
+   "value": 130299232.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 131,616,065−NCI 1,316,833=130,299,232; TOTAL SHAREHOLDERS’ EQUITY ⏎ 24 ⏎ 131,616,065 ⏎ 113,424,966 ⏎ TOTAL LIABILITIES AND SHAREHOLDERS’ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "equity",
+   "value": 145419155.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Vốn CSH thuộc cổ đông NH = TOTAL SHAREHOLDERS' EQUITY 147,939,621 − NCI 2,520,466; đầu kỳ parent=130,299,232 → ROE=15.612% (SC-02)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "equity",
+   "value": 170044504.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 179,501,442−NCI 9,456,938=170,044,504; TOTAL SHAREHOLDERS’ EQUITY ⏎ 23 ⏎ 179,501,442 ⏎ 147,939,621 ⏎ TOTAL LIABILITIES AND SHAREHOLDERS’ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "headcount",
+   "value": 11802.0,
+   "unit": "persons",
+   "source_file": "data/raw/tcb/2020_bctn.pdf",
+   "page": 82,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC/BCTN note: Total employees as at 31/12/2020 = 11,802",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "headcount",
+   "value": 12506.0,
+   "unit": "persons",
+   "source_file": "data/raw/tcb/2021_bctn.pdf",
+   "page": 119,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN financial notes p119: Total employees as at 31 December 2021 = 12,506 (2020=11,802).",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "headcount",
+   "value": 12300.0,
+   "unit": "persons",
+   "source_file": "data/raw/tcb/2022_bctn.pdf",
+   "page": 4,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p4/p5: talented team of more than 12,300 people — lower-bound công bố (không thấy bảng Total employees exact trong text đã quét).",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "headcount",
+   "value": 11614.0,
+   "unit": "persons",
+   "source_file": "data/raw/tcb/2023_bctn.pdf",
+   "page": 91,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: Total employees as at 31/12/2023 = 11,614",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "headcount",
+   "value": 11848.0,
+   "unit": "employees",
+   "source_file": "data/raw/tcb/2024_bctn.pdf",
+   "page": 90,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Total employees In 2024 = 11,848 (2023: 11,614)",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "headcount",
+   "value": 12705.0,
+   "unit": "persons",
+   "source_file": "data/raw/tcb/2025_bctn.pdf",
+   "page": 27,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: total workforce 12,705 as of 31/12/2025",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "nci",
+   "value": 483766.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p9: NCI 483,766 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "nci",
+   "value": 846898.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p9: NCI 846,898 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "nci",
+   "value": 1128915.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p9: NCI 1,128,915 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "nci",
+   "value": 1316833.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p9: NCI 1,316,833 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "nci",
+   "value": 2520466.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p9: NCI 2,520,466 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "nci",
+   "value": 9456938.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p9: NCI 9,456,938 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "net_fee_income",
+   "value": 4188778.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "net_fee_income",
+   "value": 6382240.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net fees and commission income 26 6,382,240 4,524,940 ⏎ Net gain from trading foreign currencies 27 231,416 745 ⏎ Net gain from held-for-tra | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "net_fee_income",
+   "value": 8527494.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "net_fee_income",
+   "value": 8714897.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net fees and commission income ⏎ 27 ⏎ 8,714,897 ⏎ 8,152,605 ⏎ Net gain/(loss) from trading foreign currencies | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "net_fee_income",
+   "value": 8042248.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Net fees and commission income",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "net_fee_income",
+   "value": 8771995.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net fees and commission income ⏎ 26 ⏎ 8,771,995 ⏎ 8,042,248 ⏎ Net gain from trading foreign currencies | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "net_interest_income",
+   "value": 18751209.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net interest income ⏎ 18,751,209 ⏎ 14,257,844 ⏎ 3 ⏎ Fee and commission income | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "net_interest_income",
+   "value": 26698613.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net interest and similar income 26,698,613 18,751,209 ⏎ Fees and commission income 8,239,494 6,048,443 ⏎ Fees and commission expenses (1,857 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "net_interest_income",
+   "value": 30289775.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net interest and similar income 30,289,775 26,698,613 ⏎ Fees and commission income 10,840,337 8,239,494 ⏎ Fees and commission expenses (2,31 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "net_interest_income",
+   "value": 27691120.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Net interest and similar income ⏎ 27,691,120 ⏎ 30,289,775 ⏎ Fees and commission income ⏎ 11,378,085 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "net_interest_income",
+   "value": 35507963.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Net interest and similar income",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "net_interest_income",
+   "value": 38155091.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net interest and similar income ⏎ 38,155,091 ⏎ 35,507,963 ⏎ Fees and commission income ⏎ 12,526,963 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "net_profit",
+   "value": 12324991.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 12,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "dòng cổ đông Ngân hàng, bỏ PAT tổng 12.582.467",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "net_profit",
+   "value": 18052250.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent; cột 2021 trong BCTC 2022 p11: Net profit to Bank shareholders 18.052.250 (không lấy PAT 18.415.382)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "net_profit",
+   "value": 20150377.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent; KQKD p11: Net profit to Bank shareholders 20.150.377 (= PAT 20.436.426 − NCI 286.049) | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "net_profit",
+   "value": 18003802.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 63,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "Thuyết minh vốn: profit attributable Bank shareholders 18.003.802 (không lấy PAT tổng 18.190.866) | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "net_profit",
+   "value": 21522928.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Đã đúng LNST cổ đông NH mẹ 21.522.928 — giữ | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "net_profit",
+   "value": 25290230.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent; KQKD p11: Net profit to Bank shareholders 25.290.230 (= PAT 25.954.472 − NCI 664.242)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "op_profit_before_provision",
+   "value": 18411331.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: Net operating profit before allowance 18,411,331; TOI=IX+VIII=18,411,331+8,631,195=27,042,526",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "op_profit_before_provision",
+   "value": 25902896.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Profit before provision for credit losses 25,902,896 18,411,331 ⏎ Provision expenses for credit losses 33 (2,664,603) (2,611,035) ⏎ Profit b | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "op_profit_before_provision",
+   "value": 27504062.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Profit before provision for credit losses 27,504,062 25,902,896 ⏎ Provision expenses for credit losses 34 (1,936,294) (2,664,603) ⏎ Profit b | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "op_profit_before_provision",
+   "value": 26809296.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Profit before provision for credit losses ⏎ 26,809,296 ⏎ 27,504,062 ⏎ Provision expenses for credit losses ⏎ 34 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "op_profit_before_provision",
+   "value": 31620662.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Profit before provision for credit losses (mục IX); TOI=IX+VIII=46,990,397 khớp dòng Total operating income",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "op_profit_before_provision",
+   "value": 36958691.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Profit before provision for credit losses ⏎ 36,958,691 ⏎ 31,620,662 ⏎ Provision expenses for credit losses ⏎ 33 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "opex",
+   "value": 8631195.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "opex",
+   "value": 11173395.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Operating expenses 32 (11,173,395) (8,967,357) ⏎ Profit before provision for credit losses 25,902,896 18,411,331 ⏎ Provision expenses for cr | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "opex",
+   "value": 13398018.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "opex",
+   "value": 13251796.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Operating expenses ⏎ 33 ⏎ (13,251,796) ⏎ (13,023,129) ⏎ Profit before provision for credit losses | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "opex",
+   "value": 15369735.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "Operating expenses (mục VIII) lấy trị tuyệt đối từ (15,369,735); dùng cho CIR=opex/TOI",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "opex",
+   "value": 16432434.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Operating expenses ⏎ 32 ⏎ (16,432,434) ⏎ (15,369,735) ⏎ Profit before provision for credit losses | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "software_gross_cost",
+   "value": 1296198.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 47,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p47: Software Cost closing 1.296.198",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "software_gross_cost",
+   "value": 1906692.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 49,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH: Computer software Cost 31/12/2021=1.906.692",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "software_gross_cost",
+   "value": 3265918.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 51,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH: Computer software Cost 31/12/2022=3.265.918",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "software_gross_cost",
+   "value": 4547852.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 51,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p51: Computer software Cost 31/12/2023 = 4.547.852",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "software_gross_cost",
+   "value": 6514231.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 50,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH: Computer software Cost 31/12/2024=6.514.231",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "software_gross_cost",
+   "value": 7561174.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 57,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p57: Computer software Cost 31/12/2025 = 7.561.174",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTN EN p36 '531 IT employees become certified' (AWS) — đây là số được chứng nhận, KHÔNG phải tổng nhân sự CNTT. HCMC Digital Centre +150; 62% IT employees có chứng chỉ — không suy được tổng NS CNTT.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "total_assets",
+   "value": 439602933.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2020_bctc.pdf",
+   "page": 8,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Audited_Financial_Statements_for_year_ended_2020_Consolidated_Searchable_ad332022d5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS ⏎ 439,602,933 ⏎ 383,699,461 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "total_assets",
+   "value": 568728950.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2021_bctc.pdf",
+   "page": 8,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/TCB_31_12_2021_EFS_VAS_Conso_Searchable_xxzs2_pdf_dc401b8a02.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS ⏎ 568,728,950 ⏎ 439,602,933 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "total_assets",
+   "value": 699032544.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Techcombank_VAS_consolidated_financial_statements_YE_22_2811bc0ce5.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS ⏎ 699,032,544 ⏎ 568,728,950 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "total_assets",
+   "value": 849482012.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/vi/listviewdocument/Techcombank-VAS-consolidated-financial-statements-YE-23-searchable-04d9242943.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS ⏎ 849,482,012 ⏎ 699,032,544 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "total_assets",
+   "value": 978798549.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2024_bctc.pdf",
+   "page": 8,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye24-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "TOTAL ASSETS 31/12/2024; cột so sánh 849,482,012 (2023)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "total_assets",
+   "value": 1192344137.0,
+   "unit": "VND million",
+   "source_file": "data/raw/tcb/2025_bctc.pdf",
+   "page": 8,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-vas-consolidated-financial-statements-ye25-searchable.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS ⏎ 1,192,344,137 ⏎ 978,798,549 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "total_customers",
+   "value": 8400000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2020_bctn.pdf",
+   "page": 27,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p27: 14.6% YoY rise in customers (total now approx 8.4 million). p16 'over 5 million' là mốc lịch sử (~2015), không phải KH 2020. digital_customers 3.9M = e-banking (46.9% KH có TK e-banking) — cùng báo cáo, phạm vi hẹp hơn total.",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "total_customers",
+   "value": 9600000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2021_bctn.pdf",
+   "page": 6,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p6 Chairman: attracted over 1.2 million new customers, bringing our total to more than 9.6 million. Phạm vi: total customers (retail+corporate).",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "total_customers",
+   "value": 10800000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2022_bctn.pdf",
+   "page": 5,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p5 Chairman: overall total to more than 10.8 million customers (+1.2M new in 2022). Phạm vi: total customers.",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "total_customers",
+   "value": 13400000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2023_bctn.pdf",
+   "page": 5,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p5: overall total customers more than 13.4 million",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "total_customers",
+   "value": 15400000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2024_bctn.pdf",
+   "page": 7,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "over 15.4 million customers at year end (BCTN EN)",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "total_customers",
+   "value": 18000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/tcb/2025_bctn.pdf",
+   "page": 59,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: As of 31/12/2025 served 18.0 million customers",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "variable": "training_hours_per_head",
+   "value": 71.0,
+   "unit": "hours",
+   "source_file": "data/raw/tcb/2020_bctn.pdf",
+   "page": 45,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p45: each completing an average of 71 hours of face-to-face and e-learning (total 897,792 hours)",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã đọc BCTN 2021 trang 10,33,81–86 (training programs/AWS), không có average hours toàn hàng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "variable": "training_hours_per_head",
+   "value": 70.0,
+   "unit": "hours",
+   "source_file": "data/raw/tcb/2022_bctn.pdf",
+   "page": 16,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/ENG-Book-TCB-AR-22-Web-a51923978f.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p16: 900,000 hours of training in 2022 – equivalent to 70 hours each",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "variable": "training_hours_per_head",
+   "value": 82.0,
+   "unit": "hours",
+   "source_file": "data/raw/tcb/2023_bctn.pdf",
+   "page": 18,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p18: approximately 915,000 hours in 2023, equivalent to around 82 hours each (2022: 70 hours each)",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "variable": "training_hours_per_head",
+   "value": 54.7,
+   "unit": "hours",
+   "source_file": "data/raw/tcb/2024_bctn.pdf",
+   "page": 91,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
+   "confirmed": true,
+   "confirmed_by": "manual-t023",
+   "note": "each employee averaged 54.7 hours in training; tổng 872,219 giờ",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "variable": "training_hours_per_head",
+   "value": 53.6,
+   "unit": "hours",
+   "source_file": "data/raw/tcb/2025_bctn.pdf",
+   "page": 133,
+   "source_url": "https://techcombank.com/content/dam/techcombank/public-site/documents/techcombank-2025-annual-report-eng-vf.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p133: each employee averaged 53.6 hours spent in training (tổng 866.193 giờ)",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  }
+ ],
+ "other_sources": {}
+}

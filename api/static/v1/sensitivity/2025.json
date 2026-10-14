@@ -1,0 +1,185 @@
+{
+ "year": 2025,
+ "base_scenario": "80/20",
+ "scenarios": [
+  "100/0",
+  "80/20",
+  "70/30",
+  "60/40"
+ ],
+ "rows": [
+  {
+   "bank": "agribank",
+   "bank_name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "by_scenario": {
+    "100/0": {
+     "score": 53.125,
+     "rank": 5,
+     "level": "Mức 3 - Hình thành"
+    },
+    "80/20": {
+     "score": 53.9539,
+     "rank": 5,
+     "level": "Mức 3 - Hình thành"
+    },
+    "70/30": {
+     "score": 54.3683,
+     "rank": 5,
+     "level": "Mức 3 - Hình thành"
+    },
+    "60/40": {
+     "score": 54.7828,
+     "rank": 5,
+     "level": "Mức 3 - Hình thành"
+    }
+   },
+   "rank_stable_pct": 1.0,
+   "rank_min": 5,
+   "rank_max": 5,
+   "stable_under_weights": true
+  },
+  {
+   "bank": "bidv",
+   "bank_name": "BIDV",
+   "group": "NHTM Nhà nước",
+   "by_scenario": {
+    "100/0": {
+     "score": 64.5833,
+     "rank": 4,
+     "level": "Mức 3 - Hình thành"
+    },
+    "80/20": {
+     "score": 64.9643,
+     "rank": 4,
+     "level": "Mức 3 - Hình thành"
+    },
+    "70/30": {
+     "score": 65.1547,
+     "rank": 4,
+     "level": "Mức 3 - Hình thành"
+    },
+    "60/40": {
+     "score": 65.3452,
+     "rank": 4,
+     "level": "Mức 3 - Hình thành"
+    }
+   },
+   "rank_stable_pct": 1.0,
+   "rank_min": 4,
+   "rank_max": 4,
+   "stable_under_weights": true
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "by_scenario": {
+    "100/0": {
+     "score": 72.9167,
+     "rank": 3,
+     "level": "Mức 3 - Hình thành"
+    },
+    "80/20": {
+     "score": 72.2715,
+     "rank": 3,
+     "level": "Mức 3 - Hình thành"
+    },
+    "70/30": {
+     "score": 71.9489,
+     "rank": 3,
+     "level": "Mức 3 - Hình thành"
+    },
+    "60/40": {
+     "score": 71.6263,
+     "rank": 3,
+     "level": "Mức 3 - Hình thành"
+    }
+   },
+   "rank_stable_pct": 1.0,
+   "rank_min": 3,
+   "rank_max": 3,
+   "stable_under_weights": true
+  },
+  {
+   "bank": "tcb",
+   "bank_name": "Techcombank",
+   "group": "NHTM Cổ phần",
+   "by_scenario": {
+    "100/0": {
+     "score": 77.0833,
+     "rank": 1,
+     "level": "Mức 4 - Nâng cao"
+    },
+    "80/20": {
+     "score": 76.075,
+     "rank": 1,
+     "level": "Mức 4 - Nâng cao"
+    },
+    "70/30": {
+     "score": 75.5709,
+     "rank": 2,
+     "level": "Mức 4 - Nâng cao"
+    },
+    "60/40": {
+     "score": 75.0667,
+     "rank": 2,
+     "level": "Mức 4 - Nâng cao"
+    }
+   },
+   "rank_stable_pct": 0.3333,
+   "rank_min": 1,
+   "rank_max": 2,
+   "stable_under_weights": false
+  },
+  {
+   "bank": "vcb",
+   "bank_name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "by_scenario": {
+    "100/0": {
+     "score": 76.0417,
+     "rank": 2,
+     "level": "Mức 4 - Nâng cao"
+    },
+    "80/20": {
+     "score": 75.7572,
+     "rank": 2,
+     "level": "Mức 4 - Nâng cao"
+    },
+    "70/30": {
+     "score": 75.6149,
+     "rank": 1,
+     "level": "Mức 4 - Nâng cao"
+    },
+    "60/40": {
+     "score": 75.4727,
+     "rank": 1,
+     "level": "Mức 4 - Nâng cao"
+    }
+   },
+   "rank_stable_pct": 0.3333,
+   "rank_min": 1,
+   "rank_max": 2,
+   "stable_under_weights": false
+  }
+ ],
+ "agreement_with_base": [
+  {
+   "scenario": "100/0",
+   "kendall_tau": 1.0,
+   "spearman": 1.0
+  },
+  {
+   "scenario": "70/30",
+   "kendall_tau": 0.8,
+   "spearman": 0.9
+  },
+  {
+   "scenario": "60/40",
+   "kendall_tau": 0.8,
+   "spearman": 0.9
+  }
+ ],
+ "note": "Chỉ kịch bản trọng số DBI/DTI (mục V.2). rank_stable_pct = tỷ lệ kịch bản khác kịch bản cơ sở giữ nguyên hạng; stable_under_weights khi >= 80%. CHỈ là kịch bản trọng số; kết luận Vững/Nhóm cùng mức đầy đủ nằm ở /sensitivity/full."
+}

@@ -1,0 +1,899 @@
+{
+ "summary": {
+  "bank": "vcb",
+  "bank_name": "Vietcombank",
+  "group": "NHTM Nhà nước",
+  "year": 2024,
+  "score": 64.9844,
+  "rank": 1,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.2727,
+  "dti_indicators_available": 3,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 87.5,
+    "dti": null,
+    "p": 87.5,
+    "n_dti": 0,
+    "n_dti_total": 3,
+    "dti_applied": false
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 68.75,
+    "dti": null,
+    "p": 68.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 50.0,
+    "dti": 50.0,
+    "p": 50.0,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 81.25,
+    "dti": 93.2817,
+    "p": 83.6563,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 56.25,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 53,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "n 06/QĐ-TTg, ứng dụng dữ liệu dân cư trong xuất sắc (VDCA); Ngân hàng chuyển đổi số quả khả quan về chuyển đổi số, tạo nền tượng như 99% giao dịch bán lẻ được thực việc làm sạch dữ liệu khách hàng, định danh tốt nhất Việt Nam (The Asian Banker); Top tảng quan trọng cho giai đoạn phát triển hiện qua kênh số, cùng với 83% nghiệp và xác thực chính xác thông tin, từ đó nâng 50 thương hiệu dẫn dầu (For"
+   },
+   "note": "27 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 22,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "sinh xã hội của Vietcombank là hơn 2.311 tỷ đồng (riêng toàn trên môi trường số. Trong năm 2024, Vietcombank là ngân trong năm 2024 là 571 tỷ đồng), trọng tâm vào các lĩnh vực hàng đầu tiên tại Việt Nam áp dụng cả hai hình thức xác thực qua giáo dục, y tế, tài trợ cho người nghèo, xây dựng nhà tình CCCD gắn chip và VNeID, giúp thu thập sinh trắc học thành công nghĩa, nhà đại đoàn kết, tặng quà cho"
+   },
+   "note": "10 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 53,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "cụ thể: số. Vietcombank cũng tiên phong triển khai thời góp phần đảm bảo an toàn hệ thống bình chọn; Vietcombank đã nhiều lần được các giải pháp mới như VCB Digibank với 4 ngân hàng. Ngoài ra, Vietcombank cũng vinh danh tại Giải thưởng Sao Khuê cho các • Đã xây dựng kế hoạch hành động, lộ phiên bản cá nhân hóa, tích hợp quản lý tài tập trung vào ứng dụng công nghệ tiên giải pháp về chuyển đổi số."
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 60,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "hiện tốt vai trò tham mưu cho Ban Lãnh 56% cán bộ nữ được quy hoạch cán bộ CỦA THỦ TƯỚNG PHÁT ĐỘNG đã thực hiện 65 chương trình khảo sát xây Trường Tiểu học 2, thị trấn Rạch Gốc, đạo trong việc đưa yếu tố giới vào công tác quản lý giai đoạn năm 2021-2026, tương SỐ TIỀN và nhận được hơn 1 triệu lượt phản hồi huyện Ngọc Hiển, tỉnh Cà Mau, số tiền 35 quản trị, điều hành; lồng ghép vấn đề bình đương 5"
+   },
+   "note": "31 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 53,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "t triển hiện qua kênh số, cùng với 83% nghiệp và xác thực chính xác thông tin, từ đó nâng 50 thương hiệu dẫn dầu (Forbes Việt Nam); tiếp theo và thúc đẩy hoàn thành các mục vụ ngân hàng bán lẻ cho phép khách hàng cao hiệu quả trong hoạt động cho vay tiêu Doanh nghiệp lớn ứng dụng CNTT hiệu tiêu của chiến lược chuyển đổi số đến năm được thực hiện hoàn toàn trên môi trường dùng trực tuyến, bảo lãnh"
+   },
+   "note": "26 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'GOV'] (all)"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 28,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "duy trì, Ông Colin Richard Dinn, Giám đốc Khối Chuyển đổi chấm dứt hợp đồng lao động theo nguyện vọng cá nhân kể từ ngày 12/7/2024. hoạt động kinh doanh, tạo sức mạnh từ quản lý và sử dụng cán bộ, tối ưu hóa nội lực, góp phần đưa Vietcombank vươn nguồn nhân lực của Vietcombank. Ông Trần Thanh Nam, Giám đốc Khối Công nghệ thông tin & chuyển đổi số và Giám đốc đổi mới sáng tạo chấm dứt hợp đồng lao"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf; data/raw/vcb/2024_bctn.pdf",
+    "page": null,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 22,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "khách hàng linh hoạt, nhất quán xuyên suốt để triển khai thành thứ ba để có cơ hội bán các sản phẩm, hiện tại có chất lượng tốt, tiềm lực tài công các mục tiêu kinh doanh dịch vụ của ngân hàng. chính mạnh, quan hệ tổng thể. Đẩy mạnh • Duy trì, phát huy lợi thế trong hoạt động bán hàng theo chuỗi và hệ sinh thái, tận kinh doanh ngoại tệ, TTQT-TTTM. dụng mối liên kết với các công ty con, đối tác, cổ"
+   },
+   "note": "12 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 8,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": ". 2019 2020 Từ 2020 đến 2023 2024 Định hướng đến 2030 Ngày 01/11/2019, ra mắt văn phòng đại Ngày 27/01/2020, Golive Vững vàng vượt qua đại dịch Covid-19, Tham gia cơ cấu lại các TCTD diện tại Mỹ. thành công hệ thống ngân Vietcombank khẳng định vững chắc vị trí được kiểm soát đặc biệt, nhận hàng lõi Core banking. số 1 Việt Nam trên nhiều phương diện, chuyển giao bắt buộc Ngân hàng Trở thành ngân hà"
+   },
+   "note": "7 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 22,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "11 tỷ đồng (riêng toàn trên môi trường số. Trong năm 2024, Vietcombank là ngân trong năm 2024 là 571 tỷ đồng), trọng tâm vào các lĩnh vực hàng đầu tiên tại Việt Nam áp dụng cả hai hình thức xác thực qua giáo dục, y tế, tài trợ cho người nghèo, xây dựng nhà tình CCCD gắn chip và VNeID, giúp thu thập sinh trắc học thành công nghĩa, nhà đại đoàn kết, tặng quà cho các bà mẹ Việt Nam cho hơn 10 triệu k"
+   },
+   "note": "14 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf; data/raw/vcb/2024_bctn.pdf",
+    "page": null,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 35,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "tế như Giải pháp biến thiết bị di động chính thức được NHNN đồng ý trở thành VCB Digibank. Số lượng khách hàng mới hệ thống, được cấp chứng nhận và duy trì thiết bị bảo mật, trung tâm dữ liệu chính và cá nhân thành thiết bị chấp nhận thanh Ngân hàng quyết toán thị trường Trung được phục vụ qua kênh Chatbot năm 2024 liên tục từ 2014 đến nay (04 lần cấp chứng dự phòng, trang thiết bị IT ở các chi nh"
+   },
+   "note": "5 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 44,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "m cả rủi ro pháp lý) đối với vốn yêu cầu cho rủi ro thị trường theo cho rủi ro điều chỉnh tín dụng theo phương Ngân hàng. Rủi ro hoạt động không bao gồm rủi ro Thông tư 41) theo thông lệ quốc tế đồng pháp cơ bản rút gọn), ứng dụng chuyển đổi thời tuân thủ quy định của pháp luật, khẩu số, tăng cường tự động hóa nhằm nâng cao danh tiếng và rủi ro chiến lược. vị rủi ro cũng như đáp ứng yêu cầu kinh h"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 53,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "z, VCBDigibank với tất tranh, công bằng, minh bạch, hiệu quả kinh chương trình lãi suất đối với khách hàng. thầu, ngày 01/06/2024, Vietcombank dành cho khách hàng cá nhân, ghi nhận cả các sản phẩm cho vay dành cho KHBL tế, hợp lý và tiết kiệm chi phí. Bên cạnh đó, VCB cũng triển khai 22 đã ban hành Quy trình số 963/QT-VCB- hơn 11 triệu khách hàng chuyển đổi thành sản xuất kinh doanh. chương trình,"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 43,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "danh mục tín dụng của Ngân hoàn thiện các chương trình, dự án, sáng 2 hàng. Bên cạnh đó, trong năm 2024, kiến nhằm nâng cao năng lực quản trị và Rủi ro tín dụng đối tác (là rủi ro Ngân hàng đã hoàn thiện xây dựng mô tăng cường ứng dụng công nghệ thông do đối tác không thực hiện hoặc hình định lượng cảnh báo sớm đối với tin trong quản lý danh mục tín dụng.` không có khả năng thực hiện khách hàng bá"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 26,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "ăng lực phân tích dữ khai hiệu quả các giải pháp để đảm bảo VCB đến năm 2025, tầm nhìn 2030 và danh mục, phân khúc khách hàng mục liệu. Phát triển văn hóa số, tinh thần và kiểm soát nợ xấu theo kế hoạch. kiên định phương châm hành động: “Đổi tiêu. Phát huy thế mạnh tổng thể của phương pháp làm việc agile; phát huy tinh mới, Hiệu quả, Bền vững” và quan điểm toàn hệ thống VCB, tăng cường bán chéo th"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 54,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "công nghệ, cứu và phát triển (R&D) đạt 1.580 tỷ đồng, chính và đối tác. thi đua chào mừng Đại hội Đảng bộ các mục tiêu chiến lược, khẳng định vị thế ngân Vietcombank còn chú trọng xây dựng tăng 48,9% so với mức 1.061 tỷ đồng của cấp và được vinh danh tại giải thưởng “Đổi hàng hàng đầu tại Việt Nam. văn hóa đổi mới sáng tạo trong toàn thể năm 2023. Tỷ lệ đầu tư cho triển khai đổi mới, sáng tạo phát"
+   },
+   "note": "2 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 41,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "chuyên môn và đào tạo nâng cao kỹ năng chất lượng dịch vụ… Một số khóa kỹ năng khóa đào tạo trong kế hoạch năm 2024, lượt/cán bộ (cao hơn mức 5,7 lượt/cán bộ của người lao động. Các chương trình đào được thiết kế riêng cho lãnh đạo, cán bộ Vietcombank đã triển khai 333 khóa, tăng của năm 2023). Số giờ đào tạo trung bình tạo được xây dựng và thực hiện trên cơ sở nguồn của các đơn vị: kỹ năng xây d"
+   },
+   "note": "18 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 21,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "của lượng hiệu quả. hoạt động đóng góp xã hội, thúc đẩy hợp nền kinh tế và định hướng dòng vốn vào tác với các đối tác theo hướng bền vững • Triển khai tiếp cận nguồn vốn chương trình cho vay lại các dự các lĩnh vực bền vững. án xanh từ nguồn vốn vay Ngân hàng Hợp tác Quốc tế Nhật và triển khai các sáng kiến phòng chống Bản (JBIC) trị giá 500 triệu USD nhằm bảo tồn môi trường, Bên cạnh đó, Vietcom"
+   },
+   "note": "26 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 57,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "ự khai, tiết giảm chi phí, tăng trải nghiệm của bình đẳng cho tất cả đối tượng lao động. ứng viên đối với thương hiệu tuyển dụng MỘT SỐ THỐNG KÊ KHÁC VỀ NHÂN SỰ TRONG NĂM 2024(3) Vietcombank. Với những kết quả tích cực trong công tác tuyển dụng, 03 năm liên tục (2022 – Bên cạnh đó, để có được nguồn nhân sự SỐ LƯỢNG LÃNH ĐẠO LÀ NỮ/ Tỷ lệ cán bộ tuyển dụng mới: 12% 2024) Vietcombank được vinh danh t"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 42,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "n lý rủi ro được Vietcombank trì thường xuyên, liên tục nhằm đáp ứng liên tục rà soát, cập nhật định kỳ hoặc ban yêu cầu về kiểm soát chất lượng cũng như hành mới nhằm đáp ứng các yêu cầu, định tính đầy đủ của dữ liệu. Vietcombank xác hướng của Cơ quan quản lý (như Luật các tổ định mục tiêu đảm bảo chất lượng dữ liệu chức tín dụng mới và Thông tư hướng dẫn là mục tiêu ưu tiên hàng đầu trong giai đ"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 14,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "i ưu hóa nguồn lực bảo chất lượng, hiệu quả. Đẩy nhanh tiến độ ứng dụng các và nâng cao hiệu quả hoạt động. công nghệ mới trong phát triển sản phẩm, dịch vụ và nâng khẩu. Mục tiêu tăng trưởng GDP năm cao chất lượng vận hành, quản trị rủi ro. Tập trung phát 2025 được kỳ vọng ở mức ~8% (cao hơn triển nền tảng dữ liệu nhằm nâng cao khả năng quản trị, điều hành và phát triển hoạt động kinh doanh trên"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bctn.pdf",
+    "page": 14,
+    "url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+    "quote": "nước đẩy mạnh xuất khẩu phương châm hành động: “Đổi mới, Hiệu trước khi chính quyền Mỹ áp dụng chính quả, Bền vững” và quan điểm chỉ đạo, điều sách thương mại mới. hành: “Trách nhiệm - Kỷ cương - Kết nối Môi trường vĩ mô của Việt Nam trong - Sáng tạo” triển khai thành công các mục 3 4 năm 2025 được dự báo tiếp tục duy trì tiêu kinh doanh. Hoàn thiện việc rà soát mô hình Triển khai quyết liệt sáng"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "vcb",
+   "year": 2024,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2024_bcptbv.pdf",
+    "page": 36,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+    "quote": "ụ tốt nhất ngân hàng. cho cộng đồng và xã hội. Với phương thức khảo sát đa dạng theo thời gian thực (Pop-up, OTT, Qrcode), cùng bộ câu hỏi khảo sát được thiết kế nhất quán và liền mạch giữa các kênh phục vụ, Vietcombank đã thực hiện 65 chương trình khảo sát và nhận được hơn 1 triệu lượt Dự án Khung Bảo vệ Dữ liệu Cá nhân sẽ tiếp tục được phản hồi từ phía khách hàng, trong đó 94% Khách hàng đánh gi"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 90.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu nguyên giá phần mềm hoặc tổng tài sản"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 0.8315,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2024 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": 1.9242,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "CAGR TOI/CBNV bình quân 2021->2024"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 36.1,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 93.2817,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "S",
+  "criteria_score_distribution": {
+   "0": 2,
+   "1": 4,
+   "2": 5,
+   "3": 4,
+   "4": 9
+  }
+ }
+}

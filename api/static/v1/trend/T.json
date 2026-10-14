@@ -1,0 +1,296 @@
+{
+ "metric": "T",
+ "component": "p",
+ "unit": "điểm 0–100",
+ "years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "series": [
+  {
+   "bank": "agribank",
+   "bank_name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "points": [
+    {
+     "year": 2020,
+     "value": 5.7341,
+     "rank": 5,
+     "maturity_level_number": 1,
+     "data_confidence": 0.0909,
+     "n_dti": 1
+    },
+    {
+     "year": 2021,
+     "value": 20.545,
+     "rank": 5,
+     "maturity_level_number": 1,
+     "data_confidence": 0.1818,
+     "n_dti": 1
+    },
+    {
+     "year": 2022,
+     "value": 10.1006,
+     "rank": 5,
+     "maturity_level_number": 1,
+     "data_confidence": 0.3636,
+     "n_dti": 1
+    },
+    {
+     "year": 2023,
+     "value": 55.5309,
+     "rank": 5,
+     "maturity_level_number": 2,
+     "data_confidence": 0.1818,
+     "n_dti": 1
+    },
+    {
+     "year": 2024,
+     "value": 55.1459,
+     "rank": 5,
+     "maturity_level_number": 2,
+     "data_confidence": 0.4545,
+     "n_dti": 1
+    },
+    {
+     "year": 2025,
+     "value": 64.3628,
+     "rank": 5,
+     "maturity_level_number": 3,
+     "data_confidence": 0.5455,
+     "n_dti": 1
+    }
+   ],
+   "dti_coverage_changes": false
+  },
+  {
+   "bank": "bidv",
+   "bank_name": "BIDV",
+   "group": "NHTM Nhà nước",
+   "points": [
+    {
+     "year": 2020,
+     "value": 32.1829,
+     "rank": 3,
+     "maturity_level_number": 2,
+     "data_confidence": 0.2727,
+     "n_dti": 1
+    },
+    {
+     "year": 2021,
+     "value": 42.7984,
+     "rank": 3,
+     "maturity_level_number": 2,
+     "data_confidence": 0.2727,
+     "n_dti": 1
+    },
+    {
+     "year": 2022,
+     "value": 27.4134,
+     "rank": 4,
+     "maturity_level_number": 2,
+     "data_confidence": 0.4545,
+     "n_dti": 1
+    },
+    {
+     "year": 2023,
+     "value": 56.8547,
+     "rank": 3,
+     "maturity_level_number": 2,
+     "data_confidence": 0.5455,
+     "n_dti": 1
+    },
+    {
+     "year": 2024,
+     "value": 78.2414,
+     "rank": 2,
+     "maturity_level_number": 3,
+     "data_confidence": 0.3636,
+     "n_dti": 1
+    },
+    {
+     "year": 2025,
+     "value": 72.4434,
+     "rank": 4,
+     "maturity_level_number": 3,
+     "data_confidence": 0.4545,
+     "n_dti": 1
+    }
+   ],
+   "dti_coverage_changes": false
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "points": [
+    {
+     "year": 2020,
+     "value": 45.5543,
+     "rank": 2,
+     "maturity_level_number": 2,
+     "data_confidence": 0.2727,
+     "n_dti": 1
+    },
+    {
+     "year": 2021,
+     "value": 55.0,
+     "rank": 2,
+     "maturity_level_number": 3,
+     "data_confidence": 0.2727,
+     "n_dti": 1
+    },
+    {
+     "year": 2022,
+     "value": 50.0,
+     "rank": 2,
+     "maturity_level_number": 3,
+     "data_confidence": 0.4545,
+     "n_dti": 1
+    },
+    {
+     "year": 2023,
+     "value": 45.0,
+     "rank": 2,
+     "maturity_level_number": 3,
+     "data_confidence": 0.6364,
+     "n_dti": 1
+    },
+    {
+     "year": 2024,
+     "value": 80.0,
+     "rank": 3,
+     "maturity_level_number": 3,
+     "data_confidence": 0.5455,
+     "n_dti": 1
+    },
+    {
+     "year": 2025,
+     "value": 95.0,
+     "rank": 3,
+     "maturity_level_number": 3,
+     "data_confidence": 0.7273,
+     "n_dti": 1
+    }
+   ],
+   "dti_coverage_changes": false
+  },
+  {
+   "bank": "tcb",
+   "bank_name": "Techcombank",
+   "group": "NHTM Cổ phần",
+   "points": [
+    {
+     "year": 2020,
+     "value": 59.4114,
+     "rank": 1,
+     "maturity_level_number": 3,
+     "data_confidence": 0.2727,
+     "n_dti": 1
+    },
+    {
+     "year": 2021,
+     "value": 50.0,
+     "rank": 1,
+     "maturity_level_number": 3,
+     "data_confidence": 0.1818,
+     "n_dti": 1
+    },
+    {
+     "year": 2022,
+     "value": 70.0,
+     "rank": 1,
+     "maturity_level_number": 3,
+     "data_confidence": 0.5455,
+     "n_dti": 1
+    },
+    {
+     "year": 2023,
+     "value": 60.0,
+     "rank": 1,
+     "maturity_level_number": 3,
+     "data_confidence": 0.4545,
+     "n_dti": 1
+    },
+    {
+     "year": 2024,
+     "value": 75.0,
+     "rank": 4,
+     "maturity_level_number": 3,
+     "data_confidence": 0.5455,
+     "n_dti": 1
+    },
+    {
+     "year": 2025,
+     "value": 75.0,
+     "rank": 1,
+     "maturity_level_number": 4,
+     "data_confidence": 0.6364,
+     "n_dti": 1
+    }
+   ],
+   "dti_coverage_changes": false
+  },
+  {
+   "bank": "vcb",
+   "bank_name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "points": [
+    {
+     "year": 2020,
+     "value": 31.25,
+     "rank": 4,
+     "maturity_level_number": 2,
+     "data_confidence": 0.0,
+     "n_dti": 0
+    },
+    {
+     "year": 2021,
+     "value": 18.75,
+     "rank": 4,
+     "maturity_level_number": 2,
+     "data_confidence": 0.0,
+     "n_dti": 0
+    },
+    {
+     "year": 2022,
+     "value": 43.75,
+     "rank": 3,
+     "maturity_level_number": 2,
+     "data_confidence": 0.0909,
+     "n_dti": 0
+    },
+    {
+     "year": 2023,
+     "value": 37.5,
+     "rank": 4,
+     "maturity_level_number": 2,
+     "data_confidence": 0.2727,
+     "n_dti": 0
+    },
+    {
+     "year": 2024,
+     "value": 68.75,
+     "rank": 1,
+     "maturity_level_number": 3,
+     "data_confidence": 0.2727,
+     "n_dti": 0
+    },
+    {
+     "year": 2025,
+     "value": 75.0,
+     "rank": 2,
+     "maturity_level_number": 4,
+     "data_confidence": 0.4545,
+     "n_dti": 0
+    }
+   ],
+   "dti_coverage_changes": false
+  }
+ ],
+ "warnings": []
+}

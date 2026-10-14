@@ -1,0 +1,812 @@
+{
+ "summary": {
+  "bank": "agribank",
+  "bank_name": "Agribank",
+  "group": "NHTM Nhà nước",
+  "year": 2022,
+  "score": 23.5168,
+  "rank": 5,
+  "maturity_level": "Mức 1 - Khởi động",
+  "maturity_level_number": 1,
+  "maturity_level_name": "Khởi động",
+  "data_confidence": 0.3636,
+  "dti_indicators_available": 4,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 4/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 37.5,
+    "dti": 86.25,
+    "p": 47.25,
+    "n_dti": 2,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 6.25,
+    "dti": 25.503,
+    "p": 10.1006,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 25.0,
+    "dti": 100.0,
+    "p": 40.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 0.0,
+    "dti": null,
+    "p": 0.0,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 0.0,
+    "dti": null,
+    "p": 0.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 42,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "áng kể khi Ngân hàng ký kết hợp đồng cung cấp dịch vụ Agribank được vinh danh giải thưởng Sao Khuê đối với với 3.601 đơn vị, tăng 181% so với năm 2021, đưa tổng số đối hệ thống công nghệ thông tin xuất sắc lĩnh vực tài chính- tác triển khai dịch vụ thu hộ với với Agribank lên 5.591 đơn ngân hàng và Ngân hàng số cho Thẻ Lộc Việt; được NAPAS vị, nhà cung cấp thuộc lĩnh vực giáo dục, điện nước, viễn"
+   },
+   "note": "14 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 42,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "g phá. Mô hình Ngân hàng số trong lĩnh vực thẻ (Agribank mạnh với các nguồn thu từ hoa hồng dịch vụ sản phẩm Bảo Digital) ứng dụng công nghệ hiện đại trên cơ sở định danh, an tín dụng, thu hoa hồng đại lý từ hoạt động đại lý bảo xác thực khách hàng bằng công nghệ sinh trắc học cả hiểm… khuôn mặt và vân tay. Dự án hướng tới mục tiêu số hóa toàn bộ dịch vụ thẻ, tăng cường quảng bá hình ảnh, thương h"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 45,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "h hàng.Trung tâm Chăm sóc khách hàng mại điện tử, các sản phẩm, dịch vụ tài chính công, kiều hối… của Agribank năm 2022 thực hiện trên 2,5 triệu tin nhắn SMS và OTT, tiếp nhận trên 2 triệu cuộc gọi đến và chủ động thực 11. Định hướng lấy khách hàng là trung tâm hiện trên 1 triệu cuộc gọi đi qua các tổng đài 1800, 1900, để tiếp nhận thông tin, phản ánh của khách hàng, xử lý kịp thời Trong mọi lĩnh"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 42,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "áng kể khi Ngân hàng ký kết hợp đồng cung cấp dịch vụ Agribank được vinh danh giải thưởng Sao Khuê đối với với 3.601 đơn vị, tăng 181% so với năm 2021, đưa tổng số đối hệ thống công nghệ thông tin xuất sắc lĩnh vực tài chính- tác triển khai dịch vụ thu hộ với với Agribank lên 5.591 đơn ngân hàng và Ngân hàng số cho Thẻ Lộc Việt; được NAPAS vị, nhà cung cấp thuộc lĩnh vực giáo dục, điện nước, viễn"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 41,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "n kết ví, doanh số nạp tiền và thu phí dịch vụ tại Agribank; Agribank cũng triển khai thử nghiệm kết nối thành công với 04 ví điện Agribank giúp khách hàng dễ dàng và thuận tiện giao dịch kiều hối tử Payme, GHTKPAY, Mobifone, Omipay. Tổng số khách hàng tại bất kỳ địa phương nào trên cả nước sử dụng ví điện tử liên kết qua TKTT/thẻ Agribank đạt 3,15 7.4. Dịch vụ ngân hàng điện tử tăng trưởng nhanh"
+   },
+   "note": "5 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 42,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "ch vụ ủy thác đại lý cũng tăng trưởng phá. Mô hình Ngân hàng số trong lĩnh vực thẻ (Agribank mạnh với các nguồn thu từ hoa hồng dịch vụ sản phẩm Bảo Digital) ứng dụng công nghệ hiện đại trên cơ sở định danh, an tín dụng, thu hoa hồng đại lý từ hoạt động đại lý bảo xác thực khách hàng bằng công nghệ sinh trắc học cả hiểm… khuôn mặt và vân tay. Dự án hướng tới mục tiêu số hóa toàn bộ dịch vụ thẻ, tă"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 44,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "với 2.244 chi nhánh và phòng giao dịch trên khắp cả nước, hệ thống công nghệ thông tin của Agribank đảm bảo thông suốt cho bình quân 35 triệu giao dịch mỗi ngày và cao điểm lên tới 45 triệu giao dịch mỗi ngày, trong đó giao dịch tự động chiếm tới 91,97% tổng số giao dịch. Agribank cũng không ngừng tự động hóa các giao dịch thủ công góp phần đảm bảo an toàn hệ thống và nâng cao khả năng quản lý củ"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": 56,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": "hân loại tài quy định của Ngân hàng Nhà nước là tối thiểu 10%. sản có, mức trích, phương pháp trích lập dự phòng rủi ro và Để tuân thủ các giới hạn, tỷ lệ đảm bảo an toàn hoạt động sử dụng dự phòng để xử lý rủi ro trong hoạt động, Quy định phù hợp với chỉ tiêu tăng trưởng tín dụng được Ngân hàng về cảnh báo sớm rủi ro tín dụng trong hệ thống Agribank và Nhà nước giao, Agribank đã xây dựng và triển"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "agribank",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 91.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 72.5,
+   "L": 0.0,
+   "U": 100.0,
+   "z": 72.5,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "digital_customers/total_customers (registered/lower_bound_or_accounts)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ cùng định nghĩa"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.0775,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 25.503,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": -4.1225,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 38.7,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu giờ đào tạo"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "C",
+  "criteria_score_distribution": {
+   "0": 16,
+   "1": 4,
+   "2": 0,
+   "3": 2,
+   "4": 2
+  }
+ }
+}

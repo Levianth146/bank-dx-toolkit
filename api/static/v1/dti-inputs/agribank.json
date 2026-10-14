@@ -1,0 +1,1998 @@
+{
+ "bank": "agribank",
+ "year": null,
+ "indicator": null,
+ "variable": null,
+ "scope": "all",
+ "formula": null,
+ "count": 108,
+ "items": [
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "casa_deposits",
+   "value": 150572893.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 50,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TGKH p50: Tiền gửi không kỳ hạn 150.572.893 (trước nhầm TG tại NHNN 108.843.729)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "casa_deposits",
+   "value": 187557496.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 56,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "Cột so sánh 31/12/2021 trong BCTC 2022 p56: CASA KH 187.557.496 | CẦN KIỂM: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "casa_deposits",
+   "value": 187010022.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 56,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM tiền gửi KH p56: không kỳ hạn 187.010.022 (trước lấy nhầm số khác) | đã kiểm: CHEO_NAM,NHAM_COT",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "casa_deposits",
+   "value": 206525848.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 78,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM tiền gửi KH p78: không kỳ hạn 206.525.848 (trước lấy nhầm TG TCTD p58) | đã kiểm: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "casa_deposits",
+   "value": 245948531.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2024_bctc.pdf",
+   "page": 59,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/fc6371fa-7edd-476d-a0a2-bb38aa5d0c68/B%C3%81O+C%C3%81O+T%C3%80I+CH%C3%8DNH+2024.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-fc6371fa-7edd-476d-a0a2-bb38aa5d0c68-pnC-1fb",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM tiền gửi KH p59: không kỳ hạn 245.948.531 (OCR 245.948.3531; trước lấy CT cho thuê TC) | đã kiểm: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "casa_deposits",
+   "value": 284341516.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 86,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM tiền gửi KH p86: không kỳ hạn 284.341.516 | đã kiểm: BIEN_DONG | đã kiểm: TY_SO",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "customer_deposits",
+   "value": 1404875777.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT hợp nhất p8: Tiền gửi của khách hàng 1.404.875.777 (31/12/2020) | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "customer_deposits",
+   "value": 1545474063.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT riêng p8: TGKH 1.545.474.063; cột 2020 cùng file=1.407.513.358 vs BCTC2020=1.404.875.777 (trình bày lại); không dùng p90 bảng rủi ro | đã kiểm: CHEO_NAM | đã kiểm: TY_SO | CẦN KIỂM: CHEO_NAM | CẦN KIỂM: TY_SO",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "customer_deposits",
+   "value": 1627735786.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT riêng p9: TGKH 1.627.735.786; cột 2021=1.545.474.125 khớp BCTC2021; số cũ từ p89=1.613.438.026 ghi note, chọn số báo cáo năm 2022 | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "customer_deposits",
+   "value": 1817271030.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 22,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Tiên gui cüa khách hang ⏎ 19 ⏎ 1.817.271.030 ⏎ 1.623.935.082 ⏎ IV | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "customer_deposits",
+   "value": 1918189365.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 CĐKT riêng p8 cột 31/12/2024: Tiền gửi của khách hàng = 1.918.189.365",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "customer_deposits",
+   "value": 2160302986.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p8: Tiền gửi của khách hàng 2.160.302.986",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "digital_customers",
+   "value": 6600000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2021_bctn.pdf",
+   "page": 37,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/67756266-cd5c-480d-a35b-0e372f0c10f0/BCN+2021.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-67756266-cd5c-480d-a35b-0e372f0c10f0-owJxhEz",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p37: Số lượng khách hàng sử dụng dịch vụ E-Mobile Banking đạt trên 6,6 triệu. Phạm vi: users E-Mobile Banking (đăng ký/sử dụng), không phải toàn bộ KH.",
+   "definition": "registered",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "digital_customers",
+   "value": 14500000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2022_bctn.pdf",
+   "page": 41,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p41: Đến 31/12/2022 có 14,5 triệu khách hàng đăng ký dịch vụ Mobile Banking (chiếm 70,2% so với số lượng khách hàng). Phạm vi: registered Mobile Banking.",
+   "definition": "registered",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; BCTN 2023 không công bố số KH số/Mobile Banking dạng triệu",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "digital_customers",
+   "value": 16000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2024_bctn.pdf",
+   "page": 30,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/1c602381-62d0-48a6-990a-ba14a078b603/BCTN2024+Agribank+V+version+S.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1c602381-62d0-48a6-990a-ba14a078b603-prorO97",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p30: Hơn 16 triệu khách hàng sử dụng dịch vụ Mobile Banking (trong đó hơn 10 triệu Agribank Plus). Phạm vi: users Mobile Banking (lower-bound 'hơn 16 triệu').",
+   "definition": "users",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "digital_customers",
+   "value": 19100000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2025_bctn.pdf",
+   "page": 18,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p18: hơn 19,1 triệu KH cá nhân đăng ký sử dụng Mobile Banking (~14,4 triệu Agribank Plus). Phạm vi: registered users Mobile Banking.",
+   "definition": "registered",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2020 (toàn văn text), không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2021 trang 1–50 (tìm kênh số / tỷ lệ GD), không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "digital_txn_share",
+   "value": 91.0,
+   "unit": "%",
+   "source_file": "data/raw/agribank/2024_bctn.pdf",
+   "page": 30,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/1c602381-62d0-48a6-990a-ba14a078b603/BCTN2024+Agribank+V+version+S.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1c602381-62d0-48a6-990a-ba14a078b603-prorO97",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2024 p30 (cột so sánh): Tỷ lệ giao dịch qua kênh số năm 2022 = 91% (2024=96%). BCTN2022 p44 nêu GD tự động 91,97% — định nghĩa hơi khác; chọn 91% 'kênh số'.",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; không có % GD kênh số rõ ràng năm 2023",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "digital_txn_share",
+   "value": 96.0,
+   "unit": "%",
+   "source_file": "data/raw/agribank/2024_bctn.pdf",
+   "page": 30,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/1c602381-62d0-48a6-990a-ba14a078b603/BCTN2024+Agribank+V+version+S.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1c602381-62d0-48a6-990a-ba14a078b603-prorO97",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p30: Tỷ lệ giao dịch qua kênh số = 96% (2024); so sánh 91% (2022).",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "digital_txn_share",
+   "value": 97.0,
+   "unit": "%",
+   "source_file": "data/raw/agribank/2025_bctn.pdf",
+   "page": 9,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: Tỷ lệ giao dịch trên kênh số ≈ 97%",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "equity",
+   "value": 72109113.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 73,084,295 − NCI 975,182; CĐKT hợp nhất p8: Lợi ích CĐ không KS 975.182; TỔNG VCSH 73.084.295 → parent=72.109.113",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "equity",
+   "value": 74920400.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 90,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p90 (OCR; front p7-9 ảnh trống): TỔNG VSH 76.087.340 − NCI 1.166.940 = 74.920.400 parent | PDF seed1 (không phải bảng rủi ro)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "equity",
+   "value": 85717401.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = 86.997.553 − NCI 1.280.152 (BCTC2023 comparative cột 2022)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "equity",
+   "value": 99188106.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 100,535,854 − NCI 1,347,748; CĐKT hợp nhất p8: NCI 1.347.748; TỔNG VCSH 100.535.854 → parent=99.188.106",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "equity",
+   "value": 122722650.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 21,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = 124.067.756 − NCI 1.345.106 (BCTC2025 hợp nhất comparative cột 2024)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "equity",
+   "value": 129710736.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 21,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 131,191,251 − NCI 1,480,515; CĐKT hợp nhất p21: NCI 1.480.515; TỔNG VCSH 131.191.251 (trước đó lấy BCTC riêng 128.208.531 p8 không có NCI) → parent=129.710.736",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "headcount",
+   "value": 40000.0,
+   "unit": "persons",
+   "source_file": "data/raw/agribank/2020_bctn.pdf",
+   "page": 25,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/0e3855a5-dbd5-4558-9ac5-31d41474d978/FILE_20210715_140421_20_6+BCTN+2020_pdf+%28trang+%C4%91%C3%B4i%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-0e3855a5-dbd5-4558-9ac5-31d41474d978-owJxqSW",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "approx; BCTN p25: 'gần 4 vạn người lao động trong toàn hệ thống'; p23: 'gần 40.000 cán bộ Agribank' — không có số exact; giữ lower-bound làm tròn 40.000",
+   "definition": "group_approx",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "headcount",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2021 trang 14,33–47 (mục nhân sự/lao động), không có tổng lao động exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "headcount",
+   "value": 40909.0,
+   "unit": "persons",
+   "source_file": "data/raw/agribank/2022_bctn.pdf",
+   "page": 63,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p63/p65: số lượng lao động tại Agribank = 40.909 người (nữ >22.000 ≈54%).",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "headcount",
+   "value": 42083.0,
+   "unit": "persons",
+   "source_file": "data/raw/agribank/2023_bctn.pdf",
+   "page": 37,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: tổng số lao động 42.083 (gồm công ty con)",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "headcount",
+   "value": 42278.0,
+   "unit": "persons",
+   "source_file": "data/raw/agribank/2024_bctn.pdf",
+   "page": 30,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/1c602381-62d0-48a6-990a-ba14a078b603/BCTN2024+Agribank+V+version+S.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1c602381-62d0-48a6-990a-ba14a078b603-prorO97",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p30 TỔNG SỐ LAO ĐỘNG = 42.278; p45: đạt 42.278 (+195 vs 2023).",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "headcount",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; BCTN 2025 không nêu tổng lao động rõ",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "nci",
+   "value": 975182.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT hợp nhất p8: Lợi ích CĐ không KS 975.182; TỔNG VCSH 73.084.295 → parent=72.109.113",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "nci",
+   "value": 1166940.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 90,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2021 p90 = phần VỐN CHỦ SỞ HỮU của Bảng CĐKT hợp nhất (OCR; front p7–9 ảnh trống). NCI (Lợi ích CĐ thiếu số) 1.166.940; TỔNG VCSH 76.087.340 → parent=74.920.400. Đã xác nhận không phải bảng rủi ro.",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "nci",
+   "value": 1280152.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2023 CĐKT p8 cột 2022: NCI 1.280.152; TỔNG VCSH 86.997.553 → parent=85.717.401",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "nci",
+   "value": 1347748.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT hợp nhất p8: NCI 1.347.748; TỔNG VCSH 100.535.854 → parent=99.188.106",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "nci",
+   "value": 1345106.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 21,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 CĐKT hợp nhất p21 cột 2024: NCI 1.345.106; TỔNG VCSH 124.067.756 → parent=122.722.650",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "nci",
+   "value": 1480515.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 21,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT hợp nhất p21: NCI 1.480.515; TỔNG VCSH 131.191.251 (trước đó lấy BCTC riêng 128.208.531 p8 không có NCI) → parent=129.710.736",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "net_fee_income",
+   "value": 5177499.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: Lãi thuần HĐ dịch vụ 5.177.499",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "net_fee_income",
+   "value": 4313638.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD riêng p11 cột 2021: Lãi thuần HĐ dịch vụ = 4.313.638",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "net_fee_income",
+   "value": 4110502.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD riêng p11: Lãi thuần HĐ dịch vụ 2022 = 4.110.502",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "net_fee_income",
+   "value": 4565788.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 24,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p24: Lãi thuần HĐ dịch vụ 4.565.788",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "net_fee_income",
+   "value": 4224847.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 KQKD riêng p10 cột 2024: Lãi thuần HĐ dịch vụ = 4.224.847",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "net_fee_income",
+   "value": 4804178.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: Lãi thuần HĐ DV 4.804.178 (riêng); hợp nhất p23=5.746.225 — giữ riêng nếu BCTC riêng",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "net_interest_income",
+   "value": 43660623.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: Thu nhập lãi thuần 43.660.623 (bảng số tách dòng)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "net_interest_income",
+   "value": 46712689.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=3; I Thu nhap lãi thuần 46.712.689 43.347.648 ⏎ 3 Thu nhập từ hoạt động dịch vụ 5 6.886.604 6.533.361 ⏎ 4 Chỉ phi hoạt động dich vu 27 (2.574.7 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "net_interest_income",
+   "value": 46424242.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 98,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=3; Thu nhập lãi thuan 46.424.242 46.712.689 (288.447) ⏎ Chi phi tir hoat động dich vu (2.572.966) (2.574.794) 1.828 ⏎ Lai thuần tir hoat động d | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "net_interest_income",
+   "value": 55964737.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 24,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p24: Thu nhập lãi thuần 55.964.737",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "net_interest_income",
+   "value": 66183496.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/fc6371fa-7edd-476d-a0a2-bb38aa5d0c68/B%C3%81O+C%C3%81O+T%C3%80I+CH%C3%8DNH+2024.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-fc6371fa-7edd-476d-a0a2-bb38aa5d0c68-pnC-1fb",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Thu nhập lãi thuần 66.183.496 55.432.862 ⏎ Thu nhập ti hoạt động dich vu 27 7.529.975 7.184.159 ⏎ Chi phi hoat déng dich vu 27 (3.305.128) ( | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "net_interest_income",
+   "value": 70243509.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: Thu nhập lãi thuần 70.243.509",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "net_profit",
+   "value": 10516804.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ vs cột SS | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "net_profit",
+   "value": 11611119.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 10, chỉ 1 dòng PAT 11.611.119 (không tách cổ đông mẹ/NCI) — giữ nguyên | đã kiểm PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "net_profit",
+   "value": 17680029.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; XHI Loi nhuận sau thué 17.680.029 11.674.916 ⏎ (*) Số liệu năm 2021 được trinh bay lai theo kiến nghị cla Kiém toán Nha nước năm 2021. Ahh ⏎ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "net_profit",
+   "value": 20695801.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 24,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "net_profit",
+   "value": 21884431.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/fc6371fa-7edd-476d-a0a2-bb38aa5d0c68/B%C3%81O+C%C3%81O+T%C3%80I+CH%C3%8DNH+2024.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-fc6371fa-7edd-476d-a0a2-bb38aa5d0c68-pnC-1fb",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 12, chỉ 1 dòng PAT 21.884.431 (không tách cổ đông mẹ/NCI) — giữ nguyên | đã kiểm PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "net_profit",
+   "value": 24534691.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD: LNST 24.534.691 (đã có fin-cand p11) — xác nhận lại",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "op_profit_before_provision",
+   "value": 31935227.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: LN thuần trước dự phòng 31.935.227; TOI≈58.052.435 ≈ IX+VIII",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "op_profit_before_provision",
+   "value": 36269459.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD riêng p11 cột 2021 (trình bày lại): LN thuần HĐKD trước dự phòng = 36.269.459",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "op_profit_before_provision",
+   "value": 49247426.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD riêng p11: LN thuần HĐKD trước dự phòng 2022 = 49.247.426",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "op_profit_before_provision",
+   "value": 45206255.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 24,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p24: LN trước dự phòng 45.206.255",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "op_profit_before_provision",
+   "value": 53980360.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 KQKD riêng p10 cột 2024: LN thuần HĐKD trước dự phòng = 53.980.360",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "op_profit_before_provision",
+   "value": 62477239.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: LN trước dự phòng 62.477.239",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "opex",
+   "value": 26117208.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; lệch nhỏ vs cột SS | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "opex",
+   "value": 24179435.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ tạm; CHEO_NAM cột SS 2022 nghi OCR | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "opex",
+   "value": 27554481.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: Chi phí hoạt động (27.554.481) lấy |giá trị tuyệt đối|; không lấy ngoại hối",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "opex",
+   "value": 30932407.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 24,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "giữ; BIEN_DONG do 2022 opex thấp bất thường — cần xem lại 2022 sau | đã kiểm: BIEN_DONG,CHEO_NAM | CẦN KIỂM: BIEN_DONG,CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "opex",
+   "value": 31376021.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/fc6371fa-7edd-476d-a0a2-bb38aa5d0c68/B%C3%81O+C%C3%81O+T%C3%80I+CH%C3%8DNH+2024.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-fc6371fa-7edd-476d-a0a2-bb38aa5d0c68-pnC-1fb",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Chi phi hoat dong 32 (31.376.021) (30.131.580) ⏎ Loi nhuận thuin tir hoạt động kinh doanh I ⏎ trước chi phi dy phòng rai ro tin dung 53.980. | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "opex",
+   "value": 33684480.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: Chi phí hoạt động 33.684.480",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "software_gross_cost",
+   "value": 1365853.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 45,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH hợp nhất p45: Phần mềm máy vi tính nguyên giá cuối kỳ 1.365.853",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "software_gross_cost",
+   "value": 1373952.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2021_bctc.pdf",
+   "page": 136,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/d793b9d3-1bfd-4133-8557-b8553fd25951/BCTC+2021-%C4%91%C3%A3+g%E1%BB%99p_compressed.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-d793b9d3-1bfd-4133-8557-b8553fd25951-oud0eJT",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH hợp nhất p136: Phần mềm máy vi tính nguyên giá cuối kỳ 1.373.952",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "software_gross_cost",
+   "value": 1382202.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 158,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH hợp nhất p158: Phần mềm máy vi tính nguyên giá cuối kỳ 1.382.202",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "software_gross_cost",
+   "value": 1646074.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 74,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p74: Phần mềm máy vi tính nguyên giá cuối kỳ 1.646.074",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "software_gross_cost",
+   "value": 1671542.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2024_bctc.pdf",
+   "page": 55,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/fc6371fa-7edd-476d-a0a2-bb38aa5d0c68/B%C3%81O+C%C3%81O+T%C3%80I+CH%C3%8DNH+2024.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-fc6371fa-7edd-476d-a0a2-bb38aa5d0c68-pnC-1fb",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH BCTC riêng p55: Phần mềm máy vi tính nguyên giá cuối kỳ 1.671.542 (không thấy bảng hợp nhất tách phần mềm trong text)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "software_gross_cost",
+   "value": 1628497.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 83,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p83: Phần mềm nguyên giá cuối kỳ 1.628.497",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "total_assets",
+   "value": 1568126913.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2020_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c/BAO+CAO+TAI+CHINH+HOP+NHAT+SAU+KIEM+TOAN+2020.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-6bc5b15d-32ec-45f6-a8ab-293f7c4dc86c-nCOcXW0",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p8: TONG NO PHAI TRA VA VON CHU SỞ HỮU 1.568.126.913 (= tổng tài sản cuối kỳ; thay số năm trước 1.452.213.413)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "total_assets",
+   "value": 1694320049.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 CĐKT p8 cột 31/12/2021 TONG TAI SAN = 1.694.320.049 (trình bày lại; BCTC2021 từng ghi 1.694.231.522). OCR text từng đọc nhầm 1.604… — đã đối PDF. | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "total_assets",
+   "value": 1873684569.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/073c9539-7ad7-4e39-ab7a-db2a9251be53/B_C_T_C_FINAL.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-073c9539-7ad7-4e39-ab7a-db2a9251be53-ouc-PdQ",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=19; TONG TAI SAN ⏎ 1.873.684.569 - 1.604.320.049 ⏎ m ⏎ Các thuyét minh đính kèm la bộ phận hop thành cua bdo cdo tai chính riéng nay ⏎ = | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "total_assets",
+   "value": 2044927375.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2023_bctc.pdf",
+   "page": 7,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/69b594c1-feaf-41dc-9659-7813edd3b2ac/B_C_T_C+2023-%C4%91%C3%A3+g%E1%BB%99p.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-69b594c1-feaf-41dc-9659-7813edd3b2ac-pnC-dRL",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=9; TONG TAI SAN ⏎ 2.044.927.375 ⏎ 1.874.839.155 ⏎ 6 | range-check (ROA/ROE/CASA/xu hướng), Đã đối chiếu PDF trang 7, dòng Tổng tài sản",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "total_assets",
+   "value": 2231961608.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2024_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/fc6371fa-7edd-476d-a0a2-bb38aa5d0c68/B%C3%81O+C%C3%81O+T%C3%80I+CH%C3%8DNH+2024.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-fc6371fa-7edd-476d-a0a2-bb38aa5d0c68-pnC-1fb",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=19; TONG TAI SAN 2.231.961.608 - 2.042.754.860 ⏎ Rang ⏎ Các thuyết minh dinh kèm la bộ phan hop thank của bdo cdo tai chính riéng nay ⏎ Es . AZw | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "total_assets",
+   "value": 2682737813.0,
+   "unit": "VND million",
+   "source_file": "data/raw/agribank/2025_bctc.pdf",
+   "page": 7,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/5737a4c4-63f4-40f4-931b-7e68ae154aa3/B_C_T_C_2025_gop.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5737a4c4-63f4-40f4-931b-7e68ae154aa3-pRjnrzL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p7/p8: TONG TAI SAN / TỔNG NỢ+VCSH 2.682.737.813",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "total_customers",
+   "value": 12170000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2020_bctn.pdf",
+   "page": 19,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/0e3855a5-dbd5-4558-9ac5-31d41474d978/FILE_20210715_140421_20_6+BCTN+2020_pdf+%28trang+%C4%91%C3%B4i%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-0e3855a5-dbd5-4558-9ac5-31d41474d978-owJxqSW",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: 12,17 triệu KH sử dụng dịch vụ (78,2% KH có TKTT) — không phải toàn bộ KH",
+   "definition": "subset",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "total_customers",
+   "value": 20170000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2021_bctn.pdf",
+   "page": 30,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/67756266-cd5c-480d-a35b-0e372f0c10f0/BCN+2021.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-67756266-cd5c-480d-a35b-0e372f0c10f0-owJxhEz",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p30: quy mô khách hàng gửi tiền đạt trên 20,17 triệu khách hàng. Phạm vi: KH gửi tiền (không khẳng định = toàn bộ KH ngân hàng).",
+   "definition": "depositors",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "total_customers",
+   "value": 20000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/agribank/2022_bctn.pdf",
+   "page": 9,
+   "source_url": "https://www.agribank.com.vn/wcm/connect/25572f57-6366-4345-932f-a09736413356/BCTN+2022+18.5+zip.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-25572f57-6366-4345-932f-a09736413356-oxBBFrN",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p9/p48: hơn 20 triệu tài khoản / trên 20 triệu khách hàng (ước lượng lower-bound). Phạm vi: mô tả định tính 'hơn 20 triệu' — không phải số đếm chính xác.",
+   "definition": "lower_bound_or_accounts",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; BCTN không công bố tổng KH toàn hàng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2024 trang 4–52; chỉ có Mobile Banking >16M / Agribank Plus >10M — không có tổng KH toàn hàng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; chỉ có Mobile Banking/Agribank Plus, không có tổng KH",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN (giờ đào tạo / hours of training) — không công bố giờ/người/năm (2025 chỉ có ~13,5 ngày đào tạo bình quân/người).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN (giờ đào tạo / hours of training) — không công bố giờ/người/năm (2025 chỉ có ~13,5 ngày đào tạo bình quân/người).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN (giờ đào tạo / hours of training) — không công bố giờ/người/năm (2025 chỉ có ~13,5 ngày đào tạo bình quân/người).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN (giờ đào tạo / hours of training) — không công bố giờ/người/năm (2025 chỉ có ~13,5 ngày đào tạo bình quân/người).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN (giờ đào tạo / hours of training) — không công bố giờ/người/năm (2025 chỉ có ~13,5 ngày đào tạo bình quân/người).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN (giờ đào tạo / hours of training) — không công bố giờ/người/năm (2025 chỉ có ~13,5 ngày đào tạo bình quân/người).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  }
+ ],
+ "other_sources": {}
+}

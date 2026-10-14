@@ -1,0 +1,616 @@
+﻿year,family,scenario,bank,score,rank,base_rank,rank_change
+2021,0. Cơ sở,"80/20, cận cố định",agribank,22.8482322758446,5,5,0
+2021,0. Cơ sở,"80/20, cận cố định",bidv,46.42286609659138,3,3,0
+2021,0. Cơ sở,"80/20, cận cố định",mb,51.875,2,2,0
+2021,0. Cơ sở,"80/20, cận cố định",tcb,53.41666666666667,1,1,0
+2021,0. Cơ sở,"80/20, cận cố định",vcb,38.54166666666667,4,4,0
+2021,A. Trọng số DBI/DTI,100/0,agribank,22.91666666666667,5,5,0
+2021,A. Trọng số DBI/DTI,100/0,bidv,45.83333333333334,2,3,-1
+2021,A. Trọng số DBI/DTI,100/0,mb,45.83333333333334,2,2,0
+2021,A. Trọng số DBI/DTI,100/0,tcb,51.04166666666667,1,1,0
+2021,A. Trọng số DBI/DTI,100/0,vcb,38.54166666666667,4,4,0
+2021,A. Trọng số DBI/DTI,70/30,agribank,22.814015080433563,5,5,0
+2021,A. Trọng số DBI/DTI,70/30,bidv,46.717632478220395,3,3,0
+2021,A. Trọng số DBI/DTI,70/30,mb,54.89583333333334,1,2,-1
+2021,A. Trọng số DBI/DTI,70/30,tcb,54.60416666666667,2,1,1
+2021,A. Trọng số DBI/DTI,70/30,vcb,38.54166666666667,4,4,0
+2021,A. Trọng số DBI/DTI,60/40,agribank,22.779797885022525,5,5,0
+2021,A. Trọng số DBI/DTI,60/40,bidv,47.01239885984941,3,3,0
+2021,A. Trọng số DBI/DTI,60/40,mb,57.91666666666667,1,2,-1
+2021,A. Trọng số DBI/DTI,60/40,tcb,55.79166666666667,2,1,1
+2021,A. Trọng số DBI/DTI,60/40,vcb,38.54166666666667,4,4,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng +20%,agribank,23.45133358407338,5,5,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng +20%,bidv,47.179117727884126,3,3,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng +20%,mb,51.814516129032256,2,2,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng +20%,tcb,54.37096774193549,1,1,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng +20%,vcb,39.314516129032256,4,4,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng -20%,agribank,22.203537773944856,5,5,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng -20%,bidv,45.61445918038188,3,3,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng -20%,mb,51.9396551724138,2,2,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng -20%,tcb,52.396551724137936,1,1,0
+2021,B. Trọng số trụ cột ±20%,Khách hàng -20%,vcb,37.71551724137931,4,4,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược +20%,agribank,23.11925704113993,5,5,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược +20%,bidv,47.14309622250777,3,3,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược +20%,mb,51.61290322580645,2,2,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược +20%,tcb,53.70967741935485,1,1,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược +20%,vcb,38.70967741935483,4,4,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược -20%,agribank,22.55851614742544,5,5,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược -20%,bidv,45.652964927508314,3,3,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược -20%,mb,52.1551724137931,2,2,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược -20%,tcb,53.10344827586208,1,1,0
+2021,B. Trọng số trụ cột ±20%,Chiến lược -20%,vcb,38.362068965517246,4,4,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ +20%,agribank,22.773935132240915,5,5,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ +20%,bidv,46.305949025398924,3,3,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ +20%,mb,51.97580645161291,2,2,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ +20%,tcb,53.30645161290323,1,1,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ +20%,vcb,37.90322580645161,4,4,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ -20%,agribank,22.92765336038646,5,5,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ -20%,bidv,46.54784641407295,3,3,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ -20%,mb,51.76724137931035,2,2,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ -20%,tcb,53.5344827586207,1,1,0
+2021,B. Trọng số trụ cột ±20%,Công nghệ -20%,vcb,39.224137931034484,4,4,0
+2021,B. Trọng số trụ cột ±20%,Vận hành +20%,agribank,22.514418331462508,5,5,0
+2021,B. Trọng số trụ cột ±20%,Vận hành +20%,bidv,45.93341880315294,3,3,0
+2021,B. Trọng số trụ cột ±20%,Vận hành +20%,mb,52.41935483870968,2,2,0
+2021,B. Trọng số trụ cột ±20%,Vận hành +20%,tcb,53.10483870967742,1,1,0
+2021,B. Trọng số trụ cột ±20%,Vận hành +20%,vcb,38.50806451612903,4,4,0
+2021,B. Trọng số trụ cột ±20%,Vận hành -20%,agribank,23.205067871563376,5,5,0
+2021,B. Trọng số trụ cột ±20%,Vận hành -20%,bidv,46.94606837578418,3,3,0
+2021,B. Trọng số trụ cột ±20%,Vận hành -20%,mb,51.293103448275865,2,2,0
+2021,B. Trọng số trụ cột ±20%,Vận hành -20%,tcb,53.75,1,1,0
+2021,B. Trọng số trụ cột ±20%,Vận hành -20%,vcb,38.577586206896555,4,4,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa +20%,agribank,22.917644137914127,5,5,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa +20%,bidv,45.8405830942257,3,3,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa +20%,mb,51.814516129032256,2,2,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa +20%,tcb,52.903225806451616,1,1,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa +20%,vcb,38.91129032258065,4,4,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa -20%,agribank,22.774033388804753,5,5,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa -20%,bidv,47.04530654739605,3,3,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa -20%,mb,51.939655172413794,2,2,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa -20%,tcb,53.96551724137931,1,1,0
+2021,B. Trọng số trụ cột ±20%,Văn hóa -20%,vcb,38.146551724137936,4,4,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu +20%,agribank,22.312805428236707,5,5,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu +20%,bidv,46.13503170637874,3,3,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu +20%,mb,51.61290322580645,2,2,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu +20%,tcb,53.10483870967742,1,1,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu +20%,vcb,37.903225806451616,4,4,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu -20%,agribank,23.420585112942685,5,5,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu -20%,bidv,46.73055113440487,3,3,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu -20%,mb,52.1551724137931,2,2,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu -20%,tcb,53.75,1,1,0
+2021,B. Trọng số trụ cột ±20%,Dữ liệu -20%,vcb,39.22413793103449,4,4,0
+2021,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,agribank,22.29166666666667,5,5,0
+2021,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,bidv,42.471473129991395,3,3,0
+2021,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,mb,49.23027153495288,2,2,0
+2021,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,tcb,52.26706036745408,1,1,0
+2021,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,vcb,38.54166666666667,4,4,0
+2021,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,agribank,22.29166666666667,5,5,0
+2021,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,bidv,43.19444444444446,3,3,0
+2021,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,mb,48.68055555555556,2,2,0
+2021,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,tcb,52.08333333333334,1,1,0
+2021,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,vcb,38.54166666666667,4,4,0
+2021,D. Loại một trụ cột,Bỏ Khách hàng,agribank,19.109004164826107,5,5,0
+2021,D. Loại một trụ cột,Bỏ Khách hàng,bidv,41.73410598257631,3,3,0
+2021,D. Loại một trụ cột,Bỏ Khách hàng,mb,52.25,1,2,-1
+2021,D. Loại một trụ cột,Bỏ Khách hàng,tcb,47.5,2,1,1
+2021,D. Loại một trụ cột,Bỏ Khách hàng,vcb,33.75,4,4,0
+2021,D. Loại một trụ cột,Bỏ Chiến lược,agribank,21.167878731013513,5,5,0
+2021,D. Loại một trụ cột,Bỏ Chiến lược,bidv,41.95743931590964,3,3,0
+2021,D. Loại một trụ cột,Bỏ Chiến lược,mb,53.5,1,2,-1
+2021,D. Loại một trụ cột,Bỏ Chiến lược,tcb,51.6,2,1,1
+2021,D. Loại một trụ cột,Bỏ Chiến lược,vcb,37.5,4,4,0
+2021,D. Loại một trụ cột,Bỏ Công nghệ,agribank,23.308874566187406,5,5,0
+2021,D. Loại một trụ cột,Bỏ Công nghệ,bidv,47.147751937984495,3,3,0
+2021,D. Loại một trụ cột,Bỏ Công nghệ,mb,51.25,2,2,0
+2021,D. Loại một trụ cột,Bỏ Công nghệ,tcb,54.1,1,1,0
+2021,D. Loại một trụ cột,Bỏ Công nghệ,vcb,42.5,4,4,0
+2021,D. Loại một trụ cột,Bỏ Vận hành,agribank,24.917878731013513,5,5,0
+2021,D. Loại một trụ cột,Bỏ Vận hành,bidv,49.45743931590964,2,3,-1
+2021,D. Loại một trụ cột,Bỏ Vận hành,mb,48.5,3,2,1
+2021,D. Loại một trụ cột,Bỏ Vận hành,tcb,55.35,1,1,0
+2021,D. Loại một trụ cột,Bỏ Vận hành,vcb,38.75,4,4,0
+2021,D. Loại một trụ cột,Bỏ Văn hóa,agribank,22.417878731013513,5,5,0
+2021,D. Loại một trụ cột,Bỏ Văn hóa,bidv,50.03302071125848,3,3,0
+2021,D. Loại một trụ cột,Bỏ Văn hóa,mb,52.25,2,2,0
+2021,D. Loại một trụ cột,Bỏ Văn hóa,tcb,56.6,1,1,0
+2021,D. Loại một trụ cột,Bỏ Văn hóa,vcb,36.25,4,4,0
+2021,D. Loại một trụ cột,Bỏ Dữ liệu,agribank,26.167878731013513,5,5,0
+2021,D. Loại một trụ cột,Bỏ Dữ liệu,bidv,48.20743931590964,3,3,0
+2021,D. Loại một trụ cột,Bỏ Dữ liệu,mb,53.5,2,2,0
+2021,D. Loại một trụ cột,Bỏ Dữ liệu,tcb,55.35,1,1,0
+2021,D. Loại một trụ cột,Bỏ Dữ liệu,vcb,42.5,4,4,0
+2021,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),agribank,19.367328003729604,5,5,0
+2021,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),bidv,40.090136751999395,3,3,0
+2021,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),mb,42.56944444444445,2,2,0
+2021,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),tcb,44.95833333333334,1,1,0
+2021,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),vcb,31.45833333333334,4,4,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,agribank,23.07927481018337,5,5,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,bidv,47.716082620739215,3,3,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,mb,51.875,2,2,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,tcb,53.75,1,1,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,vcb,38.54166666666667,4,4,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,agribank,22.69420391961875,5,5,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,bidv,45.56072174715948,3,3,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,mb,50.81546454141237,2,2,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,tcb,52.91666666666667,1,1,0
+2021,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,K-Q1 -20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,K-Q1 -20%,bidv,47.04231054103582,3,3,0
+2021,G. Dịch cận từng chỉ số,K-Q1 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,K-Q1 -20%,tcb,53.75,1,1,0
+2021,G. Dịch cận từng chỉ số,K-Q1 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,K-Q1 +20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,K-Q1 +20%,bidv,46.00990313362841,3,3,0
+2021,G. Dịch cận từng chỉ số,K-Q1 +20%,mb,51.39043209876543,2,2,0
+2021,G. Dịch cận từng chỉ số,K-Q1 +20%,tcb,52.91666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,K-Q1 +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,S-Q1 -20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,S-Q1 -20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,S-Q1 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,S-Q1 -20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,S-Q1 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,S-Q1 +20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,S-Q1 +20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,S-Q1 +20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,S-Q1 +20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,S-Q1 +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,S-Q2 -20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,S-Q2 -20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,S-Q2 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,S-Q2 -20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,S-Q2 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,S-Q2 +20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,S-Q2 +20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,S-Q2 +20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,S-Q2 +20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,S-Q2 +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,T-Q1 -20%,agribank,23.07927481018337,5,5,0
+2021,G. Dịch cận từng chỉ số,T-Q1 -20%,bidv,46.74780096699244,3,3,0
+2021,G. Dịch cận từng chỉ số,T-Q1 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,T-Q1 -20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,T-Q1 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,T-Q1 +20%,agribank,22.69420391961875,5,5,0
+2021,G. Dịch cận từng chỉ số,T-Q1 +20%,bidv,46.20624284965733,3,3,0
+2021,G. Dịch cận từng chỉ số,T-Q1 +20%,mb,51.54694602289385,2,2,0
+2021,G. Dịch cận từng chỉ số,T-Q1 +20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,T-Q1 +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,O-Q1 -20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,O-Q1 -20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,O-Q1 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,O-Q1 -20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,O-Q1 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,O-Q1 +20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,O-Q1 +20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,O-Q1 +20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,O-Q1 +20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,O-Q1 +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,O-Q2 -20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,O-Q2 -20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,O-Q2 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,O-Q2 -20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,O-Q2 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,O-Q2 +20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,O-Q2 +20%,bidv,46.42286609659138,3,3,0
+2021,G. Dịch cận từng chỉ số,O-Q2 +20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,O-Q2 +20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,O-Q2 +20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,C-Q2 -20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,C-Q2 -20%,bidv,46.771703305893695,3,3,0
+2021,G. Dịch cận từng chỉ số,C-Q2 -20%,mb,51.875,2,2,0
+2021,G. Dịch cận từng chỉ số,C-Q2 -20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,C-Q2 -20%,vcb,38.54166666666667,4,4,0
+2021,G. Dịch cận từng chỉ số,C-Q2 +20%,agribank,22.8482322758446,5,5,0
+2021,G. Dịch cận từng chỉ số,C-Q2 +20%,bidv,46.19030795705649,3,3,0
+2021,G. Dịch cận từng chỉ số,C-Q2 +20%,mb,51.62808641975309,2,2,0
+2021,G. Dịch cận từng chỉ số,C-Q2 +20%,tcb,53.41666666666667,1,1,0
+2021,G. Dịch cận từng chỉ số,C-Q2 +20%,vcb,38.54166666666667,4,4,0
+2023,0. Cơ sở,"80/20, cận cố định",agribank,39.4634756323656,5,5,0
+2023,0. Cơ sở,"80/20, cận cố định",bidv,48.67910570835333,3,3,0
+2023,0. Cơ sở,"80/20, cận cố định",mb,52.46574074074075,2,2,0
+2023,0. Cơ sở,"80/20, cận cố định",tcb,64.16666666666667,1,1,0
+2023,0. Cơ sở,"80/20, cận cố định",vcb,43.75000000000001,4,4,0
+2023,A. Trọng số DBI/DTI,100/0,agribank,41.66666666666667,4,5,-1
+2023,A. Trọng số DBI/DTI,100/0,bidv,45.83333333333334,3,3,0
+2023,A. Trọng số DBI/DTI,100/0,mb,46.87500000000001,2,2,0
+2023,A. Trọng số DBI/DTI,100/0,tcb,60.41666666666667,1,1,0
+2023,A. Trọng số DBI/DTI,100/0,vcb,41.66666666666667,4,4,0
+2023,A. Trọng số DBI/DTI,70/30,agribank,38.361880115215065,5,5,0
+2023,A. Trọng số DBI/DTI,70/30,bidv,50.101991895863335,3,3,0
+2023,A. Trọng số DBI/DTI,70/30,mb,55.26111111111111,2,2,0
+2023,A. Trọng số DBI/DTI,70/30,tcb,66.04166666666667,1,1,0
+2023,A. Trọng số DBI/DTI,70/30,vcb,44.79166666666667,4,4,0
+2023,A. Trọng số DBI/DTI,60/40,agribank,37.26028459806452,5,5,0
+2023,A. Trọng số DBI/DTI,60/40,bidv,51.52487808337332,3,3,0
+2023,A. Trọng số DBI/DTI,60/40,mb,58.05648148148149,2,2,0
+2023,A. Trọng số DBI/DTI,60/40,tcb,67.91666666666667,1,1,0
+2023,A. Trọng số DBI/DTI,60/40,vcb,45.83333333333334,4,4,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng +20%,agribank,40.20658932164412,5,5,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng +20%,bidv,49.13203588300588,3,3,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng +20%,mb,52.82491039426523,2,2,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng +20%,tcb,65.0,1,1,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng +20%,vcb,43.75,4,4,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng -20%,agribank,38.66911272313682,5,5,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng -20%,bidv,48.194938969931634,3,3,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng -20%,mb,52.08180076628353,2,2,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng -20%,tcb,63.27586206896552,1,1,0
+2023,B. Trọng số trụ cột ±20%,Khách hàng -20%,vcb,43.75,4,4,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược +20%,agribank,39.40013770874089,5,5,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược +20%,bidv,48.92332810485806,3,3,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược +20%,mb,52.46505376344086,2,2,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược +20%,tcb,63.91129032258065,1,1,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược +20%,vcb,43.75,4,4,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược -20%,agribank,39.531181688654065,5,5,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược -20%,bidv,48.41804038795172,3,3,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược -20%,mb,52.46647509578544,2,2,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược -20%,tcb,64.4396551724138,1,1,0
+2023,B. Trọng số trụ cột ±20%,Chiến lược -20%,vcb,43.75,4,4,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ +20%,agribank,39.98177815371488,5,5,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ +20%,bidv,48.942834334778624,3,3,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ +20%,mb,52.22491039426523,2,2,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ +20%,tcb,64.03225806451613,1,1,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ +20%,vcb,43.54838709677419,4,4,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ -20%,agribank,38.909428109543946,5,5,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ -20%,bidv,48.39718890079525,3,3,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ -20%,mb,52.72318007662835,2,2,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ -20%,tcb,64.31034482758622,1,1,0
+2023,B. Trọng số trụ cột ±20%,Công nghệ -20%,vcb,43.96551724137931,4,4,0
+2023,B. Trọng số trụ cột ±20%,Vận hành +20%,agribank,38.996911902289284,5,5,0
+2023,B. Trọng số trụ cột ±20%,Vận hành +20%,bidv,48.5604248790516,3,3,0
+2023,B. Trọng số trụ cột ±20%,Vận hành +20%,mb,53.03136200716846,2,2,0
+2023,B. Trọng số trụ cột ±20%,Vận hành +20%,tcb,64.35483870967741,1,1,0
+2023,B. Trọng số trụ cột ±20%,Vận hành +20%,vcb,43.62903225806452,4,4,0
+2023,B. Trọng số trụ cột ±20%,Vận hành -20%,agribank,39.962216171412685,5,5,0
+2023,B. Trọng số trụ cột ±20%,Vận hành -20%,bidv,48.805971422434475,3,3,0
+2023,B. Trọng số trụ cột ±20%,Vận hành -20%,mb,51.861111111111114,2,2,0
+2023,B. Trọng số trụ cột ±20%,Vận hành -20%,tcb,63.96551724137932,1,1,0
+2023,B. Trọng số trụ cột ±20%,Vận hành -20%,vcb,43.87931034482759,4,4,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa +20%,agribank,39.6017506119667,5,5,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa +20%,bidv,48.399134556470955,3,3,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa +20%,mb,52.06362007168458,2,2,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa +20%,tcb,63.387096774193544,1,1,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa +20%,vcb,44.274193548387096,4,4,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa -20%,agribank,39.315664447274756,5,5,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa -20%,bidv,48.97838521553793,3,3,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa -20%,mb,52.895593869731805,2,2,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa -20%,tcb,65.0,1,1,0
+2023,B. Trọng số trụ cột ±20%,Văn hóa -20%,vcb,43.189655172413794,4,4,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu +20%,agribank,38.59368609583767,5,5,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu +20%,bidv,48.11687649195483,3,3,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu +20%,mb,52.18458781362007,2,2,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu +20%,tcb,64.31451612903226,1,1,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu +20%,vcb,43.54838709677419,4,4,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu -20%,agribank,40.39325065417131,5,5,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu -20%,bidv,49.28010935346896,3,3,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu -20%,mb,52.76628352490422,2,2,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu -20%,tcb,64.00862068965517,1,1,0
+2023,B. Trọng số trụ cột ±20%,Dữ liệu -20%,vcb,43.96551724137932,4,4,0
+2023,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,agribank,40.19653508079276,4,5,-1
+2023,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,bidv,43.049829220657585,3,3,0
+2023,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,mb,50.13251093470652,2,2,0
+2023,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,tcb,59.44902567397304,1,1,0
+2023,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,vcb,39.44011426445185,5,4,1
+2023,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,agribank,41.04166666666667,4,5,-1
+2023,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,bidv,44.027777777777786,3,3,0
+2023,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,mb,51.04166666666667,2,2,0
+2023,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,tcb,61.25,1,1,0
+2023,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,vcb,40.13888888888889,5,4,1
+2023,D. Loại một trụ cột,Bỏ Khách hàng,agribank,34.856170758838715,5,5,0
+2023,D. Loại một trụ cột,Bỏ Khách hàng,bidv,45.87093862550752,3,3,0
+2023,D. Loại một trụ cột,Bỏ Khách hàng,mb,50.238888888888894,2,2,0
+2023,D. Loại một trụ cột,Bỏ Khách hàng,tcb,59.0,1,1,0
+2023,D. Loại một trụ cột,Bỏ Khách hàng,vcb,43.75,4,4,0
+2023,D. Loại một trụ cột,Bỏ Chiến lược,agribank,39.856170758838715,5,5,0
+2023,D. Loại một trụ cột,Bỏ Chiến lược,bidv,47.164926850023996,3,3,0
+2023,D. Loại một trụ cột,Bỏ Chiến lược,mb,52.47,2,2,0
+2023,D. Loại một trụ cột,Bỏ Chiến lược,tcb,65.75,1,1,0
+2023,D. Loại một trụ cột,Bỏ Chiến lược,vcb,43.75,4,4,0
+2023,D. Loại một trụ cột,Bỏ Công nghệ,agribank,36.25,5,5,0
+2023,D. Loại một trụ cột,Bỏ Công nghệ,bidv,47.043988224516475,3,3,0
+2023,D. Loại một trụ cột,Bỏ Công nghệ,mb,53.95888888888889,2,2,0
+2023,D. Loại một trụ cột,Bỏ Công nghệ,tcb,65.0,1,1,0
+2023,D. Loại một trụ cột,Bỏ Công nghệ,vcb,45.0,4,4,0
+2023,D. Loại một trụ cột,Bỏ Vận hành,agribank,42.356170758838715,5,5,0
+2023,D. Loại một trụ cột,Bỏ Vận hành,bidv,49.414926850023996,2,3,-1
+2023,D. Loại một trụ cột,Bỏ Vận hành,mb,48.95888888888889,3,2,1
+2023,D. Loại một trụ cột,Bỏ Vận hành,tcb,63.0,1,1,0
+2023,D. Loại một trụ cột,Bỏ Vận hành,vcb,44.5,4,4,0
+2023,D. Loại một trụ cột,Bỏ Văn hóa,agribank,38.606170758838715,5,5,0
+2023,D. Loại một trụ cột,Bỏ Văn hóa,bidv,50.414926850023996,3,3,0
+2023,D. Loại một trụ cột,Bỏ Văn hóa,mb,54.95888888888889,2,2,0
+2023,D. Loại một trụ cột,Bỏ Văn hóa,tcb,69.0,1,1,0
+2023,D. Loại một trụ cột,Bỏ Văn hóa,vcb,40.5,4,4,0
+2023,D. Loại một trụ cột,Bỏ Dữ liệu,agribank,44.856170758838715,5,5,0
+2023,D. Loại một trụ cột,Bỏ Dữ liệu,bidv,52.164926850023996,3,3,0
+2023,D. Loại một trụ cột,Bỏ Dữ liệu,mb,54.20888888888889,2,2,0
+2023,D. Loại một trụ cột,Bỏ Dữ liệu,tcb,63.25,1,1,0
+2023,D. Loại một trụ cột,Bỏ Dữ liệu,vcb,45.0,4,4,0
+2023,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),agribank,34.21090448284947,5,5,0
+2023,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),bidv,43.58177344091507,3,3,0
+2023,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),mb,47.89537037037037,2,2,0
+2023,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),tcb,56.73611111111112,1,1,0
+2023,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),vcb,37.91666666666667,4,4,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,agribank,39.69392787379033,5,5,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,bidv,48.96471792200073,3,3,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,mb,52.5675925925926,2,2,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,tcb,64.16666666666667,1,1,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,vcb,43.75000000000001,4,4,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,agribank,39.309840804749115,5,5,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,bidv,48.25721608444026,3,3,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,mb,52.19030472154939,2,2,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,tcb,63.73456790123458,1,1,0
+2023,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,vcb,43.35953201263279,4,4,0
+2023,G. Dịch cận từng chỉ số,K-Q1 -20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,K-Q1 -20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,K-Q1 -20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,K-Q1 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,K-Q1 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,K-Q1 +20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,K-Q1 +20%,bidv,48.44762422687185,3,3,0
+2023,G. Dịch cận từng chỉ số,K-Q1 +20%,mb,52.29135802469137,2,2,0
+2023,G. Dịch cận từng chỉ số,K-Q1 +20%,tcb,63.73456790123458,1,1,0
+2023,G. Dịch cận từng chỉ số,K-Q1 +20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,S-Q1 -20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,S-Q1 -20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,S-Q1 -20%,mb,52.5675925925926,2,2,0
+2023,G. Dịch cận từng chỉ số,S-Q1 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,S-Q1 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,S-Q1 +20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,S-Q1 +20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,S-Q1 +20%,mb,52.39783950617284,2,2,0
+2023,G. Dịch cận từng chỉ số,S-Q1 +20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,S-Q1 +20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,S-Q2 -20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,S-Q2 -20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,S-Q2 -20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,S-Q2 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,S-Q2 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,S-Q2 +20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,S-Q2 +20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,S-Q2 +20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,S-Q2 +20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,S-Q2 +20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,T-Q1 -20%,agribank,39.69392787379033,5,5,0
+2023,G. Dịch cận từng chỉ số,T-Q1 -20%,bidv,48.96471792200073,3,3,0
+2023,G. Dịch cận từng chỉ số,T-Q1 -20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,T-Q1 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,T-Q1 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,T-Q1 +20%,agribank,39.309840804749115,5,5,0
+2023,G. Dịch cận từng chỉ số,T-Q1 +20%,bidv,48.48869756592174,3,3,0
+2023,G. Dịch cận từng chỉ số,T-Q1 +20%,mb,52.43258867216668,2,2,0
+2023,G. Dịch cận từng chỉ số,T-Q1 +20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,T-Q1 +20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,O-Q1 -20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,O-Q1 -20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,O-Q1 -20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,O-Q1 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,O-Q1 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,O-Q1 +20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,O-Q1 +20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,O-Q1 +20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,O-Q1 +20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,O-Q1 +20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,O-Q2 -20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,O-Q2 -20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,O-Q2 -20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,O-Q2 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,O-Q2 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,O-Q2 +20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,O-Q2 +20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,O-Q2 +20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,O-Q2 +20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,O-Q2 +20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,C-Q2 -20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,C-Q2 -20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,C-Q2 -20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,C-Q2 -20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,C-Q2 -20%,vcb,43.75000000000001,4,4,0
+2023,G. Dịch cận từng chỉ số,C-Q2 +20%,agribank,39.4634756323656,5,5,0
+2023,G. Dịch cận từng chỉ số,C-Q2 +20%,bidv,48.67910570835333,3,3,0
+2023,G. Dịch cận từng chỉ số,C-Q2 +20%,mb,52.46574074074075,2,2,0
+2023,G. Dịch cận từng chỉ số,C-Q2 +20%,tcb,64.16666666666667,1,1,0
+2023,G. Dịch cận từng chỉ số,C-Q2 +20%,vcb,43.35953201263279,4,4,0
+2025,0. Cơ sở,"80/20, cận cố định",agribank,53.95388025640226,5,5,0
+2025,0. Cơ sở,"80/20, cận cố định",bidv,64.96425666952248,4,4,0
+2025,0. Cơ sở,"80/20, cận cố định",mb,72.27149851377544,3,3,0
+2025,0. Cơ sở,"80/20, cận cố định",tcb,76.07503962264491,1,1,0
+2025,0. Cơ sở,"80/20, cận cố định",vcb,75.75716623680873,2,2,0
+2025,A. Trọng số DBI/DTI,100/0,agribank,53.125000000000014,5,5,0
+2025,A. Trọng số DBI/DTI,100/0,bidv,64.58333333333334,4,4,0
+2025,A. Trọng số DBI/DTI,100/0,mb,72.91666666666667,3,3,0
+2025,A. Trọng số DBI/DTI,100/0,tcb,77.08333333333334,1,1,0
+2025,A. Trọng số DBI/DTI,100/0,vcb,76.04166666666669,2,2,0
+2025,A. Trọng số DBI/DTI,70/30,agribank,54.36832038460339,5,5,0
+2025,A. Trọng số DBI/DTI,70/30,bidv,65.15471833761707,4,4,0
+2025,A. Trọng số DBI/DTI,70/30,mb,71.94891443732983,3,3,0
+2025,A. Trọng số DBI/DTI,70/30,tcb,75.57089276730069,2,1,1
+2025,A. Trọng số DBI/DTI,70/30,vcb,75.61491602187976,1,2,-1
+2025,A. Trọng số DBI/DTI,60/40,agribank,54.782760512804515,5,5,0
+2025,A. Trọng số DBI/DTI,60/40,bidv,65.34518000571164,4,4,0
+2025,A. Trọng số DBI/DTI,60/40,mb,71.62633036088421,3,3,0
+2025,A. Trọng số DBI/DTI,60/40,tcb,75.06674591195647,2,1,1
+2025,A. Trọng số DBI/DTI,60/40,vcb,75.47266580695077,1,2,-1
+2025,B. Trọng số trụ cột ±20%,Khách hàng +20%,agribank,54.37470259211675,5,5,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng +20%,bidv,65.44418912436295,4,4,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng +20%,mb,72.66158524545557,3,3,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng +20%,tcb,76.49036859403924,1,1,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng +20%,vcb,76.28251562984238,2,2,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng -20%,agribank,53.504035690638496,5,5,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng -20%,bidv,64.45122542469302,4,4,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng -20%,mb,71.85450924887598,3,3,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng -20%,tcb,75.63106727391303,1,1,0
+2025,B. Trọng số trụ cột ±20%,Khách hàng -20%,vcb,75.19558585115205,2,2,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược +20%,agribank,54.023468348489644,5,5,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược +20%,bidv,65.08637742211853,4,4,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược +20%,mb,71.7725971280264,3,3,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược +20%,tcb,75.233909312237,2,1,1
+2025,B. Trọng số trụ cột ±20%,Chiến lược +20%,vcb,75.32951571304069,1,2,-1
+2025,B. Trọng số trụ cột ±20%,Chiến lược -20%,agribank,53.87949298555023,5,5,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược -20%,bidv,64.83371379605775,4,4,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược -20%,mb,72.80480689164509,3,3,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược -20%,tcb,76.97417891997749,1,1,0
+2025,B. Trọng số trụ cột ±20%,Chiến lược -20%,vcb,76.21430990014696,2,2,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ +20%,agribank,54.28965178889739,5,5,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ +20%,bidv,65.20551862365267,4,4,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ +20%,mb,73.004675981073,3,3,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ +20%,tcb,76.04036092514022,1,1,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ +20%,vcb,75.73274151949231,2,2,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ -20%,agribank,53.59495206649368,5,5,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ -20%,bidv,64.70635595993505,4,4,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ -20%,mb,71.48775708321597,3,3,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ -20%,tcb,76.11210995446024,1,1,0
+2025,B. Trọng số trụ cột ±20%,Công nghệ -20%,vcb,75.78327541738832,2,2,0
+2025,B. Trọng số trụ cột ±20%,Vận hành +20%,agribank,53.98762605458283,5,5,0
+2025,B. Trọng số trụ cột ±20%,Vận hành +20%,bidv,64.64282903502176,4,4,0
+2025,B. Trọng số trụ cột ±20%,Vận hành +20%,mb,72.68209533591171,3,3,0
+2025,B. Trọng số trụ cột ±20%,Vận hành +20%,tcb,76.52423189288216,1,1,0
+2025,B. Trọng số trụ cột ±20%,Vận hành +20%,vcb,75.24887055175037,2,2,0
+2025,B. Trọng số trụ cột ±20%,Vận hành -20%,agribank,53.91780716179544,5,5,0
+2025,B. Trọng số trụ cột ±20%,Vận hành -20%,bidv,65.30785172709223,4,4,0
+2025,B. Trọng số trụ cột ±20%,Vận hành -20%,mb,71.83258466942286,3,3,0
+2025,B. Trọng số trụ cột ±20%,Vận hành -20%,tcb,75.5948685751499,2,1,1
+2025,B. Trọng số trụ cột ±20%,Vận hành -20%,vcb,76.30051679669867,1,2,-1
+2025,B. Trọng số trụ cột ±20%,Văn hóa +20%,agribank,54.02794863522799,5,5,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa +20%,bidv,64.32024838986047,4,4,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa +20%,mb,71.7533614111129,3,3,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa +20%,tcb,75.71778027997894,2,1,1
+2025,B. Trọng số trụ cột ±20%,Văn hóa +20%,vcb,76.21661248723424,1,2,-1
+2025,B. Trọng số trụ cột ±20%,Văn hóa -20%,agribank,53.87470371351958,5,5,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa -20%,bidv,65.65267931329913,4,4,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa -20%,mb,72.82536920972504,3,3,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa -20%,tcb,76.45693754066714,1,1,0
+2025,B. Trọng số trụ cột ±20%,Văn hóa -20%,vcb,75.26603403807798,2,2,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu +20%,agribank,53.01988411909896,5,5,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu +20%,bidv,65.08637742211853,4,4,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu +20%,mb,71.754675981073,3,3,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu +20%,tcb,76.44358673159184,1,1,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu +20%,vcb,75.73274151949231,2,2,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu -20%,agribank,54.95228992041613,5,5,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu -20%,bidv,64.83371379605775,4,4,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu -20%,mb,72.8239639797677,3,3,0
+2025,B. Trọng số trụ cột ±20%,Dữ liệu -20%,tcb,75.68107547170163,2,1,1
+2025,B. Trọng số trụ cột ±20%,Dữ liệu -20%,vcb,75.78327541738832,1,2,-1
+2025,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,agribank,53.30729166666667,5,5,0
+2025,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,bidv,59.75506075274566,4,4,0
+2025,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,mb,74.54442628877764,1,3,-2
+2025,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,tcb,72.30040428707007,2,1,1
+2025,C. Kỹ thuật chuẩn hóa,Min-max trong 5 NH,vcb,68.6501459604755,3,2,1
+2025,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,agribank,52.986111111111114,5,5,0
+2025,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,bidv,62.22222222222223,4,4,0
+2025,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,mb,72.70833333333334,2,3,-1
+2025,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,tcb,73.19444444444446,1,1,0
+2025,C. Kỹ thuật chuẩn hóa,Xếp hạng phần trăm,vcb,68.8888888888889,3,2,1
+2025,D. Loại một trụ cột,Bỏ Khách hàng,agribank,51.34478177497243,5,5,0
+2025,D. Loại một trụ cột,Bỏ Khách hàng,bidv,61.98867544951162,4,4,0
+2025,D. Loại một trụ cột,Bỏ Khách hàng,mb,69.85296077735858,3,3,0
+2025,D. Loại một trụ cột,Bỏ Khách hàng,tcb,73.5,1,1,0
+2025,D. Loại một trụ cột,Bỏ Khách hàng,vcb,72.5,2,2,0
+2025,D. Loại một trụ cột,Bỏ Chiến lược,agribank,53.52243408546049,5,5,0
+2025,D. Loại một trụ cột,Bỏ Chiến lược,bidv,64.20710800342698,4,4,0
+2025,D. Loại một trụ cột,Bỏ Chiến lược,mb,75.36468710541942,3,3,0
+2025,D. Loại một trụ cột,Bỏ Chiến lược,tcb,81.29004754717388,1,1,0
+2025,D. Loại một trụ cột,Bỏ Chiến lược,vcb,78.40859948417047,2,2,0
+2025,D. Loại một trụ cột,Bỏ Công nghệ,agribank,51.8720967549325,5,5,0
+2025,D. Loại một trụ cột,Bỏ Công nghệ,bidv,63.46843255391536,4,4,0
+2025,D. Loại một trụ cột,Bỏ Công nghệ,mb,67.72579821653054,3,3,0
+2025,D. Loại một trụ cột,Bỏ Công nghệ,tcb,76.29004754717388,1,1,0
+2025,D. Loại một trụ cột,Bỏ Công nghệ,vcb,75.90859948417047,2,2,0
+2025,D. Loại một trụ cột,Bỏ Vận hành,agribank,53.74465630768271,5,5,0
+2025,D. Loại một trụ cột,Bỏ Vận hành,bidv,66.95710800342698,4,4,0
+2025,D. Loại một trụ cột,Bỏ Vận hành,mb,69.72579821653054,3,3,0
+2025,D. Loại một trụ cột,Bỏ Vận hành,tcb,73.29004754717388,2,1,1
+2025,D. Loại một trụ cột,Bỏ Vận hành,vcb,78.90859948417047,1,2,-1
+2025,D. Loại một trụ cột,Bỏ Văn hóa,agribank,53.49465630768271,5,5,0
+2025,D. Loại một trụ cột,Bỏ Văn hóa,bidv,68.95710800342698,4,4,0
+2025,D. Loại một trụ cột,Bỏ Văn hóa,mb,75.48394855028306,2,3,-1
+2025,D. Loại một trụ cột,Bỏ Văn hóa,tcb,78.29004754717388,1,1,0
+2025,D. Loại một trụ cột,Bỏ Văn hóa,vcb,72.90859948417047,3,2,1
+2025,D. Loại một trụ cột,Bỏ Dữ liệu,agribank,59.74465630768271,5,5,0
+2025,D. Loại một trụ cột,Bỏ Dữ liệu,bidv,64.20710800342698,4,4,0
+2025,D. Loại một trụ cột,Bỏ Dữ liệu,mb,75.47579821653052,2,3,-1
+2025,D. Loại một trụ cột,Bỏ Dữ liệu,tcb,73.79004754717388,3,1,2
+2025,D. Loại một trụ cột,Bỏ Dữ liệu,vcb,75.90859948417047,1,2,-1
+2025,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),agribank,49.10423751700348,5,5,0
+2025,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),bidv,58.736512702273004,4,4,0
+2025,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),mb,69.37858070659804,2,3,-1
+2025,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),tcb,71.6889153039855,1,1,0
+2025,F. Dữ liệu thiếu,Thiếu = 0 (chỉ để thử độ nhạy),vcb,68.56033304676137,3,2,1
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,agribank,54.181959792854855,5,5,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,bidv,65.27439738817074,4,4,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,mb,72.34672999525692,3,3,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,tcb,76.14911369671898,1,1,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận -20%,vcb,75.75716623680873,2,2,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,agribank,53.63207414568079,5,5,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,bidv,64.75749619042367,4,4,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,mb,71.72681941563957,3,3,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,tcb,75.80960752387948,1,1,0
+2025,"G. Dịch cận [L,U] cùng lúc",Độ rộng cận +20%,vcb,75.50099339730255,2,2,0
+2025,G. Dịch cận từng chỉ số,K-Q1 -20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,K-Q1 -20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,K-Q1 -20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,K-Q1 -20%,tcb,76.14911369671898,1,1,0
+2025,G. Dịch cận từng chỉ số,K-Q1 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,K-Q1 +20%,agribank,53.78412716998251,5,5,0
+2025,G. Dịch cận từng chỉ số,K-Q1 +20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,K-Q1 +20%,mb,72.12952320513347,3,3,0
+2025,G. Dịch cận từng chỉ số,K-Q1 +20%,tcb,75.80960752387948,1,1,0
+2025,G. Dịch cận từng chỉ số,K-Q1 +20%,vcb,75.50099339730255,2,2,0
+2025,G. Dịch cận từng chỉ số,S-Q1 -20%,agribank,54.00017655269856,5,5,0
+2025,G. Dịch cận từng chỉ số,S-Q1 -20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,S-Q1 -20%,mb,72.34672999525692,3,3,0
+2025,G. Dịch cận từng chỉ số,S-Q1 -20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,S-Q1 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,S-Q1 +20%,agribank,53.9230160588714,5,5,0
+2025,G. Dịch cận từng chỉ số,S-Q1 +20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,S-Q1 +20%,mb,72.2213441927878,3,3,0
+2025,G. Dịch cận từng chỉ số,S-Q1 +20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,S-Q1 +20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,S-Q2 -20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,S-Q2 -20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,S-Q2 -20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,S-Q2 -20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,S-Q2 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,S-Q2 +20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,S-Q2 +20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,S-Q2 +20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,S-Q2 +20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,S-Q2 +20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,T-Q1 -20%,agribank,54.13566349655855,5,5,0
+2025,G. Dịch cận từng chỉ số,T-Q1 -20%,bidv,65.27439738817074,4,4,0
+2025,G. Dịch cận từng chỉ số,T-Q1 -20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,T-Q1 -20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,T-Q1 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,T-Q1 +20%,agribank,53.832691429631396,5,5,0
+2025,G. Dịch cận từng chỉ số,T-Q1 +20%,bidv,64.75749619042367,4,4,0
+2025,G. Dịch cận từng chỉ số,T-Q1 +20%,mb,71.9189490452692,3,3,0
+2025,G. Dịch cận từng chỉ số,T-Q1 +20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,T-Q1 +20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,O-Q1 -20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,O-Q1 -20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,O-Q1 -20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,O-Q1 -20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,O-Q1 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,O-Q1 +20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,O-Q1 +20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,O-Q1 +20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,O-Q1 +20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,O-Q1 +20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,O-Q2 -20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,O-Q2 -20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,O-Q2 -20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,O-Q2 -20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,O-Q2 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,O-Q2 +20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,O-Q2 +20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,O-Q2 +20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,O-Q2 +20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,O-Q2 +20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,C-Q2 -20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,C-Q2 -20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,C-Q2 -20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,C-Q2 -20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,C-Q2 -20%,vcb,75.75716623680873,2,2,0
+2025,G. Dịch cận từng chỉ số,C-Q2 +20%,agribank,53.95388025640226,5,5,0
+2025,G. Dịch cận từng chỉ số,C-Q2 +20%,bidv,64.96425666952248,4,4,0
+2025,G. Dịch cận từng chỉ số,C-Q2 +20%,mb,72.27149851377544,3,3,0
+2025,G. Dịch cận từng chỉ số,C-Q2 +20%,tcb,76.07503962264491,1,1,0
+2025,G. Dịch cận từng chỉ số,C-Q2 +20%,vcb,75.75716623680873,2,2,0

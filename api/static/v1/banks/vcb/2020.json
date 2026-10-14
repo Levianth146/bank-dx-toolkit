@@ -1,0 +1,842 @@
+{
+ "summary": {
+  "bank": "vcb",
+  "bank_name": "Vietcombank",
+  "group": "NHTM Nhà nước",
+  "year": 2020,
+  "score": 33.3333,
+  "rank": 4,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.0,
+  "dti_indicators_available": 0,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 0/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 3,
+    "dti_applied": false
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 31.25,
+    "dti": null,
+    "p": 31.25,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 31.25,
+    "dti": null,
+    "p": 31.25,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 31.25,
+    "dti": null,
+    "p": 31.25,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 18.75,
+    "dti": null,
+    "p": 18.75,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 6,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": ", Vietcombank tiếp tục duy trì vị thế là ngân hàng kinh doanh hiệu quả nhất và là doanh nghiệp nộp ngân sách nhà nước lớn nhất. Cổ phiếu Vietcombank đã vượt lên trở thành doanh nghiệp có quy mô vốn hóa lớn nhất trên thị trường chứng khoán Việt Nam (~ 17 tỷ đô la Mỹ). Đổi mới đột phá trong hoạt động ngân hàng số, đưa vào vận hành thành công Hệ thống ngân hàng lõi mới - Core Banking Signature, ra mắ"
+   },
+   "note": "21 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 41,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "theo đúng định hướng, có nhiều đổi mới đột phá: vận hành thành công Hệ thống ngân hàng lõi mới - Core banking Signature, ra mắt dịch vụ ngân hàng số hoàn toàn mới VCB Digibank, trở thành ngân hàng chuyển đổi số tiêu biểu trong năm 2020, triển khai các sản phẩm Ngân hàng số mới VCB Booking, ứng dụng eKYC... •• VCB là ngân hàng đầu tiên kết nối thành công với Cổng dịch vụ công quốc gia và triển khai"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 38,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "àng nhóm B (nhóm Duy trì); rút giảm nhanh dư nợ nhóm C và D (nhóm Rút giảm); đẩy nhanh tiến độ giải quyết hồ sơ tín dụng… Tập trung tăng trưởng tín dụng ngắn hạn cả bán buôn và bán lẻ, chú trọng tăng trưởng tín dụng FDI lớn có rủi ro tín dụng thấp và tiềm năng sử dụng dịch vụ tổng thể, tín dụng cho phân khúc khách hàng Midcom và Khách hàng lớn khu vực Phía Nam. Tiếp tục mở rộng cho vay tín dụng bá"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 38,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "u vực Phía Nam. Tiếp tục mở rộng cho vay tín dụng bán lẻ, tín dụng thông qua phòng giao dịch. Đẩy mạnh các hoạt động dịch vụ ngân hàng điện tử, mở rộng nguồn thu ngoài lãi Đẩy nhanh tiến độ triển khai số hóa dịch vụ ngân hàng. Chú trọng thiết kế và triển khai các sản phẩm dịch vụ hướng tới nâng cao trải nghiệm khách hàng và trải nghiệm người dùng. Mở rộng quy mô khách hàng ngân hàng điện tử mới, k"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 6,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": ", Vietcombank tiếp tục duy trì vị thế là ngân hàng kinh doanh hiệu quả nhất và là doanh nghiệp nộp ngân sách nhà nước lớn nhất. Cổ phiếu Vietcombank đã vượt lên trở thành doanh nghiệp có quy mô vốn hóa lớn nhất trên thị trường chứng khoán Việt Nam (~ 17 tỷ đô la Mỹ). Đổi mới đột phá trong hoạt động ngân hàng số, đưa vào vận hành thành công Hệ thống ngân hàng lõi mới - Core Banking Signature, ra mắ"
+   },
+   "note": "23 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "GOV"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 39,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "hóa, có hàm lượng công nghệ cao, khuyến khích khách hàng chuyển dịch các giao dịch trên kênh ngân hàng số. Giải pháp hỗ trợ về công nghệ, nguồn nhân lực, thông tin quản lý Tăng cường năng lực cơ sở hạ tầng, đáp ứng yêu cầu kinh doanh; đảm bảo an toàn, an ninh, bảo mật cho hệ thống CNTT; hợp tác với Fintech nhằm xây dựng hệ sinh thái VCB. Kiện toàn mô hình tổ chức, chức năng nhiệm vụ của các đơn vị"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 6,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "nhất và là doanh nghiệp nộp ngân sách nhà nước lớn nhất. Cổ phiếu Vietcombank đã vượt lên trở thành doanh nghiệp có quy mô vốn hóa lớn nhất trên thị trường chứng khoán Việt Nam (~ 17 tỷ đô la Mỹ). Đổi mới đột phá trong hoạt động ngân hàng số, đưa vào vận hành thành công Hệ thống ngân hàng lõi mới - Core Banking Signature, ra mắt dịch vụ ngân hàng số hoàn toàn mới VCB Digibank, trở thành ngân hàng"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 34,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "y nhà tình thương cho hộ nghèo, nhà tình nghĩa, công trình an sinh xã hội cho giáo dục và y tế… Đổi mới hình thức giao ban trực tuyến liên khu vực phù hợp yêu cầu phòng chống dịch COVID-19. Thực hiện tái cấp chứng chỉ ISO27001 trên toàn hệ thống. Thực hiện rà soát và sửa đổi cập nhật các quy chế về an toàn thông tin. Trong năm 2020, VCB ban hành các quy chế nội bộ (trong công tác nhân sự) như Quy"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 70,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "a cùng với nguồn lực của nhà nước chăm lo cho người nghèo, thực hiện công tác giảm nghèo, đặc biệt là đối với các hộ nghèo ở các địa bàn khó khăn, hộ nghèo thuộc đồng bào các dân tộc thiểu số, hướng tới mục tiêu cao cả và nhân văn là “không ai bị bỏ lại phía sau”. CHUNG TAY VÌ NGƯỜI NGHÈO, KHÔNG ĐỂ AI BỊ BỎ LẠI PHÍA SAU Vietcombank Báo cáo thường niên 2020 138 139 Chương 5 Cộng đồng và Xã hội"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 56,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "chặt chẽ hàng ngày, Vietcombank đã kịp thời nhận diện, cảnh báo sớm rủi ro thanh khoản do ảnh hưởng của dịch COVID-19 và thử nghiệm kế hoạch dự phòng thanh khoản đột xuất. Ngoài QUẢN LÝ RỦI RO THANH KHOẢN ra, Vietcombank cũng tập trung cao độ nguồn lực để tham gia dự án đầu tư hệ thống ALM/FTP nhằm tự động hóa công tác báo cáo quản trị, đáp ứng thông lệ quốc tế về quản lý rủi ro thanh khoản. Trong"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 56,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "mức, công cụ quản lý rủi ro thanh khoản…đều được rà soát và cập nhật hàng năm để kịp thời sửa đổi đáp ứng yêu cầu của cơ quan quản lý và thực tế triển khai trong nội bộ của Ngân hàng. Năm 2020, ngoài việc theo dõi, kiểm soát rủi ro thanh khoản chặt chẽ hàng ngày, Vietcombank đã kịp thời nhận diện, cảnh báo sớm rủi ro thanh khoản do ảnh hưởng của dịch COVID-19 và thử nghiệm kế hoạch dự phòng thanh"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 34,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "lẻ theo mô hình tổ chức mới trên cơ sở kết quả Dự án Chuyển đổi mô hình ngân hàng bán lẻ (RTOM) giai đoạn 1. Điều chỉnh mô hình tín dụng bán buôn (CTOM) theo Thông tư số 13 của NHNN. Thực hiện luân chuyển cán bộ giữa Trụ sở chính và Chi nhánh. Phát triển mạng lưới và đẩy mạnh hoạt động đào tạo qua E-learning: •• Khai trương thành lập 5 chi nhánh mới và 33 phòng giao dịch trong hệ thống. Đưa vào h"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP",
+    "GOV",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 34,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "dự án được áp dụng vào thực tiễn: Triển khai thành công hệ thống Core-Banking Signature (tháng 1/2020) và tiếp tục phát triển các ứng dụng phục vụ hoạt động kinh doanh. Hoàn thành 13 dự án, trong đó 7 dự án thuộc Đề án phát triển công nghệ thông tin đến 2020, 5 dự án thuộc Chương trình Basel II và sáng kiến số 14 thuộc dự án CTOM. 29/103 dự án chuyển đổi đang tiếp tục được thực hiện. Triển khai t"
+   },
+   "note": "9 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 55,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "tiên tiến. Các mô hình lượng hóa rủi ro đã được xây dựng với tỷ lệ bao phủ gần như toàn bộ danh mục của Ngân hàng. Bên cạnh đó, các hệ thống công nghệ thông tin hỗ trợ cũng thường xuyên được Vietcombank 1. THÔNG TIN CHUNG nâng cấp nhằm đáp ứng tốt nhất yêu cầu quản trị. Công tác rà soát và nâng cao chất lượng dữ liệu tại Vietcombank ngày càng được chú trọng và duy trì thường xuyên, liên tục nhằm đ"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": 37,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "ững” và quan điểm chỉ đạo điều hành “Trách nhiệm – Hành động – Sáng tạo”; tiếp tục tập trung thực hiện 5 đột phá chiến lược và 3 trọng tâm, hướng tới đổi mới mô hình tăng trưởng theo chiều sâu, chuyển dịch cơ cấu hoạt động, nâng cao năng suất lao động, đảm bảo tăng trưởng bền vững. Kinh tế thế giới dự báo sẽ phục hồi mạnh mẽ trong năm 2021, tăng trưởng GDP toàn cầu dự báo đạt 6%. Tuy nhiên, sự xuấ"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "vcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 90.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu nguyên giá phần mềm hoặc tổng tài sản"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": null,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 38.7,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu giờ đào tạo"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 9,
+   "1": 3,
+   "2": 8,
+   "3": 3,
+   "4": 1
+  }
+ }
+}

@@ -1,0 +1,853 @@
+{
+ "summary": {
+  "bank": "agribank",
+  "bank_name": "Agribank",
+  "group": "NHTM Nhà nước",
+  "year": 2023,
+  "score": 39.4635,
+  "rank": 5,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.1818,
+  "dti_indicators_available": 2,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 2/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 3,
+    "dti_applied": false
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 37.5,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 62.5,
+    "dti": 27.6543,
+    "p": 55.5309,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 31.25,
+    "dti": 0.0,
+    "p": 25.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 12.5,
+    "dti": null,
+    "p": 12.5,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 42,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "uyên dùng đã giúp Agribank đến gần hơn các khách hàng ở vùng sâu, vùng xa, giảm chi phí đi lại, hỗ trợ khách hàng tiếp cận nguồn vốn vay và sản phẩm dịch vụ ngân hàng hiện đại như giao dịch thu nợ, giải ngân tự động, chuyển tiền, mở tài khoản thanh toán, dịch vụ thẻ, đăng ký SMS Banking, Agribank E-Mobile Banking, Agribank E-Banking... một cách thuận tiện, dễ dàng hơn. Đến nay Agribank đã triển kh"
+   },
+   "note": "17 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 44,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "nh số sử dụng thẻ lần lượt đạt trên 560.000 tỷ đồng và 436.000 tỷ đồng. Triển khai hiệu quả mô hình Autobank với dòng ATM đa chức năng (CDM) màn hình cảm ứng hiện đại, tốc độ xử lý nhanh, an toàn, đặc biệt với chức năng gửi tiền quay vòng tiền cho phép khách hàng thực hiện giao dịch 24/24, trả nợ - Mở tài khoản trực tuyến qua phương thức định danh điện gốc và lãi tiền vay tại máy mà không phải đến"
+   },
+   "note": "5 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 74,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "mật, nâng cao nhận thức về chức. an toàn thông tin trong hoạt động nghiệp vụ và vận hành nội bộ thông qua hệ thống đào tạo trực tuyến E-Learning… Thường xuyên cập nhật và thực hiện cảnh báo khách hàng cảnh giác trước các hành vi, thủ đoạn lừa đảo, gian lận sử b. Cơ chế tiếp nhận và xử lý thông tin phản hồi của khách hàng dụng công nghệ cao, từ đó đảm bảo tính an toàn, bảo mật Agribank đã và đang"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 46,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "n lược nhất quán, dài Stock Exchange Group trao tặng. Đây là năm thứ 2 liên tiếp hạn, Agribank đã quyết liệt triển khai Đề án Chiến lược phát Agribank nhận được giải thưởng này. triển Công nghệ thông tin và Kế hoạch Chuyển đổi số đến 8. Hệ thống công nghệ thông tin hiện đại, an năm 2025, định hướng đến năm 2030, trong đó tập trung toàn, tạo tiền đề để phát triển dịch vụ nguồn lực triển khai đồng b"
+   },
+   "note": "16 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 47,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "47 BÁO CÁO THƯỜNG NIÊN 2023 đủ khả năng triển khai các gói sản phẩm Open API về ERP doanh nghiệp và ví cá nhân, ví doanh nghiệp, sổ phụ phục vụ đối soát, chi hộ, QR thanh toán hoá đơn liên ngân hàng… tới gần 20 đối tác là các Tổng công ty, tập đoàn, các ví điện tử/trung gian thanh toán. Agribank cũng chú trọng hoàn thiện các hệ thống an ninh thông tin, các quy trình về công nghệ thông tin nhằm đảm"
+   },
+   "note": "7 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 46,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": ", định hướng đến năm 2030, trong đó tập trung toàn, tạo tiền đề để phát triển dịch vụ nguồn lực triển khai đồng bộ các dự án công nghệ lớn nhằm đi tắt đón đầu, nghiên cứu ứng dụng các công nghệ hiện đại Tại Agribank, hạ tầng công nghệ thông tin luôn được nâng vào lĩnh vực ngân hàng như Bigdata, AI, Cloud,...Giai đoạn cấp, tối ưu hóa, đảm bảo hoạt động ổn định, an toàn cho 2022-2023, Agribank đã tr"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 73,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "công nghệ thông tin trong toàn hệ thống Agribank. Ngoài ra, Agribank chú trọng và tăng cường những giải pháp, công nghệ tiên tiến và các tiêu chuẩn quốc tế trong công tác đảm bảo an toàn, an ninh, bảo mật cho hệ thống công nghệ thông tin. Trung tâm Công nghệ thông tin của Agribank đã đạt chứng nhận An toàn thông tin theo chuẩn quốc tế ISO 27001:2013 từ năm 2021 và đang trong quá trình thực hiện ch"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 47,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "47 BÁO CÁO THƯỜNG NIÊN 2023 đủ khả năng triển khai các gói sản phẩm Open API về ERP doanh nghiệp và ví cá nhân, ví doanh nghiệp, sổ phụ phục vụ đối soát, chi hộ, QR thanh toán hoá đơn liên ngân hàng… tới gần 20 đối tác là các Tổng công ty, tập đoàn, các ví điện tử/trung gian thanh toán. Agribank cũng chú trọng hoàn thiện các hệ thống an ninh thông tin, các quy trình về công"
+   },
+   "note": "3 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 46,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "2025, định hướng đến năm 2030, trong đó tập trung toàn, tạo tiền đề để phát triển dịch vụ nguồn lực triển khai đồng bộ các dự án công nghệ lớn nhằm đi tắt đón đầu, nghiên cứu ứng dụng các công nghệ hiện đại Tại Agribank, hạ tầng công nghệ thông tin luôn được nâng vào lĩnh vực ngân hàng như Bigdata, AI, Cloud,...Giai đoạn cấp, tối ưu hóa, đảm bảo hoạt động ổn định, an toàn cho 2022-2023, Agribank đ"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 8,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "022 (Ngân Xếp hạng Agribank năm 2023 tương đương với xếp hạng tín hàng JPMorgan, Standard Chartered, Wells Fargo và Citibank) nhiệm quốc gia và là mức xếp hạng cao nhất trong các ngân Agribank nhận được các giải thưởng do có tỉ lệ điện thanh hàng thương mại tại Việt Nam. toán quốc tế đạt chuẩn điện STP cao, tỉ lệ tra soát thấp. TOP10 Thương hiệu ngân hàng Việt Nam trong 500 thương Giải thưởng Ngân"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 46,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "46 47 3202 NÊIN GNỜƯHT OÁC OÁB năm 2022), doanh thu phí dịch vụ đạt 116,6% kế hoạch được giao, tăng 18,9% so với năm 2022. Hoạt động chi trả kiều hối được triển khai thực hiện theo thời gian thực, tự động chuyển tiếp giao dịch chi trả kiều hối bằng VND sang ngân hàng khác qua hệ thống Payment Hub. Agribank còn hỗ trợ có hiệu quả khách hàng và đối tác thông qua nhiều kênh tương tác như điện thoại,"
+   },
+   "note": "13 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 47,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "viên, 08 chương trình phát sinh ngoài thực tế với 12 lớp học và 6.322 lượt học viên, trong đó có chương trình đào tạo nghiệp vụ ngân hàng bằng tiếng Anh tại Úc - giai đoạn 2 (hoàn thành 02 lớp với 50 học viên tham dự). Bên cạnh đó, năm 2023, Agribank còn triển khai đào tạo trực tuyến bằng phần mềm E-learning với 40 lớp học cho 72.156 lượt học viên. Số ngày đào tạo tập trung bình quân đạt khoảng 2"
+   },
+   "note": "6 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 64,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "% tổng dư nợ tín dụng 2.3.3. Tiêu chuẩn báo cáo: Các tiêu chuẩn báo cáo được thể của Agribank, chiếm 4,56% tổng dư nợ tín dụng xanh toàn hiện trong Báo cáo Phát triển bền vững của Agribank dựa nền kinh tế (2023). trên tham khảo bộ tiêu chuẩn của Hướng dẫn lập Báo cáo phát triển bền vững của Tổ chức sáng kiến toàn cầu (Global - Agribank và Bộ Nông nghiệp và Phát triển nông thôn đã ký Reporting Init"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": 53,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": "ngừa, hạn chế tối đa nợ xấu phát sinh, xử lý, thu hồi nợ xấu, nợ đã xử lý rủi ro. - Điều hành huy động vốn linh hoạt, kết hợp đồng bộ với công tác kế hoạch và điều hành tăng trưởng tín dụng nhằm tối ưu hóa cân đối vốn, đảm bảo các tỷ lệ an toàn hoạt động theo quy định; nâng cao năng lực phân tích, dự báo hỗ trợ có hiệu quả cho công tác điều hành lãi suất. - Xây dựng chính sách, giải pháp phát tri"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "agribank",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2023_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29/BCTN+2023+%28tieng+viet%29+-compressed_1.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-1d6eb3e5-c3f8-43fa-8985-100f3bb6bc29-oZSzLYf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 90.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share năm cuối"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.084,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 27.6543,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 0.3133,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 38.7,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu giờ đào tạo"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 10,
+   "1": 0,
+   "2": 7,
+   "3": 2,
+   "4": 5
+  }
+ }
+}
