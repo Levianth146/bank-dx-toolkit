@@ -60,7 +60,7 @@ def doc_state(b, y, t):
     return "đã tải, chưa trích" if len(m) and m.iloc[-1]["status"] == "ok" else "có link, chưa tải"
 
 DEF = {}; DEFT = {}; HASDEF = False   # (bank, year) -> definition của digital_customers (nạp trong matrix())
-AUX = {"digital_customer_share", "nci"}   # biến phụ, không tính vào inputs_coverage
+AUX = {"digital_customer_share", "nci", "net_profit_parent", "net_profit_consolidated"}   # biến phụ, không tính vào inputs_coverage
 IND = ["K-Q1", "K-Q2", "K-Q3", "S-Q1", "S-Q2", "T-Q1", "T-Q2", "O-Q1", "O-Q2", "C-Q1", "C-Q2"]
 
 def computable(V, b, y, has_app):
@@ -79,6 +79,20 @@ def matrix():
     DEFT = {(r["bank"], int(r["year"])): r["definition"] for _, r in dti[(dti["variable"] == "digital_txn_share") & dti["value"].notna()].iterrows() if isinstance(r.get("definition"), str)} if HASDEF else {}
     if len(dti):
         for _, r in dti[confirmed_mask(dti)].iterrows(): V[(r["bank"], int(r["year"]), r["variable"])] = float(r["value"])
+    definitions = {(r.bank, int(r.year), r.variable): r.definition if isinstance(r.definition, str) else ""
+                   for r in dti.itertuples()}
+    calc = score_tools.Calc(V, definitions, APP_RATINGS, PLATFORM, 2021, max(CY or YEARS))
+    indicators, gate = score_tools.build_indicators(calc, BK, YEARS, score_tools.load_bounds(False)[0])
+    gate.to_csv(OUT / "step0_gate.csv", index=False, encoding="utf-8-sig")
+    indicators.to_csv(OUT / "indicator_availability_matrix.csv", index=False, encoding="utf-8-sig")
+    # Phụ lục B.3: lưới biến đầu vào đầy đủ; giữ bằng chứng dù chỉ số bị loại khỏi điểm.
+    grid = pd.MultiIndex.from_product([BK, YEARS, sorted(dti.variable.unique())],
+                                     names=["bank", "year", "variable"])
+    variables = dti.set_index(["bank", "year", "variable"]).reindex(grid).reset_index()
+    variables["available"] = confirmed_mask(variables)
+    variables["n_missing_banks"] = variables.groupby(["year", "variable"]).available.transform(lambda s: (~s).sum())
+    variables["disclosure_review"] = variables.bank.map(lambda b: "Agribank không niêm yết; đọc cùng note và nguồn" if b == "agribank" else "")
+    variables.to_csv(OUT / "variable_availability_matrix.csv", index=False, encoding="utf-8-sig")
     for b in BK:
         has_app = b in APP_RATINGS
         for y in YEARS:
@@ -87,15 +101,22 @@ def matrix():
             nc = int(confirmed_mask(d).sum()) if len(d) else 0
             npdf = nc
             ar = int(((app.bank == b) & (app.get("year", y) == y)).sum()) if len(app) and "bank" in app else 0
-            f = computable(V, b, y, has_app); n = sum(f.values())
+            group = indicators[(indicators.bank == b) & (indicators.year == y)]
+            n = int(group.z_before_step0.notna().sum())
+            used = int(group.included_in_score.sum())
+            f = {r.indicator: r.included_in_score for r in group.itertuples()}
             rows.append({"bank": b, "year": y, "bctn": doc_state(b, y, "bctn"), "bctc": doc_state(b, y, "bctc"), "bcptbv": doc_state(b, y, "bcptbv"),
                          "dti_vars_total": nt, "dti_vars_filled": nv, "dti_vars_confirmed": nc, "dti_vars_pdf_read": npdf,
                          "dti_vars_not_collected": int((d["value"].isna() & d["note"].fillna("").str.startswith("not_collected")).sum()) if len(d) else 0,
                          "inputs_coverage": round(nv / nt, 3) if nt else "",
-                         "dti_ind_computable": n, "dti_ind_list": ";".join(k for k, v in f.items() if v),
+                         "dti_ind_computable": n,
+                         "dti_ind_list": ";".join(group.loc[group.z_before_step0.notna(), "indicator"]),
+                         "dti_ind_used_list": ";".join(k for k, v in f.items() if v),
+                         "dti_ind_used": used, "dti_ind_retained": int(group.retained.sum()),
+                         "scoring_coverage": round(used / len(IND), 3), "step0_method": "indicator_per_year_v1",
                          "data_conf": round(n / len(IND), 3), "in_coding_years": y in CY, "app_rows": ar})
     m = pd.DataFrame(rows); m.to_csv(OUT / "availability_matrix.csv", index=False, encoding="utf-8-sig")
-    print(m.drop(columns=["dti_ind_list"]).to_string(index=False)); print("->", OUT / "availability_matrix.csv")
+    print(m.drop(columns=["dti_ind_list", "dti_ind_used_list"]).to_string(index=False)); print("->", OUT / "availability_matrix.csv")
     print(f"data_conf = chỉ số DTI có đầu vào đã xác nhận / {len(IND)}; cửa sổ và công thức theo bước 10. inputs_coverage = biến đầu vào đã điền / tổng biến.")
 
 MAP = {"equity": "equity", "total_equity": "equity", "customer_deposits": "customer_deposits", "casa_deposits": "casa_deposits", "total_assets": "total_assets",
@@ -127,6 +148,8 @@ def bundle():
         if len(c): c.to_csv(d / "coding_final.csv", index=False, encoding="utf-8-sig")
     if len(app): app.to_csv(d / "app_ratings.csv", index=False, encoding="utf-8-sig")
     matrix_df.to_csv(d / "availability_matrix.csv", index=False, encoding="utf-8-sig")
+    for filename in ("step0_gate.csv", "indicator_availability_matrix.csv", "variable_availability_matrix.csv"):
+        shutil.copy2(OUT / filename, d / filename)
     dti.to_csv(d / "dti_inputs_full.csv", index=False, encoding="utf-8-sig")
     source_path = CONF / "sources.csv"
     if source_path.exists(): shutil.copy2(source_path, d / "sources.csv")
@@ -147,12 +170,17 @@ def bundle():
         "",
         "- dti_inputs_confirmed.csv: số hữu hạn, có nguồn/trang, được người chấm đối chiếu PDF; loại range-checked và mọi nhãn tự động.",
         "- dti_inputs_full.csv: toàn bộ đầu vào, gồm ô trống và lý do thiếu. Không thay đổi dữ liệu gốc.",
-        "- availability_matrix.csv: số chỉ số DTI có đầu vào đã xác nhận / 11; chưa kiểm tra khả năng chuẩn hóa L/U.",
+        "- availability_matrix.csv: dti_ind_computable/data_conf là số tính được trước cổng; dti_ind_used/scoring_coverage là số dùng sau Bước 0 / 11.",
+        "- variable_availability_matrix.csv: Phụ lục B.3, ngân hàng × biến × năm, xác nhận/nguồn/trang và số ngân hàng thiếu biến.",
+        "- indicator_availability_matrix.csv và step0_gate.csv: khả năng tính chỉ số và quyết định giữ/loại chung từng năm; thiếu >=2 ngân hàng thì loại.",
         "- coding_final.csv: các điểm thuật toán đã có từ coding_auto.xlsx, kèm phiên bản quy tắc và bằng chứng.",
         "- app_ratings.csv: lịch sử thu thập; bước 10 chọn ngày mới nhất từng ngân hàng và dòng cuối cùng mỗi cửa hàng trong ngày đó.",
         "- sources.csv: URL và ghi chú tài liệu; BCPTBV tùy chọn, có thể tích hợp trong BCTN.",
         "",
         "Các cột đầu vào: bank, year, variable, value, unit, source_file, page, confirmed_by, note, definition.",
+        "Bước 19 bổ sung review_status (pending/resolved), reviewed_by, review_date (YYYY-MM-DD), review_evidence; gói giữ nguyên các cột này.",
+        "resolved chỉ giải quyết cờ ghi chú ở lớp C khi đủ người/ngày/bằng chứng; không thay thế xác nhận PDF hoặc kiểm tra phạm vi.",
+        "net_profit_parent dùng cho ROE với equity definition=parent; net_profit_consolidated dùng cho ROA với total_assets definition=consolidated. Không sao chép net_profit khi chưa xác nhận phạm vi.",
         "page là số trang PDF từ 1. verification trong bản confirmed là đã đối chiếu PDF.",
         "range-checked chỉ kiểm khoảng hợp lý, chưa đọc PDF; nằm trong bản full, chưa dùng tính điểm chính thức.",
         "not_collected là chưa thu thập; not_disclosed là đã đọc và không có. Ô thiếu để trống, không điền 0.",
@@ -167,6 +195,8 @@ def bundle():
         "T-Q2 cần đủ 8 mã nền tảng duy nhất, giá trị 0/1. Rating/checklist chỉ áp dụng cho năm cuối được chọn.",
         "z = 100·min{1; max[0; (x−L)/(U−L)]}; L/U cố định trong config/dti_bounds.yaml, phải khóa trước tính chính thức.",
         "Nếu trụ cột thiếu DTI, P_k = DBI_k; trọng số cơ sở 80/20 và trung bình 6 trụ cột.",
+        "Bước 0 bắt buộc ở cấp chỉ số DTI theo từng năm; không xóa số gốc, không tự thay proxy. Cận L/U và mẫu số độ tin cậy 11 không đổi.",
+        "Rating/checklist chỉ áp cho năm cuối của dự án, không áp lùi khi chạy riêng một năm lịch sử. Bộ DTI giữ lại khác nhau giữa các năm.",
         "",
         "Mọi số và điểm phải được truy vết tới nguồn gốc. Xem README.md, config và ghi chú từng dòng trước khi dùng kết quả.",
     ]

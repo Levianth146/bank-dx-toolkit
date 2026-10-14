@@ -142,6 +142,29 @@ class TestPublicAccess(unittest.TestCase):
 
 
 class TestScoreRegression(unittest.TestCase):
+    def test_step0_threshold_zero_and_year_isolation(self):
+        banks = ["a", "b", "c", "d", "e"]
+        calc = Mock()
+        # Một ngân hàng thiếu năm 2024: giữ; hai thiếu năm 2025: loại cả 5.
+        calc.all.side_effect = lambda b, y: {"K-Q1": (None if b in (["e"] if y == 2024 else ["d", "e"]) else 0, "")}
+        frame, gate = S.build_indicators(calc, banks, [2024, 2025], {"K-Q1": (0, 100, "higher_better")})
+        old = frame[frame.year == 2024]
+        new = frame[frame.year == 2025]
+        self.assertEqual(old.included_in_score.sum(), 4)  # Số 0 là dữ liệu thật.
+        self.assertTrue(new.z.isna().all())
+        self.assertEqual(new.x.notna().sum(), 3)  # Giữ số gốc khi loại.
+        self.assertEqual(new.z_before_step0.notna().sum(), 3)
+        self.assertEqual(gate.n_missing.tolist(), [1, 2])
+
+    def test_step0_excluded_pillar_uses_dbi(self):
+        calc = Mock()
+        calc.all.side_effect = lambda b, y: {"C-Q1": (10 if b == "a" else None, "")}
+        frame, _ = S.build_indicators(calc, ["a", "b", "c"], [2025], {"C-Q1": (0, 100, "higher_better")})
+        z = frame.loc[frame.bank == "a", "z"].iloc[0]
+        scores = S.pillar_scores({"C1": 75, "C2": 75, "C3": 75, "C4": 75},
+                                {"C-Q1": None if pd.isna(z) else z}, .8)
+        self.assertEqual(scores["C"], (75, None, 75, 0))
+
     def test_latest_snapshot_only_and_last_store_row(self):
         df = pd.DataFrame([
             dict(bank="mb", store="apple", date="2026-10-01", rating=1, rating_count=100),
