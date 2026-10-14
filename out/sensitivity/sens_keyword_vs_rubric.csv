@@ -1,0 +1,2 @@
+﻿status,note
+CHƯA CHẠY,"Thiếu out/tm_vs_dbi.csv: cần data/text (bước 1-2), rồi `python 07_text_mining.py --compare`; chạy lại 11_sensitivity.py."

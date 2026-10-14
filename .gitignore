@@ -31,6 +31,7 @@ out/*
 out/dti_bounds_review_2026-10-12/*
 !out/dti_bounds_review_2026-10-12/reference_inputs.csv
 !out/dataset_clean/
+!out/sensitivity/
 out/dti_inputs.backup_*.csv
 
 # sao lưu script
