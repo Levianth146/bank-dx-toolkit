@@ -1,0 +1,185 @@
+{
+ "year": 2022,
+ "base_scenario": "80/20",
+ "scenarios": [
+  "100/0",
+  "80/20",
+  "70/30",
+  "60/40"
+ ],
+ "rows": [
+  {
+   "bank": "agribank",
+   "bank_name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "by_scenario": {
+    "100/0": {
+     "score": 18.75,
+     "rank": 5,
+     "level": "Mức 1 - Khởi động"
+    },
+    "80/20": {
+     "score": 23.5168,
+     "rank": 5,
+     "level": "Mức 1 - Khởi động"
+    },
+    "70/30": {
+     "score": 25.9001,
+     "rank": 5,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "60/40": {
+     "score": 28.2835,
+     "rank": 5,
+     "level": "Mức 2 - Bắt đầu"
+    }
+   },
+   "rank_stable_pct": 1.0,
+   "rank_min": 5,
+   "rank_max": 5,
+   "stable_under_weights": true
+  },
+  {
+   "bank": "bidv",
+   "bank_name": "BIDV",
+   "group": "NHTM Nhà nước",
+   "by_scenario": {
+    "100/0": {
+     "score": 41.6667,
+     "rank": 4,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "80/20": {
+     "score": 43.2133,
+     "rank": 4,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "70/30": {
+     "score": 43.9867,
+     "rank": 4,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "60/40": {
+     "score": 44.76,
+     "rank": 3,
+     "level": "Mức 2 - Bắt đầu"
+    }
+   },
+   "rank_stable_pct": 0.6667,
+   "rank_min": 3,
+   "rank_max": 4,
+   "stable_under_weights": false
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "by_scenario": {
+    "100/0": {
+     "score": 52.0833,
+     "rank": 2,
+     "level": "Mức 3 - Hình thành"
+    },
+    "80/20": {
+     "score": 56.6396,
+     "rank": 2,
+     "level": "Mức 3 - Hình thành"
+    },
+    "70/30": {
+     "score": 58.9178,
+     "rank": 2,
+     "level": "Mức 3 - Hình thành"
+    },
+    "60/40": {
+     "score": 61.196,
+     "rank": 2,
+     "level": "Mức 3 - Hình thành"
+    }
+   },
+   "rank_stable_pct": 1.0,
+   "rank_min": 2,
+   "rank_max": 2,
+   "stable_under_weights": true
+  },
+  {
+   "bank": "tcb",
+   "bank_name": "Techcombank",
+   "group": "NHTM Cổ phần",
+   "by_scenario": {
+    "100/0": {
+     "score": 69.7917,
+     "rank": 1,
+     "level": "Mức 3 - Hình thành"
+    },
+    "80/20": {
+     "score": 68.892,
+     "rank": 1,
+     "level": "Mức 3 - Hình thành"
+    },
+    "70/30": {
+     "score": 68.4421,
+     "rank": 1,
+     "level": "Mức 3 - Hình thành"
+    },
+    "60/40": {
+     "score": 67.9923,
+     "rank": 1,
+     "level": "Mức 3 - Hình thành"
+    }
+   },
+   "rank_stable_pct": 1.0,
+   "rank_min": 1,
+   "rank_max": 1,
+   "stable_under_weights": true
+  },
+  {
+   "bank": "vcb",
+   "bank_name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "by_scenario": {
+    "100/0": {
+     "score": 46.875,
+     "rank": 3,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "80/20": {
+     "score": 45.4167,
+     "rank": 3,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "70/30": {
+     "score": 44.6875,
+     "rank": 3,
+     "level": "Mức 2 - Bắt đầu"
+    },
+    "60/40": {
+     "score": 43.9583,
+     "rank": 4,
+     "level": "Mức 2 - Bắt đầu"
+    }
+   },
+   "rank_stable_pct": 0.6667,
+   "rank_min": 3,
+   "rank_max": 4,
+   "stable_under_weights": false
+  }
+ ],
+ "agreement_with_base": [
+  {
+   "scenario": "100/0",
+   "kendall_tau": 1.0,
+   "spearman": 1.0
+  },
+  {
+   "scenario": "70/30",
+   "kendall_tau": 1.0,
+   "spearman": 1.0
+  },
+  {
+   "scenario": "60/40",
+   "kendall_tau": 0.8,
+   "spearman": 0.9
+  }
+ ],
+ "note": "Chỉ kịch bản trọng số DBI/DTI (mục V.2). rank_stable_pct = tỷ lệ kịch bản khác kịch bản cơ sở giữ nguyên hạng; stable_under_weights khi >= 80%. CHỈ là kịch bản trọng số; kết luận Vững/Nhóm cùng mức đầy đủ nằm ở /sensitivity/full."
+}

@@ -1,0 +1,659 @@
+{
+ "year": null,
+ "bank": null,
+ "availability": [
+  {
+   "bank": "agribank",
+   "year": 2020,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "chưa tìm thấy",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 12,
+   "dti_inputs_coverage": 0.75,
+   "dti_indicators_computable": 1,
+   "dti_indicators_list": [
+    "T-Q1"
+   ],
+   "data_confidence": 0.091
+  },
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "chưa tìm thấy",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 12,
+   "dti_inputs_coverage": 0.75,
+   "dti_indicators_computable": 2,
+   "dti_indicators_list": [
+    "K-Q2",
+    "T-Q1"
+   ],
+   "data_confidence": 0.182
+  },
+  {
+   "bank": "agribank",
+   "year": 2022,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 4,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q2",
+    "T-Q1",
+    "O-Q1"
+   ],
+   "data_confidence": 0.364
+  },
+  {
+   "bank": "agribank",
+   "year": 2023,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 11,
+   "dti_inputs_coverage": 0.688,
+   "dti_indicators_computable": 2,
+   "dti_indicators_list": [
+    "T-Q1",
+    "O-Q1"
+   ],
+   "data_confidence": 0.182
+  },
+  {
+   "bank": "agribank",
+   "year": 2024,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 13,
+   "dti_inputs_coverage": 0.812,
+   "dti_indicators_computable": 5,
+   "dti_indicators_list": [
+    "K-Q1",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2"
+   ],
+   "data_confidence": 0.455
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 12,
+   "dti_inputs_coverage": 0.75,
+   "dti_indicators_computable": 6,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q3",
+    "S-Q1",
+    "S-Q2",
+    "T-Q1",
+    "O-Q1"
+   ],
+   "data_confidence": 0.545
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 13,
+   "dti_inputs_coverage": 0.812,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "K-Q1",
+    "T-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "K-Q1",
+    "T-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 5,
+   "dti_indicators_list": [
+    "K-Q1",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.455
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 7,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q2",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.636
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 6,
+   "dti_indicators_list": [
+    "K-Q1",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.545
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 8,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q3",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.727
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "K-Q2",
+    "T-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 13,
+   "dti_inputs_coverage": 0.812,
+   "dti_indicators_computable": 2,
+   "dti_indicators_list": [
+    "K-Q1",
+    "T-Q1"
+   ],
+   "data_confidence": 0.182
+  },
+  {
+   "bank": "tcb",
+   "year": 2022,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 15,
+   "dti_inputs_coverage": 0.938,
+   "dti_indicators_computable": 6,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q2",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.545
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 5,
+   "dti_indicators_list": [
+    "K-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.455
+  },
+  {
+   "bank": "tcb",
+   "year": 2024,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "OK",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 6,
+   "dti_indicators_list": [
+    "K-Q1",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.545
+  },
+  {
+   "bank": "tcb",
+   "year": 2025,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "OK",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 7,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q3",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.636
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "chưa tìm thấy",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 12,
+   "dti_inputs_coverage": 0.75,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "K-Q1",
+    "T-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "chưa tìm thấy",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 13,
+   "dti_inputs_coverage": 0.812,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "K-Q1",
+    "T-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "chưa tìm thấy",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 14,
+   "dti_inputs_coverage": 0.875,
+   "dti_indicators_computable": 5,
+   "dti_indicators_list": [
+    "K-Q1",
+    "S-Q1",
+    "T-Q1",
+    "O-Q1",
+    "C-Q2"
+   ],
+   "data_confidence": 0.455
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "OK",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 15,
+   "dti_inputs_coverage": 0.938,
+   "dti_indicators_computable": 6,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q2",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.545
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "OK",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 12,
+   "dti_inputs_coverage": 0.75,
+   "dti_indicators_computable": 4,
+   "dti_indicators_list": [
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.364
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "bctn": "CẦN KIỂM",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "CẦN KIỂM",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 11,
+   "dti_inputs_coverage": 0.688,
+   "dti_indicators_computable": 5,
+   "dti_indicators_list": [
+    "K-Q3",
+    "T-Q1",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.455
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 10,
+   "dti_inputs_coverage": 0.625,
+   "dti_indicators_computable": 0,
+   "dti_indicators_list": [],
+   "data_confidence": 0.0
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 10,
+   "dti_inputs_coverage": 0.625,
+   "dti_indicators_computable": 0,
+   "dti_indicators_list": [],
+   "data_confidence": 0.0
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 10,
+   "dti_inputs_coverage": 0.625,
+   "dti_indicators_computable": 1,
+   "dti_indicators_list": [
+    "O-Q1"
+   ],
+   "data_confidence": 0.091
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "tích hợp trong BCTN",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 11,
+   "dti_inputs_coverage": 0.688,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "bctn": "OK",
+   "bctc": "OK",
+   "bcptbv": "OK",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 11,
+   "dti_inputs_coverage": 0.688,
+   "dti_indicators_computable": 3,
+   "dti_indicators_list": [
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.273
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "bctn": "OK",
+   "bctc": "CẦN KIỂM",
+   "bcptbv": "OK",
+   "dti_inputs_total": 16,
+   "dti_inputs_confirmed": 13,
+   "dti_inputs_coverage": 0.812,
+   "dti_indicators_computable": 5,
+   "dti_indicators_list": [
+    "K-Q1",
+    "K-Q3",
+    "O-Q1",
+    "O-Q2",
+    "C-Q2"
+   ],
+   "data_confidence": 0.455
+  }
+ ],
+ "app_ratings": [
+  {
+   "bank": "agribank",
+   "date": "2026-10-08",
+   "store": "apple",
+   "title": "Agribank Retail eBanking",
+   "rating": 4.441,
+   "rating_count": 195,
+   "version": "4.2.2"
+  },
+  {
+   "bank": "agribank",
+   "date": "2026-10-08",
+   "store": "play",
+   "title": "Agribank Retail eBanking",
+   "rating": 3.52,
+   "rating_count": 447,
+   "version": "4.2.4"
+  },
+  {
+   "bank": "bidv",
+   "date": "2026-10-08",
+   "store": "apple",
+   "title": "BIDV SmartBanking",
+   "rating": 3.8439,
+   "rating_count": 60660,
+   "version": "5.3.14"
+  },
+  {
+   "bank": "bidv",
+   "date": "2026-10-08",
+   "store": "play",
+   "title": "BIDV SmartBanking",
+   "rating": 4.0224,
+   "rating_count": 140062,
+   "version": "5.3.12"
+  },
+  {
+   "bank": "mb",
+   "date": "2026-10-08",
+   "store": "apple",
+   "title": "MB Bank",
+   "rating": 4.7324,
+   "rating_count": 2098997,
+   "version": "28.5.99"
+  },
+  {
+   "bank": "mb",
+   "date": "2026-10-08",
+   "store": "play",
+   "title": "MB Bank",
+   "rating": 4.7718,
+   "rating_count": 1069566,
+   "version": "6.5.23"
+  },
+  {
+   "bank": "tcb",
+   "date": "2026-10-08",
+   "store": "apple",
+   "title": "Techcombank Mobile",
+   "rating": 4.774,
+   "rating_count": 946125,
+   "version": "4.0.29"
+  },
+  {
+   "bank": "tcb",
+   "date": "2026-10-08",
+   "store": "play",
+   "title": "Techcombank Mobile",
+   "rating": 4.7335,
+   "rating_count": 623437,
+   "version": "4.0.29 (20)"
+  },
+  {
+   "bank": "vcb",
+   "date": "2026-10-08",
+   "store": "apple",
+   "title": "VCB Digibank",
+   "rating": 3.4375,
+   "rating_count": 64550,
+   "version": "6.5.8"
+  },
+  {
+   "bank": "vcb",
+   "date": "2026-10-08",
+   "store": "play",
+   "title": "VCB Digibank",
+   "rating": 3.948,
+   "rating_count": 187422,
+   "version": "6.5.8"
+  }
+ ],
+ "flags": [
+  {
+   "bank": "agribank",
+   "year": 2021,
+   "variable": "customer_deposits/total_assets",
+   "kind": "TY_SO",
+   "message": "tiền gửi KH / tài sản (%) = 91.2 ngoài [40, 90] (customer_deposits=1,545,474,063, total_assets=1,694,320,049)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "net_profit",
+   "kind": "BIEN_DONG",
+   "message": "net_profit đổi +72% so với 2021 (10,540,138 -> 18,158,502)"
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "total_assets",
+   "kind": "BIEN_DONG",
+   "message": "total_assets đổi +43% so với 2024 (1,128,801,062 -> 1,615,763,927)"
+  }
+ ],
+ "note": "K-Q3 (rating) và T-Q2 (8 nền tảng) chỉ áp dụng cho năm cuối của lần chạy; ô thiếu để trống, không điền 0."
+}

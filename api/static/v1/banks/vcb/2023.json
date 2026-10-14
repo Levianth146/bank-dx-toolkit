@@ -1,0 +1,849 @@
+{
+ "summary": {
+  "bank": "vcb",
+  "bank_name": "Vietcombank",
+  "group": "NHTM Nhà nước",
+  "year": 2023,
+  "score": 43.75,
+  "rank": 4,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.2727,
+  "dti_indicators_available": 3,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 3,
+    "dti_applied": false
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 37.5,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 37.5,
+    "dti": 50.0,
+    "p": 40.0,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 50.0,
+    "dti": 100.0,
+    "p": 60.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 37.5,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 7,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "hành lập (01/04/1963 - 01/04/2023), Vietcombank vinh dự được Đảng, Nhà nước trao tặng danh hiệu Anh hùng Lao động. Bằng trí tuệ và tâm huyết, các thế hệ cán bộ Vietcombank đã, đang và sẽ luôn nỗ lực để xây dựng Vietcombank phát triển ngày một bền vững, với định hướng đến năm 2030 là giữ vững vị trí ngân hàng số 1 Việt Nam, trở thành một trong 200 tập đoàn tài chính ngân hàng lớn nhất thế giới, một"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 33,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "xấu < 1,5% (5). Lợi nhuận trước thuế Tăng 5% Về chỉ đạo hoạt động kinh doanh Về chỉ đạo quản trị nội bộ • Tăng trưởng tín dụng theo đúng định hướng tín dụng ngành, tập trung ưu tiên tăng trưởng tín dụng vào những ngành mở rộng. • Phát triển dịch vụ quản lý tài chính và sản phẩm đầu tư dành cho các phân khúc khách hàng bán lẻ trọng tâm. Phát triển các mảng hoạt động dịch vụ tư vấn tài chính mua bá"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 60,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "• Tiếp nhận thường xuyên, liên tục 24/7 các thông tin, yêu cầu của khách hàng thông qua các kênh như hotline chăm sóc khách hàng, website VCB, email doanh nghiệp, mạng xã hội • Đẩy mạnh nâng cao chất lượng hỗ trợ khách hàng, tỷ lệ cuộc gọi rớt đạt mức 10% phù hợp với tiêu chuẩn chất lượng chung của Contact Center. • Đẩy mạnh ứng dụng công nghệ, đầu tư hệ thống giải pháp trí tuệ nhân tạo (Artificia"
+   },
+   "note": "3 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 12,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "ốn hóa lên tới trên 20 tỷ USD, Vietcombank tiếp tục có mặt trong Top 100 ngân hàng niêm yết có quy mô vốn hóa lớn nhất toàn cầu, và đứng thứ 93 tại thời điểm cuối năm 2023. Trong năm 2023, Vietcombank đã triển khai và hoàn thành dự án rà soát chiến lược phát triển Vietcombank đến năm 2025, tầm nhìn đến năm 2030. Đây là dự án có ý nghĩa đặc biệt quan trọng và hết sức cấp thiết, giúp Vietcombank hoạ"
+   },
+   "note": "13 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 39,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "riển khai thành lập Văn phòng chuyển đổi VCB kể từ ngày hiệu lực của giấy phép lao động được cấp đổi theo quy định của pháp luật (hiệu lực giấy phép lao động kể từ ngày 24/11/2023 - 19/9/2024). Điều động và bổ nhiệm ông Trần Thanh Nam, Giám đốc Khối Vận hành và Giám đốc Đổi mới sáng tạo giữ chức vụ Giám đốc Khối Công nghệ thông tin & chuyển đổi số và Giám đốc đổi mới sáng tạo kể từ ngày 15/11/2023"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "GOV"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 33,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "ng ưu tiên tăng trưởng tín dụng vào những ngành mở rộng. • Phát triển dịch vụ quản lý tài chính và sản phẩm đầu tư dành cho các phân khúc khách hàng bán lẻ trọng tâm. Phát triển các mảng hoạt động dịch vụ tư vấn tài chính mua bán, sáp nhập doanh nghiệp, góp vốn, mua cổ phần doanh nghiệp. Phát triển hệ sinh thái số hợp tác với bên thứ ba để có cơ hội bán các sản phẩm, dịch vụ của ngân hàng. • Duy t"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 33,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "ê duyệt ngay và triển khai đúng tiến độ chương trình hành động của các Khối nhằm thực hiện chiến lược phát triển VCB đến 2025 và tầm nhìn tới 2030. • Đẩy nhanh tiến độ ứng dụng các công nghệ mới và các phương pháp hiện đại trong phát triển sản phẩm, dịch vụ. • Đẩy mạnh triển khai ứng dụng công nghệ điện toán đám mây, bắt đầu với các hệ thống phục vụ phát triển phần mềm và các hệ thống cấp độ 1-2."
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 60,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "hàng thông qua các kênh như hotline chăm sóc khách hàng, website VCB, email doanh nghiệp, mạng xã hội • Đẩy mạnh nâng cao chất lượng hỗ trợ khách hàng, tỷ lệ cuộc gọi rớt đạt mức 10% phù hợp với tiêu chuẩn chất lượng chung của Contact Center. • Đẩy mạnh ứng dụng công nghệ, đầu tư hệ thống giải pháp trí tuệ nhân tạo (Artificial Intelligence) trong công tác vận hành, chăm sóc khách hàng. Thực hiện k"
+   },
+   "note": "3 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 51,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "Trong năm 2023, Vietcombank tiếp tục rà soát, định kỳ cập nhật khung quản lý rủi ro thị trường đáp ứng quy định của pháp luật, nhu cầu của đơn vị kinh doanh đối với các sản phẩm mới, triển khai nghiên cứu và thử nghiệm các chuẩn mực quốc tế cao hơn như Basel III, ứng dụng chuyển đổi số, tăng cường tự động hóa nhằm nâng cao hiệu quả trong công tác quản lý rủi ro thị trường. Rủi ro thị trường là rủ"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 51,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "bank chủ động cập nhật thông tin thanh khoản thị trường, từ đó đúc rút bài học kinh nghiệm từ các cuộc khủng hoảng tại các ngân hàng trong nước và quốc tế để hoàn thiện quy định, quy trình nội bộ liên quan đến xử lý khủng hoảng thanh khoản tại Vietcombank. Đồng thời, Vietcombank đã thiết lập ngưỡng cảnh báo sớm nội bộ cho tỷ lệ NSFR quy VND với lộ trình tăng dần ngưỡng nhằm đáp ứng yêu cầu tối thi"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 36,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "sáng tạo nhằm kiện toàn chiến lược của VCB, tăng cường nền tảng thực hiện sứ mệnh, tầm nhìn, mục tiêu chiến lược đến 2030. ii. Kiện toàn tổ chức, nâng cao chất lượng nguồn nhân lực; chú trọng nguồn nhân lực thích ứng cho chuyển đổi số. Phát triển văn hóa số và mở rộng ứng dụng phương pháp làm việc Agile. iii. Đổi mới mô hình tăng trưởng gắn với chuyển dịch cơ cấu hoạt động; từng bước hình thành h"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 36,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "yệt, đảm bảo chất lượng. Xây dựng chiến lược đổi mới sáng tạo nhằm kiện toàn chiến lược của VCB, tăng cường nền tảng thực hiện sứ mệnh, tầm nhìn, mục tiêu chiến lược đến 2030. ii. Kiện toàn tổ chức, nâng cao chất lượng nguồn nhân lực; chú trọng nguồn nhân lực thích ứng cho chuyển đổi số. Phát triển văn hóa số và mở rộng ứng dụng phương pháp làm việc Agile. iii. Đổi mới mô hình tăng trưởng gắn với"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 68,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "hương trình cốt lõi cho cán bộ nhân viên được duy trì triển khai và đảm bảo chất lượng đào tạo, từ đó củng cố văn hóa Vietcombank và giúp cán bộ nhân viên nâng cao hiệu quả làm việc, gia tăng sự gắn kết với tổ chức. TĂNG 10% SO VỚI 2022 419 41 KHOÁ ĐÀO TẠO GIỜ/NĂM NĂM 2023 VIETCOMBANK ĐÃ TỔ CHỨC SỐ GIỜ ĐÀO TẠO TRUNG BÌNH Trong năm 2023, Vietcombank đã tổ chức 419 khóa đào tạo (tăng 10% so với 2022"
+   },
+   "note": "8 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 12,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "ầm nhìn đến năm 2030. Đây là dự án có ý nghĩa đặc biệt quan trọng và hết sức cấp thiết, giúp Vietcombank hoạch định phương hướng phát triển dài hạn, xây dựng kế hoạch và lộ trình triển khai toàn diện. Chiến lược đề ra 6 mục tiêu cấp 1, 17 mục tiêu cấp 2, định hướng của 10 khối/mảng hoạt động với 36 sáng kiến mang tính phấn đấu cao nhằm nắm bắt các cơ hội, khẳng định vị thế tiên phong, hiện thực hó"
+   },
+   "note": "9 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 49,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "eo các phương pháp tiên tiến. Các mô hình lượng hóa rủi ro đã được xây dựng với tỷ lệ bao phủ gần như toàn bộ danh mục của Ngân hàng. Bên cạnh đó, các hệ thống công nghệ thông tin hỗ trợ cũng thường xuyên được Vietcombank nâng cấp nhằm đáp ứng tốt nhất yêu cầu quản trị. Công tác rà soát và nâng cao chất lượng dữ liệu tại Vietcombank được chú trọng và duy trì thường xuyên, liên tục nhằm đáp ứng yêu"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 33,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "n VCB đến 2025 và tầm nhìn tới 2030. • Đẩy nhanh tiến độ ứng dụng các công nghệ mới và các phương pháp hiện đại trong phát triển sản phẩm, dịch vụ. • Đẩy mạnh triển khai ứng dụng công nghệ điện toán đám mây, bắt đầu với các hệ thống phục vụ phát triển phần mềm và các hệ thống cấp độ 1-2. • Xây dựng nền tảng dữ liệu mới theo các chuẩn mực, kiến trúc hiện đại, với cơ chế quản trị dữ liệu bài bản, ch"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": 5,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": "ợc Đảng và Nhà nước trao tặng danh hiệu cao quý Anh hùng Lao động nhân kỷ niệm 60 năm thành lập (01/04/1963- 01/04/2023) để ghi nhận những đóng góp bền bỉ của Vietcombank cho sự nghiệp xây dựng và bảo vệ Tổ quốc trong suốt hơn 6 thập kỷ qua. Bước sang năm 2024, tình hình thế giới và trong nước được dự báo tiếp tục diễn biến phức tạp, khó lường; thuận lợi và thời cơ đan xen với khó khăn và thách th"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "vcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 90.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu nguyên giá phần mềm hoặc tổng tài sản"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 0.6378,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": 4.1327,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "CAGR TOI/CBNV bình quân 2021->2023"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 41.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "C",
+  "weakest_pillar": "T",
+  "criteria_score_distribution": {
+   "0": 7,
+   "1": 2,
+   "2": 10,
+   "3": 2,
+   "4": 3
+  }
+ }
+}

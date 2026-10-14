@@ -1,0 +1,864 @@
+{
+ "summary": {
+  "bank": "tcb",
+  "bank_name": "Techcombank",
+  "group": "NHTM Cổ phần",
+  "year": 2020,
+  "score": 50.8245,
+  "rank": 1,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.2727,
+  "dti_indicators_available": 3,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 81.25,
+    "dti": 46.4286,
+    "p": 74.2857,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 56.25,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 50.0,
+    "dti": 97.0568,
+    "p": 59.4114,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 50.0,
+    "dti": null,
+    "p": 50.0,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 25.0,
+    "dti": 100.0,
+    "p": 40.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 44,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "ic strategy in banking operations and the development of e-banking services. For our customers Techcombank has a history of being a first adapter of technology, providing superior customer experience. Nineteen years ago we introduced Vietnam’s first core banking system and six years ago, online and mobile banking. We’ve maintained a leading position in the digitalisation of Vietnam’s banking servi"
+   },
+   "note": "17 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 43,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "fficiency, increase revenue, reduce costs 01 02 03 04 Continued to serve nearly 1.2 million new e-banking customers and existing customers through many innovative developments like: ‣ Upgraded T24 system ‣ Improved card system ‣ Upgraded mobile platform ‣ Server technology changes ‣ Rolling out the eKYC solution for better access to core customer segments. Customers using bill payment services wen"
+   },
+   "note": "3 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 35,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "achieve our retail banking targets. Developing this strategy saw us further devise, fine-tune and revise our retail banking model. In late 2020, Techcombank completed the restructuring of retail banking units into the single RBG. RBG will centralise management across these pillars and functions: ‣ Customer segmentation ‣ Solution development ‣ Omni channel ‣ Operational and risk management compli"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "out SmartOTP, an international remittance platform for corporate customers via F@ST E-BANK, that supported over 25,000 international remittance transactions online in 2020. By continuously optimising and upgrading this new feature we grew our transaction volume by 4% and value by 20% YoY. Improving customer experience was also a top GTS priority. Following customer research, GTS established new ge"
+   },
+   "note": "15 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 30,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "top position in the insurance business. Growth 2019 2020 932 1,085 927 -15% -11% 827 Annual premium equivalent (APE) E-Banking Branch POS ATM Fee income Bancassurance (VND billion) One positive impact of COVID-19 for the Bank is the rise of online experiments and transactions. Businesses already on digital transformation journeys enjoyed an immediate competitive advantage. With a well-established"
+   },
+   "note": "14 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 53,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "Board actively participated in discussions and carried-out important decisions regarding senior executives, including recruiting a new CEO and other senior staff such as the Chief Risk Officer, Chief HR Officer, Chief Marketing Officer, Chief Data & Analytics Officer, Chief Transformation Officer, Chief Digital Officer, other senior managers, experts in banking, finance, risk management, technolo"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 31,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "the Bank prepared to execute the 2021– 2025 strategy. The increased costs involved were partly offset by per diem decreases and lower conference expenses with events cancelled and travel restricted. Cost to income ratio 34.7% in 2019 TODAY Management report (Continued) Management report (Continued) Investment in technology is critical to keep us flexible and competitive, while creating opportuniti"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 16,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "ation (IFC) and Finance Asia. ‣ The reliable choice for 3.7 million individuals and 48,000 corporates. Globus, our launch core banking system, complies with international standards. Reached over US$ 1 billion in total bank assets – an important milestone. ‣ Founded Smartlink, Vietnam’s largest card alliance. ‣ Launched the Techcombank Visa credit card. Vietnam’s second largest joint stock bank by"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 44,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "continued to be consistent with its customer-centric strategy in banking operations and the development of e-banking services. For our customers Techcombank has a history of being a first adapter of technology, providing superior customer experience. Nineteen years ago we introduced Vietnam’s first core banking system and six years ago, online and mobile banking. We’ve maintained a leading positio"
+   },
+   "note": "8 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 68,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "actors' future behaviour (e.g., yield curves, FX), and client behaviour (ALM module), revealing future scenarios of investment/trading portfolios at varying levels of market stress. Techcombank operates comprehensive fraud risk management using a technology - powered fraud life cycle management and cyber security framework. Fraud prevention and detection solutions are being implemented to automate"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 68,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "ment/trading portfolios at varying levels of market stress. Techcombank operates comprehensive fraud risk management using a technology - powered fraud life cycle management and cyber security framework. Fraud prevention and detection solutions are being implemented to automate identification using AI. Digital fraud solutions and business solutions, aimed at preventing fraud risk throughout the cu"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 61,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "e Regional Director – Customer Journey and Operations at Prudential Corporation Asia. As a member of Prudential’s Senior Management Team, he was responsible for driving transformation across Prudential Corporation Asia’s 10 life insurance businesses, with the primary focus on the transformation and automation of the customer journey, leveraging AI and curating a high performance, ‘design-for-no-op"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 67,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "al driver of non-retail growth. It’s highly scalable, and can capture and centralise customer data, leading to better commercial lending decisions and improved operational efficiency. In 2021, BCDE will continue driving our digitalisation journey with additional modules that allow the comprehensive loan origination process to be completed on in the platform. This will fully transform our corporate"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 68,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "asuring market risk and trade analysis through sophisticated simulation of market factors' future behaviour (e.g., yield curves, FX), and client behaviour (ALM module), revealing future scenarios of investment/trading portfolios at varying levels of market stress. Techcombank operates comprehensive fraud risk management using a technology - powered fraud life cycle management and cyber security fr"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 23,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "holders 160,000 corporate customers, of which nearly general. The Bank renewed its focus on building through attractive, long-term benefits. 2,000 are large corporate customers, but more and promoting a culture of 'customer-centricity', important is the huge increase in the number by adopting a new Agile working method and and value of transactions. environment, as well as fostering an ever- chang"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 61,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "udential’s Senior Management Team, he was responsible for driving transformation across Prudential Corporation Asia’s 10 life insurance businesses, with the primary focus on the transformation and automation of the customer journey, leveraging AI and curating a high performance, ‘design-for-no-ops’ digital - first mindset. He also designed, built and led the Intelligent Process Automation COE, and"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 45,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "ed to e-learning, internally designing courses so our people could learn safely and conveniently. We offered courses on Agile, Digital and Design in preparation for our digital transformation and in pursuit of our aim to be agile and customer- centric. In addition to intensive product, process, and digital training, we focused on leadership strength – particularly at middle and senior levels, with"
+   },
+   "note": "15 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 7,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "help fuel the Bank’s rapid recovery and ongoing growth, and again validates our hard work since 2016 to digitalise operations. At a community level, our remote banking offer meant customers could avoid crowded environments and maintain a safe social distance. To protect our employees, we shifted to remote working within days of COVID-19 being declared a pandemic. Staff were given the equipment and"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 42,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "ads data literacy across the Bank, growing awareness and teaching all our people how to use and harness data’s potential. This will see us create person-based learning, backed by curated e-learning and classroom training. Our Chief Data and Analytics Officer says, “Data is not oil, data is oxygen”. Data Governance Advanced Analytics and Innovation team Digitalisation Data Academy Ready, set, break"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 4,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "t for more economic and social pain in the lingering wake of COVID-19. We will continue to provide tailored solutions and the best customer experience by: ‣ developing new technology and omni-channel platforms for individual and corporate customers ‣ digitalising the credit journey ‣ developing our data lake and capacity for advanced analytical skills to enhance digitalisation. “We are very proud"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 42,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "y across the Bank, growing awareness and teaching all our people how to use and harness data’s potential. This will see us create person-based learning, backed by curated e-learning and classroom training. Our Chief Data and Analytics Officer says, “Data is not oil, data is oxygen”. Data Governance Advanced Analytics and Innovation team Digitalisation Data Academy Ready, set, breakthrough in 2021"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "tcb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2020_bctn.pdf",
+    "page": 44,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/Annual_Report_2020_a99851d6c3.pdf",
+    "quote": "ll improve performance, stability, cost and importantly, the speed with which we introduce new products and services, by leveraging our ecosystem partners. It’ll also allow faster release of tailor-made products and services. Cybersecurity With COVID-19 speeding up the digitalisation of everything, privacy and security have become a top priority for any digital operation. We significantly invested"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 90.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 46.4286,
+   "L": 0.0,
+   "U": 100.0,
+   "z": 46.4286,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "digital_customers/total_customers (registered/total)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share năm cuối"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.2949,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 97.0568,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "dùng số cuối kỳ (thiếu năm trước)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": null,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2020,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 71.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 2,
+   "1": 7,
+   "2": 8,
+   "3": 5,
+   "4": 2
+  }
+ }
+}

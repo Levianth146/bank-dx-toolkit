@@ -1,0 +1,856 @@
+{
+ "summary": {
+  "bank": "bidv",
+  "bank_name": "BIDV",
+  "group": "NHTM Nhà nước",
+  "year": 2020,
+  "score": 41.4935,
+  "rank": 3,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.2727,
+  "dti_indicators_available": 3,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 56.25,
+    "dti": 58.8889,
+    "p": 56.7778,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 31.25,
+    "dti": 35.9147,
+    "p": 32.1829,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 37.5,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 18.75,
+    "dti": 100.0,
+    "p": 35.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 60,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "cult circumstances and serious illnesses. In 2020, BIDV Trade Union visited 3,785 union members and financially supported them nearly VND5.4 billion; Implemented Encouragement Regulation for children of BIDV employees, proposed thousands of children PEOPLE DEVELOPMENT INCREASE DECREASE Employees in digital banking area Direct sales staff Risk management specialized workforce High quality labour"
+   },
+   "note": "32 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 39,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "ntation of the strategy in association with the corporate culture, creative learning movement across the whole system. 2. Thoroughly grasping the concept of comprehensive digital transformation in all aspects of the system: focusing resources to implement breakthrough solutions on digital banking (eKYC, money transfer and electronic clearing house - ACH, online capital mobilisation/loans ...), ta"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 58,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "be the first and only bank to be named the Best retail bank for 5 consecutive years (from 2016 to 2020) and the Best Digital Transformation Bank by the Vietnam Banks Association (VNBA) and International Data Group (IDG). CUSTOMER SUPPORT In 2020, given the challenge of the Covid-19 pandemic, BIDV Contact Center successfully completed its goals: maintaining 24/7 stable customer support activities"
+   },
+   "note": "12 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 44,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "ovisions of law and good practices. 9. Implement the Brand Development Strategy; foster corporate culture, perform well responsibility to the community. Strengthen rules, discipline, and sanctions, drastically and strictly handle violations. In 2021 with the action motto of “Discipline - Quality - Digital Transformation”, on the basis of ensuring compliance with the 2021 target of BIDV developmen"
+   },
+   "note": "21 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'GOV'] (all)"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "GOV"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 49,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "ing on the Report of “Reviewing organisational structure of BIDV after more than 3 years of implementing Resolution 2312, in accordance with Circular 13/NHNN and international practices for modern banks”. Giving written opinions on “Financial Institution Customer Development Strategy”. Information Technology Committee The IT Committee was established under the direction the BOD and has the author"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 22,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "rity of the seal sample before using; (iii) Amend and supplement the rights of shareholders of the joint stock company, methods of organising and conducting the General Meeting of Shareholders, the Board of Directors’ meeting of the joint stock company. b) The Law on Investment under Public-Private Partnership 2020 (“PPP Law”) was promulgated and officially completed the legal framework for the in"
+   },
+   "note": "6 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "GOV",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 63,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "terms of infrastructure architecture, with general architectural standards for the entire IT infrastructure and has basically met the current operational needs of application systems and administration. By the end of 2020, BIDV basically completed the implementation and put into use the new modern data center towards international standard TA3 located at No.7 Duy Tan, Cau Giay, Hanoi. The applic"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 63,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "and has basically met the current operational needs of application systems and administration. By the end of 2020, BIDV basically completed the implementation and put into use the new modern data center towards international standard TA3 located at No.7 Duy Tan, Cau Giay, Hanoi. The application of information security management standards according to ISO27001:2013 aims to equip BIDV with a compr"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP",
+    "GOV"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 59,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "system has been awarded Sao Khue Award for Excellent IT application product by the Vietnam Software and IT Services Association. Data analysis is gradually taking effect, but it is necessary to continue investing in research to bring more practical results in 2021: Successful implementation of the artificial intelligence data model for customer dropout prediction and proposing 2021 marketing stra"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 63,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "g: BIDV-Ezone system; BIDV Paygate system; Automatic deposit investment and bilateral payment system for Vietnam Social Insurance; Customer account statement system; Cross-selling management system - BIDV Sale Power; Sales support application on mobile devices for institutional customers - B.Sales; RPA (Robotic Process Automation) automation technology in payment; Remittance Payment Gateway Progra"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 43,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "(vi) Officially putting into operation 2 smart transaction offices in Hanoi to promote the development of e-banking services at transaction offices, providing customers with new transaction experience in digitalisation with many forms of automatic and online transactions, looking towards developing paperless transaction points. Actively directing the implementation of IT Plan 2020 to closely foll"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 23,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "udit, at the same time performing operational risk management for outsourced activities, new products/activities in new markets and in IT application; development and implementation of BCP (Business Continuity Plan). In 2020, BIDV has completed the consulting project on implementing advanced modern operational risk tools, creating a solid foundation for compliance with the State Bank’s regulations"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 59,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "lementation of the BIDV digital banking strategy consulting project for the period 2020- 2025 with a vision to 2030 helps BIDV to evaluate the digitalisation status, set vision, strategy and key solutions for the digitalisation process in the next phase. It also helps BIDV to test the deployment of agile software development method through 2 quickwins. Promoting the development of digital distrib"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 28,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "ted candidates met the quality requirements of each business location. Staff training: In 2020, BIDV officially launched a position-based training program, successfully organising 139 courses, equivalent to 415 classes (meeting 120% of the year’s plan), including 265 domestic training classes, 115 E-learning classes and 35 classes with foreign factor for 61,616 trainees (meeting 263% of the year’"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "GOV",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 37,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "hing 3 units including the Board of Directors Secretariat and Investor Relations Department, Strategic Management Department, Policy and System Supervision Department. Re-established the Finance and Accounting Group and restructured units in the group; Established Centralised Business Analysis and Data Management Center; completed the upgrade of the Credit Risk Management Department to the Credit"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 63,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "LOGY SUSTAINABLE DEVELOPMENT REPORT Strengthening IT application to improve governance capacity, implementing IT application systems for Basel compliance at BIDV: Investing and implementing IT systems to improve management and administration capacity, including: management information system (MIS); Data Mart which is used to connect, extract, supplement, and enrich data for MIS system; ERP system;"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": null,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "bidv",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/bidv/2020_bctn.pdf",
+    "page": 59,
+    "url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+    "quote": "ls, interview programs, and television game shows to promote BIDV’s digital banking service. IMPROVING CUSTOMER SATISFACTION Policies for customers regarding collection of customers’ personal information, use of customers’ personal information, access to customers’ personal information and personal privacy. Pursuant to the Circular of the State Bank of Vietnam on banking operations information se"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 53.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 58.8889,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ cùng định nghĩa"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.1091,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 35.9147,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "dùng số cuối kỳ (thiếu năm trước)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": null,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 59.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "S",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 7,
+   "1": 6,
+   "2": 6,
+   "3": 1,
+   "4": 4
+  }
+ }
+}

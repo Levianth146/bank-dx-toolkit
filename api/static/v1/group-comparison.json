@@ -1,0 +1,239 @@
+{
+ "items": [
+  {
+   "year": 2020,
+   "group": "NHTM Cổ phần",
+   "banks": [
+    "mb",
+    "tcb"
+   ],
+   "n_banks": 2,
+   "score_mean": 49.262,
+   "data_confidence_mean": 0.2727,
+   "pillar_p_mean": {
+    "K": 71.5873,
+    "S": 50.0,
+    "T": 52.4828,
+    "O": 56.25,
+    "C": 40.252,
+    "D": 25.0
+   }
+  },
+  {
+   "year": 2020,
+   "group": "NHTM Nhà nước",
+   "banks": [
+    "agribank",
+    "bidv",
+    "vcb"
+   ],
+   "n_banks": 3,
+   "score_mean": 32.8997,
+   "data_confidence_mean": 0.1212,
+   "pillar_p_mean": {
+    "K": 54.3426,
+    "S": 45.8333,
+    "T": 23.0557,
+    "O": 31.25,
+    "C": 26.25,
+    "D": 16.6667
+   }
+  },
+  {
+   "year": 2021,
+   "group": "NHTM Cổ phần",
+   "banks": [
+    "mb",
+    "tcb"
+   ],
+   "n_banks": 2,
+   "score_mean": 52.6458,
+   "data_confidence_mean": 0.2273,
+   "pillar_p_mean": {
+    "K": 66.5,
+    "S": 53.125,
+    "T": 52.5,
+    "O": 56.25,
+    "C": 43.75,
+    "D": 43.75
+   }
+  },
+  {
+   "year": 2021,
+   "group": "NHTM Nhà nước",
+   "banks": [
+    "agribank",
+    "bidv",
+    "vcb"
+   ],
+   "n_banks": 3,
+   "score_mean": 35.9376,
+   "data_confidence_mean": 0.1515,
+   "pillar_p_mean": {
+    "K": 57.9704,
+    "S": 47.9167,
+    "T": 27.3645,
+    "O": 27.0833,
+    "C": 34.4574,
+    "D": 20.8333
+   }
+  },
+  {
+   "year": 2022,
+   "group": "NHTM Cổ phần",
+   "banks": [
+    "mb",
+    "tcb"
+   ],
+   "n_banks": 2,
+   "score_mean": 62.7658,
+   "data_confidence_mean": 0.5,
+   "pillar_p_mean": {
+    "K": 85.1482,
+    "S": 56.7778,
+    "T": 60.0,
+    "O": 65.0,
+    "C": 44.0439,
+    "D": 65.625
+   }
+  },
+  {
+   "year": 2022,
+   "group": "NHTM Nhà nước",
+   "banks": [
+    "agribank",
+    "bidv",
+    "vcb"
+   ],
+   "n_banks": 3,
+   "score_mean": 37.3823,
+   "data_confidence_mean": 0.303,
+   "pillar_p_mean": {
+    "K": 57.6222,
+    "S": 47.0833,
+    "T": 27.088,
+    "O": 41.6667,
+    "C": 34.1667,
+    "D": 16.6667
+   }
+  },
+  {
+   "year": 2023,
+   "group": "NHTM Cổ phần",
+   "banks": [
+    "mb",
+    "tcb"
+   ],
+   "n_banks": 2,
+   "score_mean": 58.3162,
+   "data_confidence_mean": 0.5454,
+   "pillar_p_mean": {
+    "K": 76.8,
+    "S": 54.3472,
+    "T": 52.5,
+    "O": 70.0,
+    "C": 40.0,
+    "D": 56.25
+   }
+  },
+  {
+   "year": 2023,
+   "group": "NHTM Nhà nước",
+   "banks": [
+    "agribank",
+    "bidv",
+    "vcb"
+   ],
+   "n_banks": 3,
+   "score_mean": 43.9642,
+   "data_confidence_mean": 0.3333,
+   "pillar_p_mean": {
+    "K": 56.3233,
+    "S": 45.8333,
+    "T": 49.9619,
+    "O": 36.6667,
+    "C": 47.9167,
+    "D": 27.0833
+   }
+  },
+  {
+   "year": 2024,
+   "group": "NHTM Cổ phần",
+   "banks": [
+    "mb",
+    "tcb"
+   ],
+   "n_banks": 2,
+   "score_mean": 63.7361,
+   "data_confidence_mean": 0.5455,
+   "pillar_p_mean": {
+    "K": 90.0,
+    "S": 48.6667,
+    "T": 77.5,
+    "O": 72.5,
+    "C": 50.0,
+    "D": 43.75
+   }
+  },
+  {
+   "year": 2024,
+   "group": "NHTM Nhà nước",
+   "banks": [
+    "agribank",
+    "bidv",
+    "vcb"
+   ],
+   "n_banks": 3,
+   "score_mean": 59.0179,
+   "data_confidence_mean": 0.3636,
+   "pillar_p_mean": {
+    "K": 85.8333,
+    "S": 48.0093,
+    "T": 67.3791,
+    "O": 46.6667,
+    "C": 60.3854,
+    "D": 45.8333
+   }
+  },
+  {
+   "year": 2025,
+   "group": "NHTM Cổ phần",
+   "banks": [
+    "mb",
+    "tcb"
+   ],
+   "n_banks": 2,
+   "score_mean": 74.1732,
+   "data_confidence_mean": 0.6818,
+   "pillar_p_mean": {
+    "K": 86.6572,
+    "S": 53.4028,
+    "T": 85.0,
+    "O": 87.5,
+    "C": 60.6046,
+    "D": 71.875
+   }
+  },
+  {
+   "year": 2025,
+   "group": "NHTM Nhà nước",
+   "banks": [
+    "agribank",
+    "bidv",
+    "vcb"
+   ],
+   "n_banks": 3,
+   "score_mean": 64.8918,
+   "data_confidence_mean": 0.4848,
+   "pillar_p_mean": {
+    "K": 79.6282,
+    "S": 62.4537,
+    "T": 70.6021,
+    "O": 56.6667,
+    "C": 63.75,
+    "D": 56.25
+   }
+  }
+ ],
+ "note": "Trung bình giản đơn theo nhóm với số ngân hàng rất nhỏ (3 và 2): chỉ mang tính mô tả."
+}

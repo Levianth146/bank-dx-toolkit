@@ -1,0 +1,389 @@
+{
+ "score_var": "dbi",
+ "lag": 1,
+ "method": "Spearman ρ và Kendall τ-b",
+ "metrics": [
+  {
+   "metric": "roe",
+   "name": "ROE (LNST cổ đông mẹ / vốn CSH thuộc cổ đông mẹ bình quân)",
+   "unit": "%",
+   "expected_sign": 1,
+   "by_year": [
+    {
+     "year": 2020,
+     "n": 5,
+     "spearman": 0.6,
+     "kendall": 0.4,
+     "p_kendall": 0.4833,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2021,
+     "n": 5,
+     "spearman": -0.4617,
+     "kendall": -0.3162,
+     "p_kendall": 0.4485,
+     "low_n": true,
+     "consistent_with_expected": false
+    },
+    {
+     "year": 2022,
+     "n": 5,
+     "spearman": -0.3,
+     "kendall": -0.2,
+     "p_kendall": 0.8167,
+     "low_n": true,
+     "consistent_with_expected": false
+    },
+    {
+     "year": 2023,
+     "n": 5,
+     "spearman": -0.2052,
+     "kendall": -0.1054,
+     "p_kendall": 0.8005,
+     "low_n": true,
+     "consistent_with_expected": false
+    },
+    {
+     "year": 2024,
+     "n": 5,
+     "spearman": -0.2052,
+     "kendall": -0.1054,
+     "p_kendall": 0.8005,
+     "low_n": true,
+     "consistent_with_expected": false
+    },
+    {
+     "year": 2025,
+     "n": 0,
+     "spearman": null,
+     "kendall": null,
+     "p_kendall": null,
+     "low_n": true,
+     "consistent_with_expected": null
+    }
+   ],
+   "pooled": {
+    "n": 25,
+    "spearman": -0.2824,
+    "kendall": -0.2109,
+    "p_kendall": 0.1461,
+    "low_n": false,
+    "consistent_with_expected": false
+   },
+   "pooled_within_year": {
+    "n": 25,
+    "spearman": -0.1117,
+    "consistent_with_expected": false
+   }
+  },
+  {
+   "metric": "roa",
+   "name": "ROA (LNST cổ đông mẹ / tổng tài sản bình quân)",
+   "unit": "%",
+   "expected_sign": 1,
+   "by_year": [
+    {
+     "year": 2020,
+     "n": 5,
+     "spearman": 0.7,
+     "kendall": 0.6,
+     "p_kendall": 0.2333,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2021,
+     "n": 5,
+     "spearman": 0.5643,
+     "kendall": 0.527,
+     "p_kendall": 0.2065,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2022,
+     "n": 5,
+     "spearman": 0.8,
+     "kendall": 0.6,
+     "p_kendall": 0.2333,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2023,
+     "n": 5,
+     "spearman": 0.6669,
+     "kendall": 0.527,
+     "p_kendall": 0.2065,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2024,
+     "n": 5,
+     "spearman": -0.2052,
+     "kendall": -0.1054,
+     "p_kendall": 0.8005,
+     "low_n": true,
+     "consistent_with_expected": false
+    },
+    {
+     "year": 2025,
+     "n": 0,
+     "spearman": null,
+     "kendall": null,
+     "p_kendall": null,
+     "low_n": true,
+     "consistent_with_expected": null
+    }
+   ],
+   "pooled": {
+    "n": 25,
+    "spearman": 0.4876,
+    "kendall": 0.3198,
+    "p_kendall": 0.0275,
+    "low_n": false,
+    "consistent_with_expected": true
+   },
+   "pooled_within_year": {
+    "n": 25,
+    "spearman": 0.5077,
+    "consistent_with_expected": true
+   }
+  },
+  {
+   "metric": "cir",
+   "name": "CIR (chi phí hoạt động / tổng thu nhập hoạt động)",
+   "unit": "%",
+   "expected_sign": -1,
+   "by_year": [
+    {
+     "year": 2020,
+     "n": 5,
+     "spearman": -0.6,
+     "kendall": -0.4,
+     "p_kendall": 0.4833,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2021,
+     "n": 5,
+     "spearman": -0.0513,
+     "kendall": 0.1054,
+     "p_kendall": 0.8005,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2022,
+     "n": 5,
+     "spearman": -0.7,
+     "kendall": -0.6,
+     "p_kendall": 0.2333,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2023,
+     "n": 5,
+     "spearman": -0.7182,
+     "kendall": -0.527,
+     "p_kendall": 0.2065,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2024,
+     "n": 5,
+     "spearman": -0.0513,
+     "kendall": 0.1054,
+     "p_kendall": 0.8005,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2025,
+     "n": 0,
+     "spearman": null,
+     "kendall": null,
+     "p_kendall": null,
+     "low_n": true,
+     "consistent_with_expected": null
+    }
+   ],
+   "pooled": {
+    "n": 25,
+    "spearman": -0.3495,
+    "kendall": -0.2518,
+    "p_kendall": 0.0828,
+    "low_n": false,
+    "consistent_with_expected": true
+   },
+   "pooled_within_year": {
+    "n": 25,
+    "spearman": -0.4264,
+    "consistent_with_expected": true
+   }
+  },
+  {
+   "metric": "casa",
+   "name": "CASA (tiền gửi không kỳ hạn / tiền gửi khách hàng)",
+   "unit": "%",
+   "expected_sign": 1,
+   "by_year": [
+    {
+     "year": 2020,
+     "n": 5,
+     "spearman": 0.9,
+     "kendall": 0.8,
+     "p_kendall": 0.0833,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2021,
+     "n": 5,
+     "spearman": 0.6669,
+     "kendall": 0.527,
+     "p_kendall": 0.2065,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2022,
+     "n": 5,
+     "spearman": 0.9,
+     "kendall": 0.8,
+     "p_kendall": 0.0833,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2023,
+     "n": 4,
+     "spearman": 0.7379,
+     "kendall": 0.5477,
+     "p_kendall": 0.2786,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2024,
+     "n": 3,
+     "spearman": 0.5,
+     "kendall": 0.3333,
+     "p_kendall": 1.0,
+     "low_n": true,
+     "consistent_with_expected": true
+    },
+    {
+     "year": 2025,
+     "n": 0,
+     "spearman": null,
+     "kendall": null,
+     "p_kendall": null,
+     "low_n": true,
+     "consistent_with_expected": null
+    }
+   ],
+   "pooled": {
+    "n": 22,
+    "spearman": 0.6542,
+    "kendall": 0.4681,
+    "p_kendall": 0.0027,
+    "low_n": false,
+    "consistent_with_expected": true
+   },
+   "pooled_within_year": {
+    "n": 22,
+    "spearman": 0.7665,
+    "consistent_with_expected": true
+   }
+  },
+  {
+   "metric": "non_interest_share",
+   "name": "Tỷ trọng thu nhập ngoài lãi (TOI − thu nhập lãi thuần) / TOI",
+   "unit": "%",
+   "expected_sign": null,
+   "by_year": [
+    {
+     "year": 2020,
+     "n": 5,
+     "spearman": 0.9,
+     "kendall": 0.8,
+     "p_kendall": 0.0833,
+     "low_n": true,
+     "consistent_with_expected": null
+    },
+    {
+     "year": 2021,
+     "n": 5,
+     "spearman": -0.3591,
+     "kendall": -0.3162,
+     "p_kendall": 0.4485,
+     "low_n": true,
+     "consistent_with_expected": null
+    },
+    {
+     "year": 2022,
+     "n": 5,
+     "spearman": 0.0,
+     "kendall": -0.2,
+     "p_kendall": 0.8167,
+     "low_n": true,
+     "consistent_with_expected": null
+    },
+    {
+     "year": 2023,
+     "n": 5,
+     "spearman": 0.5643,
+     "kendall": 0.3162,
+     "p_kendall": 0.4485,
+     "low_n": true,
+     "consistent_with_expected": null
+    },
+    {
+     "year": 2024,
+     "n": 5,
+     "spearman": 0.1026,
+     "kendall": 0.1054,
+     "p_kendall": 0.8005,
+     "low_n": true,
+     "consistent_with_expected": null
+    },
+    {
+     "year": 2025,
+     "n": 0,
+     "spearman": null,
+     "kendall": null,
+     "p_kendall": null,
+     "low_n": true,
+     "consistent_with_expected": null
+    }
+   ],
+   "pooled": {
+    "n": 25,
+    "spearman": 0.0872,
+    "kendall": 0.0544,
+    "p_kendall": 0.7076,
+    "low_n": false,
+    "consistent_with_expected": null
+   },
+   "pooled_within_year": {
+    "n": 25,
+    "spearman": 0.2437,
+    "consistent_with_expected": null
+   }
+  }
+ ],
+ "notes": [
+  "Mỗi năm chỉ có tối đa 5 ngân hàng: hệ số theo năm chỉ mang tính mô tả, không dùng để kết luận quan hệ nhân quả; p_value gần như không có ý nghĩa thống kê ở n này.",
+  "pooled gộp nhiều năm nên cùng một ngân hàng lặp lại, các quan sát không độc lập; pooled_within_year đã loại xu hướng chung theo năm bằng hạng phần trăm trong từng năm.",
+  "Biến điểm là DBI trung bình 6 trụ cột (chấm từ văn bản, độc lập với báo cáo tài chính).",
+  "expected_sign là dấu kỳ vọng nếu điểm cao đi cùng hiệu quả tốt hơn (CIR thấp hơn là tốt hơn); consistent_with_expected so dấu Spearman với kỳ vọng đó.",
+  "lag=1: điểm năm t được ghép với chỉ tiêu năm t+1, nên năm cuối của điểm không có cặp."
+ ]
+}

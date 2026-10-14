@@ -1,0 +1,858 @@
+{
+ "summary": {
+  "bank": "vcb",
+  "bank_name": "Vietcombank",
+  "group": "NHTM Nhà nước",
+  "year": 2022,
+  "score": 45.4167,
+  "rank": 3,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.0909,
+  "dti_indicators_available": 1,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 1/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 68.75,
+    "dti": null,
+    "p": 68.75,
+    "n_dti": 0,
+    "n_dti_total": 3,
+    "dti_applied": false
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 37.5,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 43.75,
+    "dti": 0.0,
+    "p": 35.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 16,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "i với ngân sách Nhà nước, thể hiện hiệu quả vượt trội trong hoạt động kinh doanh của Vietcombank, đồng thời tiếp tục khẳng định vị thế dẫn đầu trong các doanh nghiệp đóng góp lớn nhất cho ngân sách Nhà nước trong nhiều năm liên tục. CHUYỂN ĐỔI THÀNH CÔNG MÔ HÌNH BÁN HÀNG TỔNG LỰC (SALES & SERVICES) NGÂN HÀNG SỐ 1 ĐÓNG GÓP VỀ THUẾ CHO NGÂN SÁCH NHÀ NƯỚC 4.97/5 điểm ở mức gần đạt tối đa BQ CHỈ SỐ CS"
+   },
+   "note": "24 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 28,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "ững kết quả Vietcombank trong suốt năm 2021. Với giải thưởng này, IFM ghi nhận nỗ lực của Vietcombank trong việc sáng tạo, phát triển và cải tiến chất lượng các ứng dụng công nghệ số nhằm mang đến cho người dùng sự trải nghiệm tối ưu. Theo đó, tất cả nhu cầu tài chính như: các dịch vụ liên quan đến mở tài khoản trực tuyến, thẻ tín dụng, tài khoản tiết kiệm, tài khoản thanh toán, chuyển tiền qua số"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 42,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "đảm bảo. Tăng cường kiểm soát rủi ro hoạt động, chú trọng công tác kiểm tra, giám sát hoạt động của PGD, đặc biệt các PGD ở cách xa trụ sở chính của Chi nhánh. 3 TẬP TRUNG ĐẨY MẠNH CÔNG TÁC PHÁT TRIỂN KHÁCH HÀNG Đẩy mạnh bán hàng theo chuỗi và hệ sinh thái; triển khai chính sách khách hàng dành cho phân khúc khách hàng mục tiêu. Triển khai quyết liệt việc chuyển dịch khách hàng, nhóm khách hàng, c"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 56,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "hài lòng với chất lượng các cuộc trao đổi, trên 95% đánh giá tích cực đối với mức độ công khai thông tin của hoạt động IR của VCB. Bên cạnh đó, Vietcombank tiếp tục được nhận hàng loạt các giải thưởng thường niên danh giá do Forbes, Brand Finance và The Asian Banker trao tặng. Những giải thưởng và phản hồi tích cực từ nhà đầu tư là minh chứng cho những cống hiến và nỗ lực không mệt mỏi trong công"
+   },
+   "note": "9 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 7,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "u hành của Ngân hàng Nhà nước, Vietcombank đã đề ra định hướng phát triển phù hợp với diễn biến kinh tế vĩ mô, thực tiễn của thị trường và đã hoàn thành xuất sắc, toàn diện các chỉ tiêu kinh doanh, tạo tiền đề quan trọng để hiện thực hóa các mục tiêu phát triển chiến lược đến năm 2025 và định hướng đến năm 2030. Quy mô kinh doanh tăng trưởng cao, tín dụng tăng 19% so với cuối năm 2021, đạt hơn 1,1"
+   },
+   "note": "19 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 83,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "oanh 183.421.489 (56.552.473) STT Chỉ tiêu 2022 Triệu VND 2021 Triệu VND LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ 01 Mua sắm tài sản cố định (711.567) (1.621.433) 02 Tiền thu từ thanh lý, nhượng bán tài sản cố định 15.753 8.456 03 Tiền chi cho thanh lý, nhượng bán tài sản cố định (4.808) (1.201) 07 Tiền chi đầu tư, góp vốn vào các đơn vị khác - (83.502) 08 Tiền thu đầu tư, góp vốn vào các đơn vị khác 2"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "GOV"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 42,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "giá, theo dõi, kiểm tra khách hàng, chất lượng tài sản đảm bảo. Tăng cường kiểm soát rủi ro hoạt động, chú trọng công tác kiểm tra, giám sát hoạt động của PGD, đặc biệt các PGD ở cách xa trụ sở chính của Chi nhánh. 3 TẬP TRUNG ĐẨY MẠNH CÔNG TÁC PHÁT TRIỂN KHÁCH HÀNG Đẩy mạnh bán hàng theo chuỗi và hệ sinh thái; triển khai chính sách khách hàng dành cho phân khúc khách hàng mục tiêu. Triển khai qu"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 12,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "y định. Ngày 12/11/2019 Ký kết hợp đồng phân phối bảo hiểm với Công ty bảo hiểm FWD có giá trị lớn nhất trong lĩnh vực bảo hiểm nhân thọ tính đến thời điểm ký kết. Năm 2019 Trở thành ngân hàng Việt Nam đầu tiên có lợi nhuận đạt mốc 1 tỷ USD. Ngày 27/01/2020 Go-live thành công hệ thống ngân hàng lõi Core banking. Năm 2020 - nay Vững vàng vượt qua đại dịch Covid-19, Vietcombank khẳng định vững chắc"
+   },
+   "note": "3 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 68,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "H HÀNG Trung tâm chăm sóc khách hàng và số hotline hoạt động 24/7 24/7 Tiếp nhận thường xuyên, liên tục 24/7 các thông tin, yêu cầu của khách hàng thông qua các kênh như hotline chăm sóc khách hàng, website VCB, email doanh nghiệp, mạng xã hội. Đẩy mạnh ứng dụng công nghệ, đầu tư hệ thống giải pháp trí tuệ nhân tạo (Artificial Intelligence) trong công tác vận hành, chăm sóc khách hàng. Thực hiện k"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 39,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "anh nghiệp tiêu biểu vì người lao động”. VCB vinh dự được Đảng, Nhà nước trao tặng danh hiệu Anh hùng Lao động. Hoàn thành việc xây dựng phương án nhận CGBB một TCTD, đáp ứng tiến độ của NHNN. 7 TRIỂN KHAI KẾ HOẠCH HÀNH ĐỘNG CHUYỂN ĐỔI; THỰC HIỆN NÂNG CAO CHẤT LƯỢNG DỊCH VỤ, TRẢI NGHIỆM KHÁCH HÀNG; TỰ ĐỘNG HÓA VÀ TỐI ƯU HÓA VẬN HÀNH Chỉ đạo triển khai có kết quả các dự án công nghệ chiến lược của"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 39,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "át, đôn đốc và chỉ đạo công tác xử lý thu hồi nợ có vấn đề tại các Chi nhánh. Đảm bảo các chỉ tiêu an toàn về thanh khoản tuân thủ theo quy định. Duy trì đầy đủ các công cụ kiểm soát và hạn chế rủi ro hoạt động; duy trì hoạt động kinh doanh liên tục. Hoàn thành dự án “Tư vấn nâng cao năng lực phòng chống rửa tiền/chống tài trợ khủng bố của VCB”. 5 KIỆN TOÀN MÔ HÌNH TỔ CHỨC VÀ PHÁT TRIỂN MẠNG LƯỚI"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 39,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "UỒN NHÂN LỰC Kiện toàn nhân sự cấp cao, nhân sự cấp trung; sắp xếp lại mô hình tổ chức tại Trụ sở chính, mô hình RTOM tại Chi nhánh. Đẩy mạnh hoạt động đào tạo, số lượt đào tạo đạt 4,86 lượt/cán bộ, tăng 42,6% so với 2021; đào tạo cán bộ, lãnh đạo TSC các kiến thức cơ bản và nâng cao về phương thức Agile, Mô hình cung ứng số. Công tác nghiên cứu khoa học được đẩy mạnh và triển khai nghiêm túc, bài"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 23,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "và một số định hướng chính như sau: 06 ĐỘT PHÁ CHIẾN LƯỢC 1 Triển khai Chương trình hành động chuyển đổi số và Kế hoạch hành động chuyển đổi đúng tiến độ đã phê duyệt, đảm bảo chất lượng. 2 Nâng cao chất lượng nguồn nhân lực, trong đó chú trọng nguồn nhân lực thích ứng cho chuyển đổi số. Phát triển văn hóa số và ứng dụng phương pháp làm việc Agile. 3 Đổi mới mô hình tăng trưởng gắn với chuyển dịch"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 17,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "t động đào tạo; Chú trọng các chương trình đào tạo về Công nghệ thông tin và Chuyển đổi số; Đào tạo cho các vị trí tại Chi nhánh theo Bản đồ đào tạo; Triển khai các khóa đào tạo cho cán bộ theo các chương trình thường xuyên và chương trình chuyên sâu với đa dạng các hình thức tập trung, trực tuyến, E-learning. VIETCOMBANK XỨNG DANH LÀ TỔ CHỨC TÍN DỤNG ĐẦU MỐI THU XẾP VỐN CHO CÁC DỰ ÁN LỚN CHUYỂN Đ"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 39,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "ẩy mạnh hoạt động đào tạo, số lượt đào tạo đạt 4,86 lượt/cán bộ, tăng 42,6% so với 2021; đào tạo cán bộ, lãnh đạo TSC các kiến thức cơ bản và nâng cao về phương thức Agile, Mô hình cung ứng số. Công tác nghiên cứu khoa học được đẩy mạnh và triển khai nghiêm túc, bài bản. Tổ chức thành công cuộc thi sáng kiến “Vietcombank: 60 năm Đổi mới & Sáng tạo”. 6 4,86 lượt/cán bộ487 tỷ đồng 36/50 dự án tăng 4"
+   },
+   "note": "9 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 72,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "n dụng. Bên cạnh đó, để có được nguồn nhân sự đầu vào chất lượng, Vietcombank thực hiện đa dạng hóa phương thức và nguồn tuyển dụng, có các chính sách ưu đãi, thu hút nhân tài; ưu tiên tuyển dụng sinh viên xuất sắc, nhân sự có kiến thức, trình độ về công nghệ thông tin và các kỹ năng chuyển đổi số, nhân sự số hóa có trình độ chuyên môn giỏi, tính chuyên nghiệp cao, đáp ứng nhu cầu quản trị vận hàn"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 58,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "eo các phương pháp tiên tiến. Các mô hình lượng hóa rủi ro đã được xây dựng với tỷ lệ bao phủ gần như toàn bộ danh mục của ngân hàng. Bên cạnh đó, các hệ thống công nghệ thông tin hỗ trợ cũng thường xuyên được Vietcombank nâng cấp nhằm đáp ứng tốt nhất yêu cầu quản trị. Công tác rà soát và nâng cao chất lượng dữ liệu tại Vietcombank ngày càng được chú trọng và duy trì thường xuyên, liên tục nhằm đ"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": 23,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": "thu dịch vụ trong tổng thu nhập hoạt động kinh doanh. 5 Triển khai có hiệu quả, chất lượng, đúng tiến độ Chương trình hành động chuyển đổi số và Kế hoạch hành động chuyển đổi; Chuyển đổi mô hình tổ chức theo Agile; Phát triển sản phẩm, dịch vụ số gắn với nâng cao các năng lực về công nghệ, năng lực phân tích dữ liệu và năng lực số hóa. 6 Tiếp tục kiện toàn bộ máy tổ chức, phát triển mạng lưới và n"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "vcb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/vcb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 90.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_txn_share năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu nguyên giá phần mềm hoặc tổng tài sản"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 0.129,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 38.7,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu giờ đào tạo"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 6,
+   "1": 2,
+   "2": 9,
+   "3": 3,
+   "4": 4
+  }
+ }
+}

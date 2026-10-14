@@ -1,0 +1,860 @@
+{
+ "summary": {
+  "bank": "mb",
+  "bank_name": "MB",
+  "group": "NHTM Cổ phần",
+  "year": 2020,
+  "score": 47.6995,
+  "rank": 2,
+  "maturity_level": "Mức 2 - Bắt đầu",
+  "maturity_level_number": 2,
+  "maturity_level_name": "Bắt đầu",
+  "data_confidence": 0.2727,
+  "dti_indicators_available": 3,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 3/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 62.5,
+    "dti": 94.4444,
+    "p": 68.8889,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 37.5,
+    "dti": 77.7716,
+    "p": 45.5543,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 31.25,
+    "dti": 77.5194,
+    "p": 40.5039,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "mb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 6,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "ously and drastically 02 PROJECTS 22 According to implementation roadmap until 2022 (lower than 2019 ratio of 0.98%) Comprehensively transformed to digital Implemented a variety of new technology development projects Actively implemented integrated digital marketing to create breakthrough growth in digital banking, attracting 1.86 million new app users generating 90 million transactions (3 times h"
+   },
+   "note": "22 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "mb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 49,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "re the goals set that meet convenient transaction needs, with breakthrough growth in attracting at the beginning of the year, new customers ( 2 million new users and 90 million e-transactions, increased 3 times specifically: compared to 2019); successfully deployed electric Know Your Customer tool (eKYC) via face and voice recognition on MBBank APP. At the same time, the Bank focused Consolidated"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "mb",
+   "year": 2020,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 45,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "MBBank APP acheiving good growth in demand deposit mobilization. Total demand deposit mobilization reached VND 127,313 billion, increased by 22% compared to 2019, accounting for more than 41% of total deposits. MB continued implementing at counter business model transformation project, focusing on customer experience on trading floor by improving the service quality. The bank also completed Smart"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "mb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 44,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "d Profit before Taxes (MB only) 9,698 104.4% Outperformed Business results in 2020 MB implemented the plan of 2020 sticking to the following goals: “Maintain in Top 5 commercial banks of operational quality and efficiency, lead in digital application” with management motto: “Foundation improvement, digital transformation, comprehensive growth, efficiency and sustainability” and actively implemente"
+   },
+   "note": "25 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'GOV'] (all)"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "mb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 10,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "be conferred the title “Hero of Labour”. This period marked an important turning point, creating the foundation for vigorous development in subsequent years. During this period, MB adopted an array of comprehensive reform solutions from expansion of its operation scale, development of its network, investment in technology, strengthening of personnel, orientation to customers with the segregation"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "mb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 40,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "measures, information technology risk management from people, regulatory policies, standards, processes, and information security solutions. MB has been applying the best international standards for managing this type of risk: Standards of COBIT, ITIL, ISO 27001, etc. MB also cooperated with IBM’s strategic partner to implement a comprehensive information technology transformation project to enha"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "mb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 45,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "t mobilization 325,713 127,313 23% 22% compared to 2019 compared to 2019 Established a digital transformation office, implemented 5 digital transformation initiatives: smart sales, customer insights, smart operation, smart data and finance management, smart risk management, and flexible information technology infrastructure. 2020 ANNUAL REPORT REPORT OF THE BOARD OF MANAGEMENT 88 89"
+   },
+   "note": "10 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "mb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 51,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "city with the orientation of General Meeting of Shareholders in 2020, BOD directed the implementation of procurement/ investment projects of technology solutions (core and non-core systems of MB, tablet provision package and data service under Smart RM project, Virtual Desktop Infrastructure (VDI), Smart OTP solution, on-line Oracle database backup solution, and Oracle database synchronization sol"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "mb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 40,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "ted IT and digital banking risk management in the context of the technology era, to ensure risk management going in line with tight management of the Bank’s new moves. MB is one of the first banks applying new technologies for business and risk management such as EKYC, RPA, API, and Micro-services, OCR, Autotest… At the same time, MB has adopted comprehensive information security measures, informa"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "mb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 6,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "ntegrated digital marketing to create breakthrough growth in digital banking, attracting 1.86 million new app users generating 90 million transactions (3 times higher than that of 2019). Continuously developed and upgraded more features for MBBank APP and MBBank BIZ to meet customer needs 2019 2020 Automation, Robotics Applications in operation processes, BPM improvements, CRM-Smart RM... made ban"
+   },
+   "note": "6 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "mb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 20,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "Development orientation Focus on effective, timely and complete implementation of 2017-2021 strategy and 2022-2026 strategy establishment. Focus on 5 transformation initiatives with 22 key projects targeting to be the leading digitalized enterprises including: MB established several business projects including Customer Insight, Smart Channel, Smart Marketing, Digital Lending, Customer onboarding i"
+   },
+   "note": "4 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "mb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 40,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "MB - MB completed 3 pillars of Basel 2 on bank governance in line with international standards, compliance with Circular 41, and Circular 13 by the State Bank of Vietnam. MB projected sufficient capital to cover all critical risks including the risks assessed at pillar 1 - Credit Risk, Market Risk, Operational Risk and Pillar 2 - Concentration Risk, interest Rate Risk on the bank register under no"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "mb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 37,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "g time was 30 hours per employee, ratio of on-line vs on-site training in 2020 was 90% - 10%, consistent with digital transformation orientation and in response to Covid-19 pandemic. To successfully implement digital transformation, MB determined that Mbers should be equipped with digital thinking, digital culture, and digital actions. The foundation to achieve these skills is the flexible learnin"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "mb",
+   "year": 2020,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 30,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "0 General Meeting of Shareholders, she was elected as a member of Supervisory Board for 2019 - 2024 period. 100% of Supervisory Board members voted and agreed Ms. Nguyen Thi An Binh to hold position of Deputy Head of Supervisory Board. Ms. Pham Thu Ngoc graduated a Bachelor degree in Economics from Academy of Finance, completed the Masters’ degree in Economics from University of Nantes, France, an"
+   },
+   "note": "7 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "mb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 6,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "ocesses, BPM improvements, CRM-Smart RM... made banking activities more efficient. Highly efficient, secure information technology system 03 04 Attracted MILLION NEW APP USERS 1.86 Featured milestones in 2020 Smart sales and customer insights Smart operations Smart risk management Smart finance and data management Flexible information technology infrastructure 6.5% compared to 2019 MILLION TRANSAC"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "mb",
+   "year": 2020,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 20,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "ze its resources. Turnaround time (TAT) commitments allow proper competition and motivate MB to be listed in Top 3 Commercial banks. MB enhances the quality of customer data and masters the data by investing in modern data management systems such as Operation Data Store (ODS), meta data, optimizing Data Warehouse (DWH); completing the data governance policy framework and data quality measurement t"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "mb",
+   "year": 2020,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": 41,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": "ere also modeled and measured by MB: Models of cash in/cash out forecast, liquidity risk management ensure improved efficiency in balancing, capital use and support proactive monitoring of daily liquidity indicators as required; Var model controls and measures market risk... To establish models for data-driven decision-making, MB also implemented multiple initiatives, projects to standardize data"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "mb",
+   "year": 2020,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2020_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 85.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 94.4444,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ cùng định nghĩa"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.2363,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 77.7716,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "dùng số cuối kỳ (thiếu năm trước)"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": null,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 30.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 77.5194,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 7,
+   "1": 6,
+   "2": 3,
+   "3": 2,
+   "4": 6
+  }
+ }
+}

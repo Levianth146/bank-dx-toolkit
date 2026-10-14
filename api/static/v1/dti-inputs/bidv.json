@@ -1,0 +1,1998 @@
+{
+ "bank": "bidv",
+ "year": null,
+ "indicator": null,
+ "variable": null,
+ "scope": "all",
+ "formula": null,
+ "count": 108,
+ "items": [
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "casa_deposits",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: chưa trích được Demand deposits KH từ BCTC 2020 OCR",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "casa_deposits",
+   "value": 267330692.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 49,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=17; Demand deposits 267,330,692 221,331,066 ⏎ -In VND 241,146,028 199,918,795 ⏎ - In foreign currencies 26,184,664 21,412,271 ⏎ Term deposits 1, | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "casa_deposits",
+   "value": 270546799.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 48,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "Demand deposits KH 270.546.799 — giữ | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "casa_deposits",
+   "value": 334075620.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 49,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "Note 19 Demand deposits KH 334.075.620 — giữ; CHEO_NAM khớp nhầm placements | đã kiểm: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "casa_deposits",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: note 19 CASA KH không trích được từ OCR (số cũ 140.061.497 là placements TCTD)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "casa_deposits",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: note Demand deposits KH chưa trích được từ OCR 2025",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "customer_deposits",
+   "value": 1226673942.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 15,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "page-confirm; . Deposits from customers 20 1,226,673,942 1,114,162,624 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "customer_deposits",
+   "value": 1380397799.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 CĐKT EN p8 Opening balance: Deposits from customers = 1,380,397,799 (= cuối 2021)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "customer_deposits",
+   "value": 1473598150.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Il. Deposits from customers 20 1,473,598,150 1,380,397,799 ⏎ IV. Grants, trusted funds and borrowings where the 21 13,237,626 14,349,996 ⏎ B | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "customer_deposits",
+   "value": 1704690185.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p8: Deposits from customers 1,704,690,185",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "customer_deposits",
+   "value": 1953165486.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; ill, Deposits from customers 19 1,953,165,486 1,704,690,185 ⏎ IV. Derivatives and other financial liabilities 10 - 328,155 ⏎ V. Grants, trus | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "customer_deposits",
+   "value": 2222991628.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; II. Deposits from customers 20 2,222,991,628 1,953,165,486 ⏎ Vv. Derivatives and other financial liabilities 11 230,557 - ⏎ Vv. Grants, trus | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "digital_customers",
+   "value": 15000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/bidv/2023_bctn.pdf",
+   "page": 54,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/acd4ead4-a670-4ec8-8507-fad89a3da862/BIDV+Annual+Report+2023+-+fn.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-acd4ead4-a670-4ec8-8507-fad89a3da862-p8fkcW7",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: 15 million customers transacted on digital channels",
+   "definition": "transacting",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; không công bố số KH giao dịch số dạng triệu (chỉ có % SP số hóa)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "digital_txn_share",
+   "value": 53.0,
+   "unit": "%",
+   "source_file": "data/raw/bidv/2020_bctn.pdf",
+   "page": 59,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: digital transactions 247m = 53% of total transactions",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "digital_txn_share",
+   "value": 66.9,
+   "unit": "%",
+   "source_file": "data/raw/bidv/2022_bctn.pdf",
+   "page": 51,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2022 p51 comparative: digital channel share 2021 = 66.9%",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "digital_txn_share",
+   "value": 75.9,
+   "unit": "%",
+   "source_file": "data/raw/bidv/2022_bctn.pdf",
+   "page": 51,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p51/p57: proportion of transactions via digital channels = 75.9% (2021 comparative 66.9%)",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "digital_txn_share",
+   "value": 93.0,
+   "unit": "%",
+   "source_file": "data/raw/bidv/2023_bctn.pdf",
+   "page": 54,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/acd4ead4-a670-4ec8-8507-fad89a3da862/BIDV+Annual+Report+2023+-+fn.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-acd4ead4-a670-4ec8-8507-fad89a3da862-p8fkcW7",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: 93% of full-line transactions on digital channels",
+   "definition": "full_line",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2024 (digital/transaction); chỉ thấy % số hóa quy trình nội bộ (vd 90% cash processes) — không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "định nghĩa khác (tỷ lệ sản phẩm số hóa): BCPTBV retail 78% / corporate 69% SP-DV giao hoàn toàn qua kênh số — không phải % giao dịch qua kênh số (chuẩn K-Q1); để trống",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "equity",
+   "value": 76412017.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 15,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 79,646,612−NCI 3,234,595=76,412,017; TOTAL OWNERS' EQUITY 79,646,612 77,652,981 | ⏎ TOTAL LIABILITIES AND OWNERS’ EQUITY 1,516,685,712 1,489,957,293 ⏎ The accompanying notes are | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "equity",
+   "value": 83135098.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 86,329,026−NCI 3,193,928=83,135,098; TOTAL OWNERS' EQUITY 86,329,026 79,646,612 ⏎ TOTAL LIABILITIES AND OWNERS' EQUITY ___1,761,695,792 _1,516,685,712 ⏎ The accompanying notes a | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "equity",
+   "value": 99467856.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 104,189,995 − NCI 4,722,139; CĐKT EN p8: Non-controlling interests 4,722,139; TOTAL OWNERS' EQUITY 104,189,995 → parent=99,467,856 (BCTC2023 restated opening NCI 4,723,238)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "equity",
+   "value": 117900735.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 122,866,889−NCI 4,966,154=117,900,735; TOTAL OWNERS' EQUITY 122,866,889 104,118,505 ⏎ TOTAL LIABILITIES AND OWNERS' EQUITY 2,300,868,728 2,120,676,711 ⏎ The accompanying notes are | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "equity",
+   "value": 139677074.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 144,911,113−NCI 5,234,039=139,677,074; TOTAL OWNERS' EQUITY 144,911,113 122,866,889 ⏎ TOTAL LIABILITIES AND OWNERS’ EQUITY 2,760,791,854 2,300,868,728 ⏎ The accompanying notes are | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "equity",
+   "value": 167988959.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand equity 173,552,902−NCI 5,563,943=167,988,959; TOTAL OWNERS' EQUITY 173,552,902 144,984,194 ⏎ TOTAL LIABILITIES AND OWNERS' EQUITY 3,330,825,720 2,760,906,964 ⏎ The accompanying notes are | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "headcount",
+   "value": 26752.0,
+   "unit": "persons",
+   "source_file": "data/raw/bidv/2021_bctn.pdf",
+   "page": 79,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/6a0859d4-d932-442f-b8f4-a9ee5264b102/BCTN+BIDV+2021+FINAL+ENG.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-6a0859d4-d932-442f-b8f4-a9ee5264b102-p5oXpyz",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2021 p79 bảng HUMAN RESOURCE GROWTH 2019–2021: Total employees 2020 = 26,752. Đã đối PDF bước 3.",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "headcount",
+   "value": 27223.0,
+   "unit": "persons",
+   "source_file": "data/raw/bidv/2021_bctn.pdf",
+   "page": 79,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/6a0859d4-d932-442f-b8f4-a9ee5264b102/BCTN+BIDV+2021+FINAL+ENG.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-6a0859d4-d932-442f-b8f4-a9ee5264b102-p5oXpyz",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2021 p79: Total employees 2021 = 27,223. Đã đối PDF bước 3.",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "headcount",
+   "value": 28435.0,
+   "unit": "persons",
+   "source_file": "data/raw/bidv/2022_bctn.pdf",
+   "page": 39,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2022 p39: TOTAL EMPLOYEES as of 31/12/2022 = 28,435 (+~1,000 vs 2021). Đã đối PDF bước 3.",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "headcount",
+   "value": 29997.0,
+   "unit": "persons",
+   "source_file": "data/raw/bidv/2023_bctn.pdf",
+   "page": 42,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/acd4ead4-a670-4ec8-8507-fad89a3da862/BIDV+Annual+Report+2023+-+fn.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-acd4ead4-a670-4ec8-8507-fad89a3da862-p8fkcW7",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: total employees 29,997 as of 31/12/2023",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "headcount",
+   "value": 28998.0,
+   "unit": "persons",
+   "source_file": "data/raw/bidv/2024_bctn.pdf",
+   "page": 34,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/2961231d-3291-4326-89b6-7350d04c496c/BIDV+Annual+Report+2024.FNL.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-2961231d-3291-4326-89b6-7350d04c496c-pt4shHk",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p34: total employees including bank and subsidiaries = 28,998 (commercial banking average 26,433).",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "headcount",
+   "value": 29273.0,
+   "unit": "persons",
+   "source_file": "data/raw/bidv/2025_bctn.pdf",
+   "page": 32,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/f6519b5f-3abf-4694-a32c-d3057f8d75bc/BIDV_BCTN_2025_EN_%28Interactive%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-f6519b5f-3abf-4694-a32c-d3057f8d75bc-pYsQuS-",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: bank + subsidiaries 29,273 (commercial banking 26,280)",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "nci",
+   "value": 3234595.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 15,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p15: NCI 3,234,595 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "nci",
+   "value": 3193928.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p8: NCI 3,193,928 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "nci",
+   "value": 4722139.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p8: Non-controlling interests 4,722,139; TOTAL OWNERS' EQUITY 104,189,995 → parent=99,467,856 (BCTC2023 restated opening NCI 4,723,238)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "nci",
+   "value": 4966154.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 8,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p8: NCI 4,966,154 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "nci",
+   "value": 5234039.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p10: NCI 5,234,039 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "nci",
+   "value": 5563943.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p10: NCI 5,563,943 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "net_fee_income",
+   "value": 5266381.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 19,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p19: Net gain from services 5,266,381",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "net_fee_income",
+   "value": 6614281.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; u Net gain from services 28 6,614,281 5,266,381 ⏎ Ill Net gain from foreign currency trading 29 1,896,154 1,732,324 ⏎ IV Net gain from tradi | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "net_fee_income",
+   "value": 5648065.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD EN p10: Net gain from services 2022 = 5,648,065",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "net_fee_income",
+   "value": 6569870.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: Net gain from services 6,569,870",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "net_fee_income",
+   "value": 7074445.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Ih. Net fee and commission income 27 7,074,445 6,569,870 ⏎ lll. Net gain from foreign currency trading 28 5,361,499 4,707,371 ⏎ IV. Net gain | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "net_fee_income",
+   "value": 6924228.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "page-confirm; . Net gain from services 28 6,924,228 7,076,856 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "net_interest_income",
+   "value": 35796799.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 19,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; I Net interest income 35,796,799 35,977,808 ⏎ 3. Income from services 8,618,090 7,871,837 ⏎ 4. Expenses on services (3,351,709) (3,605,506) | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "net_interest_income",
+   "value": 46823308.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; I Net interest income 46,823,308 35,796,799 ⏎ 3. Income from services 10,370,092 8,618,090 ⏎ 4. Expenses on services (3,755,811) (3,351,709) | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "net_interest_income",
+   "value": 56069684.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 10, hợp nhất: Net interest income 56,069,684",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "net_interest_income",
+   "value": 56135566.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; L Net interest income 56,135,566. 55,959,698 ⏎ 3. Income from services 11,893,400 10,345,574 ⏎ 4. Expenses on services (5,323,530) (4,694,14 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "net_interest_income",
+   "value": 58007576.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; I. Net interest income 58,007,576 56,135,566 ⏎ 3 Fee and commission income 13,465,312 11,893,400 ⏎ 4, Fee and commission expenses (6,390,867 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "net_interest_income",
+   "value": 63295106.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; L Netinterestincome 63,295,106 58,002,978 ⏎ 3. Income from services 28 13,151,480 13,465,588 ⏎ 4. Expenses on services 28 (6,227,252) (6,388 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "net_profit",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: chưa đối chiếu LNST cổ đông mẹ BCTC 2020",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "net_profit",
+   "value": 10540138.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p10: attributable to equity holders 10.540.138 (không lấy PAT tổng 10.841.271)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "net_profit",
+   "value": 18158502.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 10, hợp nhất: Net profit attributable to equity holders 18,158,502 (không lấy PAT tổng 18,420,014) | CẦN KIỂM: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "net_profit",
+   "value": 21504918.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "cổ đông mẹ, bỏ PAT 21.977.141",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "net_profit",
+   "value": 25140037.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 12, hợp nhất, lợi nhuận cổ đông mẹ (Profit attributable to shareholders of the Bank) 25.140.037 (bỏ PAT tổng 25.604.037)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "net_profit",
+   "value": 29904264.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2025 trang 12, hợp nhất, lợi nhuận cổ đông mẹ (Net profit attributable to equity holders of the Parent Bank) 29.904.264 (bỏ PAT tổng 30.430.130)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "op_profit_before_provision",
+   "value": 32344184.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 19,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p19: Net operating profit before provision 32,344,184",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "op_profit_before_provision",
+   "value": 43028568.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD EN p10 Prior year: Net operating profit before provision = 43,028,568",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "op_profit_before_provision",
+   "value": 47024970.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD EN p10 Current year: Net operating profit before provision = 47,024,970 (BCTC2023 restated prior=46,764,982 — chọn số báo cáo năm 2022)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "op_profit_before_provision",
+   "value": 47932419.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; x Net operating profit before provision expenses for 47,932,419. 46,764,982. ⏎ credit losses ⏎ x Provision expenses for credit losses 9,13 ( | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "op_profit_before_provision",
+   "value": 53094049.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; IX. Netprofit before provision expenses ⏎ for credit losses 53,094,049 47,932,419 ⏎ x Provision expenses for credit losses 33 (21,109,180) ( | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "op_profit_before_provision",
+   "value": 60786180.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; IX. Net operating profit before provision 60,786,180 53,117,111 ⏎ expenses for credit losses ⏎ x Provision expenses for credit losses 9,13 ( | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "opex",
+   "value": 17692960.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 19,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; vill Total operating expenses 33 (17,692,960) (17,257,115) ⏎ I Net operating profit before provision ⏎ expenses for credit losses 32,344,184 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "opex",
+   "value": 19465321.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; Vill Total operating expenses 33 (19,465,321) (17,692,960) ⏎ I Net operating profit before provision expenses ⏎ for credit losses 43,028,568 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "opex",
+   "value": 22557474.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 10, hợp nhất: Total operating expenses 22,557,474 (trước dự phòng)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "opex",
+   "value": 25080598.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; Vill. Total operating expenses 33 (25,080,598) _ (22,714,597) ⏎ x Net operating profit before provision expenses for 47,932,419. 46,764,982. | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "opex",
+   "value": 27966817.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; VII. Total operating expenses 32 (27,966,817) (25,080,598) ⏎ IX. Netprofit before provision expenses ⏎ for credit losses 53,094,049 47,932,4 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "opex",
+   "value": 30427752.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 12,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; Total operating expenses 33 (30,427,752) (27,979,504) ⏎ IX. Net operating profit before provision 60,786,180 53,117,111 ⏎ expenses for credi | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "software_gross_cost",
+   "value": 1654829.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 46,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2021 TM EN p46: Computer software Cost opening balance (= cuối 2020) = 1,654,829",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "software_gross_cost",
+   "value": 1941744.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 46,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2021 TM EN p46: Computer software Cost closing balance = 1,941,744",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "software_gross_cost",
+   "value": 2185898.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 45,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 TM EN p45: Computer software Cost closing = 2,185,898",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "software_gross_cost",
+   "value": 2301868.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 46,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p46: Computer software Cost closing 2.301.868",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "software_gross_cost",
+   "value": 3168238.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 59,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2024 TM EN p59: Computer software Cost closing balance = 3,168,238",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "software_gross_cost",
+   "value": 3443718.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 48,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p48: Computer software Cost closing 3.443.718",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "total_assets",
+   "value": 1516685712.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2020_bctc.pdf",
+   "page": 13,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/945de012-3cab-465a-8731-8bbe49a697b5/VAS+2020+Consol.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-945de012-3cab-465a-8731-8bbe49a697b5-nzTsCjv",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS 1,516,685,712 1,489,957,293 ⏎ The accompanying notes are an integral part of these consolidated financial statements ⏎ 5 ⏎ a x | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "total_assets",
+   "value": 1761695792.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2021_bctc.pdf",
+   "page": 7,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4027d283-aaaf-4b11-86e4-f24c0de2b90a/Scan+BCTC+HN+YE2021+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4027d283-aaaf-4b11-86e4-f24c0de2b90a-ouYoKrf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS 1,761,695,792 1,516,685,712 ⏎ The accompanying notes are an integral part of these consolidated financial statements ⏎ 5 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "total_assets",
+   "value": 2120609384.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2022_bctc.pdf",
+   "page": 7,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/c0ffc47e-5a07-4292-a20c-d6b83506a4d8/SCAN+CONSO+YE2022_0001.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c0ffc47e-5a07-4292-a20c-d6b83506a4d8-ouYoFqt",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS 2,120,609,384 1,761,695,792 ⏎ The accompanying notes are an integral part of these consolidated financial statements ⏎ 5 ⏎ <4 ⏎ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "total_assets",
+   "value": 2300868728.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2023_bctc.pdf",
+   "page": 7,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/937a8aa4-b261-414c-88e7-6187baabedea/SCAN+BCTC+HN+2023+%28E%29.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-937a8aa4-b261-414c-88e7-6187baabedea-oYsXU85",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p7: TOTAL ASSETS 2,300,868,728",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "total_assets",
+   "value": 2760791854.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2024_bctc.pdf",
+   "page": 9,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/15007871-9c72-47c6-98b0-0cf96a54a0e3/20250328+-+BID+-+FS+Consol+2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-15007871-9c72-47c6-98b0-0cf96a54a0e3-pnwrC6K",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS 2,760,791,854 2,300,868,728 ⏎ The accompanying notes are an integral part of these consolidated financial statements | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "total_assets",
+   "value": 3330825720.0,
+   "unit": "VND million",
+   "source_file": "data/raw/bidv/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/468ec557-2377-42b4-99f3-27dfd08659e2/20260330+-+BID+-+FS+Consol+2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-468ec557-2377-42b4-99f3-27dfd08659e2-pQ-g0gw",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=15; TOTAL ASSETS 3,330,825,720 2,760,906,964 ⏎ The accompanying notes are an integral part of these consolidated financial statements ⏎ 5 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "total_customers",
+   "value": 11900000.0,
+   "unit": "customers",
+   "source_file": "data/raw/bidv/2020_bctn.pdf",
+   "page": 26,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "lower_bound; BCTN EN p26: more than 11.6 million individual + more than 300,000 business ≈ 11.9M (cộng cận dưới). Không phải số đếm chính xác.",
+   "definition": "retail+corporate",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2021 trang 1–30,40–60; không có tổng KH exact (chỉ metrics SmartBanking/iBank)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "total_customers",
+   "value": 15500000.0,
+   "unit": "customers",
+   "source_file": "data/raw/bidv/2022_bctn.pdf",
+   "page": 11,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "lower_bound; BCTN p11: 'more than 15 million individual customers and 500,000 corporate customers' → ≈15.5M (cộng cận dưới hai phân khúc). Không phải số đếm chính xác.",
+   "definition": "retail+corporate",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "total_customers",
+   "value": 19430200.0,
+   "unit": "customers",
+   "source_file": "data/raw/bidv/2023_bctn.pdf",
+   "page": 48,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/acd4ead4-a670-4ec8-8507-fad89a3da862/BIDV+Annual+Report+2023+-+fn.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-acd4ead4-a670-4ec8-8507-fad89a3da862-p8fkcW7",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p48: nearly 19 triệu KH cá nhân + 430.200 KH tổ chức = 19.430.200 (cộng hai phân khúc)",
+   "definition": "retail+corporate",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "total_customers",
+   "value": 22500000.0,
+   "unit": "customers",
+   "source_file": "data/raw/bidv/2024_bctn.pdf",
+   "page": 45,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/2961231d-3291-4326-89b6-7350d04c496c/BIDV+Annual+Report+2024.FNL.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-2961231d-3291-4326-89b6-7350d04c496c-pt4shHk",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "lower_bound; BCTN EN p5/p45: nearly 22 million individual + nearly 500,000 corporate ≈ 22.5M (cộng cận dưới hai phân khúc).",
+   "definition": "retail+corporate",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; BCTN/BCPTBV 2025 không nêu tổng KH",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2020,
+   "variable": "training_hours_per_head",
+   "value": 59.0,
+   "unit": "hours",
+   "source_file": "data/raw/bidv/2020_bctn.pdf",
+   "page": 60,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/91a97d72-7053-4959-9684-2cd3285dec9f/BIDV+2020+Annual+Report.Final.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-91a97d72-7053-4959-9684-2cd3285dec9f-p5oXAty",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: average hours of training per employee were 59 hours",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2021,
+   "variable": "training_hours_per_head",
+   "value": 16.2,
+   "unit": "hours",
+   "source_file": "data/raw/bidv/2021_bctn.pdf",
+   "page": 80,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/6a0859d4-d932-442f-b8f4-a9ee5264b102/BCTN+BIDV+2021+FINAL+ENG.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-6a0859d4-d932-442f-b8f4-a9ee5264b102-p5oXpyz",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p80: Average training time 2.70 day/personnel = 16.2 hour/personnel (1 training day = 6 hours; classes by BIDV Research and Training Institute). Định nghĩa: giờ/người/năm theo viện đào tạo; phạm vi hẹp hơn toàn hàng.",
+   "definition": "days_x6h",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2022,
+   "variable": "training_hours_per_head",
+   "value": 87.12,
+   "unit": "hours",
+   "source_file": "data/raw/bidv/2022_bctn.pdf",
+   "page": 102,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/52ab7924-1010-42e8-8416-eddad6e6cbc8/BIDV+Annual+Report+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-52ab7924-1010-42e8-8416-eddad6e6cbc8-p5oXgVY",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p102: Average training duration 14.52 day/person = 87.12 hour/person (1 day=6h; BIDV Research and Training Institute). Định nghĩa: giờ/người/năm theo viện đào tạo.",
+   "definition": "days_x6h",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2023,
+   "variable": "training_hours_per_head",
+   "value": 98.7,
+   "unit": "hours",
+   "source_file": "data/raw/bidv/2023_bcptbv.pdf",
+   "page": 70,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/619c18db-9671-4765-b6a7-86cce73fc794/BIDV-Sustainability+report+2023.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-619c18db-9671-4765-b6a7-86cce73fc794-p5oX4li",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCPTBV p70: Average training duration 98,70 Hour/person (16,45 Day/person; 1 day=6h) — đơn vị giờ/người đã đối chiếu",
+   "definition": "days_x6h",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2024,
+   "variable": "training_hours_per_head",
+   "value": 59.0,
+   "unit": "hours",
+   "source_file": "data/raw/bidv/2024_bcptbv.pdf",
+   "page": 66,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/4ee4ddfc-5d1d-40fd-9c33-6d58811505c6/BIDV_Sustainability+Report_2024.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-4ee4ddfc-5d1d-40fd-9c33-6d58811505c6-psM0r71",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCPTBV EN p66: prose 'average number of training hours per BIDV staff in 2024 will be 59 hours'. Cùng trang biểu đồ có 59 (2023) / 87 (2024) cạnh nhãn middle/senior/average managers — 87 có thể là series quản lý hoặc metric khác; chốt 59 theo câu văn staff-wide; ghi cả 87 trong note.",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "bidv",
+   "year": 2025,
+   "variable": "training_hours_per_head",
+   "value": 60.0,
+   "unit": "hours",
+   "source_file": "data/raw/bidv/2025_bcptbv.pdf",
+   "page": 67,
+   "source_url": "https://bidv.com.vn/wps/wcm/connect/ba12be38-ebb7-4976-aa9e-d20e9e1e7fbd/BIDV_Sustainability+Report_2025.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-ba12be38-ebb7-4976-aa9e-d20e9e1e7fbd-pWbpuLL",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "approx; BCPTBV p67: Average training duration approximately ~60 employee/hours",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  }
+ ],
+ "other_sources": {}
+}

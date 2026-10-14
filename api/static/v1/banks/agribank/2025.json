@@ -1,0 +1,869 @@
+{
+ "summary": {
+  "bank": "agribank",
+  "bank_name": "Agribank",
+  "group": "NHTM Nhà nước",
+  "year": 2025,
+  "score": 53.9539,
+  "rank": 5,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.5455,
+  "dti_indicators_available": 6,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 62.5,
+    "dti": 84.9969,
+    "p": 66.9994,
+    "n_dti": 2,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 56.25,
+    "dti": 55.5556,
+    "p": 56.1111,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 75.0,
+    "dti": 21.814,
+    "p": 64.3628,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 43.75,
+    "dti": 100.0,
+    "p": 55.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 56.25,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 25.0,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 9,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "óp phần củng cố nền tảng hoạt động an toàn, bền vững của Agribank trong bối cảnh thị trường tài chính còn nhiều biến động. Thực hiện mục tiêu số hóa toàn diện, Agribank đã hoàn thiện hệ sinh thái số với các nền tảng trọng điểm như Agribank Plus, Open API và hệ thống Smart Bank. Tỷ lệ giao dịch trên kênh số đạt mức xấp xỉ 97%, minh chứng cho sự chuyển đổi mô hình vận hành từ truyền thống sang ngân"
+   },
+   "note": "23 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 16,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "ng mại theo chuẩn mực quốc tế. 5.1. CUNG ỨNG GIẢI PHÁP TÀI CHÍNH TOÀN DIỆN VÀ LINH HOẠT CHO KHÁCH HÀNG DOANH NGHIỆP Đồng hành cùng sự phục hồi và mở rộng kinh doanh của doanh nghiệp, Agribank đã thiết kế và vận hành các gói giải pháp tài chính linh hoạt, bám sát chu kỳ hoạt động và đặc thù của từng phân khúc khách hàng: - Tối ưu hóa quản trị dòng tiền và huy động vốn: Cung cấp đa dạng các sản phẩm"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 9,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "Thực hiện mục tiêu số hóa toàn diện, Agribank đã hoàn thiện hệ sinh thái số với các nền tảng trọng điểm như Agribank Plus, Open API và hệ thống Smart Bank. Tỷ lệ giao dịch trên kênh số đạt mức xấp xỉ 97%, minh chứng cho sự chuyển đổi mô hình vận hành từ truyền thống sang ngân hàng số hiện đại, lấy trải nghiệm khách hàng làm trung tâm. Với sự tăng trưởng ổn định về tổng tài sản và hiệu quả hoạt độ"
+   },
+   "note": "15 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 14,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "2019 Hoàn thành và phát huy tốt “sứ mệnh kép” của ngân hàng thương mại Nhà nước hàng đầu Việt Nam, vừa phòng chống dịch Covid-19 hiệu quả, vừa góp phần phát triển kinh tế - xã hội. Ban hành Đề án “Chiến lược phát triển Ngân hàng Nông nghiệp và Phát triển nông thôn Việt Nam đến năm 2025, định hướng đến năm 2030”. 2021 Lợi nhuận đạt mốc gần 1 tỷ Đô la Mỹ. Đi đầu trong thực hiện chính sách an sinh x"
+   },
+   "note": "26 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 4,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "hính trị về phát triển kinh tế Nhà nước, đây là động lực mạnh mẽ để Agribank tái định hình. Chúng tôi xác định 05 trụ cột chiến lược cho giai đoạn 2026–2030: Chuyển đổi số và dữ liệu là động lực cốt lõi - Năm 2026, Agribank đặt chuyển đổi số ở vị trí tiên quyết trong toàn bộ hoạt động. Không chỉ là đầu tư công nghệ, đây là cuộc chuyển đổi toàn diện về tư duy quản trị, cách phục vụ khách hàng và mô"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 4,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "xấu — mức thấp nhất từ trước đến nay Dư nợ cho vay nền kinh tế Thu nợ đã xử lý rủi ro — hoàn thành 145% kế hoạch Lợi nhuận trước thuế - cao nhất từ trước đến nay Tỷ trọng tín dụng “Tam nông” ~2,7 1,17% >1,97 17.397 >64% triệu tỷ đồng triệu tỷ đồng tỷ đồng 31.170 tỷ đồng kênh số và đặt nền móng cho hệ sinh thái ngân hàng số hiện đại. Sự hình thành Trung tâm Quản lý Dữ liệu đánh dấu bước chuyển từ"
+   },
+   "note": "18 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 20,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "mại: Agribank xây dựng và áp dụng khung tham chiếu kiến trúc hạ tầng công nghệ thông tin nhằm chuẩn hóa cấu hình kỹ thuật, danh mục công nghệ và tiêu chuẩn triển khai. Việc chuẩn hóa này giúp nâng cao hiệu quả quản lý và khai thác các nguồn lực công nghệ trong toàn hệ thống. - Hiện đại hóa hạ tầng Trung tâm dữ liệu: Ngân hàng triển khai các giải pháp phát triển hạ tầng công nghệ theo mô hình Soft"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 20,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "m họa, đảm bảo hoạt động kinh doanh liên tục và ổn định của Agribank trong mọi tình huống. - Vận hành an toàn và bền vững, bảo vệ hệ thống và dữ liệu trong môi trường số: Cùng với việc phát triển hạ tầng công nghệ và các nền tảng số, Agribank đặc biệt chú trọng công tác vận hành hệ thống và đảm bảo an toàn thông tin. Trong năm 2025, toàn bộ hệ thống công nghệ thông tin của Agribank được vận hành ổ"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 9,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "ược đảm bảo, tỷ lệ nợ xấu được kiểm soát ở mức thấp, góp phần củng cố nền tảng hoạt động an toàn, bền vững của Agribank trong bối cảnh thị trường tài chính còn nhiều biến động. Thực hiện mục tiêu số hóa toàn diện, Agribank đã hoàn thiện hệ sinh thái số với các nền tảng trọng điểm như Agribank Plus, Open API và hệ thống Smart Bank. Tỷ lệ giao dịch trên kênh số đạt mức xấp xỉ 97%, minh chứng cho sự"
+   },
+   "note": "2 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 40,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "ịnh vai trò tiên phong trong chuyển đổi số nguồn nhân lực. Chương trình “Bình dân học vụ số” được triển khai đồng bộ trên toàn hệ thống, tạo chuyển biến rõ nét về nhận thức, kỹ năng và văn hóa học tập số của người lao động. Các chương trình đào tạo tập trung vào công nghệ, chuyển đổi số và ứng dụng AI chiếm 35% tổng số chương trình đào tạo, thu hút gần 98.000 lượt người tham gia, đồng thời hình th"
+   },
+   "note": "7 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 20,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "u quả quản lý và khai thác các nguồn lực công nghệ trong toàn hệ thống. - Hiện đại hóa hạ tầng Trung tâm dữ liệu: Ngân hàng triển khai các giải pháp phát triển hạ tầng công nghệ theo mô hình Software-Defined Data Center, kết hợp công nghệ Private Cloud Appliance và Container, giúp nâng cao khả năng tự động hóa cấp phát tài nguyên, tăng cường năng lực xử lý và linh hoạt trong triển khai các ứng dụn"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 20,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "- Hệ thống phê duyệt tín dụng vượt thẩm quyền (CASS): Được triển khai tại Trụ sở chính và các trung tâm phê duyệt tín dụng, hệ thống CASS số hóa toàn bộ quy trình xử lý hồ sơ tín dụng vượt thẩm quyền từ tiếp nhận, thẩm định, trình phê duyệt đến lưu trữ hồ sơ. Việc triển khai hệ thống giúp rút ngắn thời gian xử lý hồ sơ, nâng cao tính minh bạch và tăng cường hiệu quả kiểm soát rủi ro tín dụng tron"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 53,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "n, ban hành kế hoạch kiểm toán nội bộ hằng năm. Bộ phận Kiểm toán nội bộ đã triển khai kế hoạch kiểm toán năm 2025 theo định hướng kiểm toán dựa trên rủi ro, tập trung vào các lĩnh vực trọng yếu như: hoạt động tín dụng, quản trị rủi ro, công nghệ thông tin, kế toán - tài chính, nghiệp vụ thẻ, phòng chống rửa tiền và tài trợ khủng bố, phòng, chống tham nhũng, lựa chọn nhà thầu, quản lý dự án đầu tư"
+   },
+   "note": "12 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 43,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "cán bộ quy hoạch đến lãnh đạo cấp cao, tập trung vào năng lực quản trị hiện đại, điều hành chiến lược và lãnh đạo trong môi trường số. Song song, các chương trình về kỹ năng số và công nghệ được đẩy mạnh, trọng tâm là phổ cập chuyển đổi số, ứng dụng AI trong nghiệp vụ và thúc đẩy tư duy linh hoạt (Agile), qua đó tạo nền tảng nâng cao hiệu suất và năng lực đổi mới sáng tạo trong toàn hệ thống. Đối"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 40,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "tạo, thu hút gần 98.000 lượt người tham gia, đồng thời hình thành đội ngũ 720 Đại sứ số và Hạt nhân số, đóng vai trò nòng cốt trong phổ cập và hướng dẫn ứng dụng công nghệ tại đơn vị. Hội thi “Agribanker làm chủ công nghệ trong kỷ nguyên số” với gần 36.000 lượt người tham dự đã lan tỏa và thúc đẩy tư duy số, nâng cao năng lực ứng dụng công nghệ vào thực tiễn, góp phần xây dựng nền tảng nhân lực s"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 40,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": ", chức danh và tăng cường gắn kết giữa đào tạo với yêu cầu thực tiễn. Việc hoàn thiện khuôn khổ chính sách và hướng dẫn đào tạo đã góp phần chuẩn hóa nội dung, phương thức tổ chức, nâng cao hiệu quả quản lý và đánh giá chất lượng đào tạo, tạo nền tảng xây dựng đội ngũ cán bộ có năng lực chuyên môn, kỹ năng số và tư duy đổi mới, đáp ứng yêu cầu phát triển bền vững trong giai đoạn tới. đ) Mở rộng hợ"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 50,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "nhằm nâng cao hiệu quả hoạt động, kịp thời hỗ trợ các đơn vị tháo gỡ khó khăn, thúc đẩy hoàn thành các nhiệm vụ kinh doanh được giao. - Bên cạnh đó, công tác điều hành tiếp tục chú trọng thúc đẩy chuyển đổi số và hiện đại hóa hoạt động ngân hàng; nhiều chương trình, dự án công nghệ thông tin và các sáng kiến chuyển đổi số được triển khai nhằm nâng cao hiệu quả vận hành, phát triển dịch vụ ngân hàn"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 20,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "k chú trọng đẩy mạnh số hóa các hoạt động quản trị điều hành và vận hành nghiệp vụ nhằm nâng cao hiệu quả quản lý, tối ưu hóa quy trình tác nghiệp và tăng cường khả năng ra quyết định dựa trên dữ liệu. Nhiều hệ thống và giải pháp công nghệ đã được triển khai trong toàn hệ thống, góp phần hình thành môi trường làm việc số và nâng cao hiệu quả vận hành. Một số hệ thống và giải pháp tiêu biểu đã được"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 47,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "Ban hành Kế hoạch của Đảng ủy Agribank và Chương trình hành động của Tổng Giám đốc nhằm chỉ đạo triển khai chuyển đổi số toàn diện hoạt động, xác định chuyển đổi số, ứng dụng công nghệ là động lực chính để tăng năng suất, hiệu quả hoạt động trong giai đoạn tới; thành lập Trung tâm Quản lý dữ liệu (Big Data) với vai trò đầu mối quản trị, khai thác và phân tích dữ liệu, hỗ trợ ra quyết định và thúc"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": 47,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": "nh hành động của Tổng Giám đốc nhằm chỉ đạo triển khai chuyển đổi số toàn diện hoạt động, xác định chuyển đổi số, ứng dụng công nghệ là động lực chính để tăng năng suất, hiệu quả hoạt động trong giai đoạn tới; thành lập Trung tâm Quản lý dữ liệu (Big Data) với vai trò đầu mối quản trị, khai thác và phân tích dữ liệu, hỗ trợ ra quyết định và thúc đẩy hoạt động kinh doanh trên nền tảng dữ liệu. 3.9."
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "agribank",
+   "year": 2025,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/agribank/2025_bctn.pdf",
+    "page": null,
+    "url": "https://www.agribank.com.vn/wcm/connect/ef81c291-19b0-4cc0-8f30-ff348c7d5f91/25_04_2026_VIE.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-ef81c291-19b0-4cc0-8f30-ff348c7d5f91-pThNs3K",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 97.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": 3.7997,
+   "L": 1.0,
+   "U": 5.0,
+   "z": 69.9937,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "điểm app gộp theo lượt đánh giá, ngày 2026-10-08"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": 2.0,
+   "L": 0.0,
+   "U": 18.0,
+   "z": 11.1111,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "2022->2025, quy về điểm %/năm"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": 30.4285,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "CAGR 2021->2025"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.0663,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 21.814,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": -1.2427,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2025 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu TOI hoặc CBNV"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "agribank",
+   "year": 2025,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 38.7,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu giờ đào tạo"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "D",
+  "criteria_score_distribution": {
+   "0": 4,
+   "1": 1,
+   "2": 12,
+   "3": 2,
+   "4": 5
+  }
+ }
+}

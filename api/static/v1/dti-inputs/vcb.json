@@ -1,0 +1,1998 @@
+{
+ "bank": "vcb",
+ "year": null,
+ "indicator": null,
+ "variable": null,
+ "scope": "all",
+ "formula": null,
+ "count": 108,
+ "items": [
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "casa_deposits",
+   "value": 307026182.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 49,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=17; Tien gửi khong ky han 307.026.182 262,977,124 ⏎ Tién gửi khong ky han bang VND 238.209.238 199.196.380 ⏎ Tién gửi khong kỳ han bang vang, ng | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "casa_deposits",
+   "value": 367149083.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 52,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM tiền gửi KH: không kỳ hạn 367.149.083 — giữ | đã kiểm: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "casa_deposits",
+   "value": 402103803.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 52,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM p52: không kỳ hạn 402.103.803 (trước lấy nhầm TG TCTD FX 67.839.420) | đã kiểm: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "casa_deposits",
+   "value": 461311977.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 55,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM p55: Tiền gửi không kỳ hạn 461.311.977",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "casa_deposits",
+   "value": 529738285.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 55,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=17; Tiền gứi khong ky han 529.738.285 461.311.977 ⏎ Tién gửi khong ky han bang VND 431.258.868 368.892.919 ⏎ Tién gửi không ky han bang vàng, ng | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "casa_deposits",
+   "value": 563957715.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 53,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=17; Tién gửi khong ky han ˆ 563.957.715 529.738.285 ⏎ Tien gửi khong ky han bang VND 432.070.265 431.258.868 ⏎ Tien gui không ky han bang vang, | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "customer_deposits",
+   "value": 1032113567.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p9: Ill Tiền gửi cia khách hang 1.032.113.567",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "customer_deposits",
+   "value": 1135323913.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 CĐKT hợp nhất p9 cột 31/12/2021: Tiền gửi của khách hàng = 1.135.323.913",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "customer_deposits",
+   "value": 1243468471.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 CĐKT hợp nhất p9: Tiền gửi của khách hàng 31/12/2022 = 1.243.468.471",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "customer_deposits",
+   "value": 1395697611.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p10: IH Tiền gửi của khách hang 1.395.697.611",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "customer_deposits",
+   "value": 1514664850.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 CĐKT hợp nhất p9 cột 31/12/2024: Tiền gửi của khách hàng = 1.514.664.850",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "customer_deposits",
+   "value": 1672534846.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; II Tién gửi cua khách hang 18 1.672.534.846 1.514.664.850 ⏎ V - Vốn tai trợ, ty thác dau tu, cho vay tổ chức ⏎ tín dụng chịu rủi ro 19 - 529 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; không công bố số KH Digibank/KH số năm 2023",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "digital_customers",
+   "value": 18000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/vcb/2025_bctn.pdf",
+   "page": 57,
+   "source_url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p57: quy mô KH sử dụng VCB Digibank ≈ 18 triệu KH hoạt động — người dùng Digibank, không phải tổng KH ngân hàng",
+   "definition": "active",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2020 trang 1–41; không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2021 trang 1–20,42–78; không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2022 trang 1–43,69; không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "digital_txn_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2024 trang 1–53,92; không có % GD kênh số exact",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "digital_txn_share",
+   "value": 91.4,
+   "unit": "%",
+   "source_file": "data/raw/vcb/2025_bctn.pdf",
+   "page": 26,
+   "source_url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: Tỷ lệ giao dịch KH qua kênh số 91,4% (bán lẻ >99%)",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "equity",
+   "value": 94009955.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 94,094,979 − NCI 85,024; CĐKT p9: NCI 85.024; TỔNG VCSH 94.094.979 → parent=94.009.955",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "equity",
+   "value": 109030280.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 109,117,393 − NCI 87,113; CĐKT p9: NCI 87.113; TỔNG VCSH 109.117.393 → parent=109.030.280",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "equity",
+   "value": 135557702.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = 135.646.085 − NCI 88.383 (BCTC2023 comparative cột 2022)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "equity",
+   "value": 164918676.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 165,012,666 − NCI 93,990; CĐKT p10: NCI 93.990; TỔNG VCSH 165.012.666 → parent=164.918.676",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "equity",
+   "value": 196112907.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand equity 196,209,168−NCI 96,261=196,112,907; TONG VON CHU SỞ HỮU 22(a) 196.209.168 165.080.490 ⏎ TONG NO PHAI TRA VA VON CHU SỞ HỮU 2.085.873.522 1.839.724.560 ⏎ Cac thuyét minh đính kè | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "equity",
+   "value": 224487205.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand equity 224,558,726−NCI 71,521=224,487,205; TONG VON CHU SO HUU 22(a) 224.558.726 196.209.168 ⏎ TONG NO PHAI TRA VA VON CHU SỞ HỮU 2.442.279.166 2.085.873.522 ⏎ Cac thuyết minh đính kè | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "headcount",
+   "value": 20062.0,
+   "unit": "persons",
+   "source_file": "data/raw/vcb/2020_bctn.pdf",
+   "page": 66,
+   "source_url": "https://portal.vietcombank.com.vn/VCBDigital/2020/pdf/vi/Bao-cao-thuong-nien.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p66: Tổng số lao động đến 31/12/2020 = 20.062 (gồm VCBS+VCBL).",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "headcount",
+   "value": 21670.0,
+   "unit": "persons",
+   "source_file": "data/raw/vcb/2021_bctn.pdf",
+   "page": 42,
+   "source_url": "https://static2.vietstock.vn/vietstock/2022/4/18/20220418_20220418___vcb___bao_cao_thuong_nien_2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p42/p65/p78: Tổng số lao động Vietcombank tính đến 31/12/2021 = 21.670 người.",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "headcount",
+   "value": 22599.0,
+   "unit": "persons",
+   "source_file": "data/raw/vcb/2022_bctn.pdf",
+   "page": 47,
+   "source_url": "https://static2.vietstock.vn/vietstock/2023/4/20/20230420_20230420___vcb___bao_cao_thuong_nien_2022.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p46/p47/p72: Tổng số lao động Vietcombank tính đến 31/12/2022 = 22.599 người.",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "headcount",
+   "value": 23500.0,
+   "unit": "persons",
+   "source_file": "data/raw/vcb/2023_bctn.pdf",
+   "page": 7,
+   "source_url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "approx; BCTN p7: hiện có gần 23.500 cán bộ nhân viên — làm tròn 23.500 (ước lượng công bố)",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "headcount",
+   "value": 24306.0,
+   "unit": "persons",
+   "source_file": "data/raw/vcb/2024_bctn.pdf",
+   "page": 28,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BC-thuong-nien/2024/VN_VCB-Annual-Report-2024_Full_250426_FN_compressed.pdf?ts=20250426091445",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p28: TỔNG SỐ LAO ĐỘNG VIETCOMBANK tính đến 31/12/2024 = 24.306 người.",
+   "definition": "unspecified",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "headcount",
+   "value": 23457.0,
+   "unit": "persons",
+   "source_file": "data/raw/vcb/2025_bctn.pdf",
+   "page": 40,
+   "source_url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: Tổng số lao động 23.457 (theo BCTC hợp nhất)",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "nci",
+   "value": 85024.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p9: NCI 85.024; TỔNG VCSH 94.094.979 → parent=94.009.955",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "nci",
+   "value": 87113.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p9: NCI 87.113; TỔNG VCSH 109.117.393 → parent=109.030.280",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "nci",
+   "value": 88383.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2023 CĐKT p10 cột 2022: NCI 88.383; TỔNG VCSH 135.646.085 → parent=135.557.702",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "nci",
+   "value": 93990.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p10: NCI 93.990; TỔNG VCSH 165.012.666 → parent=164.918.676",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "nci",
+   "value": 96261.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p10: NCI 96.261 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "nci",
+   "value": 71521.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand/CĐKT: NCI 71.521 (equity đã parent)",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "net_fee_income",
+   "value": 6607317.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: Lai thuần HĐ dịch vụ 6.607.317 (OCR 'Lai thud')",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "net_fee_income",
+   "value": 7407073.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD hợp nhất p11 cột 2021: Lãi thuần HĐ dịch vụ = 7.407.073",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "net_fee_income",
+   "value": 6839100.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD hợp nhất p11: Lãi thuần HĐ dịch vụ 2022 = 6.839.100",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "net_fee_income",
+   "value": 5779723.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p12: Lãi thuần HĐ DV 5.779.723",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "net_fee_income",
+   "value": 5136561.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 KQKD hợp nhất p11 cột 2024: Lãi thuần HĐ dịch vụ = 5.136.561",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "net_fee_income",
+   "value": 3469867.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: Lãi thuần HĐ DV 3.469.867 đúng; giảm vs 2024 (5.136.561) do thu nhập DV giảm (11.854.532←13.143.005) và chi phí DV tăng (8.384.665←8.006.444)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "net_interest_income",
+   "value": 36285475.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; I Thu nhập lãi thuằn 36.285.475 34.537.728 ⏎ 3 Thu nhap tir hoat dong dich vy 26 10.588.163 9.005.109 ⏎ 4 Chi phi hoat dong dich vy 26 (3.98 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "net_interest_income",
+   "value": 42399617.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 11, hợp nhất: Thu nhập lãi thuần 42.399.617",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "net_interest_income",
+   "value": 53246478.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 11, hợp nhất: Thu nhập lãi thuần 53.246.478",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "net_interest_income",
+   "value": 53620869.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p12: NII 53.620.869 (khối số)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "net_interest_income",
+   "value": 55405735.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 12, hợp nhất: Thu nhập lãi thuần 55.405.735",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "net_interest_income",
+   "value": 58771410.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: NII 58.771.410",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "net_profit",
+   "value": 18451311.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2020 trang 12, hợp nhất: LNST cổ đông Ngân hàng mẹ 18.451.311 (không lấy PAT tổng 18.472.518) | PDF đối chiếu seed1",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "net_profit",
+   "value": 21918813.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 12, hợp nhất: LNST cổ đông Ngân hàng mẹ 21.918.813 (không lấy PAT tổng 21.939.045)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "net_profit",
+   "value": 29899014.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 12, hợp nhất, lợi nhuận cổ đông mẹ (XV LN thuần cổ đông Ngân hàng) 29.899.014 (bỏ PAT tổng 29.919.054)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "net_profit",
+   "value": 33033203.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: XV Lợi nhuận thuần của cổ đông Ngân hàng 33.033.203 (ưu tiên ROE)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "net_profit",
+   "value": 33831386.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 13, hợp nhất, lợi nhuận cổ đông mẹ, bỏ PAT tổng 33.853.117",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "net_profit",
+   "value": 35177663.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2025 trang 12, hợp nhất, lợi nhuận cổ đông mẹ, bỏ PAT tổng 35.197.940",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "op_profit_before_provision",
+   "value": 33024291.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; IX Lợi nhuận thuần từ hoạt động kinh doanh ⏎ trước chi phi du phòng rui ro tin dung 33.024.291 29,818,849 ⏎ X Chi phi dw phòng rủi ro tin du | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "op_profit_before_provision",
+   "value": 38964041.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD hợp nhất p11 cột 2021: LN thuần HĐKD trước dự phòng = 38.964.041",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "op_profit_before_provision",
+   "value": 46832309.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD hợp nhất p11: LN thuần HĐKD trước dự phòng 2022 = 46.832.309",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "op_profit_before_provision",
+   "value": 45808563.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p12: LN trước dự phòng 45.808.563; TOI 67.723.462",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "op_profit_before_provision",
+   "value": 45551133.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2025 KQKD hợp nhất p11 cột 2024: LN thuần HĐKD trước dự phòng = 45.551.133",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "op_profit_before_provision",
+   "value": 47211823.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: LN trước dự phòng 47.211.823 (OCR 47211.823); TOI 72.454.622",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "opex",
+   "value": 16038250.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; VIL CHI PHI HOAT DONG 32 (16.038.250) (15.874.542) ⏎ IX Lợi nhuận thuần từ hoạt động kinh doanh ⏎ trước chi phi du phòng rui ro tin dung 33. | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "opex",
+   "value": 17574188.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 11, hợp nhất: CHI PHÍ HOẠT ĐỘNG 17.574.188 (trước dự phòng)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "opex",
+   "value": 21250512.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 11, hợp nhất: CHI PHÍ HOẠT ĐỘNG 21.250.512 (trước dự phòng)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "opex",
+   "value": 21914899.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p12: VII CHI PHI HOAT DONG 21.914.899 trị tuyệt đối",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "opex",
+   "value": 23027363.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 12,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 12, hợp nhất: CHI PHÍ HOẠT ĐỘNG 23.027.363 (trước dự phòng)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "opex",
+   "value": 25242799.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p11: Chi phí HĐ 25.242.799 trị tuyệt đối",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "software_gross_cost",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTC (TM p45) TSCĐ VH chỉ có Quyền SDĐ / Bản quyền&bằng sáng chế / VH khác — không tách cột Phần mềm",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "software_gross_cost",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTC (TM p48) TSCĐ VH chỉ có Quyền SDĐ / Bản quyền&bằng sáng chế / VH khác — không tách cột Phần mềm",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "software_gross_cost",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTC (TM p48) TSCĐ VH chỉ có Quyền SDĐ / Bản quyền&bằng sáng chế / VH khác — không tách cột Phần mềm",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "software_gross_cost",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTC (TM p51) TSCĐ VH chỉ có Quyền SDĐ / Bản quyền&bằng sáng chế / VH khác — không tách cột Phần mềm",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "software_gross_cost",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTC TSCĐ VH chỉ có Quyền SDĐ / Bản quyền&bằng sáng chế / VH khác — không tách cột Phần mềm",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "software_gross_cost",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTC TSCĐ VH chỉ có Quyền SDĐ / Bản quyền&bằng sáng chế / VH khác — không tách cột Phần mềm",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "total_assets",
+   "value": 1326230092.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2020_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2020/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20hE1BBA3p20nhE1BAA5t20nC483m20202020C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132712",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p8: TONG TÀI SẲN CO — số cuối trang 1.326.230.092 (khớp TỔNG NỢ+VCSH p9)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "total_assets",
+   "value": 1414672587.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2021_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2021/BC3A1o20cC3A1o20tC3A0i20chC3ADnh20HE1BBA3p20nhE1BAA5t20nC483m20202120C491C3A320kiE1BB83m20toC3A1n.pdf?ts=20230919132725",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 8, hợp nhất: TỔNG TÀI SẢN CÓ 1.414.672.587",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "total_assets",
+   "value": 1813815170.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2022_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files-Migrate/3-Bao-cao-tai-chinh/2022/2022-CN-HN.pdf?ts=20230919132734",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=19; TONG TAI SAN CO 1.813.815.170 —1.414,986.259 ⏎ Các thuyết minh dinh kém la bộ phan hop thanh bao cdo tai chinh hop nhat nay | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "total_assets",
+   "value": 1839613198.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2023_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2023/20240329---VCB---BCTC-hop-nhat-kiem-toan-2023.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p9: TONG TAI SAN CO — số cuối 1.839.613.198 (khớp p10 TỔNG NỢ+VCSH)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "total_assets",
+   "value": 2085873522.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2024_bctc.pdf",
+   "page": 9,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2024/VCB-31122024---FS-Conso---VIE.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 9, hợp nhất: TỔNG TÀI SẢN CÓ 2.085.873.522",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "total_assets",
+   "value": 2442279166.0,
+   "unit": "VND million",
+   "source_file": "data/raw/vcb/2025_bctc.pdf",
+   "page": 8,
+   "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p8: TONG TÀI SẲN CO — số cuối 2.442.279.166",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2020 trang 1–41; không có tổng KH exact (chỉ Digibank / KH mới / chuyển đổi)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2021 trang 1–20,42–78; không có tổng KH exact (chỉ Digibank / KH mới / chuyển đổi)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2022 trang 1–43,69; không có tổng KH exact (chỉ Digibank / KH mới / chuyển đổi)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": "nam",
+   "note": "not_disclosed: đã đọc BCTN 2024 trang 1–53,92; không có tổng KH exact (chỉ Digibank / KH mới / chuyển đổi)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "total_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; chỉ Digibank ~18M (đã ghi digital_customers), không có tổng KH",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2020,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTN 2020 chỉ có bình quân số LƯỢT đào tạo (3,6 lượt/cán bộ), không công bố số giờ đào tạo bình quân (giờ/người/năm).",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2021,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN 2021 (đào tạo / giờ) — không công bố số giờ đào tạo bình quân toàn hàng.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2022,
+   "variable": "training_hours_per_head",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: BCTN p73 chỉ tách theo khối (QL ~19 giờ/năm; NV ~12 giờ/năm), không có số giờ đào tạo bình quân toàn hàng.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2023,
+   "variable": "training_hours_per_head",
+   "value": 41.0,
+   "unit": "hours",
+   "source_file": "data/raw/vcb/2023_bctn.pdf",
+   "page": 68,
+   "source_url": "https://portal.vietcombank.com.vn/VCBDigital/2023/BCTN/pdf/vi/Bao-cao-thuong-nien.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2023 p68: Số giờ đào tạo trung bình/cán bộ = 41 giờ/năm (cách tính mới từ 2023). BCPTBV 2024 p41 nêu mức 2023 = 35 giờ/cán bộ theo phương pháp so sánh với 2024 — giữ 41 theo năm báo cáo 2023; ghi cả hai số (41 và 35).",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2024,
+   "variable": "training_hours_per_head",
+   "value": 36.1,
+   "unit": "hours",
+   "source_file": "data/raw/vcb/2024_bcptbv.pdf",
+   "page": 41,
+   "source_url": "https://portal.vietcombank.com.vn/VCBDigital/2024/BCPTBV/pdf/vi/VN_VCB_ESG_2024_Full.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCPTBV p41: Số giờ đào tạo trung bình trên một cán bộ năm 2024 là 36,1 giờ/năm (cao hơn mức 35 giờ/cán bộ năm 2023 theo cách tính mới). Định nghĩa: giờ/cán bộ/năm; không nêu rõ gồm/không gồm đào tạo nhân viên mới.",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "vcb",
+   "year": 2025,
+   "variable": "training_hours_per_head",
+   "value": 48.96,
+   "unit": "hours",
+   "source_file": "data/raw/vcb/2025_bctn.pdf",
+   "page": 68,
+   "source_url": "https://static2.vietstock.vn/vietstock/2026/4/17/20260416___vcb___bao_cao_thuong_nien_nam_2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN p68: Số giờ đào tạo trung bình/cán bộ năm 2025 = 48,96 giờ/năm",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  }
+ ],
+ "other_sources": {}
+}

@@ -1,0 +1,901 @@
+{
+ "summary": {
+  "bank": "tcb",
+  "bank_name": "Techcombank",
+  "group": "NHTM Cổ phần",
+  "year": 2023,
+  "score": 64.1667,
+  "rank": 1,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.4545,
+  "dti_indicators_available": 5,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 87.5,
+    "dti": 100.0,
+    "p": 90.0,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 56.25,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 50.0,
+    "dti": 100.0,
+    "p": 60.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 75.0,
+    "dti": 50.0,
+    "p": 70.0,
+    "n_dti": 2,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 25.0,
+    "dti": 100.0,
+    "p": 40.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 68.75,
+    "dti": null,
+    "p": 68.75,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 3,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "ater” and have been an enabler of growth, achievement, and human potential in Vietnam. We pursue a proven customer-centric strategy in providing a broad range of solutions and services to over 13.4 million retail and corporate customers. We serve and engage with customers through our market-leading digital banking platforms and mobile apps, and an extensive network of 301 branches and transaction"
+   },
+   "note": "36 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 22,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "their businesses ♦ An enhanced cash and liquidity management solution. 2023 Highlights Micro SMEs and SMEs BB offered this customer group differentiated digital-led value propositions. 1. Super convenience in everyday banking Enhanced onboarding process In 2023, Techcombank upgraded our end-to-end digital onboarding for new corporate customers with instant creation of digital signature, allowing"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "hcombank is the only Vietnam bank that has implemented cloud-based Customer Relationship Management (CRM) with over 6,200 staff using it to benefit customers. For more information, please see the Digital Office section. Adobe Digital marketing platform We adopted the Adobe’s Martech stack to enable personalisation and messaging optimisation (i.e. right message, right time, right channel) for conti"
+   },
+   "note": "28 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 12,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "VND 10,000 billion through strategic cooperation scores on the Organisational Health Index Awarded Best Payments Bank in Vietnam by profit. with top insurance firm, Manulife. and Employee Engagement Survey (EES). The Asian Banker. 2020 2021 2022 2023 Prioritised resources to protect throughout the customer journey: First privately owned bank in Bank of the Year – Napas Successfully completed Only"
+   },
+   "note": "24 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 33,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "ible transformation. 2024 Focus on Transformation In 2024 the Bank enters the latter stages of our current five- year transformation roadmap. We have almost completed transitioning away from building and putting infrastructure in place to deploying and capitalising on our significant investments in digital transformation, data management and talent acquisition. Scaling digital and data platforms:"
+   },
+   "note": "17 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 60,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "tainable Development Index (VNSI) (2017) enterprise-wide risk management framework also provides our performance and oversee the core ESG team (see ♦ MoF sets out some guidelines on disclosure of information on securities market built-in safeguards to keep us on track. diagram below). ♦ Established Steering Committee on carrying out COP26 commitment ♦ Corporate Governance Code of Best Practices (2"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 18,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "on, up 1.8% YoY, enabling the Cost-to-Income Ratio (CIR) to remain at a very healthy 33.1%. We put a strong focus on cost control throughout 2023, while still investing in our data and technology capabilities and the development of our employees. Digital and Data The Bank maintained a high level of investment in Digital and Data technologies in line with our five-year transformation strategy. Our"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 6,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "single Corporate and Institutional Banking Group (CIBG). The new entity will enable deeper customer and industry insights in key sectors, with highly trained specialists ready to offer precise and specific knowledge. The launch of our first-in-kind corporate treasury management solution C-Cash, in partnership with Kyriba, will also help us drive the acquisition of main operating account relations"
+   },
+   "note": "33 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI",
+    "CERT2"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "(CWPP). These solutions help protect the bank service and workload from hundreds of malicious attacks. ♦ We completed re-assessment and achieved PCI DSS certification for 2023. ♦ We completed the periodic audits of ISO 27001 certification and documented as compliance. Commitment to digitalisation Cloud adoption This shift has made our maintenance as efficient as possible with AWS handling infra"
+   },
+   "note": "26 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "CERT2"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "e first bank to implement new Cloud- based security solutions: Platform for distributed denial of service (DDoS) protection and cloud workload protection (CWPP). These solutions help protect the bank service and workload from hundreds of malicious attacks. ♦ We completed re-assessment and achieved PCI DSS certification for 2023. ♦ We completed the periodic audits of ISO 27001 certification and d"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 20,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "hem to manage their investments with us. This digital innovation aligns with our commitment to provide accessible and efficient wealth management solutions. 2023 was a busy year for RBG division as multiple digital platforms, dedicated to different branded tiers, were launched or upgraded – such as AI-powered CRM, Adobe digital marketing, loyalty platform and our award-winning Techcombank mobile a"
+   },
+   "note": "31 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 37,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "ge IT Services requests – to ~1,000 users. Change request management was deployed for bank-wide technology alterations. In August, we centralised incident and problem management to improve our response capabilities. DevSecOps DevSecOps remains important to our team-based workplace, revolving around automation and security:"
+   },
+   "note": "6 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 22,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "turbocharge their businesses ♦ An enhanced cash and liquidity management solution. 2023 Highlights Micro SMEs and SMEs BB offered this customer group differentiated digital-led value propositions. 1. Super convenience in everyday banking Enhanced onboarding process In 2023, Techcombank upgraded our end-to-end digital onboarding for new corporate customers with instant creation of digital signature"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "GOV",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 36,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "ls; including our website, mobile apps and social media. We are aiming to provide each customer with bespoke interactions and accesses solutions that align with their individual needs. ♦ In a technological leap, we implemented the Adobe marketing stack, becoming the first major bank to introduce a real-time customer data platform. We orchestrate and deliver to customers superior experiences at th"
+   },
+   "note": "30 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "KPI",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 27,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "on from domestic credit institutions, bringing the total borrowing limit to more than VND 17,350 billion (approximately 85% of this limit comprises of unsecured loan). Enhancing digital experiences with Wealthtech financial technology strategy Over 52% of employees were IT-related and utilising the Scrum/Agile model for an efficient and adaptable way of working. In 2023, leveraging advanced techno"
+   },
+   "note": "13 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 35,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "8 | Reaching for new heights THE TRANSFORMATION OF TECH We offer a hyper-personalised, comprehensive banking experience that is simple for customers to use. Chosen as the trusted digital partner of so many, our operational efficiency means everyone can enjoy the service excellence they deserve. Our digital leadership has even been recognised globally – we won Best Integrated Corporate Banking Plat"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "KPI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 39,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "ition in key roles, ensure continuity and mitigate risk and maintain organisational stability. Implementing our Succession and Talent management platform has streamlined the process and provides visibility into the talent pipeline across the Bank based on skillsets and expertise to enable proactive talent development and promotion for internal employees.  ♦ Compensation and Rewards – to provide"
+   },
+   "note": "12 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 39,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "g investment by Techcombank in employee development over years led to significant return with lower turnover rate and in 2023, ~80% senior positions in the Bank was filled internally by existing employees, and ~75% mid-level positions. 2023 highlights Building our Human Resource Information System (HRIS) technology stack Throughout the whole journey, Techcombank strives to provide employees with t"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 33,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "4 Focus on Transformation In 2024 the Bank enters the latter stages of our current five- year transformation roadmap. We have almost completed transitioning away from building and putting infrastructure in place to deploying and capitalising on our significant investments in digital transformation, data management and talent acquisition. Scaling digital and data platforms: We want to deploy our di"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 20,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "♦ Further enhancing the award-winning Techcombank Mobile app Techcombank Mobile is currently one of the highest-rated applications in Vietnam, with impressive scores on both the App Store and Google Play. Founded on the Backbase platform, it is the first mobile app in the Vietnamese market to use big data to provide personalised financial management tools to customers. Affluent customers A key f"
+   },
+   "note": "10 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 57,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "try median of 2.0%1. Our total credit costs for the year were 0.8%, lower than our peers – median of 1.1%. Liquidity risk management We made significant progress in liquidity management, getting closer to achieving Basel III standard: ♦We developed and upgraded our asset-liability management (ALM) forecasting system to ensure our net stable funding ratio (NSFR), liquidity coverage ratio (LCR) and"
+   },
+   "note": "26 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "tcb",
+   "year": 2023,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2023_bctn.pdf",
+    "page": 21,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/promo_file/TCB-AR-EN-Interactive-21038b0025.pdf",
+    "quote": "nk customers – In August, we introduced Apple Pay, offering a safe and private payment method that minimises physical contact while maximising transaction security. Apple Pay authenticates each purchase with Face ID, Touch ID or a device passcode, underlining our commitment to customer security and privacy. It is easy to set up and the process for adding Techcombank's credit and debit cards is als"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 94.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: retail"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ cùng định nghĩa"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.5874,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": 1.4714,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 0.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2023 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": 4.8001,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "CAGR TOI/CBNV bình quân 2021->2023"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2023,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 82.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "C",
+  "criteria_score_distribution": {
+   "0": 2,
+   "1": 3,
+   "2": 10,
+   "3": 1,
+   "4": 8
+  }
+ }
+}

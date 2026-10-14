@@ -1,0 +1,422 @@
+{
+ "api_version": "1.0.0",
+ "framework": {
+  "dbi_weight": 0.8,
+  "dti_weight": 0.2,
+  "pillars": 6,
+  "criteria": 24,
+  "dti_indicators": 11,
+  "scale": "0-100",
+  "pillar_formula": "P_k = 0,8*DBI_k + 0,2*DTI_k; thiếu DTI thì P_k = DBI_k",
+  "score_formula": "Score_Bank = (1/6) * sum(P_k)"
+ },
+ "banks": [
+  {
+   "id": "agribank",
+   "name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "site": "https://www.agribank.com.vn"
+  },
+  {
+   "id": "bidv",
+   "name": "BIDV",
+   "group": "NHTM Nhà nước",
+   "site": "https://www.bidv.com.vn"
+  },
+  {
+   "id": "mb",
+   "name": "MB",
+   "group": "NHTM Cổ phần",
+   "site": "https://www.mbbank.com.vn"
+  },
+  {
+   "id": "tcb",
+   "name": "Techcombank",
+   "group": "NHTM Cổ phần",
+   "site": "https://techcombank.com"
+  },
+  {
+   "id": "vcb",
+   "name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "site": "https://www.vietcombank.com.vn"
+  }
+ ],
+ "years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "latest_year": 2025,
+ "pillars": [
+  {
+   "code": "K",
+   "name": "Khách hàng",
+   "criteria": [
+    {
+     "code": "K1",
+     "name": "Phủ sóng kênh số và liên thông đa kênh"
+    },
+    {
+     "code": "K2",
+     "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)"
+    },
+    {
+     "code": "K3",
+     "name": "Cá nhân hóa"
+    },
+    {
+     "code": "K4",
+     "name": "Đo lường trải nghiệm khách hàng"
+    }
+   ],
+   "dti_indicators": [
+    "K-Q1",
+    "K-Q2",
+    "K-Q3"
+   ]
+  },
+  {
+   "code": "S",
+   "name": "Chiến lược",
+   "criteria": [
+    {
+     "code": "S1",
+     "name": "Chiến lược chuyển đổi số chính thức"
+    },
+    {
+     "code": "S2",
+     "name": "Quản trị chuyển đổi số"
+    },
+    {
+     "code": "S3",
+     "name": "Cam kết nguồn lực cho chuyển đổi số"
+    },
+    {
+     "code": "S4",
+     "name": "Hợp tác hệ sinh thái và fintech"
+    }
+   ],
+   "dti_indicators": [
+    "S-Q1",
+    "S-Q2"
+   ]
+  },
+  {
+   "code": "T",
+   "name": "Công nghệ",
+   "criteria": [
+    {
+     "code": "T1",
+     "name": "Hạ tầng và kiến trúc công nghệ"
+    },
+    {
+     "code": "T2",
+     "name": "An toàn thông tin"
+    },
+    {
+     "code": "T3",
+     "name": "Open API và tích hợp đối tác"
+    },
+    {
+     "code": "T4",
+     "name": "Công nghệ mới ở mức use-case"
+    }
+   ],
+   "dti_indicators": [
+    "T-Q1",
+    "T-Q2"
+   ]
+  },
+  {
+   "code": "O",
+   "name": "Vận hành",
+   "criteria": [
+    {
+     "code": "O1",
+     "name": "Tự động hóa quy trình"
+    },
+    {
+     "code": "O2",
+     "name": "Số hóa quy trình tín dụng và hậu trường"
+    },
+    {
+     "code": "O3",
+     "name": "Quản trị rủi ro và tuân thủ số"
+    },
+    {
+     "code": "O4",
+     "name": "Vận hành linh hoạt"
+    }
+   ],
+   "dti_indicators": [
+    "O-Q1",
+    "O-Q2"
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Văn hóa",
+   "criteria": [
+    {
+     "code": "C1",
+     "name": "Lãnh đạo và thông điệp văn hóa số"
+    },
+    {
+     "code": "C2",
+     "name": "Đào tạo và nâng cao kỹ năng số"
+    },
+    {
+     "code": "C3",
+     "name": "Văn hóa đổi mới sáng tạo"
+    },
+    {
+     "code": "C4",
+     "name": "Môi trường làm việc số"
+    }
+   ],
+   "dti_indicators": [
+    "C-Q1",
+    "C-Q2"
+   ]
+  },
+  {
+   "code": "D",
+   "name": "Dữ liệu",
+   "criteria": [
+    {
+     "code": "D1",
+     "name": "Quản trị dữ liệu"
+    },
+    {
+     "code": "D2",
+     "name": "Hạ tầng dữ liệu"
+    },
+    {
+     "code": "D3",
+     "name": "Phân tích nâng cao và AI/ML ra quyết định"
+    },
+    {
+     "code": "D4",
+     "name": "Bảo vệ dữ liệu cá nhân"
+    }
+   ],
+   "dti_indicators": []
+  }
+ ],
+ "dti_indicators": [
+  {
+   "code": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 90.0,
+   "bounds_status": "sourced",
+   "formula": "Tỷ lệ giao dịch khách hàng qua kênh số (%), số do ngân hàng công bố",
+   "input_variables": [
+    "digital_txn_share"
+   ]
+  },
+  {
+   "code": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 100.0,
+   "bounds_status": "natural",
+   "formula": "Khách hàng số / tổng khách hàng (%)",
+   "input_variables": [
+    "digital_customer_share",
+    "digital_customers",
+    "total_customers"
+   ]
+  },
+  {
+   "code": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "L": 1.0,
+   "U": 5.0,
+   "bounds_status": "sourced",
+   "formula": "Điểm đánh giá app gộp App Store và Google Play, trọng số theo lượt đánh giá (sao 1–5)",
+   "input_variables": []
+  },
+  {
+   "code": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 18.0,
+   "bounds_status": "derived",
+   "formula": "(Tỷ lệ giao dịch số năm cuối − năm đầu kỳ) / số năm, đơn vị điểm %/năm",
+   "input_variables": [
+    "digital_txn_share"
+   ]
+  },
+  {
+   "code": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 24.4555,
+   "bounds_status": "external_reference",
+   "formula": "Tăng trưởng kép (CAGR) số khách hàng số từ năm đầu kỳ",
+   "input_variables": [
+    "digital_customers"
+   ]
+  },
+  {
+   "code": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 0.3038,
+   "bounds_status": "external_reference",
+   "formula": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân (%)",
+   "input_variables": [
+    "software_gross_cost",
+    "total_assets"
+   ]
+  },
+  {
+   "code": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 100.0,
+   "bounds_status": "natural",
+   "formula": "Số nền tảng số đạt (trên 8) × 100",
+   "input_variables": []
+  },
+  {
+   "code": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "L": -0.5845,
+   "U": 0.0,
+   "bounds_status": "external_reference",
+   "formula": "Thay đổi CIR bình quân năm từ đầu kỳ (điểm %/năm; âm là cải thiện)",
+   "input_variables": [
+    "opex",
+    "op_profit_before_provision"
+   ]
+  },
+  {
+   "code": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 1.1843,
+   "bounds_status": "external_reference",
+   "formula": "CAGR của thu nhập hoạt động trên số cán bộ nhân viên bình quân",
+   "input_variables": [
+    "opex",
+    "op_profit_before_provision",
+    "headcount"
+   ]
+  },
+  {
+   "code": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 100.0,
+   "bounds_status": "natural",
+   "formula": "Nhân sự công nghệ / tổng cán bộ nhân viên (%)",
+   "input_variables": [
+    "tech_staff",
+    "headcount"
+   ]
+  },
+  {
+   "code": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "L": 0.0,
+   "U": 38.7,
+   "bounds_status": "external_reference",
+   "formula": "Số giờ đào tạo bình quân trên một cán bộ nhân viên",
+   "input_variables": [
+    "training_hours_per_head"
+   ]
+  }
+ ],
+ "maturity_levels": [
+  {
+   "number": 1,
+   "name": "Khởi động",
+   "min": 0,
+   "max": 25,
+   "label": "Mức 1 - Khởi động"
+  },
+  {
+   "number": 2,
+   "name": "Bắt đầu",
+   "min": 25,
+   "max": 50,
+   "label": "Mức 2 - Bắt đầu"
+  },
+  {
+   "number": 3,
+   "name": "Hình thành",
+   "min": 50,
+   "max": 75,
+   "label": "Mức 3 - Hình thành"
+  },
+  {
+   "number": 4,
+   "name": "Nâng cao",
+   "min": 75,
+   "max": 100,
+   "label": "Mức 4 - Nâng cao"
+  },
+  {
+   "number": 5,
+   "name": "Dẫn dắt",
+   "min": 100,
+   "max": 100,
+   "label": "Mức 5 - Dẫn dắt"
+  }
+ ],
+ "scoring": {
+  "method": "rule_based",
+  "rules_version": "rule-based-v1",
+  "rules_hash": "50ebdcdb62c3443bd57a9bd5d2c89b4c26c4e30cdc2cce1d3cb7fc52de71ef5d"
+ },
+ "dti_bounds": {
+  "version": "fixed-reference-v1-2026-10-12",
+  "locked": true,
+  "locked_on": "2026-10-12"
+ },
+ "reliability_rule": {
+  "high": 0.7,
+  "medium": 0.4,
+  "note": "Quy ước hiển thị theo data_confidence (= số chỉ số DTI có dữ liệu / 11); không ảnh hưởng điểm."
+ },
+ "data_updated_at": "2026-10-12T17:01:11+00:00"
+}

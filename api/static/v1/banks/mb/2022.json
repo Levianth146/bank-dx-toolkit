@@ -1,0 +1,888 @@
+{
+ "summary": {
+  "bank": "mb",
+  "bank_name": "MB",
+  "group": "NHTM Cổ phần",
+  "year": 2022,
+  "score": 56.6396,
+  "rank": 2,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.4545,
+  "dti_indicators_available": 5,
+  "dti_indicators_total": 11,
+  "reliability": "medium",
+  "warnings": [],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 87.5,
+    "dti": 100.0,
+    "p": 90.0,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 62.5,
+    "dti": 15.0,
+    "p": 53.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 37.5,
+    "dti": 100.0,
+    "p": 50.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 56.25,
+    "dti": 100.0,
+    "p": 65.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 25.0,
+    "dti": 90.4393,
+    "p": 38.0879,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "mb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 73,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "eating breakthrough growth. MB develops a customer utility ecosystem on 2 platforms, the App MBBank and BIZ MBBank, attracting ~20 million customers (meeting the planned target of 2026), up 46% from 2021, and continues to set target number of customers in 2023 at 26 million. The transaction rate on digital channels reached ~95%, ranking first in the number of transactions across the entire banking"
+   },
+   "note": "41 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "mb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 73,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "s to set target number of customers in 2023 at 26 million. The transaction rate on digital channels reached ~95%, ranking first in the number of transactions across the entire banking industry, equivalent to that of the top Asian banks. MB simultaneously successfully completed the implementation of eKYC customer identification by video via face and voice on the App MBBank. Product and feature deve"
+   },
+   "note": "3 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "mb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 53,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "velopment initiatives are designed to be personnel-centric, focusing on increasing practical experience to develop competence, creating an adaptive workforce that is ready to supplement key positions for MB Group, according to the actual needs of each period (turnover rate ~ 10%/year). Programs are personalized according to each targeted group, with special focus on training and developing both th"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "mb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 74,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "al channels, completed the onboarding journey on the online channel for individual and corporate customers. The optimization of customer service time at the counter and the increment of external customer’s satisfaction on channels reaching 85% are the steps to get MB closer to the goal of improving customer experience. MB has enhanced quality and mastered data by investing in building modern data"
+   },
+   "note": "26 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "mb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "GOV",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 58,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "ompleted the 2022 business plan with impressive results, ranking within the Top commercial banks in various indicators on quality and effectiveness: key objectives were completed according to plan or exceeding the goal, safety limits were ensured; deposits increased strongly and leading the market; digital transformation were deployed in all areas creating outstanding growth in digital banking, wi"
+   },
+   "note": "74 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'GOV'] (all)"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "mb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 83,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "rities to determine the extent of violations, damage and damage remediation. MB always strictly complies with the provisions of the Law and the Industry related to the prevention of corruption and negativity. According to Decision No. 369/QD-NHNN dated 16 March 2022, MB has established and sued the Steering Committee for Anti-Corruption, Negative and Crime, Subcommittees for Anti- Corruption, Nega"
+   },
+   "note": "8 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "mb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "mb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 7,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "or charity participants. With a strong investment in both platform and communication, MB’s Charity App currently owns more than 1 million users and will be the backbone for other humanitarian platforms. Of note, in 2022, the campaign “Covering Vietnam Green with MB” was officially launched by MB in partnership with Song Foundation to raise funds for the afforestation of 14 hectares of forest in Ni"
+   },
+   "note": "32 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "mb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 22,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "remium Equivalent), contributing to maintain MB’s Top 1 position in the market for Bancassurance. Aside business solutions, in 2022, MBAL completed foundational projects such as creating procedural frameworks, building and completing data foundations, roadmapping the plan to transform the insurance core system. Along with the process of development and expanding business activities, Awards Rong Va"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "mb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "CERT2"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 32,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "echnologies Successfully upgrading the corebanking system T24 to version R20 TAF, with the capacity to serve 30 million customers; Applying and developing technologies such as: RPA, MBot in upgrading processes; Microservices projects; DevSecOps; Private Cloud in deploying technological initiatives; SOC model; Red Team/Blue in assessing information security... aimed at increasing efficiency, consis"
+   },
+   "note": "15 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "mb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "mb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 37,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "prices in realtime, with over 140,000 customers on the App MBBank • Strengthen automation in operational activities and creating unique customer experiences. MB is the first bank to deploy the experience of depositing and withdrawing with O2O, initiating and authenticating on the App MBBank, using AI technology to receive feedback from customers, developing customer service application on the App"
+   },
+   "note": "9 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "mb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 75,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "and efficiently executed a post-transaction customer feedback channel to assess the quality of service on App MBBank • Successfully upgraded the T24 corebanking system to an infrastructure- ready R20 TAFJ version for 30 million customers; Proactively applied and developed new technologies such as: RPA, MBot in process improvement to increase the quality of customer experience, shortening transact"
+   },
+   "note": "6 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "mb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 69,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "at for the convenience of users in finding and applying the text, determining the status of the internal documents and their validity. The project also builds software to allocate all of MB’s internal documents to a digital system for convenient access, anytime, anywhere, as an environment-friendly paperless office. The project has implemented Methodology training for the entire line and subsidiar"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "mb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 66,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "ormation towards customer segments, especially individual customers, and small businesses. The results of the models PD, LGD, LGD are applied to calculate estimated losses, measuring in detail the benefits each customer can bring, balancing with the estimated risk of each customer. Beside that, the Early Warning Signal model allows the identification of customers with signs of future decreased fin"
+   },
+   "note": "12 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "mb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 34,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "uses on building programs for university students, approaching new talent at an early stage, exposing them to the banking industry. • Realistic training on building skills and expertise associated with work and learning from experts within MB such as: Build up Your LinkedIn – Light up Your Careers; DevOps Roadmaps: from university student to professionalDevOps; Wealth Management – journey to becom"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "mb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "mb",
+   "year": 2022,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 50,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "June 2020, 100% of the SB members voted and agreed Ms. Nguyen Thi An Binh to hold position of Deputy Head of the SB. Ms. Nguyen Thi An Binh Deputy Head of the SB The Supervisory Board MEMBERS OF THE SUPERVISORY BOARD Ms. Do Thi Tuyet Mai graduated with a Bachelor’s degree in Economics from Banking Academy, and completed a Master’s degree in Business Administration from Benedictine University, rec"
+   },
+   "note": "18 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "mb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "mb",
+   "year": 2022,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": null,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "mb",
+   "year": 2022,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 85,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "ups of potential IT risks, thereby proactively reviewing and prioritizing the immediate handling of emerging issues • All IT systems must identify the transaction owners to ensure the requirements are aligned with MB’s business and operational strategy • Issue policies, standards and guidelines for data management throughout entire life cycle of data • Quality management in operation and delivery"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "mb",
+   "year": 2022,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 9,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "t for 2026 MB reached a cumulative of million customers • Successfully upgraded the core software T24 to the version R20, serving 30 million customers, roughly equivalent to 30% of Vietnam’s population • The self-service channel MB Smartbank has attracted 130,000 new customers • MB built a Customer Data Platform system using the technological foundation of Bigdata, consolidating all of the group’s"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "mb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 6,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "actions (increased twofold compared with 2021), 60 million transactions via Auto Bank (MB Smartbank and ATM), an 40% increase compared with 2021. For governance activities, MB applies the most advanced technologies according to consultations by our partners, IBM, McKinsey, Gartner. These include AI/machine learning, BigData, Robotic, helping MB increase the rate of automation for more internal pro"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "mb",
+   "year": 2022,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/mb/2022_bctn.pdf",
+    "page": 7,
+    "url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+    "quote": "bilizing finances. We sincerely thank and send our deep gratitude to Shareholders, investors, customers, and partners who have continued to trust and accompany MB. 2023 is the second year in the strategic period 2022 – 2026. With ambitious goals and challenges ahead, MB hopes to continue to receive consent, support and companionship from Distinguished customers, Distinguished shareholders, Investo"
+   },
+   "note": "3 đoạn khớp từ khóa"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 95.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: all_txn"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": 2.7,
+   "L": 0.0,
+   "U": 18.0,
+   "z": 15.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "2021->2022, quy về điểm %/năm"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.3653,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": -1.0155,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "ΔCIR 2021->2022 (điểm %/năm; âm = cải thiện)"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": 35.0,
+   "L": 0.0,
+   "U": 38.7,
+   "z": 90.4393,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: avg_hours"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "C",
+  "criteria_score_distribution": {
+   "0": 5,
+   "1": 4,
+   "2": 5,
+   "3": 4,
+   "4": 6
+  }
+ }
+}

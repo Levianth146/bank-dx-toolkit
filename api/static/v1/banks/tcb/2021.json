@@ -1,0 +1,877 @@
+{
+ "summary": {
+  "bank": "tcb",
+  "bank_name": "Techcombank",
+  "group": "NHTM Cổ phần",
+  "year": 2021,
+  "score": 53.4167,
+  "rank": 1,
+  "maturity_level": "Mức 3 - Hình thành",
+  "maturity_level_number": 3,
+  "maturity_level_name": "Hình thành",
+  "data_confidence": 0.1818,
+  "dti_indicators_available": 2,
+  "dti_indicators_total": 11,
+  "reliability": "low",
+  "warnings": [
+   "Chỉ 2/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+  ],
+  "pillars": {
+   "K": {
+    "code": "K",
+    "name": "Khách hàng",
+    "dbi": 81.25,
+    "dti": 90.0,
+    "p": 83.0,
+    "n_dti": 1,
+    "n_dti_total": 3,
+    "dti_applied": true
+   },
+   "S": {
+    "code": "S",
+    "name": "Chiến lược",
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "T": {
+    "code": "T",
+    "name": "Công nghệ",
+    "dbi": 37.5,
+    "dti": 100.0,
+    "p": 50.0,
+    "n_dti": 1,
+    "n_dti_total": 2,
+    "dti_applied": true
+   },
+   "O": {
+    "code": "O",
+    "name": "Vận hành",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "C": {
+    "code": "C",
+    "name": "Văn hóa",
+    "dbi": 37.5,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
+    "n_dti_total": 2,
+    "dti_applied": false
+   },
+   "D": {
+    "code": "D",
+    "name": "Dữ liệu",
+    "dbi": 43.75,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
+    "n_dti_total": 0,
+    "dti_applied": false
+   }
+  }
+ },
+ "criteria": [
+  {
+   "criterion": "K1",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Phủ sóng kênh số và liên thông đa kênh",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 26,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "ped digital and data capabilities by applying Agile • Tripled charter capital to VND 34,966 billion working methods and establishing DnA division • First private joint stock bank to make over • First bank in Vietnam to introduce a comprehensive VND 10,000 billion profit ecosystem with an end-to-end omni-channel experience 1993 2009 2016 • Awarded leading bank in Visa (debit and credit) card on a d"
+   },
+   "note": "23 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K2",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Định danh và xác thực điện tử (eKYC, sinh trắc học)",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 79,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "-19 severely affected the world, changing daily life and reshaping retail customers’ behaviours. When the government ordered strict lockdowns, accounts acquired from people learned quickly to engage with us online. Our progressive digital digital channels approach meant we could immediately use our eKYC (authentication) In 2021, the award for Outstanding Bank in NAPAS247 solution to launch 100% en"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "K3",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Cá nhân hóa",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 78,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "l retail transactions (up 77.5% from 2020). transactions, and our new mobile platform is aimed platform provider, we ● Person-to-merchant (P2M) payments ● Total e-banking transaction value rose to at making this experience as simple, intuitive and VND 9,079 trillion (+80.5% YoY), following an 84.2% personalised as possible. officially launched a new ● Automatic bill payment registration increase i"
+   },
+   "note": "7 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "K4",
+   "pillar": "K",
+   "pillar_name": "Khách hàng",
+   "name": "Đo lường trải nghiệm khách hàng",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 9,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "ANNUAL REPORT THE POWER OF TECH CEO REPORT 2021: Another Year Of Exceptional Results (continued) Enhanced customer Being Ranked Strong profit before tax satisfaction No. 6 47.1% YoY and loyalty, as VND 23.2 trillion measured by the in Asia’s Top 10 most Change banking, change lives 2021–25 strategy Net Promoter Score recommended retail banks by (NPS) and customer BankQuality Consumer Survey and th"
+   },
+   "note": "19 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+  },
+  {
+   "criterion": "S1",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Chiến lược chuyển đổi số chính thức",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 67,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "strategies and He also gained degrees in Mathematics, Physics and Political Operations, with Distinction from Cardiff University large scale transformation. Affairs from Ecole Polytechnique and Institute of Political Business School, UK. He has completed courses in Artificial Studies. Intelligence, Digital Transformation and Innovation from Mr Seth holds a Master of Business Administration from UC"
+   },
+   "note": "11 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S2",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Quản trị chuyển đổi số",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 82,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "werful model for systems 650 (Hanoi University of Science and Technology, FPT University) universities. part of agile working because it extends business and software development, testing and support; responsiveness and reduces friction between different Our rigorous assessment process involves the Chief Information Officer (CIO) helping us lower delivery costs while maintaining applications teams"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S3",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Cam kết nguồn lực cho chuyển đổi số",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 3,
+   "score_pct": 75.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 81,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "ore agile way of working and efficiencies created through online collaboration and manage and measure distributed employee experiences, and ensure ongoing productivity right from onboarding. productivity management solutions. Infrastructure Migrated In September 2021, we announced a five-year cloud technology investment. 90% It was designed to: planned applications to the cloud 1 Support the Bank’"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "S4",
+   "pillar": "S",
+   "pillar_name": "Chiến lược",
+   "name": "Hợp tác hệ sinh thái và fintech",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 26,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "a’s third-largest IPO • Revamped digital and data capabilities by applying Agile • Tripled charter capital to VND 34,966 billion working methods and establishing DnA division • First private joint stock bank to make over • First bank in Vietnam to introduce a comprehensive VND 10,000 billion profit ecosystem with an end-to-end omni-channel experience 1993 2009 2016 • Awarded leading bank in Visa ("
+   },
+   "note": "15 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+  },
+  {
+   "criterion": "T1",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Hạ tầng và kiến trúc công nghệ",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 81,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "to a more agile way of working and efficiencies created through online collaboration and manage and measure distributed employee experiences, and ensure ongoing productivity right from onboarding. productivity management solutions. Infrastructure Migrated In September 2021, we announced a five-year cloud technology investment. 90% It was designed to: planned applications to the cloud 1 Support the"
+   },
+   "note": "26 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 82,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "22, but we will 40.3% always need quality leaders and experts. We think YoY ● Increased systems stability and reliability a management associate program is the obvious answer to both improving morale and feeding ● Rapid experimentation and innovation succession planning. We continued to enhance our cybersecurity including cloud security, identity (e.g. hypothesis-drive development and A/B testing)"
+   },
+   "note": "4 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "T3",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Open API và tích hợp đối tác",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  },
+  {
+   "criterion": "T4",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "Công nghệ mới ở mức use-case",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 80,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "offer credit cards that customers can use instantly after registration. Our fast and New Credit Cards seamless end-to-end digital credit card journey is a testament to our digitally issued customer-centric approach. 29.0% of total cards To achieve this remarkable ‘first’, we leveraged big data and AI in our issued credit appraisal process. Our Smart Credit system – a credit decision engine – is c"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O1",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Tự động hóa quy trình",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 82,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "urity, operations and IT people in top-tier international and local universities other stakeholders in the Bank. We aimed to promote As of 31 December 2021, we had a growing team of shorter, more controllable iterations by adopting best 30+ members. We are delivering on four strategic and practice, automation and new tools. BAU initiatives, including cloud strategy execution, Key benefits include:"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O2",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Số hóa quy trình tín dụng và hậu trường",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 11,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "customers: As part of digitalising banking services and making them accessible anytime through multiple channels for better customer experience, we successfully piloted a new mobile banking app for corporate customers in Q4 2021. The full roll-out is expected to start in Q2 2022. Next generation of loan origination platforms: We launched ‘Smart Credit’, a cloud-based lending platform for retail cu"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O3",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Quản trị rủi ro và tuân thủ số",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP",
+    "KPI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 84,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "s for strategic BAU initiatives, IT » Card management services, business process systems: core HR and the learning management system (LMS) went live in projects and other IT system improvement activities, management and core banking 2021 and payroll will in 2022. the project risk dashboard and IT’s operational risk » The network software defined wide area network dashboard) The core HR and LMS sys"
+   },
+   "note": "19 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "O4",
+   "pillar": "O",
+   "pillar_name": "Vận hành",
+   "name": "Vận hành linh hoạt",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "INDEP"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 81,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "ess-critical functions could continue across our technology infrastructure. We also took steps to automate our back office and modernise the workplace uninterrupted. To support this new hybrid workplace, we rolled out MS Office 365, using cloud services to scale-up, – supported by a shift to a more agile way of working and efficiencies created through online collaboration and manage and measure di"
+   },
+   "note": "7 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C1",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Lãnh đạo và thông điệp văn hóa số",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 84,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "RT THE POWER OF TECH 2021 ANNUAL REPORT THE POWER OF TECH TALENT DIGITAL (DO + IT) IT Division (continued) Other achievements and initiatives in 2021 Talent is one of the three pillars in Techcombank’s five-year (continued) Successfully implement MS Office 365 – strategy. secured, anytime, anywhere Change management In 2021 we enhanced the Design Approval Board (DAB) Accelerate building capability"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C2",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Đào tạo và nâng cao kỹ năng số",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "PHASE"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "ucts and services and increase market share to maximise With strengthened data analytics WB completed a comprehensive WB continued to prioritise four core capabilities, WB – together with competency framework for sectors: real estate and construction, profitability. DnA – launched data-driven tools upskilling the RM salesforce. A materials (ReCoM); fast moving to help relationship managers (RMs) r"
+   },
+   "note": "6 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C3",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Văn hóa đổi mới sáng tạo",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 85,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "2022 we will offer training programs aimed at more senior level ● Our Fresh Talent Attraction Program roles: included: Compensation and benefits ● TechcomLeader for Leading Managers » Campus recruitment To recruit and retain staff we must continue to offer competitive remuneration. To this end, » ‘Hackathon’ ● Future Leaders Program for Leading Business we reviewed our total compensation model fo"
+   },
+   "note": "1 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "C4",
+   "pillar": "C",
+   "pillar_name": "Văn hóa",
+   "name": "Môi trường làm việc số",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "ACT"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 37,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "continued spread of COVID-19 hampered local and international business economic growth, also continued to enhance our sector and industry-led disrupted established supply chains, and compelled many SMEs to temporarily or permanently cease operations. business programs and embarked on pursuing end- Remote working and accelerated adoption of digital banking are now the ‘new normal’, and it may rema"
+   },
+   "note": "2 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D1",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Quản trị dữ liệu",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 12,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "e lead priorities. A key achievement was building the generation conversion rates foundation of a next-generation data lake, now integrating over 60% of critical business systems. This has been instrumental in: ● Several value-creating credit card initiatives and mortgage risk decisioning Revamping data governance to implement new policies and standards, identifying ● Reducing approval times from"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D2",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Hạ tầng dữ liệu",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 4,
+   "score_pct": 100.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM",
+    "L3",
+    "INDEP",
+    "KPI",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 9,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "Consumer Survey and the first non-state-owned We: Ranking – the only Vietnamese commercial bank to join satisfaction (CSAT) bank to make Top 10 the USD 1 billion club ● Introduced new customer interaction platforms ● Built better credit decision models TOI CASA NIM 5.6% ● Invested in technology and data infrastructure and development. 35.4% 50.5% YoY We adapted to changing customer behaviours and"
+   },
+   "note": "17 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+  },
+  {
+   "criterion": "D3",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Phân tích nâng cao và AI/ML ra quyết định",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 2,
+   "score_pct": 50.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "low",
+   "features": [
+    "PLAN",
+    "ACT",
+    "NUM"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": 38,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": "ontributor to Techcombank’s overall Improving customer services Enhancing customer experiences Diversifying core sectors and insight performance, working closely with customers and other divisions to build on strengths in products and services and increase market share to maximise With strengthened data analytics WB completed a comprehensive WB continued to prioritise four core capabilities, WB –"
+   },
+   "note": "5 đoạn khớp từ khóa"
+  },
+  {
+   "criterion": "D4",
+   "pillar": "D",
+   "pillar_name": "Dữ liệu",
+   "name": "Bảo vệ dữ liệu cá nhân",
+   "bank": "tcb",
+   "year": 2021,
+   "score": 0,
+   "score_pct": 0.0,
+   "status": "no_mention",
+   "status_label": "Thuật toán không tìm thấy đề cập trong tài liệu đã quét (không đồng nghĩa ngân hàng không công bố)",
+   "confidence": "low",
+   "features": [],
+   "evidence": {
+    "file": "data/raw/tcb/2021_bctn.pdf",
+    "page": null,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/imported-assets/20220628_Annual_Report_2021_double_page_6ce0c20104.pdf",
+    "quote": null
+   },
+   "note": "thuật toán không tìm thấy từ khóa trong tài liệu đọc được; không kết luận ngân hàng không công bố"
+  }
+ ],
+ "dti_indicators": [
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "K-Q1",
+   "pillar": "K",
+   "name": "Tỷ lệ giao dịch khách hàng qua kênh số",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 81.0,
+   "L": 0.0,
+   "U": 90.0,
+   "z": 90.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "định nghĩa: remit_domestic"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "K-Q2",
+   "pillar": "K",
+   "name": "Tỷ lệ khách hàng số / tổng khách hàng",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu số KH số hoặc tổng KH"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "K-Q3",
+   "pillar": "K",
+   "name": "Điểm đánh giá ứng dụng (gộp App Store + Google Play, trọng số theo lượt đánh giá)",
+   "unit": "sao (1-5)",
+   "direction": "higher_better",
+   "x": null,
+   "L": 1.0,
+   "U": 5.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "S-Q1",
+   "pillar": "S",
+   "name": "Thay đổi tỷ lệ giao dịch số bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 18.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ cùng định nghĩa"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "S-Q2",
+   "pillar": "S",
+   "name": "Tăng trưởng kép số khách hàng số (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 24.4555,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu digital_customers năm cuối"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "T-Q1",
+   "pillar": "T",
+   "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": 0.3782,
+   "L": 0.0,
+   "U": 0.3038,
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": null
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "T-Q2",
+   "pillar": "T",
+   "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "O-Q1",
+   "pillar": "O",
+   "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
+   "unit": "điểm %/năm",
+   "direction": "lower_better",
+   "x": null,
+   "L": -0.5845,
+   "U": 0.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có năm đầu kỳ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "O-Q2",
+   "pillar": "O",
+   "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
+   "unit": "%/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 1.1843,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không có mốc đầu kỳ cách >= 2 năm"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "C-Q1",
+   "pillar": "C",
+   "name": "Tỷ lệ nhân sự công nghệ / tổng CBNV",
+   "unit": "%",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 100.0,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "không công bố nhân sự công nghệ"
+  },
+  {
+   "bank": "tcb",
+   "year": 2021,
+   "indicator": "C-Q2",
+   "pillar": "C",
+   "name": "Số giờ đào tạo bình quân / CBNV",
+   "unit": "giờ/người/năm",
+   "direction": "higher_better",
+   "x": null,
+   "L": 0.0,
+   "U": 38.7,
+   "z": null,
+   "status": "thiếu dữ liệu",
+   "has_data": false,
+   "note": "thiếu giờ đào tạo"
+  }
+ ],
+ "highlights": {
+  "strongest_pillar": "K",
+  "weakest_pillar": "C",
+  "criteria_score_distribution": {
+   "0": 2,
+   "1": 8,
+   "2": 7,
+   "3": 1,
+   "4": 6
+  }
+ }
+}

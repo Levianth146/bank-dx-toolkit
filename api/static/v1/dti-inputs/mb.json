@@ -1,0 +1,1998 @@
+{
+ "bank": "mb",
+ "year": null,
+ "indicator": null,
+ "variable": null,
+ "scope": "all",
+ "formula": null,
+ "count": 108,
+ "items": [
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "casa_deposits",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: TM tiền gửi KH 2020 OCR kém, chưa đọc được CASA",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "casa_deposits",
+   "value": 171396096.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 62,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 62, hợp nhất: TM 22 Tiền/vàng gửi không kỳ hạn 171.396.096",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "casa_deposits",
+   "value": 166971567.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 57,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 57, hợp nhất: TM 22 Tiền/vàng gửi không kỳ hạn 166.971.567 | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "casa_deposits",
+   "value": 216092296.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 60,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=17; Tién gủi khong ky han 216.092.296 186.971.567 ⏎ Bang VND 197. 782.244 152.272.3828 ⏎ Bang ngoar 16 18.310.052 14.699.239 ⏎ Tiền gửi có ky ha | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "casa_deposits",
+   "value": 271579760.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 64,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 64, hợp nhất: TM 22 Tiền gửi không kỳ hạn 271.579.760",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "casa_deposits",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; BCTC EN 2025 không có TM breakdown tiền gửi KKH của KH (p14=CF; demand 14.315.078 ở p48 là TG tại TCTD khác)",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "customer_deposits",
+   "value": 310960354.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p11: Tiền gửi của khách hàng 310.960.354",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "customer_deposits",
+   "value": 384692155.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=8; Tiền gửi của khách hàng 22 384.692.155 310.960.354 ⏎ Cac công cu tai chính phái sinh va các khoản ⏎ nợ tai chính 9 - - ⏎ Vén tai tre, ay thá | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "customer_deposits",
+   "value": 443605638.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 CĐKT hợp nhất p11: Tiền gửi của khách hàng 31/12/2022 = 443.605.638",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "customer_deposits",
+   "value": 567532577.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p11: Tiền gửi KH 567.532.577",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "customer_deposits",
+   "value": 714154479.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Tién gửi cua khach hang 22 714.154.479 567.532.577 ⏎ Cac céng cu tai chính phai sinh va các khoản ⏎ ng tai chinh khac 9 191.545 - ⏎ Vén tai  | đã kiểm: TY_SO | range-check (ROA/ROE/CASA/xu hướng), Đã đối chiếu PDF trang 11, dòng Tiền gửi của khách hàng",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "customer_deposits",
+   "value": 921368132.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p11: Deposits from customers 921.368.132",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: CASA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "digital_customer_share",
+   "value": 86.0,
+   "unit": "%",
+   "source_file": "data/raw/mb/2023_bctn.pdf",
+   "page": 9,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2024/bctn-mb-2023--eng-resize.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "khách hàng dùng app / digital platforms; BCTN EN p9: '86% of customers served on digital platforms' (All-in-one App MBBank/BIZ); p21 mô tả App MBBank — không công bố số tuyệt đối KH số.",
+   "definition": "digital_platforms",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "digital_customer_share",
+   "value": null,
+   "unit": "%",
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: tỷ lệ KH số do NH công bố (K-Q2 cách 2)",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed (absolute): BCTN EN p9/p21: 86% of customers using App MBBank/BIZ MBBank (96.7% transactions via digital channels). Chỉ có tỷ lệ %, không công bố số KH số tuyệt đối.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_collected: chưa tìm tay trong BCTN/BCTC",
+   "definition": null,
+   "missing_reason": "not_collected",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "digital_customers",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed_or_ambiguous: BCTN nêu ~35M digital channel users trùng total_customers 35M — không dùng làm digital_customers riêng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "K-Q2",
+    "S-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "digital_txn_share",
+   "value": 85.0,
+   "unit": "%",
+   "source_file": "data/raw/mb/2020_bctn.pdf",
+   "page": 4,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: ratio of digital transactions was at 85%",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "digital_txn_share",
+   "value": 92.3,
+   "unit": "percent",
+   "source_file": "data/raw/mb/2021_bctn.pdf",
+   "page": 42,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/en-mb-ar21-final.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p42: % of digital transactions = 92.3% (total transactions 391 million).",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "digital_txn_share",
+   "value": 95.0,
+   "unit": "percent",
+   "source_file": "data/raw/mb/2022_bctn.pdf",
+   "page": 73,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p73/p74: transaction rate on digital channels reached ~95% (converting more than 95% of transactions to digital channels).",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "digital_txn_share",
+   "value": 96.7,
+   "unit": "%",
+   "source_file": "data/raw/mb/2023_bctn.pdf",
+   "page": 5,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2024/bctn-mb-2023--eng-resize.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: digital transaction rates exceeding 96.7%",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "digital_txn_share",
+   "value": 98.6,
+   "unit": "percent",
+   "source_file": "data/raw/mb/2024_bctn.pdf",
+   "page": 35,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/FINAL-24042025/en-mb-annual-report-2024.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p35: proportion of transactions via digital channels reached ~98.6%.",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "digital_txn_share",
+   "value": 98.8,
+   "unit": "%",
+   "source_file": "data/raw/mb/2025_bctn.pdf",
+   "page": 19,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/mb-bctn2025-eng-30mb.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: digital transaction ratio reached ~98.8% (overall ~98.9% p67)",
+   "definition": "all_txn",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q1",
+    "S-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "equity",
+   "value": 47902604.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 50,055,485 − NCI 2,152,881; CĐKT p11 OCR: NCI ~2.152.881 (BCTC2021 comparative restated 2.192.991 / total 50.099.495); dùng số cùng năm OCR; parent=47.902.604",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "equity",
+   "value": 59574235.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 62,486,023 − NCI 2,911,788; BCTC2022 CĐKT p11 cột 2021: NCI 2.911.788 (OCR BCTC2021 từng đọc 2.911.188); 62.486.023−2.911.788=59.574.235 (không dùng số cũ 59.574.835 lệch 600)",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "equity",
+   "value": 75949094.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 79,613,219 − NCI 3,664,125; CĐKT p11: NCI 3.664.125; TỔNG VCSH 79.613.219 → parent=75.949.094",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "equity",
+   "value": 92738049.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 96,711,159 − NCI 3,973,110; BCTC2024 CĐKT p11 cột 2023: NCI 3.973.110; TỔNG 96.711.159 → parent=92.738.049",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "equity",
+   "value": 112148701.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 117,059,581 − NCI 4,910,880; CĐKT p11: NCI 4.910.880; TỔNG VCSH 117.059.581 → parent=112.148.701",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "equity",
+   "value": 136136030.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "parent = total 142,022,525 − NCI 5,886,495; CĐKT EN p11: Non-controlling interests 5,886,495; TOTAL OWNERS' EQUITY 142,022,525 → parent=136,136,030",
+   "definition": "parent",
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "headcount",
+   "value": 15233.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2020_bctn.pdf",
+   "page": 26,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN: Number of employees (Bank and subsidiaries) 15,233",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "headcount",
+   "value": 15178.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2022_bctn.pdf",
+   "page": 136,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN notes p136 bảng Employees' remuneration: Number of employees 2021 = 15,178 (2022=16,136). Phạm vi: group (khớp chuỗi MB 2020 bank+subsidiaries).",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "headcount",
+   "value": 16136.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2022_bctn.pdf",
+   "page": 136,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN notes p136: Number of employees 2022 = 16,136. Phạm vi: group.",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "headcount",
+   "value": 16234.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2023_bctn.pdf",
+   "page": 27,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2024/bctn-mb-2023--eng-resize.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: MB Group employees as of 31/12/2023: 16,234",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "headcount",
+   "value": 18639.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2024_bctn.pdf",
+   "page": 46,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/FINAL-24042025/en-mb-annual-report-2024.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p46: MB GROUP number of employees as of 31/12/2024 = 18,639 (Bank only 12,155). Chọn group để nhất quán 2023/2025.",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "headcount",
+   "value": 20674.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2025_bctn.pdf",
+   "page": 95,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/mb-bctn2025-eng-30mb.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: Total employees group-wide 2025 = 20,674 (MB only 18,836)",
+   "definition": "group",
+   "missing_reason": null,
+   "used_by": [
+    "O-Q2",
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "nci",
+   "value": 2152881.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2020 CĐKT p11: NCI 2.152.881 (OCR cùng năm). BCTC2021 p11 cột 2020 trình bày lại = 2.192.991 / TỔNG VCSH 50.099.495. Chọn số báo cáo năm 2020; parent=50.055.485−2.152.881=47.902.604",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "nci",
+   "value": 2911788.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 CĐKT p11 cột 2021: NCI 2.911.788 (đã đối PDF). BCTC2021 p11 OCR từng ghi 2.911.188 — sai/OCR; không dùng. parent=62.486.023−2.911.788=59.574.235",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "nci",
+   "value": 3664125.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p11: NCI 3.664.125; TỔNG VCSH 79.613.219 → parent=75.949.094",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "nci",
+   "value": 3973110.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2024 CĐKT p11 cột 2023: NCI 3.973.110; TỔNG 96.711.159 → parent=92.738.049",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "nci",
+   "value": 4910880.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p11: NCI 4.910.880; TỔNG VCSH 117.059.581 → parent=112.148.701",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "nci",
+   "value": 5886495.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT EN p11: Non-controlling interests 5,886,495; TOTAL OWNERS' EQUITY 142,022,525 → parent=136,136,030",
+   "definition": "nci",
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "net_fee_income",
+   "value": 3675553.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Lãi thuần HĐ DV 3.675.553 — giữ; CHEO_NAM khớp nhầm cột khác | đã kiểm: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "net_fee_income",
+   "value": 4367378.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Lãi thuần HĐ DV 4.367.378 (trước lấy nhầm lãi HĐ khác 3.254.314) | đã kiểm: CHEO_NAM | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "net_fee_income",
+   "value": 4135568.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Lãi thuần từ hoạt động dịch vụ 4.135.568 (không lấy ngoại hối 1.703.960) | đã kiểm: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "net_fee_income",
+   "value": 4085225.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Lãi thuần HĐ DV 4.085.225 | CẦN KIỂM: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "net_fee_income",
+   "value": 4368249.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Lãi thuần HĐ DV 4.368.249 (trước lấy nhầm lãi FX 2.000.164) | đã kiểm: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "net_fee_income",
+   "value": 6578681.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Net fee 6.578.681 — giữ; BIEN_DONG do 2024 từng sai | đã kiểm: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": []
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "net_interest_income",
+   "value": 20277795.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: NII 20.277.795 (khối số)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "net_interest_income",
+   "value": 26199554.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Thu nhập lãi thuần 28 26.199.554 20.277.795 ⏎ Thu nhập tir hoạt động dich vy 12.308.295 8.228.173 ⏎ Chi phí hoạt động dich vu (7.940.917) (4 | range-check (ROA/ROE/CASA/xu hướng), Đã đối chiếu PDF trang 13, dòng Thu nhập lãi thuần",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "net_interest_income",
+   "value": 36023122.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; Thu nhập lãi thuan 28 36.023.122 26,199,554 ⏎ Thu nhập ti hoat động dich vy 14.243,734 12,308.295 ⏎ Chi phi hoat động dich vụ (10,108,188) _ | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "net_interest_income",
+   "value": 38683848.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Thu nhập lãi thuan 28 38.683.848 36.023.122 ⏎ Thu nhập từ hoạt động dich vy 13.137.624 14.243,734 ⏎ Chi phi hoạt déng dich vu (9.052.399) (1 | range-check (ROA/ROE/CASA/xu hướng), Đã đối chiếu PDF trang 13, dòng Thu nhập lãi thuần",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "net_interest_income",
+   "value": 41152219.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2024 KQKD p13: Thu nhập lãi thuần Năm 2024 = 41.152.219. BCTC2025 cột comparative 2024 = 41.162.219 (lệch ~10.000 trình bày lại). Chọn số báo cáo năm 2024.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "net_interest_income",
+   "value": 51610117.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=13; Net interest and similar income 27 51,610,117 41,162,219 ⏎ Fee and commission income 18,062,236 14,602,602 ⏎ Fee and commission expenses (11 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF | Đã đối chiếu PDF . Giữ số.",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "net_profit",
+   "value": 8262659.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2020 trang 13, hợp nhất, lợi nhuận cổ đông mẹ, bỏ PAT tổng 8.606.039",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "net_profit",
+   "value": 12697075.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2021 trang 13, hợp nhất, lợi nhuận cổ đông mẹ (Lợi nhuận ròng trong năm) 12.697.075 (bỏ PAT tổng 13.221.437)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "net_profit",
+   "value": 17482735.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 13, hợp nhất, lợi nhuận cổ đông mẹ (Lợi nhuận ròng trong năm) 17.482.735 (bỏ PAT tổng 18.155.185)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "net_profit",
+   "value": 20676788.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2023 trang 13, hợp nhất, lợi nhuận cổ đông mẹ (Lợi nhuận ròng trong năm) 20.676.788 (bỏ PAT tổng 21.053.792)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "net_profit",
+   "value": 22633757.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2024 trang 13, hợp nhất, lợi nhuận cổ đông mẹ (LNST thuộc về NH mẹ) 22.633.757 (bỏ PAT tổng 22.951.264)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "net_profit",
+   "value": 26778939.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Owners' net profit 26.778.939 (không lấy PAT tổng)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "Lớp C: ROE",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "op_profit_before_provision",
+   "value": 16806746.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: LN trước dự phòng 16.806.746; TOI≈27.362.173",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "op_profit_before_provision",
+   "value": 24557310.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD hợp nhất p13 cột 2021: LN thuần HĐKD trước dự phòng = 24.557.310",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "op_profit_before_provision",
+   "value": 30776997.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 KQKD hợp nhất p13: LN thuần HĐKD trước dự phòng 2022 = 30.776.997",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "op_profit_before_provision",
+   "value": 32393121.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: LN trước DPRR 32.393.121",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "op_profit_before_provision",
+   "value": 38405972.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: LN trước DPRR 38.405.972",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "op_profit_before_provision",
+   "value": 48011862.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: Net profit before allowance 48.011.862",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "opex",
+   "value": 10555457.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: TỔNG CHI PHÍ HĐ 10.555.457 — giữ; CHEO_NAM khớp nhầm CP DV | đã kiểm: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "opex",
+   "value": 12377188.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: TỔNG CHI PHÍ HĐ 12.377.188 trị tuyệt đối (trước lấy nhầm CP HĐ DV) | CẦN KIỂM: CHEO_NAM",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "opex",
+   "value": 14815628.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: TỔNG CHI PHÍ HĐ 14.815.628 (trước nhầm CP HĐ DV 10.108.188) | PDF đối chiếu seed1",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "opex",
+   "value": 14912941.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "KQKD p13: TỔNG CHI PHÍ HĐ 14.912.941 trị tuyệt đối",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "opex",
+   "value": 17007250.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=15; CHI PHÍ HOẠT DONG 35 (17.007.250) (14.912.941) ⏎ Loi nhuận thuan tir hoat động kinh doanh ⏎ trước chi phi dw phòng rủi ro tin dung 38.405.97 | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "opex",
+   "value": 19681153.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 13,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "fin-cand score=13; OPERATING EXPENSES 34 (19,681,153) (17,007,250) ⏎ Net profit before allowance expense for credit ⏎ losses 48,011,862 38,405,972 ⏎ Allowance | range-check (ROA/ROE/CASA/xu hướng), CHƯA đối chiếu PDF",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "O-Q1",
+    "O-Q2",
+    "Lớp C: CIR",
+    "Lớp C: NON_INTEREST_SHARE"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "software_gross_cost",
+   "value": 1169487.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 57,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2021 TM TSCĐ VH p57 bảng biến động năm 2020: Phần mềm máy vi tính — nguyên giá cuối năm 2020 = 1.169.487",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "software_gross_cost",
+   "value": 1811224.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 57,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2021 TM TSCĐ VH p57: Phần mềm máy vi tính — nguyên giá cuối năm = 1.811.224",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "software_gross_cost",
+   "value": 2439378.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 53,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC2022 TM TSCĐ VH p53: Phần mềm máy vi tính — nguyên giá cuối năm = 2.439.378",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "software_gross_cost",
+   "value": 3020072.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 59,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC 2024 p59 TM TSCĐ VH: Phần mềm máy tính Nguyên giá số dư cuối năm 2023 = 3.020.072 (≠ closing 2024 3.798.646)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "software_gross_cost",
+   "value": 3798646.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 60,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM BCTC 2025 bảng năm 2024: software Cost closing 3.798.646",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "software_gross_cost",
+   "value": 4473644.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 60,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "TM TSCĐ VH p60: Computer software Cost closing 4.473.644",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "tech_staff",
+   "value": null,
+   "unit": null,
+   "source_file": null,
+   "page": null,
+   "source_url": null,
+   "confirmed": false,
+   "confirmed_by": null,
+   "note": "not_disclosed: đã tìm BCTN/BCPTBV, không có.",
+   "definition": null,
+   "missing_reason": "not_disclosed",
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "tech_staff",
+   "value": 2500.0,
+   "unit": "persons",
+   "source_file": "data/raw/mb/2025_bctn.pdf",
+   "page": 67,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/mb-bctn2025-eng-30mb.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "approx; BCTN EN p67: ~2,500 technology specialists / IT professionals (~12% employees)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "C-Q1"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "total_assets",
+   "value": 494982162.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2020_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2020/mbb.cbtt-bao-cao-tai-chinh-kiem-toan-hop-nhat-2020.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p11: TONG NO PHAI TRA VA VON CHU SỞ HỮU 494.982.162 (= tổng TS)",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "total_assets",
+   "value": 607140419.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2021_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2021/mbb.cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2021.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT p10: TỔNG TÀI SẢN 607.140.419",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "total_assets",
+   "value": 728532373.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2022_bctc.pdf",
+   "page": 11,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2022/mbb.cbtt---bctc-hop-nhat-kiem-toan-2022---signed.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTC năm 2022 trang 11, hợp nhất: TỔNG NỢ PHẢI TRẢ VÀ VỐN CSH = TỔNG TÀI SẢN 728.532.373",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "total_assets",
+   "value": 944953640.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2023_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2024/thang-02/mbb.cbtt-bao-cao-hop-nhat-kiem-toan-2023.pdf",
+   "confirmed": true,
+   "confirmed_by": "diem_my",
+   "note": "fin-cand score=19; TONG TAISAN CO 944.953.640 728.532.373 ⏎ 6 | range-check (ROA/ROE/CASA/xu hướng), Đã đối chiếu PDF trang 10, dòng Tổng tài sản",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "total_assets",
+   "value": 1128801062.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2024_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/Bao-cao-tai-chinh/2024/20250330---mbb---cbtt-bao-cao-tai-chinh-hop-nhat-kiem-toan-nam-2024---vietnamese.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT hợp nhất p10: TỔNG TÀI SẢN 1.128.801.062 (trước lấy nhầm bảng rủi ro lãi suất p95) | đã kiểm: BIEN_DONG,NHAM_COT",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "total_assets",
+   "value": 1615763927.0,
+   "unit": "VND million",
+   "source_file": "data/raw/mb/2025_bctc.pdf",
+   "page": 10,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/2026/T03-2026/20260310---mbb---audited-consolidated-financial-statements-for-2025.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "CĐKT hợp nhất p10: TOTAL ASSETS 1.615.763.927 (+43% vs 2024=1.128.801.062). BCTN 2025 p65: tăng >43% do tín dụng +37% (không phải M&A) — giữ số | CẦN KIỂM: BIEN_DONG",
+   "definition": null,
+   "missing_reason": null,
+   "used_by": [
+    "T-Q1",
+    "Lớp C: ROA"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "total_customers",
+   "value": 6000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/mb/2022_bctn.pdf",
+   "page": 40,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN 2022 p40 nhìn lại: from 6 million customers (in 2020) to 20 million (in 2022). BCTN 2020 chỉ nêu 1.86M new app users — không có tổng exact cùng năm",
+   "definition": "cumulative",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "total_customers",
+   "value": 12900000.0,
+   "unit": "customers",
+   "source_file": "data/raw/mb/2021_bctn.pdf",
+   "page": 4,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/en-mb-ar21-final.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p4: more than 12.9 million customers in total (3 million new in 2021). Phạm vi: cumulative total customers",
+   "definition": "cumulative",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "total_customers",
+   "value": 20000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/mb/2022_bctn.pdf",
+   "page": 6,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p6/p9: reaching a cumulative number of 20 million customers. Phạm vi: cumulative total",
+   "definition": "cumulative",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "total_customers",
+   "value": 26500000.0,
+   "unit": "customers",
+   "source_file": "data/raw/mb/2023_bctn.pdf",
+   "page": 20,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2024/bctn-mb-2023--eng-resize.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: Serving over 26.5 million customers",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "total_customers",
+   "value": 30200000.0,
+   "unit": "customers",
+   "source_file": "data/raw/mb/2024_bctn.pdf",
+   "page": 36,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/FINAL-24042025/en-mb-annual-report-2024.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p36: By the end of 2024, MB served a total of 30.2 million customers (p35: 30.2 MILLION CUSTOMERS). Phạm vi: total customers đang phục vụ cuối năm",
+   "definition": "total",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "total_customers",
+   "value": 35000000.0,
+   "unit": "customers",
+   "source_file": "data/raw/mb/2025_bctn.pdf",
+   "page": 19,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/mb-bctn2025-eng-30mb.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: cumulative total 35 million customers",
+   "definition": "cumulative",
+   "missing_reason": null,
+   "used_by": [
+    "K-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2020,
+   "variable": "training_hours_per_head",
+   "value": 30.0,
+   "unit": "hours",
+   "source_file": "data/raw/mb/2020_bctn.pdf",
+   "page": 37,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/mb-annualreport-en-210615.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p37: Average annual training time was 30 hours per employee (on-line vs on-site 90%-10%). Định nghĩa: giờ/người/năm; không tách rõ đào tạo nhân viên mới.",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2021,
+   "variable": "training_hours_per_head",
+   "value": 43.0,
+   "unit": "hours",
+   "source_file": "data/raw/mb/2021_bctn.pdf",
+   "page": 43,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/Tieng-Anh/en-mb-ar21-final.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p43: average training hours reached 43 hours/employee (vượt 20% target existing employees; hoàn thành 108% target new employees). Định nghĩa: giờ/người/năm; gồm cả mục tiêu đào tạo nhân viên mới.",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2022,
+   "variable": "training_hours_per_head",
+   "value": 35.0,
+   "unit": "hours",
+   "source_file": "data/raw/mb/2022_bctn.pdf",
+   "page": 88,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2023/mb-annual-report-2022-english-230705-trang-doi.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p88: average number of hours of training per employee was 35 hours per employee per year. Định nghĩa: giờ/người/năm; không nêu rõ gồm/không gồm đào tạo nhân viên mới.",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2023,
+   "variable": "training_hours_per_head",
+   "value": 51.22,
+   "unit": "hours",
+   "source_file": "data/raw/mb/2023_bctn.pdf",
+   "page": 57,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2024/bctn-mb-2023--eng-resize.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN: Average training hours in 2023: 51.22 (incl. new hire training)",
+   "definition": "incl_new_hire",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2024,
+   "variable": "training_hours_per_head",
+   "value": 70.73,
+   "unit": "hours",
+   "source_file": "data/raw/mb/2024_bctn.pdf",
+   "page": 99,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/FINAL-24042025/en-mb-annual-report-2024.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p99: AVERAGE TRAINING HOURS IN 2024 = 70.73 HOURS (equivalent to 14,212 trainees INCLUDING NEW RECRUIT TRAINING). Định nghĩa: giờ/người/năm; GỒM đào tạo nhân viên mới.",
+   "definition": "incl_new_hire",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  },
+  {
+   "bank": "mb",
+   "year": 2025,
+   "variable": "training_hours_per_head",
+   "value": 82.91,
+   "unit": "hours",
+   "source_file": "data/raw/mb/2025_bctn.pdf",
+   "page": 74,
+   "source_url": "https://www.mbbank.com.vn/resources/files/NhaDauTu/bao-cao-thuong-nien/2025/mb-bctn2025-eng-30mb.pdf",
+   "confirmed": true,
+   "confirmed_by": "nam",
+   "note": "BCTN EN p74/p95: average training hours per employee 82.91 hours — đơn vị hours/person/year đã đối chiếu",
+   "definition": "avg_hours",
+   "missing_reason": null,
+   "used_by": [
+    "C-Q2"
+   ]
+  }
+ ],
+ "other_sources": {}
+}
