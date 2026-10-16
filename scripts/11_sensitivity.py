@@ -3,6 +3,8 @@
 
 Không đổi cách tính chính thức: dùng lại đúng hàm/hằng số của 10_score.py (Calc, normalize, load_*),
 rồi tính lại Score_Bank dạng ma trận để chạy hàng nghìn kịch bản. Kịch bản cơ sở phải khớp 10_score.py.
+Bước 0 dùng chung build_indicators của bước 10: tập chỉ số bị loại theo năm
+được giữ nguyên trong mọi kịch bản và mô phỏng, kể cả thử thiếu = 0.
 
 Kịch bản (bảng "Kịch bản độ nhạy" của docx):
   A. weights   Trọng số DBI/DTI: 100/0, 80/20 (cơ sở), 70/30, 60/40
@@ -59,8 +61,11 @@ def rank_of(score):
     return rankdata(-np.round(score, 9), method="min").astype(int)
 
 
-def dti_by_pillar(z, missing="drop"):
+def dti_by_pillar(z, missing="drop", retained=None):
     zz = np.where(np.isnan(z), 0.0, z) if missing == "zero" else z
+    if retained is not None:
+        # Chỉ số bị loại ở bước 0 không được đưa trở lại, kể cả kịch bản thiếu = 0.
+        zz = np.where(np.asarray(retained)[None, :], zz, np.nan)
     out = np.full((z.shape[0], len(PIL)), np.nan)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", RuntimeWarning)
@@ -129,8 +134,12 @@ def prepare(a, years):
     meta = S.load_yaml("dti_bounds.yaml")["bounds"]
     coding = S.load_coding(a.coding, False)
     V, D = S.load_inputs(a.inputs, False)
-    calc = S.Calc(V, D, S.load_app_rating(a.app), S.load_platform(a.audit), a.start_year, max(years))
+    project = S.load_yaml("banks.yaml")
+    calc = S.Calc(V, D, S.load_app_rating(a.app), S.load_platform(a.audit), a.start_year, max(project["coding_years"]))
     banks = sorted(coding["bank"].unique())
+    if set(banks) != set(project["banks"]):
+        sys.exit("DỪNG: bước 0 cần đủ tập ngân hàng trong config/banks.yaml.")
+    _, gate = S.build_indicators(calc, banks, years, bounds)
     data = {}
     for y in years:
         c = coding[coding["year"] == y]
@@ -145,7 +154,10 @@ def prepare(a, years):
         for i, b in enumerate(banks):
             for ind, (v, _) in calc.all(b, y).items():
                 x[i, IND.index(ind)] = np.nan if v is None else v
-        data[y] = dict(levels=lv, dbi=dbi, x=x)
+        retained = gate[gate.year == y].set_index("indicator").loc[IND, "retained"].to_numpy(dtype=bool)
+        # Giữ x gốc để truy vết; mọi kịch bản chỉ dùng tập chỉ số sau bước 0.
+        data[y] = dict(levels=lv, dbi=dbi, raw_x=x.copy(), x=np.where(retained[None, :], x, np.nan),
+                       retained=retained, gate=gate[gate.year == y].copy())
     return banks, bounds, meta, data
 
 
@@ -172,7 +184,7 @@ def build_scenarios(d, bounds, meta, a):
         w = np.ones(len(PIL)); w[k] = 0
         sc.append(("D. Loại một trụ cột", f"Bỏ {S.PILLARS[p]}", total(pillar_p(dbi, dti0, a.w_dbi), w)))
     sc.append(("F. Dữ liệu thiếu", "Thiếu = 0 (chỉ để thử độ nhạy)",
-               total(pillar_p(dbi, dti_by_pillar(z0, "zero"), a.w_dbi))))
+               total(pillar_p(dbi, dti_by_pillar(z0, "zero", d.get("retained")), a.w_dbi))))
     pert = [i for i in IND if meta.get(i, {}).get("status") in PERTURB_STATUS and i not in S.DOCX_FIXED]
     for f, tag in ((0.8, "-20%"), (1.2, "+20%")):            # G
         z = z_matrix(x, scale_bounds(bounds, meta, pert, f))
@@ -343,7 +355,8 @@ def main():
     cat = lambda k: pd.concat([res[y][k] for y in years], ignore_index=True)
     tables = {"scenarios": cat("long"), "kendall_spearman": cat("kend"), "summary": cat("summ"),
               "montecarlo_rank_dist": cat("mc"), "pairs": cat("pairs"), "norm_tau": cat("norm_tau"),
-              "norm_coverage": cat("coverage"), "keyword_vs_rubric": keyword_check(years)}
+              "norm_coverage": cat("coverage"), "keyword_vs_rubric": keyword_check(years),
+              "step0_gate": pd.concat([data[y]["gate"] for y in years], ignore_index=True)}
     for k, t in tables.items():
         t.to_csv(outdir / f"sens_{k}.csv", index=False, encoding="utf-8-sig")
     with pd.ExcelWriter(outdir / "sensitivity_results.xlsx", engine="openpyxl") as xw:
