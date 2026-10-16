@@ -1,0 +1,464 @@
+/*
+ * Dashboard-wide motion styles.
+ * Keep animation and transition rules here, separate from component layout.
+ * Future shared animations for other tabs can be added in this file.
+ */
+
+.sidebar {
+  transition:
+    width 560ms cubic-bezier(0.34, 1.25, 0.64, 1),
+    padding 400ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 300ms ease,
+    background-color 300ms ease,
+    border-color 300ms ease;
+}
+
+.dashboard-shell,
+.sidebar,
+.topbar,
+.year-picker,
+.year-button,
+.icon-button,
+.theme-switch,
+.bank-filter-list,
+.source-note,
+.panel,
+.retry-button,
+.loading-state,
+.empty-selection,
+.comparison-table th,
+.comparison-table td {
+  transition:
+    background-color 280ms ease,
+    border-color 280ms ease,
+    color 280ms ease,
+    box-shadow 280ms ease;
+}
+
+.icon-button svg {
+  transition:
+    transform 360ms cubic-bezier(0.34, 1.25, 0.64, 1),
+    color 260ms ease;
+}
+
+.theme-switch {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.theme-switch:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 3px rgb(12 43 71 / 18%),
+    0 4px 9px rgb(15 48 82 / 18%);
+}
+
+.theme-switch:active {
+  transform: scale(0.96);
+}
+
+.icon-button:hover svg {
+  transform: rotate(-18deg) scale(1.08);
+}
+
+.dashboard-shell[data-theme='dark'] .icon-button[aria-pressed='true'] svg {
+  transform: rotate(180deg);
+}
+
+.sidebar-toggle {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 520ms cubic-bezier(0.34, 1.25, 0.64, 1),
+    box-shadow 180ms ease;
+}
+
+.sidebar-toggle:hover {
+  background: #f1f6fb;
+  color: var(--blue);
+  box-shadow: 0 2px 7px rgb(15 48 82 / 10%);
+}
+
+.dashboard-shell[data-theme='dark'] .sidebar-toggle:hover {
+  background: #26394c;
+  color: #a8ccff;
+}
+
+.sidebar-toggle svg {
+  transition: transform 520ms cubic-bezier(0.34, 1.25, 0.64, 1);
+}
+
+.brand {
+  transition:
+    padding 360ms ease,
+    gap 360ms ease;
+}
+
+.brand-copy {
+  transition:
+    opacity 180ms ease,
+    transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    max-width 400ms ease;
+}
+
+.nav-item {
+  transition:
+    background-color 240ms ease,
+    color 240ms ease,
+    padding 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-radius 240ms ease,
+    transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.nav-item svg {
+  flex: 0 0 auto;
+  transition: transform 400ms cubic-bezier(0.34, 1.25, 0.64, 1);
+}
+
+.nav-item-label {
+  transition:
+    opacity 180ms ease,
+    transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.nav-item:hover:not(.active) {
+  background: #f3f7fb;
+}
+
+.dashboard-shell[data-theme='dark'] .nav-item:hover:not(.active),
+.dashboard-shell[data-theme='dark'] .bank-filter:hover {
+  background: #263747;
+  color: #e6eff8;
+}
+
+.nav-item.active::before {
+  animation: active-marker-in 420ms cubic-bezier(0.34, 1.25, 0.64, 1) both;
+}
+
+.bank-filter {
+  transition:
+    background-color 220ms ease,
+    padding 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-radius 220ms ease;
+}
+
+.bank-filter:hover {
+  border-radius: 5px;
+  background: #eef4fa;
+}
+
+.bank-filter input {
+  transition: transform 180ms cubic-bezier(0.34, 1.25, 0.64, 1);
+}
+
+.bank-filter input:active {
+  transform: scale(0.86);
+}
+
+.main-area {
+  transition: margin-left 560ms cubic-bezier(0.34, 1.25, 0.64, 1);
+}
+
+.dashboard-shell.sidebar-collapsed .sidebar-toggle svg {
+  transform: rotate(180deg);
+}
+
+.dashboard-shell.sidebar-collapsed .brand-copy {
+  transform: translateX(-8px);
+}
+
+.dashboard-shell.sidebar-collapsed .sidebar-label,
+.dashboard-shell.sidebar-collapsed .bank-filter-heading,
+.dashboard-shell.sidebar-collapsed .source-note {
+  opacity: 0;
+  transition:
+    opacity 150ms ease,
+    visibility 150ms ease;
+}
+
+.dashboard-shell.sidebar-collapsed .nav-item-label {
+  transform: translateX(-8px);
+}
+
+.score-card {
+  animation: dashboard-card-in 460ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: calc(var(--card-order, 0) * 45ms);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    background-color 280ms ease,
+    border-color 280ms ease,
+    color 280ms ease;
+}
+
+.score-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 19px rgb(15 48 82 / 10%);
+}
+
+.panel {
+  animation: dashboard-panel-in 480ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.dashboard-column > .panel:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+.dashboard-column > .panel:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+@keyframes active-marker-in {
+  from {
+    opacity: 0;
+    transform: scaleY(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes dashboard-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dashboard-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar,
+  .main-area {
+    transition: none;
+  }
+
+  .dashboard-shell.sidebar-collapsed .brand-copy {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.u208 {
+  position: relative;
+  display: flex;
+  width: max-content;
+  max-width: calc(100vw - 115px);
+  align-items: flex-end;
+  overflow: visible;
+  background: transparent;
+  padding: 0;
+}
+
+.u208 .u208-dk {
+  display: flex;
+  height: 32px;
+  align-items: flex-end;
+  gap: 3px;
+  overflow: visible;
+  border: 0;
+  border-radius: 8px;
+  background: var(--surface-muted);
+  padding: 3px;
+  box-shadow: none;
+}
+
+.u208 .u208-a {
+  position: relative;
+  display: grid;
+  width: var(--s, 34px);
+  min-width: 39px;
+  height: 26px;
+  flex: 0 0 var(--s, 34px);
+  place-items: center;
+  margin-bottom: var(--lift, 0px);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: var(--surface-muted);
+  padding: 6px 8px;
+  color: var(--secondary-text);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transform-origin: center bottom;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.u208 .u208-a:hover {
+  border-color: color-mix(in srgb, var(--blue) 28%, var(--border));
+  background: color-mix(in srgb, var(--blue) 10%, var(--panel));
+  color: var(--heading);
+}
+
+.u208 .u208-a.selected {
+  border-color: color-mix(in srgb, var(--blue) 72%, var(--navy));
+  background: linear-gradient(145deg, var(--blue), var(--navy));
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 9px color-mix(in srgb, var(--blue) 28%, transparent);
+}
+
+.u208 .u208-label {
+  display: block;
+  transform: none;
+}
+
+.u208 .u208-a::after {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: var(--blue);
+  content: "";
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.u208 .u208-a.selected::after {
+  opacity: 1;
+}
+
+.u208 .u208-a.is-hop {
+  animation: u208-hop 0.9s cubic-bezier(0.3, 0.6, 0.4, 1) 2;
+}
+
+.u208 .u208-a:focus-visible {
+  z-index: 1;
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.u208 .u208-tip {
+  position: absolute;
+  z-index: 3;
+  bottom: calc(100% + 7px);
+  left: 0;
+  border: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
+  border-radius: 7px;
+  background: var(--heading);
+  padding: 4px 8px;
+  color: var(--panel);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.15s ease;
+}
+
+.u208 .u208-tip.is-on {
+  opacity: 1;
+}
+
+.dashboard-shell[data-theme='dark'] .u208 .u208-dk {
+  border-color: color-mix(in srgb, var(--border) 88%, transparent);
+  background: var(--surface-muted);
+}
+
+.dashboard-shell[data-theme='dark'] .u208 .u208-a {
+  background: var(--surface-subtle);
+}
+
+.dashboard-shell[data-theme='dark'] .u208 .u208-a.selected {
+  background: linear-gradient(145deg, #225985, #17436f);
+}
+
+.dashboard-shell[data-theme='dark'] .u208 .u208-a:hover {
+  background: color-mix(in srgb, var(--blue) 18%, var(--panel));
+}
+
+@keyframes u208-hop {
+  30% { transform: translateY(-22px); }
+  55% { transform: translateY(0); }
+  72% { transform: translateY(-6px); }
+}
+
+@media (max-width: 480px) {
+  .u208 .u208-dk {
+    gap: 2px;
+    padding: 3px;
+  }
+
+  .u208 .u208-a {
+    min-width: 34px;
+    padding: 6px 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-area {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .topbar {
+    flex-wrap: wrap;
+    row-gap: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .topbar h1 {
+    flex: 1 0 100%;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .u208 {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .u208 .u208-a.is-hop {
+    animation: none;
+  }
+}
