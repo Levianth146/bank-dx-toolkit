@@ -30,6 +30,29 @@ ok = all((np.isnan(z[banks.index(r.bank), SE.IND.index(r.indicator)]) if pd.isna
          else abs(z[banks.index(r.bank), SE.IND.index(r.indicator)] - r.z) < 1e-9) for r in ind.itertuples())
 check("z chuẩn hóa cố định khớp dti_indicators.csv", ok)
 
+# Bước 0 phải khớp điểm chính thức ở cả 6 năm, kể cả khi chạy riêng năm lịch sử.
+years = list(range(2020, 2026))
+all_banks, _, _, all_data = SE.prepare(a, years)
+official = pd.read_csv(OUT / "score_summary.csv").set_index(["year", "bank"])
+official_ind = pd.read_csv(OUT / "dti_indicators.csv")
+for year in years:
+    dy = all_data[year]
+    by, _, _, _ = SE.build_scenarios(dy, bounds, meta, a)
+    check(f"bước 0: điểm và hạng cơ sở khớp chính thức {year}",
+          all(abs(by[i] - official.loc[(year, bank), "score"]) < 1e-9
+              and SE.rank_of(by)[i] == official.loc[(year, bank), "rank"]
+              for i, bank in enumerate(all_banks)))
+    zy = SE.z_matrix(dy["x"], bounds)
+    expected = official_ind[official_ind.year == year].pivot(index="bank", columns="indicator", values="z").loc[all_banks, SE.IND].to_numpy()
+    check(f"bước 0: z khớp chính thức {year}", np.allclose(zy, expected, equal_nan=True))
+    _, _, _, single = SE.prepare(a, [year])
+    check(f"chạy riêng {year} không đổi dữ liệu DTI", np.allclose(single[year]["x"], dy["x"], equal_nan=True))
+
+retained = np.ones(len(SE.IND), dtype=bool)
+retained[:3] = False
+zero_test = SE.dti_by_pillar(np.full((5, len(SE.IND)), np.nan), "zero", retained)
+check("thiếu = 0 không phục hồi chỉ số đã loại ở bước 0", np.isnan(zero_test[:, 0]).all() and (zero_test[:, 1] == 0).all())
+
 # 2. Kịch bản trọng số 70/30 khớp S.pillar_scores
 b = banks[0]; i = 0
 dbi_c = {c: d["levels"][i, k] / 4 * 100 for k, c in enumerate(S10.CRITERIA)}
