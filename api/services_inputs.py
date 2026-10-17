@@ -67,8 +67,9 @@ class InputsMixin:
         for r in df.sort_values(["bank", "variable", "year"]).itertuples(index=False):
             value, note = num(r.value, 6), text(r.note)
             reason = None
-            if value is None and note:
-                reason = "not_disclosed" if note.startswith("not_disclosed") else "not_collected" if note.startswith("not_collected") else None
+            if value is None:
+                # Ô trống không có nhãn rõ ràng được coi là chưa thu thập, không khẳng định ngân hàng không công bố.
+                reason = "not_disclosed" if note.startswith("not_disclosed") else "not_collected"
             items.append(dict(
                 bank=r.bank, year=int(r.year), variable=r.variable, value=value, unit=text(r.unit),
                 source_file=text(r.source_file), page=integer(r.page), source_url=self._doc_url(r.bank, text(r.source_file)),

@@ -6,7 +6,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 46.0045,
+   "score": 48.0878,
    "rank": 5,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -41,11 +41,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 62.5,
-     "dti": 0.0,
-     "p": 50.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -84,8 +84,8 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 61.0732,
-   "rank": 3,
+   "score": 63.6734,
+   "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -121,11 +121,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 87.5,
-     "dti": 9.3219,
-     "p": 71.8644,
-     "n_dti": 1,
+     "dti": null,
+     "p": 87.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -141,11 +141,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 50.0,
-     "dti": 50.173,
-     "p": 50.0346,
-     "n_dti": 1,
+     "dti": null,
+     "p": 50.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -164,8 +164,8 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 62.6277,
-   "rank": 2,
+   "score": 61.939,
+   "rank": 3,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -199,11 +199,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 75.0,
-     "dti": 58.9655,
-     "p": 71.7931,
-     "n_dti": 1,
+     "dti": null,
+     "p": 75.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -219,11 +219,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 37.5,
-     "dti": 74.1947,
-     "p": 44.8389,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -242,8 +242,8 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 63.6548,
-   "rank": 1,
+   "score": 61.6509,
+   "rank": 4,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -266,9 +266,9 @@
     "S": {
      "code": "S",
      "name": "Chiến lược",
-     "dbi": 56.25,
+     "dbi": 62.5,
      "dti": null,
-     "p": 56.25,
+     "p": 62.5,
      "n_dti": 0,
      "n_dti_total": 2,
      "dti_applied": false
@@ -276,19 +276,19 @@
     "T": {
      "code": "T",
      "name": "Công nghệ",
-     "dbi": 68.75,
-     "dti": 100.0,
-     "p": 75.0,
-     "n_dti": 1,
+     "dbi": 62.5,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
      "name": "Vận hành",
-     "dbi": 62.5,
+     "dbi": 56.25,
      "dti": 62.0265,
-     "p": 62.4053,
+     "p": 57.4053,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -297,11 +297,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 37.5,
-     "dti": 41.3672,
-     "p": 38.2734,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -320,8 +320,8 @@
    "bank_name": "Vietcombank",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 60.735,
-   "rank": 4,
+   "score": 63.3341,
+   "rank": 2,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -377,11 +377,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 81.25,
-     "dti": 3.2766,
-     "p": 65.6553,
-     "n_dti": 1,
+     "dti": null,
+     "p": 81.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -429,14 +429,14 @@
     "agribank": 43.75,
     "bidv": 62.5,
     "mb": 62.5,
-    "tcb": 56.25,
+    "tcb": 62.5,
     "vcb": 43.75
    },
    "dbi": {
     "agribank": 43.75,
     "bidv": 62.5,
     "mb": 62.5,
-    "tcb": 56.25,
+    "tcb": 62.5,
     "vcb": 43.75
    },
    "dti": {
@@ -451,24 +451,24 @@
    "code": "T",
    "name": "Công nghệ",
    "values": {
-    "agribank": 50.0,
-    "bidv": 71.8644,
-    "mb": 71.7931,
-    "tcb": 75.0,
+    "agribank": 62.5,
+    "bidv": 87.5,
+    "mb": 75.0,
+    "tcb": 62.5,
     "vcb": 68.75
    },
    "dbi": {
     "agribank": 62.5,
     "bidv": 87.5,
     "mb": 75.0,
-    "tcb": 68.75,
+    "tcb": 62.5,
     "vcb": 68.75
    },
    "dti": {
-    "agribank": 0.0,
-    "bidv": 9.3219,
-    "mb": 58.9655,
-    "tcb": 100.0,
+    "agribank": null,
+    "bidv": null,
+    "mb": null,
+    "tcb": null,
     "vcb": null
    }
   },
@@ -479,14 +479,14 @@
     "agribank": 26.0268,
     "bidv": 50.7905,
     "mb": 84.1342,
-    "tcb": 62.4053,
+    "tcb": 57.4053,
     "vcb": 42.5046
    },
    "dbi": {
     "agribank": 18.75,
     "bidv": 56.25,
     "mb": 81.25,
-    "tcb": 62.5,
+    "tcb": 56.25,
     "vcb": 50.0
    },
    "dti": {
@@ -502,10 +502,10 @@
    "name": "Văn hóa",
    "values": {
     "agribank": 37.5,
-    "bidv": 50.0346,
-    "mb": 44.8389,
-    "tcb": 38.2734,
-    "vcb": 65.6553
+    "bidv": 50.0,
+    "mb": 37.5,
+    "tcb": 37.5,
+    "vcb": 81.25
    },
    "dbi": {
     "agribank": 37.5,
@@ -516,10 +516,10 @@
    },
    "dti": {
     "agribank": null,
-    "bidv": 50.173,
-    "mb": 74.1947,
-    "tcb": 41.3672,
-    "vcb": 3.2766
+    "bidv": null,
+    "mb": null,
+    "tcb": null,
+    "vcb": null
    }
   },
   {
@@ -555,10 +555,11 @@
   ],
   "S": [
    "bidv",
-   "mb"
+   "mb",
+   "tcb"
   ],
   "T": [
-   "tcb"
+   "bidv"
   ],
   "O": [
    "mb"

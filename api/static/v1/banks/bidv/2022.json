@@ -4,7 +4,7 @@
   "bank_name": "BIDV",
   "group": "NHTM Nhà nước",
   "year": 2022,
-  "score": 40.392,
+  "score": 39.8565,
   "rank": 4,
   "maturity_level": "Mức 2 - Bắt đầu",
   "maturity_level_number": 2,
@@ -19,11 +19,11 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 50.0,
-    "dti": 84.3333,
-    "p": 56.8667,
-    "n_dti": 1,
+    "dti": null,
+    "p": 50.0,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
@@ -39,11 +39,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 25.0,
-    "dti": 6.7329,
-    "p": 21.3466,
-    "n_dti": 1,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
@@ -672,9 +672,9 @@
    "x": 75.9,
    "L": 0.0,
    "U": 90.0,
-   "z": 84.3333,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -752,9 +752,9 @@
    "x": 0.1126,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 6.7329,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {

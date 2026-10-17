@@ -7,7 +7,7 @@
   "bank_name": "BIDV",
   "group": "NHTM Nhà nước",
   "year": 2025,
-  "score": 64.0794,
+  "score": 63.3803,
   "rank": 4,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
@@ -62,11 +62,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 31.25,
-    "dti": 52.2209,
-    "p": 35.4442,
-    "n_dti": 1,
+    "dti": null,
+    "p": 31.25,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -86,7 +86,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2020,
-   "score": 37.7004,
+   "score": 38.5417,
    "rank": 3,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -123,11 +123,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 31.25,
-     "dti": 6.0124,
-     "p": 26.2025,
-     "n_dti": 1,
+     "dti": null,
+     "p": 31.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -166,8 +166,8 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2021,
-   "score": 44.6396,
-   "rank": 3,
+   "score": 45.8333,
+   "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
    "maturity_level_name": "Bắt đầu",
@@ -203,11 +203,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 43.75,
-     "dti": 7.9369,
-     "p": 36.5874,
-     "n_dti": 1,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -246,7 +246,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2022,
-   "score": 40.392,
+   "score": 39.8565,
    "rank": 4,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -261,11 +261,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 50.0,
-     "dti": 84.3333,
-     "p": 56.8667,
-     "n_dti": 1,
+     "dti": null,
+     "p": 50.0,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -281,11 +281,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 25.0,
-     "dti": 6.7329,
-     "p": 21.3466,
-     "n_dti": 1,
+     "dti": null,
+     "p": 25.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -324,7 +324,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2023,
-   "score": 45.1726,
+   "score": 44.5897,
    "rank": 3,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -359,11 +359,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 62.5,
-     "dti": 4.986,
-     "p": 50.9972,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -379,11 +379,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 25.0,
-     "dti": 100.0,
-     "p": 40.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 25.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -402,8 +402,8 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 61.0732,
-   "rank": 3,
+   "score": 63.6734,
+   "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -439,11 +439,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 87.5,
-     "dti": 9.3219,
-     "p": 71.8644,
-     "n_dti": 1,
+     "dti": null,
+     "p": 87.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -459,11 +459,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 50.0,
-     "dti": 50.173,
-     "p": 50.0346,
-     "n_dti": 1,
+     "dti": null,
+     "p": 50.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -482,7 +482,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2025,
-   "score": 64.0794,
+   "score": 63.3803,
    "rank": 4,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -537,11 +537,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 31.25,
-     "dti": 52.2209,
-     "p": 35.4442,
-     "n_dti": 1,
+     "dti": null,
+     "p": 31.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",

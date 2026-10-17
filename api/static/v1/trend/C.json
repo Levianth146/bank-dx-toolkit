@@ -83,7 +83,7 @@
     {
      "year": 2021,
      "value": 25.0,
-     "rank": 3,
+     "rank": 2,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
      "n_dti": 0
@@ -98,30 +98,30 @@
     },
     {
      "year": 2023,
-     "value": 40.0,
+     "value": 25.0,
      "rank": 3,
      "maturity_level_number": 2,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 50.0346,
-     "rank": 3,
+     "value": 50.0,
+     "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.3636,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
-     "value": 35.4442,
+     "value": 31.25,
      "rank": 4,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     }
    ],
-   "dti_coverage_changes": true
+   "dti_coverage_changes": false
   },
   {
    "bank": "mb",
@@ -154,30 +154,30 @@
     },
     {
      "year": 2023,
-     "value": 26.8481,
+     "value": 25.0,
      "rank": 2,
      "maturity_level_number": 2,
      "data_confidence": 0.6364,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 44.8389,
-     "rank": 2,
+     "value": 37.5,
+     "rank": 3,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
-     "value": 64.8276,
-     "rank": 2,
+     "value": 56.25,
+     "rank": 3,
      "maturity_level_number": 3,
      "data_confidence": 0.8182,
-     "n_dti": 1
+     "n_dti": 0
     }
    ],
-   "dti_coverage_changes": true
+   "dti_coverage_changes": false
   },
   {
    "bank": "tcb",
@@ -210,30 +210,30 @@
     },
     {
      "year": 2023,
-     "value": 39.4549,
+     "value": 25.0,
      "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.4545,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 38.2734,
-     "rank": 1,
+     "value": 37.5,
+     "rank": 4,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
-     "value": 52.8229,
+     "value": 56.25,
      "rank": 1,
      "maturity_level_number": 4,
      "data_confidence": 0.7273,
-     "n_dti": 1
+     "n_dti": 0
     }
    ],
-   "dti_coverage_changes": true
+   "dti_coverage_changes": false
   },
   {
    "bank": "vcb",
@@ -266,33 +266,31 @@
     },
     {
      "year": 2023,
-     "value": 42.6622,
+     "value": 50.0,
      "rank": 5,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 65.6553,
-     "rank": 4,
+     "value": 81.25,
+     "rank": 2,
      "maturity_level_number": 3,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
-     "value": 75.9225,
-     "rank": 3,
+     "value": 87.5,
+     "rank": 2,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     }
    ],
-   "dti_coverage_changes": true
+   "dti_coverage_changes": false
   }
  ],
- "warnings": [
-  "Số chỉ số DTI có dữ liệu thay đổi giữa các năm (P_k = DBI_k khi thiếu DTI), nên chênh lệch điểm giữa các năm có thể một phần do độ phủ dữ liệu; xem n_dti và data_confidence."
- ]
+ "warnings": []
 }

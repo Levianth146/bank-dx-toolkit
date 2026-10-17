@@ -351,9 +351,9 @@
    "x": 60.0,
    "L": 34.5,
    "U": 83.331,
-   "z": 52.2209,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   },
   {
@@ -527,9 +527,9 @@
    "x": 82.91,
    "L": 34.5,
    "U": 83.331,
-   "z": 99.1378,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   },
   {
@@ -703,9 +703,9 @@
    "x": 53.6,
    "L": 34.5,
    "U": 83.331,
-   "z": 39.1145,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   },
   {
@@ -879,9 +879,9 @@
    "x": 48.96,
    "L": 34.5,
    "U": 83.331,
-   "z": 29.6123,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ]

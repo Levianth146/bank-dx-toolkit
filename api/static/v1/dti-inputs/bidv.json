@@ -553,7 +553,7 @@
    "confirmed_by": null,
    "note": "định nghĩa khác (tỷ lệ sản phẩm số hóa): BCPTBV retail 78% / corporate 69% SP-DV giao hoàn toàn qua kênh số — không phải % giao dịch qua kênh số (chuẩn K-Q1); để trống",
    "definition": null,
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": [
     "K-Q1",
     "S-Q1"
@@ -1208,7 +1208,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1224,7 +1224,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1240,7 +1240,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1256,7 +1256,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1272,7 +1272,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1288,7 +1288,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1304,7 +1304,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1320,7 +1320,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1336,7 +1336,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1352,7 +1352,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1368,7 +1368,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1384,7 +1384,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {

@@ -4,7 +4,7 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2022,
-  "score": 68.4639,
+  "score": 67.0833,
   "rank": 1,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
@@ -19,11 +19,11 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 81.25,
-    "dti": 95.5556,
-    "p": 84.1111,
-    "n_dti": 1,
+    "dti": null,
+    "p": 81.25,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
@@ -39,11 +39,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 62.5,
-    "dti": 89.6101,
-    "p": 67.922,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
@@ -721,9 +721,9 @@
    "x": 86.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 95.5556,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: remit_domestic"
   },
   {
@@ -801,9 +801,9 @@
    "x": 0.5152,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 89.6101,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {

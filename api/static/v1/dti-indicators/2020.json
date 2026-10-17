@@ -95,9 +95,9 @@
    "x": 0.0871,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 1.4823,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "dùng số cuối kỳ (thiếu năm trước)"
   },
   {
@@ -271,9 +271,9 @@
    "x": 0.1091,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 6.0124,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "dùng số cuối kỳ (thiếu năm trước)"
   },
   {
@@ -447,9 +447,9 @@
    "x": 0.2363,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 32.1878,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "dùng số cuối kỳ (thiếu năm trước)"
   },
   {
@@ -623,9 +623,9 @@
    "x": 0.2949,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 44.2479,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "dùng số cuối kỳ (thiếu năm trước)"
   },
   {

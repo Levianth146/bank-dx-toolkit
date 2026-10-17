@@ -15,9 +15,9 @@
    "x": 91.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -95,9 +95,9 @@
    "x": 0.0775,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 0.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -191,9 +191,9 @@
    "x": 75.9,
    "L": 0.0,
    "U": 90.0,
-   "z": 84.3333,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -271,9 +271,9 @@
    "x": 0.1126,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 6.7329,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -367,9 +367,9 @@
    "x": 95.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -447,9 +447,9 @@
    "x": 0.3653,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 58.7414,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -543,9 +543,9 @@
    "x": 86.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 95.5556,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: remit_domestic"
   },
   {
@@ -623,9 +623,9 @@
    "x": 0.5152,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 89.6101,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {

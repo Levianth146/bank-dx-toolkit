@@ -86,7 +86,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2020,
-   "score": 22.9661,
+   "score": 22.9167,
    "rank": 5,
    "maturity_level": "Mức 1 - Khởi động",
    "maturity_level_number": 1,
@@ -123,11 +123,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 0.0,
-     "dti": 1.4823,
-     "p": 0.2965,
-     "n_dti": 1,
+     "dti": null,
+     "p": 0.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -166,7 +166,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2021,
-   "score": 22.3214,
+   "score": 22.9167,
    "rank": 5,
    "maturity_level": "Mức 1 - Khởi động",
    "maturity_level_number": 1,
@@ -203,11 +203,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 18.75,
-     "dti": 0.891,
-     "p": 15.1782,
-     "n_dti": 1,
+     "dti": null,
+     "p": 18.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -246,7 +246,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2022,
-   "score": 23.125,
+   "score": 21.25,
    "rank": 5,
    "maturity_level": "Mức 1 - Khởi động",
    "maturity_level_number": 1,
@@ -263,11 +263,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 37.5,
-     "dti": 100.0,
-     "p": 50.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -283,11 +283,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 6.25,
-     "dti": 0.0,
-     "p": 5.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 6.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -326,7 +326,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2023,
-   "score": 40.0673,
+   "score": 42.1224,
    "rank": 4,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -363,11 +363,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 62.5,
-     "dti": 0.8467,
-     "p": 50.1693,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -406,7 +406,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 46.0045,
+   "score": 48.0878,
    "rank": 5,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -441,11 +441,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 62.5,
-     "dti": 0.0,
-     "p": 50.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",

@@ -15,12 +15,12 @@
    "bank": "tcb",
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
-   "base_score": 47.7249,
+   "base_score": 47.9167,
    "base_rank": 1,
    "min_rank": 1,
    "max_rank": 1,
-   "min_score": 41.0199,
-   "max_score": 52.2699,
+   "min_score": 41.25,
+   "max_score": 52.5,
    "n_scenarios": 40,
    "stable_share": 1.0,
    "verdict": "Vững",
@@ -67,16 +67,16 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.8192,
-     "mean_rank": 1.1823,
+     "p_base": 0.8179,
+     "mean_rank": 1.1836,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.8192
+       "prob": 0.8179
       },
       {
        "rank": 2,
-       "prob": 0.1793
+       "prob": 0.1806
       },
       {
        "rank": 3,
@@ -121,20 +121,20 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.8934,
-     "mean_rank": 1.1078,
+     "p_base": 0.9216,
+     "mean_rank": 1.0797,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.8934
+       "prob": 0.9216
       },
       {
        "rank": 2,
-       "prob": 0.1054
+       "prob": 0.0771
       },
       {
        "rank": 3,
-       "prob": 0.0012
+       "prob": 0.0013
       },
       {
        "rank": 4,
@@ -152,12 +152,12 @@
    "bank": "mb",
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
-   "base_score": 43.5729,
+   "base_score": 43.75,
    "base_rank": 2,
    "min_rank": 2,
    "max_rank": 2,
-   "min_score": 39.7875,
-   "max_score": 47.2875,
+   "min_score": 40.0,
+   "max_score": 47.5,
    "n_scenarios": 40,
    "stable_share": 1.0,
    "verdict": "Vững",
@@ -204,20 +204,20 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.6964,
-     "mean_rank": 1.9566,
+     "p_base": 0.677,
+     "mean_rank": 1.9766,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.1735
+       "prob": 0.1732
       },
       {
        "rank": 2,
-       "prob": 0.6964
+       "prob": 0.677
       },
       {
        "rank": 3,
-       "prob": 0.1301
+       "prob": 0.1498
       },
       {
        "rank": 4,
@@ -231,8 +231,8 @@
     },
     {
      "method": "Dirichlet α=10",
-     "p_base": 0.9976,
-     "mean_rank": 1.9988,
+     "p_base": 0.9966,
+     "mean_rank": 1.9998,
      "rank_distribution": [
       {
        "rank": 1,
@@ -240,11 +240,11 @@
       },
       {
        "rank": 2,
-       "prob": 0.9976
+       "prob": 0.9966
       },
       {
        "rank": 3,
-       "prob": 0.0006
+       "prob": 0.0016
       },
       {
        "rank": 4,
@@ -258,24 +258,24 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.866,
-     "mean_rank": 1.9223,
+     "p_base": 0.8302,
+     "mean_rank": 1.9033,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.106
+       "prob": 0.1333
       },
       {
        "rank": 2,
-       "prob": 0.866
+       "prob": 0.8302
       },
       {
        "rank": 3,
-       "prob": 0.0277
+       "prob": 0.0364
       },
       {
        "rank": 4,
-       "prob": 0.0003
+       "prob": 0.0001
       },
       {
        "rank": 5,
@@ -289,14 +289,14 @@
    "bank": "bidv",
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
-   "base_score": 37.7004,
+   "base_score": 38.5417,
    "base_rank": 3,
    "min_rank": 3,
-   "max_rank": 4,
-   "min_score": 32.7405,
-   "max_score": 41.4905,
+   "max_rank": 3,
+   "min_score": 33.75,
+   "max_score": 42.5,
    "n_scenarios": 40,
-   "stable_share": 0.975,
+   "stable_share": 1.0,
    "verdict": "Vững",
    "is_robust": true,
    "borderline": false,
@@ -320,7 +320,7 @@
     {
      "family": "D. Loại một trụ cột",
      "n_scenarios": 6,
-     "share": 0.8333
+     "share": 1.0
     },
     {
      "family": "F. Dữ liệu thiếu",
@@ -341,24 +341,24 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.6477,
-     "mean_rank": 3.0848,
+     "p_base": 0.6906,
+     "mean_rank": 3.0009,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.0073
+       "prob": 0.0089
       },
       {
        "rank": 2,
-       "prob": 0.1228
+       "prob": 0.1409
       },
       {
        "rank": 3,
-       "prob": 0.6477
+       "prob": 0.6906
       },
       {
        "rank": 4,
-       "prob": 0.2222
+       "prob": 0.1596
       },
       {
        "rank": 5,
@@ -368,8 +368,8 @@
     },
     {
      "method": "Dirichlet α=10",
-     "p_base": 0.9938,
-     "mean_rank": 3.005,
+     "p_base": 0.9972,
+     "mean_rank": 2.9996,
      "rank_distribution": [
       {
        "rank": 1,
@@ -377,15 +377,15 @@
       },
       {
        "rank": 2,
-       "prob": 0.0006
+       "prob": 0.0016
       },
       {
        "rank": 3,
-       "prob": 0.9938
+       "prob": 0.9972
       },
       {
        "rank": 4,
-       "prob": 0.0056
+       "prob": 0.0012
       },
       {
        "rank": 5,
@@ -395,24 +395,24 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.8589,
-     "mean_rank": 3.0837,
+     "p_base": 0.8714,
+     "mean_rank": 2.9728,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.0006
+       "prob": 0.0026
       },
       {
        "rank": 2,
-       "prob": 0.0278
+       "prob": 0.074
       },
       {
        "rank": 3,
-       "prob": 0.8589
+       "prob": 0.8714
       },
       {
        "rank": 4,
-       "prob": 0.1127
+       "prob": 0.052
       },
       {
        "rank": 5,
@@ -478,8 +478,8 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.7336,
-     "mean_rank": 3.8205,
+     "p_base": 0.7964,
+     "mean_rank": 3.8829,
      "rank_distribution": [
       {
        "rank": 1,
@@ -491,22 +491,22 @@
       },
       {
        "rank": 3,
-       "prob": 0.2207
+       "prob": 0.1581
       },
       {
        "rank": 4,
-       "prob": 0.7336
+       "prob": 0.7964
       },
       {
        "rank": 5,
-       "prob": 0.0442
+       "prob": 0.044
       }
      ]
     },
     {
      "method": "Dirichlet α=10",
-     "p_base": 0.9944,
-     "mean_rank": 3.9944,
+     "p_base": 0.9988,
+     "mean_rank": 3.9988,
      "rank_distribution": [
       {
        "rank": 1,
@@ -518,11 +518,11 @@
       },
       {
        "rank": 3,
-       "prob": 0.0056
+       "prob": 0.0012
       },
       {
        "rank": 4,
-       "prob": 0.9944
+       "prob": 0.9988
       },
       {
        "rank": 5,
@@ -532,8 +532,8 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.8861,
-     "mean_rank": 3.8871,
+     "p_base": 0.8994,
+     "mean_rank": 3.8996,
      "rank_distribution": [
       {
        "rank": 1,
@@ -541,19 +541,19 @@
       },
       {
        "rank": 2,
-       "prob": 0.0008
+       "prob": 0.0014
       },
       {
        "rank": 3,
-       "prob": 0.1122
+       "prob": 0.0984
       },
       {
        "rank": 4,
-       "prob": 0.8861
+       "prob": 0.8994
       },
       {
        "rank": 5,
-       "prob": 0.0009
+       "prob": 0.0008
       }
      ]
     }
@@ -563,11 +563,11 @@
    "bank": "agribank",
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
-   "base_score": 22.9661,
+   "base_score": 22.9167,
    "base_rank": 5,
    "min_rank": 5,
    "max_rank": 5,
-   "min_score": 18.8093,
+   "min_score": 18.75,
    "max_score": 27.5,
    "n_scenarios": 40,
    "stable_share": 1.0,
@@ -615,8 +615,8 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.9558,
-     "mean_rank": 4.9558,
+     "p_base": 0.956,
+     "mean_rank": 4.956,
      "rank_distribution": [
       {
        "rank": 1,
@@ -632,11 +632,11 @@
       },
       {
        "rank": 4,
-       "prob": 0.0442
+       "prob": 0.044
       },
       {
        "rank": 5,
-       "prob": 0.9558
+       "prob": 0.956
       }
      ]
     },
@@ -669,8 +669,8 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.9991,
-     "mean_rank": 4.9991,
+     "p_base": 0.9984,
+     "mean_rank": 4.9984,
      "rank_distribution": [
       {
        "rank": 1,
@@ -686,11 +686,11 @@
       },
       {
        "rank": 4,
-       "prob": 0.0009
+       "prob": 0.0016
       },
       {
        "rank": 5,
-       "prob": 0.9991
+       "prob": 0.9984
       }
      ]
     }
@@ -753,9 +753,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.0442,
+    "Dirichlet α=1": 0.044,
     "Dirichlet α=10": 0.0,
-    "Nhiễu rubric q=0.25": 0.0009
+    "Nhiễu rubric q=0.25": 0.0008
    }
   },
   {
@@ -768,9 +768,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.1301,
-    "Dirichlet α=10": 0.0006,
-    "Nhiễu rubric q=0.25": 0.0277
+    "Dirichlet α=1": 0.1498,
+    "Dirichlet α=10": 0.0016,
+    "Nhiễu rubric q=0.25": 0.0365
    }
   },
   {
@@ -783,24 +783,24 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.0073,
+    "Dirichlet α=1": 0.0089,
     "Dirichlet α=10": 0.0,
-    "Nhiễu rubric q=0.25": 0.0014
+    "Nhiễu rubric q=0.25": 0.0017
    }
   },
   {
    "bank_a": "bidv",
    "bank_b": "vcb",
    "share_a_above": 0.975,
-   "share_b_above": 0.025,
-   "share_tie": 0.0,
+   "share_b_above": 0.0,
+   "share_tie": 0.025,
    "distinguishable": true,
    "borderline": false,
-   "swapped_in_some_scenario": true,
+   "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.7778,
-    "Dirichlet α=10": 0.9944,
-    "Nhiễu rubric q=0.25": 0.8872
+    "Dirichlet α=1": 0.8404,
+    "Dirichlet α=10": 0.9988,
+    "Nhiễu rubric q=0.25": 0.9008
    }
   },
   {
@@ -813,9 +813,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.1735,
+    "Dirichlet α=1": 0.1732,
     "Dirichlet α=10": 0.0018,
-    "Nhiễu rubric q=0.25": 0.1064
+    "Nhiễu rubric q=0.25": 0.078
    }
   },
   {
@@ -830,7 +830,7 @@
    "monte_carlo_a_above": {
     "Dirichlet α=1": 1.0,
     "Dirichlet α=10": 1.0,
-    "Nhiễu rubric q=0.25": 0.999
+    "Nhiễu rubric q=0.25": 0.998
    }
   },
   {
@@ -986,9 +986,9 @@
   {
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Chiến lược",
-   "kendall_tau": 0.8,
-   "spearman_rho": 0.9,
-   "n_rank_changes": 2
+   "kendall_tau": 0.9487,
+   "spearman_rho": 0.9747,
+   "n_rank_changes": 1
   },
   {
    "family": "D. Loại một trụ cột",
@@ -1159,18 +1159,18 @@
   "coverage": [
    {
     "normalization": "Cận cố định",
-    "n_indicator_with_z": 1,
-    "n_cells": 4
+    "n_indicator_with_z": 0,
+    "n_cells": 0
    },
    {
     "normalization": "Min-max",
-    "n_indicator_with_z": 1,
-    "n_cells": 4
+    "n_indicator_with_z": 0,
+    "n_cells": 0
    },
    {
     "normalization": "Xếp hạng %",
-    "n_indicator_with_z": 1,
-    "n_cells": 4
+    "n_indicator_with_z": 0,
+    "n_cells": 0
    }
   ]
  },

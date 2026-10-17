@@ -6,7 +6,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2021,
-   "score": 22.3214,
+   "score": 22.9167,
    "rank": 5,
    "maturity_level": "Mức 1 - Khởi động",
    "maturity_level_number": 1,
@@ -43,11 +43,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 18.75,
-     "dti": 0.891,
-     "p": 15.1782,
-     "n_dti": 1,
+     "dti": null,
+     "p": 18.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -86,8 +86,8 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2021,
-   "score": 44.6396,
-   "rank": 3,
+   "score": 45.8333,
+   "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
    "maturity_level_name": "Bắt đầu",
@@ -123,11 +123,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 43.75,
-     "dti": 7.9369,
-     "p": 36.5874,
-     "n_dti": 1,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -166,7 +166,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2021,
-   "score": 46.082,
+   "score": 45.8333,
    "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -203,11 +203,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 43.75,
-     "dti": 51.2102,
-     "p": 45.242,
-     "n_dti": 1,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -246,7 +246,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2021,
-   "score": 51.8384,
+   "score": 51.0417,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -283,11 +283,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 37.5,
-     "dti": 61.4013,
-     "p": 42.2803,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -457,10 +457,10 @@
    "code": "T",
    "name": "Công nghệ",
    "values": {
-    "agribank": 15.1782,
-    "bidv": 36.5874,
-    "mb": 45.242,
-    "tcb": 42.2803,
+    "agribank": 18.75,
+    "bidv": 43.75,
+    "mb": 43.75,
+    "tcb": 37.5,
     "vcb": 18.75
    },
    "dbi": {
@@ -471,10 +471,10 @@
     "vcb": 18.75
    },
    "dti": {
-    "agribank": 0.891,
-    "bidv": 7.9369,
-    "mb": 51.2102,
-    "tcb": 61.4013,
+    "agribank": null,
+    "bidv": null,
+    "mb": null,
+    "tcb": null,
     "vcb": null
    }
   },
@@ -562,6 +562,7 @@
    "bidv"
   ],
   "T": [
+   "bidv",
    "mb"
   ],
   "O": [

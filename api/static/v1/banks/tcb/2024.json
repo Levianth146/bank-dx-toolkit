@@ -4,8 +4,8 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2024,
-  "score": 63.6548,
-  "rank": 1,
+  "score": 61.6509,
+  "rank": 4,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
@@ -28,9 +28,9 @@
    "S": {
     "code": "S",
     "name": "Chiến lược",
-    "dbi": 56.25,
+    "dbi": 62.5,
     "dti": null,
-    "p": 56.25,
+    "p": 62.5,
     "n_dti": 0,
     "n_dti_total": 2,
     "dti_applied": false
@@ -38,19 +38,19 @@
    "T": {
     "code": "T",
     "name": "Công nghệ",
-    "dbi": 68.75,
-    "dti": 100.0,
-    "p": 75.0,
-    "n_dti": 1,
+    "dbi": 62.5,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
     "name": "Vận hành",
-    "dbi": 62.5,
+    "dbi": 56.25,
     "dti": 62.0265,
-    "p": 62.4053,
+    "p": 57.4053,
     "n_dti": 2,
     "n_dti_total": 2,
     "dti_applied": true
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 37.5,
-    "dti": 41.3672,
-    "p": 38.2734,
-    "n_dti": 1,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -100,11 +100,11 @@
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 3,
+    "page": 14,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "of Vietnam’s growth and success, empowering everyone to achieve their full potential. We pursue a proven customer-centric strategy in providing a broad range of solutions and services to over 15.4 million retail and corporate customers. We serve and engage with customers through our market-leading digital banking platforms and mobile apps, and an extensive network of 299 branches and transaction"
+    "quote": "t in the history of the Bank. Rated ‘A+’ with ‘Stable’ outlook by FiinRatings. Brand value increased to USD 1.4 billion, No. 1 among Vietnamese private joint-stock commercial banks. #1 fee generator, ~15% of total NFI by all listed banks. Best Integrated Corporate Banking Platform Globally and Best Mobile Banking App in Asia Pacific by Global Finance. Best Retail Bank in Vietnam, Best Private Reta"
    },
-   "note": "43 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
+   "note": "41 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (all)"
   },
   {
    "criterion": "K2",
@@ -179,7 +179,6 @@
     "NUM",
     "L3",
     "INDEP",
-    "PHASE",
     "MULTI"
    ],
    "evidence": {
@@ -197,24 +196,26 @@
    "name": "Chiến lược chuyển đổi số chính thức",
    "bank": "tcb",
    "year": 2024,
-   "score": 2,
-   "score_pct": 50.0,
+   "score": 3,
+   "score_pct": 75.0,
    "status": "scored",
    "status_label": "Đã chấm theo quy tắc thuật toán",
-   "confidence": "high",
+   "confidence": "low",
    "features": [
     "PLAN",
     "ACT",
     "NUM",
-    "INDEP"
+    "L3",
+    "INDEP",
+    "MULTI"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 76,
+    "page": 14,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "ial responsibility, striving to build a brighter and more sustainable future As one of the leading banks implementing government centers is enhanced to support solution proposals and policy Vietnam. In 2024, Techcombank continued to be a strategic sponsor of the international and SBV's decisions on digital transformation and green recommendations, research on priority areas breakthrough, running e"
+    "quote": "Outlook. Best User Experience Design in the 2022 GOOD DESIGN® award – The Chicago Athenaeum. #1 in payments volume across all cards, #1 new card sales. Only bank in Vietnam to be honoured by SAP in the Best Run Awards for SEA “The Most Transformational Award – The Game Changer” – for its impressive digital transformation journey. In the US, Techcombank was the first and only Vietnamese bank to win"
    },
-   "note": "30 đoạn khớp từ khóa"
+   "note": "32 đoạn khớp từ khóa"
   },
   {
    "criterion": "S2",
@@ -288,44 +289,17 @@
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 14,
+    "page": 8,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "yndicated loan in regional-leading scores on the of corporate customers of all sizes. bancassurance, through Vietnam for 2020. Most Impressive Bank Brand and Organisational Health Index strategic cooperation with Bank with the Best Brand Health, and Employee Engagement Awarded Best Payments Bank in Partnership with One Mount from MiBrand Vietnam – Brand Survey (EES). Vietnam by The Asian Banker. G"
+    "quote": "ate and Priority branded tiers for high net worth and affluent customers. We introduced new value propositions, like the Private Visa Infinite card, enhanced wealth management solutions and advisory services, and offered exclusive access to real estate, bond and fund investments through our growing partner ecosystem (discussed below). Having pioneered the elimination of fees on banking transaction"
    },
-   "note": "70 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
+   "note": "69 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (any)"
   },
   {
    "criterion": "T1",
    "pillar": "T",
    "pillar_name": "Công nghệ",
    "name": "Hạ tầng và kiến trúc công nghệ",
-   "bank": "tcb",
-   "year": 2024,
-   "score": 2,
-   "score_pct": 50.0,
-   "status": "scored",
-   "status_label": "Đã chấm theo quy tắc thuật toán",
-   "confidence": "low",
-   "features": [
-    "PLAN",
-    "ACT",
-    "NUM",
-    "INDEP",
-    "PHASE"
-   ],
-   "evidence": {
-    "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 41,
-    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "ystems, platforms, performance and training are now working together as a high-functioning ‘well-oiled machine’. As such, in 2024, our theme changed from ‘Well-oiled machine’ to ‘Turbocharge’, showing our commitment to even higher productivity. The ‘build’ phase is over, and we have established our IT infrastructure to provide future cutting-edge products and services. From here, tweaks and innova"
-   },
-   "note": "26 đoạn khớp từ khóa"
-  },
-  {
-   "criterion": "T2",
-   "pillar": "T",
-   "pillar_name": "Công nghệ",
-   "name": "An toàn thông tin",
    "bank": "tcb",
    "year": 2024,
    "score": 4,
@@ -339,16 +313,42 @@
     "NUM",
     "L3",
     "INDEP",
-    "MULTI",
+    "PHASE",
+    "MULTI"
+   ],
+   "evidence": {
+    "file": "data/raw/tcb/2024_bctn.pdf",
+    "page": 14,
+    "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
+    "quote": "Game Changer” – for its impressive digital transformation journey. In the US, Techcombank was the first and only Vietnamese bank to win a Best In Tech 2022 award in the 'Integrated Learning' category by Pluralsight. 2022 1993 Established with charter capital of VND 20 billion. Launched Globus, our core banking system, that complies with international standards. 2001 Participated in global card pa"
+   },
+   "note": "27 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['INDEP', 'MULTI'] (any)"
+  },
+  {
+   "criterion": "T2",
+   "pillar": "T",
+   "pillar_name": "Công nghệ",
+   "name": "An toàn thông tin",
+   "bank": "tcb",
+   "year": 2024,
+   "score": 1,
+   "score_pct": 25.0,
+   "status": "scored",
+   "status_label": "Đã chấm theo quy tắc thuật toán",
+   "confidence": "high",
+   "features": [
+    "PLAN",
+    "NUM",
+    "INDEP",
     "CERT2"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
     "page": 42,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "ical operations. policy compliance. management, it allowed IT staff to handle 143 tickets per day – a 31% productivity boost over 2023. In 2024, we established a dedicated ‘SWAT’ team to provide • Azure Information Protection (AIP) and Microsoft round-the-clock monitoring and incident management, ♦ Cyber security Endpoint Data Loss Prevention (DLP): • Custom dashboards: ensuring reliable and seaml"
+    "quote": "the ground up. We successfully stopped harmful cyber-attacks and had a 27% reduction in detection and response times for critical vulnerabilities. Techcombank continuously enhances our defences to safeguard digital assets and customer data by integrating global security standards (e.g. NIST, COBIT, ISO 27001, PCI DSS) with proactive monitoring, detection and risk mitigation. Digital: IT Division K"
    },
-   "note": "10 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['CERT2', 'MULTI'] (all)"
+   "note": "8 đoạn khớp từ khóa"
   },
   {
    "criterion": "T3",
@@ -382,7 +382,7 @@
    "score_pct": 100.0,
    "status": "scored",
    "status_label": "Đã chấm theo quy tắc thuật toán",
-   "confidence": "low",
+   "confidence": "high",
    "features": [
     "PLAN",
     "ACT",
@@ -394,11 +394,11 @@
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 39,
+    "page": 75,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "ing seamless digital solutions into ecosystem partner’s accounting platforms doubled our SME customer base and expanded lending balances. Of which, digital acquisition has quadrupled and 75% are newly established businesses in the market. Hyper-personalisation and customer insights through data and AI: ♦ Hyper-personalisation through data and AI We are closer than ever to the ‘Segment-of-One’ con"
+    "quote": "000+ employees trained To Society and Environment WHISTLEBLOWING ♦ Smarter lending, faster decision AND PROTECTION 15. Responsibilities with society MECHANISM 16. Responsibilities with environment ♦ Impact revenue: VND 920 billion 2025 focus In 2025, Techcombank will continue to pioneer in applying AI and data to optimise operational efficiency, enhance AI governance, ♦ Whistleblowing and Whistleb"
    },
-   "note": "82 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
+   "note": "84 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI', 'INDEP'] (any)"
   },
   {
    "criterion": "O1",
@@ -407,25 +407,24 @@
    "name": "Tự động hóa quy trình",
    "bank": "tcb",
    "year": 2024,
-   "score": 2,
-   "score_pct": 50.0,
+   "score": 1,
+   "score_pct": 25.0,
    "status": "scored",
    "status_label": "Đã chấm theo quy tắc thuật toán",
-   "confidence": "low",
+   "confidence": "high",
    "features": [
     "PLAN",
-    "ACT",
     "NUM",
     "INDEP",
     "CERT2"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 42,
+    "page": 41,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "ice recovery reduced outages, reinforcing risks. Meanwhile, the Techcombank Future Generation program customer trust in Techcombank’s reliability. With the ‘Digital to the Core’ strategy driving higher demand entered its third year and will continue into 2025, as graduates • Security orchestration, automation and response for IT support, we have implemented key initiatives to enhance transition in"
+    "quote": ".7% in 2023. Embedding security scanning into the build process allowed for early detection and resolution of vulnerabilities, reduced costly rework and strengthened security collaboration between development and security teams. 3. Embracing emerging technologies ♦ Boosting productivity with AI and automation Techcombank’s IT Division advanced its digital transformation by integrating GenAI and AW"
    },
-   "note": "10 đoạn khớp từ khóa"
+   "note": "9 đoạn khớp từ khóa"
   },
   {
    "criterion": "O2",
@@ -443,9 +442,7 @@
     "PLAN",
     "ACT",
     "NUM",
-    "INDEP",
-    "GOV",
-    "CERT2"
+    "GOV"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
@@ -472,14 +469,13 @@
     "ACT",
     "NUM",
     "INDEP",
-    "PHASE",
-    "CERT2"
+    "PHASE"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 64,
+    "page": 75,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "its periodically, manage, and review the status and risk strategy for Techcombank’s material risk. Accessing the impact of changes in regulatory law and requirement on Techcombank. ♦ Regarding credit risk management: Endorse the contents of the credit portfolio quality report of 2Q24. ♦ Regarding operational risk management: Endorse the content of the operational risk management of 2Q24. ♦ Rega"
+    "quote": "y and Social Responsibility ♦ Code of Ethics and Conduct Strategic Selection for Rapid and Sustainable Growth At Techcombank, we have issued a complete set of documents, regulations, processes and guidelines on key compliance issues in the Bank's operations, including areas such as Anti-Corruption, Anti-Money Laundering and Terrorist Financing, Information Transforming with AI: Leading with data a"
    },
    "note": "30 đoạn khớp từ khóa"
   },
@@ -494,21 +490,20 @@
    "score_pct": 100.0,
    "status": "scored",
    "status_label": "Đã chấm theo quy tắc thuật toán",
-   "confidence": "low",
+   "confidence": "high",
    "features": [
     "PLAN",
     "ACT",
     "NUM",
     "L3",
     "INDEP",
-    "PHASE",
     "MULTI"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 44,
+    "page": 14,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": ") and our subsidiary TCBS (RBG, CIBG, IT, DA, DO, GTS, TCBS) through the Scrum Master Skill Accelerator Program, with three days in-class training, eight weeks on-the- job coaching and three months practice and probation. The first cohort completed intensive training, with 100% passing Professional Scrum Master I (PSM I) – an industry- recognised certificate from Scrum.org). Our second batch is cu"
+    "quote": "ce. Launched the Techcombank Visa credit card. 2008 Became a leading joint stock commercial bank – VND 5,400 billion charter capital; Total assets of VND 95,000 billion; First Vietnamese bank to partner with leading global strategic consultant, McKinsey. 2009 Opened second head office – Techcombank Agile Center, 119 Tran Duy Hung Street, Cau Giay District, Hanoi. New record PBT of over VND 12 tril"
    },
    "note": "14 đoạn khớp từ khóa; mức 4 chỉ kiểm tra điều kiện ['MULTI'] (all)"
   },
@@ -627,9 +622,9 @@
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 75,
+    "page": 69,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "k reach new segments where credit is unavailable through “ShopCash” 1,000+ employees trained ♦ Keep Data secure Personal Data Protection Decree (PDPD) • First Vietnamese Bank to fully comply with the Government’s PDPD Techcombank Data Discovery Centre (TDDC) • Centralise governance with tools for data lineage, metadata management and access controls, integrated with ZooLeo platform Pioneering in"
+    "quote": "ience Dr. Lottner was appointed Chief Executive Officer of Techcombank on 18 August 2020. Before joining Techcombank, Dr. Lottner was Senior Executive Vice President at Siam Commercial Bank for five years. During his tenure, he held roles as Chief Strategy Officer, Chief Transformation Officer and Chief Data Officer, designing and orchestrating the Bank’s digital transformation program towards mo"
    },
    "note": "6 đoạn khớp từ khóa"
   },
@@ -650,14 +645,13 @@
     "ACT",
     "NUM",
     "INDEP",
-    "PHASE",
-    "CERT2"
+    "PHASE"
    ],
    "evidence": {
     "file": "data/raw/tcb/2024_bctn.pdf",
-    "page": 5,
+    "page": 42,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "OF TECH A Message from our Chairman A MESSAGE FROM OUR CHAIRMAN Techcombank is redefining financial services with a bold, customer-first ecosystem, which is designed for seamless integration, superior experiences and lasting engagement. Through continuous investments in cutting-edge technology and Big Data, we connect participants across a cohesive customer journey, powered by a dynamic loyalty p"
+    "quote": "the IT Division’s excellence. Engineering Excellence ♦ 24/7 SWAT team for rapid response In 2024, we established a dedicated ‘SWAT’ team to provide round-the-clock monitoring and incident management, ensuring reliable and seamless services for customers. Key benefits of this initiative included: • Real-time monitoring: Continuous 24/7 oversight allowed immediate detection and response to potentia"
    },
    "note": "17 đoạn khớp từ khóa"
   },
@@ -712,7 +706,7 @@
     "file": "data/raw/tcb/2024_bctn.pdf",
     "page": 75,
     "url": "https://techcombank.com/content/dam/techcombank/public-site/documents/bao-cao-thuong-nien-nam-2024-eng.pdf",
-    "quote": "culture ♦ Code of Ethics and Conduct At Techcombank, we have issued a complete set of documents, regulations, processes and guidelines on key compliance issues in the Bank's operations, including areas such as Anti-Corruption, Anti-Money Laundering and Terrorist Financing, Information Security and Data Privacy, etc. In addition, the implementation of these activities is built on the foundation of"
+    "quote": "e have issued a complete set of documents, regulations, processes and guidelines on key compliance issues in the Bank's operations, including areas such as Anti-Corruption, Anti-Money Laundering and Terrorist Financing, Information Transforming with AI: Leading with data and compliance Security and Data Privacy, etc. In addition, the implementation of these activities is built on the foundation of"
    },
    "note": "23 đoạn khớp từ khóa"
   }
@@ -809,9 +803,9 @@
    "x": 0.7126,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -889,9 +883,9 @@
    "x": 54.7,
    "L": 34.5,
    "U": 83.331,
-   "z": 41.3672,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ],
@@ -900,9 +894,9 @@
   "weakest_pillar": "C",
   "criteria_score_distribution": {
    "0": 0,
-   "1": 5,
-   "2": 10,
-   "3": 1,
+   "1": 7,
+   "2": 7,
+   "3": 2,
    "4": 8
   }
  }

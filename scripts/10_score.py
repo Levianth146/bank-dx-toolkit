@@ -352,11 +352,21 @@ def build_indicators(calc, banks, years, bounds):
     gate = pd.DataFrame(gates)
     frame = frame.merge(gate, on=["year", "indicator"], validate="many_to_one")
     frame["z"] = frame.z_before_step0.where(frame.retained)
+    # Bước 0b: một trụ cột chỉ nhận DTI khi MỌI ngân hàng đều có ít nhất một chỉ số của trụ cột đó trong năm.
+    # Nếu không, ngân hàng thiếu bị chấm P_k = DBI_k còn các ngân hàng khác pha 80/20, nên so sánh không cùng cơ sở.
+    pillar_of = {i: p for p, ids in DTI_BY_PILLAR.items() for i in ids}
+    frame["pillar"] = frame["indicator"].map(pillar_of)
+    has = frame.assign(has=frame["z"].notna()).groupby(["year", "pillar", "bank"])["has"].any()
+    full, anyz = has.groupby(["year", "pillar"]).all(), has.groupby(["year", "pillar"]).any()
+    drop_keys = {k for k in full.index if anyz[k] and not full[k]}
+    frame["step0b_excluded"] = [(r.year, r.pillar) in drop_keys and pd.notna(r.z) for r in frame.itertuples()]
+    frame["z"] = frame["z"].where(~frame["step0b_excluded"])
     frame["included_in_score"] = frame.z.notna()
     frame["status"] = ["loại bởi bước 0" if not r.retained else
                        ("có dữ liệu" if pd.notna(r.z) else
                         ("thiếu dữ liệu" if pd.isna(r.x) else "chưa có L/U"))
                        for r in frame.itertuples()]
+    frame.loc[frame["step0b_excluded"], "status"] = "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)"
     return frame, gate
 
 

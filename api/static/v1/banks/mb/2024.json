@@ -4,8 +4,8 @@
   "bank_name": "MB",
   "group": "NHTM Cổ phần",
   "year": 2024,
-  "score": 62.6277,
-  "rank": 2,
+  "score": 61.939,
+  "rank": 3,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
@@ -39,11 +39,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 75.0,
-    "dti": 58.9655,
-    "p": 71.7931,
-    "n_dti": 1,
+    "dti": null,
+    "p": 75.0,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 37.5,
-    "dti": 74.1947,
-    "p": 44.8389,
-    "n_dti": 1,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -799,9 +799,9 @@
    "x": 0.3664,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 58.9655,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -879,9 +879,9 @@
    "x": 70.73,
    "L": 34.5,
    "U": 83.331,
-   "z": 74.1947,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: incl_new_hire"
   }
  ],

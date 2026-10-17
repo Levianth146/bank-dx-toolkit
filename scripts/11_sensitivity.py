@@ -156,7 +156,15 @@ def prepare(a, years):
                 x[i, IND.index(ind)] = np.nan if v is None else v
         retained = gate[gate.year == y].set_index("indicator").loc[IND, "retained"].to_numpy(dtype=bool)
         # Giữ x gốc để truy vết; mọi kịch bản chỉ dùng tập chỉ số sau bước 0.
-        data[y] = dict(levels=lv, dbi=dbi, raw_x=x.copy(), x=np.where(retained[None, :], x, np.nan),
+        xr = np.where(retained[None, :], x, np.nan)
+        # Bước 0b (khớp 10_score.build_indicators): trụ cột chỉ nhận DTI khi mọi ngân hàng có ít nhất một chỉ số của trụ cột đó.
+        for p_code, ids in S.DTI_BY_PILLAR.items():
+            cols = [IND.index(i) for i in ids]
+            if cols:
+                has = ~np.isnan(xr[:, cols]).all(axis=1)
+                if has.any() and not has.all():
+                    xr[:, cols] = np.nan
+        data[y] = dict(levels=lv, dbi=dbi, raw_x=x.copy(), x=xr,
                        retained=retained, gate=gate[gate.year == y].copy())
     return banks, bounds, meta, data
 

@@ -1208,7 +1208,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1224,7 +1224,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1240,7 +1240,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1256,7 +1256,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1272,7 +1272,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1288,7 +1288,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "consolidated",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1304,7 +1304,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1320,7 +1320,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1336,7 +1336,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1352,7 +1352,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1368,7 +1368,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1384,7 +1384,7 @@
    "confirmed_by": null,
    "note": "Chưa xác nhận LNST theo phạm vi; không sao chép net_profit cũ",
    "definition": "parent",
-   "missing_reason": null,
+   "missing_reason": "not_collected",
    "used_by": []
   },
   {
@@ -1740,9 +1740,9 @@
    "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
    "confirmed": false,
    "confirmed_by": null,
-   "note": "Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: out/tq_review/vcb_2025_bctc_p49.png.",
+   "note": "not_disclosed: Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: out/tq_review/vcb_2025_bctc_p49.png.",
    "definition": null,
-   "missing_reason": null,
+   "missing_reason": "not_disclosed",
    "used_by": [
     "T-Q1"
    ]

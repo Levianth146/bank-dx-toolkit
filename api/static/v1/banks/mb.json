@@ -7,8 +7,8 @@
   "bank_name": "MB",
   "group": "NHTM Cổ phần",
   "year": 2025,
-  "score": 74.7746,
-  "rank": 2,
+  "score": 73.345,
+  "rank": 3,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
@@ -62,11 +62,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 56.25,
-    "dti": 99.1378,
-    "p": 64.8276,
-    "n_dti": 1,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -86,7 +86,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2020,
-   "score": 43.5729,
+   "score": 43.75,
    "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -123,11 +123,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 37.5,
-     "dti": 32.1878,
-     "p": 36.4376,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -166,7 +166,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2021,
-   "score": 46.082,
+   "score": 45.8333,
    "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -203,11 +203,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 43.75,
-     "dti": 51.2102,
-     "p": 45.242,
-     "n_dti": 1,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -246,7 +246,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2022,
-   "score": 54.5295,
+   "score": 53.4047,
    "rank": 2,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -261,11 +261,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 87.5,
-     "dti": 100.0,
-     "p": 90.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 87.5,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -281,11 +281,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 37.5,
-     "dti": 58.7414,
-     "p": 41.7483,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -324,7 +324,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2023,
-   "score": 49.2371,
+   "score": 48.0424,
    "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -359,11 +359,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 31.25,
-     "dti": 57.8493,
-     "p": 36.5699,
-     "n_dti": 1,
+     "dti": null,
+     "p": 31.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -379,11 +379,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 25.0,
-     "dti": 34.2405,
-     "p": 26.8481,
-     "n_dti": 1,
+     "dti": null,
+     "p": 25.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -402,8 +402,8 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 62.6277,
-   "rank": 2,
+   "score": 61.939,
+   "rank": 3,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -437,11 +437,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 75.0,
-     "dti": 58.9655,
-     "p": 71.7931,
-     "n_dti": 1,
+     "dti": null,
+     "p": 75.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "O": {
      "code": "O",
@@ -457,11 +457,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 37.5,
-     "dti": 74.1947,
-     "p": 44.8389,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -480,8 +480,8 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2025,
-   "score": 74.7746,
-   "rank": 2,
+   "score": 73.345,
+   "rank": 3,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -535,11 +535,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 56.25,
-     "dti": 99.1378,
-     "p": 64.8276,
-     "n_dti": 1,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",

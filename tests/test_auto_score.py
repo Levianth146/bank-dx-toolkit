@@ -160,7 +160,11 @@ class TestAutoPipeline(unittest.TestCase):
         self.run_script("10_score.py", "--draft")
         summary = pd.read_csv(self.out / "score_summary_draft.csv", encoding="utf-8-sig")
         mb = summary[summary.bank == "mb"].iloc[0]
-        self.assertAlmostEqual(mb.score, 3 / 24 / 4 * 100)
+        self.assertTrue(pd.isna(mb.score))                       # thiếu trụ cột -> không có điểm tổng, không nội suy
+        pillars = pd.read_csv(self.out / "scores_draft.csv", encoding="utf-8-sig")
+        k = pillars[(pillars.bank == "mb") & (pillars.pillar == "K") & pillars.dbi.notna()]
+        self.assertEqual(len(k), 1)
+        self.assertAlmostEqual(k.iloc[0].dbi, 18.75)            # K1 = 3 điểm (75%), K2-K4 không nhắc = 0 -> trung bình 18,75
         self.assertEqual(mb.scoring_method, "rule_based")
         self.assertEqual(mb.rules_version, A.RULES_VERSION)
         self.assertEqual(len(mb.rules_hash), 64)

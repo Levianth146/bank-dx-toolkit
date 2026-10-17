@@ -4,7 +4,7 @@
   "bank_name": "MB",
   "group": "NHTM Cổ phần",
   "year": 2022,
-  "score": 54.5295,
+  "score": 53.4047,
   "rank": 2,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
@@ -19,11 +19,11 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 87.5,
-    "dti": 100.0,
-    "p": 90.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 87.5,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
@@ -39,11 +39,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 37.5,
-    "dti": 58.7414,
-    "p": 41.7483,
-    "n_dti": 1,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
@@ -708,9 +708,9 @@
    "x": 95.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -788,9 +788,9 @@
    "x": 0.3653,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 58.7414,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {

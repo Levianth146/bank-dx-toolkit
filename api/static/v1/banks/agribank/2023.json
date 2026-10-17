@@ -4,7 +4,7 @@
   "bank_name": "Agribank",
   "group": "NHTM Nhà nước",
   "year": 2023,
-  "score": 40.0673,
+  "score": 42.1224,
   "rank": 4,
   "maturity_level": "Mức 2 - Bắt đầu",
   "maturity_level_number": 2,
@@ -41,11 +41,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 62.5,
-    "dti": 0.8467,
-    "p": 50.1693,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
@@ -753,9 +753,9 @@
    "x": 0.084,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 0.8467,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {

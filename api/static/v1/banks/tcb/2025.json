@@ -4,7 +4,7 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2025,
-  "score": 76.9216,
+  "score": 77.4927,
   "rank": 1,
   "maturity_level": "Mức 4 - Nâng cao",
   "maturity_level_number": 4,
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 56.25,
-    "dti": 39.1145,
-    "p": 52.8229,
-    "n_dti": 1,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -908,9 +908,9 @@
    "x": 53.6,
    "L": 34.5,
    "U": 83.331,
-   "z": 39.1145,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ],

@@ -95,9 +95,9 @@
    "x": 0.084,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 0.8467,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -271,9 +271,9 @@
    "x": 0.1041,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 4.986,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -351,9 +351,9 @@
    "x": 98.7,
    "L": 34.5,
    "U": 83.331,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: days_x6h"
   },
   {
@@ -447,9 +447,9 @@
    "x": 0.3609,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 57.8493,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -527,9 +527,9 @@
    "x": 51.22,
    "L": 34.5,
    "U": 83.331,
-   "z": 34.2405,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: incl_new_hire"
   },
   {
@@ -623,9 +623,9 @@
    "x": 0.5874,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -703,9 +703,9 @@
    "x": 82.0,
    "L": 34.5,
    "U": 83.331,
-   "z": 97.2743,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   },
   {
@@ -879,9 +879,9 @@
    "x": 41.0,
    "L": 34.5,
    "U": 83.331,
-   "z": 13.3112,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ]

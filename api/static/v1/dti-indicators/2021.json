@@ -95,9 +95,9 @@
    "x": 0.0842,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 0.891,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -271,9 +271,9 @@
    "x": 0.1185,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 7.9369,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -447,9 +447,9 @@
    "x": 0.3287,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 51.2102,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -623,9 +623,9 @@
    "x": 0.3782,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 61.4013,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {

@@ -4,7 +4,7 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2021,
-  "score": 51.8384,
+  "score": 51.0417,
   "rank": 1,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
@@ -41,11 +41,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 37.5,
-    "dti": 61.4013,
-    "p": 42.2803,
-    "n_dti": 1,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "O": {
     "code": "O",
@@ -777,9 +777,9 @@
    "x": 0.3782,
    "L": 0.0799,
    "U": 0.5657,
-   "z": 61.4013,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": null
   },
   {
@@ -865,7 +865,7 @@
  ],
  "highlights": {
   "strongest_pillar": "K",
-  "weakest_pillar": "C",
+  "weakest_pillar": "T",
   "criteria_score_distribution": {
    "0": 2,
    "1": 8,

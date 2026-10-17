@@ -4,8 +4,8 @@
   "bank_name": "MB",
   "group": "NHTM Cổ phần",
   "year": 2025,
-  "score": 74.7746,
-  "rank": 2,
+  "score": 73.345,
+  "rank": 3,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 56.25,
-    "dti": 99.1378,
-    "p": 64.8276,
-    "n_dti": 1,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -891,15 +891,15 @@
    "x": 82.91,
    "L": 34.5,
    "U": 83.331,
-   "z": 99.1378,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ],
  "highlights": {
   "strongest_pillar": "T",
-  "weakest_pillar": "D",
+  "weakest_pillar": "C",
   "criteria_score_distribution": {
    "0": 2,
    "1": 2,

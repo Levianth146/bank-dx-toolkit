@@ -44,7 +44,8 @@ không xóa biến thô và chưa tự thay proxy. Agribank dùng cùng cổng; 
 `out/step0_gate.csv` ghi số/ngân hàng thiếu và quyết định giữ/loại; `out/step0_report.md` tổng hợp kết quả.
 Trong `dti_indicators.csv`, `x` và `z_before_step0` giữ kết quả trước cổng, `z` và `included_in_score` phản ánh sau cổng.
 `data_confidence` vẫn là số chỉ số có dữ liệu trước cổng / 11; `scoring_coverage` là số dùng sau cổng / 11.
-Không điền 0 cho ô thiếu; trụ cột không còn DTI dùng DBI thuần. Cận L/U, 24 tiêu chí DBI và công thức 80/20 không đổi.
+Không điền 0 cho ô thiếu; trụ cột không còn DTI dùng DBI thuần.
+**Bước 0b (từ 2026-10-17):** một trụ cột chỉ nhận DTI trong năm đó khi **cả 5 ngân hàng** đều có ít nhất một chỉ số của trụ cột; nếu thiếu ở một ngân hàng thì DTI của trụ cột bị bỏ cho cả 5 (P_k = DBI_k). Trước đây ngân hàng thiếu bị chấm DBI thuần còn các ngân hàng khác pha 80/20, nên so sánh lệch (VCB 2020–2022). Cột `step0b_excluded` trong `out/dti_indicators.csv` ghi các ô bị loại. Cận L/U, 24 tiêu chí DBI và công thức 80/20 không đổi.
 
 Bước 10 mặc định tính toàn bộ năm cấu hình 2020–2025. Chạy riêng năm lịch sử không áp lùi rating/checklist hiện tại.
 Bộ DTI giữ lại thay đổi giữa các năm; đọc hạn chế này khi so sánh xu hướng điểm.

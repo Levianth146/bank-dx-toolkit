@@ -19,17 +19,17 @@
      "level": "Mức 1 - Khởi động"
     },
     "80/20": {
-     "score": 22.3214,
+     "score": 22.9167,
      "rank": 5,
      "level": "Mức 1 - Khởi động"
     },
     "70/30": {
-     "score": 22.0237,
+     "score": 22.9167,
      "rank": 5,
      "level": "Mức 1 - Khởi động"
     },
     "60/40": {
-     "score": 21.7261,
+     "score": 22.9167,
      "rank": 5,
      "level": "Mức 1 - Khởi động"
     }
@@ -50,25 +50,25 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 44.6396,
-     "rank": 3,
+     "score": 45.8333,
+     "rank": 2,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 44.0427,
-     "rank": 3,
+     "score": 45.8333,
+     "rank": 2,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 43.4458,
-     "rank": 3,
+     "score": 45.8333,
+     "rank": 2,
      "level": "Mức 2 - Bắt đầu"
     }
    },
-   "rank_stable_pct": 0.6667,
+   "rank_stable_pct": 1.0,
    "rank_min": 2,
-   "rank_max": 3,
-   "stable_under_weights": false
+   "rank_max": 2,
+   "stable_under_weights": true
   },
   {
    "bank": "mb",
@@ -81,17 +81,17 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 46.082,
+     "score": 45.8333,
      "rank": 2,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 46.2063,
+     "score": 45.8333,
      "rank": 2,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 46.3307,
+     "score": 45.8333,
      "rank": 2,
      "level": "Mức 2 - Bắt đầu"
     }
@@ -112,17 +112,17 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 51.8384,
+     "score": 51.0417,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 52.2367,
+     "score": 51.0417,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 52.6351,
+     "score": 51.0417,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     }
@@ -167,8 +167,8 @@
  "agreement_with_base": [
   {
    "scenario": "100/0",
-   "kendall_tau": 0.9487,
-   "spearman": 0.9623
+   "kendall_tau": 1.0,
+   "spearman": 1.0
   },
   {
    "scenario": "70/30",

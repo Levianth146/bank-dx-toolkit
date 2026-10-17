@@ -18,43 +18,43 @@
    "points": [
     {
      "year": 2020,
-     "value": 0.2965,
+     "value": 0.0,
      "rank": 5,
      "maturity_level_number": 1,
      "data_confidence": 0.0909,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2021,
-     "value": 15.1782,
+     "value": 18.75,
      "rank": 5,
      "maturity_level_number": 1,
      "data_confidence": 0.1818,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2022,
-     "value": 5.0,
+     "value": 6.25,
      "rank": 5,
      "maturity_level_number": 1,
      "data_confidence": 0.3636,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2023,
-     "value": 50.1693,
+     "value": 62.5,
      "rank": 4,
      "maturity_level_number": 2,
      "data_confidence": 0.1818,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 50.0,
+     "value": 62.5,
      "rank": 5,
      "maturity_level_number": 2,
      "data_confidence": 0.4545,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
@@ -74,43 +74,43 @@
    "points": [
     {
      "year": 2020,
-     "value": 26.2025,
+     "value": 31.25,
      "rank": 3,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2021,
-     "value": 36.5874,
-     "rank": 3,
+     "value": 43.75,
+     "rank": 2,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2022,
-     "value": 21.3466,
+     "value": 25.0,
      "rank": 4,
      "maturity_level_number": 2,
      "data_confidence": 0.4545,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2023,
-     "value": 50.9972,
+     "value": 62.5,
      "rank": 3,
      "maturity_level_number": 2,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 71.8644,
-     "rank": 3,
+     "value": 87.5,
+     "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.3636,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
@@ -130,48 +130,48 @@
    "points": [
     {
      "year": 2020,
-     "value": 36.4376,
+     "value": 37.5,
      "rank": 2,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2021,
-     "value": 45.242,
+     "value": 43.75,
      "rank": 2,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2022,
-     "value": 41.7483,
+     "value": 37.5,
      "rank": 2,
      "maturity_level_number": 3,
      "data_confidence": 0.4545,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2023,
-     "value": 36.5699,
+     "value": 31.25,
      "rank": 2,
      "maturity_level_number": 2,
      "data_confidence": 0.6364,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 71.7931,
-     "rank": 2,
+     "value": 75.0,
+     "rank": 3,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
      "value": 90.0659,
-     "rank": 2,
+     "rank": 3,
      "maturity_level_number": 3,
      "data_confidence": 0.8182,
      "n_dti": 2
@@ -186,43 +186,43 @@
    "points": [
     {
      "year": 2020,
-     "value": 48.8496,
+     "value": 50.0,
      "rank": 1,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2021,
-     "value": 42.2803,
+     "value": 37.5,
      "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.1818,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2022,
-     "value": 67.922,
+     "value": 62.5,
      "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2023,
-     "value": 60.0,
+     "value": 50.0,
      "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.4545,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2024,
-     "value": 75.0,
-     "rank": 1,
+     "value": 62.5,
+     "rank": 4,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
-     "n_dti": 1
+     "n_dti": 0
     },
     {
      "year": 2025,
@@ -275,7 +275,7 @@
     {
      "year": 2024,
      "value": 68.75,
-     "rank": 4,
+     "rank": 2,
      "maturity_level_number": 3,
      "data_confidence": 0.2727,
      "n_dti": 0
@@ -283,7 +283,7 @@
     {
      "year": 2025,
      "value": 80.0,
-     "rank": 3,
+     "rank": 2,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
      "n_dti": 1

@@ -469,7 +469,7 @@ vcb,2025,total_customers,,,,,,"not_disclosed; chỉ Digibank ~18M (đã ghi digi
 vcb,2025,headcount,23457.0,persons,data/raw/vcb/2025_bctn.pdf,40.0,nam,BCTN: Tổng số lao động 23.457 (theo BCTC hợp nhất),group,,,,
 vcb,2025,tech_staff,,,,,,not_disclosed; đã tìm BCTN (nhân sự CNTT / chuyên gia công nghệ / kỹ sư) — không công bố số lượng,,,,,
 vcb,2025,training_hours_per_head,48.96,hours,data/raw/vcb/2025_bctn.pdf,68.0,nam,"BCTN p68: Số giờ đào tạo trung bình/cán bộ năm 2025 = 48,96 giờ/năm",avg_hours,,,,
-vcb,2025,software_gross_cost,,,data/raw/vcb/2025_bctc.pdf,49.0,,"Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: out/tq_review/vcb_2025_bctc_p49.png.",,,,,
+vcb,2025,software_gross_cost,,,data/raw/vcb/2025_bctc.pdf,49.0,,"not_disclosed: Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: out/tq_review/vcb_2025_bctc_p49.png.",,,,,
 vcb,2025,total_assets,2442279166.0,VND million,data/raw/vcb/2025_bctc.pdf,8.0,nam,CĐKT p8: TONG TÀI SẲN CO — số cuối 2.442.279.166,,,,,
 vcb,2025,opex,25242799.0,VND million,data/raw/vcb/2025_bctc.pdf,11.0,nam,KQKD p11: Chi phí HĐ 25.242.799 trị tuyệt đối,,,,,
 vcb,2025,op_profit_before_provision,47211823.0,VND million,data/raw/vcb/2025_bctc.pdf,11.0,nam,KQKD p11: LN trước dự phòng 47.211.823 (OCR 47211.823); TOI 72.454.622,,,,,

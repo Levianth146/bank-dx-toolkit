@@ -19,17 +19,17 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 46.0045,
+     "score": 48.0878,
      "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 45.5692,
+     "score": 48.6942,
      "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 45.1339,
+     "score": 49.3006,
      "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     }
@@ -50,25 +50,25 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 61.0732,
-     "rank": 3,
+     "score": 63.6734,
+     "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 59.3182,
-     "rank": 3,
+     "score": 63.2185,
+     "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 57.5632,
-     "rank": 3,
+     "score": 62.7635,
+     "rank": 1,
      "level": "Mức 3 - Hình thành"
     }
    },
-   "rank_stable_pct": 0.6667,
+   "rank_stable_pct": 1.0,
    "rank_min": 1,
-   "rank_max": 3,
-   "stable_under_weights": false
+   "rank_max": 1,
+   "stable_under_weights": true
   },
   {
    "bank": "mb",
@@ -77,28 +77,28 @@
    "by_scenario": {
     "100/0": {
      "score": 61.4583,
-     "rank": 4,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 62.6277,
-     "rank": 2,
+     "score": 61.939,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 63.2124,
-     "rank": 2,
+     "score": 62.1794,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 63.7971,
+     "score": 62.4197,
      "rank": 2,
      "level": "Mức 3 - Hình thành"
     }
    },
    "rank_stable_pct": 0.6667,
    "rank_min": 2,
-   "rank_max": 4,
+   "rank_max": 3,
    "stable_under_weights": false
   },
   {
@@ -107,29 +107,29 @@
    "group": "NHTM Cổ phần",
    "by_scenario": {
     "100/0": {
-     "score": 62.5,
+     "score": 61.4583,
      "rank": 3,
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 63.6548,
-     "rank": 1,
+     "score": 61.6509,
+     "rank": 4,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 64.2322,
-     "rank": 1,
+     "score": 61.7472,
+     "rank": 4,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 64.8096,
-     "rank": 1,
+     "score": 61.8434,
+     "rank": 4,
      "level": "Mức 3 - Hình thành"
     }
    },
    "rank_stable_pct": 0.6667,
-   "rank_min": 1,
-   "rank_max": 3,
+   "rank_min": 3,
+   "rank_max": 4,
    "stable_under_weights": false
   },
   {
@@ -143,32 +143,32 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 60.735,
-     "rank": 4,
+     "score": 63.3341,
+     "rank": 2,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 58.8108,
-     "rank": 4,
+     "score": 62.7095,
+     "rank": 2,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 56.8866,
-     "rank": 4,
+     "score": 62.0849,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     }
    },
    "rank_stable_pct": 0.6667,
    "rank_min": 2,
-   "rank_max": 4,
+   "rank_max": 3,
    "stable_under_weights": false
   }
  ],
  "agreement_with_base": [
   {
    "scenario": "100/0",
-   "kendall_tau": 0.2,
-   "spearman": 0.2
+   "kendall_tau": 0.9487,
+   "spearman": 0.9594
   },
   {
    "scenario": "70/30",
@@ -177,8 +177,8 @@
   },
   {
    "scenario": "60/40",
-   "kendall_tau": 1.0,
-   "spearman": 1.0
+   "kendall_tau": 0.8,
+   "spearman": 0.9
   }
  ],
  "note": "Chỉ kịch bản trọng số DBI/DTI (mục V.2). rank_stable_pct = tỷ lệ kịch bản khác kịch bản cơ sở giữ nguyên hạng; stable_under_weights khi >= 80%. CHỈ là kịch bản trọng số; kết luận Vững/Nhóm cùng mức đầy đủ nằm ở /sensitivity/full."

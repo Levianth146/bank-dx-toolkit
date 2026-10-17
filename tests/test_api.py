@@ -290,7 +290,7 @@ def test_layer_c_correlation():
 
 def test_sensitivity_full_matches_script_output():
     sf = get("/sensitivity/full?year=2025")
-    assert sf["available_years"] == [2021, 2023, 2025] and sf["robust_threshold"] == 0.8
+    assert sf["available_years"] == sorted(set(pd.read_csv(ROOT / "out" / "sensitivity" / "sens_scenarios.csv", encoding="utf-8-sig").year)) and sf["robust_threshold"] == 0.8
     official = {i["bank"]: i["rank"] for i in get("/ranking?year=2025")["items"]}
     scen = pd.read_csv(ROOT / "out" / "sensitivity" / "sens_scenarios.csv", encoding="utf-8-sig")
     scen = scen[(scen.year == 2025) & (scen.family != "0. Cơ sở")]
@@ -302,7 +302,7 @@ def test_sensitivity_full_matches_script_output():
         for m in b["monte_carlo"]:
             assert abs(sum(r["prob"] for r in m["rank_distribution"]) - 1) < 1e-3
     assert len(sf["pairs"]) == 10
-    assert get("/sensitivity/full?year=2024", 404)["error"]["code"] == "sensitivity_year_not_run"
+    assert 2024 in sf["available_years"]                                    # độ nhạy đã chạy đủ 6 năm
     rows = get("/sensitivity/scenarios?year=2025&family=G.&bank=tcb")
     assert rows["count"] == 16 and all(r["family"].startswith("G.") and r["bank"] == "tcb" for r in rows["items"])
 

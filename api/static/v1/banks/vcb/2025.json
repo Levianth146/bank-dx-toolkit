@@ -4,8 +4,8 @@
   "bank_name": "Vietcombank",
   "group": "NHTM Nhà nước",
   "year": 2025,
-  "score": 72.9263,
-  "rank": 3,
+  "score": 74.8559,
+  "rank": 2,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 87.5,
-    "dti": 29.6123,
-    "p": 75.9225,
-    "n_dti": 1,
+    "dti": null,
+    "p": 87.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -900,9 +900,9 @@
    "x": 48.96,
    "L": 34.5,
    "U": 83.331,
-   "z": 29.6123,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0b (trụ cột không đủ 5 ngân hàng)",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ],
