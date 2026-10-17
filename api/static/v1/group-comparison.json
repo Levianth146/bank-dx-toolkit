@@ -8,14 +8,14 @@
     "tcb"
    ],
    "n_banks": 2,
-   "score_mean": 49.262,
+   "score_mean": 47.2888,
    "data_confidence_mean": 0.2727,
    "pillar_p_mean": {
-    "K": 71.5873,
+    "K": 71.875,
     "S": 50.0,
     "T": 52.4828,
     "O": 56.25,
-    "C": 40.252,
+    "C": 28.125,
     "D": 25.0
    }
   },
@@ -28,14 +28,14 @@
     "vcb"
    ],
    "n_banks": 3,
-   "score_mean": 32.8997,
+   "score_mean": 31.9676,
    "data_confidence_mean": 0.1212,
    "pillar_p_mean": {
-    "K": 54.3426,
+    "K": 54.1667,
     "S": 45.8333,
     "T": 23.0557,
     "O": 31.25,
-    "C": 26.25,
+    "C": 20.8333,
     "D": 16.6667
    }
   },
@@ -47,14 +47,14 @@
     "tcb"
    ],
    "n_banks": 2,
-   "score_mean": 52.6458,
+   "score_mean": 50.4167,
    "data_confidence_mean": 0.2273,
    "pillar_p_mean": {
-    "K": 66.5,
+    "K": 59.375,
     "S": 53.125,
     "T": 52.5,
     "O": 56.25,
-    "C": 43.75,
+    "C": 37.5,
     "D": 43.75
    }
   },
@@ -67,14 +67,14 @@
     "vcb"
    ],
    "n_banks": 3,
-   "score_mean": 35.9376,
+   "score_mean": 35.8107,
    "data_confidence_mean": 0.1515,
    "pillar_p_mean": {
-    "K": 57.9704,
+    "K": 58.3333,
     "S": 47.9167,
     "T": 27.3645,
     "O": 27.0833,
-    "C": 34.4574,
+    "C": 33.3333,
     "D": 20.8333
    }
   },
@@ -86,14 +86,14 @@
     "tcb"
    ],
    "n_banks": 2,
-   "score_mean": 62.7658,
+   "score_mean": 62.426,
    "data_confidence_mean": 0.5,
    "pillar_p_mean": {
-    "K": 85.1482,
-    "S": 56.7778,
+    "K": 87.0555,
+    "S": 65.625,
     "T": 60.0,
     "O": 65.0,
-    "C": 44.0439,
+    "C": 31.25,
     "D": 65.625
    }
   },
@@ -106,14 +106,14 @@
     "vcb"
    ],
    "n_banks": 3,
-   "score_mean": 37.3823,
+   "score_mean": 36.8406,
    "data_confidence_mean": 0.303,
    "pillar_p_mean": {
-    "K": 57.6222,
-    "S": 47.0833,
+    "K": 58.5389,
+    "S": 47.9167,
     "T": 27.088,
     "O": 41.6667,
-    "C": 34.1667,
+    "C": 29.1667,
     "D": 16.6667
    }
   },
@@ -125,11 +125,11 @@
     "tcb"
    ],
    "n_banks": 2,
-   "score_mean": 58.3162,
+   "score_mean": 58.3333,
    "data_confidence_mean": 0.5454,
    "pillar_p_mean": {
-    "K": 76.8,
-    "S": 54.3472,
+    "K": 71.875,
+    "S": 59.375,
     "T": 52.5,
     "O": 70.0,
     "C": 40.0,
@@ -145,10 +145,10 @@
     "vcb"
    ],
    "n_banks": 3,
-   "score_mean": 43.9642,
+   "score_mean": 43.6048,
    "data_confidence_mean": 0.3333,
    "pillar_p_mean": {
-    "K": 56.3233,
+    "K": 54.1667,
     "S": 45.8333,
     "T": 49.9619,
     "O": 36.6667,
@@ -164,11 +164,11 @@
     "tcb"
    ],
    "n_banks": 2,
-   "score_mean": 63.7361,
+   "score_mean": 65.1042,
    "data_confidence_mean": 0.5455,
    "pillar_p_mean": {
-    "K": 90.0,
-    "S": 48.6667,
+    "K": 87.5,
+    "S": 59.375,
     "T": 77.5,
     "O": 72.5,
     "C": 50.0,
@@ -184,11 +184,11 @@
     "vcb"
    ],
    "n_banks": 3,
-   "score_mean": 59.0179,
+   "score_mean": 59.2802,
    "data_confidence_mean": 0.3636,
    "pillar_p_mean": {
-    "K": 85.8333,
-    "S": 48.0093,
+    "K": 85.4167,
+    "S": 50.0,
     "T": 67.3791,
     "O": 46.6667,
     "C": 60.3854,
@@ -203,14 +203,14 @@
     "tcb"
    ],
    "n_banks": 2,
-   "score_mean": 74.1732,
-   "data_confidence_mean": 0.6818,
+   "score_mean": 76.9429,
+   "data_confidence_mean": 0.7728,
    "pillar_p_mean": {
     "K": 86.6572,
-    "S": 53.4028,
+    "S": 65.625,
     "T": 85.0,
     "O": 87.5,
-    "C": 60.6046,
+    "C": 65.0,
     "D": 71.875
    }
   },
@@ -223,12 +223,12 @@
     "vcb"
    ],
    "n_banks": 3,
-   "score_mean": 64.8918,
-   "data_confidence_mean": 0.4848,
+   "score_mean": 65.9604,
+   "data_confidence_mean": 0.5758,
    "pillar_p_mean": {
     "K": 79.6282,
-    "S": 62.4537,
-    "T": 70.6021,
+    "S": 62.5,
+    "T": 76.9677,
     "O": 56.6667,
     "C": 63.75,
     "D": 56.25

@@ -104,7 +104,7 @@
     "file": "data/raw/agribank/2020_bctn.pdf",
     "page": 20,
     "url": "https://www.agribank.com.vn/wcm/connect/0e3855a5-dbd5-4558-9ac5-31d41474d978/FILE_20210715_140421_20_6+BCTN+2020_pdf+%28trang+%C4%91%C3%B4i%29.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-0e3855a5-dbd5-4558-9ac5-31d41474d978-owJxqSW",
-    "quote": "n giới vẫn được duy trì, doanh số thanh toán nhập khẩu tăng 97% và thu phí thanh toán biên giới tăng 4,6% so với năm 2019. Agribank quản lý chặt chẽ các hoạt động, thực hiện cấp hạn mức các tài khoản thanh toán biên giới, triển khai thành công thanh toán biên giới Việt Nam - Trung Quốc qua hệ thống Internet Banking, đánh dấu bước phát triển một bậc trong tự động hóa giao dịch chuyển tiền thanh toán biên giới của Agribank. Agribank chỉ đạo các đơn vị chủ"
+    "quote": "n giới vẫn được duy trì, doanh số thanh toán nhập khẩu tăng 97% và thu phí thanh toán biên giới tăng 4,6% so với năm 2019. Agribank quản lý chặt chẽ các hoạt động, thực hiện cấp hạn mức các tài khoản thanh toán biên giới, triển khai thành công thanh toán biên giới Việt Nam - Trung Quốc qua hệ thống Internet Banking, đánh dấu bước phát triển một bậc trong tự động hóa giao dịch chuyển tiền thanh toá"
    },
    "note": "11 đoạn khớp từ khóa"
   },
@@ -636,7 +636,7 @@
    "L": 0.0,
    "U": 90.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_txn_share"
   },
@@ -652,7 +652,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -668,7 +668,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -684,7 +684,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_txn_share năm cuối"
   },
@@ -700,7 +700,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -732,7 +732,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -748,7 +748,7 @@
    "L": -0.5845,
    "U": 0.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ"
   },
@@ -764,7 +764,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cách >= 2 năm"
   },
@@ -780,7 +780,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -796,7 +796,7 @@
    "L": 0.0,
    "U": 38.7,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu giờ đào tạo"
   }

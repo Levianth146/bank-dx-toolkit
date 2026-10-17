@@ -4,7 +4,7 @@
   "bank_name": "BIDV",
   "group": "NHTM Nhà nước",
   "year": 2022,
-  "score": 43.2133,
+  "score": 41.13,
   "rank": 4,
   "maturity_level": "Mức 2 - Bắt đầu",
   "maturity_level_number": 2,
@@ -29,11 +29,11 @@
     "code": "S",
     "name": "Chiến lược",
     "dbi": 62.5,
-    "dti": 50.0,
-    "p": 60.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 25.0,
-    "dti": 100.0,
-    "p": 40.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 25.0,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -689,7 +689,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -705,7 +705,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -720,9 +720,9 @@
    "x": 9.0,
    "L": 0.0,
    "U": 18.0,
-   "z": 50.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2021->2022, quy về điểm %/năm"
   },
   {
@@ -737,7 +737,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -769,7 +769,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -801,7 +801,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cách >= 2 năm"
   },
@@ -817,7 +817,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -832,15 +832,15 @@
    "x": 87.12,
    "L": 0.0,
    "U": 38.7,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: days_x6h"
   }
  ],
  "highlights": {
   "strongest_pillar": "S",
-  "weakest_pillar": "D",
+  "weakest_pillar": "C",
   "criteria_score_distribution": {
    "0": 6,
    "1": 7,

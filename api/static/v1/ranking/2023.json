@@ -11,7 +11,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2023,
-   "score": 64.1667,
+   "score": 63.75,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -26,11 +26,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 87.5,
-     "dti": 100.0,
-     "p": 90.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 87.5,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -83,7 +83,7 @@
      "dti_applied": false
     }
    },
-   "score_change": -4.7253,
+   "score_change": -5.0602,
    "rank_change": 0
   },
   {
@@ -91,7 +91,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2023,
-   "score": 52.4657,
+   "score": 52.9167,
    "rank": 2,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -106,21 +106,21 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 56.25,
-     "dti": 93.0,
-     "p": 63.6,
-     "n_dti": 2,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
      "name": "Chiến lược",
      "dbi": 62.5,
-     "dti": 12.2222,
-     "p": 52.4444,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -163,7 +163,7 @@
      "dti_applied": false
     }
    },
-   "score_change": -4.1739,
+   "score_change": -3.125,
    "rank_change": 0
   },
   {
@@ -171,7 +171,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2023,
-   "score": 48.6791,
+   "score": 47.6008,
    "rank": 3,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -186,11 +186,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 56.25,
-     "dti": 88.5997,
-     "p": 62.7199,
-     "n_dti": 2,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -243,7 +243,7 @@
      "dti_applied": false
     }
    },
-   "score_change": 5.4658,
+   "score_change": 6.4708,
    "rank_change": 1
   },
   {
@@ -407,7 +407,7 @@
      "dti_applied": false
     }
    },
-   "score_change": 15.9467,
+   "score_change": 15.4884,
    "rank_change": 0
   }
  ]

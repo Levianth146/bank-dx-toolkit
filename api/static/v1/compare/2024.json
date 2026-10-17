@@ -6,7 +6,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 47.5706,
+   "score": 48.3577,
    "rank": 5,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -21,21 +21,21 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 93.75,
-     "dti": 100.0,
-     "p": 95.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 93.75,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
      "name": "Chiến lược",
      "dbi": 43.75,
-     "dti": 13.8889,
-     "p": 37.7778,
-     "n_dti": 1,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -85,7 +85,7 @@
    "group": "NHTM Nhà nước",
    "year": 2024,
    "score": 64.4986,
-   "rank": 2,
+   "rank": 4,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -164,8 +164,8 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 63.9306,
-   "rank": 3,
+   "score": 65.0,
+   "rank": 2,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -179,21 +179,21 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 81.25,
-     "dti": 100.0,
-     "p": 85.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 81.25,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
      "name": "Chiến lược",
      "dbi": 62.5,
-     "dti": 11.6667,
-     "p": 52.3333,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -242,8 +242,8 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 63.5417,
-   "rank": 4,
+   "score": 65.2083,
+   "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -257,21 +257,21 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 93.75,
-     "dti": 100.0,
-     "p": 95.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 93.75,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
      "name": "Chiến lược",
      "dbi": 56.25,
-     "dti": 0.0,
-     "p": 45.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -321,7 +321,7 @@
    "group": "NHTM Nhà nước",
    "year": 2024,
    "score": 64.9844,
-   "rank": 1,
+   "rank": 3,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -401,10 +401,10 @@
    "code": "K",
    "name": "Khách hàng",
    "values": {
-    "agribank": 95.0,
+    "agribank": 93.75,
     "bidv": 75.0,
-    "mb": 85.0,
-    "tcb": 95.0,
+    "mb": 81.25,
+    "tcb": 93.75,
     "vcb": 87.5
    },
    "dbi": {
@@ -415,10 +415,10 @@
     "vcb": 87.5
    },
    "dti": {
-    "agribank": 100.0,
+    "agribank": null,
     "bidv": null,
-    "mb": 100.0,
-    "tcb": 100.0,
+    "mb": null,
+    "tcb": null,
     "vcb": null
    }
   },
@@ -426,10 +426,10 @@
    "code": "S",
    "name": "Chiến lược",
    "values": {
-    "agribank": 37.7778,
+    "agribank": 43.75,
     "bidv": 62.5,
-    "mb": 52.3333,
-    "tcb": 45.0,
+    "mb": 62.5,
+    "tcb": 56.25,
     "vcb": 43.75
    },
    "dbi": {
@@ -440,10 +440,10 @@
     "vcb": 43.75
    },
    "dti": {
-    "agribank": 13.8889,
+    "agribank": null,
     "bidv": null,
-    "mb": 11.6667,
-    "tcb": 0.0,
+    "mb": null,
+    "tcb": null,
     "vcb": null
    }
   },
@@ -554,7 +554,8 @@
    "tcb"
   ],
   "S": [
-   "bidv"
+   "bidv",
+   "mb"
   ],
   "T": [
    "mb"

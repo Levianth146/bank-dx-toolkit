@@ -19,17 +19,17 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 53.9539,
+     "score": 55.2801,
      "rank": 5,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 54.3683,
+     "score": 56.3577,
      "rank": 5,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 54.7828,
+     "score": 57.4353,
      "rank": 5,
      "level": "Mức 3 - Hình thành"
     }
@@ -50,17 +50,17 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 64.9643,
+     "score": 66.0106,
      "rank": 4,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 65.1547,
+     "score": 66.7243,
      "rank": 4,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 65.3452,
+     "score": 67.438,
      "rank": 4,
      "level": "Mức 3 - Hình thành"
     }
@@ -81,25 +81,25 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 72.2715,
+     "score": 75.7274,
      "rank": 3,
-     "level": "Mức 3 - Hình thành"
+     "level": "Mức 4 - Nâng cao"
     },
     "70/30": {
-     "score": 71.9489,
-     "rank": 3,
-     "level": "Mức 3 - Hình thành"
+     "score": 77.1327,
+     "rank": 2,
+     "level": "Mức 4 - Nâng cao"
     },
     "60/40": {
-     "score": 71.6263,
-     "rank": 3,
-     "level": "Mức 3 - Hình thành"
+     "score": 78.5381,
+     "rank": 2,
+     "level": "Mức 4 - Nâng cao"
     }
    },
-   "rank_stable_pct": 1.0,
-   "rank_min": 3,
+   "rank_stable_pct": 0.3333,
+   "rank_min": 2,
    "rank_max": 3,
-   "stable_under_weights": true
+   "stable_under_weights": false
   },
   {
    "bank": "tcb",
@@ -112,25 +112,25 @@
      "level": "Mức 4 - Nâng cao"
     },
     "80/20": {
-     "score": 76.075,
+     "score": 78.1584,
      "rank": 1,
      "level": "Mức 4 - Nâng cao"
     },
     "70/30": {
-     "score": 75.5709,
-     "rank": 2,
+     "score": 78.6959,
+     "rank": 1,
      "level": "Mức 4 - Nâng cao"
     },
     "60/40": {
-     "score": 75.0667,
-     "rank": 2,
+     "score": 79.2334,
+     "rank": 1,
      "level": "Mức 4 - Nâng cao"
     }
    },
-   "rank_stable_pct": 0.3333,
+   "rank_stable_pct": 1.0,
    "rank_min": 1,
-   "rank_max": 2,
-   "stable_under_weights": false
+   "rank_max": 1,
+   "stable_under_weights": true
   },
   {
    "bank": "vcb",
@@ -143,24 +143,24 @@
      "level": "Mức 4 - Nâng cao"
     },
     "80/20": {
-     "score": 75.7572,
+     "score": 76.5905,
      "rank": 2,
      "level": "Mức 4 - Nâng cao"
     },
     "70/30": {
-     "score": 75.6149,
-     "rank": 1,
+     "score": 76.8649,
+     "rank": 3,
      "level": "Mức 4 - Nâng cao"
     },
     "60/40": {
-     "score": 75.4727,
-     "rank": 1,
+     "score": 77.1393,
+     "rank": 3,
      "level": "Mức 4 - Nâng cao"
     }
    },
    "rank_stable_pct": 0.3333,
-   "rank_min": 1,
-   "rank_max": 2,
+   "rank_min": 2,
+   "rank_max": 3,
    "stable_under_weights": false
   }
  ],

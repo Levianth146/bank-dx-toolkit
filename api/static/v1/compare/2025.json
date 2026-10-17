@@ -6,13 +6,13 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2025,
-   "score": 53.9539,
+   "score": 55.2801,
    "rank": 5,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
-   "data_confidence": 0.5455,
-   "dti_indicators_available": 6,
+   "data_confidence": 0.6364,
+   "dti_indicators_available": 7,
    "dti_indicators_total": 11,
    "reliability": "medium",
    "warnings": [],
@@ -31,19 +31,19 @@
      "code": "S",
      "name": "Chiến lược",
      "dbi": 56.25,
-     "dti": 55.5556,
-     "p": 56.1111,
-     "n_dti": 2,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
      "name": "Công nghệ",
      "dbi": 75.0,
-     "dti": 21.814,
-     "p": 64.3628,
-     "n_dti": 1,
+     "dti": 60.907,
+     "p": 72.1814,
+     "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
     },
@@ -84,13 +84,13 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2025,
-   "score": 64.9643,
+   "score": 66.0106,
    "rank": 4,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
-   "data_confidence": 0.4545,
-   "dti_indicators_available": 5,
+   "data_confidence": 0.5455,
+   "dti_indicators_available": 6,
    "dti_indicators_total": 11,
    "reliability": "medium",
    "warnings": [],
@@ -119,9 +119,9 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 81.25,
-     "dti": 37.2169,
-     "p": 72.4434,
-     "n_dti": 1,
+     "dti": 68.6084,
+     "p": 78.7217,
+     "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
     },
@@ -162,13 +162,13 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2025,
-   "score": 72.2715,
+   "score": 75.7274,
    "rank": 3,
-   "maturity_level": "Mức 3 - Hình thành",
-   "maturity_level_number": 3,
-   "maturity_level_name": "Hình thành",
-   "data_confidence": 0.7273,
-   "dti_indicators_available": 8,
+   "maturity_level": "Mức 4 - Nâng cao",
+   "maturity_level_number": 4,
+   "maturity_level_name": "Nâng cao",
+   "data_confidence": 0.8182,
+   "dti_indicators_available": 9,
    "dti_indicators_total": 11,
    "reliability": "high",
    "warnings": [],
@@ -187,11 +187,11 @@
      "code": "S",
      "name": "Chiến lược",
      "dbi": 68.75,
-     "dti": 9.0278,
-     "p": 56.8056,
-     "n_dti": 1,
+     "dti": null,
+     "p": 68.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -199,7 +199,7 @@
      "dbi": 93.75,
      "dti": 100.0,
      "p": 95.0,
-     "n_dti": 1,
+     "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
     },
@@ -217,9 +217,9 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 56.25,
-     "dti": 56.0462,
-     "p": 56.2092,
-     "n_dti": 2,
+     "dti": 100.0,
+     "p": 65.0,
+     "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
     },
@@ -240,15 +240,15 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2025,
-   "score": 76.075,
+   "score": 78.1584,
    "rank": 1,
    "maturity_level": "Mức 4 - Nâng cao",
    "maturity_level_number": 4,
    "maturity_level_name": "Nâng cao",
-   "data_confidence": 0.6364,
-   "dti_indicators_available": 7,
+   "data_confidence": 0.7273,
+   "dti_indicators_available": 8,
    "dti_indicators_total": 11,
-   "reliability": "medium",
+   "reliability": "high",
    "warnings": [],
    "pillars": {
     "K": {
@@ -265,11 +265,11 @@
      "code": "S",
      "name": "Chiến lược",
      "dbi": 62.5,
-     "dti": 0.0,
-     "p": 50.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -277,7 +277,7 @@
      "dbi": 68.75,
      "dti": 100.0,
      "p": 75.0,
-     "n_dti": 1,
+     "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
     },
@@ -318,13 +318,13 @@
    "bank_name": "Vietcombank",
    "group": "NHTM Nhà nước",
    "year": 2025,
-   "score": 75.7572,
+   "score": 76.5905,
    "rank": 2,
    "maturity_level": "Mức 4 - Nâng cao",
    "maturity_level_number": 4,
    "maturity_level_name": "Nâng cao",
-   "data_confidence": 0.4545,
-   "dti_indicators_available": 5,
+   "data_confidence": 0.5455,
+   "dti_indicators_available": 6,
    "dti_indicators_total": 11,
    "reliability": "medium",
    "warnings": [],
@@ -353,11 +353,11 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 75.0,
-     "dti": null,
-     "p": 75.0,
-     "n_dti": 0,
+     "dti": 100.0,
+     "p": 80.0,
+     "n_dti": 1,
      "n_dti_total": 2,
-     "dti_applied": false
+     "dti_applied": true
     },
     "O": {
      "code": "O",
@@ -422,10 +422,10 @@
    "code": "S",
    "name": "Chiến lược",
    "values": {
-    "agribank": 56.1111,
+    "agribank": 56.25,
     "bidv": 68.75,
-    "mb": 56.8056,
-    "tcb": 50.0,
+    "mb": 68.75,
+    "tcb": 62.5,
     "vcb": 62.5
    },
    "dbi": {
@@ -436,10 +436,10 @@
     "vcb": 62.5
    },
    "dti": {
-    "agribank": 55.5556,
+    "agribank": null,
     "bidv": null,
-    "mb": 9.0278,
-    "tcb": 0.0,
+    "mb": null,
+    "tcb": null,
     "vcb": null
    }
   },
@@ -447,11 +447,11 @@
    "code": "T",
    "name": "Công nghệ",
    "values": {
-    "agribank": 64.3628,
-    "bidv": 72.4434,
+    "agribank": 72.1814,
+    "bidv": 78.7217,
     "mb": 95.0,
     "tcb": 75.0,
-    "vcb": 75.0
+    "vcb": 80.0
    },
    "dbi": {
     "agribank": 75.0,
@@ -461,11 +461,11 @@
     "vcb": 75.0
    },
    "dti": {
-    "agribank": 21.814,
-    "bidv": 37.2169,
+    "agribank": 60.907,
+    "bidv": 68.6084,
     "mb": 100.0,
     "tcb": 100.0,
-    "vcb": null
+    "vcb": 100.0
    }
   },
   {
@@ -499,7 +499,7 @@
    "values": {
     "agribank": 56.25,
     "bidv": 45.0,
-    "mb": 56.2092,
+    "mb": 65.0,
     "tcb": 65.0,
     "vcb": 90.0
    },
@@ -513,7 +513,7 @@
    "dti": {
     "agribank": null,
     "bidv": 100.0,
-    "mb": 56.0462,
+    "mb": 100.0,
     "tcb": 100.0,
     "vcb": 100.0
    }
@@ -549,7 +549,8 @@
    "vcb"
   ],
   "S": [
-   "bidv"
+   "bidv",
+   "mb"
   ],
   "T": [
    "mb"

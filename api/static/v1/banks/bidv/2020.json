@@ -4,7 +4,7 @@
   "bank_name": "BIDV",
   "group": "NHTM Nhà nước",
   "year": 2020,
-  "score": 41.4935,
+  "score": 38.6972,
   "rank": 3,
   "maturity_level": "Mức 2 - Bắt đầu",
   "maturity_level_number": 2,
@@ -21,11 +21,11 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 56.25,
-    "dti": 58.8889,
-    "p": 56.7778,
-    "n_dti": 1,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
@@ -61,11 +61,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 18.75,
-    "dti": 100.0,
-    "p": 35.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 18.75,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -676,9 +676,9 @@
    "x": 53.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 58.8889,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -693,7 +693,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -709,7 +709,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -725,7 +725,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ cùng định nghĩa"
   },
@@ -741,7 +741,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -773,7 +773,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -789,7 +789,7 @@
    "L": -0.5845,
    "U": 0.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ"
   },
@@ -805,7 +805,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cách >= 2 năm"
   },
@@ -821,7 +821,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -836,15 +836,15 @@
    "x": 59.0,
    "L": 0.0,
    "U": 38.7,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ],
  "highlights": {
   "strongest_pillar": "S",
-  "weakest_pillar": "D",
+  "weakest_pillar": "C",
   "criteria_score_distribution": {
    "0": 7,
    "1": 6,

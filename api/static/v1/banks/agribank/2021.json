@@ -4,7 +4,7 @@
   "bank_name": "Agribank",
   "group": "NHTM Nhà nước",
   "year": 2021,
-  "score": 22.8482,
+  "score": 23.2158,
   "rank": 5,
   "maturity_level": "Mức 1 - Khởi động",
   "maturity_level_number": 1,
@@ -21,11 +21,11 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 43.75,
-    "dti": 32.7219,
-    "p": 41.5444,
-    "n_dti": 1,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
@@ -637,7 +637,7 @@
    "L": 0.0,
    "U": 90.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_txn_share"
   },
@@ -652,9 +652,9 @@
    "x": 32.7219,
    "L": 0.0,
    "U": 100.0,
-   "z": 32.7219,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "digital_customers/total_customers (registered/depositors)"
   },
   {
@@ -669,7 +669,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -685,7 +685,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_txn_share năm cuối"
   },
@@ -701,7 +701,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
   },
@@ -733,7 +733,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -749,7 +749,7 @@
    "L": -0.5845,
    "U": 0.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ"
   },
@@ -765,7 +765,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu TOI hoặc CBNV"
   },
@@ -781,7 +781,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -797,7 +797,7 @@
    "L": 0.0,
    "U": 38.7,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu giờ đào tạo"
   }

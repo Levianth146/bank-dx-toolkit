@@ -4,15 +4,15 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2025,
-  "score": 76.075,
+  "score": 78.1584,
   "rank": 1,
   "maturity_level": "Mức 4 - Nâng cao",
   "maturity_level_number": 4,
   "maturity_level_name": "Nâng cao",
-  "data_confidence": 0.6364,
-  "dti_indicators_available": 7,
+  "data_confidence": 0.7273,
+  "dti_indicators_available": 8,
   "dti_indicators_total": 11,
-  "reliability": "medium",
+  "reliability": "high",
   "warnings": [],
   "pillars": {
    "K": {
@@ -29,11 +29,11 @@
     "code": "S",
     "name": "Chiến lược",
     "dbi": 62.5,
-    "dti": 0.0,
-    "p": 50.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -41,7 +41,7 @@
     "dbi": 68.75,
     "dti": 100.0,
     "p": 75.0,
-    "n_dti": 1,
+    "n_dti": 2,
     "n_dti_total": 2,
     "dti_applied": true
    },
@@ -765,7 +765,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -796,9 +796,9 @@
    "x": -4.0,
    "L": 0.0,
    "U": 18.0,
-   "z": 0.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2023->2025, quy về điểm %/năm"
   },
   {
@@ -813,7 +813,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -841,13 +841,13 @@
    "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
    "unit": "%",
    "direction": "higher_better",
-   "x": null,
+   "x": 100.0,
    "L": 0.0,
    "U": 100.0,
-   "z": null,
-   "status": "thiếu dữ liệu",
-   "has_data": false,
-   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "số nền tảng đạt / 8 x 100"
   },
   {
    "bank": "tcb",
@@ -893,7 +893,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },

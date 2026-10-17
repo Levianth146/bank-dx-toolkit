@@ -671,7 +671,7 @@
    "L": 0.0,
    "U": 90.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_txn_share"
   },
@@ -687,7 +687,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -703,7 +703,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -719,7 +719,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_txn_share năm cuối"
   },
@@ -735,7 +735,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -767,7 +767,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -783,7 +783,7 @@
    "L": -0.5845,
    "U": 0.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ"
   },
@@ -799,7 +799,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cách >= 2 năm"
   },
@@ -815,7 +815,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -831,7 +831,7 @@
    "L": 0.0,
    "U": 38.7,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu giờ đào tạo"
   }

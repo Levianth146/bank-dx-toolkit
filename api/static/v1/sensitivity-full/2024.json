@@ -1,0 +1,1234 @@
+{
+ "year": 2024,
+ "available_years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "robust_threshold": 0.8,
+ "n_discrete_scenarios": 40,
+ "banks": [
+  {
+   "bank": "tcb",
+   "bank_name": "Techcombank",
+   "group": "NHTM Cổ phần",
+   "base_score": 65.2083,
+   "base_rank": 1,
+   "min_rank": 1,
+   "max_rank": 4,
+   "min_score": 59.5,
+   "max_score": 68.25,
+   "n_scenarios": 40,
+   "stable_share": 0.65,
+   "verdict": "Nhóm cùng mức",
+   "is_robust": false,
+   "borderline": false,
+   "tier": "Nhóm cùng mức (hạng 1–4)",
+   "stable_by_family": [
+    {
+     "family": "A. Trọng số DBI/DTI",
+     "n_scenarios": 3,
+     "share": 0.0
+    },
+    {
+     "family": "B. Trọng số trụ cột ±20%",
+     "n_scenarios": 12,
+     "share": 0.5
+    },
+    {
+     "family": "C. Kỹ thuật chuẩn hóa",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "D. Loại một trụ cột",
+     "n_scenarios": 6,
+     "share": 0.1667
+    },
+    {
+     "family": "F. Dữ liệu thiếu",
+     "n_scenarios": 1,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận [L,U] cùng lúc",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận từng chỉ số",
+     "n_scenarios": 14,
+     "share": 1.0
+    }
+   ],
+   "monte_carlo": [
+    {
+     "method": "Dirichlet α=1",
+     "p_base": 0.2148,
+     "mean_rank": 2.3389,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.2148
+      },
+      {
+       "rank": 2,
+       "prob": 0.3616
+      },
+      {
+       "rank": 3,
+       "prob": 0.2935
+      },
+      {
+       "rank": 4,
+       "prob": 0.1301
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    },
+    {
+     "method": "Dirichlet α=10",
+     "p_base": 0.245,
+     "mean_rank": 2.1716,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.245
+      },
+      {
+       "rank": 2,
+       "prob": 0.4288
+      },
+      {
+       "rank": 3,
+       "prob": 0.2358
+      },
+      {
+       "rank": 4,
+       "prob": 0.0904
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    },
+    {
+     "method": "Nhiễu rubric q=0.25",
+     "p_base": 0.2732,
+     "mean_rank": 2.4193,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.2732
+      },
+      {
+       "rank": 2,
+       "prob": 0.2572
+      },
+      {
+       "rank": 3,
+       "prob": 0.2467
+      },
+      {
+       "rank": 4,
+       "prob": 0.2229
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "mb",
+   "bank_name": "MB",
+   "group": "NHTM Cổ phần",
+   "base_score": 65.0,
+   "base_rank": 2,
+   "min_rank": 1,
+   "max_rank": 4,
+   "min_score": 61.0,
+   "max_score": 71.75,
+   "n_scenarios": 40,
+   "stable_share": 0.525,
+   "verdict": "Nhóm cùng mức",
+   "is_robust": false,
+   "borderline": false,
+   "tier": "Nhóm cùng mức (hạng 1–4)",
+   "stable_by_family": [
+    {
+     "family": "A. Trọng số DBI/DTI",
+     "n_scenarios": 3,
+     "share": 0.0
+    },
+    {
+     "family": "B. Trọng số trụ cột ±20%",
+     "n_scenarios": 12,
+     "share": 0.1667
+    },
+    {
+     "family": "C. Kỹ thuật chuẩn hóa",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "D. Loại một trụ cột",
+     "n_scenarios": 6,
+     "share": 0.3333
+    },
+    {
+     "family": "F. Dữ liệu thiếu",
+     "n_scenarios": 1,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận [L,U] cùng lúc",
+     "n_scenarios": 2,
+     "share": 0.5
+    },
+    {
+     "family": "G. Dịch cận từng chỉ số",
+     "n_scenarios": 14,
+     "share": 0.9286
+    }
+   ],
+   "monte_carlo": [
+    {
+     "method": "Dirichlet α=1",
+     "p_base": 0.145,
+     "mean_rank": 2.5059,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.3465
+      },
+      {
+       "rank": 2,
+       "prob": 0.145
+      },
+      {
+       "rank": 3,
+       "prob": 0.1681
+      },
+      {
+       "rank": 4,
+       "prob": 0.3369
+      },
+      {
+       "rank": 5,
+       "prob": 0.0035
+      }
+     ]
+    },
+    {
+     "method": "Dirichlet α=10",
+     "p_base": 0.171,
+     "mean_rank": 2.4463,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.3541
+      },
+      {
+       "rank": 2,
+       "prob": 0.171
+      },
+      {
+       "rank": 3,
+       "prob": 0.1494
+      },
+      {
+       "rank": 4,
+       "prob": 0.3255
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    },
+    {
+     "method": "Nhiễu rubric q=0.25",
+     "p_base": 0.2609,
+     "mean_rank": 2.3471,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.2973
+      },
+      {
+       "rank": 2,
+       "prob": 0.2609
+      },
+      {
+       "rank": 3,
+       "prob": 0.2392
+      },
+      {
+       "rank": 4,
+       "prob": 0.2026
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "vcb",
+   "bank_name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "base_score": 64.9844,
+   "base_rank": 3,
+   "min_rank": 1,
+   "max_rank": 4,
+   "min_score": 60.4255,
+   "max_score": 69.2313,
+   "n_scenarios": 40,
+   "stable_share": 0.525,
+   "verdict": "Nhóm cùng mức",
+   "is_robust": false,
+   "borderline": false,
+   "tier": "Nhóm cùng mức (hạng 1–4)",
+   "stable_by_family": [
+    {
+     "family": "A. Trọng số DBI/DTI",
+     "n_scenarios": 3,
+     "share": 0.6667
+    },
+    {
+     "family": "B. Trọng số trụ cột ±20%",
+     "n_scenarios": 12,
+     "share": 0.3333
+    },
+    {
+     "family": "C. Kỹ thuật chuẩn hóa",
+     "n_scenarios": 2,
+     "share": 0.0
+    },
+    {
+     "family": "D. Loại một trụ cột",
+     "n_scenarios": 6,
+     "share": 0.3333
+    },
+    {
+     "family": "F. Dữ liệu thiếu",
+     "n_scenarios": 1,
+     "share": 0.0
+    },
+    {
+     "family": "G. Dịch cận [L,U] cùng lúc",
+     "n_scenarios": 2,
+     "share": 0.5
+    },
+    {
+     "family": "G. Dịch cận từng chỉ số",
+     "n_scenarios": 14,
+     "share": 0.8571
+    }
+   ],
+   "monte_carlo": [
+    {
+     "method": "Dirichlet α=1",
+     "p_base": 0.1754,
+     "mean_rank": 2.5897,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.3085
+      },
+      {
+       "rank": 2,
+       "prob": 0.1548
+      },
+      {
+       "rank": 3,
+       "prob": 0.1754
+      },
+      {
+       "rank": 4,
+       "prob": 0.3611
+      },
+      {
+       "rank": 5,
+       "prob": 0.0002
+      }
+     ]
+    },
+    {
+     "method": "Dirichlet α=10",
+     "p_base": 0.1772,
+     "mean_rank": 2.4712,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.337
+      },
+      {
+       "rank": 2,
+       "prob": 0.1703
+      },
+      {
+       "rank": 3,
+       "prob": 0.1772
+      },
+      {
+       "rank": 4,
+       "prob": 0.3155
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    },
+    {
+     "method": "Nhiễu rubric q=0.25",
+     "p_base": 0.2597,
+     "mean_rank": 2.5226,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.2341
+      },
+      {
+       "rank": 2,
+       "prob": 0.2577
+      },
+      {
+       "rank": 3,
+       "prob": 0.2597
+      },
+      {
+       "rank": 4,
+       "prob": 0.2485
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "bidv",
+   "bank_name": "BIDV",
+   "group": "NHTM Nhà nước",
+   "base_score": 64.4986,
+   "base_rank": 4,
+   "min_rank": 1,
+   "max_rank": 4,
+   "min_score": 61.4444,
+   "max_score": 66.3983,
+   "n_scenarios": 40,
+   "stable_share": 0.7,
+   "verdict": "Nhóm cùng mức",
+   "is_robust": false,
+   "borderline": false,
+   "tier": "Nhóm cùng mức (hạng 1–4)",
+   "stable_by_family": [
+    {
+     "family": "A. Trọng số DBI/DTI",
+     "n_scenarios": 3,
+     "share": 0.6667
+    },
+    {
+     "family": "B. Trọng số trụ cột ±20%",
+     "n_scenarios": 12,
+     "share": 0.6667
+    },
+    {
+     "family": "C. Kỹ thuật chuẩn hóa",
+     "n_scenarios": 2,
+     "share": 0.0
+    },
+    {
+     "family": "D. Loại một trụ cột",
+     "n_scenarios": 6,
+     "share": 0.5
+    },
+    {
+     "family": "F. Dữ liệu thiếu",
+     "n_scenarios": 1,
+     "share": 0.0
+    },
+    {
+     "family": "G. Dịch cận [L,U] cùng lúc",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận từng chỉ số",
+     "n_scenarios": 14,
+     "share": 0.9286
+    }
+   ],
+   "monte_carlo": [
+    {
+     "method": "Dirichlet α=1",
+     "p_base": 0.1583,
+     "mean_rank": 2.5957,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.1302
+      },
+      {
+       "rank": 2,
+       "prob": 0.3376
+      },
+      {
+       "rank": 3,
+       "prob": 0.3562
+      },
+      {
+       "rank": 4,
+       "prob": 0.1583
+      },
+      {
+       "rank": 5,
+       "prob": 0.0177
+      }
+     ]
+    },
+    {
+     "method": "Dirichlet α=10",
+     "p_base": 0.2686,
+     "mean_rank": 2.9109,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0639
+      },
+      {
+       "rank": 2,
+       "prob": 0.2299
+      },
+      {
+       "rank": 3,
+       "prob": 0.4376
+      },
+      {
+       "rank": 4,
+       "prob": 0.2686
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    },
+    {
+     "method": "Nhiễu rubric q=0.25",
+     "p_base": 0.3189,
+     "mean_rank": 2.6824,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.2054
+      },
+      {
+       "rank": 2,
+       "prob": 0.2257
+      },
+      {
+       "rank": 3,
+       "prob": 0.25
+      },
+      {
+       "rank": 4,
+       "prob": 0.3189
+      },
+      {
+       "rank": 5,
+       "prob": 0.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "agribank",
+   "bank_name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "base_score": 48.3577,
+   "base_rank": 5,
+   "min_rank": 5,
+   "max_rank": 5,
+   "min_score": 39.2792,
+   "max_score": 53.0292,
+   "n_scenarios": 40,
+   "stable_share": 1.0,
+   "verdict": "Vững",
+   "is_robust": true,
+   "borderline": false,
+   "tier": "Độc lập (hạng 5)",
+   "stable_by_family": [
+    {
+     "family": "A. Trọng số DBI/DTI",
+     "n_scenarios": 3,
+     "share": 1.0
+    },
+    {
+     "family": "B. Trọng số trụ cột ±20%",
+     "n_scenarios": 12,
+     "share": 1.0
+    },
+    {
+     "family": "C. Kỹ thuật chuẩn hóa",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "D. Loại một trụ cột",
+     "n_scenarios": 6,
+     "share": 1.0
+    },
+    {
+     "family": "F. Dữ liệu thiếu",
+     "n_scenarios": 1,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận [L,U] cùng lúc",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận từng chỉ số",
+     "n_scenarios": 14,
+     "share": 1.0
+    }
+   ],
+   "monte_carlo": [
+    {
+     "method": "Dirichlet α=1",
+     "p_base": 0.9786,
+     "mean_rank": 4.9698,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0
+      },
+      {
+       "rank": 2,
+       "prob": 0.001
+      },
+      {
+       "rank": 3,
+       "prob": 0.0068
+      },
+      {
+       "rank": 4,
+       "prob": 0.0136
+      },
+      {
+       "rank": 5,
+       "prob": 0.9786
+      }
+     ]
+    },
+    {
+     "method": "Dirichlet α=10",
+     "p_base": 1.0,
+     "mean_rank": 5.0,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0
+      },
+      {
+       "rank": 2,
+       "prob": 0.0
+      },
+      {
+       "rank": 3,
+       "prob": 0.0
+      },
+      {
+       "rank": 4,
+       "prob": 0.0
+      },
+      {
+       "rank": 5,
+       "prob": 1.0
+      }
+     ]
+    },
+    {
+     "method": "Nhiễu rubric q=0.25",
+     "p_base": 1.0,
+     "mean_rank": 5.0,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0
+      },
+      {
+       "rank": 2,
+       "prob": 0.0
+      },
+      {
+       "rank": 3,
+       "prob": 0.0
+      },
+      {
+       "rank": 4,
+       "prob": 0.0
+      },
+      {
+       "rank": 5,
+       "prob": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "bank_a": "agribank",
+   "bank_b": "bidv",
+   "share_a_above": 0.0,
+   "share_b_above": 1.0,
+   "share_tie": 0.0,
+   "distinguishable": true,
+   "borderline": false,
+   "swapped_in_some_scenario": false,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.0195,
+    "Dirichlet α=10": 0.0,
+    "Nhiễu rubric q=0.25": 0.0
+   }
+  },
+  {
+   "bank_a": "agribank",
+   "bank_b": "mb",
+   "share_a_above": 0.0,
+   "share_b_above": 1.0,
+   "share_tie": 0.0,
+   "distinguishable": true,
+   "borderline": false,
+   "swapped_in_some_scenario": false,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.0094,
+    "Dirichlet α=10": 0.0,
+    "Nhiễu rubric q=0.25": 0.0
+   }
+  },
+  {
+   "bank_a": "agribank",
+   "bank_b": "tcb",
+   "share_a_above": 0.0,
+   "share_b_above": 1.0,
+   "share_tie": 0.0,
+   "distinguishable": true,
+   "borderline": false,
+   "swapped_in_some_scenario": false,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.0,
+    "Dirichlet α=10": 0.0,
+    "Nhiễu rubric q=0.25": 0.0
+   }
+  },
+  {
+   "bank_a": "agribank",
+   "bank_b": "vcb",
+   "share_a_above": 0.0,
+   "share_b_above": 1.0,
+   "share_tie": 0.0,
+   "distinguishable": true,
+   "borderline": false,
+   "swapped_in_some_scenario": false,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.0013,
+    "Dirichlet α=10": 0.0,
+    "Nhiễu rubric q=0.25": 0.0
+   }
+  },
+  {
+   "bank_a": "bidv",
+   "bank_b": "mb",
+   "share_a_above": 0.125,
+   "share_b_above": 0.875,
+   "share_tie": 0.0,
+   "distinguishable": true,
+   "borderline": false,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.4828,
+    "Dirichlet α=10": 0.4095,
+    "Nhiễu rubric q=0.25": 0.4263
+   }
+  },
+  {
+   "bank_a": "bidv",
+   "bank_b": "tcb",
+   "share_a_above": 0.075,
+   "share_b_above": 0.925,
+   "share_tie": 0.0,
+   "distinguishable": true,
+   "borderline": false,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.4551,
+    "Dirichlet α=10": 0.2804,
+    "Nhiễu rubric q=0.25": 0.4407
+   }
+  },
+  {
+   "bank_a": "bidv",
+   "bank_b": "vcb",
+   "share_a_above": 0.2,
+   "share_b_above": 0.775,
+   "share_tie": 0.025,
+   "distinguishable": false,
+   "borderline": true,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.4859,
+    "Dirichlet α=10": 0.3992,
+    "Nhiễu rubric q=0.25": 0.4506
+   }
+  },
+  {
+   "bank_a": "mb",
+   "bank_b": "tcb",
+   "share_a_above": 0.175,
+   "share_b_above": 0.8,
+   "share_tie": 0.025,
+   "distinguishable": true,
+   "borderline": true,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.4866,
+    "Dirichlet α=10": 0.4621,
+    "Nhiễu rubric q=0.25": 0.5034
+   }
+  },
+  {
+   "bank_a": "mb",
+   "bank_b": "vcb",
+   "share_a_above": 0.7,
+   "share_b_above": 0.3,
+   "share_tie": 0.0,
+   "distinguishable": false,
+   "borderline": false,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.4997,
+    "Dirichlet α=10": 0.5011,
+    "Nhiễu rubric q=0.25": 0.5472
+   }
+  },
+  {
+   "bank_a": "tcb",
+   "bank_b": "vcb",
+   "share_a_above": 0.75,
+   "share_b_above": 0.2,
+   "share_tie": 0.05,
+   "distinguishable": false,
+   "borderline": false,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.6028,
+    "Dirichlet α=10": 0.5709,
+    "Nhiễu rubric q=0.25": 0.5248
+   }
+  }
+ ],
+ "rank_agreement": [
+  {
+   "family": "0. Cơ sở",
+   "scenario": "80/20, cận cố định",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "A. Trọng số DBI/DTI",
+   "scenario": "100/0",
+   "kendall_tau": 0.1054,
+   "spearman_rho": 0.1539,
+   "n_rank_changes": 4
+  },
+  {
+   "family": "A. Trọng số DBI/DTI",
+   "scenario": "70/30",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "A. Trọng số DBI/DTI",
+   "scenario": "60/40",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Khách hàng +20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Khách hàng -20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Chiến lược +20%",
+   "kendall_tau": 0.7379,
+   "spearman_rho": 0.8721,
+   "n_rank_changes": 3
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Chiến lược -20%",
+   "kendall_tau": 0.6,
+   "spearman_rho": 0.7,
+   "n_rank_changes": 3
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Công nghệ +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Công nghệ -20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Vận hành +20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Vận hành -20%",
+   "kendall_tau": 0.4,
+   "spearman_rho": 0.5,
+   "n_rank_changes": 4
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Văn hóa +20%",
+   "kendall_tau": 0.6,
+   "spearman_rho": 0.7,
+   "n_rank_changes": 3
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Văn hóa -20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Dữ liệu +20%",
+   "kendall_tau": 0.6,
+   "spearman_rho": 0.7,
+   "n_rank_changes": 3
+  },
+  {
+   "family": "B. Trọng số trụ cột ±20%",
+   "scenario": "Dữ liệu -20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "C. Kỹ thuật chuẩn hóa",
+   "scenario": "Min-max trong 5 NH",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "C. Kỹ thuật chuẩn hóa",
+   "scenario": "Xếp hạng phần trăm",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "D. Loại một trụ cột",
+   "scenario": "Bỏ Khách hàng",
+   "kendall_tau": 0.0,
+   "spearman_rho": 0.1,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "D. Loại một trụ cột",
+   "scenario": "Bỏ Chiến lược",
+   "kendall_tau": 0.6,
+   "spearman_rho": 0.7,
+   "n_rank_changes": 3
+  },
+  {
+   "family": "D. Loại một trụ cột",
+   "scenario": "Bỏ Công nghệ",
+   "kendall_tau": 0.6,
+   "spearman_rho": 0.7,
+   "n_rank_changes": 3
+  },
+  {
+   "family": "D. Loại một trụ cột",
+   "scenario": "Bỏ Vận hành",
+   "kendall_tau": 0.2,
+   "spearman_rho": 0.2,
+   "n_rank_changes": 4
+  },
+  {
+   "family": "D. Loại một trụ cột",
+   "scenario": "Bỏ Văn hóa",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "D. Loại một trụ cột",
+   "scenario": "Bỏ Dữ liệu",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "F. Dữ liệu thiếu",
+   "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "G. Dịch cận [L,U] cùng lúc",
+   "scenario": "Độ rộng cận -20%",
+   "kendall_tau": 0.7379,
+   "spearman_rho": 0.8208,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "G. Dịch cận [L,U] cùng lúc",
+   "scenario": "Độ rộng cận +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "K-Q1 -20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "K-Q1 +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "S-Q1 -20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "S-Q1 +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "S-Q2 -20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "S-Q2 +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "T-Q1 -20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "T-Q1 +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "O-Q1 -20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "O-Q1 +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "O-Q2 -20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "O-Q2 +20%",
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "C-Q2 -20%",
+   "kendall_tau": 0.7379,
+   "spearman_rho": 0.8208,
+   "n_rank_changes": 2
+  },
+  {
+   "family": "G. Dịch cận từng chỉ số",
+   "scenario": "C-Q2 +20%",
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
+  }
+ ],
+ "normalization": {
+  "kendall_tau": [
+   {
+    "a": "Cận cố định",
+    "b": "Min-max",
+    "kendall_tau": 0.8
+   },
+   {
+    "a": "Cận cố định",
+    "b": "Xếp hạng %",
+    "kendall_tau": 0.8
+   },
+   {
+    "a": "Min-max",
+    "b": "Xếp hạng %",
+    "kendall_tau": 1.0
+   }
+  ],
+  "coverage": [
+   {
+    "normalization": "Cận cố định",
+    "n_indicator_with_z": 4,
+    "n_cells": 18
+   },
+   {
+    "normalization": "Min-max",
+    "n_indicator_with_z": 4,
+    "n_cells": 18
+   },
+   {
+    "normalization": "Xếp hạng %",
+    "n_indicator_with_z": 4,
+    "n_cells": 18
+   }
+  ]
+ },
+ "keyword_vs_rubric": [
+  {
+   "year": 2020,
+   "pillar": "TẤT CẢ TRỤ",
+   "lang": "en",
+   "n_banks": 3,
+   "spearman_dbi_vs_bm25": 0.5,
+   "spearman_dbi_vs_coverage": 0.5,
+   "status": "đã có"
+  },
+  {
+   "year": 2021,
+   "pillar": "TẤT CẢ TRỤ",
+   "lang": "en",
+   "n_banks": 3,
+   "spearman_dbi_vs_bm25": 0.866,
+   "spearman_dbi_vs_coverage": 0.866,
+   "status": "đã có"
+  },
+  {
+   "year": 2022,
+   "pillar": "TẤT CẢ TRỤ",
+   "lang": "en",
+   "n_banks": 3,
+   "spearman_dbi_vs_bm25": 1.0,
+   "spearman_dbi_vs_coverage": 1.0,
+   "status": "đã có"
+  },
+  {
+   "year": 2023,
+   "pillar": "TẤT CẢ TRỤ",
+   "lang": "en",
+   "n_banks": 3,
+   "spearman_dbi_vs_bm25": 1.0,
+   "spearman_dbi_vs_coverage": 1.0,
+   "status": "đã có"
+  },
+  {
+   "year": 2024,
+   "pillar": "TẤT CẢ TRỤ",
+   "lang": "en",
+   "n_banks": 3,
+   "spearman_dbi_vs_bm25": 0.5,
+   "spearman_dbi_vs_coverage": 0.5,
+   "status": "đã có"
+  },
+  {
+   "year": 2025,
+   "pillar": "TẤT CẢ TRỤ",
+   "lang": "en",
+   "n_banks": 3,
+   "spearman_dbi_vs_bm25": 0.5,
+   "spearman_dbi_vs_coverage": 1.0,
+   "status": "đã có"
+  }
+ ],
+ "note": "Có thẩm quyền hơn /sensitivity (chỉ kịch bản trọng số). Hạng 'Vững' khi giữ nguyên trong >= 80% kịch bản rời rạc; ngân hàng đổi hạng nhiều hơn được gộp 'Nhóm cùng mức'. Thành phần Monte Carlo chỉ mô tả xác suất."
+}

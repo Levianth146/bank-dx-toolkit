@@ -4,8 +4,8 @@
   "bank_name": "MB",
   "group": "NHTM Cổ phần",
   "year": 2024,
-  "score": 63.9306,
-  "rank": 3,
+  "score": 65.0,
+  "rank": 2,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
@@ -19,21 +19,21 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 81.25,
-    "dti": 100.0,
-    "p": 85.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 81.25,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
     "name": "Chiến lược",
     "dbi": 62.5,
-    "dti": 11.6667,
-    "p": 52.3333,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -719,9 +719,9 @@
    "x": 98.6,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -736,7 +736,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -752,7 +752,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -767,9 +767,9 @@
    "x": 2.1,
    "L": 0.0,
    "U": 18.0,
-   "z": 11.6667,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2021->2024, quy về điểm %/năm"
   },
   {
@@ -784,7 +784,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -816,7 +816,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -864,7 +864,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -886,7 +886,7 @@
   }
  ],
  "highlights": {
-  "strongest_pillar": "K",
+  "strongest_pillar": "O",
   "weakest_pillar": "D",
   "criteria_score_distribution": {
    "0": 2,

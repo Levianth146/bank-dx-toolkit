@@ -4,13 +4,13 @@
   "bank_name": "Vietcombank",
   "group": "NHTM Nhà nước",
   "year": 2025,
-  "score": 75.7572,
+  "score": 76.5905,
   "rank": 2,
   "maturity_level": "Mức 4 - Nâng cao",
   "maturity_level_number": 4,
   "maturity_level_name": "Nâng cao",
-  "data_confidence": 0.4545,
-  "dti_indicators_available": 5,
+  "data_confidence": 0.5455,
+  "dti_indicators_available": 6,
   "dti_indicators_total": 11,
   "reliability": "medium",
   "warnings": [],
@@ -39,11 +39,11 @@
     "code": "T",
     "name": "Công nghệ",
     "dbi": 75.0,
-    "dti": null,
-    "p": 75.0,
-    "n_dti": 0,
+    "dti": 100.0,
+    "p": 80.0,
+    "n_dti": 1,
     "n_dti_total": 2,
-    "dti_applied": false
+    "dti_applied": true
    },
    "O": {
     "code": "O",
@@ -757,7 +757,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -789,7 +789,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ cùng định nghĩa"
   },
@@ -805,7 +805,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
   },
@@ -833,13 +833,13 @@
    "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
    "unit": "%",
    "direction": "higher_better",
-   "x": null,
+   "x": 100.0,
    "L": 0.0,
    "U": 100.0,
-   "z": null,
-   "status": "thiếu dữ liệu",
-   "has_data": false,
-   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "số nền tảng đạt / 8 x 100"
   },
   {
    "bank": "vcb",
@@ -885,7 +885,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },

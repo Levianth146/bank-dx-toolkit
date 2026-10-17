@@ -4,7 +4,7 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2022,
-  "score": 68.892,
+  "score": 68.8102,
   "rank": 1,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
@@ -19,9 +19,9 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 81.25,
-    "dti": 76.4815,
-    "p": 80.2963,
-    "n_dti": 2,
+    "dti": 95.5556,
+    "p": 84.1111,
+    "n_dti": 1,
     "n_dti_total": 3,
     "dti_applied": true
    },
@@ -29,11 +29,11 @@
     "code": "S",
     "name": "Chiến lược",
     "dbi": 68.75,
-    "dti": 27.7778,
-    "p": 60.5556,
-    "n_dti": 1,
+    "dti": null,
+    "p": 68.75,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -59,11 +59,11 @@
     "code": "C",
     "name": "Văn hóa",
     "dbi": 37.5,
-    "dti": 100.0,
-    "p": 50.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 37.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "D": {
     "code": "D",
@@ -737,9 +737,9 @@
    "x": 57.4074,
    "L": 0.0,
    "U": 100.0,
-   "z": 57.4074,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "digital_customers/total_customers (registered/total)"
   },
   {
@@ -754,7 +754,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -769,9 +769,9 @@
    "x": 5.0,
    "L": 0.0,
    "U": 18.0,
-   "z": 27.7778,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2021->2022, quy về điểm %/năm"
   },
   {
@@ -786,7 +786,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
   },
@@ -818,7 +818,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -850,7 +850,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cách >= 2 năm"
   },
@@ -866,7 +866,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -881,9 +881,9 @@
    "x": 70.0,
    "L": 0.0,
    "U": 38.7,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: avg_hours"
   }
  ],

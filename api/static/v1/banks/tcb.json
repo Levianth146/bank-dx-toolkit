@@ -7,15 +7,15 @@
   "bank_name": "Techcombank",
   "group": "NHTM Cổ phần",
   "year": 2025,
-  "score": 76.075,
+  "score": 78.1584,
   "rank": 1,
   "maturity_level": "Mức 4 - Nâng cao",
   "maturity_level_number": 4,
   "maturity_level_name": "Nâng cao",
-  "data_confidence": 0.6364,
-  "dti_indicators_available": 7,
+  "data_confidence": 0.7273,
+  "dti_indicators_available": 8,
   "dti_indicators_total": 11,
-  "reliability": "medium",
+  "reliability": "high",
   "warnings": [],
   "pillars": {
    "K": {
@@ -32,11 +32,11 @@
     "code": "S",
     "name": "Chiến lược",
     "dbi": 62.5,
-    "dti": 0.0,
-    "p": 50.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -44,7 +44,7 @@
     "dbi": 68.75,
     "dti": 100.0,
     "p": 75.0,
-    "n_dti": 1,
+    "n_dti": 2,
     "n_dti_total": 2,
     "dti_applied": true
    },
@@ -86,11 +86,11 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2020,
-   "score": 50.8245,
+   "score": 49.4852,
    "rank": 1,
-   "maturity_level": "Mức 3 - Hình thành",
-   "maturity_level_number": 3,
-   "maturity_level_name": "Hình thành",
+   "maturity_level": "Mức 2 - Bắt đầu",
+   "maturity_level_number": 2,
+   "maturity_level_name": "Bắt đầu",
    "data_confidence": 0.2727,
    "dti_indicators_available": 3,
    "dti_indicators_total": 11,
@@ -103,11 +103,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 81.25,
-     "dti": 46.4286,
-     "p": 74.2857,
-     "n_dti": 1,
+     "dti": null,
+     "p": 81.25,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -143,11 +143,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 25.0,
-     "dti": 100.0,
-     "p": 40.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 25.0,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -166,7 +166,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2021,
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -183,11 +183,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 81.25,
-     "dti": 90.0,
-     "p": 83.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 81.25,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -246,7 +246,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2022,
-   "score": 68.892,
+   "score": 68.8102,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -261,9 +261,9 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 81.25,
-     "dti": 76.4815,
-     "p": 80.2963,
-     "n_dti": 2,
+     "dti": 95.5556,
+     "p": 84.1111,
+     "n_dti": 1,
      "n_dti_total": 3,
      "dti_applied": true
     },
@@ -271,11 +271,11 @@
      "code": "S",
      "name": "Chiến lược",
      "dbi": 68.75,
-     "dti": 27.7778,
-     "p": 60.5556,
-     "n_dti": 1,
+     "dti": null,
+     "p": 68.75,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -301,11 +301,11 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 37.5,
-     "dti": 100.0,
-     "p": 50.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "D": {
      "code": "D",
@@ -324,7 +324,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2023,
-   "score": 64.1667,
+   "score": 63.75,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -339,11 +339,11 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 87.5,
-     "dti": 100.0,
-     "p": 90.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 87.5,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
@@ -402,8 +402,8 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 63.5417,
-   "rank": 4,
+   "score": 65.2083,
+   "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -417,21 +417,21 @@
      "code": "K",
      "name": "Khách hàng",
      "dbi": 93.75,
-     "dti": 100.0,
-     "p": 95.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 93.75,
+     "n_dti": 0,
      "n_dti_total": 3,
-     "dti_applied": true
+     "dti_applied": false
     },
     "S": {
      "code": "S",
      "name": "Chiến lược",
      "dbi": 56.25,
-     "dti": 0.0,
-     "p": 45.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 56.25,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -480,15 +480,15 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2025,
-   "score": 76.075,
+   "score": 78.1584,
    "rank": 1,
    "maturity_level": "Mức 4 - Nâng cao",
    "maturity_level_number": 4,
    "maturity_level_name": "Nâng cao",
-   "data_confidence": 0.6364,
-   "dti_indicators_available": 7,
+   "data_confidence": 0.7273,
+   "dti_indicators_available": 8,
    "dti_indicators_total": 11,
-   "reliability": "medium",
+   "reliability": "high",
    "warnings": [],
    "pillars": {
     "K": {
@@ -505,11 +505,11 @@
      "code": "S",
      "name": "Chiến lược",
      "dbi": 62.5,
-     "dti": 0.0,
-     "p": 50.0,
-     "n_dti": 1,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
      "n_dti_total": 2,
-     "dti_applied": true
+     "dti_applied": false
     },
     "T": {
      "code": "T",
@@ -517,7 +517,7 @@
      "dbi": 68.75,
      "dti": 100.0,
      "p": 75.0,
-     "n_dti": 1,
+     "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
     },

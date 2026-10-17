@@ -4,7 +4,7 @@
   "bank_name": "BIDV",
   "group": "NHTM Nhà nước",
   "year": 2023,
-  "score": 48.6791,
+  "score": 47.6008,
   "rank": 3,
   "maturity_level": "Mức 2 - Bắt đầu",
   "maturity_level_number": 2,
@@ -19,11 +19,11 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 56.25,
-    "dti": 88.5997,
-    "p": 62.7199,
-    "n_dti": 2,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
@@ -687,9 +687,9 @@
    "x": 93.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: full_line"
   },
   {
@@ -703,9 +703,9 @@
    "x": 77.1994,
    "L": 0.0,
    "U": 100.0,
-   "z": 77.1994,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "digital_customers/total_customers (transacting/retail+corporate)"
   },
   {
@@ -720,7 +720,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -736,7 +736,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ cùng định nghĩa"
   },
@@ -752,7 +752,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
   },
@@ -784,7 +784,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -832,7 +832,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -854,7 +854,7 @@
   }
  ],
  "highlights": {
-  "strongest_pillar": "K",
+  "strongest_pillar": "T",
   "weakest_pillar": "D",
   "criteria_score_distribution": {
    "0": 4,

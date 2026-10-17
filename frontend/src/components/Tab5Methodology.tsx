@@ -143,7 +143,7 @@ export default function Tab5Methodology({
               Phương pháp luận nghiên cứu
             </span>
             <span className="methodology-eyebrow-divider" aria-hidden="true">•</span>
-            <span>Chuẩn hóa theo khung Basel &amp; hướng dẫn SBV</span>
+            <span>Cận chuẩn hóa tham chiếu, đã khóa phiên bản</span>
           </div>
           <h2 id="methodology-title">
             Khung đánh giá đối sánh
@@ -350,13 +350,12 @@ export default function Tab5Methodology({
               S<sub>DBI</sub> = ∑<sub>j=1/{pillarCount}</sub> (w<sub>j</sub> × P<sub>j</sub>)
             </strong>
             <small>
-              Với ∑ w<sub>j</sub> = 1.0 (w<sub>j</sub> = 1/{pillarCount} hoặc theo ma trận
-              phân tích AHP)
+              Với ∑ w<sub>j</sub> = 1.0, w<sub>j</sub> = 1/{pillarCount} (trọng số bằng nhau)
             </small>
           </div>
           <div className="methodology-formula-note">
             <strong>P<sub>j</sub>:</strong> Điểm trung bình của các tiêu chí thuộc
-            trụ cột j, lấy giá trị nguyên hoặc bán nguyên [1.0, 5.0].
+            trụ cột j. Mỗi tiêu chí chấm số nguyên 0–4, quy về % (0/25/50/75/100).
           </div>
         </article>
 
@@ -385,8 +384,9 @@ export default function Tab5Methodology({
             </small>
           </div>
           <div className="methodology-formula-note">
-            <strong>L<sub>k</sub>, U<sub>k</sub>:</strong> Cận dưới và cận trên được
-            xác lập dựa trên tiêu chuẩn khuyến nghị của SBV và thực tiễn ngành.
+            <strong>L<sub>k</sub>, U<sub>k</sub>:</strong> Cận cố định, không hiệu chỉnh theo
+            5 ngân hàng. Lấy từ biên tự nhiên của thang đo hoặc mốc tham chiếu ngoài mẫu
+            (NHNN, DBS, Santander). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn bắt buộc.
           </div>
         </article>
 
@@ -395,12 +395,12 @@ export default function Tab5Methodology({
             <span className="methodology-formula-badge">
               Công thức <CircleHelp size={12} />
             </span>
-            <span>Tổng hợp &amp; Robust Imputation</span>
+            <span>Tổng hợp &amp; xử lý dữ liệu thiếu</span>
           </header>
-          <h3>Điểm Tổng hợp &amp; Bù khuyết</h3>
+          <h3>Điểm Tổng hợp &amp; dữ liệu thiếu</h3>
           <p>
-            Tích hợp Lớp A và Lớp B kèm thuật toán bù khuyết trung vị
-            (Median Imputation):
+            Tích hợp Lớp A và Lớp B. Chỉ số DTI thiếu dữ liệu bị bỏ qua,
+            không bù khuyết và không điền 0:
           </p>
           <div className="methodology-equation">
             <strong>
@@ -408,12 +408,12 @@ export default function Tab5Methodology({
               {framework.dti_weight.toLocaleString('vi-VN')} · S<sub>DTI</sub>
             </strong>
             <small>
-              X<sub>k, missing</sub> ← Median(X<sub>k, peers</sub>) kèm hệ số phạt thiếu minh chứng
+              Trụ cột không có chỉ số DTI nào: P<sub>k</sub> = DBI<sub>k</sub>; Điểm tổng = trung bình 6 trụ cột
             </small>
           </div>
           <div className="methodology-formula-note">
-            <strong>S<sub>DTI</sub>:</strong> Điểm định lượng sau khi bù khuyết dữ
-            liệu công khai và chuẩn hóa theo hệ số đồng dạng.
+            <strong>S<sub>DTI</sub>:</strong> Trung bình z của các chỉ số DTI có dữ liệu trong trụ cột.
+            Chỉ số thiếu ở từ 2 ngân hàng trở lên trong một năm bị loại cho cả 5 ngân hàng năm đó (bước 0).
           </div>
         </article>
       </section>
@@ -435,7 +435,7 @@ export default function Tab5Methodology({
                 <tr><th>Mức</th><th>Tỷ lệ</th><th>Đặc trưng &amp; điều kiện minh chứng</th></tr>
               </thead>
               <tbody>
-                <tr><td>Mức 0</td><td>0%</td><td>Không có thông tin công khai sau khi tra cứu nguồn tài liệu chính thức.</td></tr>
+                <tr><td>Mức 0</td><td>0%</td><td>Có văn bản đọc được nhưng thuật toán không tìm thấy từ khóa; không đồng nghĩa ngân hàng không công bố.</td></tr>
                 <tr><td>Mức 1</td><td>25%</td><td>Chỉ nêu định hướng hoặc kế hoạch; chưa có bằng chứng triển khai cụ thể.</td></tr>
                 <tr><td>Mức 2</td><td>50%</td><td>Có dự án, sản phẩm số hoặc chính sách cụ thể; kết quả chưa được công bố định lượng.</td></tr>
                 <tr><td>Mức 3</td><td>75%</td><td>Triển khai diện rộng, có số liệu kết quả hoặc minh chứng rõ trong báo cáo.</td></tr>
@@ -444,7 +444,7 @@ export default function Tab5Methodology({
             </table>
           </div>
           <div className="methodology-card-footer">
-            <span>Chấm theo bằng chứng công khai, không suy diễn khi thiếu nguồn.</span>
+            <span>Điểm do thuật toán quy tắc (rule-based-v1) chấm từ văn bản báo cáo; chưa kiểm chứng độc lập với chuyên gia.</span>
             <button type="button" onClick={() => onNavigate('indicators')}>
               Xem điểm ở Chỉ tiêu <ArrowRight size={13} />
             </button>
@@ -465,7 +465,7 @@ export default function Tab5Methodology({
             <li><strong>Kiểm tra dữ liệu cơ bản</strong><span>Đối chiếu tính đầy đủ của dữ liệu công khai; đánh dấu trường thiếu.</span></li>
             <li><strong>Thu thập tài liệu &amp; bằng chứng</strong><span>Tổng hợp báo cáo thường niên, báo cáo phát triển bền vững và nguồn chính thức.</span></li>
             <li><strong>Định vị bằng từ khóa</strong><span>Liên kết tài liệu và bằng chứng với từng tiêu chí trong codebook.</span></li>
-            <li><strong>Chấm độc lập &amp; chuẩn hóa</strong><span>Chấm mức DBI, chuẩn hóa DTI theo cận và chiều tác động.</span></li>
+            <li><strong>Chấm tự động &amp; chuẩn hóa</strong><span>Thuật toán quy tắc chấm mức DBI; chuẩn hóa DTI theo cận cố định và chiều tác động.</span></li>
             <li><strong>Tính điểm &amp; kiểm tra độ vững</strong><span>Tổng hợp theo trọng số, sau đó kiểm tra các kịch bản nhạy cảm.</span></li>
           </ol>
           <div className="methodology-process-stats">

@@ -4,7 +4,7 @@
   "bank_name": "Agribank",
   "group": "NHTM Nhà nước",
   "year": 2024,
-  "score": 47.5706,
+  "score": 48.3577,
   "rank": 5,
   "maturity_level": "Mức 2 - Bắt đầu",
   "maturity_level_number": 2,
@@ -19,21 +19,21 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 93.75,
-    "dti": 100.0,
-    "p": 95.0,
-    "n_dti": 1,
+    "dti": null,
+    "p": 93.75,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
     "name": "Chiến lược",
     "dbi": 43.75,
-    "dti": 13.8889,
-    "p": 37.7778,
-    "n_dti": 1,
+    "dti": null,
+    "p": 43.75,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -677,9 +677,9 @@
    "x": 96.0,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -694,7 +694,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -710,7 +710,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -725,9 +725,9 @@
    "x": 2.5,
    "L": 0.0,
    "U": 18.0,
-   "z": 13.8889,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2022->2024, quy về điểm %/năm"
   },
   {
@@ -742,7 +742,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
   },
@@ -774,7 +774,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -822,7 +822,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },

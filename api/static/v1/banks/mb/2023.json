@@ -4,7 +4,7 @@
   "bank_name": "MB",
   "group": "NHTM Cổ phần",
   "year": 2023,
-  "score": 52.4657,
+  "score": 52.9167,
   "rank": 2,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
@@ -19,21 +19,21 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 56.25,
-    "dti": 93.0,
-    "p": 63.6,
-    "n_dti": 2,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 3,
-    "dti_applied": true
+    "dti_applied": false
    },
    "S": {
     "code": "S",
     "name": "Chiến lược",
     "dbi": 62.5,
-    "dti": 12.2222,
-    "p": 52.4444,
-    "n_dti": 1,
+    "dti": null,
+    "p": 62.5,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
@@ -704,9 +704,9 @@
    "x": 96.7,
    "L": 0.0,
    "U": 90.0,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "định nghĩa: all_txn"
   },
   {
@@ -720,9 +720,9 @@
    "x": 86.0,
    "L": 0.0,
    "U": 100.0,
-   "z": 86.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "KH số/tổng KH do NH công bố"
   },
   {
@@ -737,7 +737,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -752,9 +752,9 @@
    "x": 2.2,
    "L": 0.0,
    "U": 18.0,
-   "z": 12.2222,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2021->2023, quy về điểm %/năm"
   },
   {
@@ -769,7 +769,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu digital_customers năm cuối"
   },
@@ -801,7 +801,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -849,7 +849,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },

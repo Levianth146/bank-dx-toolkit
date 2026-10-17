@@ -1,8 +1,11 @@
 {
  "year": 2021,
  "available_years": [
+  2020,
   2021,
+  2022,
   2023,
+  2024,
   2025
  ],
  "count": 205,
@@ -12,7 +15,7 @@
    "family": "0. Cơ sở",
    "scenario": "80/20, cận cố định",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -22,7 +25,7 @@
    "family": "0. Cơ sở",
    "scenario": "80/20, cận cố định",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -32,7 +35,7 @@
    "family": "0. Cơ sở",
    "scenario": "80/20, cận cố định",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -42,7 +45,7 @@
    "family": "0. Cơ sở",
    "scenario": "80/20, cận cố định",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -112,7 +115,7 @@
    "family": "A. Trọng số DBI/DTI",
    "scenario": "70/30",
    "bank": "agribank",
-   "score": 22.814,
+   "score": 23.3654,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -122,7 +125,7 @@
    "family": "A. Trọng số DBI/DTI",
    "scenario": "70/30",
    "bank": "bidv",
-   "score": 46.7176,
+   "score": 45.5954,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -132,20 +135,20 @@
    "family": "A. Trọng số DBI/DTI",
    "scenario": "70/30",
    "bank": "mb",
-   "score": 54.8958,
-   "rank": 1,
+   "score": 48.6458,
+   "rank": 2,
    "base_rank": 2,
-   "rank_change": -1
+   "rank_change": 0
   },
   {
    "year": 2021,
    "family": "A. Trọng số DBI/DTI",
    "scenario": "70/30",
    "bank": "tcb",
-   "score": 54.6042,
-   "rank": 2,
+   "score": 54.1667,
+   "rank": 1,
    "base_rank": 1,
-   "rank_change": 1
+   "rank_change": 0
   },
   {
    "year": 2021,
@@ -162,7 +165,7 @@
    "family": "A. Trọng số DBI/DTI",
    "scenario": "60/40",
    "bank": "agribank",
-   "score": 22.7798,
+   "score": 23.515,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -172,7 +175,7 @@
    "family": "A. Trọng số DBI/DTI",
    "scenario": "60/40",
    "bank": "bidv",
-   "score": 47.0124,
+   "score": 45.5161,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -182,20 +185,20 @@
    "family": "A. Trọng số DBI/DTI",
    "scenario": "60/40",
    "bank": "mb",
-   "score": 57.9167,
-   "rank": 1,
+   "score": 49.5833,
+   "rank": 2,
    "base_rank": 2,
-   "rank_change": -1
+   "rank_change": 0
   },
   {
    "year": 2021,
    "family": "A. Trọng số DBI/DTI",
    "scenario": "60/40",
    "bank": "tcb",
-   "score": 55.7917,
-   "rank": 2,
+   "score": 55.2083,
+   "rank": 1,
    "base_rank": 1,
-   "rank_change": 1
+   "rank_change": 0
   },
   {
    "year": 2021,
@@ -212,7 +215,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng +20%",
    "bank": "agribank",
-   "score": 23.4513,
+   "score": 23.8782,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -222,7 +225,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng +20%",
    "bank": "bidv",
-   "score": 47.1791,
+   "score": 46.4191,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -232,7 +235,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng +20%",
    "bank": "mb",
-   "score": 51.8145,
+   "score": 47.379,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -242,7 +245,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng +20%",
    "bank": "tcb",
-   "score": 54.371,
+   "score": 54.0323,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -262,7 +265,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng -20%",
    "bank": "agribank",
-   "score": 22.2035,
+   "score": 22.5078,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -272,7 +275,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng -20%",
    "bank": "bidv",
-   "score": 45.6145,
+   "score": 44.879,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -282,7 +285,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng -20%",
    "bank": "mb",
-   "score": 51.9397,
+   "score": 48.0603,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -292,7 +295,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng -20%",
    "bank": "tcb",
-   "score": 52.3966,
+   "score": 52.1552,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -312,7 +315,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược +20%",
    "bank": "agribank",
-   "score": 23.1193,
+   "score": 23.475,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -322,7 +325,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược +20%",
    "bank": "bidv",
-   "score": 47.1431,
+   "score": 46.4191,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -332,7 +335,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược +20%",
    "bank": "mb",
-   "score": 51.6129,
+   "score": 47.5806,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -342,7 +345,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược +20%",
    "bank": "tcb",
-   "score": 53.7097,
+   "score": 53.4274,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -362,7 +365,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược -20%",
    "bank": "agribank",
-   "score": 22.5585,
+   "score": 22.9388,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -372,7 +375,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược -20%",
    "bank": "bidv",
-   "score": 45.653,
+   "score": 44.879,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -382,7 +385,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược -20%",
    "bank": "mb",
-   "score": 52.1552,
+   "score": 47.8448,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -392,7 +395,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược -20%",
    "bank": "tcb",
-   "score": 53.1034,
+   "score": 52.8017,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -412,7 +415,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ +20%",
    "bank": "agribank",
-   "score": 22.7739,
+   "score": 23.1297,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -422,7 +425,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ +20%",
    "bank": "bidv",
-   "score": 46.3059,
+   "score": 45.582,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -432,7 +435,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ +20%",
    "bank": "mb",
-   "score": 51.9758,
+   "score": 47.9435,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -442,7 +445,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ +20%",
    "bank": "tcb",
-   "score": 53.3065,
+   "score": 53.0242,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -462,7 +465,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ -20%",
    "bank": "agribank",
-   "score": 22.9277,
+   "score": 23.3079,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -472,7 +475,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ -20%",
    "bank": "bidv",
-   "score": 46.5478,
+   "score": 45.7739,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -482,7 +485,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ -20%",
    "bank": "mb",
-   "score": 51.7672,
+   "score": 47.4569,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -492,7 +495,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ -20%",
    "bank": "tcb",
-   "score": 53.5345,
+   "score": 53.2328,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -512,7 +515,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành +20%",
    "bank": "agribank",
-   "score": 22.5144,
+   "score": 22.8702,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -522,7 +525,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành +20%",
    "bank": "bidv",
-   "score": 45.9334,
+   "score": 45.2094,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -532,7 +535,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành +20%",
    "bank": "mb",
-   "score": 52.4194,
+   "score": 48.3871,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -542,7 +545,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành +20%",
    "bank": "tcb",
-   "score": 53.1048,
+   "score": 52.8226,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -562,7 +565,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành -20%",
    "bank": "agribank",
-   "score": 23.2051,
+   "score": 23.5853,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -572,7 +575,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành -20%",
    "bank": "bidv",
-   "score": 46.9461,
+   "score": 46.1721,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -582,7 +585,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành -20%",
    "bank": "mb",
-   "score": 51.2931,
+   "score": 46.9828,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -592,7 +595,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Vận hành -20%",
    "bank": "tcb",
-   "score": 53.75,
+   "score": 53.4483,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -612,7 +615,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa +20%",
    "bank": "agribank",
-   "score": 22.9176,
+   "score": 23.2734,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -622,7 +625,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa +20%",
    "bank": "bidv",
-   "score": 45.8406,
+   "score": 45.0078,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -632,7 +635,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa +20%",
    "bank": "mb",
-   "score": 51.8145,
+   "score": 47.379,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -642,7 +645,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa +20%",
    "bank": "tcb",
-   "score": 52.9032,
+   "score": 52.621,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -662,7 +665,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa -20%",
    "bank": "agribank",
-   "score": 22.774,
+   "score": 23.1543,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -672,7 +675,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa -20%",
    "bank": "bidv",
-   "score": 47.0453,
+   "score": 46.3877,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -682,7 +685,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa -20%",
    "bank": "mb",
-   "score": 51.9397,
+   "score": 48.0603,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -692,7 +695,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Văn hóa -20%",
    "bank": "tcb",
-   "score": 53.9655,
+   "score": 53.6638,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -712,7 +715,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu +20%",
    "bank": "agribank",
-   "score": 22.3128,
+   "score": 22.6686,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -722,7 +725,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu +20%",
    "bank": "bidv",
-   "score": 46.135,
+   "score": 45.411,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -732,7 +735,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu +20%",
    "bank": "mb",
-   "score": 51.6129,
+   "score": 47.5806,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -742,7 +745,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu +20%",
    "bank": "tcb",
-   "score": 53.1048,
+   "score": 52.8226,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -762,7 +765,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu -20%",
    "bank": "agribank",
-   "score": 23.4206,
+   "score": 23.8009,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -772,7 +775,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu -20%",
    "bank": "bidv",
-   "score": 46.7306,
+   "score": 45.9566,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -782,7 +785,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu -20%",
    "bank": "mb",
-   "score": 52.1552,
+   "score": 47.8448,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -792,7 +795,7 @@
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu -20%",
    "bank": "tcb",
-   "score": 53.75,
+   "score": 53.4483,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -822,7 +825,7 @@
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Min-max trong 5 NH",
    "bank": "bidv",
-   "score": 42.4715,
+   "score": 44.7631,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -832,7 +835,7 @@
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Min-max trong 5 NH",
    "bank": "mb",
-   "score": 49.2303,
+   "score": 47.1469,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -842,7 +845,7 @@
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Min-max trong 5 NH",
    "bank": "tcb",
-   "score": 52.2671,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -872,7 +875,7 @@
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Xếp hạng phần trăm",
    "bank": "bidv",
-   "score": 43.1944,
+   "score": 45.4861,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -882,7 +885,7 @@
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Xếp hạng phần trăm",
    "bank": "mb",
-   "score": 48.6806,
+   "score": 46.5972,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -892,7 +895,7 @@
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Xếp hạng phần trăm",
    "bank": "tcb",
-   "score": 52.0833,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -922,7 +925,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Khách hàng",
    "bank": "bidv",
-   "score": 41.7341,
+   "score": 41.0597,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -932,7 +935,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Khách hàng",
    "bank": "mb",
-   "score": 52.25,
+   "score": 49.75,
    "rank": 1,
    "base_rank": 2,
    "rank_change": -1
@@ -962,7 +965,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Chiến lược",
    "bank": "agribank",
-   "score": 21.1679,
+   "score": 21.609,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -972,7 +975,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Chiến lược",
    "bank": "bidv",
-   "score": 41.9574,
+   "score": 41.0597,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -982,20 +985,20 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Chiến lược",
    "bank": "mb",
-   "score": 53.5,
-   "rank": 1,
+   "score": 48.5,
+   "rank": 2,
    "base_rank": 2,
-   "rank_change": -1
+   "rank_change": 0
   },
   {
    "year": 2021,
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Chiến lược",
    "bank": "tcb",
-   "score": 51.6,
-   "rank": 2,
+   "score": 51.25,
+   "rank": 1,
    "base_rank": 1,
-   "rank_change": 1
+   "rank_change": 0
   },
   {
    "year": 2021,
@@ -1012,7 +1015,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Công nghệ",
    "bank": "agribank",
-   "score": 23.3089,
+   "score": 23.75,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1022,17 +1025,17 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Công nghệ",
    "bank": "bidv",
-   "score": 47.1478,
-   "rank": 3,
+   "score": 46.25,
+   "rank": 2,
    "base_rank": 3,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "year": 2021,
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Công nghệ",
    "bank": "mb",
-   "score": 51.25,
+   "score": 46.25,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1042,7 +1045,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Công nghệ",
    "bank": "tcb",
-   "score": 54.1,
+   "score": 53.75,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1062,7 +1065,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Vận hành",
    "bank": "agribank",
-   "score": 24.9179,
+   "score": 25.359,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1072,7 +1075,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Vận hành",
    "bank": "bidv",
-   "score": 49.4574,
+   "score": 48.5597,
    "rank": 2,
    "base_rank": 3,
    "rank_change": -1
@@ -1082,7 +1085,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Vận hành",
    "bank": "mb",
-   "score": 48.5,
+   "score": 43.5,
    "rank": 3,
    "base_rank": 2,
    "rank_change": 1
@@ -1092,7 +1095,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Vận hành",
    "bank": "tcb",
-   "score": 55.35,
+   "score": 55.0,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1112,7 +1115,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Văn hóa",
    "bank": "agribank",
-   "score": 22.4179,
+   "score": 22.859,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1122,27 +1125,27 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Văn hóa",
    "bank": "bidv",
-   "score": 50.033,
-   "rank": 3,
+   "score": 49.8097,
+   "rank": 2,
    "base_rank": 3,
-   "rank_change": 0
+   "rank_change": -1
   },
   {
    "year": 2021,
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Văn hóa",
    "bank": "mb",
-   "score": 52.25,
-   "rank": 2,
+   "score": 49.75,
+   "rank": 3,
    "base_rank": 2,
-   "rank_change": 0
+   "rank_change": 1
   },
   {
    "year": 2021,
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Văn hóa",
    "bank": "tcb",
-   "score": 56.6,
+   "score": 56.25,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1162,7 +1165,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Dữ liệu",
    "bank": "agribank",
-   "score": 26.1679,
+   "score": 26.609,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1172,7 +1175,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Dữ liệu",
    "bank": "bidv",
-   "score": 48.2074,
+   "score": 47.3097,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1182,7 +1185,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Dữ liệu",
    "bank": "mb",
-   "score": 53.5,
+   "score": 48.5,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1192,7 +1195,7 @@
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Dữ liệu",
    "bank": "tcb",
-   "score": 55.35,
+   "score": 55.0,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1212,7 +1215,7 @@
    "family": "F. Dữ liệu thiếu",
    "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
    "bank": "agribank",
-   "score": 19.3673,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1222,7 +1225,7 @@
    "family": "F. Dữ liệu thiếu",
    "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
    "bank": "bidv",
-   "score": 40.0901,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1232,7 +1235,7 @@
    "family": "F. Dữ liệu thiếu",
    "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
    "bank": "mb",
-   "score": 42.5694,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1242,7 +1245,7 @@
    "family": "F. Dữ liệu thiếu",
    "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
    "bank": "tcb",
-   "score": 44.9583,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1252,7 +1255,7 @@
    "family": "F. Dữ liệu thiếu",
    "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
    "bank": "vcb",
-   "score": 31.4583,
+   "score": 37.9167,
    "rank": 4,
    "base_rank": 4,
    "rank_change": 0
@@ -1262,7 +1265,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận -20%",
    "bank": "agribank",
-   "score": 23.0793,
+   "score": 23.4469,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1272,7 +1275,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận -20%",
    "bank": "bidv",
-   "score": 47.7161,
+   "score": 45.9997,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1282,7 +1285,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1292,7 +1295,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận -20%",
    "bank": "tcb",
-   "score": 53.75,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1312,7 +1315,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận +20%",
    "bank": "agribank",
-   "score": 22.6942,
+   "score": 23.0618,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1322,7 +1325,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận +20%",
    "bank": "bidv",
-   "score": 45.5607,
+   "score": 45.4581,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1332,7 +1335,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận +20%",
    "bank": "mb",
-   "score": 50.8155,
+   "score": 47.3803,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1342,7 +1345,7 @@
    "family": "G. Dịch cận [L,U] cùng lúc",
    "scenario": "Độ rộng cận +20%",
    "bank": "tcb",
-   "score": 52.9167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1362,7 +1365,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 -20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1372,7 +1375,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 -20%",
    "bank": "bidv",
-   "score": 47.0423,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1382,7 +1385,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1392,7 +1395,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 -20%",
    "bank": "tcb",
-   "score": 53.75,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1412,7 +1415,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 +20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1422,7 +1425,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 +20%",
    "bank": "bidv",
-   "score": 46.0099,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1432,7 +1435,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 +20%",
    "bank": "mb",
-   "score": 51.3904,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1442,7 +1445,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "K-Q1 +20%",
    "bank": "tcb",
-   "score": 52.9167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1462,7 +1465,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 -20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1472,7 +1475,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 -20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1482,7 +1485,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1492,7 +1495,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 -20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1512,7 +1515,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 +20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1522,7 +1525,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 +20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1532,7 +1535,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 +20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1542,7 +1545,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q1 +20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1562,7 +1565,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 -20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1572,7 +1575,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 -20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1582,7 +1585,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1592,7 +1595,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 -20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1612,7 +1615,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 +20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1622,7 +1625,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 +20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1632,7 +1635,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 +20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1642,7 +1645,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "S-Q2 +20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1662,7 +1665,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 -20%",
    "bank": "agribank",
-   "score": 23.0793,
+   "score": 23.4469,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1672,7 +1675,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 -20%",
    "bank": "bidv",
-   "score": 46.7478,
+   "score": 45.9997,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1682,7 +1685,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1692,7 +1695,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 -20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1712,7 +1715,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 +20%",
    "bank": "agribank",
-   "score": 22.6942,
+   "score": 23.0618,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1722,7 +1725,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 +20%",
    "bank": "bidv",
-   "score": 46.2062,
+   "score": 45.4581,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1732,7 +1735,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 +20%",
    "bank": "mb",
-   "score": 51.5469,
+   "score": 47.3803,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1742,7 +1745,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "T-Q1 +20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1762,7 +1765,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 -20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1772,7 +1775,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 -20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1782,7 +1785,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1792,7 +1795,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 -20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1812,7 +1815,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 +20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1822,7 +1825,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 +20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1832,7 +1835,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 +20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1842,7 +1845,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 +20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1862,7 +1865,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 -20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1872,7 +1875,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 -20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1882,7 +1885,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1892,7 +1895,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 -20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1912,7 +1915,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 +20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1922,7 +1925,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 +20%",
    "bank": "bidv",
-   "score": 46.4229,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1932,7 +1935,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 +20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1942,7 +1945,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 +20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -1962,7 +1965,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 -20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -1972,7 +1975,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 -20%",
    "bank": "bidv",
-   "score": 46.7717,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -1982,7 +1985,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 -20%",
    "bank": "mb",
-   "score": 51.875,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -1992,7 +1995,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 -20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0
@@ -2012,7 +2015,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 +20%",
    "bank": "agribank",
-   "score": 22.8482,
+   "score": 23.2158,
    "rank": 5,
    "base_rank": 5,
    "rank_change": 0
@@ -2022,7 +2025,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 +20%",
    "bank": "bidv",
-   "score": 46.1903,
+   "score": 45.6747,
    "rank": 3,
    "base_rank": 3,
    "rank_change": 0
@@ -2032,7 +2035,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 +20%",
    "bank": "mb",
-   "score": 51.6281,
+   "score": 47.7083,
    "rank": 2,
    "base_rank": 2,
    "rank_change": 0
@@ -2042,7 +2045,7 @@
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 +20%",
    "bank": "tcb",
-   "score": 53.4167,
+   "score": 53.125,
    "rank": 1,
    "base_rank": 1,
    "rank_change": 0

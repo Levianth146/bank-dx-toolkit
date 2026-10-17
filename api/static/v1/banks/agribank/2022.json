@@ -4,7 +4,7 @@
   "bank_name": "Agribank",
   "group": "NHTM Nhà nước",
   "year": 2022,
-  "score": 23.5168,
+  "score": 23.9751,
   "rank": 5,
   "maturity_level": "Mức 1 - Khởi động",
   "maturity_level_number": 1,
@@ -21,9 +21,9 @@
     "code": "K",
     "name": "Khách hàng",
     "dbi": 37.5,
-    "dti": 86.25,
-    "p": 47.25,
-    "n_dti": 2,
+    "dti": 100.0,
+    "p": 50.0,
+    "n_dti": 1,
     "n_dti_total": 3,
     "dti_applied": true
    },
@@ -648,9 +648,9 @@
    "x": 72.5,
    "L": 0.0,
    "U": 100.0,
-   "z": 72.5,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "digital_customers/total_customers (registered/lower_bound_or_accounts)"
   },
   {
@@ -665,7 +665,7 @@
    "L": 1.0,
    "U": 5.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chỉ có ảnh chụp tại ngày thu thập (áp cho năm 2025)"
   },
@@ -681,7 +681,7 @@
    "L": 0.0,
    "U": 18.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có năm đầu kỳ cùng định nghĩa"
   },
@@ -697,7 +697,7 @@
    "L": 0.0,
    "U": 24.4555,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cùng định nghĩa cách >= 2 năm"
   },
@@ -729,7 +729,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
   },
@@ -761,7 +761,7 @@
    "L": 0.0,
    "U": 1.1843,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không có mốc đầu kỳ cách >= 2 năm"
   },
@@ -777,7 +777,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -793,7 +793,7 @@
    "L": 0.0,
    "U": 38.7,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu giờ đào tạo"
   }

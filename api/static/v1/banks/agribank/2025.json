@@ -4,13 +4,13 @@
   "bank_name": "Agribank",
   "group": "NHTM Nhà nước",
   "year": 2025,
-  "score": 53.9539,
+  "score": 55.2801,
   "rank": 5,
   "maturity_level": "Mức 3 - Hình thành",
   "maturity_level_number": 3,
   "maturity_level_name": "Hình thành",
-  "data_confidence": 0.5455,
-  "dti_indicators_available": 6,
+  "data_confidence": 0.6364,
+  "dti_indicators_available": 7,
   "dti_indicators_total": 11,
   "reliability": "medium",
   "warnings": [],
@@ -29,19 +29,19 @@
     "code": "S",
     "name": "Chiến lược",
     "dbi": 56.25,
-    "dti": 55.5556,
-    "p": 56.1111,
-    "n_dti": 2,
+    "dti": null,
+    "p": 56.25,
+    "n_dti": 0,
     "n_dti_total": 2,
-    "dti_applied": true
+    "dti_applied": false
    },
    "T": {
     "code": "T",
     "name": "Công nghệ",
     "dbi": 75.0,
-    "dti": 21.814,
-    "p": 64.3628,
-    "n_dti": 1,
+    "dti": 60.907,
+    "p": 72.1814,
+    "n_dti": 2,
     "n_dti_total": 2,
     "dti_applied": true
    },
@@ -706,7 +706,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "thiếu số KH số hoặc tổng KH"
   },
@@ -737,9 +737,9 @@
    "x": 2.0,
    "L": 0.0,
    "U": 18.0,
-   "z": 11.1111,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "2022->2025, quy về điểm %/năm"
   },
   {
@@ -753,9 +753,9 @@
    "x": 30.4285,
    "L": 0.0,
    "U": 24.4555,
-   "z": 100.0,
-   "status": "có dữ liệu",
-   "has_data": true,
+   "z": null,
+   "status": "loại bởi bước 0",
+   "has_data": false,
    "note": "CAGR 2021->2025"
   },
   {
@@ -782,13 +782,13 @@
    "name": "Tỷ lệ phủ 8 nền tảng số (checklist manual_audit.xlsx)",
    "unit": "%",
    "direction": "higher_better",
-   "x": null,
+   "x": 100.0,
    "L": 0.0,
    "U": 100.0,
-   "z": null,
-   "status": "thiếu dữ liệu",
-   "has_data": false,
-   "note": "chưa kiểm kê đủ 8 nền tảng (manual_audit.xlsx)"
+   "z": 100.0,
+   "status": "có dữ liệu",
+   "has_data": true,
+   "note": "số nền tảng đạt / 8 x 100"
   },
   {
    "bank": "agribank",
@@ -834,7 +834,7 @@
    "L": 0.0,
    "U": 100.0,
    "z": null,
-   "status": "thiếu dữ liệu",
+   "status": "loại bởi bước 0",
    "has_data": false,
    "note": "không công bố nhân sự công nghệ"
   },
@@ -856,7 +856,7 @@
   }
  ],
  "highlights": {
-  "strongest_pillar": "K",
+  "strongest_pillar": "T",
   "weakest_pillar": "D",
   "criteria_score_distribution": {
    "0": 4,
