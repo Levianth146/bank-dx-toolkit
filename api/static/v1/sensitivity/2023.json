@@ -19,25 +19,25 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 39.4635,
-     "rank": 5,
+     "score": 40.0673,
+     "rank": 4,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 38.3619,
-     "rank": 5,
+     "score": 39.2676,
+     "rank": 4,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 37.2603,
-     "rank": 5,
+     "score": 38.4678,
+     "rank": 4,
      "level": "Mức 2 - Bắt đầu"
     }
    },
-   "rank_stable_pct": 0.6667,
+   "rank_stable_pct": 1.0,
    "rank_min": 4,
-   "rank_max": 5,
-   "stable_under_weights": false
+   "rank_max": 4,
+   "stable_under_weights": true
   },
   {
    "bank": "bidv",
@@ -50,17 +50,17 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 47.6008,
+     "score": 45.1726,
      "rank": 3,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 48.4845,
+     "score": 44.8422,
      "rank": 3,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 49.3682,
+     "score": 44.5119,
      "rank": 3,
      "level": "Mức 2 - Bắt đầu"
     }
@@ -81,17 +81,17 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 52.9167,
+     "score": 49.2371,
      "rank": 2,
-     "level": "Mức 3 - Hình thành"
+     "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 55.9375,
+     "score": 50.4181,
      "rank": 2,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 58.9583,
+     "score": 51.5991,
      "rank": 2,
      "level": "Mức 3 - Hình thành"
     }
@@ -112,17 +112,17 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 63.75,
+     "score": 62.4531,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 65.4167,
+     "score": 63.4713,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 67.0833,
+     "score": 64.4896,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     }
@@ -143,25 +143,25 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 43.75,
-     "rank": 4,
+     "score": 40.014,
+     "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 44.7917,
-     "rank": 4,
+     "score": 39.1877,
+     "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 45.8333,
-     "rank": 4,
+     "score": 38.3613,
+     "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     }
    },
-   "rank_stable_pct": 1.0,
+   "rank_stable_pct": 0.6667,
    "rank_min": 4,
-   "rank_max": 4,
-   "stable_under_weights": true
+   "rank_max": 5,
+   "stable_under_weights": false
   }
  ],
  "agreement_with_base": [

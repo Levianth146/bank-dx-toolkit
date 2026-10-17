@@ -39,18 +39,18 @@
     {
      "year": 2023,
      "n": 5,
-     "spearman": -0.3,
-     "kendall": -0.2,
-     "p_kendall": 0.8167,
+     "spearman": -0.1,
+     "kendall": 0.0,
+     "p_kendall": 1.0,
      "low_n": true,
      "consistent_with_expected": false
     },
     {
      "year": 2024,
      "n": 5,
-     "spearman": -0.3,
-     "kendall": -0.2,
-     "p_kendall": 0.8167,
+     "spearman": -0.1,
+     "kendall": 0.0,
+     "p_kendall": 1.0,
      "low_n": true,
      "consistent_with_expected": false
     },
@@ -66,15 +66,15 @@
    ],
    "pooled": {
     "n": 25,
-    "spearman": -0.27,
-    "kendall": -0.2,
-    "p_kendall": 0.1699,
+    "spearman": -0.2246,
+    "kendall": -0.1667,
+    "p_kendall": 0.2554,
     "low_n": false,
     "consistent_with_expected": false
    },
    "pooled_within_year": {
     "n": 25,
-    "spearman": -0.12,
+    "spearman": -0.04,
     "consistent_with_expected": false
    }
   },
@@ -114,18 +114,18 @@
     {
      "year": 2023,
      "n": 5,
-     "spearman": 0.7,
-     "kendall": 0.6,
-     "p_kendall": 0.2333,
+     "spearman": 0.6,
+     "kendall": 0.4,
+     "p_kendall": 0.4833,
      "low_n": true,
      "consistent_with_expected": true
     },
     {
      "year": 2024,
      "n": 5,
-     "spearman": 0.9,
-     "kendall": 0.8,
-     "p_kendall": 0.0833,
+     "spearman": 0.7,
+     "kendall": 0.6,
+     "p_kendall": 0.2333,
      "low_n": true,
      "consistent_with_expected": true
     },
@@ -141,15 +141,15 @@
    ],
    "pooled": {
     "n": 25,
-    "spearman": 0.5292,
-    "kendall": 0.3533,
-    "p_kendall": 0.0131,
+    "spearman": 0.5685,
+    "kendall": 0.3733,
+    "p_kendall": 0.0085,
     "low_n": false,
     "consistent_with_expected": true
    },
    "pooled_within_year": {
     "n": 25,
-    "spearman": 0.76,
+    "spearman": 0.7,
     "consistent_with_expected": true
    }
   },
@@ -189,18 +189,18 @@
     {
      "year": 2023,
      "n": 5,
-     "spearman": -0.8,
-     "kendall": -0.6,
-     "p_kendall": 0.2333,
+     "spearman": -0.6,
+     "kendall": -0.4,
+     "p_kendall": 0.4833,
      "low_n": true,
      "consistent_with_expected": true
     },
     {
      "year": 2024,
      "n": 5,
-     "spearman": -0.8,
-     "kendall": -0.6,
-     "p_kendall": 0.2333,
+     "spearman": -0.9,
+     "kendall": -0.8,
+     "p_kendall": 0.0833,
      "low_n": true,
      "consistent_with_expected": true
     },
@@ -216,15 +216,15 @@
    ],
    "pooled": {
     "n": 25,
-    "spearman": -0.3869,
-    "kendall": -0.24,
-    "p_kendall": 0.0975,
+    "spearman": -0.42,
+    "kendall": -0.2733,
+    "p_kendall": 0.0579,
     "low_n": false,
     "consistent_with_expected": true
    },
    "pooled_within_year": {
     "n": 25,
-    "spearman": -0.58,
+    "spearman": -0.56,
     "consistent_with_expected": true
    }
   },
@@ -264,9 +264,9 @@
     {
      "year": 2023,
      "n": 4,
-     "spearman": 0.8,
-     "kendall": 0.6667,
-     "p_kendall": 0.3333,
+     "spearman": 0.6,
+     "kendall": 0.3333,
+     "p_kendall": 0.75,
      "low_n": true,
      "consistent_with_expected": true
     },
@@ -291,15 +291,15 @@
    ],
    "pooled": {
     "n": 22,
-    "spearman": 0.6759,
-    "kendall": 0.4632,
-    "p_kendall": 0.0021,
+    "spearman": 0.6815,
+    "kendall": 0.4805,
+    "p_kendall": 0.0014,
     "low_n": false,
     "consistent_with_expected": true
    },
    "pooled_within_year": {
     "n": 22,
-    "spearman": 0.8717,
+    "spearman": 0.8357,
     "consistent_with_expected": true
    }
   },
@@ -339,18 +339,18 @@
     {
      "year": 2023,
      "n": 5,
-     "spearman": 0.5,
-     "kendall": 0.2,
-     "p_kendall": 0.8167,
+     "spearman": 0.6,
+     "kendall": 0.4,
+     "p_kendall": 0.4833,
      "low_n": true,
      "consistent_with_expected": null
     },
     {
      "year": 2024,
      "n": 5,
-     "spearman": -0.1,
-     "kendall": 0.0,
-     "p_kendall": 1.0,
+     "spearman": 0.3,
+     "kendall": 0.2,
+     "p_kendall": 0.8167,
      "low_n": true,
      "consistent_with_expected": null
     },
@@ -366,15 +366,15 @@
    ],
    "pooled": {
     "n": 25,
-    "spearman": 0.1,
-    "kendall": 0.0533,
-    "p_kendall": 0.7288,
+    "spearman": 0.0885,
+    "kendall": 0.0467,
+    "p_kendall": 0.7638,
     "low_n": false,
     "consistent_with_expected": null
    },
    "pooled_within_year": {
     "n": 25,
-    "spearman": 0.2,
+    "spearman": 0.3,
     "consistent_with_expected": null
    }
   }

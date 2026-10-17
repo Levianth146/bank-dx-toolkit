@@ -15,12 +15,12 @@
    "bank": "tcb",
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
-   "base_score": 63.75,
+   "base_score": 62.4531,
    "base_rank": 1,
    "min_rank": 1,
    "max_rank": 1,
-   "min_score": 59.0,
-   "max_score": 68.5,
+   "min_score": 57.4437,
+   "max_score": 67.0528,
    "n_scenarios": 40,
    "stable_share": 1.0,
    "verdict": "Vững",
@@ -67,16 +67,16 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.9776,
-     "mean_rank": 1.0224,
+     "p_base": 0.9889,
+     "mean_rank": 1.0111,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.9776
+       "prob": 0.9889
       },
       {
        "rank": 2,
-       "prob": 0.0224
+       "prob": 0.0111
       },
       {
        "rank": 3,
@@ -121,16 +121,16 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.9997,
-     "mean_rank": 1.0003,
+     "p_base": 1.0,
+     "mean_rank": 1.0,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.9997
+       "prob": 1.0
       },
       {
        "rank": 2,
-       "prob": 0.0003
+       "prob": 0.0
       },
       {
        "rank": 3,
@@ -152,14 +152,14 @@
    "bank": "mb",
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
-   "base_score": 52.9167,
+   "base_score": 49.2371,
    "base_rank": 2,
    "min_rank": 2,
-   "max_rank": 2,
-   "min_score": 46.875,
-   "max_score": 58.9583,
+   "max_rank": 3,
+   "min_score": 45.1836,
+   "max_score": 53.7149,
    "n_scenarios": 40,
-   "stable_share": 1.0,
+   "stable_share": 0.975,
    "verdict": "Vững",
    "is_robust": true,
    "borderline": false,
@@ -183,7 +183,7 @@
     {
      "family": "D. Loại một trụ cột",
      "n_scenarios": 6,
-     "share": 1.0
+     "share": 0.8333
     },
     {
      "family": "F. Dữ liệu thiếu",
@@ -204,35 +204,35 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.8302,
-     "mean_rank": 2.1953,
+     "p_base": 0.7256,
+     "mean_rank": 2.4444,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.01
+       "prob": 0.011
       },
       {
        "rank": 2,
-       "prob": 0.8302
+       "prob": 0.7256
       },
       {
        "rank": 3,
-       "prob": 0.1216
+       "prob": 0.1183
       },
       {
        "rank": 4,
-       "prob": 0.0309
+       "prob": 0.0982
       },
       {
        "rank": 5,
-       "prob": 0.0073
+       "prob": 0.0469
       }
      ]
     },
     {
      "method": "Dirichlet α=10",
-     "p_base": 0.9999,
-     "mean_rank": 2.0001,
+     "p_base": 0.9777,
+     "mean_rank": 2.0225,
      "rank_distribution": [
       {
        "rank": 1,
@@ -240,15 +240,15 @@
       },
       {
        "rank": 2,
-       "prob": 0.9999
+       "prob": 0.9777
       },
       {
        "rank": 3,
-       "prob": 0.0001
+       "prob": 0.0221
       },
       {
        "rank": 4,
-       "prob": 0.0
+       "prob": 0.0002
       },
       {
        "rank": 5,
@@ -258,24 +258,24 @@
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.9596,
-     "mean_rank": 2.0403,
+     "p_base": 0.9119,
+     "mean_rank": 2.0897,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.0004
+       "prob": 0.0
       },
       {
        "rank": 2,
-       "prob": 0.9596
+       "prob": 0.9119
       },
       {
        "rank": 3,
-       "prob": 0.0393
+       "prob": 0.0865
       },
       {
        "rank": 4,
-       "prob": 0.0007
+       "prob": 0.0016
       },
       {
        "rank": 5,
@@ -289,14 +289,14 @@
    "bank": "bidv",
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
-   "base_score": 47.6008,
+   "base_score": 45.1726,
    "base_rank": 3,
-   "min_rank": 3,
+   "min_rank": 2,
    "max_rank": 3,
-   "min_score": 44.9248,
-   "max_score": 50.8709,
+   "min_score": 42.9571,
+   "max_score": 47.9571,
    "n_scenarios": 40,
-   "stable_share": 1.0,
+   "stable_share": 0.975,
    "verdict": "Vững",
    "is_robust": true,
    "borderline": false,
@@ -320,7 +320,7 @@
     {
      "family": "D. Loại một trụ cột",
      "n_scenarios": 6,
-     "share": 1.0
+     "share": 0.8333
     },
     {
      "family": "F. Dữ liệu thiếu",
@@ -341,8 +341,8 @@
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.697,
-     "mean_rank": 3.1409,
+     "p_base": 0.7182,
+     "mean_rank": 2.8725,
      "rank_distribution": [
       {
        "rank": 1,
@@ -350,163 +350,26 @@
       },
       {
        "rank": 2,
-       "prob": 0.0838
+       "prob": 0.2047
       },
       {
        "rank": 3,
-       "prob": 0.697
+       "prob": 0.7182
       },
       {
        "rank": 4,
-       "prob": 0.2137
+       "prob": 0.077
       },
       {
        "rank": 5,
-       "prob": 0.0055
-      }
-     ]
-    },
-    {
-     "method": "Dirichlet α=10",
-     "p_base": 0.9866,
-     "mean_rank": 3.0132,
-     "rank_distribution": [
-      {
-       "rank": 1,
-       "prob": 0.0
-      },
-      {
-       "rank": 2,
        "prob": 0.0001
-      },
-      {
-       "rank": 3,
-       "prob": 0.9866
-      },
-      {
-       "rank": 4,
-       "prob": 0.0133
-      },
-      {
-       "rank": 5,
-       "prob": 0.0
-      }
-     ]
-    },
-    {
-     "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.8326,
-     "mean_rank": 3.0925,
-     "rank_distribution": [
-      {
-       "rank": 1,
-       "prob": 0.0
-      },
-      {
-       "rank": 2,
-       "prob": 0.0387
-      },
-      {
-       "rank": 3,
-       "prob": 0.8326
-      },
-      {
-       "rank": 4,
-       "prob": 0.1262
-      },
-      {
-       "rank": 5,
-       "prob": 0.0025
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bank": "vcb",
-   "bank_name": "Vietcombank",
-   "group": "NHTM Nhà nước",
-   "base_score": 43.75,
-   "base_rank": 4,
-   "min_rank": 4,
-   "max_rank": 5,
-   "min_score": 39.4401,
-   "max_score": 45.8333,
-   "n_scenarios": 40,
-   "stable_share": 0.95,
-   "verdict": "Vững",
-   "is_robust": true,
-   "borderline": false,
-   "tier": "Độc lập (hạng 4)",
-   "stable_by_family": [
-    {
-     "family": "A. Trọng số DBI/DTI",
-     "n_scenarios": 3,
-     "share": 1.0
-    },
-    {
-     "family": "B. Trọng số trụ cột ±20%",
-     "n_scenarios": 12,
-     "share": 1.0
-    },
-    {
-     "family": "C. Kỹ thuật chuẩn hóa",
-     "n_scenarios": 2,
-     "share": 0.0
-    },
-    {
-     "family": "D. Loại một trụ cột",
-     "n_scenarios": 6,
-     "share": 1.0
-    },
-    {
-     "family": "F. Dữ liệu thiếu",
-     "n_scenarios": 1,
-     "share": 1.0
-    },
-    {
-     "family": "G. Dịch cận [L,U] cùng lúc",
-     "n_scenarios": 2,
-     "share": 1.0
-    },
-    {
-     "family": "G. Dịch cận từng chỉ số",
-     "n_scenarios": 14,
-     "share": 1.0
-    }
-   ],
-   "monte_carlo": [
-    {
-     "method": "Dirichlet α=1",
-     "p_base": 0.5324,
-     "mean_rank": 3.9573,
-     "rank_distribution": [
-      {
-       "rank": 1,
-       "prob": 0.0124
-      },
-      {
-       "rank": 2,
-       "prob": 0.0519
-      },
-      {
-       "rank": 3,
-       "prob": 0.1525
-      },
-      {
-       "rank": 4,
-       "prob": 0.5324
-      },
-      {
-       "rank": 5,
-       "prob": 0.2508
       }
      ]
     },
     {
      "method": "Dirichlet α=10",
-     "p_base": 0.9606,
-     "mean_rank": 4.0128,
+     "p_base": 0.9777,
+     "mean_rank": 2.9777,
      "rank_distribution": [
       {
        "rank": 1,
@@ -514,26 +377,26 @@
       },
       {
        "rank": 2,
-       "prob": 0.0
+       "prob": 0.0223
       },
       {
        "rank": 3,
-       "prob": 0.0133
+       "prob": 0.9777
       },
       {
        "rank": 4,
-       "prob": 0.9606
+       "prob": 0.0
       },
       {
        "rank": 5,
-       "prob": 0.0261
+       "prob": 0.0
       }
      ]
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.8028,
-     "mean_rank": 3.9406,
+     "p_base": 0.817,
+     "mean_rank": 3.0279,
      "rank_distribution": [
       {
        "rank": 1,
@@ -541,19 +404,19 @@
       },
       {
        "rank": 2,
-       "prob": 0.0016
+       "prob": 0.0854
       },
       {
        "rank": 3,
-       "prob": 0.1259
+       "prob": 0.817
       },
       {
        "rank": 4,
-       "prob": 0.8028
+       "prob": 0.0819
       },
       {
        "rank": 5,
-       "prob": 0.0697
+       "prob": 0.0157
       }
      ]
     }
@@ -563,43 +426,43 @@
    "bank": "agribank",
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
-   "base_score": 39.4635,
-   "base_rank": 5,
+   "base_score": 40.0673,
+   "base_rank": 4,
    "min_rank": 4,
    "max_rank": 5,
-   "min_score": 34.8562,
-   "max_score": 44.8562,
+   "min_score": 35.5807,
+   "max_score": 45.5807,
    "n_scenarios": 40,
-   "stable_share": 0.925,
-   "verdict": "Vững",
-   "is_robust": true,
+   "stable_share": 0.725,
+   "verdict": "Nhóm cùng mức",
+   "is_robust": false,
    "borderline": false,
-   "tier": "Độc lập (hạng 5)",
+   "tier": "Nhóm cùng mức (hạng 4–5)",
    "stable_by_family": [
     {
      "family": "A. Trọng số DBI/DTI",
      "n_scenarios": 3,
-     "share": 0.6667
+     "share": 1.0
     },
     {
      "family": "B. Trọng số trụ cột ±20%",
      "n_scenarios": 12,
-     "share": 1.0
+     "share": 0.6667
     },
     {
      "family": "C. Kỹ thuật chuẩn hóa",
      "n_scenarios": 2,
-     "share": 0.0
+     "share": 1.0
     },
     {
      "family": "D. Loại một trụ cột",
      "n_scenarios": 6,
-     "share": 1.0
+     "share": 0.5
     },
     {
      "family": "F. Dữ liệu thiếu",
      "n_scenarios": 1,
-     "share": 1.0
+     "share": 0.0
     },
     {
      "family": "G. Dịch cận [L,U] cùng lúc",
@@ -609,41 +472,41 @@
     {
      "family": "G. Dịch cận từng chỉ số",
      "n_scenarios": 14,
-     "share": 1.0
+     "share": 0.7857
     }
    ],
    "monte_carlo": [
     {
      "method": "Dirichlet α=1",
-     "p_base": 0.7364,
-     "mean_rank": 4.6841,
+     "p_base": 0.3704,
+     "mean_rank": 4.2605,
      "rank_distribution": [
       {
        "rank": 1,
-       "prob": 0.0
+       "prob": 0.0001
       },
       {
        "rank": 2,
-       "prob": 0.0117
+       "prob": 0.0505
       },
       {
        "rank": 3,
-       "prob": 0.0289
+       "prob": 0.1086
       },
       {
        "rank": 4,
-       "prob": 0.223
+       "prob": 0.3704
       },
       {
        "rank": 5,
-       "prob": 0.7364
+       "prob": 0.4704
       }
      ]
     },
     {
      "method": "Dirichlet α=10",
-     "p_base": 0.9739,
-     "mean_rank": 4.9739,
+     "p_base": 0.5278,
+     "mean_rank": 4.4718,
      "rank_distribution": [
       {
        "rank": 1,
@@ -655,22 +518,132 @@
       },
       {
        "rank": 3,
-       "prob": 0.0
+       "prob": 0.0002
       },
       {
        "rank": 4,
-       "prob": 0.0261
+       "prob": 0.5278
       },
       {
        "rank": 5,
-       "prob": 0.9739
+       "prob": 0.472
       }
      ]
     },
     {
      "method": "Nhiễu rubric q=0.25",
-     "p_base": 0.9278,
-     "mean_rank": 4.9259,
+     "p_base": 0.492,
+     "mean_rank": 4.4117,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0
+      },
+      {
+       "rank": 2,
+       "prob": 0.0015
+      },
+      {
+       "rank": 3,
+       "prob": 0.0459
+      },
+      {
+       "rank": 4,
+       "prob": 0.492
+      },
+      {
+       "rank": 5,
+       "prob": 0.4606
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "vcb",
+   "bank_name": "Vietcombank",
+   "group": "NHTM Nhà nước",
+   "base_score": 40.014,
+   "base_rank": 5,
+   "min_rank": 4,
+   "max_rank": 5,
+   "min_score": 38.3613,
+   "max_score": 41.6667,
+   "n_scenarios": 40,
+   "stable_share": 0.7,
+   "verdict": "Nhóm cùng mức",
+   "is_robust": false,
+   "borderline": false,
+   "tier": "Nhóm cùng mức (hạng 4–5)",
+   "stable_by_family": [
+    {
+     "family": "A. Trọng số DBI/DTI",
+     "n_scenarios": 3,
+     "share": 0.6667
+    },
+    {
+     "family": "B. Trọng số trụ cột ±20%",
+     "n_scenarios": 12,
+     "share": 0.6667
+    },
+    {
+     "family": "C. Kỹ thuật chuẩn hóa",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "D. Loại một trụ cột",
+     "n_scenarios": 6,
+     "share": 0.5
+    },
+    {
+     "family": "F. Dữ liệu thiếu",
+     "n_scenarios": 1,
+     "share": 0.0
+    },
+    {
+     "family": "G. Dịch cận [L,U] cùng lúc",
+     "n_scenarios": 2,
+     "share": 1.0
+    },
+    {
+     "family": "G. Dịch cận từng chỉ số",
+     "n_scenarios": 14,
+     "share": 0.7857
+    }
+   ],
+   "monte_carlo": [
+    {
+     "method": "Dirichlet α=1",
+     "p_base": 0.4826,
+     "mean_rank": 4.4115,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0
+      },
+      {
+       "rank": 2,
+       "prob": 0.0081
+      },
+      {
+       "rank": 3,
+       "prob": 0.0549
+      },
+      {
+       "rank": 4,
+       "prob": 0.4544
+      },
+      {
+       "rank": 5,
+       "prob": 0.4826
+      }
+     ]
+    },
+    {
+     "method": "Dirichlet α=10",
+     "p_base": 0.528,
+     "mean_rank": 4.528,
      "rank_distribution": [
       {
        "rank": 1,
@@ -682,15 +655,42 @@
       },
       {
        "rank": 3,
-       "prob": 0.0019
+       "prob": 0.0
       },
       {
        "rank": 4,
-       "prob": 0.0703
+       "prob": 0.472
       },
       {
        "rank": 5,
-       "prob": 0.9278
+       "prob": 0.528
+      }
+     ]
+    },
+    {
+     "method": "Nhiễu rubric q=0.25",
+     "p_base": 0.5237,
+     "mean_rank": 4.4707,
+     "rank_distribution": [
+      {
+       "rank": 1,
+       "prob": 0.0
+      },
+      {
+       "rank": 2,
+       "prob": 0.0012
+      },
+      {
+       "rank": 3,
+       "prob": 0.0506
+      },
+      {
+       "rank": 4,
+       "prob": 0.4245
+      },
+      {
+       "rank": 5,
+       "prob": 0.5237
       }
      ]
     }
@@ -708,9 +708,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.0246,
+    "Dirichlet α=1": 0.0788,
     "Dirichlet α=10": 0.0,
-    "Nhiễu rubric q=0.25": 0.0036
+    "Nhiễu rubric q=0.25": 0.0549
    }
   },
   {
@@ -723,9 +723,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.0379,
-    "Dirichlet α=10": 0.0,
-    "Nhiễu rubric q=0.25": 0.0
+    "Dirichlet α=1": 0.1409,
+    "Dirichlet α=10": 0.0002,
+    "Nhiễu rubric q=0.25": 0.0017
    }
   },
   {
@@ -738,7 +738,7 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.0,
+    "Dirichlet α=1": 0.0001,
     "Dirichlet α=10": 0.0,
     "Nhiễu rubric q=0.25": 0.0
    }
@@ -746,31 +746,31 @@
   {
    "bank_a": "agribank",
    "bank_b": "vcb",
-   "share_a_above": 0.05,
-   "share_b_above": 0.925,
+   "share_a_above": 0.7,
+   "share_b_above": 0.275,
    "share_tie": 0.025,
+   "distinguishable": false,
+   "borderline": false,
+   "swapped_in_some_scenario": true,
+   "monte_carlo_a_above": {
+    "Dirichlet α=1": 0.5197,
+    "Dirichlet α=10": 0.528,
+    "Nhiễu rubric q=0.25": 0.5317
+   }
+  },
+  {
+   "bank_a": "bidv",
+   "bank_b": "mb",
+   "share_a_above": 0.025,
+   "share_b_above": 0.975,
+   "share_tie": 0.0,
    "distinguishable": true,
    "borderline": false,
    "swapped_in_some_scenario": true,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.2534,
-    "Dirichlet α=10": 0.0261,
-    "Nhiễu rubric q=0.25": 0.0705
-   }
-  },
-  {
-   "bank_a": "bidv",
-   "bank_b": "mb",
-   "share_a_above": 0.0,
-   "share_b_above": 1.0,
-   "share_tie": 0.0,
-   "distinguishable": true,
-   "borderline": false,
-   "swapped_in_some_scenario": false,
-   "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.0983,
-    "Dirichlet α=10": 0.0001,
-    "Nhiễu rubric q=0.25": 0.0389
+    "Dirichlet α=1": 0.2548,
+    "Dirichlet α=10": 0.0223,
+    "Nhiễu rubric q=0.25": 0.0862
    }
   },
   {
@@ -798,9 +798,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.7854,
-    "Dirichlet α=10": 0.9867,
-    "Nhiễu rubric q=0.25": 0.8722
+    "Dirichlet α=1": 0.9515,
+    "Dirichlet α=10": 1.0,
+    "Nhiễu rubric q=0.25": 0.9408
    }
   },
   {
@@ -813,9 +813,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.01,
+    "Dirichlet α=1": 0.011,
     "Dirichlet α=10": 0.0,
-    "Nhiễu rubric q=0.25": 0.0003
+    "Nhiễu rubric q=0.25": 0.0
    }
   },
   {
@@ -828,9 +828,9 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.9309,
+    "Dirichlet α=1": 0.9403,
     "Dirichlet α=10": 1.0,
-    "Nhiễu rubric q=0.25": 0.9979
+    "Nhiễu rubric q=0.25": 0.9982
    }
   },
   {
@@ -843,7 +843,7 @@
    "borderline": false,
    "swapped_in_some_scenario": false,
    "monte_carlo_a_above": {
-    "Dirichlet α=1": 0.9876,
+    "Dirichlet α=1": 1.0,
     "Dirichlet α=10": 1.0,
     "Nhiễu rubric q=0.25": 1.0
    }
@@ -888,16 +888,16 @@
   {
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Khách hàng -20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Chiến lược +20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "B. Trọng số trụ cột ±20%",
@@ -916,9 +916,9 @@
   {
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Công nghệ -20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "B. Trọng số trụ cột ±20%",
@@ -951,9 +951,9 @@
   {
    "family": "B. Trọng số trụ cột ±20%",
    "scenario": "Dữ liệu +20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "B. Trọng số trụ cột ±20%",
@@ -965,23 +965,23 @@
   {
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Min-max trong 5 NH",
-   "kendall_tau": 0.8,
-   "spearman_rho": 0.9,
-   "n_rank_changes": 2
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
   },
   {
    "family": "C. Kỹ thuật chuẩn hóa",
    "scenario": "Xếp hạng phần trăm",
-   "kendall_tau": 0.8,
-   "spearman_rho": 0.9,
-   "n_rank_changes": 2
+   "kendall_tau": 1.0,
+   "spearman_rho": 1.0,
+   "n_rank_changes": 0
   },
   {
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Khách hàng",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "D. Loại một trụ cột",
@@ -993,23 +993,23 @@
   {
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Công nghệ",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Vận hành",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "D. Loại một trụ cột",
    "scenario": "Bỏ Văn hóa",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "D. Loại một trụ cột",
@@ -1021,9 +1021,9 @@
   {
    "family": "F. Dữ liệu thiếu",
    "scenario": "Thiếu = 0 (chỉ để thử độ nhạy)",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "G. Dịch cận [L,U] cùng lúc",
@@ -1105,16 +1105,16 @@
   {
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q1 +20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "O-Q2 -20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "G. Dịch cận từng chỉ số",
@@ -1126,9 +1126,9 @@
   {
    "family": "G. Dịch cận từng chỉ số",
    "scenario": "C-Q2 -20%",
-   "kendall_tau": 1.0,
-   "spearman_rho": 1.0,
-   "n_rank_changes": 0
+   "kendall_tau": 0.8,
+   "spearman_rho": 0.9,
+   "n_rank_changes": 2
   },
   {
    "family": "G. Dịch cận từng chỉ số",
@@ -1143,12 +1143,12 @@
    {
     "a": "Cận cố định",
     "b": "Min-max",
-    "kendall_tau": 0.8
+    "kendall_tau": 1.0
    },
    {
     "a": "Cận cố định",
     "b": "Xếp hạng %",
-    "kendall_tau": 0.8
+    "kendall_tau": 1.0
    },
    {
     "a": "Min-max",
@@ -1176,58 +1176,8 @@
  },
  "keyword_vs_rubric": [
   {
-   "year": 2020,
-   "pillar": "TẤT CẢ TRỤ",
-   "lang": "en",
-   "n_banks": 3,
-   "spearman_dbi_vs_bm25": 0.5,
-   "spearman_dbi_vs_coverage": 0.5,
-   "status": "đã có"
-  },
-  {
-   "year": 2021,
-   "pillar": "TẤT CẢ TRỤ",
-   "lang": "en",
-   "n_banks": 3,
-   "spearman_dbi_vs_bm25": 0.866,
-   "spearman_dbi_vs_coverage": 0.866,
-   "status": "đã có"
-  },
-  {
-   "year": 2022,
-   "pillar": "TẤT CẢ TRỤ",
-   "lang": "en",
-   "n_banks": 3,
-   "spearman_dbi_vs_bm25": 1.0,
-   "spearman_dbi_vs_coverage": 1.0,
-   "status": "đã có"
-  },
-  {
-   "year": 2023,
-   "pillar": "TẤT CẢ TRỤ",
-   "lang": "en",
-   "n_banks": 3,
-   "spearman_dbi_vs_bm25": 1.0,
-   "spearman_dbi_vs_coverage": 1.0,
-   "status": "đã có"
-  },
-  {
-   "year": 2024,
-   "pillar": "TẤT CẢ TRỤ",
-   "lang": "en",
-   "n_banks": 3,
-   "spearman_dbi_vs_bm25": 0.5,
-   "spearman_dbi_vs_coverage": 0.5,
-   "status": "đã có"
-  },
-  {
-   "year": 2025,
-   "pillar": "TẤT CẢ TRỤ",
-   "lang": "en",
-   "n_banks": 3,
-   "spearman_dbi_vs_bm25": 0.5,
-   "spearman_dbi_vs_coverage": 1.0,
-   "status": "đã có"
+   "status": "CHƯA CHẠY",
+   "note": "Thiếu out/tm_vs_dbi.csv: cần data/text (bước 1-2), rồi `python 07_text_mining.py --compare`; chạy lại 11_sensitivity.py."
   }
  ],
  "note": "Có thẩm quyền hơn /sensitivity (chỉ kịch bản trọng số). Hạng 'Vững' khi giữ nguyên trong >= 80% kịch bản rời rạc; ngân hàng đổi hạng nhiều hơn được gộp 'Nhóm cùng mức'. Thành phần Monte Carlo chỉ mô tả xác suất."

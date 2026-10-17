@@ -43,7 +43,7 @@
     {
      "year": 2023,
      "value": 43.75,
-     "rank": 5,
+     "rank": 4,
      "maturity_level_number": 2,
      "data_confidence": 0.1818,
      "n_dti": 0
@@ -106,15 +106,15 @@
     },
     {
      "year": 2024,
-     "value": 60.0,
-     "rank": 4,
+     "value": 50.0346,
+     "rank": 3,
      "maturity_level_number": 3,
      "data_confidence": 0.3636,
      "n_dti": 1
     },
     {
      "year": 2025,
-     "value": 45.0,
+     "value": 35.4442,
      "rank": 4,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
@@ -154,15 +154,15 @@
     },
     {
      "year": 2023,
-     "value": 40.0,
+     "value": 26.8481,
      "rank": 2,
-     "maturity_level_number": 3,
+     "maturity_level_number": 2,
      "data_confidence": 0.6364,
      "n_dti": 1
     },
     {
      "year": 2024,
-     "value": 50.0,
+     "value": 44.8389,
      "rank": 2,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
@@ -170,9 +170,9 @@
     },
     {
      "year": 2025,
-     "value": 65.0,
-     "rank": 3,
-     "maturity_level_number": 4,
+     "value": 64.8276,
+     "rank": 2,
+     "maturity_level_number": 3,
      "data_confidence": 0.8182,
      "n_dti": 1
     }
@@ -210,7 +210,7 @@
     },
     {
      "year": 2023,
-     "value": 40.0,
+     "value": 39.4549,
      "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.4545,
@@ -218,7 +218,7 @@
     },
     {
      "year": 2024,
-     "value": 50.0,
+     "value": 38.2734,
      "rank": 1,
      "maturity_level_number": 3,
      "data_confidence": 0.5455,
@@ -226,7 +226,7 @@
     },
     {
      "year": 2025,
-     "value": 65.0,
+     "value": 52.8229,
      "rank": 1,
      "maturity_level_number": 4,
      "data_confidence": 0.7273,
@@ -266,25 +266,25 @@
     },
     {
      "year": 2023,
-     "value": 60.0,
-     "rank": 4,
+     "value": 42.6622,
+     "rank": 5,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
      "n_dti": 1
     },
     {
      "year": 2024,
-     "value": 83.6563,
-     "rank": 3,
+     "value": 65.6553,
+     "rank": 4,
      "maturity_level_number": 3,
      "data_confidence": 0.2727,
      "n_dti": 1
     },
     {
      "year": 2025,
-     "value": 90.0,
-     "rank": 2,
-     "maturity_level_number": 4,
+     "value": 75.9225,
+     "rank": 3,
+     "maturity_level_number": 3,
      "data_confidence": 0.5455,
      "n_dti": 1
     }

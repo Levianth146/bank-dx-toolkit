@@ -1,7 +1,2 @@
-﻿year,pillar,lang,n_banks,spearman_dbi_vs_bm25,spearman_dbi_vs_coverage,status
-2020,TẤT CẢ TRỤ,en,3,0.5,0.5,đã có
-2021,TẤT CẢ TRỤ,en,3,0.866,0.866,đã có
-2022,TẤT CẢ TRỤ,en,3,1.0,1.0,đã có
-2023,TẤT CẢ TRỤ,en,3,1.0,1.0,đã có
-2024,TẤT CẢ TRỤ,en,3,0.5,0.5,đã có
-2025,TẤT CẢ TRỤ,en,3,0.5,1.0,đã có
+﻿status,note
+CHƯA CHẠY,"Thiếu out/tm_vs_dbi.csv: cần data/text (bước 1-2), rồi `python 07_text_mining.py --compare`; chạy lại 11_sensitivity.py."

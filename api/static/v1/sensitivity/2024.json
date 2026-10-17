@@ -19,17 +19,17 @@
      "level": "Mức 2 - Bắt đầu"
     },
     "80/20": {
-     "score": 48.3577,
+     "score": 46.0045,
      "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     },
     "70/30": {
-     "score": 49.099,
+     "score": 45.5692,
      "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     },
     "60/40": {
-     "score": 49.8403,
+     "score": 45.1339,
      "rank": 5,
      "level": "Mức 2 - Bắt đầu"
     }
@@ -50,24 +50,24 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 64.4986,
-     "rank": 4,
+     "score": 61.0732,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 64.4562,
-     "rank": 4,
+     "score": 59.3182,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 64.4138,
-     "rank": 4,
+     "score": 57.5632,
+     "rank": 3,
      "level": "Mức 3 - Hình thành"
     }
    },
    "rank_stable_pct": 0.6667,
    "rank_min": 1,
-   "rank_max": 4,
+   "rank_max": 3,
    "stable_under_weights": false
   },
   {
@@ -81,23 +81,23 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 65.0,
+     "score": 62.6277,
      "rank": 2,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 66.7708,
-     "rank": 1,
+     "score": 63.2124,
+     "rank": 2,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 68.5417,
-     "rank": 1,
+     "score": 63.7971,
+     "rank": 2,
      "level": "Mức 3 - Hình thành"
     }
    },
-   "rank_stable_pct": 0.0,
-   "rank_min": 1,
+   "rank_stable_pct": 0.6667,
+   "rank_min": 2,
    "rank_max": 4,
    "stable_under_weights": false
   },
@@ -112,22 +112,22 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 65.2083,
+     "score": 63.6548,
      "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 66.5625,
-     "rank": 2,
+     "score": 64.2322,
+     "rank": 1,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 67.9167,
-     "rank": 2,
+     "score": 64.8096,
+     "rank": 1,
      "level": "Mức 3 - Hình thành"
     }
    },
-   "rank_stable_pct": 0.0,
+   "rank_stable_pct": 0.6667,
    "rank_min": 1,
    "rank_max": 3,
    "stable_under_weights": false
@@ -143,42 +143,42 @@
      "level": "Mức 3 - Hình thành"
     },
     "80/20": {
-     "score": 64.9844,
-     "rank": 3,
+     "score": 60.735,
+     "rank": 4,
      "level": "Mức 3 - Hình thành"
     },
     "70/30": {
-     "score": 65.1849,
-     "rank": 3,
+     "score": 58.8108,
+     "rank": 4,
      "level": "Mức 3 - Hình thành"
     },
     "60/40": {
-     "score": 65.3854,
-     "rank": 3,
+     "score": 56.8866,
+     "rank": 4,
      "level": "Mức 3 - Hình thành"
     }
    },
    "rank_stable_pct": 0.6667,
    "rank_min": 2,
-   "rank_max": 3,
+   "rank_max": 4,
    "stable_under_weights": false
   }
  ],
  "agreement_with_base": [
   {
    "scenario": "100/0",
-   "kendall_tau": 0.0,
-   "spearman": 0.1
+   "kendall_tau": 0.2,
+   "spearman": 0.2
   },
   {
    "scenario": "70/30",
-   "kendall_tau": 0.8,
-   "spearman": 0.9
+   "kendall_tau": 1.0,
+   "spearman": 1.0
   },
   {
    "scenario": "60/40",
-   "kendall_tau": 0.8,
-   "spearman": 0.9
+   "kendall_tau": 1.0,
+   "spearman": 1.0
   }
  ],
  "note": "Chỉ kịch bản trọng số DBI/DTI (mục V.2). rank_stable_pct = tỷ lệ kịch bản khác kịch bản cơ sở giữ nguyên hạng; stable_under_weights khi >= 80%. CHỈ là kịch bản trọng số; kết luận Vững/Nhóm cùng mức đầy đủ nằm ở /sensitivity/full."

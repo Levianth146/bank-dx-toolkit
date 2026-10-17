@@ -51,7 +51,7 @@ BORDER = 0.05                                            # |tỷ lệ - 80%| < 5
 BANK_LABEL = {"tcb": "Techcombank", "vcb": "Vietcombank", "mb": "MB", "bidv": "BIDV", "agribank": "Agribank"}
 # Chỉ số có cận do nghiên cứu suy ra/tham chiếu -> đáng đưa vào kiểm tra độ nhạy cận.
 # (cận tự nhiên 0-100% và thang 1-5 sao không dịch chuyển được một cách có nghĩa)
-PERTURB_STATUS = {"sourced", "derived", "external_reference"}
+PERTURB_STATUS = {"sourced", "derived", "external_reference", "sample_percentile"}
 
 
 # ----------------------------------------------------------------------------------------------

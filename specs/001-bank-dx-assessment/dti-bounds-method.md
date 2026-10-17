@@ -1,13 +1,27 @@
-# Cận chuẩn hóa DTI cố định — phiên bản 2026-10-12
+# Cận chuẩn hóa DTI cố định — phiên bản v2 (2026-10-17)
 
-Cấu hình áp dụng: `config/dti_bounds.yaml`, phiên bản `fixed-reference-v1-2026-10-12`.
+Cấu hình áp dụng: `config/dti_bounds.yaml`, phiên bản `fixed-reference-v2-2026-10-17`.
+
+## Thay đổi v2 so với v1 (2026-10-12)
+
+Cận 4 chỉ số T-Q1, O-Q1, O-Q2, C-Q2 đổi từ tham chiếu DBS sang phân vị 10% và 90% của mẫu gộp
+(mọi ngân hàng và năm có dữ liệu, tính một lần từ `out/dti_indicators.csv`, rồi cố định).
+Lý do: cận v1 làm điểm bão hòa nên chỉ số mất khả năng phân biệt (O-Q2: 13/13 quan sát bằng 100;
+C-Q2: 16/20; T-Q1: 10/24; O-Q1: 13/20 bằng 0 và 7/20 bằng 100). Các chỉ số còn lại giữ nguyên v1.
+
+Trung thực về quy trình: thay đổi này được làm **sau khi** đã thấy dữ liệu và kết quả v1, do vấn đề
+độ phân biệt của thang đo chứ không nhằm đổi thứ hạng. Điểm và hạng thay đổi theo; thứ hạng giữa
+(hạng 2–4) phụ thuộc vào lựa chọn cận. Bản v1 lưu tại `out/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml`
+và nên báo cáo như kịch bản đối chứng. Với 4 chỉ số này, thang điểm là thang tương đối giữa 5 ngân hàng,
+không phải mức tuyệt đối; điểm 100 nghĩa là ở nhóm đầu của mẫu, không phải "dẫn đầu ngành".
 Khóa cận trước lần tính chính thức tiếp theo. Dự án đã có kết quả nháp trước ngày khóa;
 đây không phải tiền đăng ký trước khi nhìn thấy dữ liệu.
 
 ## Lựa chọn phương pháp
 
 Dùng biên tự nhiên, mốc đã có trong cấu hình và tham chiếu công bố của ngân hàng ngoài mẫu.
-Không dùng MIN/MAX, phân vị hay thứ hạng của Agribank, MB, Techcombank, BIDV, Vietcombank
+Ngoại lệ v2: T-Q1, O-Q1, O-Q2, C-Q2 dùng phân vị 10%/90% của mẫu gộp (xem trên); các chỉ số khác
+không dùng MIN/MAX, phân vị hay thứ hạng của Agribank, MB, Techcombank, BIDV, Vietcombank
 để chọn hoặc điều chỉnh cận. Các mốc ngoại mẫu là lựa chọn của nghiên cứu, không phải
 chuẩn ngành bắt buộc, phân vị 90% của ngành hoặc bằng chứng về mức tối ưu.
 
@@ -26,12 +40,12 @@ nhiều cận và khác biệt giữa thị trường, cơ cấu kinh doanh, k�
 | K-Q3: đánh giá ứng dụng (sao) | 1 | 5 | Tăng | Biên thang đo |
 | S-Q1: tăng tỷ lệ giao dịch số (điểm %/năm) | 0 | 18 | Tăng | Mục tiêu suy ra kế thừa |
 | S-Q2: CAGR khách hàng số (%/năm) | 0 | 24.455463 | Tăng | Tham chiếu ngoại mẫu |
-| T-Q1: nguyên giá phần mềm / tài sản bình quân (%) | 0 | 0.303798 | Tăng | Tham chiếu ngoại mẫu |
+| T-Q1: nguyên giá phần mềm / tài sản bình quân (%) | 0.0799 | 0.5657 | Tăng | Phân vị 10/90% mẫu gộp (v2) |
 | T-Q2: phủ nền tảng (%) | 0 | 100 | Tăng | Biên checklist |
-| O-Q1: thay đổi CIR (điểm %/năm) | -0.584529 | 0 | Giảm | Tham chiếu ngoại mẫu |
-| O-Q2: CAGR thu nhập / nhân sự bình quân (%/năm) | 0 | 1.18425 | Tăng | Tham chiếu ngoại mẫu |
+| O-Q1: thay đổi CIR (điểm %/năm) | -1.1226 | 1.4844 | Giảm | Phân vị 10/90% mẫu gộp (v2) |
+| O-Q2: CAGR thu nhập / nhân sự bình quân (%/năm) | 3.0577 | 9.4781 | Tăng | Phân vị 10/90% mẫu gộp (v2) |
 | C-Q1: nhân sự công nghệ (%) | 0 | 100 | Tăng | Biên tỷ lệ |
-| C-Q2: đào tạo (giờ/người/năm) | 0 | 38.7 | Tăng | Tham chiếu ngoại mẫu |
+| C-Q2: đào tạo (giờ/người/năm) | 34.5 | 83.331 | Tăng | Phân vị 10/90% mẫu gộp (v2) |
 
 Chi tiết nguồn và phép tính nằm ngay trong YAML. Giá trị suy ra làm tròn đến 6 chữ số
 sau dấu phẩy. Số liệu đầu vào tham chiếu có tệp, trang và URL tại
@@ -74,7 +88,9 @@ Ngân hàng đã gần trần giao dịch số có ít dư địa tăng; mô hì
 
 ## Hạn chế và kiểm chứng trước công bố
 
-Cận tham chiếu thấp có thể kẹp nhiều quan sát tại 100, đặc biệt T-Q1, O-Q2 và C-Q2.
+Cận tham chiếu thấp có thể kẹp nhiều quan sát tại 100 (đây là lý do đổi sang v2 cho T-Q1, O-Q2, C-Q2).
+Cận phân vị phụ thuộc mẫu (n = 24, 20, 13, 20 quan sát); O-Q2 có phân vị 75% sát phân vị 90% nên vẫn chụm ở đỉnh.
+S-Q2 (1 quan sát) và C-Q1 (1 quan sát) chưa đủ dữ liệu để hiệu chỉnh và chưa có ý nghĩa xếp hạng.
 Điểm 100 nghĩa là đạt/vượt mốc đã chọn, không có nghĩa tối ưu hay dẫn đầu ngành.
 Cần báo cáo tỷ lệ kẹp trần/sàn và số chỉ số còn thiếu, không tăng U chỉ để tách thứ hạng.
 Khác biệt định nghĩa đào tạo, khách hàng số, nhân sự, phạm vi hợp nhất và vốn hóa phần mềm

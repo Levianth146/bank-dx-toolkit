@@ -10,7 +10,7 @@ Repository gồm pipeline thu thập/chấm điểm, API cho dashboard và phân
 
 Quy trình chính: **01–04 → 09c → 12 --bundle → 10**. Điểm, bằng chứng và phiên bản nằm trong `out/coding_auto.xlsx`; xem [phương pháp thuật toán](specs/001-bank-dx-assessment/algorithm-scoring.md).
 
-Bộ cận DTI đã khóa ở phiên bản `fixed-reference-v1-2026-10-12`; nguồn, phép tính và hạn chế được mô tả trong [phương pháp chọn L/U](specs/001-bank-dx-assessment/dti-bounds-method.md). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn ngành bắt buộc. Kết quả hiện có cho 5 ngân hàng trong giai đoạn 2020–2025 nằm ở `out/score_summary.csv`; chi tiết trụ cột ở `out/scores.csv` và chỉ số DTI ở `out/dti_indicators.csv`. File có hậu tố `_draft` là kết quả thử trước đó.
+Bộ cận DTI đã khóa ở phiên bản `fixed-reference-v2-2026-10-17` (v1 giữ làm kịch bản đối chứng); nguồn, phép tính và hạn chế được mô tả trong [phương pháp chọn L/U](specs/001-bank-dx-assessment/dti-bounds-method.md). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn ngành bắt buộc. Kết quả hiện có cho 5 ngân hàng trong giai đoạn 2020–2025 nằm ở `out/score_summary.csv`; chi tiết trụ cột ở `out/scores.csv` và chỉ số DTI ở `out/dti_indicators.csv`. File có hậu tố `_draft` là kết quả thử trước đó.
 
 Sau khi đối chiếu và cập nhật dữ liệu DTI, chạy từ thư mục `scripts/`:
 

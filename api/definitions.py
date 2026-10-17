@@ -42,6 +42,7 @@ BOUNDS_STATUS_LABELS = {
     "derived": "Suy ra theo phương pháp trong dti-bounds-method.md",
     "external_reference": "Cận tham chiếu của nghiên cứu (không phải chuẩn ngành bắt buộc)",
     "natural": "Thang tự nhiên của chỉ số",
+    "sample_percentile": "Phân vị 10%/90% của mẫu gộp 5 ngân hàng (thang tương đối, phụ thuộc mẫu)",
 }
 
 # Biến đầu vào của các chỉ tiêu Lớp C (ROE, ROA, CIR, CASA, thu nhập ngoài lãi) -> dùng để gắn nhãn `used_by`.

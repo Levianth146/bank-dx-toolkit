@@ -6,7 +6,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 48.3577,
+   "score": 46.0045,
    "rank": 5,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -41,8 +41,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 62.5,
-     "dti": 25.7297,
-     "p": 55.1459,
+     "dti": 0.0,
+     "p": 50.0,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -51,8 +51,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 18.75,
-     "dti": 100.0,
-     "p": 35.0,
+     "dti": 55.134,
+     "p": 26.0268,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -84,8 +84,8 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 64.4986,
-   "rank": 4,
+   "score": 61.0732,
+   "rank": 3,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -121,8 +121,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 87.5,
-     "dti": 41.2069,
-     "p": 78.2414,
+     "dti": 9.3219,
+     "p": 71.8644,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -131,8 +131,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 56.25,
-     "dti": 50.0,
-     "p": 55.0,
+     "dti": 28.9525,
+     "p": 50.7905,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -141,8 +141,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 50.0,
-     "dti": 100.0,
-     "p": 60.0,
+     "dti": 50.173,
+     "p": 50.0346,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -164,7 +164,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 65.0,
+   "score": 62.6277,
    "rank": 2,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -199,8 +199,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 75.0,
-     "dti": 100.0,
-     "p": 80.0,
+     "dti": 58.9655,
+     "p": 71.7931,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -209,8 +209,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 81.25,
-     "dti": 100.0,
-     "p": 85.0,
+     "dti": 95.6711,
+     "p": 84.1342,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -219,8 +219,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 37.5,
-     "dti": 100.0,
-     "p": 50.0,
+     "dti": 74.1947,
+     "p": 44.8389,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -242,7 +242,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2024,
-   "score": 65.2083,
+   "score": 63.6548,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -287,8 +287,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 62.5,
-     "dti": 50.0,
-     "p": 60.0,
+     "dti": 62.0265,
+     "p": 62.4053,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -297,8 +297,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 37.5,
-     "dti": 100.0,
-     "p": 50.0,
+     "dti": 41.3672,
+     "p": 38.2734,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -320,8 +320,8 @@
    "bank_name": "Vietcombank",
    "group": "NHTM Nhà nước",
    "year": 2024,
-   "score": 64.9844,
-   "rank": 3,
+   "score": 60.735,
+   "rank": 4,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
    "maturity_level_name": "Hình thành",
@@ -367,8 +367,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 50.0,
-     "dti": 50.0,
-     "p": 50.0,
+     "dti": 12.5228,
+     "p": 42.5046,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -377,8 +377,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 81.25,
-     "dti": 93.2817,
-     "p": 83.6563,
+     "dti": 3.2766,
+     "p": 65.6553,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -451,9 +451,9 @@
    "code": "T",
    "name": "Công nghệ",
    "values": {
-    "agribank": 55.1459,
-    "bidv": 78.2414,
-    "mb": 80.0,
+    "agribank": 50.0,
+    "bidv": 71.8644,
+    "mb": 71.7931,
     "tcb": 75.0,
     "vcb": 68.75
    },
@@ -465,9 +465,9 @@
     "vcb": 68.75
    },
    "dti": {
-    "agribank": 25.7297,
-    "bidv": 41.2069,
-    "mb": 100.0,
+    "agribank": 0.0,
+    "bidv": 9.3219,
+    "mb": 58.9655,
     "tcb": 100.0,
     "vcb": null
    }
@@ -476,11 +476,11 @@
    "code": "O",
    "name": "Vận hành",
    "values": {
-    "agribank": 35.0,
-    "bidv": 55.0,
-    "mb": 85.0,
-    "tcb": 60.0,
-    "vcb": 50.0
+    "agribank": 26.0268,
+    "bidv": 50.7905,
+    "mb": 84.1342,
+    "tcb": 62.4053,
+    "vcb": 42.5046
    },
    "dbi": {
     "agribank": 18.75,
@@ -490,11 +490,11 @@
     "vcb": 50.0
    },
    "dti": {
-    "agribank": 100.0,
-    "bidv": 50.0,
-    "mb": 100.0,
-    "tcb": 50.0,
-    "vcb": 50.0
+    "agribank": 55.134,
+    "bidv": 28.9525,
+    "mb": 95.6711,
+    "tcb": 62.0265,
+    "vcb": 12.5228
    }
   },
   {
@@ -502,10 +502,10 @@
    "name": "Văn hóa",
    "values": {
     "agribank": 37.5,
-    "bidv": 60.0,
-    "mb": 50.0,
-    "tcb": 50.0,
-    "vcb": 83.6563
+    "bidv": 50.0346,
+    "mb": 44.8389,
+    "tcb": 38.2734,
+    "vcb": 65.6553
    },
    "dbi": {
     "agribank": 37.5,
@@ -516,10 +516,10 @@
    },
    "dti": {
     "agribank": null,
-    "bidv": 100.0,
-    "mb": 100.0,
-    "tcb": 100.0,
-    "vcb": 93.2817
+    "bidv": 50.173,
+    "mb": 74.1947,
+    "tcb": 41.3672,
+    "vcb": 3.2766
    }
   },
   {
@@ -558,7 +558,7 @@
    "mb"
   ],
   "T": [
-   "mb"
+   "tcb"
   ],
   "O": [
    "mb"

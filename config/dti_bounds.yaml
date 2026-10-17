@@ -1,12 +1,13 @@
 # config/dti_bounds.yaml - Giới hạn L, U để chuẩn hóa 11 chỉ số DTI:  z = 100 * min{1; max[0; (x - L)/(U - L)]}
-# Bộ cận cố định cho lần tính chính thức; không hiệu chỉnh theo mẫu 5 ngân hàng.
+# v2 (2026-10-17): thay cận 4 chỉ số T-Q1, O-Q1, O-Q2, C-Q2 bằng phân vị 10%/90% gộp của mẫu vì cận v1 gây bão hòa (xem dti-bounds-method.md).
+# Quyết định này đổi cận SAU khi đã thấy dữ liệu; bản v1 lưu ở out/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml làm kịch bản đối chứng.
 # Các cận external_reference là lựa chọn tham chiếu của nghiên cứu, KHÔNG phải chuẩn ngành bắt buộc.
 # direction=lower_better: z = 100 * clip((U-x)/(U-L), 0, 1), vẫn yêu cầu L < U.
 # Nguồn, phép tính và hạn chế: specs/001-bank-dx-assessment/dti-bounds-method.md.
 locked: true
-version: fixed-reference-v1-2026-10-12
-locked_on: '2026-10-12'
-calibration_method: natural_scales_and_external_bank_references
+version: fixed-reference-v2-2026-10-17
+locked_on: '2026-10-17'
+calibration_method: natural_scales_external_reference_and_pooled_sample_percentile
 method_document: specs/001-bank-dx-assessment/dti-bounds-method.md
 
 bounds:
@@ -81,13 +82,13 @@ bounds:
     name: Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân
     unit: "%"
     direction: higher_better
-    L: 0
-    U: 0.303798
-    status: external_reference
+    L: 0.0799
+    U: 0.5657
+    status: sample_percentile
     source_citation:
-      - "DBS Annual Report 2019, trang in 148-149 (PDF trang 77), note 26.1; trang in 189 (PDF trang 97): https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
-    rationale: "U = 100*1716/((550751+578946)/2), cùng đơn vị triệu SGD. Dùng nguyên giá, không dùng giá trị còn lại hoặc chi phí CNTT. L = 0."
-    caveat: "Khác biệt vốn hóa phần mềm và thuê dịch vụ có thể làm lệch so sánh. Chi nhiều chưa chứng minh hiệu quả; higher_better là giả định của mô hình. Vượt U được kẹp 100."
+      - "Phân vị 10% và 90% của 24 quan sát ngân hàng-năm có dữ liệu (5 ngân hàng, 2020-2025, gộp một lần, cố định từ phiên bản fixed-reference-v2-2026-10-17); tính từ out/dti_indicators.csv cột x."
+    rationale: "Cận tham chiếu DBS (U = 0,3038%) làm 10/24 quan sát chạm trần 100 nên không phân biệt được. Từ v2: L, U là phân vị 10% và 90% của mẫu gộp; thang chỉ có nghĩa tương đối trong 5 ngân hàng."
+    caveat: "Cận phụ thuộc mẫu: đổi tập ngân hàng hoặc năm thì đổi cận. Bản v1 (DBS) được giữ làm kịch bản đối chứng. Nguyên giá phần mềm không đồng nhất giữa ngân hàng (vốn hóa và thuê dịch vụ)."
 
   T-Q2:
     variable: platform_coverage
@@ -107,27 +108,26 @@ bounds:
     name: Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu
     unit: điểm %/năm
     direction: lower_better
-    L: -0.584529
-    U: 0
-    status: external_reference
+    L: -1.1226
+    U: 1.4844
+    status: sample_percentile
     source_citation:
-      - "DBS Annual Report 2019, trang in 189 (PDF trang 97), bảng 5 năm: https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
-    rationale: "L = 100*(((14544-8286)/14544)-((10801-5901)/10801))/4, thay đổi CIR toàn tập đoàn 2015-2019. U = 0, không cải thiện; giảm ít nhất bằng mốc L đạt 100. Không lấy chênh CIR giữa các nhóm ngân hàng làm tốc độ năm."
-    caveat: "CIR chịu ảnh hưởng thu nhập, lãi suất, cơ cấu kinh doanh và hạch toán. Mốc giảm khá nhỏ, dễ đạt trần; không chứng minh tác động nhân quả của chuyển đổi số."
+      - "Phân vị 10% và 90% của 20 quan sát ngân hàng-năm có dữ liệu (5 ngân hàng, 2020-2025, gộp một lần, cố định từ phiên bản fixed-reference-v2-2026-10-17); tính từ out/dti_indicators.csv cột x."
+    rationale: "Cận v1 (L = -0,5845, U = 0) khiến 13/20 quan sát bằng 0 và 7/20 bằng 100 (phân hai cực). Từ v2: L, U là phân vị 10% và 90% của ΔCIR gộp; chiều lower_better nên ΔCIR thấp (CIR giảm) được điểm cao."
+    caveat: "Cận phụ thuộc mẫu. ΔCIR chịu ảnh hưởng thu nhập, lãi suất và cơ cấu kinh doanh; không chứng minh tác động nhân quả của chuyển đổi số. Bản v1 được giữ làm kịch bản đối chứng."
 
   O-Q2:
     variable: income_per_employee_cagr
     name: Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)
     unit: "%/năm"
     direction: higher_better
-    L: 0
-    U: 1.18425
-    status: external_reference
+    L: 3.0577
+    U: 9.4781
+    status: sample_percentile
     source_citation:
-      - "DBS Annual Report 2019, trang in 68-69 (PDF trang 37) và 189 (PDF trang 97): https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
-      - "DBS Annual Report 2015, trang in 200 (PDF trang 196), bảng nhân sự: https://www.dbs.com/annualreports/2015/pdfs/downloads/full-annual-report-2015.pdf"
-    rationale: "U = 100*(((14544/((26857+28526)/2))/(10801/((21096+22017)/2)))^(1/4)-1). Thu nhập hoạt động / nhân sự bình quân đầu-cuối năm, cùng công thức code; L = 0."
-    caveat: "Tăng nhân sự, mua bán/sáp nhập, thuê ngoài, lạm phát và tỷ giá ảnh hưởng kết quả. Cận tham chiếu khá thấp, có thể kẹp nhiều quan sát ở 100; không dùng tăng năng suất theo giờ thay cho chỉ số này."
+      - "Phân vị 10% và 90% của 13 quan sát ngân hàng-năm có dữ liệu (5 ngân hàng, 2020-2025, gộp một lần, cố định từ phiên bản fixed-reference-v2-2026-10-17); tính từ out/dti_indicators.csv cột x."
+    rationale: "Cận v1 (U = 1,18%/năm từ DBS) làm 13/13 quan sát bằng 100, tức không phân biệt. Từ v2: L, U là phân vị 10% và 90% của CAGR thu nhập/nhân sự gộp."
+    caveat: "Cận phụ thuộc mẫu, chỉ 13 quan sát và phân vị 75% sát phân vị 90% nên vẫn có chụm ở đỉnh. Lạm phát, sáp nhập, thuê ngoài ảnh hưởng kết quả. Bản v1 được giữ làm kịch bản đối chứng."
 
   C-Q1:
     variable: tech_staff_share
@@ -147,13 +147,13 @@ bounds:
     name: Số giờ đào tạo bình quân / CBNV
     unit: giờ/người/năm
     direction: higher_better
-    L: 0
-    U: 38.7
-    status: external_reference
+    L: 34.5
+    U: 83.331
+    status: sample_percentile
     source_citation:
-      - "DBS Annual Report 2019, trang in 68-69 (PDF trang 37), chỉ tiêu đào tạo: https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2019.pdf"
-    rationale: "U lấy giờ đào tạo bình quân công bố của DBS năm 2019; L = 0. Tham chiếu ngân hàng ngoài mẫu trước giai đoạn nghiên cứu, không phải quy định đào tạo tối thiểu."
-    caveat: "Phải ghi phạm vi nhân sự và hình thức đào tạo; DBS dùng nhân viên chính thức trong thống kê đào tạo. Nhiều giờ chưa chứng minh chất lượng; vượt U kẹp 100."
+      - "Phân vị 10% và 90% của 20 quan sát ngân hàng-năm có dữ liệu (5 ngân hàng, 2020-2025, gộp một lần, cố định từ phiên bản fixed-reference-v2-2026-10-17); tính từ out/dti_indicators.csv cột x."
+    rationale: "Cận v1 (U = 38,7 giờ từ DBS) làm 16/20 quan sát bằng 100. Từ v2: L, U là phân vị 10% và 90% của mẫu gộp."
+    caveat: "Cận phụ thuộc mẫu. Phạm vi nhân sự và hình thức đào tạo khác nhau giữa ngân hàng (BIDV theo ngày quy đổi, MB gồm nhân sự mới). Nhiều giờ chưa chứng minh chất lượng. Bản v1 được giữ làm kịch bản đối chứng."
 
 # Khóa cận không có nghĩa đã đủ dữ liệu hoặc mô hình đã được kiểm chứng.
 # Giữ thiếu dữ liệu là trống; không hiệu chỉnh cận theo thứ hạng/kết quả của 5 ngân hàng.

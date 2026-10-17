@@ -385,8 +385,9 @@ export default function Tab5Methodology({
           </div>
           <div className="methodology-formula-note">
             <strong>L<sub>k</sub>, U<sub>k</sub>:</strong> Cận cố định, không hiệu chỉnh theo
-            5 ngân hàng. Lấy từ biên tự nhiên của thang đo hoặc mốc tham chiếu ngoài mẫu
-            (NHNN, DBS, Santander). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn bắt buộc.
+            5 ngân hàng sau khi khóa. Lấy từ biên tự nhiên của thang đo, mốc tham chiếu ngoài mẫu
+            (NHNN, Santander) hoặc phân vị 10%/90% của mẫu gộp (T-Q1, O-Q1, O-Q2, C-Q2; thang tương đối).
+            Đây là cận tham chiếu của nghiên cứu, không phải chuẩn bắt buộc.
           </div>
         </article>
 

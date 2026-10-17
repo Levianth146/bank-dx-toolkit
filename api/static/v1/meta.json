@@ -284,9 +284,9 @@
    "name": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân",
    "unit": "%",
    "direction": "higher_better",
-   "L": 0.0,
-   "U": 0.3038,
-   "bounds_status": "external_reference",
+   "L": 0.0799,
+   "U": 0.5657,
+   "bounds_status": "sample_percentile",
    "formula": "Nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân (%)",
    "input_variables": [
     "software_gross_cost",
@@ -311,9 +311,9 @@
    "name": "Thay đổi CIR bình quân năm từ đầu kỳ có dữ liệu",
    "unit": "điểm %/năm",
    "direction": "lower_better",
-   "L": -0.5845,
-   "U": 0.0,
-   "bounds_status": "external_reference",
+   "L": -1.1226,
+   "U": 1.4844,
+   "bounds_status": "sample_percentile",
    "formula": "Thay đổi CIR bình quân năm từ đầu kỳ (điểm %/năm; âm là cải thiện)",
    "input_variables": [
     "opex",
@@ -326,9 +326,9 @@
    "name": "Tăng trưởng kép thu nhập hoạt động trên CBNV bình quân (CAGR)",
    "unit": "%/năm",
    "direction": "higher_better",
-   "L": 0.0,
-   "U": 1.1843,
-   "bounds_status": "external_reference",
+   "L": 3.0577,
+   "U": 9.4781,
+   "bounds_status": "sample_percentile",
    "formula": "CAGR của thu nhập hoạt động trên số cán bộ nhân viên bình quân",
    "input_variables": [
     "opex",
@@ -357,9 +357,9 @@
    "name": "Số giờ đào tạo bình quân / CBNV",
    "unit": "giờ/người/năm",
    "direction": "higher_better",
-   "L": 0.0,
-   "U": 38.7,
-   "bounds_status": "external_reference",
+   "L": 34.5,
+   "U": 83.331,
+   "bounds_status": "sample_percentile",
    "formula": "Số giờ đào tạo bình quân trên một cán bộ nhân viên",
    "input_variables": [
     "training_hours_per_head"
@@ -409,14 +409,14 @@
   "rules_hash": "50ebdcdb62c3443bd57a9bd5d2c89b4c26c4e30cdc2cce1d3cb7fc52de71ef5d"
  },
  "dti_bounds": {
-  "version": "fixed-reference-v1-2026-10-12",
+  "version": "fixed-reference-v2-2026-10-17",
   "locked": true,
-  "locked_on": "2026-10-12"
+  "locked_on": "2026-10-17"
  },
  "reliability_rule": {
   "high": 0.7,
   "medium": 0.4,
   "note": "Quy ước hiển thị theo data_confidence (= số chỉ số DTI có dữ liệu / 11); không ảnh hưởng điểm."
  },
- "data_updated_at": "2026-10-17T01:44:36.991647+00:00"
+ "data_updated_at": "2026-10-17T02:18:11.951900+00:00"
 }

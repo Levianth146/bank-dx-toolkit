@@ -43,7 +43,7 @@
     {
      "year": 2023,
      "value": 0.1818,
-     "rank": 5,
+     "rank": 4,
      "maturity_level_number": 2,
      "data_confidence": 0.1818,
      "n_dti": 2
@@ -107,7 +107,7 @@
     {
      "year": 2024,
      "value": 0.3636,
-     "rank": 4,
+     "rank": 3,
      "maturity_level_number": 3,
      "data_confidence": 0.3636,
      "n_dti": 4
@@ -156,7 +156,7 @@
      "year": 2023,
      "value": 0.6364,
      "rank": 2,
-     "maturity_level_number": 3,
+     "maturity_level_number": 2,
      "data_confidence": 0.6364,
      "n_dti": 7
     },
@@ -171,8 +171,8 @@
     {
      "year": 2025,
      "value": 0.8182,
-     "rank": 3,
-     "maturity_level_number": 4,
+     "rank": 2,
+     "maturity_level_number": 3,
      "data_confidence": 0.8182,
      "n_dti": 9
     }
@@ -267,7 +267,7 @@
     {
      "year": 2023,
      "value": 0.2727,
-     "rank": 4,
+     "rank": 5,
      "maturity_level_number": 2,
      "data_confidence": 0.2727,
      "n_dti": 3
@@ -275,7 +275,7 @@
     {
      "year": 2024,
      "value": 0.2727,
-     "rank": 3,
+     "rank": 4,
      "maturity_level_number": 3,
      "data_confidence": 0.2727,
      "n_dti": 3
@@ -283,8 +283,8 @@
     {
      "year": 2025,
      "value": 0.5455,
-     "rank": 2,
-     "maturity_level_number": 4,
+     "rank": 3,
+     "maturity_level_number": 3,
      "data_confidence": 0.5455,
      "n_dti": 6
     }

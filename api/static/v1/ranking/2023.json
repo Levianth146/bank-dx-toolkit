@@ -11,7 +11,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2023,
-   "score": 63.75,
+   "score": 62.4531,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -56,8 +56,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 75.0,
-     "dti": 50.0,
-     "p": 70.0,
+     "dti": 13.8192,
+     "p": 62.7638,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -66,8 +66,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 25.0,
-     "dti": 100.0,
-     "p": 40.0,
+     "dti": 97.2743,
+     "p": 39.4549,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -83,7 +83,7 @@
      "dti_applied": false
     }
    },
-   "score_change": -5.0602,
+   "score_change": -6.0108,
    "rank_change": 0
   },
   {
@@ -91,11 +91,11 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2023,
-   "score": 52.9167,
+   "score": 49.2371,
    "rank": 2,
-   "maturity_level": "Mức 3 - Hình thành",
-   "maturity_level_number": 3,
-   "maturity_level_name": "Hình thành",
+   "maturity_level": "Mức 2 - Bắt đầu",
+   "maturity_level_number": 2,
+   "maturity_level_name": "Bắt đầu",
    "data_confidence": 0.6364,
    "dti_indicators_available": 7,
    "dti_indicators_total": 11,
@@ -126,8 +126,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 31.25,
-     "dti": 100.0,
-     "p": 45.0,
+     "dti": 57.8493,
+     "p": 36.5699,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -136,8 +136,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 62.5,
-     "dti": 100.0,
-     "p": 70.0,
+     "dti": 97.5221,
+     "p": 69.5044,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -146,8 +146,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 25.0,
-     "dti": 100.0,
-     "p": 40.0,
+     "dti": 34.2405,
+     "p": 26.8481,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -163,7 +163,7 @@
      "dti_applied": false
     }
    },
-   "score_change": -3.125,
+   "score_change": -5.2924,
    "rank_change": 0
   },
   {
@@ -171,7 +171,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2023,
-   "score": 47.6008,
+   "score": 45.1726,
    "rank": 3,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -206,8 +206,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 62.5,
-     "dti": 34.2735,
-     "p": 56.8547,
+     "dti": 4.986,
+     "p": 50.9972,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -216,8 +216,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 43.75,
-     "dti": 50.0,
-     "p": 45.0,
+     "dti": 6.4418,
+     "p": 36.2884,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -243,7 +243,89 @@
      "dti_applied": false
     }
    },
-   "score_change": 6.4708,
+   "score_change": 4.7806,
+   "rank_change": 1
+  },
+  {
+   "bank": "agribank",
+   "bank_name": "Agribank",
+   "group": "NHTM Nhà nước",
+   "year": 2023,
+   "score": 40.0673,
+   "rank": 4,
+   "maturity_level": "Mức 2 - Bắt đầu",
+   "maturity_level_number": 2,
+   "maturity_level_name": "Bắt đầu",
+   "data_confidence": 0.1818,
+   "dti_indicators_available": 2,
+   "dti_indicators_total": 11,
+   "reliability": "low",
+   "warnings": [
+    "Chỉ 2/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
+   ],
+   "pillars": {
+    "K": {
+     "code": "K",
+     "name": "Khách hàng",
+     "dbi": 62.5,
+     "dti": null,
+     "p": 62.5,
+     "n_dti": 0,
+     "n_dti_total": 3,
+     "dti_applied": false
+    },
+    "S": {
+     "code": "S",
+     "name": "Chiến lược",
+     "dbi": 37.5,
+     "dti": null,
+     "p": 37.5,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "T": {
+     "code": "T",
+     "name": "Công nghệ",
+     "dbi": 62.5,
+     "dti": 0.8467,
+     "p": 50.1693,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "O": {
+     "code": "O",
+     "name": "Vận hành",
+     "dbi": 31.25,
+     "dti": 44.9211,
+     "p": 33.9842,
+     "n_dti": 1,
+     "n_dti_total": 2,
+     "dti_applied": true
+    },
+    "C": {
+     "code": "C",
+     "name": "Văn hóa",
+     "dbi": 43.75,
+     "dti": null,
+     "p": 43.75,
+     "n_dti": 0,
+     "n_dti_total": 2,
+     "dti_applied": false
+    },
+    "D": {
+     "code": "D",
+     "name": "Dữ liệu",
+     "dbi": 12.5,
+     "dti": null,
+     "p": 12.5,
+     "n_dti": 0,
+     "n_dti_total": 0,
+     "dti_applied": false
+    }
+   },
+   "score_change": 16.9423,
    "rank_change": 1
   },
   {
@@ -251,8 +333,8 @@
    "bank_name": "Vietcombank",
    "group": "NHTM Nhà nước",
    "year": 2023,
-   "score": 43.75,
-   "rank": 4,
+   "score": 40.014,
+   "rank": 5,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
    "maturity_level_name": "Bắt đầu",
@@ -298,8 +380,8 @@
      "code": "O",
      "name": "Vận hành",
      "dbi": 37.5,
-     "dti": 50.0,
-     "p": 40.0,
+     "dti": 24.6086,
+     "p": 34.9217,
      "n_dti": 2,
      "n_dti_total": 2,
      "dti_applied": true
@@ -308,8 +390,8 @@
      "code": "C",
      "name": "Văn hóa",
      "dbi": 50.0,
-     "dti": 100.0,
-     "p": 60.0,
+     "dti": 13.3112,
+     "p": 42.6622,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -325,90 +407,8 @@
      "dti_applied": false
     }
    },
-   "score_change": -1.6667,
-   "rank_change": -1
-  },
-  {
-   "bank": "agribank",
-   "bank_name": "Agribank",
-   "group": "NHTM Nhà nước",
-   "year": 2023,
-   "score": 39.4635,
-   "rank": 5,
-   "maturity_level": "Mức 2 - Bắt đầu",
-   "maturity_level_number": 2,
-   "maturity_level_name": "Bắt đầu",
-   "data_confidence": 0.1818,
-   "dti_indicators_available": 2,
-   "dti_indicators_total": 11,
-   "reliability": "low",
-   "warnings": [
-    "Chỉ 2/11 chỉ số DTI có dữ liệu; điểm chủ yếu dựa trên DBI."
-   ],
-   "pillars": {
-    "K": {
-     "code": "K",
-     "name": "Khách hàng",
-     "dbi": 62.5,
-     "dti": null,
-     "p": 62.5,
-     "n_dti": 0,
-     "n_dti_total": 3,
-     "dti_applied": false
-    },
-    "S": {
-     "code": "S",
-     "name": "Chiến lược",
-     "dbi": 37.5,
-     "dti": null,
-     "p": 37.5,
-     "n_dti": 0,
-     "n_dti_total": 2,
-     "dti_applied": false
-    },
-    "T": {
-     "code": "T",
-     "name": "Công nghệ",
-     "dbi": 62.5,
-     "dti": 27.6543,
-     "p": 55.5309,
-     "n_dti": 1,
-     "n_dti_total": 2,
-     "dti_applied": true
-    },
-    "O": {
-     "code": "O",
-     "name": "Vận hành",
-     "dbi": 31.25,
-     "dti": 0.0,
-     "p": 25.0,
-     "n_dti": 1,
-     "n_dti_total": 2,
-     "dti_applied": true
-    },
-    "C": {
-     "code": "C",
-     "name": "Văn hóa",
-     "dbi": 43.75,
-     "dti": null,
-     "p": 43.75,
-     "n_dti": 0,
-     "n_dti_total": 2,
-     "dti_applied": false
-    },
-    "D": {
-     "code": "D",
-     "name": "Dữ liệu",
-     "dbi": 12.5,
-     "dti": null,
-     "p": 12.5,
-     "n_dti": 0,
-     "n_dti_total": 0,
-     "dti_applied": false
-    }
-   },
-   "score_change": 15.4884,
-   "rank_change": 0
+   "score_change": -7.1357,
+   "rank_change": -2
   }
  ]
 }

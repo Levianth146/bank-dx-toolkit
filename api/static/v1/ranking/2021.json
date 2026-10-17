@@ -11,7 +11,7 @@
    "bank_name": "Techcombank",
    "group": "NHTM Cổ phần",
    "year": 2021,
-   "score": 53.125,
+   "score": 51.8384,
    "rank": 1,
    "maturity_level": "Mức 3 - Hình thành",
    "maturity_level_number": 3,
@@ -48,8 +48,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 37.5,
-     "dti": 100.0,
-     "p": 50.0,
+     "dti": 61.4013,
+     "p": 42.2803,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -85,7 +85,7 @@
      "dti_applied": false
     }
    },
-   "score_change": 3.6398,
+   "score_change": 4.1135,
    "rank_change": 0
   },
   {
@@ -93,7 +93,7 @@
    "bank_name": "MB",
    "group": "NHTM Cổ phần",
    "year": 2021,
-   "score": 47.7083,
+   "score": 46.082,
    "rank": 2,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -130,8 +130,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 43.75,
-     "dti": 100.0,
-     "p": 55.0,
+     "dti": 51.2102,
+     "p": 45.242,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -167,7 +167,7 @@
      "dti_applied": false
     }
    },
-   "score_change": 2.6159,
+   "score_change": 2.5091,
    "rank_change": 0
   },
   {
@@ -175,7 +175,7 @@
    "bank_name": "BIDV",
    "group": "NHTM Nhà nước",
    "year": 2021,
-   "score": 45.6747,
+   "score": 44.6396,
    "rank": 3,
    "maturity_level": "Mức 2 - Bắt đầu",
    "maturity_level_number": 2,
@@ -212,8 +212,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 43.75,
-     "dti": 38.9922,
-     "p": 42.7984,
+     "dti": 7.9369,
+     "p": 36.5874,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -249,7 +249,7 @@
      "dti_applied": false
     }
    },
-   "score_change": 6.9775,
+   "score_change": 6.9392,
    "rank_change": 0
   },
   {
@@ -339,7 +339,7 @@
    "bank_name": "Agribank",
    "group": "NHTM Nhà nước",
    "year": 2021,
-   "score": 23.2158,
+   "score": 22.3214,
    "rank": 5,
    "maturity_level": "Mức 1 - Khởi động",
    "maturity_level_number": 1,
@@ -376,8 +376,8 @@
      "code": "T",
      "name": "Công nghệ",
      "dbi": 18.75,
-     "dti": 27.7251,
-     "p": 20.545,
+     "dti": 0.891,
+     "p": 15.1782,
      "n_dti": 1,
      "n_dti_total": 2,
      "dti_applied": true
@@ -413,7 +413,7 @@
      "dti_applied": false
     }
    },
-   "score_change": -0.6566,
+   "score_change": -0.6447,
    "rank_change": 0
   }
  ]
