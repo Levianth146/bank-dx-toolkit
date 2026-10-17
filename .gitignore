@@ -32,6 +32,7 @@ out/*
 !out/dti_bounds_review_2026-10-12/
 out/dti_bounds_review_2026-10-12/*
 !out/dti_bounds_review_2026-10-12/reference_inputs.csv
+!out/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml
 !out/dataset_clean/
 !out/sensitivity/
 out/dti_inputs.backup_*.csv
