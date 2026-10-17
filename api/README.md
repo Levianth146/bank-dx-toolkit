@@ -6,7 +6,7 @@ API **chỉ đọc**, lấy dữ liệu từ `out/` do pipeline sinh ra (`10_sco
 
 ```bash
 pip install -r requirements-api.txt
-uvicorn api.main:app --reload --port 8000     # chạy từ thư mục gốc repo
+uvicorn api.main:app --reload --port 8000     # chạy từ thư mục gốc 
 ```
 - Tài liệu tương tác (Swagger): http://localhost:8000/docs  ·  Schema: http://localhost:8000/openapi.json
 - Chạy lại `python 10_score.py ...` rồi **gọi API lại là có số mới**, không cần restart (API so sánh thời gian sửa tệp).
