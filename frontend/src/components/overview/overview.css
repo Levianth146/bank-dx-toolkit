@@ -1,0 +1,402 @@
+/* Phần bổ sung cho Tab Tổng quan: hành trình, nhóm điểm, bản đồ nhiệt, ghi chú dữ liệu. */
+
+.ov-stack {
+  display: grid;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+/* ---------- Hành trình ---------- */
+.ov-journey__scroll {
+  overflow-x: auto;
+}
+.ov-journey__svg {
+  display: block;
+  width: 100%;
+  min-width: 620px;
+  height: auto;
+  overflow: visible;
+}
+.ov-journey__grid {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.ov-journey__tick {
+  fill: var(--secondary-text);
+  font-size: 12px;
+}
+.ov-journey__marker {
+  stroke: var(--heading);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 5;
+  opacity: 0.35;
+  transition: x1 0.3s ease, x2 0.3s ease;
+}
+.ov-journey__hit {
+  fill: transparent;
+  cursor: pointer;
+}
+.ov-journey__hit:hover {
+  fill: var(--surface-muted);
+  opacity: 0.55;
+}
+.ov-journey__bank {
+  transition: opacity 0.2s ease;
+}
+.ov-journey__bank.is-dim {
+  opacity: 0.16;
+}
+.ov-journey__line {
+  fill: none;
+  stroke: var(--bank-color);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: ov-draw 1.2s cubic-bezier(0.22, 0.7, 0.2, 1) forwards;
+  pointer-events: none;
+}
+.ov-journey__dot {
+  fill: var(--panel);
+  stroke: var(--bank-color);
+  stroke-width: 2.5;
+  pointer-events: none;
+  transition: r 0.2s ease;
+}
+.ov-journey__dot.is-selected {
+  fill: var(--bank-color);
+  stroke: var(--panel);
+  stroke-width: 3;
+}
+.ov-journey__end {
+  cursor: pointer;
+  outline: none;
+}
+.ov-journey__end:focus-visible rect {
+  stroke: var(--heading);
+  stroke-width: 2;
+}
+.ov-journey__endtext {
+  fill: #fff;
+  font-size: 11.5px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.ov-journey__years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.ov-journey__year {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-muted);
+  padding: 5px 13px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary-text);
+  cursor: pointer;
+}
+.ov-journey__year.is-active {
+  border-color: var(--heading);
+  background: var(--heading);
+  color: var(--panel);
+}
+.ov-journey__readout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--body-text);
+}
+.ov-journey__readout strong {
+  color: var(--heading);
+  font-size: 15px;
+}
+.ov-journey__readout span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.ov-journey__readout i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--bank-color);
+}
+
+/* ---------- Nhóm điểm ---------- */
+.ov-tiers__axis {
+  position: relative;
+  height: 170px;
+  margin: 8px 18px 4px;
+}
+.ov-tiers__axis::before {
+  position: absolute;
+  inset: 104px 0 auto;
+  height: 2px;
+  background: var(--line);
+  content: '';
+}
+.ov-tiers__axis > span {
+  position: absolute;
+  top: 150px;
+  transform: translateX(-50%);
+  font-size: 11.5px;
+  color: var(--secondary-text);
+}
+.ov-tiers__group {
+  position: absolute;
+  top: 118px;
+  min-width: 10px;
+}
+.ov-tiers__group i {
+  display: block;
+  height: 8px;
+  border: 2px solid var(--heading);
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  opacity: 0.55;
+}
+.ov-tiers__group b {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 11.5px;
+  color: var(--heading);
+}
+.ov-tiers__group b small {
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+.ov-tiers__dot {
+  position: absolute;
+  top: 96px;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  border: 3px solid var(--panel);
+  border-radius: 50%;
+  background: var(--bank-color);
+  box-shadow: 0 0 0 1px var(--bank-color);
+  animation: ov-slide 0.9s cubic-bezier(0.22, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i) * 70ms);
+}
+.ov-tiers__tip::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1.5px;
+  height: calc(var(--lift) + 6px);
+  background: var(--bank-color);
+  content: '';
+}
+.ov-tiers__tip {
+  position: absolute;
+  bottom: calc(22px + var(--lift));
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  border-radius: 6px;
+  background: var(--bank-color);
+  padding: 2px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+.ov-tiers__list {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13.5px;
+}
+.ov-tiers__list li {
+  display: flex;
+  gap: 10px;
+}
+.ov-tiers__list strong {
+  min-width: 56px;
+  color: var(--heading);
+}
+.ov-tiers__list em {
+  font-style: normal;
+  color: var(--secondary-text);
+}
+.ov-tiers__note {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--secondary-text);
+}
+
+/* ---------- Bản đồ nhiệt ---------- */
+.ov-heat__scroll {
+  overflow-x: auto;
+}
+.ov-heat__table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+.ov-heat__table th {
+  padding: 4px 6px;
+  text-align: center;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+.ov-heat__table th:first-child {
+  text-align: left;
+}
+.ov-heat__table td {
+  padding: 0;
+}
+.ov-heat__bank {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--heading);
+  white-space: nowrap;
+}
+.ov-heat__bank i {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--bank-color);
+}
+.ov-heat__cell {
+  display: block;
+  border-radius: 9px;
+  padding: 13px 4px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  animation: ov-pop 0.5s ease both;
+  animation-delay: calc(var(--i) * 45ms);
+}
+.ov-heat__cell sup {
+  margin-left: 1px;
+  font-size: 10px;
+  opacity: 0.75;
+}
+.lv-0 { background: #e6ecf3; color: #35506b; }
+.lv-1 { background: #c3d9ef; color: #1c3f66; }
+.lv-2 { background: #86b3e2; color: #0b2a4d; }
+.lv-3 { background: #2b68b8; color: #fff; }
+.lv-na { background: transparent; color: var(--secondary-text); border: 1px dashed var(--border); }
+.dashboard-shell[data-theme='dark'] .lv-0 { background: #3a4d62; color: #e4ecf5; }
+.dashboard-shell[data-theme='dark'] .lv-1 { background: #4a6a8c; color: #fff; }
+.dashboard-shell[data-theme='dark'] .lv-2 { background: #5f93cc; color: #07203a; }
+.dashboard-shell[data-theme='dark'] .lv-3 { background: #9cc6f5; color: #07203a; }
+.ov-heat__cell.is-best {
+  box-shadow: inset 0 0 0 2.5px var(--heading);
+}
+.ov-heat__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+.ov-heat__legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ov-heat__legend i {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+.ov-heat__legend .ov-heat__best {
+  background: transparent;
+  box-shadow: inset 0 0 0 2.5px var(--heading);
+}
+
+/* ---------- Ghi chú dữ liệu ---------- */
+.ov-notice {
+  border: 1px solid var(--border);
+  border-left: 4px solid #d99a1e;
+  border-radius: 12px;
+  background: var(--panel);
+  padding: 14px 18px;
+}
+.ov-notice h3 {
+  margin: 0 0 8px;
+  font-size: 14.5px;
+  color: var(--heading);
+}
+.ov-notice ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--body-text);
+}
+
+/* ---------- Hero & thẻ: chuyển động có chủ đích ---------- */
+.score-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.score-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px color-mix(in srgb, var(--bank-color) 22%, transparent);
+}
+
+@keyframes ov-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes ov-slide {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes ov-pop {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ov-journey__line { animation: none; stroke-dashoffset: 0; }
+  .ov-tiers__dot, .ov-heat__cell { animation: none; }
+  .score-card, .ov-journey__marker { transition: none; }
+}
+
+@media (max-width: 640px) {
+  .ov-tiers__axis { margin-inline: 8px; }
+  .ov-tiers__tip::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1.5px;
+  height: calc(var(--lift) + 6px);
+  background: var(--bank-color);
+  content: '';
+}
+.ov-tiers__tip { font-size: 10px; }
+}
+
+.ov-stack--two {
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+  margin: 0;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .ov-stack--two { grid-template-columns: minmax(0, 1fr); }
+}

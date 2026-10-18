@@ -1,180 +1,405 @@
-# Bộ công cụ thu thập dữ liệu cho mô hình DBI–DTI (5 ngân hàng)
+<div align="center">
 
-Repository gồm pipeline thu thập/chấm điểm, API cho dashboard và phân tích độ nhạy. Các thành phần dùng chung `config/`, `scripts/` và `out/`.
+# Bank DX Toolkit
 
-- API và dữ liệu JSON tĩnh: xem [hướng dẫn API](api/README.md). Cài `pip install -r requirements-api.txt`, rồi chạy `uvicorn api.main:app --reload --port 8000` từ thư mục gốc.
-- Phân tích độ nhạy: xem [hướng dẫn sensitivity](docs/sensitivity.md). Mã nằm trong `scripts/11_sensitivity.py`, `scripts/sens_plots.py`; kết quả nằm trong `out/sensitivity/`.
-- Kiểm thử từ thư mục gốc: chạy `python -m pytest tests/test_api.py -q` cho API và `python tests/test_sensitivity.py` cho sensitivity.
+### Đo, so sánh và kiểm chứng mức chuyển đổi số của 5 ngân hàng Việt Nam bằng dữ liệu công khai
 
-Đi kèm file `Mo_hinh_DBI_DTI_dieu_chinh_va_codebook.docx`. Bộ script tải tài liệu, đọc PDF, tìm bằng chứng và lấy chỉ số định lượng. Theo quyết định của nhóm ngày **2026-10-12**, điểm DBI được chấm bằng thuật toán quy tắc `09c_auto_score.py`, thay quy trình người chấm + kappa. Số liệu DTI vẫn cần xác nhận nguồn.
+**5 ngân hàng · 2020–2025 · 6 trụ cột · 24 tiêu chí · 11 chỉ số định lượng · 3 lớp kiểm chứng**
 
-Quy trình chính: **01–04 → 09c → 12 --bundle → 10**. Điểm, bằng chứng và phiên bản nằm trong `out/coding_auto.xlsx`; xem [phương pháp thuật toán](specs/001-bank-dx-assessment/algorithm-scoring.md).
+[Xem dashboard](https://frontend-ashy-kappa-57.vercel.app/) · [API tương tác](https://bank-dx-toolkit.onrender.com/docs) · [Phương pháp](specs/001-bank-dx-assessment/algorithm-scoring.md) · [Hướng dẫn chạy](#5-hướng-dẫn-sử-dụng)
 
-Bộ cận DTI đã khóa ở phiên bản `fixed-reference-v2-2026-10-17` (v1 giữ làm kịch bản đối chứng); nguồn, phép tính và hạn chế được mô tả trong [phương pháp chọn L/U](specs/001-bank-dx-assessment/dti-bounds-method.md). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn ngành bắt buộc. Kết quả hiện có cho 5 ngân hàng trong giai đoạn 2020–2025 nằm ở `out/score_summary.csv`; chi tiết trụ cột ở `out/scores.csv` và chỉ số DTI ở `out/dti_indicators.csv`. File có hậu tố `_draft` là kết quả thử trước đó.
+<img src="docs/img/dashboard-overview.png" alt="Dashboard tổng quan: hành trình điểm 2020–2025 của 5 ngân hàng" width="920">
 
-Sau khi đối chiếu và cập nhật dữ liệu DTI, chạy từ thư mục `scripts/`:
+</div>
 
-Để xem bằng Excel, mở `out/score_results.xlsx`: sheet **Sáu trụ cột** có DBI/DTI/điểm `p`,
-sheet **Trụ cột bảng ngang** có sáu điểm trên một dòng ngân hàng/năm. Số được lưu đúng kiểu số,
-hiển thị hai chữ số thập phân; tránh lỗi Excel đọc dấu chấm thập phân của CSV thành dấu hàng nghìn.
-CSV vẫn giữ độ chính xác đầy đủ cho pipeline; khi nhập CSV vào Excel cần chọn đúng dấu thập phân.
+---
 
-```bash
+## 1. Dự án này làm gì
+
+Các bảng xếp hạng "ngân hàng số" thường dựa vào khảo sát hoặc nhận định cảm tính, khó biết điểm từ đâu ra và không ai kiểm lại được.
+
+**Bank DX Toolkit** làm theo cách ngược lại. Công cụ đọc báo cáo công khai của Agribank, BIDV, Vietcombank, MB và Techcombank (báo cáo thường niên, báo cáo tài chính kiểm toán, điểm ứng dụng trên cửa hàng ứng dụng), chấm điểm theo một khung cố định, rồi cho bạn thấy ba điều:
+
+1. **Điểm bao nhiêu** — mỗi ngân hàng, mỗi năm, từng trụ cột.
+2. **Điểm đó dựa vào đâu** — bấm vào là thấy tệp, số trang và đoạn trích gốc.
+3. **Có nên tin điểm đó không** — thứ hạng nào vững, thứ hạng nào chỉ là nhiễu, và dữ liệu nào còn thiếu.
+
+Sản phẩm gồm: bộ script thu thập và chấm điểm, API chỉ đọc, và dashboard web 5 màn hình. Dự án phục vụ một đề tài nghiên cứu học thuật và chỉ dùng tài liệu công khai.
+
+### Điểm nhấn
+
+| | |
+|---|---|
+| **Truy vết đến từng trang PDF** | Mỗi điểm gắn với tệp nguồn, số trang, đoạn trích, phiên bản quy tắc và mã băm. Không có điểm nào "tự nhiên có". |
+| **Thiếu dữ liệu không bị đổi thành 0** | Ô trống là ô trống. Tiêu chí "không tìm thấy từ khóa" khác với "ngân hàng không làm". Độ phủ dữ liệu luôn hiển thị cạnh điểm. |
+| **Cận chuẩn hóa khóa trước và có nhật ký** | Cận L/U của 11 chỉ số được ghi kèm nguồn và lý do. Lần đổi gần nhất (v2) được ghi rõ là đổi sau khi thấy dữ liệu, bản v1 vẫn giữ để đối chiếu. |
+| **Ba lớp kiểm chứng độc lập** | Lớp A chấm văn bản, lớp B tính chỉ số định lượng, lớp C đối chiếu với kết quả kinh doanh thật. Thêm một lớp thử độ vững của thứ hạng. |
+| **Nói thẳng khi hai ngân hàng chưa tách được** | Trên dashboard, ngân hàng cách nhau dưới 3 điểm được xếp cùng nhóm, thay vì ép ra hạng 1, 2, 3. Ngưỡng 3 điểm là quy ước hiển thị. |
+| **Tái lập được** | Cùng đầu vào cho cùng đầu ra. Manifest ghi mã băm của code, từ khóa và dữ liệu. |
+
+---
+
+## 2. Kết quả nhanh
+
+### Năm 2025
+
+| Ngân hàng | Điểm tổng hợp | Mức | Hạng khi đổi giả định* |
+|---|---:|---|---|
+| Techcombank | **77,49** | 4 · Nâng cao | 1–2 |
+| Vietcombank | **74,86** | 3 · Hình thành | 1–3 |
+| MB | **73,35** | 3 · Hình thành | 1–3 |
+| BIDV | **63,38** | 3 · Hình thành | 4 |
+| Agribank | **54,92** | 3 · Hình thành | 5 |
+
+\* Khoảng hạng nhận được khi thử các kịch bản khác nhau (đổi trọng số, đổi cận L/U, nhiễu rubric, Monte Carlo). Chi tiết ở [mục 4.4](#44-lớp-kiểm-tra-độ-vững-của-thứ-hạng).
+
+**Cách đọc đúng:** nhóm đầu gồm Techcombank, Vietcombank và MB (chênh nhau 4,15 điểm). BIDV và Agribank tách rõ khỏi nhóm đầu và khỏi nhau. Không nên kết luận "Techcombank hơn Vietcombank" chỉ từ 2,6 điểm chênh lệch.
+
+### Hành trình 2020–2025
+
+| Ngân hàng | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 |
+|---|---:|---:|---:|---:|---:|---:|
+| Techcombank | 47,9 | 51,0 | 67,1 | 58,4 | 61,7 | 77,5 |
+| Vietcombank | 33,3 | 38,5 | 47,1 | 41,2 | 63,3 | 74,9 |
+| MB | 43,8 | 45,8 | 53,4 | 48,0 | 61,9 | 73,3 |
+| BIDV | 38,5 | 45,8 | 39,9 | 44,6 | 63,7 | 63,4 |
+| Agribank | 22,9 | 22,9 | 21,2 | 42,1 | 48,1 | 54,9 |
+
+**Lưu ý khi so sánh giữa các năm:** số trụ cột có chỉ số DTI thay đổi theo năm (hiện là 0 trụ cột năm 2020–2021, 1 trụ cột năm 2022–2024, 3 trụ cột năm 2025), nên điểm các năm không hoàn toàn cùng cơ sở. Năm 2024 bốn ngân hàng đầu chỉ cách nhau khoảng 2 điểm và được gộp thành một nhóm.
+
+<div align="center">
+<img src="docs/img/pillar-heatmap.png" alt="Bản đồ trụ cột năm 2025: 5 ngân hàng × 6 trụ cột" width="860">
+</div>
+
+---
+
+## 3. Mô hình hoạt động
+
+### 3.1. Công thức
+
+```
+Điểm trụ cột  P_k  =  0,8 × DBI_k  +  0,2 × DTI_k        (trụ cột không có DTI thì P_k = DBI_k)
+Điểm ngân hàng     =  trung bình của 6 điểm P_k            (thang 0–100)
+```
+
+- **DBI** (Digital Business Index, 80%) đo *ngân hàng nói và làm gì* về chuyển đổi số, chấm từ văn bản báo cáo.
+- **DTI** (Digital Transformation Indicators, 20%) đo *các con số* như tỷ lệ giao dịch qua kênh số, CIR, điểm ứng dụng.
+- Khung DBI dựa trên Quyết định 2158/QĐ-BTTTT (07/11/2023), DTI bổ trợ.
+
+### 3.2. Sáu trụ cột
+
+| Trụ cột | 4 tiêu chí DBI | Chỉ số DTI |
+|---|---|---|
+| **K** · Khách hàng | Phủ sóng kênh số · Định danh và xác thực điện tử · Cá nhân hóa · Đo lường trải nghiệm | K-Q1, K-Q2, K-Q3 |
+| **S** · Chiến lược | Chiến lược chuyển đổi số · Quản trị · Cam kết nguồn lực · Hợp tác hệ sinh thái và fintech | S-Q1, S-Q2 |
+| **T** · Công nghệ | Hạ tầng và kiến trúc · An toàn thông tin · Open API · Công nghệ mới ở mức use-case | T-Q1, T-Q2 |
+| **O** · Vận hành | Tự động hóa quy trình · Số hóa tín dụng và hậu trường · Quản trị rủi ro số · Vận hành linh hoạt | O-Q1, O-Q2 |
+| **C** · Văn hóa | Thông điệp lãnh đạo · Đào tạo kỹ năng số · Văn hóa đổi mới · Môi trường làm việc số | C-Q1, C-Q2 |
+| **D** · Dữ liệu | Quản trị dữ liệu · Hạ tầng dữ liệu · Phân tích nâng cao và AI/ML · Bảo vệ dữ liệu cá nhân | *(không có, P_D = DBI_D)* |
+
+### 3.3. Năm mức trưởng thành
+
+| Mức | Tên | Điểm |
+|:-:|---|---|
+| 1 | Khởi động | dưới 25 |
+| 2 | Bắt đầu | 25 đến dưới 50 |
+| 3 | Hình thành | 50 đến dưới 75 |
+| 4 | Nâng cao | 75 đến dưới 100 |
+| 5 | Dẫn dắt | đúng 100 |
+
+---
+
+## 4. Bóc tách từng lớp
+
+```mermaid
+flowchart LR
+    A["Báo cáo công khai<br/>(PDF, web, app store)"] --> B["Đọc và trích văn bản<br/>01 → 04"]
+    B --> LA["LỚP A · DBI<br/>chấm 24 tiêu chí 0–4<br/>09c"]
+    B --> LB["LỚP B · DTI<br/>11 chỉ số, chuẩn hóa L/U<br/>04, 12"]
+    LA --> S["Điểm tổng hợp<br/>0,8·DBI + 0,2·DTI<br/>10_score"]
+    LB --> S
+    S --> LC["LỚP C · Đối chiếu<br/>ROE, ROA, CIR, CASA<br/>19"]
+    S --> LD["Lớp độ vững<br/>kịch bản, Monte Carlo<br/>11_sensitivity"]
+    S --> API["API chỉ đọc<br/>api/"]
+    LC --> API
+    LD --> API
+    API --> W["Dashboard web<br/>frontend/"]
+```
+
+| Lớp | Câu hỏi nó trả lời | Dữ liệu vào | Script | Kết quả chính |
+|---|---|---|---|---|
+| **A · DBI** | Báo cáo nói và làm gì về chuyển đổi số? | Văn bản BCTN, BCTC, BCPTBV | `09c_auto_score.py` | `out/auto_scores.csv`, `out/coding_auto.xlsx` |
+| **B · DTI** | Các con số nói gì? | BCTC, KPI trong BCTN, rating app, kiểm kê nền tảng | `04`, `05`, `12`, `10_score.py` | `out/dti_indicators.csv`, `out/scores.csv` |
+| **C · Đối chiếu** | Điểm có đi cùng kết quả kinh doanh không? | ROE, ROA, CIR, CASA, thu nhập ngoài lãi | `19_validate_layer_c.py` | `api/static/v1/layer-c/`, `out/layer_c_*.csv` |
+| **Độ vững** | Thứ hạng có đổi khi đổi giả định không? | Điểm A + B | `11_sensitivity.py` | `out/sensitivity/` |
+
+### 4.1. Lớp A: DBI, chấm văn bản bằng quy tắc
+
+**Ý tưởng.** Với mỗi tiêu chí, thuật toán tìm từ khóa (song ngữ Việt và Anh) trong báo cáo, mở cửa sổ ±300 ký tự quanh đó và hỏi: có động từ hành động không? có con số kèm đơn vị không? có dấu hiệu kiểm chứng, đa kỳ hay KPI không?
+
+| Kết quả | Điểm | Ý nghĩa |
+|---|:-:|---|
+| `no_document` | để trống | Không có văn bản đọc được. Không suy ra 0. |
+| `no_mention` | 0 | Có văn bản nhưng không tìm thấy từ khóa. Không chứng minh ngân hàng không làm. |
+| `scored` | 1 | Có nhắc đến nhưng chưa bắt được hành động thực hiện. |
+| `scored` | 2 | Có hành động thực hiện (loại câu tương lai và phủ định). |
+| `scored` | 3 | Hành động cộng con số kèm đơn vị trong cùng cửa sổ. |
+| `scored` | 4 | Mức 3 cộng điều kiện riêng của tiêu chí: kiểm chứng, đa kỳ, quản trị, lộ trình, KPI hoặc chứng nhận. |
+
+`DBI_k` là trung bình 4 tiêu chí của trụ cột đổi sang thang 0–100.
+
+**Truy vết.** `out/auto_scores.csv` lưu điểm, trạng thái, tệp, trang, đoạn trích và toàn bộ bằng chứng dùng để chấm. `out/auto_scoring_manifest.json` lưu phiên bản và mã băm.
+
+**Giới hạn cần biết.** Đây là phép đo *dấu hiệu trong văn bản*, chưa phải đánh giá chuyên gia. Một câu có từ khóa và con số có thể nói về chủ đề khác. Quy tắc `rule-based-v1` **chưa được kiểm chứng độc lập**: khi thử một bản quy tắc chặt hơn, thứ hạng các ngân hàng sát nhau đổi chỗ (xem [docs/dbi-rules-sensitivity.md](docs/dbi-rules-sensitivity.md)). Vì vậy dự án khuyến nghị cho 2 người đọc tay 40–60 ô điểm trước khi công bố kết luận về hạng.
+
+### 4.2. Lớp B: DTI, 11 chỉ số định lượng
+
+Mỗi chỉ số được chuẩn hóa về 0–100 theo công thức `z = 100 × clip((x − L) / (U − L), 0, 1)`. Chỉ số có chiều "càng thấp càng tốt" (như thay đổi CIR) được đảo dấu.
+
+| Chỉ số | Đo gì | Chiều | Cận L–U | Loại cận |
+|---|---|---|---|---|
+| K-Q1 | Tỷ lệ giao dịch khách hàng qua kênh số | cao tốt | 0–90 | có nguồn |
+| K-Q2 | Tỷ lệ khách hàng số / tổng khách hàng | cao tốt | 0–100 | thang tự nhiên |
+| K-Q3 | Điểm ứng dụng (App Store + Google Play, gia quyền theo lượt đánh giá) | cao tốt | 1–5 | có nguồn |
+| S-Q1 | Thay đổi tỷ lệ giao dịch số bình quân năm | cao tốt | 0–18 | suy ra |
+| S-Q2 | Tăng trưởng kép số khách hàng số | cao tốt | 0–24,46 | tham chiếu ngoài mẫu |
+| T-Q1 | Nguyên giá phần mềm / tổng tài sản bình quân | cao tốt | 0,0799–0,5657 | phân vị mẫu |
+| T-Q2 | Độ phủ 8 nền tảng số (kiểm kê thủ công) | cao tốt | 0–100 | thang tự nhiên |
+| O-Q1 | Thay đổi CIR bình quân năm | thấp tốt | −1,1226–1,4844 | phân vị mẫu |
+| O-Q2 | Tăng trưởng kép thu nhập hoạt động trên nhân viên | cao tốt | 3,0577–9,4781 | phân vị mẫu |
+| C-Q1 | Tỷ lệ nhân sự công nghệ / tổng nhân sự | cao tốt | 0–100 | thang tự nhiên |
+| C-Q2 | Số giờ đào tạo bình quân mỗi nhân viên | cao tốt | 34,5–83,331 | phân vị mẫu |
+
+Cận ở `config/dti_bounds.yaml`, phiên bản `fixed-reference-v2-2026-10-17`. Bốn chỉ số loại "phân vị mẫu" (phân vị 10% và 90% của mẫu gộp 5 ngân hàng) là thang *tương đối*, phụ thuộc mẫu. Cận được đổi sau khi đã thấy dữ liệu vì cận v1 làm điểm bão hòa; việc này được ghi ngay đầu file cấu hình, và bản v1 lưu ở `out/dti_bounds_review_2026-10-12/` để đối chiếu. Lý giải đầy đủ: [dti-bounds-method.md](specs/001-bank-dx-assessment/dti-bounds-method.md).
+
+**Hai cổng bảo vệ tính công bằng:**
+
+- **Bước 0.** Một chỉ số bị loại cho *cả 5 ngân hàng* trong năm đó nếu có từ 2 ngân hàng trở lên thiếu số liệu.
+- **Bước 0b.** Một trụ cột chỉ nhận DTI trong năm đó khi *cả 5 ngân hàng* đều có ít nhất một chỉ số của trụ cột. Nếu không, mọi ngân hàng dùng DBI thuần cho trụ cột đó, để không có ngân hàng nào được chấm theo công thức khác.
+
+Dữ liệu thiếu luôn để trống. Cột `step0b_excluded` trong `out/dti_indicators.csv` ghi các ô bị loại.
+
+### 4.3. Lớp C: đối chiếu với kết quả kinh doanh
+
+**Câu hỏi:** nếu điểm chuyển đổi số có ý nghĩa thì nó phải đi cùng một số kết quả kinh doanh. Lớp này đo *mức độ đi cùng*, không chứng minh nhân quả.
+
+Kết quả hiện tại (hệ số tương quan hạng Spearman ρ, dùng điểm DBI, gộp các năm):
+
+| Chỉ tiêu | Kỳ vọng | ρ gộp | Số quan sát | Nhận xét |
+|---|:-:|---:|---:|---|
+| CASA | + | **+0,59** | 25 | Cùng chiều kỳ vọng, mức trung bình đến khá |
+| ROA | + | **+0,47** | 29 | Cùng chiều kỳ vọng |
+| CIR | − | **−0,36** | 30 | Cùng chiều kỳ vọng |
+| ROE | + | **−0,15** | 29 | **Không** cùng chiều kỳ vọng |
+
+Mỗi năm chỉ có tối đa 5 điểm nên từng năm riêng lẻ rất nhiễu và p-value không đáng tin. Đọc bảng này như bằng chứng mô tả ở mức sơ bộ. Kết quả ROE không ủng hộ giả thuyết; dự án báo cáo đúng như vậy, không loại bỏ.
+
+### 4.4. Lớp kiểm tra độ vững của thứ hạng
+
+Chạy lại xếp hạng dưới 40 kịch bản rời rạc cộng mô phỏng Monte Carlo: đổi tỷ lệ DBI/DTI (100/0, 80/20, 70/30, 60/40), nhiễu trọng số trụ cột (Dirichlet Monte Carlo), loại từng trụ cột, dịch cận L/U, thêm nhiễu vào điểm rubric, đổi cách chuẩn hóa. Kết quả mỗi ngân hàng là khoảng hạng nhỏ nhất–lớn nhất và nhãn:
+
+- **Vững**: hạng gần như không đổi.
+- **Vững (sát ngưỡng)**: hạng đổi nhẹ ở một vài kịch bản.
+- **Nhóm cùng mức**: không tách được khỏi các ngân hàng cạnh nhau, năm 2024 bốn ngân hàng đầu nằm ở trạng thái này (hạng 1–4).
+
+Chi tiết: [docs/sensitivity.md](docs/sensitivity.md).
+
+---
+
+## 5. Hướng dẫn sử dụng
+
+Chọn mức phù hợp với việc bạn cần làm.
+
+| Bạn muốn | Làm mức | Cần cài |
+|---|---|---|
+| Xem kết quả | [A](#mức-a-xem-dashboard-không-cần-cài-gì) | Chỉ trình duyệt |
+| Chạy dashboard trên máy mình | [B](#mức-b-chạy-dashboard-trên-máy-của-bạn) | Python, Node.js |
+| Tính lại điểm từ dữ liệu đã có | [C](#mức-c-tính-lại-điểm-từ-dữ-liệu-đã-thu-thập) | Python |
+| Thu thập lại từ báo cáo gốc hoặc thêm năm mới | [D](#mức-d-chạy-toàn-bộ-từ-báo-cáo-gốc) | Python, Internet |
+
+### Mức A: xem dashboard, không cần cài gì
+
+Mở https://frontend-ashy-kappa-57.vercel.app/. Nếu trang báo lỗi tải dữ liệu, đợi một lát rồi bấm **Thử lại** vì máy chủ API có thể đang khởi động.
+
+| Màn hình | Dùng để |
+|---|---|
+| **Tổng quan** | Xem điểm từng năm, hành trình 2020–2025 (bấm một năm để cả trang đổi theo), nhóm điểm, bản đồ 6 trụ cột |
+| **Hồ sơ ngân hàng** | Xem một ngân hàng: năng lực 6 trụ cột, điểm mạnh và tiêu chí cần cải thiện, bảng 24 tiêu chí kèm trích dẫn và đường dẫn nguồn, bảng chỉ số DTI |
+| **Chỉ tiêu** | Xem từng tiêu chí đạt mức nào, tiêu chí khác nhau nhiều nhất và đồng đều nhất giữa các ngân hàng, 11 chỉ số DTI kèm bằng chứng |
+| **Độ vững & Kiểm định** | Xem thứ hạng có ổn định không (đổi trọng số, xác suất từng hạng, các kịch bản) và tương quan với ROE, ROA, CIR, CASA, thu nhập ngoài lãi |
+| **Phương pháp & Hạn chế** | Đọc công thức và những điều chưa kiểm chứng |
+
+Mẹo: ô điểm có dấu `*` trong bản đồ trụ cột nghĩa là trụ cột đó năm đó chỉ có DBI.
+
+### Mức B: chạy dashboard trên máy của bạn
+
+Cần Python (khuyến nghị 3.10 trở lên) và Node.js (20.19 trở lên hoặc 22.12 trở lên). Dùng **hai cửa sổ terminal**.
+
+**Terminal 1, backend (từ thư mục gốc của repo):**
+
+```powershell
+pip install -r requirements-api.txt
+uvicorn api.main:app --reload --port 8000
+```
+
+Khi thấy `Uvicorn running on http://127.0.0.1:8000` là xong. Thử mở http://localhost:8000/docs để xem API.
+
+**Terminal 2, frontend:**
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Mở địa chỉ in ra (thường là http://localhost:5173/).
+
+Sự cố thường gặp:
+
+| Triệu chứng | Nguyên nhân và cách xử lý |
+|---|---|
+| `Could not read package.json` | Đang đứng ở thư mục gốc. Chạy `cd frontend` trước. |
+| `'vite' is not recognized` | Chưa chạy `npm install` trong `frontend`. |
+| Trang báo "Không tải được dữ liệu từ backend" | Backend chưa chạy. Mở terminal 1. |
+| Muốn trỏ frontend vào API khác | Đặt biến `VITE_API_BASE_URL`, ví dụ `https://bank-dx-toolkit.onrender.com/api/v1`. |
+
+Không muốn chạy server? Xuất JSON tĩnh bằng `python -m api.export_static` (ghi vào `api/static/v1/`), rồi đặt lên bất kỳ máy chủ file tĩnh nào. Phải chạy lại lệnh này sau mỗi lần điểm thay đổi.
+
+### Mức C: tính lại điểm từ dữ liệu đã thu thập
+
+Dữ liệu đã chấm nằm sẵn trong `out/`, nên bạn không cần tải lại PDF.
+
+```powershell
+pip install -r requirements.txt
+cd scripts
 python 12_appendix.py --bundle
 python 10_score.py --years 2020,2021,2022,2023,2024,2025
+python 11_sensitivity.py            # tùy chọn: độ vững thứ hạng
+python 19_validate_layer_c.py --years 2020,2021,2022,2023,2024,2025   # tùy chọn: lớp C
+cd ..
+python -m api.export_static         # cập nhật JSON tĩnh cho dashboard
 ```
 
-Kiểm tra trước khi bàn giao: `python ../tests/smoke_test.py`, `python ../tests/test_auto_score.py`, `python ../tests/test_regressions.py`, `python ../tests/test_download_sources.py`, `python ../tests/test_score.py`. Kiểm thử xác nhận hành vi code; việc chạy đạt không thay thế đối chiếu dữ liệu hoặc kiểm chứng chất lượng chấm điểm trên báo cáo thật.
+Kết quả: `out/score_summary.csv` (điểm và hạng từng năm), `out/scores.csv` (từng trụ cột), `out/dti_indicators.csv` (từng chỉ số). Muốn xem bằng Excel, mở `out/score_results.xlsx`.
 
-## Bước 0 — kiểm tra sẵn có dữ liệu
+Muốn đổi một giả định rồi xem hạng đổi thế nào: `python 10_score.py --weight-scenarios` thêm các kịch bản 100/0, 80/20, 70/30, 60/40.
 
-Radar 6 trụ cột: chạy `python 11_radar.py` trong `scripts/` sau bước 10.
-Biểu đồ dùng cột `p` của `out/scores.csv`, cùng thang 0–100. Thư mục `out/radar/` có
-PNG/SVG riêng mỗi ngân hàng cho năm cuối và chuỗi năm, bảng ghép 5 ngân hàng năm cuối,
-PDF nhiều trang `radar_banks.pdf`, số liệu vẽ và hash nguồn trong `manifest.json`.
-Chạy `python 11_radar.py --years 2025` nếu chỉ muốn xem năm 2025.
+### Mức D: chạy toàn bộ từ báo cáo gốc
 
-Bước 0 hiện là cổng bắt buộc trong bước 10 và ma trận bước 12, phiên bản `indicator_per_year_v1`:
-kiểm tra đủ đầu vào để tính mỗi chỉ số DTI cho cả 5 ngân hàng, riêng từng năm. Thiếu ở **từ 2 ngân hàng trở lên**
-thì loại chỉ số khỏi điểm của cả 5 ngân hàng trong năm đó. Quy tắc được áp ở **cấp chỉ số DTI**,
-không xóa biến thô và chưa tự thay proxy. Agribank dùng cùng cổng; nguồn/ghi chú công bố được rà riêng trong ma trận.
+Dùng khi bạn thêm năm mới, đổi nguồn hoặc muốn tự kiểm chứng toàn bộ chuỗi. Thư mục `data/raw/`, `data/text/` không nằm trong repo (nặng, tái tạo được), nên bước này tải lại tài liệu từ `config/sources.csv`.
 
-`out/variable_availability_matrix.csv` là lưới ngân hàng × biến × năm (Phụ lục B.3),
-`out/indicator_availability_matrix.csv` là lưới ngân hàng × chỉ số × năm,
-`out/step0_gate.csv` ghi số/ngân hàng thiếu và quyết định giữ/loại; `out/step0_report.md` tổng hợp kết quả.
-Trong `dti_indicators.csv`, `x` và `z_before_step0` giữ kết quả trước cổng, `z` và `included_in_score` phản ánh sau cổng.
-`data_confidence` vẫn là số chỉ số có dữ liệu trước cổng / 11; `scoring_coverage` là số dùng sau cổng / 11.
-Không điền 0 cho ô thiếu; trụ cột không còn DTI dùng DBI thuần.
-**Bước 0b (từ 2026-10-17):** một trụ cột chỉ nhận DTI trong năm đó khi **cả 5 ngân hàng** đều có ít nhất một chỉ số của trụ cột; nếu thiếu ở một ngân hàng thì DTI của trụ cột bị bỏ cho cả 5 (P_k = DBI_k). Trước đây ngân hàng thiếu bị chấm DBI thuần còn các ngân hàng khác pha 80/20, nên so sánh lệch (VCB 2020–2022). Cột `step0b_excluded` trong `out/dti_indicators.csv` ghi các ô bị loại. Cận L/U, 24 tiêu chí DBI và công thức 80/20 không đổi.
-
-Bước 10 mặc định tính toàn bộ năm cấu hình 2020–2025. Chạy riêng năm lịch sử không áp lùi rating/checklist hiện tại.
-Bộ DTI giữ lại thay đổi giữa các năm; đọc hạn chế này khi so sánh xu hướng điểm.
-
-## Đối chiếu lớp C
-
-Chạy từ thư mục `scripts/` sau khi đã có gói dữ liệu xác nhận và điểm chính thức:
-
-```bash
-python 19_validate_layer_c.py --prepare-inputs
-python 12_appendix.py --bundle
-python 19_validate_layer_c.py --years 2020,2021,2022,2023,2024,2025
+```powershell
+cd scripts
+python 01_download.py            # tải PDF, kiểm tra robots.txt, nghỉ ≥ 3 giây giữa các yêu cầu
+python 02_extract_text.py        # PDF → văn bản từng trang (thêm --ocr nếu PDF là ảnh)
+python 03_locate_evidence.py     # tìm đoạn chứa từ khóa của 24 tiêu chí
+python 04_extract_numbers.py --bctc
+python 04_extract_numbers.py --kpi
+python 05_app_ratings.py --collect
+python 09c_auto_score.py         # lớp A: chấm DBI
+python 12_appendix.py --bundle   # đóng gói DTI đã xác nhận
+python 10_score.py               # lớp B + tổng hợp
 ```
 
-Bước này xuất `out/layer_c_indicators.csv` (ROE, ROA, CASA, tỷ trọng thu nhập ngoài lãi, nguồn/trang và ghi chú),
-`out/layer_c_pairs.csv` (ghép điểm tổng và DBI thuần), `out/layer_c_correlations.csv` (Spearman riêng từng năm),
-`out/layer_c_report.md`, `out/layer_c_review_queue.csv` và `out/layer_c_manifest.json` (hash đầu vào).
-Lệnh `--prepare-inputs` tạo bản lưu rồi thêm cột rà soát và các dòng LNST trống vào `out/dti_inputs.csv`;
-chạy lại không thêm trùng. Không sao chép số hoặc xác nhận từ ghi chú cũ. Lệnh tính toán không sửa điểm/dữ liệu gốc.
-ROE/ROA cần đủ số đầu–cuối kỳ; năm 2020 thiếu số cuối 2019 thì để trống.
-ROE dùng `net_profit_parent` và `equity`, cả hai có `definition=parent`.
-ROA dùng `net_profit_consolidated` và `total_assets`, cả hai có `definition=consolidated`.
-Không dùng `net_profit` cũ thay thế; thiếu hoặc sai phạm vi thì để trống tỷ số.
+Điều quan trọng: **các bước 04 và 05 chỉ đưa ra ứng viên số liệu.** Người thực hiện phải mở PDF đối chiếu rồi ghi giá trị đã xác nhận vào `out/dti_inputs.csv` (kèm tệp, trang, định nghĩa). Chỉ số liệu đã xác nhận mới được tính điểm.
 
-Điền kết quả đối chiếu vào **`out/dti_inputs.csv`**, không sửa trực tiếp các file xuất.
-Các cột mới: `review_status` (`pending`/`resolved`), `reviewed_by`, `review_date` (`YYYY-MM-DD`), `review_evidence`.
-`resolved` chỉ đóng cờ ghi chú khi đủ người/ngày/bằng chứng, còn nguồn/trang, xác nhận PDF, phạm vi và đơn vị vẫn được kiểm tra.
-Giữ nguyên lịch sử `note`; không chỉ thêm câu “đã đối chiếu” để bỏ cờ. Sau khi cập nhật dữ liệu, chạy lại bước 12 và 19.
-Lọc `priority=1` trong `layer_c_review_queue.csv` để rà soát đầu vào cho năm cuối, gồm số đầu kỳ năm trước.
-`legacy_source_file`, `legacy_page`, `legacy_note` chỉ dẫn đến dữ liệu LNST cũ để mở PDF; không thay thế số mới.
-Mẫu `out/layer_c_awards.csv` lưu giải thưởng riêng (ngân hàng, năm, tên giải, tổ chức, tiêu chí, URL, ngày truy cập,
-`used_in_dbi` 0/1 và tiêu chí DBI nếu đã dùng). Bước 19 chưa tự tra hoặc đưa giải thưởng vào tính điểm.
+**Thêm một năm mới:** thêm năm vào `years` và `coding_years` trong `config/banks.yaml`, thêm link báo cáo vào `config/sources.csv`, rồi chạy lại các bước trên.
 
-Tương quan có hai tập: đủ cặp số đã xác nhận và tập loại các cờ cần rà soát; tối thiểu 3 cặp, tối đa 5 ngân hàng/năm.
-Đây là đối chiếu tài chính mô tả sơ bộ, không suy diễn nhân quả; đối chiếu giải thưởng/xếp hạng bên thứ ba vẫn cần thực hiện riêng.
-Kiểm thử công thức và dữ liệu thiếu: `python ../tests/test_layer_c.py`.
+Hướng dẫn chi tiết từng script, cách xử lý PDF lỗi font, cách lấy từng loại số liệu và quy tắc đạo đức thu thập: [docs/pipeline-guide.md](docs/pipeline-guide.md).
 
-## 1. Cài đặt
+### Kiểm thử
+
+```powershell
+python -m pytest tests/test_api.py -q
+python tests/test_sensitivity.py
+cd scripts
+python ../tests/smoke_test.py
+python ../tests/test_auto_score.py
+python ../tests/test_regressions.py
+python ../tests/test_score.py
+python ../tests/test_layer_c.py
+```
+
+Kiểm thử xác nhận code chạy đúng hành vi mong đợi. Chạy đạt không thay cho việc đối chiếu dữ liệu với báo cáo thật.
+
+### Triển khai
+
+| Thành phần | Nơi chạy | Ghi chú |
+|---|---|---|
+| Dashboard (`frontend/`) | Vercel | Build bằng `npm run build`. Địa chỉ API được nhúng lúc build qua `VITE_API_BASE_URL`, nên đổi API thì phải build và deploy lại. |
+| API (`api/`) | Render | Chạy bằng `uvicorn api.main:app`. Đọc thư mục `out/` và `config/` trong repo, nên phải đẩy dữ liệu mới lên GitHub rồi redeploy để số trên web đổi theo. |
+
+Khi điểm thay đổi, thứ tự đúng là: chạy lại pipeline → commit `out/` và `api/static/` → redeploy API → build lại và deploy frontend.
+
+---
+
+## 6. Cấu trúc repository
 
 ```
-pip install -r requirements.txt
+bank-dx-toolkit/
+├── config/             Cấu hình: ngân hàng, nguồn báo cáo, từ khóa 24 tiêu chí, cận L/U, rubric
+├── scripts/            Pipeline 00–21, chạy từ thư mục này
+├── data/               PDF và văn bản trung gian (không nằm trong repo, tái tạo bằng bước 01–02)
+├── out/                Kết quả: điểm, bằng chứng, dữ liệu DTI đã xác nhận, độ vững
+├── api/                API chỉ đọc (FastAPI) và JSON tĩnh trong api/static/v1/
+├── frontend/           Dashboard React + TypeScript + Vite
+├── specs/              Đặc tả, phương pháp chấm, phương pháp chọn cận L/U
+├── docs/               Hướng dẫn pipeline, độ nhạy, thử nghiệm quy tắc
+├── tests/              Kiểm thử
+└── examples/           PDF mẫu và đầu ra mẫu của từng script
 ```
-Tùy chọn (khuyến nghị):
-- `pdftotext` (gói Poppler) — engine đọc PDF tốt cho tiếng Việt. Windows: tải Poppler, thêm vào PATH.
-- Tesseract OCR + gói ngôn ngữ `vie` + `pip install pytesseract` — cho PDF dạng ảnh hoặc lỗi font.
-- `pip install playwright` rồi `playwright install chromium` — cho trang web tải bằng JavaScript và chụp ảnh bằng chứng.
 
-## 2. Quy trình chạy (làm trong thư mục `scripts/`)
-| Bước | Lệnh | Việc | Đầu ra |
-|---|---|---|---|
-| 0 | `python 00_make_templates.py` | Tạo file mẫu | `config/sources.csv`, `out/coding_sheet.xlsx`, `out/manual_audit.xlsx`, `out/dti_inputs.csv` |
-| 1 | điền `config/sources.csv` bằng tay, rồi `python 01_download.py` | Tải BCTN/BCTC/BCPTBV (BCPTBV tùy chọn; nếu nằm trong BCTN thì để trống `url` và ghi `tích hợp trong BCTN` vào `notes`) | `data/raw/<bank>/<năm>_<loại>.pdf`, `data/raw/manifest.csv` (sha256, ngày truy cập) |
-| 2 | `python 02_extract_text.py [--ocr]` | PDF → text từng trang, tự chọn engine ít lỗi nhất | `data/text/*.jsonl`, `out/extraction_report.csv` (cờ nghi lỗi font) |
-| 3 | `python 03_locate_evidence.py` | Tìm đoạn chứa từ khóa của 24 tiêu chí | `out/evidence_candidates.csv`, `out/keyword_density.csv` |
-| 4a | `python 04_extract_numbers.py --bctc` | Ứng viên số liệu BCTC | `out/financial_candidates.csv` |
-| 4b | `python 04_extract_numbers.py --kpi` | Ứng viên KPI trong BCTN/BCPTBV | `out/kpi_candidates.csv` |
-| 5 | `python 05_app_ratings.py --discover`, điền id vào `config/banks.yaml`, rồi `--collect` | Rating app | `out/app_ratings.csv` |
-| 6 | điền mục `probe` trong `config/banks.yaml`, rồi `python 06_probe_web.py [--screenshot]` | Snapshot trang developer, chính sách bảo mật | `out/web_probe.csv`, `data/web/...` |
-| 7 | `python 07_text_mining.py [--expand] [--compare]` (chạy sau bước 2) | Text mining: BM25, độ phủ, tỷ lệ câu có số liệu, TF-IDF, mở rộng từ điển, đối chiếu điểm thuật toán | `out/tm_criterion.csv`, `tm_pillar.csv`, `tm_tfidf_terms.csv`, `tm_dictionary_expansion.csv`, `tm_vs_dbi.csv` |
-| 8 | `python 08_lda_topics.py [--k 12] [--segment]` | LDA: khám phá chủ đề, tỷ trọng nội dung theo trụ cột | `out/lda_topics.csv`, `lda_bank_topic_share.csv`, `lda_bank_pillar_share.csv`, `lda_k_scan.csv` |
-| 9 | `python 09_phobert.py --build-train / --finetune / --predict` (hoặc `--anchors`) | PhoBERT: lọc câu bằng chứng sai, gợi ý mức rubric | `out/phobert_predictions.csv`, `phobert_evidence_counts.csv`, `phobert_anchor_suggestions.csv` |
-| 09c | `python 09c_auto_score.py` | Chấm DBI theo quy tắc, không yêu cầu bảng chấm tay | `out/auto_scores.csv`, `out/coding_auto.xlsx`, `out/auto_scoring_manifest.json` |
-| 12 | `python 12_appendix.py --bundle` | Đóng gói DTI đã xác nhận + điểm thuật toán | `out/dataset_clean/` |
-| 10 | `python 10_score.py` (hoặc `--draft` khi L/U chưa khóa) | Ghép DBI 80% + DTI 20% | `out/score_summary.csv` (bản nháp có hậu tố `_draft`) |
+### Đọc kết quả ở đâu
 
-## 2a. Lọc và ngôn ngữ
-- 01–04 và 07–09 nhận `--bank tcb,mb`, `--year 2024,2025`, `--type bctn,bctc`, `--only-lang vi|en` (ví dụ chạy thử một ô: `python 01_download.py --bank tcb --year 2024`).
-- Bước 02 gắn `lang` (vi/en/unknown) cho từng văn bản và ghi vào `extraction_report.csv`. File `data/text/*.jsonl` tạo trước khi có cột này coi như tiếng Việt; chạy lại 02 với `--force` để gắn nhãn.
-- Từ khóa, nhãn BCTC và mẫu KPI hỗ trợ cả tiếng Việt và tiếng Anh. Phần tiếng Anh chưa kiểm thử trên báo cáo thật; mỗi ngân hàng dịch nhãn BCTC hơi khác, nên bổ sung vào `BCTC_LABELS` khi gặp.
-- 07 tách văn bản, IDF, chuẩn hóa và tương quan riêng từng ngôn ngữ; 08 và 09 chỉ nhận tiếng Việt, kể cả khi truyền `--only-lang en`.
-- Bước 00 giữ nguyên bảng kiểm kê đã có. Bước 12 `--bundle` chỉ xuất số đã đối chiếu PDF và có nguồn/trang; `range-checked` chưa được dùng để tính điểm chính thức.
-- Bước 10 lấy rating từ ngày thu thập mới nhất của từng ngân hàng, không gộp nhiều ngày. Dữ liệu DTI thiếu luôn để trống, kể cả khi chạy kịch bản trọng số.
+| Bạn tìm | Mở |
+|---|---|
+| Điểm và hạng mỗi ngân hàng mỗi năm | `out/score_summary.csv` |
+| Điểm 6 trụ cột | `out/scores.csv` |
+| Từng chỉ số DTI: số thô, z, trạng thái | `out/dti_indicators.csv` |
+| Điểm từng tiêu chí DBI và bằng chứng | `out/auto_scores.csv` hoặc `out/coding_auto.xlsx` |
+| Số liệu đầu vào DTI kèm nguồn và trang | `out/dti_inputs.csv` |
+| Ô nào bị loại bởi bước 0 và 0b | `out/step0_gate.csv`, cột `step0b_excluded` |
+| Độ vững thứ hạng | `out/sensitivity/` |
+| Mô tả từng cột dữ liệu sạch | `out/dataset_clean/DATA_DICTIONARY.md` |
 
-## 2b. Text mining (script 07)
-- **BM25** (k1=1,2; b=0,75; IDF = ln(1+(N−df+0,5)/(df+0,5))) cho từng tiêu chí × ngân hàng × năm: mức độ "nói về" tiêu chí so với các báo cáo khác trong cùng tập.
-- **Độ phủ**: số từ khóa khác nhau xuất hiện / tổng từ khóa của tiêu chí.
-- **Tỷ lệ câu định lượng**: trong các câu chứa từ khóa, tỷ lệ câu có kèm số + đơn vị (phân biệt "nêu chung chung" với "có số liệu").
-- **TF-IDF unigram/bigram**: thuật ngữ đặc trưng của từng báo cáo.
-- `--expand`: gợi ý từ khóa mới bằng log-odds của các từ nằm trong cửa sổ ±120 ký tự quanh từ khóa (đã gộp cửa sổ chồng nhau). Chỉ là ứng viên, phải duyệt tay rồi mới thêm vào `config/keywords.yaml`.
-- `--compare`: Spearman giữa điểm thuật toán (`coding_auto.xlsx`) và BM25/độ phủ.
-- **Giới hạn**: chỉ chạy thử trên dữ liệu giả lập, chưa thử trên báo cáo thật. Với n = 5 ngân hàng chỉ mang tính mô tả. Các chỉ số này là phụ trợ, điểm chính là rubric vận hành hóa bằng quy tắc 09c. Có thể mở rộng thêm PhoBERT/LDA nhưng bộ công cụ chưa kiểm thử.
+---
 
-## 2c. LDA và PhoBERT (script 08, 09)
-**08 LDA** (scikit-learn). Cắt báo cáo thành đoạn ~120 từ, huấn luyện LDA trên toàn bộ đoạn của cả 5 ngân hàng. Kết quả: mỗi ngân hàng-năm dành bao nhiêu % nội dung cho từng chủ đề, và chủ đề nào thuộc trụ cột nào (gán theo độ trùng với `keywords.yaml`, cần ≥ 2 từ khóa khác nhau, nếu không xếp "khác").
-- Quét K bằng UMass coherence (`lda_k_scan.csv`). UMass thường ưu tiên K nhỏ, nên đọc top từ rồi chọn K bằng `--k`.
-- Chạy nhiều seed, cột `stability` = Jaccard top-15 từ giữa các seed. Chủ đề dưới 0,4 là không ổn định, đừng diễn giải.
-- Nên dùng `--segment` (pyvi) để tách từ ghép tiếng Việt.
-- Phải đọc lại mapping chủ đề→trụ cột bằng mắt. Tỷ trọng chủ đề chỉ nói báo cáo viết nhiều về gì, không nói mức triển khai.
+## 7. Nguyên tắc thiết kế
 
-**09 PhoBERT**. Hai cách dùng:
-1. *Lọc câu bằng chứng sai (khuyến nghị)*. Chạy 03 để có `evidence_candidates.csv`, thêm cột `valid` (1/0) cho các câu bạn đã đọc, rồi `--build-train` → `--finetune --cv 5` (in macro-F1 theo fold) → `--predict`. Mô hình học phân biệt câu "đúng là bằng chứng của tiêu chí" với câu "trúng từ khóa nhưng sai nghĩa". Cần khoảng 30 câu mỗi tiêu chí trở lên. Nếu CV macro-F1 dưới ~0,6 thì đừng dùng để lọc.
-2. *Gợi ý mức rubric không cần dữ liệu huấn luyện (`--anchors`)*. So embedding câu với 96 mô tả mức trong `config/rubric_anchors.csv`. Embedding PhoBERT thô không được huấn luyện cho độ tương đồng câu nên chất lượng thấp, chỉ dùng để người chấm xem trước.
-- PhoBERT được huấn luyện trên văn bản đã tách từ. Mặc định tách bằng pyvi (thay VnCoreNLP). Tinh chỉnh nhanh hơn nhiều khi có GPU.
-- Lần đầu cần mạng để tải `vinai/phobert-base-v2` từ HuggingFace.
+1. **Chỉ dùng dữ liệu công khai.** Tôn trọng `robots.txt`, nghỉ ít nhất 3 giây giữa các yêu cầu, không đăng nhập, không lấy dữ liệu bên trong ứng dụng, không vượt paywall hay captcha.
+2. **Không bao giờ điền 0 cho dữ liệu thiếu.** Ô trống là ô trống; độ phủ dữ liệu luôn đi kèm điểm.
+3. **Cận chuẩn hóa không lấy theo mẫu một cách ngầm.** Cận có nguồn hoặc được ghi rõ là phân vị mẫu, có khóa phiên bản và có nhật ký thay đổi.
+4. **Mọi con số truy được về nguồn.** Tệp, trang, đoạn trích.
+5. **Không suy diễn quá dữ liệu.** Chỉ có 5 ngân hàng, nên mọi thống kê chỉ mang tính mô tả và không có kết luận nhân quả.
 
-**Mức kiểm thử**: chỉ trên dữ liệu giả lập. Với 09, luồng code đã chạy hết (build-train, finetune có CV, predict, anchors) nhưng bằng model BERT nhỏ khởi tạo ngẫu nhiên, vì sandbox không tải được trọng số PhoBERT. Chất lượng phân loại thật của PhoBERT trên báo cáo ngân hàng chưa được đo.
+---
 
-## 3. Từng tiêu chí / biến lấy bằng cách nào
-| Nhóm | Tiêu chí / biến | Cách lấy | Công cụ |
-|---|---|---|---|
-| A. Văn bản báo cáo | S1–S4, K4, T1, T4, O1–O4, C1–C4, D1–D3 (và phần văn bản của K1–K3, T2, T3, D4) | Tải BCTN + BCPTBV → đọc text → script liệt kê đoạn chứa từ khóa, xếp theo gợi ý ưu tiên đọc → 09c tính điểm 0–4 và lưu bằng chứng/phiên bản | 01, 02, 03 |
-| B. Kiểm kê trực tiếp | K1, K2, K3, T3, T4 (chatbot), T2 (Smart OTP/sinh trắc), D4 (trang chính sách), **T-Q2 (8 nền tảng)** | Người chấm thao tác trên app/website, chụp màn hình, ghi vào `manual_audit.xlsx`. Với trang web công khai: script 06 lưu snapshot HTML/ảnh và kiểm tra từ khóa kỳ vọng. Không tự động hóa thao tác bên trong app | 06 + thủ công |
-| C. API cửa hàng ứng dụng | **K-Q3** | iTunes Search/Lookup API (App Store) + `google-play-scraper` (Google Play); gộp có trọng số theo số lượt đánh giá | 05 |
-| D. Báo cáo tài chính | **T-Q1** (phần mềm máy tính, tổng tài sản), **O-Q1** (chi phí hoạt động, LN thuần trước dự phòng → CIR), **O-Q2** (tổng thu nhập HĐ, CBNV), Lớp C: ROE, ROA, CASA, thu nhập ngoài lãi | BCTC kiểm toán → script tìm dòng theo nhãn (bỏ qua khoảng trắng thừa, nhãn ngắt dòng) → người dùng đối chiếu trang → ghi vào `dti_inputs.csv` | 04 `--bctc` |
-| E. KPI trong BCTN/BCPTBV | **K-Q1, K-Q2, S-Q1, S-Q2, C-Q1, C-Q2** và CBNV | Script tìm câu có cụm từ khóa + con số; người dùng chọn đúng con số, ghi định nghĩa của từng ngân hàng | 04 `--kpi` |
-| F. Tra cứu bên thứ ba (thủ công) | Chứng nhận ISO 27001/PCI DSS (T2 mức 3–4), giải thưởng/xếp hạng (mức 4 nhiều tiêu chí, Lớp C) | Tra trên website ngân hàng, trang tổ chức chứng nhận, trang ban tổ chức giải thưởng; lưu link + ngày | thủ công |
+## 8. Hạn chế đã biết
 
-Công thức tính từ số đã xác nhận (BCTC ngân hàng thường tính bằng triệu đồng):
-- Tổng thu nhập hoạt động (TOI) = (mục IX) + (mục VIII, lấy giá trị dương); CIR = chi phí hoạt động / TOI.
-- ROE = LNST / bình quân vốn CSH (đầu kỳ, cuối kỳ); ROA = LNST / bình quân tổng tài sản. BCTC có cả cột năm trước nên tính được bình quân.
-- CASA = tiền gửi không kỳ hạn / tiền gửi của khách hàng; thu nhập ngoài lãi = (TOI − thu nhập lãi thuần) / TOI.
-- T-Q1 = nguyên giá phần mềm máy tính cuối kỳ / tổng tài sản bình quân.
+Những điều dưới đây nên được nêu trong báo cáo nghiên cứu.
 
-## 4. Những chỗ dễ sai
-- **Lỗi font/dấu tiếng Việt khi đọc PDF.** Script chọn engine ít lỗi nhất cho từng trang và cho cờ cảnh báo trong `extraction_report.csv`; từ khóa dùng chế độ chịu lỗi khoảng trắng thừa (`--exact` để tắt). Với file bị cờ: chạy `--ocr` và kiểm tra tay vài trang.
-- **Nhãn BCTC khác nhau giữa ngân hàng** (số mục, cách ngắt dòng, thuyết minh). Script chỉ đưa ứng viên kèm trang và dòng kế tiếp. Luôn mở PDF đối chiếu trước khi ghi vào `dti_inputs.csv`. Với "phần mềm máy tính": lấy nguyên giá cuối kỳ, không lấy hao mòn lũy kế.
-- **Số liệu KPI trong BCTN** do script chỉ lọc câu có số; nhiều con số không phải chỉ số cần tìm. Ghi lại câu gốc và trang vào `dti_inputs.csv`.
-- **Điểm app chỉ có tại thời điểm chạy**: ghi ngày thu thập trong đề tài. Chọn đúng app chính chủ (xem tên nhà phát hành) trước khi `--collect`.
-- **Trang web nhiều nội dung JavaScript hoặc chặn bot**: dùng `--js`; nếu vẫn bị chặn thì mở tay và lưu ảnh chụp. Không cố vượt rào chặn.
-- Thiếu văn bản đọc được: 09c ghi `no_document`, điểm DBI để trống. Không tự điền 0 cho DTI; `no_mention=0` chỉ là kết quả tìm từ khóa trong văn bản đã quét.
+| Hạn chế | Ảnh hưởng | Hướng xử lý |
+|---|---|---|
+| Quy tắc chấm DBI chưa được người kiểm chứng | Hạng sát nhau (cả 2024 và ba vị trí đầu 2025) chưa đủ cơ sở | Người đọc tay 40–60 ô điểm, so với kết quả thuật toán |
+| Chỉ có 5 ngân hàng | Tương quan lớp C và mọi kiểm định chỉ mang tính mô tả | Không suy diễn thống kê |
+| Số trụ cột có DTI thay đổi theo năm | Điểm các năm không hoàn toàn cùng cơ sở, năm 2020–2021 gần như chỉ là DBI | Dashboard hiển thị ghi chú theo năm |
+| Một số cận L/U là phân vị mẫu | Thang tương đối, phụ thuộc 5 ngân hàng này | Thêm tham chiếu ngoài mẫu khi có |
+| S-Q2 và C-Q1 chỉ có rất ít quan sát; T-Q2 không phân biệt được ngân hàng | Các chỉ số này gần như không đóng góp | Thu thập thêm dữ liệu |
+| Từ khóa tiếng Anh chưa thử trên nhiều báo cáo thật | Báo cáo tiếng Anh (MB, Techcombank, một số năm BIDV) có thể bị chấm thấp | Rà lại mẫu theo từng ngôn ngữ |
 
-## 5. Đạo đức và pháp lý khi thu thập
-- Chỉ lấy tài liệu công khai (báo cáo, trang web không cần đăng nhập). Không đăng nhập, không scrape bên trong app, không vượt giới hạn truy cập.
-- Script 01 và 06 kiểm tra `robots.txt` (không có tùy chọn bỏ kiểm tra), nghỉ ít nhất 3 giây giữa các yêu cầu, đặt biến `CONTACT` (email) để ghi vào User-Agent.
-- Lưu `manifest.csv` (URL, ngày, sha256) làm bằng chứng nguồn cho phần phương pháp của đề tài.
-- Dùng cho mục đích học thuật; trích dẫn nguồn đầy đủ.
+---
 
-## 6. Kiểm soát chất lượng
-- Kiểm tay ít nhất 10% số liệu định lượng đã trích (đối chiếu PDF gốc).
-- Kiểm tra ca kiểm thử thuật toán, mẫu bằng chứng, độ phủ tài liệu và độ nhạy với từ khóa/cửa sổ; không yêu cầu kappa.
-- `coding_sheet.xlsx` cũ được giữ để lưu trữ; điểm chính thức nằm trong `coding_auto.xlsx`. Thiếu văn bản để trống; `no_mention=0` chỉ mô tả kết quả phát hiện của thuật toán.
-- Thư mục `examples/` có PDF mẫu giả lập và đầu ra của từng script để bạn thấy định dạng kết quả.
+## 9. Tài liệu liên quan
+
+| Tài liệu | Nội dung |
+|---|---|
+| [docs/pipeline-guide.md](docs/pipeline-guide.md) | Hướng dẫn chi tiết từng script, lấy từng biến ở đâu, những chỗ dễ sai, đạo đức thu thập |
+| [specs/001-bank-dx-assessment/algorithm-scoring.md](specs/001-bank-dx-assessment/algorithm-scoring.md) | Phương pháp chấm DBI bằng quy tắc |
+| [specs/001-bank-dx-assessment/dti-bounds-method.md](specs/001-bank-dx-assessment/dti-bounds-method.md) | Cách chọn cận L/U cho từng chỉ số |
+| [specs/001-bank-dx-assessment/spec.md](specs/001-bank-dx-assessment/spec.md) | Đặc tả yêu cầu của đề tài |
+| [docs/sensitivity.md](docs/sensitivity.md) | Phân tích độ nhạy, cách đọc kết quả |
+| [docs/dbi-rules-sensitivity.md](docs/dbi-rules-sensitivity.md) | Thử nghiệm quy tắc chấm chặt hơn và kết quả |
+| [api/README.md](api/README.md) | Danh sách endpoint và quy ước dữ liệu cho frontend |
+| [out/dataset_clean/DATA_DICTIONARY.md](out/dataset_clean/DATA_DICTIONARY.md) | Từ điển dữ liệu |
+
+Dự án dùng cho mục đích học thuật. Khi sử dụng, vui lòng trích dẫn nguồn báo cáo gốc của từng ngân hàng.
