@@ -1,4 +1,4 @@
-# Hồ sơ nộp bài: đối chiếu yêu cầu của giảng viên
+# Hồ sơ nộp bài
 
 | Yêu cầu | Nằm ở đâu trong repo |
 |---|---|
@@ -10,12 +10,10 @@
 | **Code** | `scripts/` (pipeline), `api/` (FastAPI), `frontend/` (React), `tests/` |
 | **Link sản phẩm** | Giao diện: https://frontend-ashy-kappa-57.vercel.app/ ; API: https://bank-dx-toolkit.onrender.com/api/v1 (docs tại `/docs`). Chạy local: xem [README](README.md) |
 
-Tên thư mục kết quả là `output_data/` (trước đây `out/`).
+Tên thư mục kết quả là `output_data/`.
 
-## Còn thiếu, sẽ bổ sung tuần sau
+## Lưu ý
 
-- Kiểm tra tay 40–60 ô điểm DBI và báo tỷ lệ khớp với điểm quy tắc.
-- Bản triển khai Render cần deploy lại để hiển thị số mới nhất (TCB 77,49; VCB 74,86; MB 73,35; BIDV 63,38; Agribank 54,92 năm 2025); bản build giao diện cũng cần build lại.
 - PDF gốc (~870 MB) không đưa lên GitHub; tải lại bằng `python scripts/01_download.py` từ `config/sources.csv`.
 - ROE/ROA lớp C chưa tính được do thiếu số liệu đầu kỳ.
 - Một số chỉ số DTI yếu (S-Q2, C-Q1, T-Q2) do ngân hàng ít công bố.
