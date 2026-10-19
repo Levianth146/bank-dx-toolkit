@@ -11,7 +11,7 @@ Thay đổi so với `rule-based-v1`:
 - INDEP: bỏ từ chung (giải thưởng, xếp hạng, chứng nhận), tên công ty kiểm toán (Deloitte, PwC, KPMG, Ernst) và Fitch/Moody; thêm "kiểm chứng độc lập".
 
 Kết quả: 143/720 ô đổi điểm (138 giảm, 5 tăng); tỷ lệ ô điểm 4 năm 2025 giảm từ 44% xuống 32%.
-Bảng: `out/sensitivity/dbi_rules_strict_score_summary.csv`, `out/sensitivity/dbi_rules_strict_auto_scores.csv`.
+Bảng: `output_data/sensitivity/dbi_rules_strict_score_summary.csv`, `output_data/sensitivity/dbi_rules_strict_auto_scores.csv`.
 
 ## Điểm tổng 2020–2025 (cận DTI v2, bước 0b)
 

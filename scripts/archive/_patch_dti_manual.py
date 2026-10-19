@@ -5,7 +5,7 @@ import csv
 from pathlib import Path
 from common import is_manual_confirmation
 
-OUT = Path(__file__).resolve().parents[1] / "out" / "dti_inputs.csv"
+OUT = Path(__file__).resolve().parents[1] / "output_data" / "dti_inputs.csv"
 
 # (bank, year, variable, value, unit, source_file, page, confirmed_by, note)
 PATCHES = [

@@ -41,7 +41,7 @@ scripts/    00 mẫu · 01 tải · 02 text · 03 bằng chứng · 04 số · 0
             07 TM · 08 LDA · 09 PhoBERT
             10_score.py · 11_sensitivity.py · 12_appendix.py   ← chưa viết
 data/       raw/  text/  web/     (không commit)
-out/        CSV/XLSX kết quả     (không commit dữ liệu thật nếu chứa PII — hiện không)
+output_data/        CSV/XLSX kết quả     (không commit dữ liệu thật nếu chứa PII — hiện không)
 models/     PhoBERT tinh chỉnh   (không commit)
 specs/001-bank-dx-assessment/   spec, plan, research, data-model, contracts, quickstart, tasks
 tests/      smoke_test.py
@@ -55,16 +55,16 @@ config/sources.csv  (5 NH × 2020–2025; BCTN+BCTC bắt buộc; BCPTBV tùy ch
 01_download ──► data/raw/*.pdf + manifest.csv
         │
         ▼
-02_extract_text ──► data/text/*.jsonl + out/extraction_report.csv
+02_extract_text ──► data/text/*.jsonl + output_data/extraction_report.csv
         │
         ├──────────────────────┬──────────────────────┐
         ▼                      ▼                      ▼
 03_locate_evidence      04_extract_numbers     07 / 08 / 09 (phụ)
-out/evidence_candidates   --bctc / --kpi         tm_*, lda_*, phobert_*
+output_data/evidence_candidates   --bctc / --kpi         tm_*, lda_*, phobert_*
         │                      │
         ▼                      ▼
 [Người chấm ×2]          + 05_app_ratings
- coding_auto.xlsx          → out/dti_inputs.csv (người xác nhận)
+ coding_auto.xlsx          → output_data/dti_inputs.csv (người xác nhận)
  (+ người 3 nếu bất đồng)
         │                      │
         └──────────┬───────────┘

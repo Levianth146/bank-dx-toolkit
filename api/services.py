@@ -1,4 +1,4 @@
-"""Logic nghiệp vụ của API: biến các tệp trong out/ thành cấu trúc JSON cho dashboard.
+"""Logic nghiệp vụ của API: biến các tệp trong output_data/ thành cấu trúc JSON cho dashboard.
 
 Quy ước dữ liệu (theo AGENTS.md và specs/001-bank-dx-assessment):
   - Mọi điểm theo thang 0–100; data_confidence theo thang 0–1 (= số chỉ số DTI có dữ liệu / 11).
@@ -167,7 +167,7 @@ class DxService(InputsMixin, LayerCMixin, SensitivityMixin):
                                 direction=b.get("direction", "higher_better"),
                                 L=num(b.get("L")), U=num(b.get("U")), bounds_status=text(b.get("status")),
                                 formula=INDICATOR_FORMULAS.get(i), input_variables=list(INDICATOR_INPUTS.get(i, []))))
-        mt = [m for m in (self.store.mtime("out/score_summary.csv"), self.store.mtime("out/scores.csv")) if m]
+        mt = [m for m in (self.store.mtime("output_data/score_summary.csv"), self.store.mtime("output_data/scores.csv")) if m]
         return dict(
             api_version=__version__,
             framework=dict(dbi_weight=W_DBI_BASE, dti_weight=round(1 - W_DBI_BASE, 2), pillars=len(self.PILLARS),

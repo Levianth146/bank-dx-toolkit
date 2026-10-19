@@ -1,6 +1,6 @@
 # API cho dashboard DBI–DTI
 
-API **chỉ đọc**, lấy dữ liệu từ `out/` do pipeline sinh ra (`10_score.py`, `12_appendix.py`, `09c_auto_score.py`). API không ghi vào `out/` và không tự chấm lại điểm chính thức; riêng phần độ nhạy trọng số dùng lại hàm của `10_score.py` để công thức không lệch.
+API **chỉ đọc**, lấy dữ liệu từ `output_data/` do pipeline sinh ra (`10_score.py`, `12_appendix.py`, `09c_auto_score.py`). API không ghi vào `output_data/` và không tự chấm lại điểm chính thức; riêng phần độ nhạy trọng số dùng lại hàm của `10_score.py` để công thức không lệch.
 
 ## Chạy
 
@@ -41,7 +41,7 @@ Cùng nội dung với endpoint, đặt trên GitHub Pages/Vercel/Netlify là fr
 | Lớp C: chỉ tiêu | `GET /financial-performance?year=2025` | ROE, ROA, CIR, CASA, thu nhập ngoài lãi + điểm (cho biểu đồ phân tán) |
 | Lớp C: tương quan | `GET /layer-c/correlation?score_var=dbi&lag=0` | Spearman, Kendall theo năm, gộp, gộp đã loại xu hướng năm |
 | Một lần cho tất cả | `GET /snapshot` | `meta` + 30 bản ghi ngân hàng–năm |
-| Kiểm tra sống | `GET /health` | Ngày sửa các tệp `out/` đang đọc |
+| Kiểm tra sống | `GET /health` | Ngày sửa các tệp `output_data/` đang đọc |
 
 Mã ngân hàng: `agribank`, `bidv`, `vcb`, `mb`, `tcb`. Mã trụ cột: `K S T O C D`.
 
@@ -56,7 +56,7 @@ Mã ngân hàng: `agribank`, `bidv`, `vcb`, `mb`, `tcb`. Mã trụ cột: `K S T
 
 ## Lỗi
 
-Mọi lỗi có dạng `{"error": {"code": "...", "message": "..."}}` với `bank_not_found` (404), `invalid_year` / `invalid_metric` / `invalid_sort` / `invalid_pillar` / `invalid_request` (422), `data_not_ready` (503, chưa có tệp trong `out/`).
+Mọi lỗi có dạng `{"error": {"code": "...", "message": "..."}}` với `bank_not_found` (404), `invalid_year` / `invalid_metric` / `invalid_sort` / `invalid_pillar` / `invalid_request` (422), `data_not_ready` (503, chưa có tệp trong `output_data/`).
 
 ## Ví dụ cho frontend
 
@@ -81,7 +81,7 @@ const detail = await get("/banks/vcb/2025");                      // trang chi t
 api/main.py          route + CORS + định dạng lỗi
 api/services*.py     logic: xếp hạng, xu hướng, so sánh, tiêu chí (services.py); số liệu đầu vào và cận L/U (_inputs); Lớp C (_layerc); độ nhạy đầy đủ (_sens)
 api/definitions.py   chỉ số DTI dùng biến nào, công thức hiển thị, chỉ tiêu Lớp C
-api/repository.py    đọc out/*.csv|xlsx, config/*.yaml, cache theo mtime
+api/repository.py    đọc output_data/*.csv|xlsx, config/*.yaml, cache theo mtime
 api/schemas.py       mô hình phản hồi (sinh OpenAPI)
 api/export_static.py xuất JSON tĩnh
 tests/test_api.py    24 test, đối chiếu API với kết quả của 10_score.py

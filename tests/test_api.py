@@ -1,5 +1,5 @@
 """Kiểm thử lớp API. Chạy từ thư mục gốc repo:   pytest tests/test_api.py -q
-Dùng dữ liệu thật trong out/ (score_summary.csv, scores.csv, ...), nên đây cũng là phép đối chiếu
+Dùng dữ liệu thật trong output_data/ (score_summary.csv, scores.csv, ...), nên đây cũng là phép đối chiếu
 API <-> pipeline: nếu 10_score.py đổi công thức mà API không theo, test sẽ vỡ."""
 import json
 import math
@@ -39,7 +39,7 @@ def test_health_and_meta():
 
 
 def test_ranking_matches_pipeline_output():
-    summ = pd.read_csv(ROOT / "out" / "score_summary.csv", encoding="utf-8-sig")
+    summ = pd.read_csv(ROOT / "output_data" / "score_summary.csv", encoding="utf-8-sig")
     for y in range(2020, 2026):
         items = get(f"/ranking?year={y}")["items"]
         exp = summ[summ.year == y].sort_values("rank")
@@ -161,11 +161,11 @@ def test_data_reload_on_file_change(tmp_path):
     """Chạy lại 10_score.py (đổi mtime) thì API đọc dữ liệu mới, không cần restart."""
     import shutil
     from api.repository import DataStore
-    for d in ("out", "config", "scripts"):
+    for d in ("output_data", "config", "scripts"):
         shutil.copytree(ROOT / d, tmp_path / d, ignore=shutil.ignore_patterns("*.pdf", "dataset_clean", "dti_bounds_review*"))
     svc = DxService(DataStore(tmp_path))
     assert svc.ranking(2025)["items"][0]["bank"] == "tcb"
-    p = tmp_path / "out" / "score_summary.csv"
+    p = tmp_path / "output_data" / "score_summary.csv"
     df = pd.read_csv(p, encoding="utf-8-sig")
     df.loc[(df.bank == "mb") & (df.year == 2025), "score"] = 99.0
     df.to_csv(p, index=False, encoding="utf-8-sig")
@@ -175,7 +175,7 @@ def test_data_reload_on_file_change(tmp_path):
 def test_missing_output_gives_503(tmp_path):
     from api.repository import DataStore
     from api.errors import DataNotReady
-    (tmp_path / "out").mkdir(); (tmp_path / "config").mkdir()
+    (tmp_path / "output_data").mkdir(); (tmp_path / "config").mkdir()
     with pytest.raises(DataNotReady):
         DxService(DataStore(tmp_path)).years()
 
@@ -256,8 +256,8 @@ def test_layer_c_formulas():
     assert abs(row["roe"] - roe) < 1e-3 and abs(row["cir"] - cir) < 1e-3 and abs(row["casa"] - casa) < 1e-3
     # CIR khớp đúng cách tính của 10_score.py
     S = DxService().S
-    V, D = S.load_inputs(str(ROOT / "out" / "dataset_clean" / "dti_inputs_confirmed.csv"), False)
-    calc = S.Calc(V, D, S.load_app_rating(str(ROOT / "out" / "app_ratings.csv")), S.load_platform(str(ROOT / "out" / "manual_audit.xlsx")), 2021, 2025)
+    V, D = S.load_inputs(str(ROOT / "output_data" / "dataset_clean" / "dti_inputs_confirmed.csv"), False)
+    calc = S.Calc(V, D, S.load_app_rating(str(ROOT / "output_data" / "app_ratings.csv")), S.load_platform(str(ROOT / "output_data" / "manual_audit.xlsx")), 2021, 2025)
     for b in ("vcb", "tcb", "mb"):
         r = next(i for i in fp["items"] if i["bank"] == b and i["year"] == 2025)
         assert abs(r["cir"] - calc.cir(b, 2025)) < 1e-2
@@ -290,9 +290,9 @@ def test_layer_c_correlation():
 
 def test_sensitivity_full_matches_script_output():
     sf = get("/sensitivity/full?year=2025")
-    assert sf["available_years"] == sorted(set(pd.read_csv(ROOT / "out" / "sensitivity" / "sens_scenarios.csv", encoding="utf-8-sig").year)) and sf["robust_threshold"] == 0.8
+    assert sf["available_years"] == sorted(set(pd.read_csv(ROOT / "output_data" / "sensitivity" / "sens_scenarios.csv", encoding="utf-8-sig").year)) and sf["robust_threshold"] == 0.8
     official = {i["bank"]: i["rank"] for i in get("/ranking?year=2025")["items"]}
-    scen = pd.read_csv(ROOT / "out" / "sensitivity" / "sens_scenarios.csv", encoding="utf-8-sig")
+    scen = pd.read_csv(ROOT / "output_data" / "sensitivity" / "sens_scenarios.csv", encoding="utf-8-sig")
     scen = scen[(scen.year == 2025) & (scen.family != "0. Cơ sở")]
     for b in sf["banks"]:
         assert b["base_rank"] == official[b["bank"]]                         # hạng cơ sở khớp điểm chính thức
@@ -311,7 +311,7 @@ def test_sensitivity_full_missing_outputs(tmp_path):
     import shutil
     from api.repository import DataStore
     from api.errors import ApiError
-    for d in ("out", "config", "scripts"):
+    for d in ("output_data", "config", "scripts"):
         shutil.copytree(ROOT / d, tmp_path / d, ignore=shutil.ignore_patterns("*.pdf", "sensitivity", "dataset_clean", "dti_bounds_review*"))
     with pytest.raises(ApiError) as e:
         DxService(DataStore(tmp_path)).sensitivity_full(2025)

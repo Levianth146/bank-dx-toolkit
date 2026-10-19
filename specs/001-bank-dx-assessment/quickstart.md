@@ -7,8 +7,8 @@
 
 ## B. Một ngân hàng × một năm (trước khi mở rộng 2020–2025)
 1. Điền `config/sources.csv`: **BCTN + BCTC** có `url`; nếu không có BCPTBV riêng thì `url` trống và `notes` = `tích hợp trong BCTN` / `không công bố` / `chưa tìm thấy` (không dán trùng PDF).
-2. `python 01_download.py && python 02_extract_text.py` → `out/extraction_report.csv`, cột `flag` phải OK (hoặc chạy OCR nếu gắn cờ).
-3. `python 03_locate_evidence.py` → đọc thử ~20 dòng `out/evidence_candidates.csv`.
+2. `python 01_download.py && python 02_extract_text.py` → `output_data/extraction_report.csv`, cột `flag` phải OK (hoặc chạy OCR nếu gắn cờ).
+3. `python 03_locate_evidence.py` → đọc thử ~20 dòng `output_data/evidence_candidates.csv`.
 4. `python 04_extract_numbers.py --bctc --kpi` → đối chiếu tay TOI, CIR, ROE với BCTC (± 0,1%, SC-02).
 5. Nếu lệch: ghi vào `tasks.md` mục **Phát hiện** rồi mới sửa regex / thêm ca smoke.
 

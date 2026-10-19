@@ -15,14 +15,14 @@ Hợp đồng cột: `contracts/outputs.md`. Mô hình: `data-model.md`.
 - ✅ **T001** [US1] Cấu trúc repo: `scripts/common.py`, `config/banks.yaml`, `config/keywords.yaml`, `config/rubric_anchors.csv`, `config/sources.csv`
 - ✅ **T002** [US1] `scripts/00_make_templates.py` (coding_sheet, manual_audit, dti_inputs, sources)
 - ✅ **T003** [US1] `scripts/01_download.py` → `data/raw/`, `data/raw/manifest.csv` (robots, delay ≥ 3 s, magic byte)
-- ✅ **T004** [US1] `scripts/02_extract_text.py` → `data/text/*.jsonl`, `out/extraction_report.csv`
-- ✅ **T005** [US2] `scripts/03_locate_evidence.py` → `out/evidence_candidates.csv`
-- ✅ **T006** [US3] `scripts/04_extract_numbers.py` (`--bctc`, `--kpi`) → `out/financial_candidates.csv`, `out/kpi_candidates.csv`
-- ✅ **T007** [P] [US3] `scripts/05_app_ratings.py` → `out/app_ratings.csv`
+- ✅ **T004** [US1] `scripts/02_extract_text.py` → `data/text/*.jsonl`, `output_data/extraction_report.csv`
+- ✅ **T005** [US2] `scripts/03_locate_evidence.py` → `output_data/evidence_candidates.csv`
+- ✅ **T006** [US3] `scripts/04_extract_numbers.py` (`--bctc`, `--kpi`) → `output_data/financial_candidates.csv`, `output_data/kpi_candidates.csv`
+- ✅ **T007** [P] [US3] `scripts/05_app_ratings.py` → `output_data/app_ratings.csv`
 - ✅ **T008** [P] [US3] `scripts/06_probe_web.py` → `data/web/`
-- ✅ **T009** [US4] `scripts/07_text_mining.py` → `out/tm_criterion.csv`, `out/tm_pillar.csv`
-- ✅ **T010** [P] [US5] `scripts/08_lda_topics.py` → `out/lda_topics.csv`
-- ✅ **T011** [P] [US5] `scripts/09_phobert.py` → `out/phobert_predictions.csv` (luồng code; chưa thử trọng số PhoBERT thật)
+- ✅ **T009** [US4] `scripts/07_text_mining.py` → `output_data/tm_criterion.csv`, `output_data/tm_pillar.csv`
+- ✅ **T010** [P] [US5] `scripts/08_lda_topics.py` → `output_data/lda_topics.csv`
+- ✅ **T011** [P] [US5] `scripts/09_phobert.py` → `output_data/phobert_predictions.csv` (luồng code; chưa thử trọng số PhoBERT thật)
 - ✅ **T012** `tests/smoke_test.py`, `AGENTS.md`, `.cursor/rules/*`
 
 ---
@@ -34,11 +34,11 @@ Làm **T021 → T023** trước khi mở rộng toàn bộ năm/ngân hàng.
 - ✅ **T020** Làm rõ mục 8 spec (`/speckit.clarify`) + checklist clarify trong `checklists/requirements.md` (năm 2020–2025; L/U chuẩn ngành; 2+1 người chấm)
 - ✅ **T021** [US1] Techcombank 2024: `sources.csv` đã có URL; chạy `01`→`04 --bctc --kpi` với `--bank tcb --year 2024`. Kết quả: BCTN+BCTC flag OK; 517 evidence / 24 tiêu chí; 20 financial + 83 KPI candidates. Chi tiết mục **Phát hiện**
 - ✅ **T022** [US3] Nhãn EN BCTC (TCB 2024) đã có trong `04_extract_numbers.py` + ca smoke ô-mỗi-dòng (TOI/opex/equity/net_profit_parent). `software_gross_cost` vẫn đọc tay (cột bảng). Smoke: chạy lại khi đụng 04/common.
-- ✅ **T023** [US3] Đối chiếu tay TOI/CIR/ROE tcb 2024 (± 0,1%, SC-02): TOI=46,990,397 (=IX+VIII, diff 0); CIR=32.708%; ROE parent=15.612%. Đã điền `out/dti_inputs.csv` (14 biến có số + 2 để trống: digital_customers, tech_staff). Chi tiết **Phát hiện**.
+- ✅ **T023** [US3] Đối chiếu tay TOI/CIR/ROE tcb 2024 (± 0,1%, SC-02): TOI=46,990,397 (=IX+VIII, diff 0); CIR=32.708%; ROE parent=15.612%. Đã điền `output_data/dti_inputs.csv` (14 biến có số + 2 để trống: digital_customers, tech_staff). Chi tiết **Phát hiện**.
 - ✅ **T026** [P theo NH] [US1] Điền đủ `config/sources.csv` cho 5 NH × **2020–2025**: BCTN + BCTC bắt buộc; BCPTBV link riêng hoặc `notes` ∈ {`tích hợp trong BCTN`, `không công bố`, `chưa tìm thấy`}; không dán trùng PDF; mỗi dòng thiếu `url` phải có `notes` — **2026-10-08**: 23 dòng BCPTBV thiếu url đã gắn notes (agribank/mb/tcb/vcb → `tích hợp trong BCTN`; bidv 2020–22 → `chưa tìm thấy`); các năm đã có url SR giữ nguyên.
 - ⬜ **T024** [P theo NH] [US1] Pipeline 01→04 + `12_appendix` đã chạy cho 5 NH (có URL). Còn mở: OCR tệp `CẦN KIỂM`; VCB BCTN vài năm `robots.txt`; đo thời gian NFR-03. BCPTBV notes → xem T026. Chi tiết **Phát hiện**
-- ✅ **T025** [P] [US3] Cập nhật `config/banks.yaml` (apple_id / play_id): `scripts/05_app_ratings.py --discover` rồi `--collect` → `out/app_ratings.csv` — **2026-10-08**: đã điền 5 NH; thu rating ngày 2026-10-08 (xem Phát hiện)
-- ⬜ **T027** [P] [US1] Cập nhật `scripts/00_make_templates.py` (và template liên quan): cột Coding đủ `coder1`, `coder2`, `final`, `evidence_ref`; tạo mẫu trống `out/adjudication_log.csv` theo `contracts/outputs.md`
+- ✅ **T025** [P] [US3] Cập nhật `config/banks.yaml` (apple_id / play_id): `scripts/05_app_ratings.py --discover` rồi `--collect` → `output_data/app_ratings.csv` — **2026-10-08**: đã điền 5 NH; thu rating ngày 2026-10-08 (xem Phát hiện)
+- ⬜ **T027** [P] [US1] Cập nhật `scripts/00_make_templates.py` (và template liên quan): cột Coding đủ `coder1`, `coder2`, `final`, `evidence_ref`; tạo mẫu trống `output_data/adjudication_log.csv` theo `contracts/outputs.md`
 
 ---
 
@@ -46,11 +46,11 @@ Làm **T021 → T023** trước khi mở rộng toàn bộ năm/ngân hàng.
 
 Các task T030/T031/T034/T032 dưới đây là lịch sử, không còn điều kiện bắt buộc kể từ quyết định nhóm ngày 2026-10-12. Thay bằng 09c, kiểm thử thuật toán và truy vết phiên bản theo `algorithm-scoring.md`.
 
-- ⬜ **T030** [US2] Hai người chấm độc lập ≥ 20% mẫu (tiêu chí × NH × năm) trên `out/coding_sheet.xlsx` (hoặc template từ 00); **không** để script ghi cột `final`
+- ⬜ **T030** [US2] Hai người chấm độc lập ≥ 20% mẫu (tiêu chí × NH × năm) trên `output_data/coding_sheet.xlsx` (hoặc template từ 00); **không** để script ghi cột `final`
 - ⬜ **T031** [US2] Tính Cohen's κ có trọng số trên cặp `(coder1, coder2)` **trước** hòa giải; nếu κ < 0,6 → họp thống nhất rubric (`config/rubric_anchors.csv`) rồi chấm lại mẫu
-- ⬜ **T034** [US2] Hòa giải bất đồng: lệch ≥ 2 bậc hoặc thảo luận không xong → **người thứ ba** quyết `final`; ghi `out/adjudication_log.csv` (criterion, bank, year, score_coder1, score_coder2, score_final, adjudicator, reason, resolved_at)
-- ⬜ **T032** [US2] Chấm đủ 24 tiêu chí × 5 NH × **6 năm 2020–2025** (720 dòng trong `out/coding_sheet.xlsx`; chốt 2026-10-08); điền `final` + `evidence_ref` (trỏ `out/evidence_candidates.csv`)
-- ⬜ **T033** [P] [US5] Đánh dấu cột `valid` trên `out/evidence_candidates.csv` (≥ ~30 câu/tiêu chí nếu dùng PhoBERT)
+- ⬜ **T034** [US2] Hòa giải bất đồng: lệch ≥ 2 bậc hoặc thảo luận không xong → **người thứ ba** quyết `final`; ghi `output_data/adjudication_log.csv` (criterion, bank, year, score_coder1, score_coder2, score_final, adjudicator, reason, resolved_at)
+- ⬜ **T032** [US2] Chấm đủ 24 tiêu chí × 5 NH × **6 năm 2020–2025** (720 dòng trong `output_data/coding_sheet.xlsx`; chốt 2026-10-08); điền `final` + `evidence_ref` (trỏ `output_data/evidence_candidates.csv`)
+- ⬜ **T033** [P] [US5] Đánh dấu cột `valid` trên `output_data/evidence_candidates.csv` (≥ ~30 câu/tiêu chí nếu dùng PhoBERT)
 
 ---
 
@@ -60,8 +60,8 @@ Các task T030/T031/T034/T032 dưới đây là lịch sử, không còn điều
 
 - ⬜ **T040** [US6] Chốt L, U 11 chỉ số DTI theo chuẩn ngành; tạo `config/dti_bounds.yaml` (mỗi biến: `L`, `U`, `unit`, `direction`, `source_citation`, `rationale`) — Hiến chương V
   - 2026-10-08: đã có bản nháp `config/dti_bounds.yaml` (locked=false): 2 sourced, 3 natural/derived, 6 needs_source. Còn tìm nguồn / quyết định cho 6 chỉ số trước khi khóa.
-- ⬜ **T041** [US6] Viết `scripts/10_score.py`: đọc coding + `out/dti_inputs.csv` + `config/dti_bounds.yaml` → `out/scores.csv` (pillar, dbi, dti, p, data_confidence, score_total, maturity_level, rank). Thiếu DTI → P_k = DBI_k; P_6 = DBI_6; không điền 0 cho thiếu số; **không** ghi `final` vào coding_sheet
-- ⬜ **T042** [US6] Viết `scripts/11_sensitivity.py` → `out/sensitivity.csv`: kịch bản 100/0, 80/20, 70/30, 60/40; Dirichlet MC trọng số trụ; Kendall τ, Spearman; `rank_stable_pct` (≥ 80% = vững)
+- ⬜ **T041** [US6] Viết `scripts/10_score.py`: đọc coding + `output_data/dti_inputs.csv` + `config/dti_bounds.yaml` → `output_data/scores.csv` (pillar, dbi, dti, p, data_confidence, score_total, maturity_level, rank). Thiếu DTI → P_k = DBI_k; P_6 = DBI_6; không điền 0 cho thiếu số; **không** ghi `final` vào coding_sheet
+- ⬜ **T042** [US6] Viết `scripts/11_sensitivity.py` → `output_data/sensitivity.csv`: kịch bản 100/0, 80/20, 70/30, 60/40; Dirichlet MC trọng số trụ; Kendall τ, Spearman; `rank_stable_pct` (≥ 80% = vững)
 - ⬜ **T043** [US6] Kiểm thử đơn vị cho T041/T042 (2 NH giả, số tay) trong `tests/` (file mới hoặc mở rộng smoke nếu phù hợp); công thức khớp `data-model.md`
 
 ---
@@ -69,8 +69,8 @@ Các task T030/T031/T034/T032 dưới đây là lịch sử, không còn điều
 ## Giai đoạn 5 — Đối chiếu và xuất [US4, US5, US7]
 
 - ⬜ **T050** [P] [US4][US5] Chạy `scripts/07_text_mining.py --compare`, `08_lda_topics.py`, `09_phobert.py`; diễn giải kèm cảnh báo n = 5. Nếu sửa 07: **bắt buộc** smoke test
-- ⬜ **T051** [US7] Viết `scripts/12_appendix.py` → `out/availability_matrix.csv` + `out/evidence_appendix.csv` (hoặc xlsx): đọc `config/sources.csv` + coding; `tích hợp trong BCTN` ≠ `không công bố`
-- ⬜ **T052** [US7] Cập nhật báo cáo đề tài (docx) bằng `out/scores.csv`, `out/sensitivity.csv`, ma trận sẵn có dữ liệu
+- ⬜ **T051** [US7] Viết `scripts/12_appendix.py` → `output_data/availability_matrix.csv` + `output_data/evidence_appendix.csv` (hoặc xlsx): đọc `config/sources.csv` + coding; `tích hợp trong BCTN` ≠ `không công bố`
+- ⬜ **T052** [US7] Cập nhật báo cáo đề tài (docx) bằng `output_data/scores.csv`, `output_data/sensitivity.csv`, ma trận sẵn có dữ liệu
 
 ---
 
@@ -102,7 +102,7 @@ T050 [P] sau khi có final (hoặc chạy TM không --compare sớm hơn)
 - `2026-10-08 | — | tests/smoke_test.py | copytree mang cả data/raw PDF thật → 02 --force treo ~12 phút | ignore data/out; smoke TẤT CẢ OK (~10s); 12_appendix OK (tcb2024 data_conf=0.875)`
 - `2026-10-08 | 5NH | dti_inputs.csv | Điền BCTC ưu tiên 2020/2023/2025 (+ một phần 2021/22/24): 244/480 ô có số. Fin ưu tiên ~8–9/10/NH (thiếu phổ biến: software_gross_cost đọc tay cột bảng; vài CASA/equity OCR). KPI hầu hết trống + note not_disclosed (không đoán). Giữ nguyên tcb2024 manual-t023. Helper: scripts/_fill_dti_inputs.py, _patch_dti_manual.py | tiếp: OCR/đối chiếu software + vá 2021/22/24 còn thiếu (đặc biệt vcb)`
 - `2026-10-08 | 5NH | 03_locate_evidence.py | Chạy lại toàn bộ → evidence_candidates.csv **7260** đoạn; 24/24 tiêu chí có hit. VCB BCTN 2020–23+2025 trước thiếu text (PDF đã có trong raw) → đã chạy `02 --bank vcb --type bctn` rồi 03 lại. Coverage tiêu chí/NH-năm: tcb/bidv/mb cao (thường 17–24/24); agribank 8–20/24; vcb sau extract ~15–22/24 | chưa sửa 04/common → chưa smoke`
-- `2026-10-08 | 5NH | 13_check_dti + 14_triage_dti | Trước triage: 40 cảnh báo / 37 ô nghi / 244 ô có số. `--apply`: xóa 28 KPI heuristic; 202 auto→auto-unverified; gắn CẦN KIỂM. Sau sửa PDF+confirm: còn **27 cảnh báo / 26 ô nghi** (nhiều CHEO_NAM lệch nhỏ / false positive). Backup: `out/dti_inputs.backup_*.csv` | tiếp đối chiếu ô còn lại nếu cần`
+- `2026-10-08 | 5NH | 13_check_dti + 14_triage_dti | Trước triage: 40 cảnh báo / 37 ô nghi / 244 ô có số. `--apply`: xóa 28 KPI heuristic; 202 auto→auto-unverified; gắn CẦN KIỂM. Sau sửa PDF+confirm: còn **27 cảnh báo / 26 ô nghi** (nhiều CHEO_NAM lệch nhỏ / false positive). Backup: `output_data/dti_inputs.backup_*.csv` | tiếp đối chiếu ô còn lại nếu cần`
 - `2026-10-08 | mb/agribank/bidv/vcb/tcb | dti_inputs sửa tay | Ưu tiên: mb2024 total_assets 1.128.801.062; mb fee/opex 2020–21; agribank CASA 2021–25; bidv2021 net_profit attributable; vcb2022 CASA 402.103.803; tcb2023 net_profit parent. Xóa bidv2024 CASA (placements). Điền FIN 2020/23/25 + software TCB/BIDV/Agri/MB; KPI BCTN ~27 ô năm ưu tiên. Ô có số ~267/480 | còn thiếu: nhiều KPI 2021/22/24; VCB OCR; software VCB; CASA bidv2020/24/25; mb CASA`
 - `2026-10-08 | 5NH | banks.yaml + 05_app_ratings | discover→apple/play id chính chủ; collect 2026-10-08: Agribank 3.800; MB 4.746; TCB 4.758; BIDV 3.968; VCB 3.817 (gộp trọng số). Điểm chỉ đúng ngày thu | T025 ✅`
 - `2026-10-08 | sources.csv | T026 BCPTBV | 23 dòng thiếu url: notes ∈ {tích hợp trong BCTN, chưa tìm thấy}; không dùng «không công bố» lần này (BIDV 2020–22 = chưa tìm thấy) | T026 ✅`

@@ -551,7 +551,7 @@
    "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Bao-cao-PTBV/VN_VCB_ESG-Report-2025.pdf?ts=20260428074438",
    "confirmed": true,
    "confirmed_by": "nam",
-   "note": "BCPTBV 2025 trang PDF 26 (trang in 50): Tỷ lệ giao dịch của khách hàng thực hiện qua các kênh số đạt 91,4%; riêng khách hàng bán lẻ trên 99%. Codex đối chiếu PDF ngày 2026-10-14 và sửa tệp nguồn bctn → bcptbv; giữ giá trị/định nghĩa đã có. Ảnh: out/sq1_review/vcb_2025_bcptbv_p26.png.",
+   "note": "BCPTBV 2025 trang PDF 26 (trang in 50): Tỷ lệ giao dịch của khách hàng thực hiện qua các kênh số đạt 91,4%; riêng khách hàng bán lẻ trên 99%. Codex đối chiếu PDF ngày 2026-10-14 và sửa tệp nguồn bctn → bcptbv; giữ giá trị/định nghĩa đã có. Ảnh: output_data/sq1_review/vcb_2025_bcptbv_p26.png.",
    "definition": "all_txn",
    "missing_reason": null,
    "used_by": [
@@ -1740,7 +1740,7 @@
    "source_url": "https://www.vietcombank.com.vn/-/media/Project/VCB-Sites/VCB/Nha-Dau-tu/Files/BC-dinh-ky/BCTC/2025/20260327---VCB---BCTC-hop-nhat-kiem-toan-nam-2025.pdf?ts=00010101000000",
    "confirmed": false,
    "confirmed_by": null,
-   "note": "not_disclosed: Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: out/tq_review/vcb_2025_bctc_p49.png.",
+   "note": "not_disclosed: Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: output_data/tq_review/vcb_2025_bctc_p49.png.",
    "definition": null,
    "missing_reason": "not_disclosed",
    "used_by": [

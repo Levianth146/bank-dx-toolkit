@@ -8,34 +8,36 @@ pytest-cache-files-*/
 .DS_Store
 
 # dữ liệu nặng / tái tạo được (python scripts/01_download.py tải lại từ config/sources.csv)
-data/raw/
-data/text/
+# PDF gốc (~870MB) không đưa lên git; manifest.csv giữ URL + SHA-256 để tải lại
+data/raw/*
+!data/raw/manifest.csv
+# data/text/ (21MB) là đầu vào chấm điểm -> được theo dõi
 data/web/
 models/
 
-# out/: chỉ theo dõi sản phẩm cuối, bỏ trung gian và sao lưu
-out/*
-!out/.gitkeep
-!out/dti_inputs.csv
-!out/availability_matrix.csv
-!out/app_ratings.csv
-!out/statement_pages.csv
-!out/dti_check.csv
-!out/coding_sheet.xlsx
-!out/manual_audit.xlsx
-!out/coding_auto.xlsx
-!out/auto_scores.csv
-!out/auto_scoring_manifest.json
-!out/dti_indicators.csv
-!out/scores.csv
-!out/score_summary.csv
-!out/dti_bounds_review_2026-10-12/
-out/dti_bounds_review_2026-10-12/*
-!out/dti_bounds_review_2026-10-12/reference_inputs.csv
-!out/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml
-!out/dataset_clean/
-!out/sensitivity/
-out/dti_inputs.backup_*.csv
+# output_data/: chỉ theo dõi sản phẩm cuối, bỏ trung gian và sao lưu
+output_data/*
+!output_data/.gitkeep
+!output_data/dti_inputs.csv
+!output_data/availability_matrix.csv
+!output_data/app_ratings.csv
+!output_data/statement_pages.csv
+!output_data/dti_check.csv
+!output_data/coding_sheet.xlsx
+!output_data/manual_audit.xlsx
+!output_data/coding_auto.xlsx
+!output_data/auto_scores.csv
+!output_data/auto_scoring_manifest.json
+!output_data/dti_indicators.csv
+!output_data/scores.csv
+!output_data/score_summary.csv
+!output_data/dti_bounds_review_2026-10-12/
+output_data/dti_bounds_review_2026-10-12/*
+!output_data/dti_bounds_review_2026-10-12/reference_inputs.csv
+!output_data/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml
+!output_data/dataset_clean/
+!output_data/sensitivity/
+output_data/dti_inputs.backup_*.csv
 
 # sao lưu script
 scripts/*.backup_*.py

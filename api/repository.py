@@ -1,5 +1,5 @@
-"""Lớp đọc dữ liệu từ out/ và config/. Tự nạp lại khi tệp đổi (so sánh mtime) nên chạy lại 10_score.py
-không cần khởi động lại server. Chỉ đọc, không bao giờ ghi vào out/."""
+"""Lớp đọc dữ liệu từ output_data/ và config/. Tự nạp lại khi tệp đổi (so sánh mtime) nên chạy lại 10_score.py
+không cần khởi động lại server. Chỉ đọc, không bao giờ ghi vào output_data/."""
 import json
 import pathlib
 import threading
@@ -14,7 +14,7 @@ from .errors import DataNotReady
 class DataStore:
     def __init__(self, root: pathlib.Path | None = None):
         self.root = pathlib.Path(root) if root else ROOT
-        self.out = self.root / "out"
+        self.out = self.root / "output_data"
         self.conf = self.root / "config"
         self._cache: dict[str, tuple[int, object]] = {}
         self._lock = threading.RLock()
@@ -92,7 +92,7 @@ class DataStore:
                 return yaml.safe_load(f)
         return self._load(self.conf / "banks.yaml", read, required=False, default={})
 
-    # ---- số liệu đầu vào DTI/Lớp C (gói out/dataset_clean do 12_appendix.py --bundle tạo) ----
+    # ---- số liệu đầu vào DTI/Lớp C (gói output_data/dataset_clean do 12_appendix.py --bundle tạo) ----
     def inputs_confirmed(self) -> pd.DataFrame:
         return self._load(self.out / "dataset_clean" / "dti_inputs_confirmed.csv", self._csv)
 
@@ -103,10 +103,10 @@ class DataStore:
         return self._load(self.out / "manual_audit.xlsx", pd.read_excel, required=False, default=pd.DataFrame())
 
     def bounds_reference(self) -> pd.DataFrame:
-        """Số liệu tham chiếu ngoài dùng suy ra cận L/U (out/dti_bounds_review_*/reference_inputs.csv)."""
+        """Số liệu tham chiếu ngoài dùng suy ra cận L/U (output_data/dti_bounds_review_*/reference_inputs.csv)."""
         parts = [self._load(p, self._csv) for p in sorted(self.out.glob("dti_bounds_review_*/reference_inputs.csv"))]
         return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
 
-    # ---- kết quả 11_sensitivity.py (out/sensitivity/sens_<tên>.csv); thiếu thì trả rỗng ----
+    # ---- kết quả 11_sensitivity.py (output_data/sensitivity/sens_<tên>.csv); thiếu thì trả rỗng ----
     def sens(self, name: str) -> pd.DataFrame:
         return self._load(self.out / "sensitivity" / f"sens_{name}.csv", self._csv, required=False, default=pd.DataFrame())

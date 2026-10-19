@@ -128,10 +128,10 @@ flowchart LR
 
 | Lớp | Câu hỏi nó trả lời | Dữ liệu vào | Script | Kết quả chính |
 |---|---|---|---|---|
-| **A · DBI** | Báo cáo nói và làm gì về chuyển đổi số? | Văn bản BCTN, BCTC, BCPTBV | `09c_auto_score.py` | `out/auto_scores.csv`, `out/coding_auto.xlsx` |
-| **B · DTI** | Các con số nói gì? | BCTC, KPI trong BCTN, rating app, kiểm kê nền tảng | `04`, `05`, `12`, `10_score.py` | `out/dti_indicators.csv`, `out/scores.csv` |
-| **C · Đối chiếu** | Điểm có đi cùng kết quả kinh doanh không? | ROE, ROA, CIR, CASA, thu nhập ngoài lãi | `19_validate_layer_c.py` | `api/static/v1/layer-c/`, `out/layer_c_*.csv` |
-| **Độ vững** | Thứ hạng có đổi khi đổi giả định không? | Điểm A + B | `11_sensitivity.py` | `out/sensitivity/` |
+| **A · DBI** | Báo cáo nói và làm gì về chuyển đổi số? | Văn bản BCTN, BCTC, BCPTBV | `09c_auto_score.py` | `output_data/auto_scores.csv`, `output_data/coding_auto.xlsx` |
+| **B · DTI** | Các con số nói gì? | BCTC, KPI trong BCTN, rating app, kiểm kê nền tảng | `04`, `05`, `12`, `10_score.py` | `output_data/dti_indicators.csv`, `output_data/scores.csv` |
+| **C · Đối chiếu** | Điểm có đi cùng kết quả kinh doanh không? | ROE, ROA, CIR, CASA, thu nhập ngoài lãi | `19_validate_layer_c.py` | `api/static/v1/layer-c/`, `output_data/layer_c_*.csv` |
+| **Độ vững** | Thứ hạng có đổi khi đổi giả định không? | Điểm A + B | `11_sensitivity.py` | `output_data/sensitivity/` |
 
 ### 4.1. Lớp A: DBI, chấm văn bản bằng quy tắc
 
@@ -148,7 +148,7 @@ flowchart LR
 
 `DBI_k` là trung bình 4 tiêu chí của trụ cột đổi sang thang 0–100.
 
-**Truy vết.** `out/auto_scores.csv` lưu điểm, trạng thái, tệp, trang, đoạn trích và toàn bộ bằng chứng dùng để chấm. `out/auto_scoring_manifest.json` lưu phiên bản và mã băm.
+**Truy vết.** `output_data/auto_scores.csv` lưu điểm, trạng thái, tệp, trang, đoạn trích và toàn bộ bằng chứng dùng để chấm. `output_data/auto_scoring_manifest.json` lưu phiên bản và mã băm.
 
 **Giới hạn cần biết.** Đây là phép đo *dấu hiệu trong văn bản*, chưa phải đánh giá chuyên gia. Một câu có từ khóa và con số có thể nói về chủ đề khác. Quy tắc `rule-based-v1` **chưa được kiểm chứng độc lập**: khi thử một bản quy tắc chặt hơn, thứ hạng các ngân hàng sát nhau đổi chỗ (xem [docs/dbi-rules-sensitivity.md](docs/dbi-rules-sensitivity.md)). Vì vậy dự án khuyến nghị cho 2 người đọc tay 40–60 ô điểm trước khi công bố kết luận về hạng.
 
@@ -170,14 +170,14 @@ Mỗi chỉ số được chuẩn hóa về 0–100 theo công thức `z = 100 �
 | C-Q1 | Tỷ lệ nhân sự công nghệ / tổng nhân sự | cao tốt | 0–100 | thang tự nhiên |
 | C-Q2 | Số giờ đào tạo bình quân mỗi nhân viên | cao tốt | 34,5–83,331 | phân vị mẫu |
 
-Cận ở `config/dti_bounds.yaml`, phiên bản `fixed-reference-v2-2026-10-17`. Bốn chỉ số loại "phân vị mẫu" (phân vị 10% và 90% của mẫu gộp 5 ngân hàng) là thang *tương đối*, phụ thuộc mẫu. Cận được đổi sau khi đã thấy dữ liệu vì cận v1 làm điểm bão hòa; việc này được ghi ngay đầu file cấu hình, và bản v1 lưu ở `out/dti_bounds_review_2026-10-12/` để đối chiếu. Lý giải đầy đủ: [dti-bounds-method.md](specs/001-bank-dx-assessment/dti-bounds-method.md).
+Cận ở `config/dti_bounds.yaml`, phiên bản `fixed-reference-v2-2026-10-17`. Bốn chỉ số loại "phân vị mẫu" (phân vị 10% và 90% của mẫu gộp 5 ngân hàng) là thang *tương đối*, phụ thuộc mẫu. Cận được đổi sau khi đã thấy dữ liệu vì cận v1 làm điểm bão hòa; việc này được ghi ngay đầu file cấu hình, và bản v1 lưu ở `output_data/dti_bounds_review_2026-10-12/` để đối chiếu. Lý giải đầy đủ: [dti-bounds-method.md](specs/001-bank-dx-assessment/dti-bounds-method.md).
 
 **Hai cổng bảo vệ tính công bằng:**
 
 - **Bước 0.** Một chỉ số bị loại cho *cả 5 ngân hàng* trong năm đó nếu có từ 2 ngân hàng trở lên thiếu số liệu.
 - **Bước 0b.** Một trụ cột chỉ nhận DTI trong năm đó khi *cả 5 ngân hàng* đều có ít nhất một chỉ số của trụ cột. Nếu không, mọi ngân hàng dùng DBI thuần cho trụ cột đó, để không có ngân hàng nào được chấm theo công thức khác.
 
-Dữ liệu thiếu luôn để trống. Cột `step0b_excluded` trong `out/dti_indicators.csv` ghi các ô bị loại.
+Dữ liệu thiếu luôn để trống. Cột `step0b_excluded` trong `output_data/dti_indicators.csv` ghi các ô bị loại.
 
 ### 4.3. Lớp C: đối chiếu với kết quả kinh doanh
 
@@ -267,7 +267,7 @@ Không muốn chạy server? Xuất JSON tĩnh bằng `python -m api.export_stat
 
 ### Mức C: tính lại điểm từ dữ liệu đã thu thập
 
-Dữ liệu đã chấm nằm sẵn trong `out/`, nên bạn không cần tải lại PDF.
+Dữ liệu đã chấm nằm sẵn trong `output_data/`, nên bạn không cần tải lại PDF.
 
 ```powershell
 pip install -r requirements.txt
@@ -280,7 +280,7 @@ cd ..
 python -m api.export_static         # cập nhật JSON tĩnh cho dashboard
 ```
 
-Kết quả: `out/score_summary.csv` (điểm và hạng từng năm), `out/scores.csv` (từng trụ cột), `out/dti_indicators.csv` (từng chỉ số). Muốn xem bằng Excel, mở `out/score_results.xlsx`.
+Kết quả: `output_data/score_summary.csv` (điểm và hạng từng năm), `output_data/scores.csv` (từng trụ cột), `output_data/dti_indicators.csv` (từng chỉ số). Muốn xem bằng Excel, mở `output_data/score_results.xlsx`.
 
 Muốn đổi một giả định rồi xem hạng đổi thế nào: `python 10_score.py --weight-scenarios` thêm các kịch bản 100/0, 80/20, 70/30, 60/40.
 
@@ -301,7 +301,7 @@ python 12_appendix.py --bundle   # đóng gói DTI đã xác nhận
 python 10_score.py               # lớp B + tổng hợp
 ```
 
-Điều quan trọng: **các bước 04 và 05 chỉ đưa ra ứng viên số liệu.** Người thực hiện phải mở PDF đối chiếu rồi ghi giá trị đã xác nhận vào `out/dti_inputs.csv` (kèm tệp, trang, định nghĩa). Chỉ số liệu đã xác nhận mới được tính điểm.
+Điều quan trọng: **các bước 04 và 05 chỉ đưa ra ứng viên số liệu.** Người thực hiện phải mở PDF đối chiếu rồi ghi giá trị đã xác nhận vào `output_data/dti_inputs.csv` (kèm tệp, trang, định nghĩa). Chỉ số liệu đã xác nhận mới được tính điểm.
 
 **Thêm một năm mới:** thêm năm vào `years` và `coding_years` trong `config/banks.yaml`, thêm link báo cáo vào `config/sources.csv`, rồi chạy lại các bước trên.
 
@@ -327,9 +327,9 @@ Kiểm thử xác nhận code chạy đúng hành vi mong đợi. Chạy đạt 
 | Thành phần | Nơi chạy | Ghi chú |
 |---|---|---|
 | Dashboard (`frontend/`) | Vercel | Build bằng `npm run build`. Địa chỉ API được nhúng lúc build qua `VITE_API_BASE_URL`, nên đổi API thì phải build và deploy lại. |
-| API (`api/`) | Render | Chạy bằng `uvicorn api.main:app`. Đọc thư mục `out/` và `config/` trong repo, nên phải đẩy dữ liệu mới lên GitHub rồi redeploy để số trên web đổi theo. |
+| API (`api/`) | Render | Chạy bằng `uvicorn api.main:app`. Đọc thư mục `output_data/` và `config/` trong repo, nên phải đẩy dữ liệu mới lên GitHub rồi redeploy để số trên web đổi theo. |
 
-Khi điểm thay đổi, thứ tự đúng là: chạy lại pipeline → commit `out/` và `api/static/` → redeploy API → build lại và deploy frontend.
+Khi điểm thay đổi, thứ tự đúng là: chạy lại pipeline → commit `output_data/` và `api/static/` → redeploy API → build lại và deploy frontend.
 
 ---
 
@@ -340,7 +340,7 @@ bank-dx-toolkit/
 ├── config/             Cấu hình: ngân hàng, nguồn báo cáo, từ khóa 24 tiêu chí, cận L/U, rubric
 ├── scripts/            Pipeline 00–21, chạy từ thư mục này
 ├── data/               PDF và văn bản trung gian (không nằm trong repo, tái tạo bằng bước 01–02)
-├── out/                Kết quả: điểm, bằng chứng, dữ liệu DTI đã xác nhận, độ vững
+├── output_data/                Kết quả: điểm, bằng chứng, dữ liệu DTI đã xác nhận, độ vững
 ├── api/                API chỉ đọc (FastAPI) và JSON tĩnh trong api/static/v1/
 ├── frontend/           Dashboard React + TypeScript + Vite
 ├── specs/              Đặc tả, phương pháp chấm, phương pháp chọn cận L/U
@@ -353,14 +353,14 @@ bank-dx-toolkit/
 
 | Bạn tìm | Mở |
 |---|---|
-| Điểm và hạng mỗi ngân hàng mỗi năm | `out/score_summary.csv` |
-| Điểm 6 trụ cột | `out/scores.csv` |
-| Từng chỉ số DTI: số thô, z, trạng thái | `out/dti_indicators.csv` |
-| Điểm từng tiêu chí DBI và bằng chứng | `out/auto_scores.csv` hoặc `out/coding_auto.xlsx` |
-| Số liệu đầu vào DTI kèm nguồn và trang | `out/dti_inputs.csv` |
-| Ô nào bị loại bởi bước 0 và 0b | `out/step0_gate.csv`, cột `step0b_excluded` |
-| Độ vững thứ hạng | `out/sensitivity/` |
-| Mô tả từng cột dữ liệu sạch | `out/dataset_clean/DATA_DICTIONARY.md` |
+| Điểm và hạng mỗi ngân hàng mỗi năm | `output_data/score_summary.csv` |
+| Điểm 6 trụ cột | `output_data/scores.csv` |
+| Từng chỉ số DTI: số thô, z, trạng thái | `output_data/dti_indicators.csv` |
+| Điểm từng tiêu chí DBI và bằng chứng | `output_data/auto_scores.csv` hoặc `output_data/coding_auto.xlsx` |
+| Số liệu đầu vào DTI kèm nguồn và trang | `output_data/dti_inputs.csv` |
+| Ô nào bị loại bởi bước 0 và 0b | `output_data/step0_gate.csv`, cột `step0b_excluded` |
+| Độ vững thứ hạng | `output_data/sensitivity/` |
+| Mô tả từng cột dữ liệu sạch | `output_data/dataset_clean/DATA_DICTIONARY.md` |
 
 ---
 
@@ -393,6 +393,8 @@ Những điều dưới đây nên được nêu trong báo cáo nghiên cứu.
 
 | Tài liệu | Nội dung |
 |---|---|
+| [NOP_BAI.md](NOP_BAI.md) | Hồ sơ nộp bài: yêu cầu giảng viên đối chiếu với vị trí file trong repo, danh sách còn thiếu |
+| [report/BAO_CAO_TONG_HOP.md](report/BAO_CAO_TONG_HOP.md) | Báo cáo tổng hợp (mục tiêu, mô hình, quy trình, kết quả, hạn chế) và [phụ lục PL1–PL5](report/phu_luc/) |
 | [docs/pipeline-guide.md](docs/pipeline-guide.md) | Hướng dẫn chi tiết từng script, lấy từng biến ở đâu, những chỗ dễ sai, đạo đức thu thập |
 | [specs/001-bank-dx-assessment/algorithm-scoring.md](specs/001-bank-dx-assessment/algorithm-scoring.md) | Phương pháp chấm DBI bằng quy tắc |
 | [specs/001-bank-dx-assessment/dti-bounds-method.md](specs/001-bank-dx-assessment/dti-bounds-method.md) | Cách chọn cận L/U cho từng chỉ số |
@@ -400,6 +402,6 @@ Những điều dưới đây nên được nêu trong báo cáo nghiên cứu.
 | [docs/sensitivity.md](docs/sensitivity.md) | Phân tích độ nhạy, cách đọc kết quả |
 | [docs/dbi-rules-sensitivity.md](docs/dbi-rules-sensitivity.md) | Thử nghiệm quy tắc chấm chặt hơn và kết quả |
 | [api/README.md](api/README.md) | Danh sách endpoint và quy ước dữ liệu cho frontend |
-| [out/dataset_clean/DATA_DICTIONARY.md](out/dataset_clean/DATA_DICTIONARY.md) | Từ điển dữ liệu |
+| [output_data/dataset_clean/DATA_DICTIONARY.md](output_data/dataset_clean/DATA_DICTIONARY.md) | Từ điển dữ liệu |
 
 Dự án dùng cho mục đích học thuật. Khi sử dụng, vui lòng trích dẫn nguồn báo cáo gốc của từng ngân hàng.

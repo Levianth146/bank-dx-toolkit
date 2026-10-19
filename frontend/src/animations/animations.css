@@ -295,7 +295,7 @@
   position: relative;
   display: grid;
   width: var(--s, 34px);
-  min-width: 39px;
+  min-width: 46px;
   height: 26px;
   flex: 0 0 var(--s, 34px);
   place-items: center;
@@ -303,7 +303,7 @@
   border: 1px solid transparent;
   border-radius: 5px;
   background: var(--surface-muted);
-  padding: 6px 8px;
+  padding: 6px 0;
   color: var(--secondary-text);
   font-family: inherit;
   font-size: 12px;

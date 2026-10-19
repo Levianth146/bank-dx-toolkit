@@ -1,8 +1,8 @@
 """Trích số liệu ứng viên cho các chỉ số DTI và biến Lớp C.
-  --bctc : đọc BCTC (doc_type=bctc) -> out/financial_candidates.csv (tổng tài sản, vốn CSH, LNST, chi phí HĐ, LN thuần trước dự phòng,
+  --bctc : đọc BCTC (doc_type=bctc) -> output_data/financial_candidates.csv (tổng tài sản, vốn CSH, LNST, chi phí HĐ, LN thuần trước dự phòng,
            thu nhập lãi thuần, lãi thuần dịch vụ, phần mềm máy tính, tiền gửi KKH, tiền gửi KH)
-  --kpi  : đọc BCTN/BCPTBV -> out/kpi_candidates.csv (tỷ lệ GD số, KH số, CBNV, nhân sự công nghệ, giờ đào tạo)
-Kết quả là ỨNG VIÊN kèm trang để đối chiếu mắt; người dùng xác nhận rồi ghi vào out/dti_inputs.csv.
+  --kpi  : đọc BCTN/BCPTBV -> output_data/kpi_candidates.csv (tỷ lệ GD số, KH số, CBNV, nhân sự công nghệ, giờ đào tạo)
+Kết quả là ỨNG VIÊN kèm trang để đối chiếu mắt; người dùng xác nhận rồi ghi vào output_data/dti_inputs.csv.
 Đơn vị BCTC ngân hàng thường là 'triệu đồng' - kiểm tra đầu bảng (bản tiếng Anh: 'VND million').
 Lọc: --bank tcb,mb  --year 2024  (xem common.keep). Hỗ trợ cả nhãn/câu tiếng Anh (chưa kiểm thử trên báo cáo thật)."""
 import csv, json, re, sys

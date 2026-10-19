@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Điền out/dti_inputs.csv từ financial/kpi candidates + đối chiếu statement_pages.
+"""Điền output_data/dti_inputs.csv từ financial/kpi candidates + đối chiếu statement_pages.
 Giữ mọi dòng đã xác nhận thủ công hoặc kiểm khoảng hợp lý. Không ghi 0 cho thiếu số."""
 import csv
 import json
@@ -11,7 +11,7 @@ from common import is_manual_confirmation
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT = ROOT / "data" / "text"
-OUT = ROOT / "out"
+OUT = ROOT / "output_data"
 
 BANKS = ["agribank", "mb", "tcb", "bidv", "vcb"]
 YEARS = [2020, 2021, 2022, 2023, 2024, 2025]

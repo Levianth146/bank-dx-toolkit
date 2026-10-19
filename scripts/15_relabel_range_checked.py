@@ -1,6 +1,6 @@
-"""Tách ô 'đã mở PDF đối chiếu' khỏi ô 'chỉ kiểm khoảng hợp lý' trong out/dti_inputs.csv.
+"""Tách ô 'đã mở PDF đối chiếu' khỏi ô 'chỉ kiểm khoảng hợp lý' trong output_data/dti_inputs.csv.
   python 15_relabel_range_checked.py                        # dry-run: in số ô sẽ đổi
-  python 15_relabel_range_checked.py --apply                # sao lưu out/dti_inputs.backup_<ngày giờ>.csv rồi đổi nhãn
+  python 15_relabel_range_checked.py --apply                # sao lưu output_data/dti_inputs.backup_<ngày giờ>.csv rồi đổi nhãn
   python 15_relabel_range_checked.py --sample 15 --seed 1   # danh sách ô range-checked cần MỞ PDF kiểm tay (phân tầng theo NH, ưu tiên VCB/Agribank OCR)
 Quy tắc: confirmed_by='nam' mà note vẫn là chuỗi ứng viên tự động (fin-cand/page-patch/page-confirm/kpi-) => 'range-checked'
 (chỉ qua kiểm ROA/ROE/CASA/xu hướng, CHƯA ai đọc PDF). Ô bạn đã đọc PDF (note mô tả trang/dòng) giữ 'nam'.

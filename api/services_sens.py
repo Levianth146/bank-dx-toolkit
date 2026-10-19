@@ -1,4 +1,4 @@
-"""Kết quả phân tích độ nhạy ĐẦY ĐỦ do scripts/11_sensitivity.py ghi ra out/sensitivity/ (nguồn có thẩm quyền).
+"""Kết quả phân tích độ nhạy ĐẦY ĐỦ do scripts/11_sensitivity.py ghi ra output_data/sensitivity/ (nguồn có thẩm quyền).
 
 Khác endpoint /sensitivity (nhanh, chỉ kịch bản trọng số DBI/DTI, mọi năm): ở đây gồm trọng số trụ cột ±20% và Dirichlet,
 kỹ thuật chuẩn hóa, loại từng trụ, thiếu = 0, dịch cận L/U, nhiễu rubric; kết luận "Vững" / "Nhóm cùng mức" theo docx V.2
@@ -22,7 +22,7 @@ class SensitivityMixin:
         ys = self.sensitivity_years()
         if not ys:
             raise ApiError(404, "sensitivity_not_run",
-                           "Chưa có out/sensitivity/. Chạy `python 11_sensitivity.py --years 2021,2023,2025` trong thư mục scripts/.")
+                           "Chưa có output_data/sensitivity/. Chạy `python 11_sensitivity.py --years 2021,2023,2025` trong thư mục scripts/.")
         if year is None:
             return ys[-1]
         if year not in ys:

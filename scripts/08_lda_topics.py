@@ -5,14 +5,14 @@ rồi (1) xem mỗi ngân hàng-năm dành bao nhiêu % nội dung cho từng ch
 với từ điển config/keywords.yaml, (3) so sánh tỷ trọng nội dung theo trụ cột giữa các ngân hàng.
 
 Các bước kiểm soát chất lượng có sẵn:
-  - quét K (số chủ đề) bằng độ nhất quán UMass + perplexity (out/lda_k_scan.csv); chọn K bằng mắt đọc top từ, không chỉ theo số.
+  - quét K (số chủ đề) bằng độ nhất quán UMass + perplexity (output_data/lda_k_scan.csv); chọn K bằng mắt đọc top từ, không chỉ theo số.
   - chạy nhiều seed, đo độ ổn định chủ đề (Jaccard top-15 từ giữa các seed) -> chủ đề không ổn định thì bỏ qua.
   - chủ đề không trùng từ điển trụ cột nào được xếp 'khác' (không ép vào trụ cột).
 
 Cách dùng (thư mục scripts/):
   python 08_lda_topics.py [--k 12] [--kmin 6 --kmax 16 --kstep 2] [--seeds 5] [--chunk 120] [--segment]
   --segment : tách từ ghép tiếng Việt bằng pyvi (cải thiện chủ đề; cần pip install pyvi). Mặc định dùng unigram + bigram.
-Đầu ra (out/): lda_k_scan.csv, lda_topics.csv, lda_topic_pillar.csv, lda_bank_topic_share.csv, lda_bank_pillar_share.csv
+Đầu ra (output_data/): lda_k_scan.csv, lda_topics.csv, lda_topic_pillar.csv, lda_bank_topic_share.csv, lda_bank_pillar_share.csv
 GIỚI HẠN: chủ đề là công cụ khám phá; n = 5 ngân hàng, chỉ mô tả. Tỷ trọng nội dung != mức độ triển khai."""
 import collections, json, math, re, sys
 import numpy as np, pandas as pd

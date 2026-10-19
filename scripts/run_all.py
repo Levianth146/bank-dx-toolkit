@@ -9,12 +9,12 @@
   python run_all.py --post-only              # chỉ chạy 03, 04, 12 (sau khi các terminal OCR xong)
   python run_all.py --dry-run                # chỉ in danh sách lệnh, không chạy
 Quy tắc: không bao giờ ghi vào dti_inputs.csv / coding_sheet.xlsx / config. Lỗi một bước không làm dừng cả lượt; cuối lượt in bảng tổng kết.
-Nhật ký: out/run_all.log"""
+Nhật ký: output_data/run_all.log"""
 import argparse, csv, datetime, subprocess, sys, os, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
-OUT = ROOT / "out"; OUT.mkdir(exist_ok=True)
+OUT = ROOT / "output_data"; OUT.mkdir(exist_ok=True)
 ap = argparse.ArgumentParser()
 ap.add_argument("--banks", default=""); ap.add_argument("--years", default=""); ap.add_argument("--skip-download", action="store_true")
 ap.add_argument("--ocr-types", default="bctc"); ap.add_argument("--ocr-pages", default="1-60"); ap.add_argument("--agri-pages", default="1-100")
@@ -79,5 +79,5 @@ rep = report_latest()
 bad = [(k, r["flag"][:40]) for k, r in sorted(rep.items()) if not r["flag"].startswith("OK") and (not a.banks or k[0] in a.banks.split(","))]
 print(f"\nFile còn bị cờ trong extraction_report.csv: {len(bad)}")
 for k, f in bad: print("  ", "-".join(k), "|", f)
-print("\nXem: out/availability_matrix.csv, out/financial_candidates.csv, out/kpi_candidates.csv, out/statement_pages.csv, out/dti_prefill.csv")
-print("Nhật ký đầy đủ: out/run_all.log")
+print("\nXem: output_data/availability_matrix.csv, output_data/financial_candidates.csv, output_data/kpi_candidates.csv, output_data/statement_pages.csv, output_data/dti_prefill.csv")
+print("Nhật ký đầy đủ: output_data/run_all.log")

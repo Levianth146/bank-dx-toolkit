@@ -3,7 +3,7 @@ import pathlib, re, unicodedata, yaml, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-OUT = ROOT / "out"
+OUT = ROOT / "output_data"
 CONF = ROOT / "config"
 for p in (DATA / "raw", DATA / "text", DATA / "web", OUT):
     p.mkdir(parents=True, exist_ok=True)

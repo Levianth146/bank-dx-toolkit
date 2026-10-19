@@ -118,7 +118,7 @@ def main():
     if target["value"].strip():
         raise ValueError("T-Q1 VCB đã có số; cần đối chiếu trước khi thay đổi")
     target.update(source_file="data/raw/vcb/2025_bctc.pdf", page="49", confirmed_by="",
-                  note="Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: out/tq_review/vcb_2025_bctc_p49.png.")
+                  note="Đã đọc PDF 2026-10-14: thuyết minh 14, trang in 47 / PDF 49. Nguyên giá cuối năm: Bản quyền và bằng sáng chế 2.754.936 triệu VND; TSCĐ vô hình khác 15.543; tổng 5.284.812 gồm quyền sử dụng đất. Không tách riêng phần mềm. Giữ trống software_gross_cost, không lấy khoản gộp hoặc giá trị còn lại. Ảnh: output_data/tq_review/vcb_2025_bctc_p49.png.")
     with path.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()

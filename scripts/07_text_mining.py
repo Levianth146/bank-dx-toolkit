@@ -8,10 +8,10 @@ Các phép đo (đều là CHỈ SỐ PHỤ, dùng đối chiếu/kiểm tra đ�
   3. Tỷ lệ định lượng hóa: trong các câu chứa từ khóa, tỷ lệ câu có con số + đơn vị -> phân biệt 'nói' với 'có số liệu'.
   4. TF-IDF cụm 1-2 từ đặc trưng của từng ngân hàng-năm (khám phá, tìm chủ đề nổi bật).
   5. Mở rộng từ điển: cụm từ hay đi cùng từ khóa gốc (log-odds) -> ứng viên từ khóa mới, người dùng duyệt thủ công.
-  6. So sánh với điểm thuật toán (out/coding_auto.xlsx): tương quan hạng Spearman theo trụ cột/năm.
+  6. So sánh với điểm thuật toán (output_data/coding_auto.xlsx): tương quan hạng Spearman theo trụ cột/năm.
 
 Cách dùng: python 07_text_mining.py [--bank tcb,mb] [--year 2024] [--only-lang vi|en] [--k1 1.2] [--b 0.75] [--expand] [--compare] [--exact]
-Đầu ra (thư mục out/): tm_criterion.csv, tm_pillar.csv, tm_tfidf_terms.csv, tm_dictionary_expansion.csv, tm_vs_dbi.csv"""
+Đầu ra (thư mục output_data/): tm_criterion.csv, tm_pillar.csv, tm_tfidf_terms.csv, tm_dictionary_expansion.csv, tm_vs_dbi.csv"""
 import collections, csv, json, math, re, sys
 import pandas as pd
 from common import *
@@ -144,7 +144,7 @@ if "--expand" in sys.argv:
 # ---- 7) so sánh với điểm thuật toán
 if "--compare" in sys.argv:
     xl = OUT / "coding_auto.xlsx"
-    if not xl.exists(): sys.exit("Thiếu out/coding_auto.xlsx: chạy 09c_auto_score.py trước khi --compare.")
+    if not xl.exists(): sys.exit("Thiếu output_data/coding_auto.xlsx: chạy 09c_auto_score.py trước khi --compare.")
     cs = pd.read_excel(xl)
     cs["score"] = pd.to_numeric(cs["final"], errors="coerce")
     cs = cs.dropna(subset=["score"]); cs["pillar"] = cs["criterion"].str[0].map(PILLAR); cs["year"] = cs["year"].astype(str)

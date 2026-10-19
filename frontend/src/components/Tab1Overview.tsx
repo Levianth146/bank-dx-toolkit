@@ -14,7 +14,6 @@ import {
   RefreshCw,
   ShieldCheck,
   SlidersHorizontal,
-  Bell,
 } from 'lucide-react'
 import {
   Bar,
@@ -50,6 +49,12 @@ import Tab3Executive from './Tab3Executive.tsx'
 import Tab4Diagnostic from './Tab4Diagnostic.tsx'
 import Tab5Methodology from './Tab5Methodology.tsx'
 import YearPicker from './YearPicker'
+import JourneyChart from './overview/JourneyChart'
+import TierStrip from './overview/TierStrip'
+import PillarHeatmap from './overview/PillarHeatmap'
+import DataNotice from './overview/DataNotice'
+import { buildTiers, joinNames, useCountUp } from './overview/shared'
+import './overview/overview.css'
 
 const BANK_COLORS: Record<string, string> = {
   vcb: '#007a4b',
@@ -355,6 +360,17 @@ export default function Tab1Overview() {
       ? visibleItems[0].score - visibleItems[1].score
       : null
 
+  const heroTiers = useMemo(() => buildTiers(visibleItems), [visibleItems])
+  const animatedLeaderScore = useCountUp(leader?.score)
+  const heroHeadline = (() => {
+    const top = heroTiers[0]
+    if (!top) return ''
+    if (top.items.length > 1) {
+      return `${joinNames(top.items.map((i) => i.bank_name))} cùng nhóm đầu năm ${selectedYear}`
+    }
+    return `${top.items[0].bank_name} dẫn đầu bảng xếp hạng năm ${selectedYear}`
+  })()
+
   function toggleBank(bank: string) {
     setVisibleBanks((current) => {
       const next = new Set(current)
@@ -566,14 +582,6 @@ export default function Tab1Overview() {
                 <span className="theme-switch__cloud" />
               </span>
             </button>
-            <button
-              type="button"
-              className="icon-button"
-              title="Thông báo"
-              aria-label="Thông báo"
-            >
-              <Bell size={16} />
-            </button>
           </div>
         </header>
 
@@ -655,16 +663,14 @@ export default function Tab1Overview() {
                     <span className="hero-badge-dot" />
                     BÁO CÁO ĐỐI SÁNH NĂNG LỰC SỐ {selectedYear}
                   </span>
-                  <h2>
-                    {leader?.bank_name} dẫn đầu bảng xếp hạng năm {selectedYear}
-                  </h2>
+                  <h2>{heroHeadline}</h2>
                   <p>
                     Điểm tổng hợp DBI–DTI trên thang 0–100, đối chiếu 5 ngân
                     hàng theo dữ liệu backend.
                   </p>
                   <div className="hero-stats">
                     <div className="hero-stat">
-                      <strong>{formatScore(leader?.score)}</strong>
+                      <strong>{formatScore(animatedLeaderScore)}</strong>
                       <span>điểm tổng hợp của ngân hàng dẫn đầu</span>
                     </div>
                     <div className="hero-stat">
@@ -738,6 +744,43 @@ export default function Tab1Overview() {
                   </article>
                 ))}
               </section>
+
+              <div className="ov-stack">
+                {trend && (
+                  <section className="panel">
+                    <PanelHeading
+                      title="Hành trình số hóa 2020–2025"
+                      subtitle="Điểm tổng hợp từng năm. Bấm vào một năm để cập nhật cả trang; rê vào tên ngân hàng để làm nổi đường của họ."
+                      tag="Thang 0–100"
+                    />
+                    <JourneyChart
+                      trend={trend}
+                      selectedYear={selectedYear}
+                      visibleBanks={visibleBanks}
+                      onSelectYear={setSelectedYear}
+                    />
+                  </section>
+                )}
+                <div className="ov-stack ov-stack--two">
+                  <section className="panel">
+                    <PanelHeading
+                      title="Ai đang ở cùng nhóm?"
+                      subtitle={`Vị trí điểm của từng ngân hàng · ${selectedYear}`}
+                      tag="Nhóm điểm"
+                    />
+                    <TierStrip items={visibleItems} year={selectedYear} />
+                  </section>
+                  <DataNotice items={visibleItems} year={selectedYear} />
+                </div>
+                <section className="panel">
+                  <PanelHeading
+                    title="Bản đồ trụ cột"
+                    subtitle={`Điểm P_k theo từng trụ cột · ${selectedYear}`}
+                    tag="6 trụ cột"
+                  />
+                  <PillarHeatmap items={visibleItems} year={selectedYear} />
+                </section>
+              </div>
 
               <div className="dashboard-grid">
                 <div className="dashboard-column">

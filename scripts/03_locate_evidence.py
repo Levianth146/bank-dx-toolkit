@@ -1,7 +1,7 @@
 """Định vị đoạn bằng chứng cho 24 tiêu chí + chỉ số mật độ đề cập.
 Đầu ra:
-  out/evidence_candidates.csv  -> mỗi dòng: tiêu chí, ngân hàng, năm, tài liệu, trang, từ khóa, đoạn trích, gợi ý ưu tiên đọc
-  out/keyword_density.csv      -> số lần khớp / 10.000 từ theo (ngân hàng, năm, tiêu chí) - chỉ dùng kiểm tra độ nhạy
+  output_data/evidence_candidates.csv  -> mỗi dòng: tiêu chí, ngân hàng, năm, tài liệu, trang, từ khóa, đoạn trích, gợi ý ưu tiên đọc
+  output_data/keyword_density.csv      -> số lần khớp / 10.000 từ theo (ngân hàng, năm, tiêu chí) - chỉ dùng kiểm tra độ nhạy
 Cách dùng: python 03_locate_evidence.py [--bank tcb] [--year 2024] [--only-lang vi|en] [--context 220] [--exact]"""
 import csv, json, re, sys, collections
 from common import *

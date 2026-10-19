@@ -1,6 +1,6 @@
-"""Tách 'chưa thu thập' khỏi 'không công bố' trong ô TRỐNG của out/dti_inputs.csv.
+"""Tách 'chưa thu thập' khỏi 'không công bố' trong ô TRỐNG của output_data/dti_inputs.csv.
   python 16_relabel_not_collected.py            # dry-run: đếm theo loại ghi chú
-  python 16_relabel_not_collected.py --apply    # sao lưu out/dti_inputs.backup_<giờ>.csv rồi đổi ghi chú
+  python 16_relabel_not_collected.py --apply    # sao lưu output_data/dti_inputs.backup_<giờ>.csv rồi đổi ghi chú
 Chỉ đụng ô TRỐNG (value rỗng) có ghi chú chung chung:
   not_disclosed_or_no_reliable_candidate[...]  -> 'not_collected: chưa tìm tay trong BCTN/BCTC'
   missing_candidate_needs_manual               -> 'not_collected [TODO]: cần đọc tay (script không có ứng viên)'

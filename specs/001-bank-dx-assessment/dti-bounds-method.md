@@ -5,13 +5,13 @@ Cấu hình áp dụng: `config/dti_bounds.yaml`, phiên bản `fixed-reference-
 ## Thay đổi v2 so với v1 (2026-10-12)
 
 Cận 4 chỉ số T-Q1, O-Q1, O-Q2, C-Q2 đổi từ tham chiếu DBS sang phân vị 10% và 90% của mẫu gộp
-(mọi ngân hàng và năm có dữ liệu, tính một lần từ `out/dti_indicators.csv`, rồi cố định).
+(mọi ngân hàng và năm có dữ liệu, tính một lần từ `output_data/dti_indicators.csv`, rồi cố định).
 Lý do: cận v1 làm điểm bão hòa nên chỉ số mất khả năng phân biệt (O-Q2: 13/13 quan sát bằng 100;
 C-Q2: 16/20; T-Q1: 10/24; O-Q1: 13/20 bằng 0 và 7/20 bằng 100). Các chỉ số còn lại giữ nguyên v1.
 
 Trung thực về quy trình: thay đổi này được làm **sau khi** đã thấy dữ liệu và kết quả v1, do vấn đề
 độ phân biệt của thang đo chứ không nhằm đổi thứ hạng. Điểm và hạng thay đổi theo; thứ hạng giữa
-(hạng 2–4) phụ thuộc vào lựa chọn cận. Bản v1 lưu tại `out/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml`
+(hạng 2–4) phụ thuộc vào lựa chọn cận. Bản v1 lưu tại `output_data/dti_bounds_review_2026-10-12/dti_bounds.fixed-reference-v1.yaml`
 và nên báo cáo như kịch bản đối chứng. Với 4 chỉ số này, thang điểm là thang tương đối giữa 5 ngân hàng,
 không phải mức tuyệt đối; điểm 100 nghĩa là ở nhóm đầu của mẫu, không phải "dẫn đầu ngành".
 Khóa cận trước lần tính chính thức tiếp theo. Dự án đã có kết quả nháp trước ngày khóa;
@@ -49,7 +49,7 @@ nhiều cận và khác biệt giữa thị trường, cơ cấu kinh doanh, k�
 
 Chi tiết nguồn và phép tính nằm ngay trong YAML. Giá trị suy ra làm tròn đến 6 chữ số
 sau dấu phẩy. Số liệu đầu vào tham chiếu có tệp, trang và URL tại
-`out/dti_bounds_review_2026-10-12/reference_inputs.csv`.
+`output_data/dti_bounds_review_2026-10-12/reference_inputs.csv`.
 
 Nguồn chính:
 - [Santander Annual Report 2018, trang in 6](https://www.santander.de/content/pdf/investor-relations/geschaeftsberichte/geschaeftsbericht-santander-2018-englisch.pdf);

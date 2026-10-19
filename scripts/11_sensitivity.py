@@ -11,7 +11,7 @@ Kịch bản (bảng "Kịch bản độ nhạy" của docx):
   B. pillar_w  Trọng số trụ cột: đều 1/6 so với ±20% từng trụ (12 kịch bản) + Monte Carlo Dirichlet (10.000 lần)
   C. norm      Chuẩn hóa: cận cố định (cơ sở) so với min-max trong 5 ngân hàng so với xếp hạng phần trăm -> Kendall τ
   D. drop      Loại lần lượt từng trụ cột (6 kịch bản)
-  E. keyword   Rubric so với mật độ đề cập từ khóa (Spearman ρ) — đọc out/tm_vs_dbi.csv do 07_text_mining.py --compare tạo
+  E. keyword   Rubric so với mật độ đề cập từ khóa (Spearman ρ) — đọc output_data/tm_vs_dbi.csv do 07_text_mining.py --compare tạo
   F. missing   DTI thiếu = bỏ (cơ sở) so với thiếu = 0   [CHỈ để kiểm tra độ nhạy; điểm chính thức không bao giờ điền 0]
 Bổ sung (ngoài bảng docx, vì L/U là cận tham chiếu và DBI do thuật toán quy tắc chấm, chưa kiểm chứng):
   G. bounds    Dịch khoảng [L,U] của các chỉ số có cận suy ra/tham chiếu ±20% (cùng lúc và từng chỉ số)
@@ -23,7 +23,7 @@ ngân hàng đổi hạng nhiều hơn thì báo cáo là "nhóm cùng mức" (c
 Chạy (trong thư mục scripts/):
   python 11_sensitivity.py                     # năm 2025
   python 11_sensitivity.py --years 2021,2023,2025 --n-mc 10000
-Đầu ra: out/sensitivity/*.csv, sensitivity_results.xlsx, fig*.png (UTF-8-BOM cho CSV).
+Đầu ra: output_data/sensitivity/*.csv, sensitivity_results.xlsx, fig*.png (UTF-8-BOM cho CSV).
 """
 import argparse
 import importlib.util
@@ -326,7 +326,7 @@ def run_year(y, banks, bounds, meta, d, a, rng):
 def keyword_check(years):
     p = OUT / "tm_vs_dbi.csv"
     if not p.exists():
-        return pd.DataFrame([dict(status="CHƯA CHẠY", note="Thiếu out/tm_vs_dbi.csv: cần data/text (bước 1-2), rồi "
+        return pd.DataFrame([dict(status="CHƯA CHẠY", note="Thiếu output_data/tm_vs_dbi.csv: cần data/text (bước 1-2), rồi "
                                   "`python 07_text_mining.py --compare`; chạy lại 11_sensitivity.py.")])
     t = pd.read_csv(p, encoding="utf-8-sig")
     t = t[t["pillar"] == "TẤT CẢ TRỤ"].copy()

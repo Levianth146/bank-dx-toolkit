@@ -406,7 +406,7 @@
  "scoring": {
   "method": "rule_based",
   "rules_version": "rule-based-v1",
-  "rules_hash": "562f2f65a70f44d45565f60b2ddc1b49d41a278486e74a63da1a6ef385b323ae"
+  "rules_hash": "09f192d5bea6efa9ac0e23621bfef8afecaa3bddb65a318e70862c8aa8d4db36"
  },
  "dti_bounds": {
   "version": "fixed-reference-v2-2026-10-17",
@@ -418,5 +418,5 @@
   "medium": 0.4,
   "note": "Quy ước hiển thị theo data_confidence (= số chỉ số DTI có dữ liệu / 11); không ảnh hưởng điểm."
  },
- "data_updated_at": "2026-10-17T02:42:35.349299+00:00"
+ "data_updated_at": "2026-10-19T13:04:52.088090+00:00"
 }

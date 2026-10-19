@@ -1,8 +1,8 @@
 """Ma trận sẵn có dữ liệu + gợi ý điền dti_inputs + gói bàn giao dataset sạch.
-  python 12_appendix.py                 # out/availability_matrix.csv  (NH x năm: tài liệu, trích text, số liệu DTI, chấm điểm, app)
-  python 12_appendix.py --prefill       # out/dti_prefill.csv: số GỢI Ý từ financial_candidates.csv (CHƯA xác nhận, không ghi đè dti_inputs.csv)
-  python 12_appendix.py --pages         # out/statement_pages.csv: trang CĐKT/KQKD/thuyết minh trong từng BCTC để mở PDF đọc tay
-  python 12_appendix.py --bundle        # out/dataset_clean/: chỉ số liệu ĐÃ xác nhận + điểm chấm 'final' + app + ma trận + từ điển dữ liệu
+  python 12_appendix.py                 # output_data/availability_matrix.csv  (NH x năm: tài liệu, trích text, số liệu DTI, chấm điểm, app)
+  python 12_appendix.py --prefill       # output_data/dti_prefill.csv: số GỢI Ý từ financial_candidates.csv (CHƯA xác nhận, không ghi đè dti_inputs.csv)
+  python 12_appendix.py --pages         # output_data/statement_pages.csv: trang CĐKT/KQKD/thuyết minh trong từng BCTC để mở PDF đọc tay
+  python 12_appendix.py --bundle        # output_data/dataset_clean/: chỉ số liệu ĐÃ xác nhận + điểm chấm 'final' + app + ma trận + từ điển dữ liệu
 Quy tắc: ô trống = không có dữ liệu (KHÔNG điền 0). data_conf = số chỉ số DTI TÍNH ĐƯỢC / 11."""
 import csv, shutil, sys, importlib.util
 import pandas as pd
@@ -125,7 +125,7 @@ MAP = {"equity": "equity", "total_equity": "equity", "customer_deposits": "custo
 
 def prefill():
     fc = rd(OUT / "financial_candidates.csv")
-    if not len(fc): sys.exit("Chưa có out/financial_candidates.csv (chạy 04 --bctc trước).")
+    if not len(fc): sys.exit("Chưa có output_data/financial_candidates.csv (chạy 04 --bctc trước).")
     out = []
     for (b, y, v), g in fc.groupby(["bank", "year", "variable"]):
         if v not in MAP: continue
@@ -204,7 +204,7 @@ def bundle():
     print("Đã tạo", d, [p.name for p in d.iterdir()])
 
 def pages():
-    """Tìm trang của từng báo cáo chính trong BCTC (đã OCR) để bạn mở PDF đọc tay số còn thiếu: out/statement_pages.csv."""
+    """Tìm trang của từng báo cáo chính trong BCTC (đã OCR) để bạn mở PDF đọc tay số còn thiếu: output_data/statement_pages.csv."""
     import json, re, unicodedata
     def fold(s):
         s = unicodedata.normalize("NFD", s.replace("đ", "d").replace("Đ", "D")); return "".join(c for c in s if unicodedata.category(c) != "Mn").lower()

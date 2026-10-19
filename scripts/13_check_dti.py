@@ -1,4 +1,4 @@
-"""Kiểm tra chéo out/dti_inputs.csv: bắt số lấy nhầm cột/dòng TRƯỚC khi bàn giao. Không sửa dữ liệu, chỉ ghi out/dti_check.csv.
+"""Kiểm tra chéo output_data/dti_inputs.csv: bắt số lấy nhầm cột/dòng TRƯỚC khi bàn giao. Không sửa dữ liệu, chỉ ghi output_data/dti_check.csv.
   python 13_check_dti.py [--bank vcb] [--year 2022]
 Ba lớp kiểm tra:
   1) CHÉO NĂM: số năm t phải bằng cột so sánh (năm trước) của báo cáo năm t+1 trong financial_candidates.csv (lệch > 1% -> nghi nhầm cột hoặc BCTC trình bày lại).

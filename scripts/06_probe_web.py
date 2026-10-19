@@ -3,7 +3,7 @@ Mỗi trang: lưu HTML (snapshot có ngày), kiểm tra từ khóa kỳ vọng, 
   python 06_probe_web.py [--screenshot] [--js]
   --js          dùng Playwright (trang tải nội dung bằng JavaScript)
   --screenshot  chụp PNG toàn trang (cần Playwright)
-Đầu ra: out/web_probe.csv + data/web/<bank>/<criterion>_<ngày>.html(.png). Không đăng nhập, không vượt rào chặn bot."""
+Đầu ra: output_data/web_probe.csv + data/web/<bank>/<criterion>_<ngày>.html(.png). Không đăng nhập, không vượt rào chặn bot."""
 import csv, re, sys, time, requests
 from bs4 import BeautifulSoup
 from common import *

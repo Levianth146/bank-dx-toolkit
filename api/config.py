@@ -1,6 +1,6 @@
 """Cấu hình, hằng số và nạp mô-đun chấm điểm của pipeline (scripts/10_score.py).
 
-API KHÔNG tự tính lại điểm chính thức: điểm, hạng, mức trưởng thành đọc từ out/*.csv do 10_score.py ghi.
+API KHÔNG tự tính lại điểm chính thức: điểm, hạng, mức trưởng thành đọc từ output_data/*.csv do 10_score.py ghi.
 Riêng phần độ nhạy trọng số (DBI/DTI) cần tính lại P_k nên dùng chung hàm/hằng số của 10_score.py
 để công thức không bị lệch giữa pipeline và API.
 """
@@ -11,7 +11,7 @@ import sys
 from functools import lru_cache
 
 ROOT = pathlib.Path(os.environ.get("DX_ROOT") or pathlib.Path(__file__).resolve().parents[1]).resolve()
-OUT = ROOT / "out"
+OUT = ROOT / "output_data"
 CONF = ROOT / "config"
 SCRIPTS = ROOT / "scripts"
 

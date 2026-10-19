@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Bước 3–5: sửa note/giá trị out/dti_inputs.csv (không điền 0)."""
+"""Bước 3–5: sửa note/giá trị output_data/dti_inputs.csv (không điền 0)."""
 import pandas as pd
 from common import OUT
 

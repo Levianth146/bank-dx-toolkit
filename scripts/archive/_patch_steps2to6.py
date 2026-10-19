@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Bước 2–6: cập nhật out/dti_inputs.csv (definition, share, NCI/equity, KPI, training)."""
+"""Bước 2–6: cập nhật output_data/dti_inputs.csv (definition, share, NCI/equity, KPI, training)."""
 from __future__ import annotations
 
 import csv
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "out" / "dti_inputs.csv"
+CSV_PATH = ROOT / "output_data" / "dti_inputs.csv"
 FIELDS = [
     "bank",
     "year",

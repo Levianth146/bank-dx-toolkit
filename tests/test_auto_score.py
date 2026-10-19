@@ -50,7 +50,7 @@ class TestAutoFeatures(unittest.TestCase):
     def test_long_evidence_uses_complete_csv_reference(self):
         row = dict(criterion="K1", bank="mb", year=2025, supporting_evidence="x" * 40000)
         reference = json.loads(A.workbook_evidence(row))
-        self.assertEqual(reference, dict(source_file="out/auto_scores.csv", criterion="K1", bank="mb", year=2025))
+        self.assertEqual(reference, dict(source_file="output_data/auto_scores.csv", criterion="K1", bank="mb", year=2025))
 
     def test_excel_display_strips_illegal_controls(self):
         self.assertEqual(A.excel_value("Bằng chứng\x07 gốc\n\t"), "Bằng chứng gốc\n\t")
@@ -66,7 +66,7 @@ class TestAutoPipeline(unittest.TestCase):
         shutil.copytree(ROOT / "config", self.root / "config")
         self.text = self.root / "data/text"
         self.text.mkdir(parents=True)
-        self.out = self.root / "out"
+        self.out = self.root / "output_data"
         self.out.mkdir()
         banks = dict(banks={"mb": {"name": "MB"}, "vcb": {"name": "VCB"}}, years=[2024, 2025], coding_years=[2024, 2025])
         (self.root / "config/banks.yaml").write_text(yaml.safe_dump(banks), encoding="utf-8")

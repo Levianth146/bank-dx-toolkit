@@ -1,12 +1,12 @@
-"""Phân loại lại out/dti_inputs.csv: tách số ĐÃ kiểm tay khỏi số tự động, bỏ KPI đoán, đánh dấu ô nghi sai.
+"""Phân loại lại output_data/dti_inputs.csv: tách số ĐÃ kiểm tay khỏi số tự động, bỏ KPI đoán, đánh dấu ô nghi sai.
   python 14_triage_dti.py                       # chạy thử (dry-run), chỉ in những gì SẼ đổi
-  python 14_triage_dti.py --apply               # ghi thật (tự sao lưu out/dti_inputs.backup_<ngày giờ>.csv)
+  python 14_triage_dti.py --apply               # ghi thật (tự sao lưu output_data/dti_inputs.backup_<ngày giờ>.csv)
   python 14_triage_dti.py --apply --confirm tcb:2023:equity,vcb:2020:opex --by nam   # đánh dấu các ô BẠN ĐÃ MỞ PDF xác nhận
-  python 14_triage_dti.py --file out/dti_inputs.csv --check out/dti_check.csv       # đường dẫn khác (dùng khi thử)
+  python 14_triage_dti.py --file output_data/dti_inputs.csv --check output_data/dti_check.csv       # đường dẫn khác (dùng khi thử)
 Việc làm khi --apply:
   1) confirmed_by thuộc {fin-cand, page-patch, page-confirm} -> 'auto-unverified' (số do script điền, CHƯA ai mở PDF xác nhận).
   2) confirmed_by = 'kpi-heuristic' -> XÓA giá trị/đơn vị/nguồn/trang, note = not_disclosed_or_no_reliable_candidate (không đoán). Giá trị cũ nằm trong file sao lưu.
-  3) Ô có trong out/dti_check.csv (chạy 13_check_dti.py trước) -> thêm 'CẦN KIỂM: <loại>' vào note; không đổi giá trị.
+  3) Ô có trong output_data/dti_check.csv (chạy 13_check_dti.py trước) -> thêm 'CẦN KIỂM: <loại>' vào note; không đổi giá trị.
   4) --confirm bank:year:variable[,...] --by TÊN -> confirmed_by = TÊN (chỉ khi ô đang có giá trị). Ô manual-* giữ nguyên.
 Không bao giờ điền 0. Không đụng các ô manual-*."""
 import argparse, datetime, os, shutil, sys

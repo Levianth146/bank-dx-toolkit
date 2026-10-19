@@ -145,16 +145,34 @@ class TestScoreRegression(unittest.TestCase):
     def test_step0_threshold_zero_and_year_isolation(self):
         banks = ["a", "b", "c", "d", "e"]
         calc = Mock()
-        # Một ngân hàng thiếu năm 2024: giữ; hai thiếu năm 2025: loại cả 5.
-        calc.all.side_effect = lambda b, y: {"K-Q1": (None if b in (["e"] if y == 2024 else ["d", "e"]) else 0, "")}
-        frame, gate = S.build_indicators(calc, banks, [2024, 2025], {"K-Q1": (0, 100, "higher_better")})
-        old = frame[frame.year == 2024]
-        new = frame[frame.year == 2025]
+        # Một ngân hàng thiếu K-Q1 năm 2024: giữ; hai thiếu năm 2025: loại cả 5.
+        # K-Q2 có đủ 5 ngân hàng nên trụ cột K vẫn đủ điều kiện bước 0b.
+        calc.all.side_effect = lambda b, y: {
+            "K-Q1": (None if b in (["e"] if y == 2024 else ["d", "e"]) else 0, ""),
+            "K-Q2": (50, ""),
+        }
+        bounds = {"K-Q1": (0, 100, "higher_better"), "K-Q2": (0, 100, "higher_better")}
+        frame, gate = S.build_indicators(calc, banks, [2024, 2025], bounds)
+        q1 = frame[frame.indicator == "K-Q1"]
+        old = q1[q1.year == 2024]
+        new = q1[q1.year == 2025]
         self.assertEqual(old.included_in_score.sum(), 4)  # Số 0 là dữ liệu thật.
         self.assertTrue(new.z.isna().all())
         self.assertEqual(new.x.notna().sum(), 3)  # Giữ số gốc khi loại.
         self.assertEqual(new.z_before_step0.notna().sum(), 3)
-        self.assertEqual(gate.n_missing.tolist(), [1, 2])
+        g = gate[gate.indicator == "K-Q1"]
+        self.assertEqual(g.n_missing.tolist(), [1, 2])
+
+    def test_step0b_drops_pillar_when_a_bank_has_no_indicator(self):
+        banks = ["a", "b", "c", "d", "e"]
+        calc = Mock()
+        # Chỉ K-Q1, ngân hàng e thiếu: bước 0 giữ chỉ số (thiếu 1 < 2) nhưng bước 0b bỏ DTI trụ cột K cho cả 5.
+        calc.all.side_effect = lambda b, y: {"K-Q1": (None if b == "e" else 0, "")}
+        frame, _ = S.build_indicators(calc, banks, [2024], {"K-Q1": (0, 100, "higher_better")})
+        self.assertTrue(frame.retained.all())
+        self.assertEqual(frame.included_in_score.sum(), 0)
+        self.assertEqual(frame.step0b_excluded.sum(), 4)
+        self.assertEqual(frame.x.notna().sum(), 4)  # Giữ số gốc để truy vết.
 
     def test_step0_excluded_pillar_uses_dbi(self):
         calc = Mock()
@@ -249,23 +267,23 @@ class TestIsolatedPipeline(unittest.TestCase):
         return result
 
     def write_csv(self, name, rows, fields=None):
-        path = self.root / "out" / name
+        path = self.root / "output_data" / name
         with path.open("w", encoding="utf-8-sig", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fields or list(rows[0]))
             writer.writeheader()
             writer.writerows(rows)
 
     def read_csv(self, name):
-        return pd.read_csv(self.root / "out" / name, encoding="utf-8-sig")
+        return pd.read_csv(self.root / "output_data" / name, encoding="utf-8-sig")
 
     def test_template_rerun_preserves_audit_and_final(self):
-        audit = self.root / "out" / "manual_audit.xlsx"
+        audit = self.root / "output_data" / "manual_audit.xlsx"
         wb = load_workbook(audit)
         wb.active["D2"] = 1
         wb.active["H2"] = "đã kiểm tay"
         wb.save(audit)
         before = audit.read_bytes()
-        coding = self.root / "out" / "coding_sheet.xlsx"
+        coding = self.root / "output_data" / "coding_sheet.xlsx"
         wb = load_workbook(coding)
         wb.active["G2"] = 3
         wb.save(coding)
@@ -302,7 +320,7 @@ class TestIsolatedPipeline(unittest.TestCase):
         confirmed = self.read_csv("dataset_clean/dti_inputs_confirmed.csv")
         self.assertEqual(confirmed["variable"].tolist(), ["digital_txn_share"])
         self.assertEqual(len(self.read_csv("dataset_clean/dti_inputs_full.csv")), 3)
-        dictionary = (self.root / "out/dataset_clean/DATA_DICTIONARY.md").read_text(encoding="utf-8-sig")
+        dictionary = (self.root / "output_data/dataset_clean/DATA_DICTIONARY.md").read_text(encoding="utf-8-sig")
         self.assertIn("Có 1 dòng số liệu đã xác nhận trên 3 dòng", dictionary)
         matrix = self.read_csv("availability_matrix.csv")
         mb = matrix[(matrix.bank == "mb") & (matrix.year == 2025)].iloc[0]

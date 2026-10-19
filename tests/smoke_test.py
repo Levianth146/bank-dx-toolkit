@@ -1,6 +1,6 @@
 """Smoke test: chạy pipeline offline trên PDF mẫu trong examples/ (không cần mạng, không cần torch).
 Chạy từ thư mục scripts/:  python ../tests/smoke_test.py
-Test chạy trên BẢN SAO tạm của repo nên không làm bẩn data/ và out/ thật."""
+Test chạy trên BẢN SAO tạm của repo nên không làm bẩn data/ và output_data/ thật."""
 import pathlib, shutil, subprocess, sys, tempfile, json, os
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -11,12 +11,12 @@ def check(name, cond, detail=""):
     if not cond: fails.append(name)
 
 tmp = pathlib.Path(tempfile.mkdtemp(prefix="bankdx_")); work = tmp / "repo"
-# Bỏ data/out/models: bản sao không mang PDF thật (tránh 02 --force trích lại cả kho).
-shutil.copytree(ROOT, work, ignore=shutil.ignore_patterns(".git", "__pycache__", ".venv", "models", "data", "out"))
+# Bỏ data, output_data, models: bản sao không mang PDF thật (tránh 02 --force trích lại cả kho).
+shutil.copytree(ROOT, work, ignore=shutil.ignore_patterns(".git", "__pycache__", ".venv", "models", "data", "output_data", "node_modules", "frontend"))
 sc = work / "scripts"
 (work / "data" / "raw" / "demo").mkdir(parents=True, exist_ok=True)
 (work / "data" / "text").mkdir(parents=True, exist_ok=True)
-(work / "out").mkdir(parents=True, exist_ok=True)
+(work / "output_data").mkdir(parents=True, exist_ok=True)
 shutil.copy(work / "examples" / "mau_bctn.pdf", work / "data" / "raw" / "demo" / "2025_bctn.pdf")
 shutil.copy(work / "examples" / "mau_bctc.pdf", work / "data" / "raw" / "demo" / "2025_bctc.pdf")
 
@@ -44,9 +44,9 @@ check("squeeze bỏ khoảng trắng", common.squeeze("Lợi  nhuận\n sau thu�
 
 # 3) pipeline offline
 rc, out = run("02_extract_text.py", "--force"); check("02 trích text", rc == 0 and list((work / "data/text").glob("*.jsonl")), out[-300:])
-rc, out = run("03_locate_evidence.py"); check("03 tìm bằng chứng", rc == 0 and (work / "out/evidence_candidates.csv").exists(), out[-300:])
-rc, out = run("04_extract_numbers.py", "--bctc", "--kpi"); check("04 trích số", rc == 0 and (work / "out/financial_candidates.csv").exists(), out[-300:])
-rc, out = run("07_text_mining.py", "--expand"); check("07 text mining", rc == 0 and (work / "out/tm_criterion.csv").exists(), out[-300:])
+rc, out = run("03_locate_evidence.py"); check("03 tìm bằng chứng", rc == 0 and (work / "output_data/evidence_candidates.csv").exists(), out[-300:])
+rc, out = run("04_extract_numbers.py", "--bctc", "--kpi"); check("04 trích số", rc == 0 and (work / "output_data/financial_candidates.csv").exists(), out[-300:])
+rc, out = run("07_text_mining.py", "--expand"); check("07 text mining", rc == 0 and (work / "output_data/tm_criterion.csv").exists(), out[-300:])
 rc, out = run("09_phobert.py"); check("09 in hướng dẫn khi không có cờ", rc == 0, out[-200:])
 
 
@@ -70,21 +70,21 @@ for y in ("2023", "2024"):
 with open(tx / "enbank_2024_bctc.jsonl", "w", encoding="utf8") as f:
     f.write(json.dumps({"bank": "enbank", "year": "2024", "doc_type": "bctc", "page": 1, "engine": "x", "junk": 0, "lang": "en", "text": BCTC_EN}, ensure_ascii=False) + "\n")
 rc, out = run("04_extract_numbers.py", "--bctc", "--kpi", "--bank", "enbank")
-fin = list(_csv.DictReader(open(work / "out/financial_candidates.csv", encoding="utf-8-sig")))
+fin = list(_csv.DictReader(open(work / "output_data/financial_candidates.csv", encoding="utf-8-sig")))
 vars_found = {r["variable"] for r in fin if r["bank"] == "enbank"}
 need = {"total_assets", "equity", "net_profit", "opex", "net_interest_income", "customer_deposits"}
 check("04 --bctc nhãn tiếng Anh", rc == 0 and need <= vars_found, f"thiếu {need - vars_found}")
 check("04 --bank lọc đúng (chỉ enbank)", all(r["bank"] == "enbank" for r in fin))
-kp = list(_csv.DictReader(open(work / "out/kpi_candidates.csv", encoding="utf-8-sig")))
+kp = list(_csv.DictReader(open(work / "output_data/kpi_candidates.csv", encoding="utf-8-sig")))
 check("04 --kpi mẫu câu tiếng Anh", any(r["variable"] == "digital_txn_share" and "98.5" in r["numbers_found"] for r in kp), str([r["variable"] for r in kp]))
 rc, out = run("03_locate_evidence.py", "--bank", "enbank")
-ev = list(_csv.DictReader(open(work / "out/evidence_candidates.csv", encoding="utf-8-sig")))
+ev = list(_csv.DictReader(open(work / "output_data/evidence_candidates.csv", encoding="utf-8-sig")))
 crit_found = {r["criterion"] for r in ev}
 check("03 từ khóa tiếng Anh + lọc --bank", rc == 0 and ev and all(r["bank"] == "enbank" for r in ev) and {"K2", "O1", "D1", "D2"} <= crit_found, str(sorted(crit_found)))
 rc, out = run("03_locate_evidence.py", "--year", "1999")
-check("03 --year không khớp thì không lỗi, kết quả rỗng", rc == 0 and len(list(_csv.DictReader(open(work / "out/evidence_candidates.csv", encoding="utf-8-sig")))) == 0)
+check("03 --year không khớp thì không lỗi, kết quả rỗng", rc == 0 and len(list(_csv.DictReader(open(work / "output_data/evidence_candidates.csv", encoding="utf-8-sig")))) == 0)
 rc, out = run("07_text_mining.py", "--bank", "enbank", "--only-lang", "en")
-tm = list(_csv.DictReader(open(work / "out/tm_criterion.csv", encoding="utf-8-sig")))
+tm = list(_csv.DictReader(open(work / "output_data/tm_criterion.csv", encoding="utf-8-sig")))
 check("07 có cột lang và chạy trên văn bản tiếng Anh", rc == 0 and tm and tm[0]["lang"] == "en" and any(float(r["bm25"]) > 0 for r in tm), out[-300:])
 
 # 4) BCTC dạng ô-mỗi-dòng (nhãn, số thuyết minh, rồi số tiền ở dòng sau) - bố cục thật của Techcombank 2024 EN
@@ -94,7 +94,7 @@ cells = ["Deposits from customers","18","533,392,350","454,660,779","TOTAL SHARE
 (work / "data" / "text" / "zz_2024_bctc.jsonl").write_text(json.dumps({"bank": "zz", "year": 2024, "doc_type": "bctc", "page": 1, "text": "\n".join(cells)}, ensure_ascii=False) + "\n", encoding="utf8")
 rc, out = run("04_extract_numbers.py", "--bctc", "--bank", "zz", "--year", "2024")
 import csv
-fc = {r["variable"]: r["parsed_numbers(first4)"] for r in csv.DictReader(open(work / "out/financial_candidates.csv", encoding="utf-8-sig"))}
+fc = {r["variable"]: r["parsed_numbers(first4)"] for r in csv.DictReader(open(work / "output_data/financial_candidates.csv", encoding="utf-8-sig"))}
 check("04 ô-mỗi-dòng: tiền gửi KH bỏ qua số thuyết minh 18", fc.get("customer_deposits", "").startswith("533,392,350"), str(fc))
 check("04 ô-mỗi-dòng: vốn CSH (dấu ' cong)", fc.get("total_equity", "").startswith("147,939,621"), str(fc))
 check("04 ô-mỗi-dòng: TOI", fc.get("total_operating_income", "").startswith("46,990,397"), str(fc))

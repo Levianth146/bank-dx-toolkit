@@ -4,14 +4,14 @@ Vì sao dùng: từ khóa bắt được rất nhiều câu "trúng chữ, trậ
 nên lọc được phần lớn các trường hợp này, SAU KHI bạn đã chấm tay đủ nhiều câu để dạy nó. Điểm cuối vẫn do người chấm theo rubric.
 
 Các chế độ (chạy riêng từng cái):
-  --build-train   Đọc out/evidence_candidates.csv (bạn điền thêm cột `valid` = 1 nếu câu đúng là bằng chứng của tiêu chí đó, 0 nếu sai)
-                  -> out/phobert_train.csv (text, label = mã tiêu chí hoặc 'none').
-  --finetune      Tinh chỉnh PhoBERT trên out/phobert_train.csv. Có CV phân tầng (--cv 5) báo macro-F1 TRƯỚC khi huấn luyện mô hình cuối.
+  --build-train   Đọc output_data/evidence_candidates.csv (bạn điền thêm cột `valid` = 1 nếu câu đúng là bằng chứng của tiêu chí đó, 0 nếu sai)
+                  -> output_data/phobert_train.csv (text, label = mã tiêu chí hoặc 'none').
+  --finetune      Tinh chỉnh PhoBERT trên output_data/phobert_train.csv. Có CV phân tầng (--cv 5) báo macro-F1 TRƯỚC khi huấn luyện mô hình cuối.
                   Lưu models/phobert_evidence/. Cần >= ~30 câu/tiêu chí cho kết quả đáng tin; ít hơn thì chỉ dùng tham khảo.
-  --predict       Chạy mô hình trên mọi câu chứa từ khóa trong data/text -> out/phobert_predictions.csv và phobert_evidence_counts.csv
+  --predict       Chạy mô hình trên mọi câu chứa từ khóa trong data/text -> output_data/phobert_predictions.csv và phobert_evidence_counts.csv
                   (số câu được xác nhận theo tiêu chí x ngân hàng x năm, với ngưỡng --tau 0.7).
   --anchors       KHÔNG cần dữ liệu huấn luyện: nhúng các câu chứa từ khóa và 96 mô tả mức rubric (config/rubric_anchors.csv),
-                  gán mỗi câu vào mức gần nhất theo cosine -> out/phobert_anchor_suggestions.csv (gợi ý cho người chấm).
+                  gán mỗi câu vào mức gần nhất theo cosine -> output_data/phobert_anchor_suggestions.csv (gợi ý cho người chấm).
                   Embedding PhoBERT thô không được huấn luyện cho độ tương đồng câu, nên chất lượng thấp hơn --finetune. Chỉ dùng để gợi ý.
 
 Chỉ xử lý văn bản tiếng Việt (cột lang trong data/text); văn bản tiếng Anh bị bỏ qua, xem 07 cho BM25/coverage song ngữ.
@@ -78,7 +78,7 @@ def encode(tok, texts, torch, dev):
 # ---------------------------------------------------------------- build-train
 if "--build-train" in sys.argv:
     p = OUT / "evidence_candidates.csv"
-    if not p.exists(): sys.exit("Thiếu out/evidence_candidates.csv (chạy 03_locate_evidence.py rồi điền cột valid)")
+    if not p.exists(): sys.exit("Thiếu output_data/evidence_candidates.csv (chạy 03_locate_evidence.py rồi điền cột valid)")
     ev = pd.read_csv(p)
     if "valid" not in ev.columns: sys.exit("Thêm cột `valid` (1 = bằng chứng đúng của tiêu chí; 0 = sai) vào evidence_candidates.csv rồi chạy lại")
     if "lang" not in ev:
@@ -90,7 +90,7 @@ if "--build-train" in sys.argv:
     ev = ev[ev["valid"].isin([0, 1])].copy()
     ev["label"] = np.where(ev["valid"] == 1, ev["criterion"], "none"); ev["text"] = ev["snippet"].astype(str)
     ev[["text", "label", "criterion", "bank", "year", "lang"]].to_csv(OUT / "phobert_train.csv", index=False, encoding="utf-8-sig")
-    print(ev["label"].value_counts().to_string()); print("-> out/phobert_train.csv")
+    print(ev["label"].value_counts().to_string()); print("-> output_data/phobert_train.csv")
 
 # ---------------------------------------------------------------- finetune
 def train_model(tr_texts, tr_y, n_labels, torch, transformers, dev, seed=0):
@@ -159,7 +159,7 @@ if "--predict" in sys.argv:
     cnt["accepted_ratio"] = (cnt["accepted_sentences"] / cnt["keyword_sentences"]).round(3)
     cnt.to_csv(OUT / "phobert_evidence_counts.csv", index=False, encoding="utf-8-sig")
     print(cnt.groupby("bank")[["keyword_sentences", "accepted_sentences"]].sum().to_string())
-    print("-> out/phobert_predictions.csv, out/phobert_evidence_counts.csv. Đọc lại ~30 câu 'accepted' và ~30 câu bị loại để kiểm tra trước khi tin.")
+    print("-> output_data/phobert_predictions.csv, output_data/phobert_evidence_counts.csv. Đọc lại ~30 câu 'accepted' và ~30 câu bị loại để kiểm tra trước khi tin.")
 
 # ---------------------------------------------------------------- anchors (zero-shot)
 if "--anchors" in sys.argv:
@@ -188,7 +188,7 @@ if "--anchors" in sys.argv:
         lvl = int(good.nearest_level.max()) if len(good) >= 2 else 0
         summ.append([c, b, y, len(s), len(good), lvl])
     pd.DataFrame(summ, columns=["criterion", "bank", "year", "keyword_sentences", "strong_sentences", "suggested_level_0_4"]).to_csv(OUT / "phobert_anchor_summary.csv", index=False, encoding="utf-8-sig")
-    print("-> out/phobert_anchor_suggestions.csv, out/phobert_anchor_summary.csv (gợi ý để người chấm xem trước, KHÔNG phải điểm)")
+    print("-> output_data/phobert_anchor_suggestions.csv, output_data/phobert_anchor_summary.csv (gợi ý để người chấm xem trước, KHÔNG phải điểm)")
 
 if not any(f in sys.argv for f in ("--build-train", "--finetune", "--predict", "--anchors")):
     print(__doc__)

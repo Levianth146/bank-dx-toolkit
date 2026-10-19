@@ -2,9 +2,9 @@
 
 Đi kèm file `Mo_hinh_DBI_DTI_dieu_chinh_va_codebook.docx`. Bộ script tải tài liệu, đọc PDF, tìm bằng chứng và lấy chỉ số định lượng. Theo quyết định của nhóm ngày **2026-10-12**, điểm DBI được chấm bằng thuật toán quy tắc `09c_auto_score.py`, thay quy trình người chấm + kappa. Số liệu DTI vẫn cần xác nhận nguồn.
 
-Quy trình chính: **01–04 → 09c → 12 --bundle → 10**. Điểm, bằng chứng và phiên bản nằm trong `out/coding_auto.xlsx`; xem [phương pháp thuật toán](specs/001-bank-dx-assessment/algorithm-scoring.md).
+Quy trình chính: **01–04 → 09c → 12 --bundle → 10**. Điểm, bằng chứng và phiên bản nằm trong `output_data/coding_auto.xlsx`; xem [phương pháp thuật toán](specs/001-bank-dx-assessment/algorithm-scoring.md).
 
-Bộ cận DTI đã khóa ở phiên bản `fixed-reference-v1-2026-10-12`; nguồn, phép tính và hạn chế được mô tả trong [phương pháp chọn L/U](specs/001-bank-dx-assessment/dti-bounds-method.md). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn ngành bắt buộc. Kết quả hiện có cho 5 ngân hàng trong giai đoạn 2020–2025 nằm ở `out/score_summary.csv`; chi tiết trụ cột ở `out/scores.csv` và chỉ số DTI ở `out/dti_indicators.csv`. File có hậu tố `_draft` là kết quả thử trước đó.
+Bộ cận DTI đã khóa ở phiên bản `fixed-reference-v1-2026-10-12`; nguồn, phép tính và hạn chế được mô tả trong [phương pháp chọn L/U](specs/001-bank-dx-assessment/dti-bounds-method.md). Đây là cận tham chiếu của nghiên cứu, không phải chuẩn ngành bắt buộc. Kết quả hiện có cho 5 ngân hàng trong giai đoạn 2020–2025 nằm ở `output_data/score_summary.csv`; chi tiết trụ cột ở `output_data/scores.csv` và chỉ số DTI ở `output_data/dti_indicators.csv`. File có hậu tố `_draft` là kết quả thử trước đó.
 
 Sau khi đối chiếu và cập nhật dữ liệu DTI, chạy từ thư mục `scripts/`:
 
@@ -27,21 +27,21 @@ Tùy chọn (khuyến nghị):
 ## 2. Quy trình chạy (làm trong thư mục `scripts/`)
 | Bước | Lệnh | Việc | Đầu ra |
 |---|---|---|---|
-| 0 | `python 00_make_templates.py` | Tạo file mẫu | `config/sources.csv`, `out/coding_sheet.xlsx`, `out/manual_audit.xlsx`, `out/dti_inputs.csv` |
+| 0 | `python 00_make_templates.py` | Tạo file mẫu | `config/sources.csv`, `output_data/coding_sheet.xlsx`, `output_data/manual_audit.xlsx`, `output_data/dti_inputs.csv` |
 | 1 | điền `config/sources.csv` bằng tay, rồi `python 01_download.py` | Tải BCTN/BCTC/BCPTBV (BCPTBV tùy chọn; nếu nằm trong BCTN thì để trống `url` và ghi `tích hợp trong BCTN` vào `notes`) | `data/raw/<bank>/<năm>_<loại>.pdf`, `data/raw/manifest.csv` (sha256, ngày truy cập) |
-| 2 | `python 02_extract_text.py [--ocr]` | PDF → text từng trang, tự chọn engine ít lỗi nhất | `data/text/*.jsonl`, `out/extraction_report.csv` (cờ nghi lỗi font) |
-| 3 | `python 03_locate_evidence.py` | Tìm đoạn chứa từ khóa của 24 tiêu chí | `out/evidence_candidates.csv`, `out/keyword_density.csv` |
-| 4a | `python 04_extract_numbers.py --bctc` | Ứng viên số liệu BCTC | `out/financial_candidates.csv` |
-| 4b | `python 04_extract_numbers.py --kpi` | Ứng viên KPI trong BCTN/BCPTBV | `out/kpi_candidates.csv` |
-| 5 | `python 05_app_ratings.py --discover`, điền id vào `config/banks.yaml`, rồi `--collect` | Rating app | `out/app_ratings.csv` |
-| 6 | điền mục `probe` trong `config/banks.yaml`, rồi `python 06_probe_web.py [--screenshot]` | Snapshot trang developer, chính sách bảo mật | `out/web_probe.csv`, `data/web/...` |
-| 7 | `python 07_text_mining.py [--expand] [--compare]` (chạy sau bước 2) | Text mining: BM25, độ phủ, tỷ lệ câu có số liệu, TF-IDF, mở rộng từ điển, đối chiếu điểm thuật toán | `out/tm_criterion.csv`, `tm_pillar.csv`, `tm_tfidf_terms.csv`, `tm_dictionary_expansion.csv`, `tm_vs_dbi.csv` |
-| 8 | `python 08_lda_topics.py [--k 12] [--segment]` | LDA: khám phá chủ đề, tỷ trọng nội dung theo trụ cột | `out/lda_topics.csv`, `lda_bank_topic_share.csv`, `lda_bank_pillar_share.csv`, `lda_k_scan.csv` |
-| 9 | `python 09_phobert.py --build-train / --finetune / --predict` (hoặc `--anchors`) | PhoBERT: lọc câu bằng chứng sai, gợi ý mức rubric | `out/phobert_predictions.csv`, `phobert_evidence_counts.csv`, `phobert_anchor_suggestions.csv` |
-| 09c | `python 09c_auto_score.py` | Chấm DBI theo quy tắc, không yêu cầu bảng chấm tay | `out/auto_scores.csv`, `out/coding_auto.xlsx`, `out/auto_scoring_manifest.json` |
-| 12 | `python 12_appendix.py --bundle` | Đóng gói DTI đã xác nhận + điểm thuật toán | `out/dataset_clean/` |
-| 10 | `python 10_score.py` (hoặc `--draft` khi L/U chưa khóa) | Ghép DBI 80% + DTI 20% | `out/score_summary.csv` (bản nháp có hậu tố `_draft`) |
-| 11 | `python 11_sensitivity.py [--years 2021,2023,2025] [--n-mc 10000]` | Độ nhạy thứ hạng (mục V.2 docx): trọng số DBI/DTI, trọng số trụ cột ±20% và Dirichlet, chuẩn hóa (Kendall τ), loại từng trụ, thiếu=0, dịch cận L/U, nhiễu rubric | `out/sensitivity/` (CSV, `sensitivity_results.xlsx`, `fig1-3_*.png`) |
+| 2 | `python 02_extract_text.py [--ocr]` | PDF → text từng trang, tự chọn engine ít lỗi nhất | `data/text/*.jsonl`, `output_data/extraction_report.csv` (cờ nghi lỗi font) |
+| 3 | `python 03_locate_evidence.py` | Tìm đoạn chứa từ khóa của 24 tiêu chí | `output_data/evidence_candidates.csv`, `output_data/keyword_density.csv` |
+| 4a | `python 04_extract_numbers.py --bctc` | Ứng viên số liệu BCTC | `output_data/financial_candidates.csv` |
+| 4b | `python 04_extract_numbers.py --kpi` | Ứng viên KPI trong BCTN/BCPTBV | `output_data/kpi_candidates.csv` |
+| 5 | `python 05_app_ratings.py --discover`, điền id vào `config/banks.yaml`, rồi `--collect` | Rating app | `output_data/app_ratings.csv` |
+| 6 | điền mục `probe` trong `config/banks.yaml`, rồi `python 06_probe_web.py [--screenshot]` | Snapshot trang developer, chính sách bảo mật | `output_data/web_probe.csv`, `data/web/...` |
+| 7 | `python 07_text_mining.py [--expand] [--compare]` (chạy sau bước 2) | Text mining: BM25, độ phủ, tỷ lệ câu có số liệu, TF-IDF, mở rộng từ điển, đối chiếu điểm thuật toán | `output_data/tm_criterion.csv`, `tm_pillar.csv`, `tm_tfidf_terms.csv`, `tm_dictionary_expansion.csv`, `tm_vs_dbi.csv` |
+| 8 | `python 08_lda_topics.py [--k 12] [--segment]` | LDA: khám phá chủ đề, tỷ trọng nội dung theo trụ cột | `output_data/lda_topics.csv`, `lda_bank_topic_share.csv`, `lda_bank_pillar_share.csv`, `lda_k_scan.csv` |
+| 9 | `python 09_phobert.py --build-train / --finetune / --predict` (hoặc `--anchors`) | PhoBERT: lọc câu bằng chứng sai, gợi ý mức rubric | `output_data/phobert_predictions.csv`, `phobert_evidence_counts.csv`, `phobert_anchor_suggestions.csv` |
+| 09c | `python 09c_auto_score.py` | Chấm DBI theo quy tắc, không yêu cầu bảng chấm tay | `output_data/auto_scores.csv`, `output_data/coding_auto.xlsx`, `output_data/auto_scoring_manifest.json` |
+| 12 | `python 12_appendix.py --bundle` | Đóng gói DTI đã xác nhận + điểm thuật toán | `output_data/dataset_clean/` |
+| 10 | `python 10_score.py` (hoặc `--draft` khi L/U chưa khóa) | Ghép DBI 80% + DTI 20% | `output_data/score_summary.csv` (bản nháp có hậu tố `_draft`) |
+| 11 | `python 11_sensitivity.py [--years 2021,2023,2025] [--n-mc 10000]` | Độ nhạy thứ hạng (mục V.2 docx): trọng số DBI/DTI, trọng số trụ cột ±20% và Dirichlet, chuẩn hóa (Kendall τ), loại từng trụ, thiếu=0, dịch cận L/U, nhiễu rubric | `output_data/sensitivity/` (CSV, `sensitivity_results.xlsx`, `fig1-3_*.png`) |
 
 ## 2a. Lọc và ngôn ngữ
 - 01–04 và 07–09 nhận `--bank tcb,mb`, `--year 2024,2025`, `--type bctn,bctc`, `--only-lang vi|en` (ví dụ chạy thử một ô: `python 01_download.py --bank tcb --year 2024`).

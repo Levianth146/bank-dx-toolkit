@@ -1,6 +1,6 @@
-"""Thêm cột `definition` + 2 biến phụ vào out/dti_inputs.csv (không đổi số liệu hiện có).
+"""Thêm cột `definition` + 2 biến phụ vào output_data/dti_inputs.csv (không đổi số liệu hiện có).
   python 17_add_definition.py            # dry-run: in nhãn định nghĩa sẽ gắn tự động để BẠN RÀ LẠI
-  python 17_add_definition.py --apply    # sao lưu out/dti_inputs.backup_<giờ>.csv rồi ghi
+  python 17_add_definition.py --apply    # sao lưu output_data/dti_inputs.backup_<giờ>.csv rồi ghi
 Việc làm:
   1) thêm cột `definition` (ô đã có nhãn thì giữ nguyên, chạy lại không ghi đè nhãn bạn sửa tay).
   2) gắn nhãn tự động từ `note` cho: digital_customers, total_customers, digital_txn_share, training_hours_per_head, headcount, equity.

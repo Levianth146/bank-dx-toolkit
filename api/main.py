@@ -57,8 +57,8 @@ YEAR = Query(None, ge=2000, le=2100, description="Năm; bỏ trống = năm mớ
 @r.get("/health", response_model=sch.Health, tags=["Hệ thống"])
 def health():
     st = service.store
-    files = {n: (dt.datetime.fromtimestamp(st.mtime(f"out/{n}"), dt.timezone.utc).isoformat()
-                 if st.mtime(f"out/{n}") else None)
+    files = {n: (dt.datetime.fromtimestamp(st.mtime(f"output_data/{n}"), dt.timezone.utc).isoformat()
+                 if st.mtime(f"output_data/{n}") else None)
              for n in ("score_summary.csv", "scores.csv", "dti_indicators.csv", "coding_auto.xlsx")}
     return dict(status="ok", api_version=__version__, years=service.years(), banks=service.bank_ids(), files=files)
 

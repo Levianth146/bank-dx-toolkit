@@ -11,8 +11,8 @@ Cách làm (quy tắc vận hành hóa rubric trong phiên bản thuật toán n
   - Mỗi điểm đi kèm bằng chứng tự động: file PDF, trang, trích đoạn, đặc trưng đã bắt được, độ tin cậy.
 
 Đọc : data/text/*.jsonl, config/keywords.yaml và banks.yaml (lưới ngân hàng × năm × tiêu chí)
-Ghi : out/auto_scores.csv     (điểm + bằng chứng + độ tin cậy)
-      out/coding_auto.xlsx    (cùng cấu trúc coding_sheet, cột final = điểm tự động) -> đưa cho 10_score.py
+Ghi : output_data/auto_scores.csv     (điểm + bằng chứng + độ tin cậy)
+      output_data/coding_auto.xlsx    (cùng cấu trúc coding_sheet, cột final = điểm tự động) -> đưa cho 10_score.py
 
 Chạy: python 09c_auto_score.py [--context 300] [--bank tcb] [--year 2025]
 Rồi : python 10_score.py [--draft nếu L/U chưa khóa]
@@ -97,7 +97,7 @@ def workbook_evidence(row):
     evidence = row["supporting_evidence"]
     if len(evidence) <= 32767:
         return evidence
-    return json.dumps(dict(source_file="out/auto_scores.csv", criterion=row["criterion"],
+    return json.dumps(dict(source_file="output_data/auto_scores.csv", criterion=row["criterion"],
                            bank=row["bank"], year=int(row["year"])), ensure_ascii=False, sort_keys=True)
 
 
@@ -250,7 +250,7 @@ def main():
     (OUT / "auto_scoring_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8-sig")
 
     # ---- 5) tóm tắt ----
-    print(f"Đã chấm {res.auto_score.notna().sum()}/{len(res)} ô -> out/auto_scores.csv, out/coding_auto.xlsx")
+    print(f"Đã chấm {res.auto_score.notna().sum()}/{len(res)} ô -> output_data/auto_scores.csv, output_data/coding_auto.xlsx")
     print("\nTheo trạng thái:\n", res.status.value_counts().to_string())
     print("\nPhân bố điểm:\n", res.auto_score.value_counts(dropna=False).sort_index().to_string())
     miss = res[res.status == "no_document"][["bank", "year"]].drop_duplicates()

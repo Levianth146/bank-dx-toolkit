@@ -1,6 +1,6 @@
 """Điểm đánh giá ứng dụng (chỉ số K-Q3) từ App Store (iTunes Search/Lookup API chính thức) và Google Play (google-play-scraper).
   python 05_app_ratings.py --discover   # liệt kê ứng viên theo app_search để bạn CHỌN id đúng, điền vào config/banks.yaml
-  python 05_app_ratings.py --collect    # lấy rating + số lượt đánh giá, ghi out/app_ratings.csv (có ngày thu thập)
+  python 05_app_ratings.py --collect    # lấy rating + số lượt đánh giá, ghi output_data/app_ratings.csv (có ngày thu thập)
 Số liệu chỉ có tại thời điểm chạy: ghi rõ ngày thu thập trong đề tài."""
 import csv, sys, time, requests
 from common import *

@@ -14,7 +14,7 @@ def check(name, cond):
     print(("OK   " if cond else "FAIL ") + name)
     if not cond: fails.append(name)
 
-# 1. Cơ sở khớp 10_score.py (điểm chính thức đã commit trong out/score_summary.csv)
+# 1. Cơ sở khớp 10_score.py (điểm chính thức đã commit trong output_data/score_summary.csv)
 OUT = SE.OUT
 a = argparse.Namespace(coding=str(OUT / "coding_auto.xlsx"), inputs=str(OUT / "dataset_clean" / "dti_inputs_confirmed.csv"),
                        app=str(OUT / "app_ratings.csv"), audit=str(OUT / "manual_audit.xlsx"), start_year=2021,
